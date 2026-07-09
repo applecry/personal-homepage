@@ -236,9 +236,11 @@ const installAgentVoiceInput = (agent) => {
 
   const taskInput = wrapper.querySelector("input[type='text'], input:not([type])");
   const inputSection = taskInput?.parentElement;
-  if (!taskInput || !inputSection) return;
+  const inputWrapper = inputSection?.parentElement;
+  if (!taskInput || !inputSection || !inputWrapper) return;
 
   wrapper.dataset.voiceInputEnhanced = "true";
+  inputWrapper.classList.add("agent-voice-input-wrapper");
   inputSection.classList.add("agent-voice-enhanced-input");
 
   const SpeechRecognition = getSpeechRecognition();
@@ -270,7 +272,7 @@ const installAgentVoiceInput = (agent) => {
   `;
 
   inputSection.appendChild(voiceButton);
-  inputSection.appendChild(overlay);
+  inputWrapper.insertBefore(overlay, inputSection);
 
   const transcript = overlay.querySelector("[data-agent-voice-transcript]");
   const timer = overlay.querySelector("[data-agent-voice-timer]");

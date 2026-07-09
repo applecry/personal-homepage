@@ -786,8 +786,25 @@ html[data-theme="dark"] .theme-toggle span {
   }
 }
 /* PageAgent voice input */
+#page-agent-runtime_agent-panel .agent-voice-input-wrapper:not([class*="hidden"]) {
+  height: auto !important;
+  min-height: 48px !important;
+  overflow: visible !important;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-input-wrapper[class*="hidden"] {
+  height: 0 !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-input-wrapper[class*="hidden"] .agent-voice-overlay {
+  display: none !important;
+}
+
 #page-agent-runtime_agent-panel .agent-voice-enhanced-input {
   position: relative;
+  z-index: 1;
 }
 
 #page-agent-runtime_agent-panel .agent-voice-button,
@@ -845,38 +862,26 @@ html[data-theme="dark"] .theme-toggle span {
 }
 
 #page-agent-runtime_agent-panel .agent-voice-overlay {
-  position: absolute;
-  right: 8px;
-  bottom: 6px;
-  left: 8px;
-  z-index: 8;
-  display: grid;
+  display: none;
   grid-template-columns: auto minmax(0, 1fr) auto auto auto;
   align-items: center;
   gap: 10px;
   min-width: 0;
-  min-height: 36px;
-  max-height: min(180px, 42vh);
-  padding: 7px 7px 7px 12px;
+  max-height: min(190px, 42vh);
+  margin: 8px 8px 0;
+  padding: 10px 8px 10px 12px;
   border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 20px;
+  border-radius: 18px;
   background: #2f302f;
   color: #f7f7f4;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 16px 36px rgba(0, 0, 0, 0.26);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(3px) scale(0.985);
-  transition:
-    opacity 150ms ease,
-    transform 150ms ease;
+    0 14px 28px rgba(0, 0, 0, 0.24);
+  pointer-events: auto;
 }
 
 #page-agent-runtime_agent-panel .agent-voice-overlay.is-visible {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0) scale(1);
+  display: grid;
 }
 
 #page-agent-runtime_agent-panel .agent-voice-overlay.is-confirming {
@@ -885,15 +890,6 @@ html[data-theme="dark"] .theme-toggle span {
 
 #page-agent-runtime_agent-panel .agent-voice-overlay.is-error {
   background: #3b2424;
-}
-#page-agent-runtime_agent-panel:has(.agent-voice-overlay.is-visible) [class*="inputSectionWrapper"] {
-  height: auto !important;
-  min-height: 52px !important;
-  overflow: visible !important;
-}
-
-#page-agent-runtime_agent-panel:has(.agent-voice-overlay.is-visible) [class*="inputSection"] {
-  overflow: visible !important;
 }
 
 #page-agent-runtime_agent-panel .agent-voice-overlay:not(.is-listening) .agent-voice-wave {
@@ -914,12 +910,12 @@ html[data-theme="dark"] .theme-toggle span {
 
 #page-agent-runtime_agent-panel .agent-voice-transcript {
   min-width: 42px;
-  max-height: 128px;
+  max-height: 138px;
   overflow-y: auto;
   color: #ffffff;
   font-size: 12px;
   font-weight: 680;
-  line-height: 1.35;
+  line-height: 1.45;
   overflow-wrap: anywhere;
   scrollbar-width: thin;
   white-space: pre-wrap;
@@ -932,7 +928,7 @@ html[data-theme="dark"] .theme-toggle span {
 
 #page-agent-runtime_agent-panel .agent-voice-wave {
   display: flex;
-  flex: 0 0 84px;
+  flex: 0 0 76px;
   align-items: center;
   justify-content: center;
   gap: 2px;
@@ -1020,14 +1016,17 @@ html[data-theme="dark"] .theme-toggle span {
 
 @media (max-width: 480px) {
   #page-agent-runtime_agent-panel .agent-voice-overlay {
+    grid-template-columns: minmax(0, 1fr) auto auto;
     gap: 7px;
+    margin-inline: 6px;
     padding-left: 9px;
   }
 
-  #page-agent-runtime_agent-panel .agent-voice-wave {
-    flex-basis: 54px;
+  #page-agent-runtime_agent-panel .agent-voice-overlay.is-listening {
+    grid-template-columns: minmax(0, 1fr) auto auto auto;
   }
 
+  #page-agent-runtime_agent-panel .agent-voice-wave,
   #page-agent-runtime_agent-panel .agent-voice-plus {
     display: none;
   }
