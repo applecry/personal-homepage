@@ -165,17 +165,44 @@ const submitAgentInput = (input) => {
   );
 };
 
+const microphonePermissionHelp = "麦克风权限被拒绝。请点地址栏左侧锁图标，把麦克风改为允许，然后刷新页面。";
+
 const getSpeechErrorMessage = (errorName) => {
   const messages = {
-    "not-allowed": "麦克风权限被拒绝",
-    "service-not-allowed": "语音识别服务不可用",
-    "audio-capture": "没有检测到麦克风",
-    network: "语音识别网络异常",
-    "no-speech": "没有识别到语音",
+    "not-allowed": microphonePermissionHelp,
+    "service-not-allowed": "语音识别服务不可用，请确认浏览器允许麦克风并稍后重试。",
+    "audio-capture": "没有检测到麦克风，请检查系统麦克风权限和输入设备。",
+    network: "语音识别网络异常，请稍后重试。",
+    "no-speech": "没有识别到语音，可以靠近麦克风再试一次。",
     aborted: "录音已停止",
   };
 
   return messages[errorName] || "语音输入暂时不可用";
+};
+
+const getMediaErrorName = (error) => {
+  if (error?.name === "NotAllowedError" || error?.name === "PermissionDeniedError") return "not-allowed";
+  if (error?.name === "NotFoundError" || error?.name === "DevicesNotFoundError") return "audio-capture";
+  if (error?.name === "NotReadableError" || error?.name === "TrackStartError") return "audio-capture";
+  return "unknown";
+};
+
+const queryMicrophonePermission = async () => {
+  if (!navigator.permissions?.query) return "prompt";
+
+  try {
+    const permission = await navigator.permissions.query({ name: "microphone" });
+    return permission.state;
+  } catch (error) {
+    return "prompt";
+  }
+};
+
+const requestMicrophoneAccess = async () => {
+  if (!navigator.mediaDevices?.getUserMedia) return;
+
+  const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+  stream.getTracks().forEach((track) => track.stop());
 };
 
 const createVoiceButtonIcon = () => `
@@ -250,9 +277,15 @@ const installAgentVoiceInput = (agent) => {
     listening: false,
     shouldSubmit: false,
     lastError: "",
+    errorHideTimer: null,
   };
 
   const setOverlayMode = (mode, message = "") => {
+    if (state.errorHideTimer) {
+      window.clearTimeout(state.errorHideTimer);
+      state.errorHideTimer = null;
+    }
+
     overlay.classList.toggle("is-visible", mode !== "idle");
     overlay.classList.toggle("is-listening", mode === "listening");
     overlay.classList.toggle("is-confirming", mode === "confirming");
@@ -262,6 +295,16 @@ const installAgentVoiceInput = (agent) => {
       transcript.textContent = message;
       transcript.classList.toggle("is-empty", false);
     }
+  };
+
+  const showVoiceError = (message, timeout = 6200) => {
+    stopTimer();
+    state.listening = false;
+    state.shouldSubmit = false;
+    voiceButton.classList.remove("is-recording");
+    setOverlayMode("error", message);
+    setAgentStatus(message, "error");
+    state.errorHideTimer = window.setTimeout(() => setOverlayMode("idle"), timeout);
   };
 
   const recognizedText = () => [state.finalText, state.interimText].filter(Boolean).join(" ").replace(/\s+/g, " ").trim();
@@ -303,8 +346,7 @@ const installAgentVoiceInput = (agent) => {
     }
 
     if (state.lastError) {
-      setOverlayMode("error", getSpeechErrorMessage(state.lastError));
-      window.setTimeout(() => setOverlayMode("idle"), 2600);
+      showVoiceError(getSpeechErrorMessage(state.lastError), state.lastError === "not-allowed" ? 8200 : 3600);
       return;
     }
 
@@ -334,14 +376,30 @@ const installAgentVoiceInput = (agent) => {
     }
   };
 
-  const startRecognition = () => {
+  const startRecognition = async () => {
     if (!supportsSpeech) {
-      setAgentStatus("当前浏览器不支持语音识别", "error");
+      showVoiceError("当前浏览器不支持语音识别，请使用 Chrome 或 Edge。", 5200);
       return;
     }
 
     if (state.listening) {
       stopRecognition(false);
+      return;
+    }
+
+    const permissionState = await queryMicrophonePermission();
+    if (permissionState === "denied") {
+      showVoiceError(microphonePermissionHelp, 9000);
+      return;
+    }
+
+    try {
+      setOverlayMode("confirming", permissionState === "prompt" ? "请在浏览器弹窗中允许麦克风" : "正在检查麦克风...");
+      setAgentStatus(permissionState === "prompt" ? "请允许麦克风权限" : "正在检查麦克风权限");
+      await requestMicrophoneAccess();
+    } catch (error) {
+      const errorName = getMediaErrorName(error);
+      showVoiceError(getSpeechErrorMessage(errorName), errorName === "not-allowed" ? 9000 : 5200);
       return;
     }
 
