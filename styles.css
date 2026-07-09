@@ -785,3 +785,227 @@ html[data-theme="dark"] .theme-toggle span {
     height: 50px;
   }
 }
+/* PageAgent voice input */
+#page-agent-runtime_agent-panel .agent-voice-enhanced-input {
+  position: relative;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-button,
+#page-agent-runtime_agent-panel .agent-voice-stop-button,
+#page-agent-runtime_agent-panel .agent-voice-send-button {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+  color: #111418;
+  transition:
+    background 160ms ease,
+    color 160ms ease,
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-button:hover:not(:disabled) {
+  background: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+#page-agent-runtime_agent-panel .agent-voice-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.46;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-button.is-recording {
+  background: #ef4444;
+  color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.18);
+}
+
+#page-agent-runtime_agent-panel .agent-voice-button svg,
+#page-agent-runtime_agent-panel .agent-voice-send-button svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-overlay {
+  position: absolute;
+  inset: 6px 8px;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 0 7px 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  background: #2f302f;
+  color: #f7f7f4;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 16px 36px rgba(0, 0, 0, 0.26);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(3px) scale(0.985);
+  transition:
+    opacity 150ms ease,
+    transform 150ms ease;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-overlay.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+#page-agent-runtime_agent-panel .agent-voice-overlay.is-confirming {
+  background: #252a27;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-overlay.is-error {
+  background: #3b2424;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-plus {
+  flex: 0 0 auto;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-transcript {
+  flex: 1 1 auto;
+  min-width: 42px;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 680;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-transcript.is-empty {
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 600;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-wave {
+  display: flex;
+  flex: 0 0 84px;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  height: 16px;
+  overflow: hidden;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-wave span {
+  width: 2px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0.9;
+  transform-origin: center;
+  animation: agent-voice-wave 860ms ease-in-out infinite;
+  animation-delay: calc(var(--i) * -43ms);
+}
+
+#page-agent-runtime_agent-panel .agent-voice-overlay:not(.is-listening) .agent-voice-wave span {
+  animation-play-state: paused;
+  opacity: 0.34;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-timer {
+  flex: 0 0 auto;
+  min-width: 32px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  text-align: right;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-stop-button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-stop-button:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+#page-agent-runtime_agent-panel .agent-voice-stop-button span {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: currentColor;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-send-button {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #171717;
+  transition:
+    opacity 150ms ease,
+    transform 150ms ease,
+    background 150ms ease;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-send-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  background: #f1f5f9;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-send-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.38;
+}
+
+@keyframes agent-voice-wave {
+  0%,
+  100% {
+    transform: scaleY(0.65);
+  }
+
+  50% {
+    transform: scaleY(2.6);
+  }
+}
+
+@media (max-width: 480px) {
+  #page-agent-runtime_agent-panel .agent-voice-overlay {
+    gap: 7px;
+    padding-left: 9px;
+  }
+
+  #page-agent-runtime_agent-panel .agent-voice-wave {
+    flex-basis: 54px;
+  }
+
+  #page-agent-runtime_agent-panel .agent-voice-plus {
+    display: none;
+  }
+}
