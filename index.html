@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>你的名字 | AI Builder & Writer</title>
+    <meta
+      name="description"
+      content="一个关于 AI 实践、写作、产品实验和长期学习的个人主页。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark">N</span>
+        <span>你的名字</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#notes">笔记</a>
+        <a href="#works">项目</a>
+        <a href="#now">现在</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深浅色">
+        <span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="./assets/hero-workspace.png" alt="" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">AI Builder / Writer / Independent Maker</p>
+          <h1 id="hero-title">把复杂问题，写成可以继续前进的东西。</h1>
+          <p class="hero-copy">
+            我在这里记录 AI 实践、产品想法、系统设计和长期学习。它不是一份静态简历，
+            更像一个持续生长的工作台。
+          </p>
+          <div class="hero-actions" aria-label="主页入口">
+            <a class="button primary" href="#notes">读最近笔记</a>
+            <a class="button secondary" href="#works">看项目实验</a>
+          </div>
+          <div class="signal-list" aria-label="关键词">
+            <span>AI 实践</span>
+            <span>产品原型</span>
+            <span>个人知识库</span>
+            <span>长期主义</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="当前状态">
+        <span>2026</span>
+        <span>Shanghai / Remote</span>
+        <span>Building with AI</span>
+        <span>Writing in public</span>
+      </section>
+
+      <section class="section intro" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>不是展示所有经历，而是留下最有生命力的线索。</h2>
+        </div>
+        <div class="intro-grid">
+          <p class="lead">
+            我关注人如何借助 AI 放大判断力、表达力和执行力。日常工作横跨产品、工程、
+            写作和自动化，把含混的想法拆成可验证的系统。
+          </p>
+          <div class="profile-panel">
+            <div>
+              <span class="meta-label">Focus</span>
+              <strong>AI Native Workflow</strong>
+            </div>
+            <div>
+              <span class="meta-label">Home Base</span>
+              <strong>Shanghai</strong>
+            </div>
+            <div>
+              <span class="meta-label">Mode</span>
+              <strong>Build, write, repeat</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="module-grid">
+          <article class="module-card accent-green">
+            <p class="card-index">01</p>
+            <h3>AI 工作流</h3>
+            <p>把模型能力落到真实任务里：检索、写作、代码、知识整理和个人自动化。</p>
+          </article>
+          <article class="module-card accent-amber">
+            <p class="card-index">02</p>
+            <h3>产品实验</h3>
+            <p>快速做小工具和原型，用真实反馈决定是否继续投入。</p>
+          </article>
+          <article class="module-card accent-ink">
+            <p class="card-index">03</p>
+            <h3>公开写作</h3>
+            <p>把学习过程写下来，让观点接受时间、读者和实践的反复校准。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="notes">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">Notes</p>
+          <h2>最近在想什么</h2>
+          <p>
+            这里可以放博客、周记、项目复盘或读书笔记。列表保留一点手账感，
+            但结构保持清爽。
+          </p>
+        </div>
+        <div class="note-list">
+          <article class="note-item">
+            <time datetime="2026-07-08">2026.07.08</time>
+            <a href="#">AI Agent 真正有用的边界在哪里？</a>
+            <p>从三个失败原型里总结：上下文、权限和可回滚性比模型本身更早决定体验。</p>
+          </article>
+          <article class="note-item">
+            <time datetime="2026-06-22">2026.06.22</time>
+            <a href="#">如何把个人知识库变成工作流，而不是仓库</a>
+            <p>少一点收藏，多一点复用；少一点分类，多一点下一步动作。</p>
+          </article>
+          <article class="note-item">
+            <time datetime="2026-05-31">2026.05.31</time>
+            <a href="#">我怎样做一个两天内能验证的小产品</a>
+            <p>目标不是上线，而是尽快知道这个问题是否真的值得继续。</p>
+          </article>
+          <article class="note-item">
+            <time datetime="2026-05-10">2026.05.10</time>
+            <a href="#">写作作为工程实践的一部分</a>
+            <p>好文档不是收尾动作，而是在开发过程中不断降低团队认知负担。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="works">
+        <div class="section-heading compact">
+          <p class="eyebrow">Works</p>
+          <h2>一些正在发生的小东西</h2>
+        </div>
+        <div class="work-grid">
+          <a class="work-card" href="#">
+            <span class="work-tag">Tool</span>
+            <h3>Prompt Desk</h3>
+            <p>用于沉淀个人提示词、案例和评估标准的轻量工作台。</p>
+          </a>
+          <a class="work-card" href="#">
+            <span class="work-tag">Writing</span>
+            <h3>AI 周记</h3>
+            <p>每周记录一个值得复盘的 AI 使用场景，附上可复用模板。</p>
+          </a>
+          <a class="work-card" href="#">
+            <span class="work-tag">Research</span>
+            <h3>Learning Map</h3>
+            <p>把技术主题、文章、项目和问题连接成一张可回看的学习地图。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section now-section" id="now">
+        <div class="now-copy">
+          <p class="eyebrow">Now</p>
+          <h2>现在的主线</h2>
+          <p>
+            让 AI 工具真正进入日常工作：不是追逐每个新模型，而是把高频任务变得更清楚、
+            更快、更可复盘。
+          </p>
+        </div>
+        <div class="now-stack">
+          <div class="now-row">
+            <span>Reading</span>
+            <strong>认知科学、工具史、产品设计</strong>
+          </div>
+          <div class="now-row">
+            <span>Building</span>
+            <strong>个人自动化系统与内容工作台</strong>
+          </div>
+          <div class="now-row">
+            <span>Listening</span>
+            <strong>Jazz, Ambient, City Pop</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 你的名字</p>
+      <div class="footer-links">
+        <a href="mailto:hello@example.com">Email</a>
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

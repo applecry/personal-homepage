@@ -1,0 +1,57 @@
+# Cloudflare Pages 上线步骤
+
+这个目录可以直接部署到 Cloudflare Pages。
+
+## 最快方式：Direct Upload
+
+1. 打开 Cloudflare Dashboard。
+2. 进入 Workers & Pages。
+3. 选择 Create application。
+4. 选择 Pages。
+5. 选择 Upload assets / Direct Upload。
+6. 项目名建议填 `personal-homepage`。
+7. 上传整个 `qiaomu-inspired-homepage` 文件夹里的内容。
+8. 部署成功后会得到一个 `*.pages.dev` 预览域名。
+
+## 更推荐：GitHub 自动部署
+
+1. 新建一个 GitHub 仓库，例如 `personal-homepage`。
+2. 把本目录的所有文件提交到仓库根目录。
+3. Cloudflare Dashboard -> Workers & Pages -> Create application -> Pages。
+4. 选择 Connect to Git。
+5. 选择刚才的 GitHub 仓库。
+6. 构建设置：
+   - Framework preset: None
+   - Build command: 留空
+   - Build output directory: `/`
+7. 点击 Deploy。
+
+## 绑定自己的域名
+
+推荐使用 `www.your-domain.com` 作为主站，再把根域名 `your-domain.com` 跳转到 `www`，或者反过来。二选一即可。
+
+Cloudflare Pages 里：
+
+1. 进入项目。
+2. 打开 Custom domains。
+3. 添加 `www.your-domain.com`。
+4. 按提示让 Cloudflare 自动创建 DNS 记录。
+5. 如果域名不在 Cloudflare 注册，需要把域名的 nameserver 改成 Cloudflare 提供的两个 nameserver。
+
+## 上线前替换内容
+
+建议至少替换这些占位：
+
+- `你的名字`
+- `hello@example.com`
+- GitHub 链接
+- X 链接
+- About / Notes / Works 里的示例内容
+
+## 当前文件
+
+- `index.html`: 页面内容
+- `styles.css`: 样式
+- `script.js`: 滚动导航和深浅色切换
+- `_headers`: Cloudflare Pages 响应头与缓存策略
+- `assets/hero-workspace.png`: 首页视觉图
