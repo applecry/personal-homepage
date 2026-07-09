@@ -673,24 +673,31 @@ html[data-theme="dark"] .theme-toggle span {
   position: fixed;
   right: 22px;
   bottom: 22px;
-  z-index: 40;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  left: auto;
+  top: auto;
+  z-index: 2147483000;
+  width: 54px;
+  height: 54px;
+  margin: 0;
   pointer-events: none;
 }
 
 .agent-status {
+  position: absolute;
+  right: 64px;
+  bottom: 8px;
+  width: max-content;
   max-width: min(280px, calc(100vw - 112px));
   padding: 8px 11px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: color-mix(in srgb, var(--paper-strong) 90%, transparent);
+  background: color-mix(in srgb, var(--paper-strong) 92%, transparent);
   box-shadow: 0 14px 34px rgba(35, 32, 26, 0.12);
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 760;
   line-height: 1.35;
+  white-space: nowrap;
   opacity: 0;
   transform: translateX(6px);
   transition:
@@ -708,6 +715,9 @@ html[data-theme="dark"] .theme-toggle span {
 }
 
 .agent-wake-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   display: grid;
   place-items: center;
   width: 54px;
@@ -727,7 +737,8 @@ html[data-theme="dark"] .theme-toggle span {
   transition:
     transform 160ms ease,
     box-shadow 160ms ease,
-    background 160ms ease;
+    background 160ms ease,
+    opacity 160ms ease;
 }
 
 .agent-wake-button:hover {
@@ -748,6 +759,7 @@ html[data-theme="dark"] .theme-toggle span {
 
 .agent-wake-button.is-loading {
   cursor: progress;
+  opacity: 0.78;
 }
 
 .agent-wake-button.is-error {
@@ -760,6 +772,8 @@ html[data-theme="dark"] .theme-toggle span {
   .agent-dock {
     right: 16px;
     bottom: 16px;
+    width: 50px;
+    height: 50px;
   }
 
   .agent-status {

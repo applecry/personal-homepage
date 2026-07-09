@@ -12,7 +12,7 @@ if (savedTheme) {
 }
 
 const syncHeader = () => {
-  header.classList.toggle("is-scrolled", window.scrollY > 24);
+  header?.classList.toggle("is-scrolled", window.scrollY > 24);
 };
 
 const syncActiveLink = () => {
@@ -38,9 +38,14 @@ window.addEventListener("scroll", () => {
 
 syncHeader();
 syncActiveLink();
+
 const agentWake = document.querySelector("[data-agent-wake]");
 const agentStatus = document.querySelector("[data-agent-status]");
-const pageAgentScriptSrc = "./assets/vendor/page-agent.demo.js?autoInit=false";
+const pageAgentScriptSources = [
+  "./assets/vendor/page-agent.demo.js?autoInit=false",
+  "https://cdn.jsdelivr.net/npm/page-agent@1.11.0/dist/iife/page-agent.demo.js?autoInit=false",
+  "https://registry.npmmirror.com/page-agent/1.11.0/files/dist/iife/page-agent.demo.js?autoInit=false",
+];
 let pageAgentScriptPromise = null;
 let agentStatusTimer = null;
 
@@ -66,7 +71,7 @@ const setAgentStatus = (message, mode = "") => {
   window.clearTimeout(agentStatusTimer);
   agentStatusTimer = window.setTimeout(() => {
     agentStatus.classList.remove("is-visible");
-  }, mode === "error" ? 5200 : 2600);
+  }, mode === "error" ? 5200 : 2200);
 };
 
 const setAgentButtonState = (state) => {
@@ -77,30 +82,46 @@ const setAgentButtonState = (state) => {
   }
 };
 
-const loadPageAgentScript = () => {
-  if (window.PageAgent) {
-    return Promise.resolve();
-  }
+const loadScript = (src) =>
+  new Promise((resolve, reject) => {
+    const existing = Array.from(document.scripts).find((script) => script.src === new URL(src, location.href).href);
+    if (existing) {
+      existing.addEventListener("load", resolve, { once: true });
+      existing.addEventListener("error", reject, { once: true });
+      if (window.PageAgent) resolve();
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.src = src;
+    script.async = true;
+    script.onload = resolve;
+    script.onerror = reject;
+    document.head.appendChild(script);
+  });
+
+const loadPageAgentScript = async () => {
+  if (window.PageAgent) return;
 
   if (pageAgentScriptPromise) {
     return pageAgentScriptPromise;
   }
 
-  pageAgentScriptPromise = new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = pageAgentScriptSrc;
-    script.async = true;
-    script.onload = () => {
-      setAgentButtonState("ready");
-      setAgentStatus("PageAgent 已加载");
-      resolve();
-    };
-    script.onerror = () => {
-      pageAgentScriptPromise = null;
-      reject(new Error("PageAgent script failed to load"));
-    };
-    document.head.appendChild(script);
-  });
+  pageAgentScriptPromise = (async () => {
+    let lastError = null;
+
+    for (const source of pageAgentScriptSources) {
+      try {
+        await loadScript(source);
+        if (window.PageAgent) return;
+      } catch (error) {
+        lastError = error;
+      }
+    }
+
+    pageAgentScriptPromise = null;
+    throw lastError || new Error("PageAgent script failed to load");
+  })();
 
   return pageAgentScriptPromise;
 };
@@ -133,9 +154,24 @@ const createOrReusePageAgent = () => {
   return window.pageAgent;
 };
 
-agentWake?.addEventListener("click", async () => {
+const preloadPageAgent = async () => {
+  if (!agentWake) return;
   setAgentButtonState("loading");
-  setAgentStatus("PageAgent 加载中");
+
+  try {
+    await loadPageAgentScript();
+    setAgentButtonState("ready");
+    setAgentStatus("PageAgent 已就绪");
+  } catch (error) {
+    setAgentButtonState("error");
+    setAgentStatus("PageAgent 加载失败", "error");
+    console.error(error);
+  }
+};
+
+agentWake?.addEventListener("click", async () => {
+  setAgentButtonState(window.PageAgent ? "ready" : "loading");
+  setAgentStatus(window.PageAgent ? "正在打开 PageAgent" : "PageAgent 加载中");
 
   try {
     await loadPageAgentScript();
@@ -146,10 +182,18 @@ agentWake?.addEventListener("click", async () => {
 
     agent.panel.show();
     setAgentButtonState("ready");
-    setAgentStatus("PageAgent 已唤醒");
+    setAgentStatus("PageAgent 已打开");
   } catch (error) {
     setAgentButtonState("error");
     setAgentStatus("PageAgent 暂时不可用", "error");
     console.error(error);
+  }
+});
+
+window.addEventListener("load", () => {
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(preloadPageAgent, { timeout: 1800 });
+  } else {
+    window.setTimeout(preloadPageAgent, 600);
   }
 });

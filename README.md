@@ -27,6 +27,6 @@ Cloudflare Pages 构建设置：
 
 ## PageAgent
 
-页面右下角的 `AI` 按钮会懒加载本地的 PageAgent SDK：`assets/vendor/page-agent.demo.js`。
+页面右下角的 `AI` 按钮会在页面空闲后预加载本地 PageAgent SDK：`assets/vendor/page-agent.demo.js`，点击按钮打开面板。
 
 当前配置使用演示模型网关，不在前端暴露真实模型 Key。正式使用时建议把 `script.js` 里的 `baseURL` 换成自己的后端 LLM Proxy，并在服务端保存 API Key、做限流和审计。
