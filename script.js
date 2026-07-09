@@ -39,6 +39,85 @@ window.addEventListener("scroll", () => {
 syncHeader();
 syncActiveLink();
 
+const musicPlayer = document.querySelector("[data-music-player]");
+if (musicPlayer) {
+  const deck = musicPlayer.querySelector("[data-music-deck]");
+  const trackButtons = Array.from(musicPlayer.querySelectorAll(".track-item"));
+  const title = musicPlayer.querySelector("[data-music-title]");
+  const meta = musicPlayer.querySelector("[data-music-meta]");
+  const mood = musicPlayer.querySelector("[data-music-mood]");
+  const initial = musicPlayer.querySelector("[data-music-initial]");
+  const progress = musicPlayer.querySelector("[data-music-progress]");
+  const time = musicPlayer.querySelector("[data-music-time]");
+  const toggle = musicPlayer.querySelector("[data-music-toggle]");
+  const toggleIcon = musicPlayer.querySelector("[data-music-toggle-icon]");
+  const link = musicPlayer.querySelector("[data-music-link]");
+  let activeTrack = trackButtons[0] || null;
+  let isPlaying = false;
+  let progressValue = 12;
+  let progressTimer = null;
+
+  const formatMusicTime = (value) => {
+    const seconds = Math.round((value / 100) * 238);
+    return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
+  };
+
+  const applyTrack = (button) => {
+    if (!button) return;
+    activeTrack = button;
+    progressValue = 12;
+
+    trackButtons.forEach((track) => track.classList.toggle("is-active", track === button));
+    title.textContent = button.dataset.trackTitle || "Untitled";
+    meta.textContent = button.dataset.trackMeta || "";
+    mood.textContent = button.dataset.trackMood || "";
+    initial.textContent = button.dataset.trackInitial || "--";
+    link.href = button.dataset.trackLink || "#";
+    progress.style.width = `${progressValue}%`;
+    time.textContent = formatMusicTime(progressValue);
+    deck?.style.setProperty("--music-color", button.dataset.trackColor || "#2f6f8f");
+  };
+
+  const stopProgress = () => {
+    if (progressTimer) {
+      window.clearInterval(progressTimer);
+      progressTimer = null;
+    }
+  };
+
+  const startProgress = () => {
+    stopProgress();
+    progressTimer = window.setInterval(() => {
+      progressValue = progressValue >= 100 ? 0 : progressValue + 1.6;
+      progress.style.width = `${progressValue}%`;
+      time.textContent = formatMusicTime(progressValue);
+    }, 900);
+  };
+
+  const setPlaying = (nextPlaying) => {
+    isPlaying = nextPlaying;
+    musicPlayer.classList.toggle("is-playing", isPlaying);
+    toggleIcon.textContent = isPlaying ? "Ⅱ" : "▶";
+    if (isPlaying) startProgress();
+    else stopProgress();
+  };
+
+  trackButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      applyTrack(button);
+      if (isPlaying) startProgress();
+    });
+  });
+
+  toggle?.addEventListener("click", () => setPlaying(!isPlaying));
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) stopProgress();
+    else if (isPlaying) startProgress();
+  });
+
+  applyTrack(activeTrack);
+}
+
 const agentWake = document.querySelector("[data-agent-wake]");
 const agentStatus = document.querySelector("[data-agent-status]");
 const pageAgentScriptSources = [

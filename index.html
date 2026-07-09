@@ -6,9 +6,9 @@
     <title>applecry | AI Builder & Writer</title>
     <meta
       name="description"
-      content="一个关于 AI 实践、写作、产品实验和长期学习的个人主页。"
+      content="applecry 的个人主页：AI 实践、产品实验、公开写作、音乐和长期学习。"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260709-7" />
+    <link rel="stylesheet" href="./styles.css?v=20260709-8" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -19,6 +19,8 @@
       <nav class="nav" aria-label="主导航">
         <a href="#about">关于</a>
         <a href="#notes">笔记</a>
+        <a href="#music">音乐</a>
+        <a href="#focus">方向</a>
         <a href="#works">项目</a>
         <a href="#now">现在</a>
       </nav>
@@ -32,41 +34,46 @@
         <img class="hero-image" src="./assets/hero-workspace.png" alt="" />
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">AI Builder / Writer / Independent Maker</p>
-          <h1 id="hero-title">把复杂问题，写成可以继续前进的东西。</h1>
+          <p class="eyebrow">AI Field Notes / Music Desk / Personal Lab</p>
+          <h1 id="hero-title">把想法压成可以执行的下一步。</h1>
           <p class="hero-copy">
-            我在这里记录 AI 实践、产品想法、系统设计和长期学习。它不是一份静态简历，
-            更像一个持续生长的工作台。
+            我在这里记录 AI 实践、产品实验、系统设计、写作和背景音乐。不是一份静态简历，
+            而是一张持续更新的工作台：把复杂问题拆小，把每一次试错留下来。
           </p>
           <div class="hero-actions" aria-label="主页入口">
             <a class="button primary" href="#notes">读最近笔记</a>
-            <a class="button secondary" href="#works">看项目实验</a>
+            <a class="button secondary" href="#music">先听一首</a>
           </div>
           <div class="signal-list" aria-label="关键词">
             <span>AI 实践</span>
             <span>产品原型</span>
-            <span>个人知识库</span>
-            <span>长期主义</span>
+            <span>语音 Agent</span>
+            <span>城市夜行</span>
           </div>
+        </div>
+        <div class="hero-side-note" aria-hidden="true">
+          <span>EST. 2026</span>
+          <strong>APPLECRY</strong>
+          <span>SHANGHAI / REMOTE</span>
         </div>
       </section>
 
       <section class="ticker" aria-label="当前状态">
         <span>2026</span>
-        <span>Shanghai / Remote</span>
         <span>Building with AI</span>
         <span>Writing in public</span>
+        <span>Night playlist ready</span>
       </section>
 
       <section class="section intro" id="about">
         <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>不是展示所有经历，而是留下最有生命力的线索。</h2>
+          <p class="eyebrow">About · 关于</p>
+          <h2>不追每一个热点，只把亲手跑通的东西留下。</h2>
         </div>
         <div class="intro-grid">
           <p class="lead">
             我关注人如何借助 AI 放大判断力、表达力和执行力。日常工作横跨产品、工程、
-            写作和自动化，把含混的想法拆成可验证的系统。
+            写作和自动化，把含混的想法拆成可验证的系统，再把复盘写成别人也能用的路径。
           </p>
           <div class="profile-panel">
             <div>
@@ -85,40 +92,49 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="module-grid">
-          <article class="module-card accent-green">
-            <p class="card-index">01</p>
-            <h3>AI 工作流</h3>
-            <p>把模型能力落到真实任务里：检索、写作、代码、知识整理和个人自动化。</p>
-          </article>
-          <article class="module-card accent-amber">
-            <p class="card-index">02</p>
-            <h3>产品实验</h3>
-            <p>快速做小工具和原型，用真实反馈决定是否继续投入。</p>
-          </article>
-          <article class="module-card accent-ink">
-            <p class="card-index">03</p>
-            <h3>公开写作</h3>
-            <p>把学习过程写下来，让观点接受时间、读者和实践的反复校准。</p>
-          </article>
+      <section class="section pulse-section" aria-labelledby="pulse-title">
+        <div class="pulse-copy">
+          <p class="eyebrow">By The Numbers · 持续记录</p>
+          <h2 id="pulse-title">写下去，本身就是答案。</h2>
+        </div>
+        <div class="metric-grid">
+          <div class="metric-card">
+            <strong>04</strong>
+            <span>正在维护的主题</span>
+          </div>
+          <div class="metric-card">
+            <strong>12</strong>
+            <span>可复用工作流</span>
+          </div>
+          <div class="metric-card">
+            <strong>24h</strong>
+            <span>从想法到原型</span>
+          </div>
+          <div class="metric-card accent">
+            <strong>04</strong>
+            <span>常驻背景音</span>
+          </div>
         </div>
       </section>
 
       <section class="section split-section" id="notes">
         <div class="section-heading sticky-heading">
-          <p class="eyebrow">Notes</p>
-          <h2>最近在想什么</h2>
+          <p class="eyebrow">Notes · 最新笔记</p>
+          <h2>正在写的，和最近写过的。</h2>
           <p>
-            这里可以放博客、周记、项目复盘或读书笔记。列表保留一点手账感，
-            但结构保持清爽。
+            从工具评测到工作流拆解，从提示词模板到产品观察，都是先跑通再动笔的那一类。
           </p>
         </div>
         <div class="note-list">
+          <article class="note-item feature-note">
+            <time datetime="2026-07-09">2026.07.09</time>
+            <a href="#">给个人主页接入 PageAgent 语音输入</a>
+            <p>从唤醒按钮、语音识别、权限提示到输入框布局，记录一次把网页变成可对话界面的过程。</p>
+          </article>
           <article class="note-item">
             <time datetime="2026-07-08">2026.07.08</time>
             <a href="#">AI Agent 真正有用的边界在哪里？</a>
-            <p>从三个失败原型里总结：上下文、权限和可回滚性比模型本身更早决定体验。</p>
+            <p>上下文、权限和可回滚性比模型本身更早决定体验。</p>
           </article>
           <article class="note-item">
             <time datetime="2026-06-22">2026.06.22</time>
@@ -130,18 +146,155 @@
             <a href="#">我怎样做一个两天内能验证的小产品</a>
             <p>目标不是上线，而是尽快知道这个问题是否真的值得继续。</p>
           </article>
-          <article class="note-item">
-            <time datetime="2026-05-10">2026.05.10</time>
-            <a href="#">写作作为工程实践的一部分</a>
-            <p>好文档不是收尾动作，而是在开发过程中不断降低团队认知负担。</p>
+        </div>
+      </section>
+
+      <section class="section music-section" id="music" aria-labelledby="music-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Music · 常驻背景音</p>
+          <h2 id="music-title">写代码和写作时，夜色要在旁边。</h2>
+          <p>这不是自动播放的版权音乐库，而是一张能切换情绪的听歌面板。需要播放时，点开平台搜索。</p>
+        </div>
+        <div class="music-layout" data-music-player>
+          <div class="music-deck" data-music-deck>
+            <div class="album-art" data-music-art>
+              <span data-music-initial>ND</span>
+            </div>
+            <div class="music-main">
+              <p class="music-label">NOW PLAYING</p>
+              <h3 data-music-title>NIGHT DANCER</h3>
+              <p data-music-meta>imase · midnight city pop</p>
+              <p class="music-mood" data-music-mood>适合边走边想，把杂乱任务切成一个个小节拍。</p>
+              <div class="music-progress" aria-label="播放进度">
+                <span data-music-progress></span>
+              </div>
+              <div class="music-controls">
+                <button class="music-toggle" type="button" data-music-toggle aria-label="播放或暂停">
+                  <span data-music-toggle-icon>▶</span>
+                </button>
+                <span data-music-time>0:00</span>
+                <a data-music-link href="https://www.youtube.com/results?search_query=Night+Dancer+imase" target="_blank" rel="noreferrer">搜索播放</a>
+              </div>
+            </div>
+          </div>
+          <div class="track-list" aria-label="音乐列表">
+            <button
+              class="track-item is-active"
+              type="button"
+              data-track-title="NIGHT DANCER"
+              data-track-meta="imase · midnight city pop"
+              data-track-mood="适合边走边想，把杂乱任务切成一个个小节拍。"
+              data-track-initial="ND"
+              data-track-link="https://www.youtube.com/results?search_query=Night+Dancer+imase"
+              data-track-color="#2f6f8f"
+            >
+              <span>01</span>
+              <strong>NIGHT DANCER</strong>
+              <small>city pop</small>
+            </button>
+            <button
+              class="track-item"
+              type="button"
+              data-track-title="Judgement"
+              data-track-meta="DEVILMAN crybaby · dark pulse"
+              data-track-mood="适合处理难题、做决策，带一点压迫感和速度。"
+              data-track-initial="JD"
+              data-track-link="https://www.youtube.com/results?search_query=Judgement+Devilman+Crybaby"
+              data-track-color="#7f2f3f"
+            >
+              <span>02</span>
+              <strong>Judgement</strong>
+              <small>恶魔人</small>
+            </button>
+            <button
+              class="track-item"
+              type="button"
+              data-track-title="Night Cruising"
+              data-track-meta="Fishmans · slow night drive"
+              data-track-mood="适合深夜整理思路，让页面和脑子一起慢下来。"
+              data-track-initial="NC"
+              data-track-link="https://www.youtube.com/results?search_query=Fishmans+Night+Cruising"
+              data-track-color="#4f6f58"
+            >
+              <span>03</span>
+              <strong>Night Cruising</strong>
+              <small>slow drive</small>
+            </button>
+            <button
+              class="track-item"
+              type="button"
+              data-track-title="日落大道"
+              data-track-meta="梁博 · sunset road"
+              data-track-mood="适合收尾、复盘和写下今天还没有说完的话。"
+              data-track-initial="日落"
+              data-track-link="https://www.youtube.com/results?search_query=%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93+%E6%A2%81%E5%8D%9A"
+              data-track-color="#b8733d"
+            >
+              <span>04</span>
+              <strong>日落大道</strong>
+              <small>sunset</small>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section focus-section" id="focus">
+        <div class="section-heading compact">
+          <p class="eyebrow">Focus · 专注方向</p>
+          <h2>四个方向，都是长期在做的事。</h2>
+        </div>
+        <div class="module-grid focus-grid">
+          <article class="module-card accent-green">
+            <p class="card-index">01</p>
+            <h3>AI 工具评测</h3>
+            <p>不写参数堆砌的速递。每个工具先用，再判断它值不值得进我的工作流。</p>
           </article>
+          <article class="module-card accent-blue">
+            <p class="card-index">02</p>
+            <h3>提示词工程</h3>
+            <p>把提示词当代码：版本、测试、回归，让好用的表达能被复用。</p>
+          </article>
+          <article class="module-card accent-amber">
+            <p class="card-index">03</p>
+            <h3>工作流拆解</h3>
+            <p>把复杂任务拆成输入、处理、输出的可复用积木，再写成清晰过程。</p>
+          </article>
+          <article class="module-card accent-rose">
+            <p class="card-index">04</p>
+            <h3>个人自动化</h3>
+            <p>从网页、笔记、音乐和日常任务里找连接点，让系统替人少记一点。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reading-section" aria-labelledby="reading-title">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">Reading · 值得反复读</p>
+          <h2 id="reading-title">不是收藏夹，是下一步的燃料。</h2>
+        </div>
+        <div class="reading-stack">
+          <a class="reading-item" href="#">
+            <span>01</span>
+            <strong>把 demo 变成可复盘的产品实验</strong>
+            <small>Prototype / Product</small>
+          </a>
+          <a class="reading-item" href="#">
+            <span>02</span>
+            <strong>用知识图谱理解一个陌生代码库</strong>
+            <small>Codebase / Graph</small>
+          </a>
+          <a class="reading-item" href="#">
+            <span>03</span>
+            <strong>语音输入为什么改变 Agent 的使用习惯</strong>
+            <small>Voice / Interface</small>
+          </a>
         </div>
       </section>
 
       <section class="section" id="works">
         <div class="section-heading compact">
-          <p class="eyebrow">Works</p>
-          <h2>一些正在发生的小东西</h2>
+          <p class="eyebrow">Toolkit · 项目</p>
+          <h2>我每天在用的，和我做出来的。</h2>
         </div>
         <div class="work-grid">
           <a class="work-card" href="#">
@@ -150,12 +303,12 @@
             <p>用于沉淀个人提示词、案例和评估标准的轻量工作台。</p>
           </a>
           <a class="work-card" href="#">
-            <span class="work-tag">Writing</span>
-            <h3>AI 周记</h3>
-            <p>每周记录一个值得复盘的 AI 使用场景，附上可复用模板。</p>
+            <span class="work-tag">Agent</span>
+            <h3>Voice PageAgent</h3>
+            <p>在网页里接入可语音输入的 PageAgent，让自然语言任务真正能落到页面操作。</p>
           </a>
           <a class="work-card" href="#">
-            <span class="work-tag">Research</span>
+            <span class="work-tag">Map</span>
             <h3>Learning Map</h3>
             <p>把技术主题、文章、项目和问题连接成一张可回看的学习地图。</p>
           </a>
@@ -164,7 +317,7 @@
 
       <section class="section now-section" id="now">
         <div class="now-copy">
-          <p class="eyebrow">Now</p>
+          <p class="eyebrow">Now · 现在</p>
           <h2>现在的主线</h2>
           <p>
             让 AI 工具真正进入日常工作：不是追逐每个新模型，而是把高频任务变得更清楚、
@@ -178,21 +331,24 @@
           </div>
           <div class="now-row">
             <span>Building</span>
-            <strong>个人自动化系统与内容工作台</strong>
+            <strong>个人自动化系统、语音 Agent、内容工作台</strong>
           </div>
           <div class="now-row">
             <span>Listening</span>
-            <strong>Jazz, Ambient, City Pop</strong>
+            <strong>NIGHT DANCER, Judgement, Night Cruising, 日落大道</strong>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 applecry</p>
+      <div>
+        <strong>applecry</strong>
+        <p>AI 实践、产品实验、公开写作和夜间歌单。记录，一直在路上。</p>
+      </div>
       <div class="footer-links">
         <a href="mailto:hello@example.com">Email</a>
-        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/applecry" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
       </div>
     </footer>
@@ -210,6 +366,6 @@
         <span>AI</span>
       </button>
     </div>
-    <script src="./script.js?v=20260709-7"></script>
+    <script src="./script.js?v=20260709-8"></script>
   </body>
 </html>
