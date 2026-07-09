@@ -846,13 +846,18 @@ html[data-theme="dark"] .theme-toggle span {
 
 #page-agent-runtime_agent-panel .agent-voice-overlay {
   position: absolute;
-  inset: 6px 8px;
+  right: 8px;
+  bottom: 6px;
+  left: 8px;
   z-index: 8;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto auto;
   align-items: center;
   gap: 10px;
   min-width: 0;
-  padding: 0 7px 0 12px;
+  min-height: 36px;
+  max-height: min(180px, 42vh);
+  padding: 7px 7px 7px 12px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 20px;
   background: #2f302f;
@@ -881,6 +886,23 @@ html[data-theme="dark"] .theme-toggle span {
 #page-agent-runtime_agent-panel .agent-voice-overlay.is-error {
   background: #3b2424;
 }
+#page-agent-runtime_agent-panel:has(.agent-voice-overlay.is-visible) [class*="inputSectionWrapper"] {
+  height: auto !important;
+  min-height: 52px !important;
+  overflow: visible !important;
+}
+
+#page-agent-runtime_agent-panel:has(.agent-voice-overlay.is-visible) [class*="inputSection"] {
+  overflow: visible !important;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-overlay:not(.is-listening) .agent-voice-wave {
+  display: none;
+}
+
+#page-agent-runtime_agent-panel .agent-voice-overlay:not(.is-listening) {
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+}
 
 #page-agent-runtime_agent-panel .agent-voice-plus {
   flex: 0 0 auto;
@@ -891,15 +913,16 @@ html[data-theme="dark"] .theme-toggle span {
 }
 
 #page-agent-runtime_agent-panel .agent-voice-transcript {
-  flex: 1 1 auto;
   min-width: 42px;
-  overflow: hidden;
+  max-height: 128px;
+  overflow-y: auto;
   color: #ffffff;
   font-size: 12px;
   font-weight: 680;
-  line-height: 1.2;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  scrollbar-width: thin;
+  white-space: pre-wrap;
 }
 
 #page-agent-runtime_agent-panel .agent-voice-transcript.is-empty {

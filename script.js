@@ -284,6 +284,7 @@ const installAgentVoiceInput = (agent) => {
     interimText: "",
     baseText: "",
     listening: false,
+    cancelled: false,
     shouldSubmit: false,
     lastError: "",
     errorHideTimer: null,
@@ -310,6 +311,7 @@ const installAgentVoiceInput = (agent) => {
     stopTimer();
     state.listening = false;
     state.shouldSubmit = false;
+    state.cancelled = false;
     voiceButton.classList.remove("is-recording");
     setOverlayMode("error", message);
     setAgentStatus(message, "error");
@@ -347,6 +349,14 @@ const installAgentVoiceInput = (agent) => {
     state.listening = false;
     voiceButton.classList.remove("is-recording");
 
+    if (state.cancelled) {
+      state.cancelled = false;
+      state.shouldSubmit = false;
+      state.lastError = "";
+      setOverlayMode("idle");
+      return;
+    }
+
     if (state.shouldSubmit) {
       state.shouldSubmit = false;
       setOverlayMode("idle");
@@ -371,15 +381,31 @@ const installAgentVoiceInput = (agent) => {
 
   const stopRecognition = (shouldSubmit = false) => {
     state.shouldSubmit = shouldSubmit;
+    state.cancelled = !shouldSubmit;
 
     if (!state.recognition || !state.listening) {
       if (shouldSubmit) submitAgentInput(taskInput);
-      else setOverlayMode("idle");
+      else {
+        state.cancelled = false;
+        setOverlayMode("idle");
+      }
       return;
     }
 
     try {
-      state.recognition.stop();
+      if (shouldSubmit) {
+        state.recognition.stop();
+      } else {
+        if (typeof state.recognition.abort === "function") {
+          state.recognition.abort();
+        } else {
+          state.recognition.stop();
+        }
+        stopTimer();
+        state.listening = false;
+        voiceButton.classList.remove("is-recording");
+        setOverlayMode("idle");
+      }
     } catch (error) {
       finishRecognition();
     }
@@ -403,6 +429,7 @@ const installAgentVoiceInput = (agent) => {
     state.interimText = "";
     state.baseText = taskInput.value.trim();
     state.shouldSubmit = false;
+    state.cancelled = false;
     state.lastError = "";
     state.listening = true;
 
@@ -438,11 +465,18 @@ const installAgentVoiceInput = (agent) => {
 
     recognition.onerror = (event) => {
       const errorName = event.error || "unknown";
+      if (state.cancelled || errorName === "aborted") {
+        state.lastError = "";
+        return;
+      }
+
       state.lastError = "";
       state.shouldSubmit = false;
       sendButton.disabled = !taskInput.value.trim();
       getRecognitionErrorMessage(errorName).then((message) => {
-        showVoiceError(message, errorName === "not-allowed" || errorName === "service-not-allowed" ? 9000 : 4200);
+        if (!state.cancelled) {
+          showVoiceError(message, errorName === "not-allowed" || errorName === "service-not-allowed" ? 9000 : 4200);
+        }
       });
     };
 
