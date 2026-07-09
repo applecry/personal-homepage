@@ -44,3 +44,5 @@ Cloudflare Pages 构建设置：
 ## Music
 
 页面包含一个轻量音乐面板，内置 NIGHT DANCER、Judgement（恶魔人）、Night Cruising、日落大道四首常驻背景音。当前不内置版权音频文件，按钮会切换页面内展示并提供平台搜索播放入口。
+
+部署环境需要允许麦克风权限策略。Cloudflare Pages 的 _headers 已允许 microphone=(self)，否则浏览器即使显示麦克风已允许，Web Speech API 也会被响应头拦截。

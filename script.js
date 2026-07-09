@@ -250,6 +250,7 @@ const getSpeechErrorMessage = (errorName) => {
   const messages = {
     "not-allowed": microphonePermissionHelp,
     "service-not-allowed": "语音识别服务不可用，请确认浏览器允许麦克风并稍后重试。",
+    "policy-blocked": "麦克风被站点响应头 Permissions-Policy 禁用了。部署后需要允许 microphone=(self)。",
     "audio-capture": "没有检测到麦克风，请检查系统麦克风权限和输入设备。",
     network: "语音识别网络异常，请稍后重试。",
     "no-speech": "没有识别到语音，可以靠近麦克风再试一次。",
@@ -266,7 +267,27 @@ const getMediaErrorName = (error) => {
   return "unknown";
 };
 
+const isMicrophoneBlockedByPolicy = () => {
+  try {
+    if (document.permissionsPolicy?.allowsFeature) {
+      return !document.permissionsPolicy.allowsFeature("microphone");
+    }
+
+    if (document.featurePolicy?.allowsFeature) {
+      return !document.featurePolicy.allowsFeature("microphone");
+    }
+  } catch (error) {
+    return false;
+  }
+
+  return false;
+};
+
 const diagnoseMicrophoneAccess = async () => {
+  if (isMicrophoneBlockedByPolicy()) {
+    return { ok: false, errorName: "policy-blocked" };
+  }
+
   if (!navigator.mediaDevices?.getUserMedia) {
     return { ok: false, errorName: "audio-capture" };
   }
