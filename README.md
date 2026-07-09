@@ -1,6 +1,6 @@
-# Personal Homepage
+﻿# personal-homepage
 
-一个纯静态个人主页，可直接部署到 Cloudflare Pages。
+个人主页。一个纯静态个人主页，可直接部署到 Cloudflare Pages。
 
 ## 本地预览
 
