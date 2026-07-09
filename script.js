@@ -52,30 +52,40 @@ if (musicPlayer) {
   const toggle = musicPlayer.querySelector("[data-music-toggle]");
   const toggleIcon = musicPlayer.querySelector("[data-music-toggle-icon]");
   const link = musicPlayer.querySelector("[data-music-link]");
+  const audio = new Audio();
   let activeTrack = trackButtons[0] || null;
   let isPlaying = false;
   let progressValue = 12;
   let progressTimer = null;
 
-  const formatMusicTime = (value) => {
-    const seconds = Math.round((value / 100) * 238);
-    return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
+  audio.preload = "metadata";
+
+  const formatSeconds = (seconds) => {
+    const totalSeconds = Math.max(0, Math.floor(Number.isFinite(seconds) ? seconds : 0));
+    return `${Math.floor(totalSeconds / 60)}:${String(totalSeconds % 60).padStart(2, "0")}`;
   };
 
-  const applyTrack = (button) => {
-    if (!button) return;
-    activeTrack = button;
-    progressValue = 12;
+  const formatPreviewTime = (value) => formatSeconds((value / 100) * 238);
 
-    trackButtons.forEach((track) => track.classList.toggle("is-active", track === button));
-    title.textContent = button.dataset.trackTitle || "Untitled";
-    meta.textContent = button.dataset.trackMeta || "";
-    mood.textContent = button.dataset.trackMood || "";
-    initial.textContent = button.dataset.trackInitial || "--";
-    link.href = button.dataset.trackLink || "#";
+  const hasPlayableAudio = () => Boolean(activeTrack?.dataset.trackSrc);
+
+  const setProgress = (value) => {
+    progressValue = Math.max(0, Math.min(100, value));
     progress.style.width = `${progressValue}%`;
-    time.textContent = formatMusicTime(progressValue);
-    deck?.style.setProperty("--music-color", button.dataset.trackColor || "#2f6f8f");
+  };
+
+  const syncAudioProgress = () => {
+    if (!hasPlayableAudio()) return;
+
+    const duration = Number.isFinite(audio.duration) && audio.duration > 0 ? audio.duration : 0;
+    if (!duration) {
+      setProgress(0);
+      time.textContent = formatSeconds(audio.currentTime || 0);
+      return;
+    }
+
+    setProgress((audio.currentTime / duration) * 100);
+    time.textContent = formatSeconds(audio.currentTime);
   };
 
   const stopProgress = () => {
@@ -85,34 +95,109 @@ if (musicPlayer) {
     }
   };
 
-  const startProgress = () => {
+  const startPreviewProgress = () => {
     stopProgress();
     progressTimer = window.setInterval(() => {
-      progressValue = progressValue >= 100 ? 0 : progressValue + 1.6;
-      progress.style.width = `${progressValue}%`;
-      time.textContent = formatMusicTime(progressValue);
+      setProgress(progressValue >= 100 ? 0 : progressValue + 1.6);
+      time.textContent = formatPreviewTime(progressValue);
     }, 900);
+  };
+
+  const setPlayingVisual = () => {
+    musicPlayer.classList.toggle("is-playing", isPlaying);
+    toggleIcon.textContent = isPlaying ? "\u23f8" : "\u25b6";
+  };
+
+  const resetAudioSource = () => {
+    audio.pause();
+    audio.removeAttribute("src");
+    audio.load();
   };
 
   const setPlaying = (nextPlaying) => {
     isPlaying = nextPlaying;
-    musicPlayer.classList.toggle("is-playing", isPlaying);
-    toggleIcon.textContent = isPlaying ? "Ⅱ" : "▶";
-    if (isPlaying) startProgress();
-    else stopProgress();
+    setPlayingVisual();
+
+    if (!isPlaying) {
+      stopProgress();
+      audio.pause();
+      return;
+    }
+
+    if (!hasPlayableAudio()) {
+      audio.pause();
+      startPreviewProgress();
+      return;
+    }
+
+    stopProgress();
+    audio.play().then(syncAudioProgress).catch((error) => {
+      isPlaying = false;
+      setPlayingVisual();
+      console.warn("Music playback failed", error);
+    });
+  };
+
+  const applyTrack = (button) => {
+    if (!button) return;
+
+    const shouldContinue = isPlaying;
+    stopProgress();
+    audio.pause();
+    activeTrack = button;
+    progressValue = button.dataset.trackSrc ? 0 : 12;
+
+    trackButtons.forEach((track) => track.classList.toggle("is-active", track === button));
+    title.textContent = button.dataset.trackTitle || "Untitled";
+    meta.textContent = button.dataset.trackMeta || "";
+    mood.textContent = button.dataset.trackMood || "";
+    initial.textContent = button.dataset.trackInitial || "--";
+    link.href = button.dataset.trackLink || "#";
+    deck?.style.setProperty("--music-color", button.dataset.trackColor || "#2f6f8f");
+
+    if (button.dataset.trackSrc) {
+      audio.src = button.dataset.trackSrc;
+      audio.currentTime = 0;
+      setProgress(0);
+      time.textContent = "0:00";
+    } else {
+      resetAudioSource();
+      setProgress(progressValue);
+      time.textContent = formatPreviewTime(progressValue);
+    }
+
+    setPlaying(shouldContinue);
   };
 
   trackButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      applyTrack(button);
-      if (isPlaying) startProgress();
-    });
+    button.addEventListener("click", () => applyTrack(button));
   });
 
   toggle?.addEventListener("click", () => setPlaying(!isPlaying));
+
+  audio.addEventListener("timeupdate", syncAudioProgress);
+  audio.addEventListener("loadedmetadata", syncAudioProgress);
+  audio.addEventListener("ended", () => {
+    isPlaying = false;
+    stopProgress();
+    syncAudioProgress();
+    setPlayingVisual();
+  });
+  audio.addEventListener("error", () => {
+    if (!hasPlayableAudio()) return;
+    isPlaying = false;
+    stopProgress();
+    setPlayingVisual();
+  });
+
   document.addEventListener("visibilitychange", () => {
-    if (document.hidden) stopProgress();
-    else if (isPlaying) startProgress();
+    if (document.hidden) {
+      stopProgress();
+      return;
+    }
+
+    if (isPlaying && hasPlayableAudio()) syncAudioProgress();
+    else if (isPlaying) startPreviewProgress();
   });
 
   applyTrack(activeTrack);
