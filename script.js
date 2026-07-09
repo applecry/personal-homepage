@@ -187,22 +187,31 @@ const getMediaErrorName = (error) => {
   return "unknown";
 };
 
-const queryMicrophonePermission = async () => {
-  if (!navigator.permissions?.query) return "prompt";
+const diagnoseMicrophoneAccess = async () => {
+  if (!navigator.mediaDevices?.getUserMedia) {
+    return { ok: false, errorName: "audio-capture" };
+  }
 
   try {
-    const permission = await navigator.permissions.query({ name: "microphone" });
-    return permission.state;
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    stream.getTracks().forEach((track) => track.stop());
+    return { ok: true, errorName: "" };
   } catch (error) {
-    return "prompt";
+    return { ok: false, errorName: getMediaErrorName(error) };
   }
 };
 
-const requestMicrophoneAccess = async () => {
-  if (!navigator.mediaDevices?.getUserMedia) return;
+const getRecognitionErrorMessage = async (errorName) => {
+  if (errorName !== "not-allowed" && errorName !== "service-not-allowed") {
+    return getSpeechErrorMessage(errorName);
+  }
 
-  const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-  stream.getTracks().forEach((track) => track.stop());
+  const diagnosis = await diagnoseMicrophoneAccess();
+  if (!diagnosis.ok) {
+    return getSpeechErrorMessage(diagnosis.errorName);
+  }
+
+  return "麦克风权限是开的，但浏览器语音识别服务拒绝启动。请刷新后直接点麦克风；如果仍不行，换 Chrome 或在 Windows 设置里开启在线语音识别。";
 };
 
 const createVoiceButtonIcon = () => `
@@ -376,7 +385,7 @@ const installAgentVoiceInput = (agent) => {
     }
   };
 
-  const startRecognition = async () => {
+  const startRecognition = () => {
     if (!supportsSpeech) {
       showVoiceError("当前浏览器不支持语音识别，请使用 Chrome 或 Edge。", 5200);
       return;
@@ -384,22 +393,6 @@ const installAgentVoiceInput = (agent) => {
 
     if (state.listening) {
       stopRecognition(false);
-      return;
-    }
-
-    const permissionState = await queryMicrophonePermission();
-    if (permissionState === "denied") {
-      showVoiceError(microphonePermissionHelp, 9000);
-      return;
-    }
-
-    try {
-      setOverlayMode("confirming", permissionState === "prompt" ? "请在浏览器弹窗中允许麦克风" : "正在检查麦克风...");
-      setAgentStatus(permissionState === "prompt" ? "请允许麦克风权限" : "正在检查麦克风权限");
-      await requestMicrophoneAccess();
-    } catch (error) {
-      const errorName = getMediaErrorName(error);
-      showVoiceError(getSpeechErrorMessage(errorName), errorName === "not-allowed" ? 9000 : 5200);
       return;
     }
 
@@ -444,10 +437,13 @@ const installAgentVoiceInput = (agent) => {
     };
 
     recognition.onerror = (event) => {
-      state.lastError = event.error || "unknown";
+      const errorName = event.error || "unknown";
+      state.lastError = "";
       state.shouldSubmit = false;
       sendButton.disabled = !taskInput.value.trim();
-      setAgentStatus(getSpeechErrorMessage(state.lastError), "error");
+      getRecognitionErrorMessage(errorName).then((message) => {
+        showVoiceError(message, errorName === "not-allowed" || errorName === "service-not-allowed" ? 9000 : 4200);
+      });
     };
 
     recognition.onend = finishRecognition;
@@ -455,8 +451,7 @@ const installAgentVoiceInput = (agent) => {
     try {
       recognition.start();
     } catch (error) {
-      state.lastError = "unknown";
-      finishRecognition();
+      showVoiceError("语音识别没有启动，请刷新页面后再试一次。", 5200);
       console.error(error);
     }
   };
