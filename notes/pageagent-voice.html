@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#121511" />
+    <title>给个人主页接入 PageAgent 语音输入 | applecry</title>
+    <meta name="description" content="一次把网页做成可对话界面的界面复盘。" />
+    <link rel="stylesheet" href="../styles.css?v=20260710-2" />
+  </head>
+  <body>
+    <header class="article-topbar"><a class="article-brand" href="../index.html">A / applecry</a><a href="./index.html">全部笔记</a></header>
+    <main class="article-shell">
+      <p class="article-kicker">INTERFACE / RETROSPECTIVE</p>
+      <h1 class="article-title">给个人主页接入<br />PageAgent 语音输入。</h1>
+      <p class="article-deck">真正要解决的不是“多一个麦克风按钮”，而是让语音、文字和页面任务处在同一条可理解的路径上。</p>
+      <div class="article-meta"><time datetime="2026-07-10">2026.07.10</time><span>6 min read</span><span>Voice / PageAgent / Interface</span></div>
+      <article class="article-content">
+        <p>这个主页原本就有一个右下角的 PageAgent。加入语音之前，它更像一个等待被打开的能力；加入语音之后，问题变成：用户开口时，页面要怎样接住这段话？</p>
+        <p>第一版最容易犯的错误，是把识别文本直接覆盖到输入框里。它看上去省事，却让人失去确认感：说错了什么、识别漏了什么、现在能不能停，都不够明确。</p>
+        <h2>语音应该先成为草稿，而不是直接执行。</h2>
+        <p>现在的处理方式是把实时转写放在输入框上方，输入框仍然留给用户编辑。停止录音后，文字保持可见；用户确认后，才把它作为问题交给 PageAgent。这个顺序多了一步，却把控制权放回了人手里。</p>
+        <div class="article-callout">语音只是输入方式，不应该改变“先看清，再提交”的基本节奏。</div>
+        <h2>界面状态比动效更重要。</h2>
+        <p>录音时，用户至少需要知道三件事：系统正在听、已经听到了什么、怎样立刻停下。所以界面里有时间、波形、实时文字和一个真正能终止识别的停止键。停止键不是装饰，它必须调用识别实例的终止逻辑，并清理录音状态。</p>
+        <pre class="article-code">录音中：显示波形 + 实时转写 + 停止<br />停止后：保留完整文字 + 可编辑输入框<br />提交前：用户仍可修改问题<br />提交后：交给 PageAgent 处理页面任务</pre>
+        <h2>部署环境比本地更严格。</h2>
+        <p>本地能录音，不代表线上一定能录音。浏览器除了站点权限，还会检查安全上下文和响应头里的权限策略。因此部署时需要允许本站使用麦克风；与此同时，Web Speech API 本身也会受浏览器和系统在线语音能力影响。</p>
+        <p>这件事提醒我：界面上的“权限已开启”不是最终答案。产品需要把失败状态说清楚，并始终留下键盘输入这条可靠的后路。</p>
+        <h2>下一步</h2>
+        <p>目前的语音输入解决了“如何更自然地提问”。下一阶段要解决“回答什么”：把站内笔记、项目状态和每日信号整理成可检索的上下文，再由一个安全的服务端代理连接模型。那时，它才会从演示面板变成真正理解这个工作台的助手。</p>
+      </article>
+      <footer class="article-footer"><span>写于 applecry 的公开工作台</span><a href="../projects.html#voice-pageagent">查看项目档案 ↗</a></footer>
+    </main>
+  </body>
+</html>

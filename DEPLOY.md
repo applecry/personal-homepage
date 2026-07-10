@@ -28,30 +28,24 @@
 
 ## 绑定自己的域名
 
-推荐使用 `www.your-domain.com` 作为主站，再把根域名 `your-domain.com` 跳转到 `www`，或者反过来。二选一即可。
+当前域名为 `lijunearth.online`。推荐把根域名 `lijunearth.online` 作为主站，同时添加 `www.lijunearth.online` 并跳转到主站。
 
 Cloudflare Pages 里：
 
 1. 进入项目。
 2. 打开 Custom domains。
-3. 添加 `www.your-domain.com`。
+3. 添加 `lijunearth.online` 和 `www.lijunearth.online`。
 4. 按提示让 Cloudflare 自动创建 DNS 记录。
 5. 如果域名不在 Cloudflare 注册，需要把域名的 nameserver 改成 Cloudflare 提供的两个 nameserver。
 
-## 上线前替换内容
-
-建议至少替换这些占位：
-
-- `你的名字`
-- `hello@example.com`
-- GitHub 链接
-- X 链接
-- About / Notes / Works 里的示例内容
+Cloudflare 接管 DNS 后会自动签发 HTTPS 证书。DNS 生效后，Pages 项目里把自定义域名设为主域名即可。
 
 ## 当前文件
 
-- `index.html`: 页面内容
+- `index.html`: 首页内容和工作台入口
 - `styles.css`: 样式
 - `script.js`: 滚动导航和深浅色切换
+- `notes/`: 可直接访问的公开复盘
+- `projects.html`: 项目档案
 - `_headers`: Cloudflare Pages 响应头与缓存策略
 - `assets/hero-workspace.png`: 首页视觉图
