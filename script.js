@@ -94,7 +94,7 @@ if (newsSection) {
     title.append(link);
 
     const reason = document.createElement("p");
-    reason.textContent = item.reason || "近期同主题报道，适合快速判断是否继续追踪。";
+    reason.textContent = item.summary || item.reason || "暂无摘要，打开原文查看详情。";
 
     const footer = document.createElement("footer");
     const source = document.createElement("span");

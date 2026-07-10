@@ -90,6 +90,82 @@ const tagArticle = (title, topic) => {
     .slice(0, 3);
   return tags.length ? tags : [topic.label];
 };
+const truncateChineseSummary = (value, maxLength = 96) => {
+  const text = normalizeText(value).replace(/^[,，。；;：:\s]+/, "");
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, maxLength).replace(/[，,；;：:\s]+$/, "")}...`;
+};
+
+const hasReadableChinese = (value = "") => {
+  const chineseChars = value.match(/[\u4e00-\u9fff]/g)?.length || 0;
+  return chineseChars >= 16;
+};
+
+const summarizeAiArticle = (text) => {
+  if (/browser|atlas|浏览器/i.test(text)) {
+    return "报道关注 OpenAI 在 AI 浏览器和应用入口上的产品调整，反映大模型公司正在把竞争延伸到日常工作流。";
+  }
+
+  if (/agent|work|codex|workflow|自动化/i.test(text)) {
+    return "报道围绕 AI Agent 和办公自动化工具展开，重点是模型如何进入文档、代码和业务流程等高频场景。";
+  }
+
+  if (/chip|cpu|gpu|nvidia|broadcom|cerebras|hardware|infrastructure|芯片|算力/i.test(text)) {
+    return "报道讨论 AI 芯片和算力基础设施的竞争，关注 OpenAI、Nvidia 等公司在硬件供应链和成本效率上的布局。";
+  }
+
+  if (/gpt|model|claude|anthropic|benchmark|coding|模型|性能/i.test(text)) {
+    return "报道介绍新一代 AI 模型进展，重点关注性能、成本、编码能力以及与竞品模型的对比。";
+  }
+
+  return "报道关注 AI 行业的新产品、公司动向或基础设施变化，大模型竞争正在从模型本身扩展到应用和算力层。";
+};
+
+const summarizeUsStocksArticle = (text) => {
+  if (/jobs|payroll|fed|rate|yield|treasury|inflation|就业|美联储|利率/i.test(text)) {
+    return "报道关注美国宏观数据、利率预期和美联储政策路径对美股风险偏好的影响，宏观数据仍是指数波动的重要变量。";
+  }
+
+  if (/chip|semiconductor|nvidia|micron|tech|ai|科技|芯片/i.test(text)) {
+    return "报道聚焦科技股和芯片股表现，AI 相关交易继续影响纳指和标普等主要指数。";
+  }
+
+  if (/nasdaq|s&p|dow|futures|market|stocks|指数|期货/i.test(text)) {
+    return "报道梳理纳指、标普和道指等主要美股指数走势，反映市场对风险资产和大型科技股的定价变化。";
+  }
+
+  return "报道反映美股市场的最新交易情绪，指数方向、科技权重股和宏观预期是主要变量。";
+};
+
+const summarizeASharesArticle = (text) => {
+  if (/factory|manufacturing|pmi|exports|demand|经济|制造业|出口/i.test(text)) {
+    return "报道关注中国制造业、出口需求和经济数据对股票市场的影响，基本面预期仍是市场走势的重要线索。";
+  }
+
+  if (/chip|tech|semiconductor|ai|科技|芯片|半导体/i.test(text)) {
+    return "报道提到科技或芯片板块对中国股票的带动或拖累，结构性行情仍围绕高景气产业波动。";
+  }
+
+  if (/shanghai|composite|csi|a-shares|china stocks|hong kong|上证|沪深|创业板|港股/i.test(text)) {
+    return "报道聚焦中国股票和主要指数表现，上证、沪深和相关市场情绪出现短期变化。";
+  }
+
+  return "报道反映中国股票市场的最新表现，资金面、政策预期和行业轮动是主要线索。";
+};
+
+const summarizeArticle = ({ title, description, topic }) => {
+  const cleanDescription = normalizeText(description);
+  if (hasReadableChinese(cleanDescription)) {
+    return truncateChineseSummary(cleanDescription);
+  }
+
+  const text = `${title} ${cleanDescription}`;
+  if (topic.id === "ai") return summarizeAiArticle(text);
+  if (topic.id === "us-stocks") return summarizeUsStocksArticle(text);
+  if (topic.id === "a-shares") return summarizeASharesArticle(text);
+
+  return "报道提供了该主题的最新动态，适合进一步打开原文了解细节。";
+};
 
 const parseRssItems = (xml, topic) => {
   const blocks = Array.from(xml.matchAll(/<item>([\s\S]*?)<\/item>/gi), (match) => match[1]);
@@ -98,9 +174,11 @@ const parseRssItems = (xml, topic) => {
     const source = textOf(block, "News:Source") || textOf(block, "source") || attrOf(block, "source", "url") || "Bing News";
     const rawTitle = textOf(block, "title");
     const title = stripSourceFromTitle(rawTitle, source);
+    const description = textOf(block, "description");
     const publishedAt = new Date(textOf(block, "pubDate") || Date.now()).toISOString();
     const url = originalUrlFromBing(textOf(block, "link"));
-    const tags = tagArticle(title, topic);
+    const tags = tagArticle(`${title} ${description}`, topic);
+    const summary = summarizeArticle({ title, description, topic });
 
     return {
       title,
@@ -108,9 +186,8 @@ const parseRssItems = (xml, topic) => {
       source,
       domain: source,
       publishedAt,
-      reason: tags.length
-        ? `命中 ${tags.join(" / ")}，适合今天快速扫一眼。`
-        : "近期同主题报道，适合快速判断是否继续追踪。",
+      summary,
+      reason: summary,
       tags,
     };
   });
