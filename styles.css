@@ -1508,7 +1508,17 @@ html[data-theme="dark"] .theme-toggle span {
 
 /* Public workbench content layer */
 .hero-content {
-  max-width: 760px;
+  max-width: 840px;
+}
+
+.hero h1 {
+  max-width: 840px;
+  font-size: clamp(2.35rem, 6.4vw, 6.1rem);
+}
+
+.hero-title-line {
+  display: block;
+  white-space: nowrap;
 }
 
 .hero-dispatch {
