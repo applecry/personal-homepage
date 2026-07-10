@@ -39,6 +39,121 @@ window.addEventListener("scroll", () => {
 syncHeader();
 syncActiveLink();
 
+const newsSection = document.querySelector("[data-news-section]");
+if (newsSection) {
+  const grid = newsSection.querySelector("[data-news-grid]");
+  const updated = newsSection.querySelector("[data-news-updated]");
+  const tabs = Array.from(newsSection.querySelectorAll("[data-news-topic]"));
+  let activeTopic = tabs.find((tab) => tab.classList.contains("is-active"))?.dataset.newsTopic || "ai";
+  let newsTopics = [];
+
+  const formatNewsTime = (value) => {
+    if (!value) return "等待首次自动更新";
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return "等待首次自动更新";
+    return new Intl.DateTimeFormat("zh-CN", {
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    }).format(date);
+  };
+
+  const renderNewsEmpty = (message = "今天还没有抓到足够清晰的信号。") => {
+    grid.textContent = "";
+    const empty = document.createElement("div");
+    empty.className = "news-empty";
+    const title = document.createElement("strong");
+    title.textContent = "新闻数据准备中";
+    const copy = document.createElement("span");
+    copy.textContent = message;
+    empty.append(title, copy);
+    grid.append(empty);
+  };
+
+  const createNewsCard = (item, index) => {
+    const card = document.createElement("article");
+    card.className = "news-card";
+
+    const header = document.createElement("header");
+    const number = document.createElement("span");
+    number.className = "news-card-index";
+    number.textContent = String(index + 1).padStart(2, "0");
+    const time = document.createElement("time");
+    time.dateTime = item.publishedAt || "";
+    time.textContent = formatNewsTime(item.publishedAt);
+    header.append(number, time);
+
+    const title = document.createElement("h3");
+    const link = document.createElement("a");
+    link.href = item.url;
+    link.target = "_blank";
+    link.rel = "noreferrer";
+    link.textContent = item.title || "Untitled";
+    title.append(link);
+
+    const reason = document.createElement("p");
+    reason.textContent = item.reason || "近期同主题报道，适合快速判断是否继续追踪。";
+
+    const footer = document.createElement("footer");
+    const source = document.createElement("span");
+    source.className = "news-source";
+    source.textContent = item.source || item.domain || "source";
+    const tags = document.createElement("div");
+    tags.className = "news-tags";
+    (item.tags || []).slice(0, 3).forEach((tag) => {
+      const pill = document.createElement("span");
+      pill.textContent = tag;
+      tags.append(pill);
+    });
+    footer.append(source, tags);
+
+    card.append(header, title, reason, footer);
+    return card;
+  };
+
+  const renderNewsTopic = () => {
+    const topic = newsTopics.find((item) => item.id === activeTopic) || newsTopics[0];
+    tabs.forEach((tab) => {
+      const isActive = tab.dataset.newsTopic === activeTopic;
+      tab.classList.toggle("is-active", isActive);
+      tab.setAttribute("aria-pressed", String(isActive));
+    });
+
+    if (!topic?.items?.length) {
+      renderNewsEmpty("GitHub Actions 首次运行后，这里会显示这个主题的每日推荐。");
+      return;
+    }
+
+    grid.textContent = "";
+    topic.items.forEach((item, index) => grid.append(createNewsCard(item, index)));
+  };
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      activeTopic = tab.dataset.newsTopic || activeTopic;
+      renderNewsTopic();
+    });
+  });
+
+  fetch("./data/news.json", { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    })
+    .then((data) => {
+      newsTopics = Array.isArray(data.topics) ? data.topics : [];
+      updated.textContent = data.generatedAt
+        ? `更新 ${formatNewsTime(data.generatedAt)} · ${data.source || "Daily news"}`
+        : "等待首次自动更新";
+      renderNewsTopic();
+    })
+    .catch((error) => {
+      updated.textContent = "新闻数据暂时不可用";
+      renderNewsEmpty("本地直接打开文件时可能无法读取 JSON；部署后会正常加载。自动更新失败时会保留上一次数据。", error);
+    });
+}
 const musicPlayer = document.querySelector("[data-music-player]");
 if (musicPlayer) {
   const deck = musicPlayer.querySelector("[data-music-deck]");

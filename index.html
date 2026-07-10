@@ -8,7 +8,7 @@
       name="description"
       content="applecry 的个人主页：AI 实践、产品实验、公开写作、音乐和长期学习。"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260709-11" />
+    <link rel="stylesheet" href="./styles.css?v=20260710-1" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -19,6 +19,7 @@
       <nav class="nav" aria-label="主导航">
         <a href="#about">关于</a>
         <a href="#notes">笔记</a>
+        <a href="#news">热点</a>
         <a href="#music">音乐</a>
         <a href="#focus">方向</a>
         <a href="#works">项目</a>
@@ -62,7 +63,7 @@
         <span>2026</span>
         <span>Building with AI</span>
         <span>Writing in public</span>
-        <span>Night playlist ready</span>
+        <span>Daily signals ready</span>
       </section>
 
       <section class="section intro" id="about">
@@ -149,6 +150,27 @@
         </div>
       </section>
 
+      <section class="section news-section" id="news" aria-labelledby="news-title" data-news-section>
+        <div class="section-heading compact">
+          <p class="eyebrow">Signals · 每日热点</p>
+          <h2 id="news-title">每天扫一遍 AI、美股和 A股。</h2>
+          <p>自动聚合最近 24 小时的主题相关报道，留下值得继续追踪的线索，不替代自己的判断。</p>
+        </div>
+        <div class="news-toolbar">
+          <div class="news-tabs" role="group" aria-label="新闻主题">
+            <button class="news-tab is-active" type="button" data-news-topic="ai" aria-pressed="true">AI</button>
+            <button class="news-tab" type="button" data-news-topic="us-stocks" aria-pressed="false">美股</button>
+            <button class="news-tab" type="button" data-news-topic="a-shares" aria-pressed="false">A股</button>
+          </div>
+          <p class="news-updated" data-news-updated>等待首次自动更新</p>
+        </div>
+        <div class="news-grid" data-news-grid aria-live="polite">
+          <div class="news-empty">
+            <strong>新闻数据准备中</strong>
+            <span>GitHub Actions 首次运行后，这里会显示 AI、美股和 A股的每日推荐。</span>
+          </div>
+        </div>
+      </section>
       <section class="section music-section" id="music" aria-labelledby="music-title">
         <div class="section-heading compact">
           <p class="eyebrow">Music · 常驻背景音</p>
@@ -370,6 +392,6 @@
         <span>AI</span>
       </button>
     </div>
-    <script src="./script.js?v=20260709-11"></script>
+    <script src="./script.js?v=20260710-1"></script>
   </body>
 </html>

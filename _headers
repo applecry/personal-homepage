@@ -11,3 +11,6 @@
 
 /*.js
   Cache-Control: public, max-age=86400
+
+/data/*.json
+  Cache-Control: no-cache
