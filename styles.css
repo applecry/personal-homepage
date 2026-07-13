@@ -492,21 +492,58 @@ html[data-theme="dark"] .theme-toggle span {
 }
 
 .note-item {
+  position: relative;
   display: grid;
   grid-template-columns: 112px 1fr;
   gap: 20px;
-  padding: 24px 0;
+  overflow: hidden;
+  padding: 24px 18px;
+  border-left: 4px solid transparent;
   border-bottom: 1px solid var(--line);
+  background: transparent;
+  transition:
+    background-color 220ms ease,
+    border-color 220ms ease,
+    transform 220ms ease;
 }
 
 .note-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
   font-size: 1.25rem;
   font-weight: 850;
   line-height: 1.35;
+  transition: color 180ms ease, transform 220ms ease;
 }
 
-.note-item a:hover {
+.note-item a::after {
+  flex: 0 0 auto;
   color: var(--green);
+  content: "↗";
+  opacity: 0;
+  transform: translate(-8px, 8px);
+  transition: opacity 180ms ease, transform 220ms ease;
+}
+
+.note-item:hover,
+.note-item:focus-within {
+  border-left-color: var(--green);
+  background: color-mix(in srgb, var(--green-soft) 34%, transparent);
+  transform: translateX(6px);
+}
+
+.note-item:hover a,
+.note-item:focus-within a {
+  color: var(--green);
+  transform: translateX(4px);
+}
+
+.note-item:hover a::after,
+.note-item:focus-within a::after {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .note-item p {
@@ -517,7 +554,29 @@ html[data-theme="dark"] .theme-toggle span {
 
 .feature-note {
   border-left: 4px solid var(--green);
-  padding-left: 18px;
+  background: color-mix(in srgb, var(--green-soft) 18%, transparent);
+}
+
+@media (hover: hover) {
+  .note-list:hover .feature-note:not(:hover) {
+    border-left-color: transparent;
+    background: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .note-item,
+  .note-item a,
+  .note-item a::after {
+    transition: none;
+  }
+
+  .note-item:hover,
+  .note-item:focus-within,
+  .note-item:hover a,
+  .note-item:focus-within a {
+    transform: none;
+  }
 }
 
 .compact {
