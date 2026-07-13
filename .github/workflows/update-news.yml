@@ -1,6 +1,11 @@
 name: Update daily news signals
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update-news.mjs"
+      - ".github/workflows/update-news.yml"
   schedule:
     # 08:30 Asia/Shanghai, every day.
     - cron: "30 0 * * *"
