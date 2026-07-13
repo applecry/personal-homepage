@@ -17,6 +17,7 @@ const topics = [
     label: "AI",
     description: "模型、产品、监管与资本动向",
     query: '人工智能 大模型 OpenAI',
+    requiredKeywords: ["AI", "人工智能", "大模型", "OpenAI", "Anthropic", "ChatGPT", "英伟达", "Nvidia"],
     locale: { mkt: "zh-CN", cc: "CN", setlang: "zh-Hans" },
     keywords: ["OpenAI", "Anthropic", "Nvidia", "人工智能", "大模型", "生成式AI", "AI", "model"],
   },
@@ -25,6 +26,7 @@ const topics = [
     label: "美股",
     description: "美股指数、科技股、财报与宏观信号",
     query: '美股 纳斯达克 标普500 科技股',
+    requiredKeywords: ["美股", "纳斯达克", "标普", "道指", "华尔街", "美联储", "Fed", "Nasdaq", "S&P"],
     locale: { mkt: "zh-CN", cc: "CN", setlang: "zh-Hans" },
     keywords: ["Nasdaq", "S&P", "Wall Street", "Nvidia", "Tesla", "Apple", "Fed", "美股", "纳斯达克"],
   },
@@ -33,6 +35,7 @@ const topics = [
     label: "A股",
     description: "A股市场、政策、行业板块与资金面",
     query: 'A股 沪深 上证',
+    requiredKeywords: ["A股", "上证", "沪深", "深证", "创业板", "科创板"],
     locale: { mkt: "zh-CN", cc: "CN", setlang: "zh-Hans" },
     keywords: ["A股", "沪深", "上证", "创业板", "北向资金", "China", "Chinese stocks"],
   },
@@ -261,6 +264,7 @@ const selectArticles = (articles, topic) => {
 
   return articles
     .filter((article) => article.title && article.url && (article.summary || hasReadableChinese(article.title)))
+    .filter((article) => topic.requiredKeywords.some((keyword) => article.title.toLowerCase().includes(keyword.toLowerCase())))
     .filter((article) => Date.now() - new Date(article.publishedAt).getTime() <= maxArticleAgeMs)
     .filter((article) => {
       const urlKey = canonicalUrl(article.url);
