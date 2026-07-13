@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  models: read
 
 jobs:
   update-news:
@@ -23,6 +24,8 @@ jobs:
 
       - name: Generate news data
         run: node scripts/update-news.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit updated news data
         run: |

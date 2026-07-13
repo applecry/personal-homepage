@@ -7,6 +7,9 @@ import { promisify } from "node:util";
 const execFileAsync = promisify(execFile);
 const outputPath = fileURLToPath(new URL("../data/news.json", import.meta.url));
 const rssEndpoint = "https://www.bing.com/news/search";
+const googleNewsEndpoint = "https://news.google.com/rss/search";
+const githubModelsEndpoint = "https://models.github.ai/inference/chat/completions";
+const maxArticleAgeMs = 7 * 24 * 60 * 60 * 1000;
 
 const topics = [
   {
@@ -110,7 +113,7 @@ const summarizeArticle = ({ description }) => {
   return "";
 };
 
-const parseRssItems = (xml, topic) => {
+const parseRssItems = (xml, topic, provider = "bing") => {
   const blocks = Array.from(xml.matchAll(/<item>([\s\S]*?)<\/item>/gi), (match) => match[1]);
 
   return blocks.map((block) => {
@@ -121,7 +124,9 @@ const parseRssItems = (xml, topic) => {
     const publishedAt = new Date(textOf(block, "pubDate") || Date.now()).toISOString();
     const url = originalUrlFromBing(textOf(block, "link"));
     const tags = tagArticle(`${title} ${description}`, topic);
-    const summary = summarizeArticle({ description });
+    const candidateSummary = summarizeArticle({ description });
+    // Google News descriptions repeat the linked headline; do not present them as article summaries.
+    const summary = provider === "google" ? "" : candidateSummary;
 
     return {
       title,
@@ -136,10 +141,22 @@ const parseRssItems = (xml, topic) => {
   });
 };
 
-const buildUrl = (topic) => {
+const buildBingUrl = (topic) => {
   const url = new URL(rssEndpoint);
   url.searchParams.set("q", topic.query);
   url.searchParams.set("format", "rss");
+  url.searchParams.set("mkt", topic.locale.mkt);
+  url.searchParams.set("cc", topic.locale.cc);
+  url.searchParams.set("setlang", topic.locale.setlang);
+  return url;
+};
+
+const buildGoogleUrl = (topic) => {
+  const url = new URL(googleNewsEndpoint);
+  url.searchParams.set("q", `${topic.query} when:2d`);
+  url.searchParams.set("hl", "zh-CN");
+  url.searchParams.set("gl", "CN");
+  url.searchParams.set("ceid", "CN:zh-Hans");
   return url;
 };
 
@@ -197,12 +214,27 @@ const fetchText = async (url) => {
   throw lastError || new Error("fetch failed");
 };
 
-const readTopicText = async (topic) => {
+const readTopicFeeds = async (topic) => {
   if (process.env.NEWS_RSS_DIR) {
-    return readFile(join(process.env.NEWS_RSS_DIR, `${topic.id}.xml`), "utf8");
+    return [{ provider: "fixture", xml: await readFile(join(process.env.NEWS_RSS_DIR, `${topic.id}.xml`), "utf8") }];
   }
 
-  return fetchText(buildUrl(topic));
+  const feeds = [];
+  const sources = [
+    ["google", buildGoogleUrl(topic)],
+    ["bing", buildBingUrl(topic)],
+  ];
+
+  for (const [provider, url] of sources) {
+    try {
+      feeds.push({ provider, xml: await fetchText(url) });
+    } catch (error) {
+      console.warn(`${topic.label}/${provider}: ${error.message}`);
+    }
+  }
+
+  if (!feeds.length) throw new Error("all RSS providers failed");
+  return feeds;
 };
 const scoreArticle = (article, topic) => {
   const haystack = `${article.title} ${article.source}`.toLowerCase();
@@ -228,8 +260,8 @@ const selectArticles = (articles, topic) => {
   const seenSummaries = new Set();
 
   return articles
-    .filter((article) => article.title && article.url && article.summary)
-    .filter((article) => Date.now() - new Date(article.publishedAt).getTime() <= 45 * 24 * 60 * 60 * 1000)
+    .filter((article) => article.title && article.url && (article.summary || hasReadableChinese(article.title)))
+    .filter((article) => Date.now() - new Date(article.publishedAt).getTime() <= maxArticleAgeMs)
     .filter((article) => {
       const urlKey = canonicalUrl(article.url);
       const titleKey = article.title.toLowerCase();
@@ -239,6 +271,7 @@ const selectArticles = (articles, topic) => {
       return true;
     })
     .filter((article) => {
+      if (!article.summary) return true;
       const summaryKey = article.summary.replace(/\s+/g, "").toLowerCase();
       if (seenSummaries.has(summaryKey)) return false;
       seenSummaries.add(summaryKey);
@@ -258,6 +291,57 @@ const selectArticles = (articles, topic) => {
     .slice(0, 6);
 };
 
+const parseJsonResponse = (value = "") => {
+  const clean = value.trim().replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "");
+  return JSON.parse(clean);
+};
+
+const addChineseSummaries = async (items, topic) => {
+  const token = process.env.GITHUB_TOKEN;
+  const missing = items.map((item, index) => ({ item, index })).filter(({ item }) => !item.summary);
+  if (!token || !missing.length) return items;
+
+  const headlines = missing.map(({ item, index }) => ({ index, title: item.title, source: item.source }));
+  try {
+    const response = await fetch(githubModelsEndpoint, {
+      method: "POST",
+      headers: {
+        authorization: `Bearer ${token}`,
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        model: process.env.NEWS_SUMMARY_MODEL || "openai/gpt-4o",
+        temperature: 0.2,
+        messages: [
+          {
+            role: "system",
+            content: "你是中文新闻编辑。只根据标题中明确出现的信息写摘要，不猜测正文、不补充标题之外的事实。每条40到80个汉字，直接说明事件主体、动作和影响线索，避免套话。返回严格JSON数组，元素格式为{index,summary}。",
+          },
+          {
+            role: "user",
+            content: `主题：${topic.label}\n新闻：${JSON.stringify(headlines)}`,
+          },
+        ],
+      }),
+    });
+
+    if (!response.ok) throw new Error(`GitHub Models HTTP ${response.status}`);
+    const result = await response.json();
+    const summaries = parseJsonResponse(result.choices?.[0]?.message?.content || "[]");
+    for (const entry of summaries) {
+      const item = items[Number(entry.index)];
+      if (item && hasReadableChinese(entry.summary)) {
+        item.summary = truncateChineseSummary(entry.summary);
+        item.reason = item.summary;
+      }
+    }
+  } catch (error) {
+    console.warn(`${topic.label}/summary: ${error.message}`);
+  }
+
+  return items;
+};
+
 const readPrevious = async () => {
   try {
     return JSON.parse(await readFile(outputPath, "utf8"));
@@ -270,11 +354,25 @@ const previousTopic = (previous, id) => previous.topics?.find((topic) => topic.i
 
 const fetchTopic = async (topic, previous) => {
   try {
-    const xml = await readTopicText(topic);
-    const items = selectArticles(parseRssItems(xml, topic), topic);
+    const feeds = await readTopicFeeds(topic);
+    const articles = feeds.flatMap(({ provider, xml }) => parseRssItems(xml, topic, provider));
+    const items = selectArticles(articles, topic);
+    const previousSummaries = new Map(
+      (previousTopic(previous, topic.id)?.items || [])
+        .filter((item) => item.summary)
+        .map((item) => [canonicalUrl(item.url), item.summary]),
+    );
+    for (const item of items) {
+      const savedSummary = previousSummaries.get(canonicalUrl(item.url));
+      if (savedSummary) {
+        item.summary = savedSummary;
+        item.reason = savedSummary;
+      }
+    }
+    await addChineseSummaries(items, topic);
     if (items.length) {
       console.log(`${topic.label}: ${items.length} articles`);
-      return { id: topic.id, label: topic.label, description: topic.description, items };
+      return { id: topic.id, label: topic.label, description: topic.description, items, stale: false };
     }
 
     console.warn(`${topic.label}: no fresh articles, keeping previous data if available`);
@@ -301,9 +399,19 @@ const main = async () => {
     await delay(1200);
   }
 
+  const topicSignature = (value) => JSON.stringify(
+    value.map((topic) => topic.items.map(({ title, url, publishedAt, summary }) => ({ title, url, publishedAt, summary }))),
+  );
+  const contentChanged = topicSignature(nextTopics) !== topicSignature(previous.topics || []);
+
+  if (!contentChanged) {
+    console.log("No article changes; keeping the existing content timestamp");
+    return;
+  }
+
   const payload = {
     generatedAt: new Date().toISOString(),
-    source: "Bing News RSS",
+    source: "Google News RSS + Bing News RSS",
     topics: nextTopics,
   };
 
