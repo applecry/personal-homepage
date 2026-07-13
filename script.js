@@ -39,6 +39,70 @@ window.addEventListener("scroll", () => {
 syncHeader();
 syncActiveLink();
 
+const hero = document.querySelector(".hero");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+if (hero && !reduceMotion.matches) {
+  let pointerX = 0;
+  let pointerY = 0;
+  let currentX = 0;
+  let currentY = 0;
+  let scrollOffset = 0;
+  let heroVisible = true;
+  let frame = 0;
+
+  const updateScrollOffset = () => {
+    const rect = hero.getBoundingClientRect();
+    scrollOffset = Math.max(-18, Math.min(18, -rect.top * 0.055));
+  };
+
+  hero.addEventListener("pointermove", (event) => {
+    if (event.pointerType === "touch") return;
+    const rect = hero.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width;
+    const y = (event.clientY - rect.top) / rect.height;
+    pointerX = (0.5 - x) * 18;
+    pointerY = (0.5 - y) * 12;
+    hero.style.setProperty("--hero-light-x", `${Math.round(x * 100)}%`);
+    hero.style.setProperty("--hero-light-y", `${Math.round(y * 100)}%`);
+  });
+
+  hero.addEventListener("pointerleave", () => {
+    pointerX = 0;
+    pointerY = 0;
+    hero.style.setProperty("--hero-light-x", "68%");
+    hero.style.setProperty("--hero-light-y", "38%");
+  });
+
+  const observer = new IntersectionObserver(([entry]) => {
+    heroVisible = entry.isIntersecting;
+  });
+  observer.observe(hero);
+
+  const renderHeroMotion = (time) => {
+    if (heroVisible) {
+      const ambientX = Math.sin(time / 6200) * 2.4;
+      const ambientY = Math.cos(time / 7600) * 1.8;
+      currentX += (pointerX + ambientX - currentX) * 0.045;
+      currentY += (pointerY + scrollOffset + ambientY - currentY) * 0.045;
+      hero.style.setProperty("--hero-pan-x", `${currentX.toFixed(2)}px`);
+      hero.style.setProperty("--hero-pan-y", `${currentY.toFixed(2)}px`);
+    }
+    frame = requestAnimationFrame(renderHeroMotion);
+  };
+
+  window.addEventListener("scroll", updateScrollOffset, { passive: true });
+  updateScrollOffset();
+  frame = requestAnimationFrame(renderHeroMotion);
+
+  reduceMotion.addEventListener("change", (event) => {
+    if (!event.matches) return;
+    cancelAnimationFrame(frame);
+    observer.disconnect();
+    hero.style.removeProperty("--hero-pan-x");
+    hero.style.removeProperty("--hero-pan-y");
+  }, { once: true });
+}
+
 const newsSection = document.querySelector("[data-news-section]");
 if (newsSection) {
   const grid = newsSection.querySelector("[data-news-grid]");
