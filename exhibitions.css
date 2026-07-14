@@ -7,6 +7,14 @@
   --atlas-line: rgba(17, 23, 19, 0.13);
   --atlas-blue: #245de8;
   --atlas-shadow: 0 18px 55px rgba(31, 42, 35, 0.14);
+  --line: var(--atlas-line);
+  --radius: 8px;
+  --paper-strong: #ffffff;
+  --muted: var(--atlas-muted);
+  --ink: var(--atlas-ink);
+  --paper: #ffffff;
+  --amber-soft: rgba(36, 93, 232, 0.28);
+  --green: #3f8f68;
 }
 
 * { box-sizing: border-box; }
