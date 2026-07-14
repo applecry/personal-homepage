@@ -5,42 +5,29 @@ import { promisify } from "node:util";
 
 const execFileAsync = promisify(execFile);
 const outputPath = fileURLToPath(new URL("../data/exhibitions.json", import.meta.url));
-const shanghaiSearchTerms = ["上海", "上海新国际博览中心", "上海世博展览馆", "国家会展中心（上海）"];
+const curatedPath = fileURLToPath(new URL("../data/exhibitions-curated.json", import.meta.url));
+const shanghaiSearchTerms = [
+  "上海",
+  "上海新国际博览中心",
+  "上海世博展览馆",
+  "国家会展中心（上海）",
+  "ChinaJoy",
+  "中国国际数码互动娱乐展览会",
+  "上海展会 2026",
+];
 const anchoredDetailPaths = ["/detail/q2TfK24G", "/detail/yaYnmW6k", "/detail/1EwTjMpx", "/detail/uzkWVcq6"];
 const listUrlFor = (keyword) => `https://www.expofinder.com/list?keyword=${encodeURIComponent(keyword)}`;
 const shanghaiListUrl = listUrlFor(shanghaiSearchTerms[0]);
-const maxDetails = 20;
+const maxDetails = 120;
+const shanghaiCalendarUrl = "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html";
+const chinajoyOfficialUrl = "https://btb.chinajoy.net/news/63876";
 const waicOfficialUrl = "https://www.shanghai.gov.cn/nw4411/20260708/ba4c8e75f2744b43a6080ebb82a3aab2.html";
 
-const verifiedOfficialEvents = [
-  {
-    id: "waic-2026",
-    name: "2026 World Artificial Intelligence Conference",
-    nameZh: "2026世界人工智能大会暨人工智能全球治理高级别会议（WAIC）",
-    aliases: ["WAIC", "世界人工智能大会", "上海世界人工智能大会"],
-    category: "科技",
-    region: "亚洲",
-    city: "上海",
-    country: "中国",
-    venue: "世博中心、上海世博展览馆、张江科学会堂、徐汇西岸国际会展中心",
-    startDate: "2026-07-17",
-    endDate: "2026-07-20",
-    lat: 31.185,
-    lng: 121.489,
-    summary: "大会于上海世博、张江和西岸三大片区举行，设置论坛会议、展览展示、评奖赛事、应用体验、创新孵化与招才引智等板块。",
-    visitorType: "公众需通过官方 Hi WAIC 应用注册购票",
-    source: "上海市人民政府官方发布",
-    sourceUrl: waicOfficialUrl,
-    url: waicOfficialUrl,
-    verification: "官方发布已核验日期与三大片区会场",
-    collectedAt: new Date().toISOString(),
-    featured: true,
-  },
-];
-
 const sourceDefinitions = [
-  { name: "上海市人民政府", scope: "上海重大活动官方日期与场馆核验", url: "https://www.shanghai.gov.cn/", probe: waicOfficialUrl, automated: true },
-  { name: "展查查", scope: "上海排期自动采集与结构化详情", url: "https://www.expofinder.com/", probe: shanghaiListUrl, automated: true },
+  { name: "上海市商务委员会", scope: "2026 年上海重点展会官方基线（90 场，收录当前日期之后的排期）", url: shanghaiCalendarUrl, probe: shanghaiCalendarUrl },
+  { name: "上海市人民政府", scope: "WAIC、ChinaJoy 与月度重点展会官方核验", url: "https://www.shanghai.gov.cn/", probe: waicOfficialUrl },
+  { name: "ChinaJoy", scope: "ChinaJoy 日期、场馆与主题官方核验", url: "https://chinajoy.net/", probe: chinajoyOfficialUrl },
+  { name: "展查查", scope: "上海长尾排期自动发现与结构化详情", url: "https://www.expofinder.com/", probe: shanghaiListUrl, automated: true },
   { name: "去展网", scope: "上海近期排期发现与交叉核验", url: "https://www.qufair.com/", probe: "https://www.qufair.com/fl/0-274-0/" },
   { name: "第一展会网", scope: "上海展馆、行业与排期交叉核验", url: "https://www.onezh.com/", probe: "https://www.onezh.com/zhanhui/1_21_0_0_20260101/20261231/" },
   { name: "展外展", scope: "参展商数据与参展轨迹参考", url: "https://www.expoagain.com/", probe: "https://www.expoagain.com/" },
@@ -126,15 +113,39 @@ const shanghaiDate = (value) => {
 
 const categoryOf = (name, description) => {
   const text = `${name} ${description}`.toLowerCase();
-  if (/游戏|电玩|动漫|电竞|game|comic/.test(text)) return "游戏";
+  if (/chinajoy|数码互动娱乐|游戏|电玩|动漫|电竞|game|gaming|comic|esport/.test(text)) return "游戏";
   if (/艺术|设计|珠宝|摄影|画廊|art|design|jewel/.test(text)) return "艺术";
-  if (/人工智能|机器人|电子|半导体|数据中心|储能|新能源|科技|智能|ai |robot|electronic|technology/.test(text)) return "科技";
+  if (/人工智能|机器人|电子|半导体|数据中心|储能|新能源|工业|机械|科技|智能|ai(?:\s|$)|robot|electronic|technology|industrial/.test(text)) return "科技";
   return "商贸";
 };
 
 const coordinatesFor = (venue) => venueCoordinates.find(([pattern]) => pattern.test(venue))?.[1] || [31.2304, 121.4737];
 
+const eventFromJsonLdValue = (value) => {
+  if (!value) return null;
+  if (Array.isArray(value)) {
+    return value.map(eventFromJsonLdValue).find(Boolean) || null;
+  }
+  if (value["@type"] === "Event" || (Array.isArray(value["@type"]) && value["@type"].includes("Event"))) {
+    return value;
+  }
+  return eventFromJsonLdValue(value["@graph"]);
+};
+
 const parseEventJsonLd = (html) => {
+  const standardScripts = Array.from(
+    html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi),
+    (match) => match[1],
+  );
+  for (const script of standardScripts) {
+    try {
+      const event = eventFromJsonLdValue(JSON.parse(decodeEntities(script).trim()));
+      if (event) return event;
+    } catch {
+      // Continue with other JSON-LD blocks and the Next.js flight fallback.
+    }
+  }
+
   const contextIndex = html.indexOf("@context");
   if (contextIndex < 0) return null;
   const pushToken = "self.__next_f.push([1,";
@@ -152,7 +163,26 @@ const parseEventJsonLd = (html) => {
 
 const detailPathsFromList = (html) => {
   const paths = Array.from(html.matchAll(/\/detail\/[A-Za-z0-9]+/g), (match) => match[0]);
-  return [...new Set(paths)].slice(0, maxDetails);
+  return [...new Set(paths)];
+};
+
+const loadCuratedEvents = async () => {
+  const catalog = JSON.parse(await readFile(curatedPath, "utf8"));
+  const defaults = catalog.defaults || {};
+  const collectedAt = new Date().toISOString();
+  return (catalog.events || []).map((entry) => {
+    const event = { ...defaults, ...entry };
+    const [lat, lng] = coordinatesFor(event.venue || "");
+    return {
+      ...event,
+      lat: Number.isFinite(event.lat) ? event.lat : lat,
+      lng: Number.isFinite(event.lng) ? event.lng : lng,
+      sourceUrl: event.sourceUrl || event.url || defaults.sourceUrl,
+      url: event.url || event.sourceUrl || defaults.sourceUrl,
+      collectedAt,
+      featured: Boolean(event.featured),
+    };
+  });
 };
 
 const locationParts = (location = "") => cleanText(location)
@@ -211,17 +241,41 @@ const probeSource = async (source) => {
   }
 };
 
-const collectShanghai = async () => {
-  const listPages = await Promise.all(shanghaiSearchTerms.map((keyword) => fetchText(listUrlFor(keyword))));
-  const detailPaths = [...new Set([...anchoredDetailPaths, ...listPages.flatMap(detailPathsFromList)])].slice(0, maxDetails);
-  if (!detailPaths.length) throw new Error("展查查上海列表未发现详情链接");
+const roundRobinPaths = (pathGroups, limit = maxDetails) => {
+  const result = [...anchoredDetailPaths];
+  const seen = new Set(result);
+  const longestGroup = Math.max(0, ...pathGroups.map((paths) => paths.length));
+  for (let index = 0; index < longestGroup && result.length < limit; index += 1) {
+    for (const paths of pathGroups) {
+      const path = paths[index];
+      if (path && !seen.has(path)) {
+        seen.add(path);
+        result.push(path);
+        if (result.length >= limit) break;
+      }
+    }
+  }
+  return result.slice(0, limit);
+};
+
+const collectShanghai = async (verifiedOfficialEvents) => {
+  const listResults = await Promise.allSettled(
+    shanghaiSearchTerms.map((keyword) => fetchText(listUrlFor(keyword))),
+  );
+  const listPages = listResults.flatMap((result, index) => {
+    if (result.status === "fulfilled") return [result.value];
+    console.warn(`List query failed (${shanghaiSearchTerms[index]}): ${result.reason?.message || result.reason}`);
+    return [];
+  });
+  const detailPaths = roundRobinPaths(listPages.map(detailPathsFromList));
 
   const events = [];
   let missingSchema = 0;
   let rejectedEvents = 0;
-  for (let offset = 0; offset < detailPaths.length; offset += 2) {
-    const batch = detailPaths.slice(offset, offset + 2);
-    const results = await Promise.all(batch.map(async (path) => {
+  let failedDetails = 0;
+  for (let offset = 0; offset < detailPaths.length; offset += 6) {
+    const batch = detailPaths.slice(offset, offset + 6);
+    const results = await Promise.allSettled(batch.map(async (path) => {
       const sourceUrl = new URL(path, "https://www.expofinder.com").toString();
       const html = await fetchText(sourceUrl);
       const schema = parseEventJsonLd(html);
@@ -230,10 +284,15 @@ const collectShanghai = async () => {
       if (schema && !event) rejectedEvents += 1;
       return event;
     }));
-    events.push(...results.filter(Boolean));
-    await new Promise((resolve) => setTimeout(resolve, 800));
+    for (const result of results) {
+      if (result.status === "fulfilled" && result.value) events.push(result.value);
+      if (result.status === "rejected") failedDetails += 1;
+    }
+    await new Promise((resolve) => setTimeout(resolve, 250));
   }
-  if (missingSchema || rejectedEvents) console.warn(`Skipped details: ${missingSchema} without Event schema, ${rejectedEvents} outside Shanghai or invalid`);
+  if (missingSchema || rejectedEvents || failedDetails) {
+    console.warn(`Skipped details: ${missingSchema} without Event schema, ${rejectedEvents} outside Shanghai or invalid, ${failedDetails} fetch failures`);
+  }
   return mergeVerifiedEvents(events, verifiedOfficialEvents);
 };
 
@@ -249,15 +308,13 @@ const mergeVerifiedEvents = (events, officialEvents) => [
 ];
 
 const eventKey = (event) => event.id || `${event.nameZh || event.name}|${event.startDate}`.replace(/\s+/g, "").toLowerCase();
-const contentSignature = (events) => JSON.stringify(events.map((event) => ({
-  id: event.id, nameZh: event.nameZh, startDate: event.startDate, endDate: event.endDate,
-  venue: event.venue, city: event.city, country: event.country, url: event.url, summary: event.summary,
-})));
+const contentSignature = (events) => JSON.stringify(events.map(({ collectedAt, ...event }) => event));
 
 const main = async () => {
   const previous = JSON.parse(await readFile(outputPath, "utf8"));
+  const verifiedOfficialEvents = await loadCuratedEvents();
   const [collected, sourceResults] = await Promise.all([
-    collectShanghai(),
+    collectShanghai(verifiedOfficialEvents),
     Promise.all(sourceDefinitions.map(probeSource)),
   ]);
 
@@ -269,29 +326,36 @@ const main = async () => {
   const today = shanghaiDate(new Date());
   const preserved = previous.events
     .map((event) => ({ ...event, country: normalizeCountry(event.country, event.city), city: normalizeCity(event.city, event.country) }))
-    .filter((event) => event.city !== "上海" || event.endDate >= today);
-  const mergedByKey = new Map(preserved.map((event) => [eventKey(event), event]));
-  for (const event of collected) {
+    .filter((event) => event.endDate >= today);
+  const combined = mergeVerifiedEvents([...preserved, ...collected], verifiedOfficialEvents);
+  const mergedByKey = new Map();
+  for (const event of combined) {
     if (event.endDate >= today) mergedByKey.set(eventKey(event), event);
   }
   const merged = [...mergedByKey.values()];
   merged.sort((a, b) => a.startDate.localeCompare(b.startDate) || a.nameZh.localeCompare(b.nameZh, "zh-CN"));
 
-  if (contentSignature(merged) === contentSignature(previous.events || [])) {
-    console.log(`No exhibition changes; ${collected.length} Shanghai records checked`);
-    return;
-  }
+  const now = new Date().toISOString();
+  const contentChanged = contentSignature(merged) !== contentSignature(previous.events || []);
 
   const payload = {
-    updatedAt: new Date().toISOString(),
+    updatedAt: contentChanged ? now : (previous.updatedAt || now),
+    checkedAt: now,
     focusCity: "上海",
     geographyPolicy: { Taiwan: "中国台湾", HongKong: "中国香港" },
-    collection: { mode: "daily", checkedAt: new Date().toISOString(), source: "上海市政府官方发布 + 展查查公开结构化数据", collected: collected.length },
+    collection: {
+      mode: "daily",
+      checkedAt: now,
+      source: "上海市商务委重点展会基线 + 近期官方发布 + 展查查长尾发现",
+      collected: collected.length,
+      curated: verifiedOfficialEvents.length,
+      total: merged.length,
+    },
     events: merged,
     sources: sourceResults.map(({ probe, ...source }) => source),
   };
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-  console.log(`Wrote ${merged.length} exhibitions (${collected.length} collected from Shanghai)`);
+  console.log(`Wrote ${merged.length} exhibitions (${verifiedOfficialEvents.length} curated; ${collected.length - verifiedOfficialEvents.length} discovered; content ${contentChanged ? "changed" : "unchanged"})`);
 };
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -301,4 +365,13 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   });
 }
 
-export { mergeVerifiedEvents, normalizeCountry, officialEventMatches, parseEventJsonLd };
+export {
+  categoryOf,
+  detailPathsFromList,
+  loadCuratedEvents,
+  mergeVerifiedEvents,
+  normalizeCountry,
+  officialEventMatches,
+  parseEventJsonLd,
+  roundRobinPaths,
+};

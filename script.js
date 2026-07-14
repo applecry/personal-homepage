@@ -110,6 +110,8 @@ if (newsSection) {
   const tabs = Array.from(newsSection.querySelectorAll("[data-news-topic]"));
   let activeTopic = tabs.find((tab) => tab.classList.contains("is-active"))?.dataset.newsTopic || "ai";
   let newsTopics = [];
+  let newsPayload = null;
+  let newsRequestId = 0;
 
   const formatNewsTime = (value) => {
     if (!value) return "等待首次自动更新";
@@ -121,6 +123,7 @@ if (newsSection) {
       hour: "2-digit",
       minute: "2-digit",
       hour12: false,
+      timeZone: "Asia/Shanghai",
     }).format(date);
   };
 
@@ -166,7 +169,7 @@ if (newsSection) {
     source.textContent = item.source || item.domain || "source";
     const tags = document.createElement("div");
     tags.className = "news-tags";
-    (item.tags || []).slice(0, 3).forEach((tag) => {
+    (Array.isArray(item.tags) ? item.tags : []).slice(0, 3).forEach((tag) => {
       const pill = document.createElement("span");
       pill.textContent = tag;
       tags.append(pill);
@@ -177,8 +180,23 @@ if (newsSection) {
     return card;
   };
 
+  const renderNewsStatus = (topic) => {
+    if (!newsPayload) return;
+    const checkedAt = newsPayload.checkedAt || newsPayload.generatedAt;
+    const latestAt = topic?.latestPublishedAt || topic?.items?.[0]?.publishedAt;
+    if (topic?.stale) {
+      updated.textContent = `检查 ${formatNewsTime(checkedAt)} · ${topic.label} 暂无新结果，沿用 ${formatNewsTime(latestAt)}`;
+      updated.dataset.state = "stale";
+      return;
+    }
+    updated.textContent = `检查 ${formatNewsTime(checkedAt)} · ${topic?.label || "新闻"} 最新 ${formatNewsTime(latestAt)} · ${newsPayload.source || "Daily news"}`;
+    updated.dataset.state = "fresh";
+  };
+
   const renderNewsTopic = () => {
-    const topic = newsTopics.find((item) => item.id === activeTopic) || newsTopics[0];
+    const requestedTopic = newsTopics.find((item) => item.id === activeTopic);
+    const topic = requestedTopic || newsTopics[0];
+    if (!requestedTopic && topic) activeTopic = topic.id;
     tabs.forEach((tab) => {
       const isActive = tab.dataset.newsTopic === activeTopic;
       tab.classList.toggle("is-active", isActive);
@@ -186,12 +204,16 @@ if (newsSection) {
     });
 
     if (!topic?.items?.length) {
+      renderNewsStatus(topic);
       renderNewsEmpty("GitHub Actions 首次运行后，这里会显示这个主题的每日推荐。");
       return;
     }
 
     grid.textContent = "";
-    topic.items.forEach((item, index) => grid.append(createNewsCard(item, index)));
+    topic.items
+      .filter((item) => item && typeof item === "object" && item.title && item.url)
+      .forEach((item, index) => grid.append(createNewsCard(item, index)));
+    renderNewsStatus(topic);
   };
 
   tabs.forEach((tab) => {
@@ -201,22 +223,41 @@ if (newsSection) {
     });
   });
 
-  fetch("./data/news.json", { cache: "no-store" })
-    .then((response) => {
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response.json();
-    })
-    .then((data) => {
-      newsTopics = Array.isArray(data.topics) ? data.topics : [];
-      updated.textContent = data.generatedAt
-        ? `更新 ${formatNewsTime(data.generatedAt)} · ${data.source || "Daily news"}`
-        : "等待首次自动更新";
-      renderNewsTopic();
-    })
-    .catch((error) => {
-      updated.textContent = "新闻数据暂时不可用";
-      renderNewsEmpty("本地直接打开文件时可能无法读取 JSON；部署后会正常加载。自动更新失败时会保留上一次数据。", error);
-    });
+  const loadNews = () => {
+    const requestId = ++newsRequestId;
+    return fetch(`./data/news.json?checked=${Date.now()}`, { cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((data) => {
+        if (requestId !== newsRequestId) return;
+        newsPayload = data;
+        newsTopics = (Array.isArray(data.topics) ? data.topics : [])
+          .filter((topic) => topic && typeof topic === "object")
+          .map((topic) => ({ ...topic, items: Array.isArray(topic.items) ? topic.items : [] }));
+        renderNewsTopic();
+      })
+      .catch(() => {
+        if (requestId !== newsRequestId) return;
+        updated.textContent = newsTopics.length ? "新闻刷新失败 · 继续显示上一次结果" : "新闻数据暂时不可用";
+        updated.dataset.state = "stale";
+        if (!newsTopics.length) {
+          renderNewsEmpty("本地直接打开文件时可能无法读取 JSON；部署后会正常加载。自动更新失败时会保留上一次数据。");
+        }
+      });
+  };
+
+  loadNews();
+  window.setInterval(() => {
+    if (!document.hidden) loadNews();
+  }, 15 * 60 * 1000);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) loadNews();
+  });
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) loadNews();
+  });
 }
 const musicPlayer = document.querySelector("[data-music-player]");
 if (musicPlayer) {
@@ -391,6 +432,12 @@ const pageAgentScriptSources = [
 ];
 let pageAgentScriptPromise = null;
 let agentStatusTimer = null;
+const pageAgentSessionKey = "applecry-page-agent-session-v1";
+const pageAgentWindowNamePrefix = `${pageAgentSessionKey}:`;
+const pageAgentSessionMaxAge = 12 * 60 * 60 * 1000;
+const pageAgentSessionAgents = new WeakSet();
+let activePageAgentForSession = null;
+let pageAgentLeavingOrigin = false;
 
 const pageAgentConfig = {
   model: "qwen3.5-plus",
@@ -477,6 +524,169 @@ const getPanelWrapper = (agent) => {
     return null;
   }
 };
+
+const cloneAgentSessionValue = (value) => {
+  if (value === undefined) return undefined;
+
+  try {
+    return JSON.parse(JSON.stringify(value));
+  } catch (error) {
+    return String(value ?? "");
+  }
+};
+
+const compactAgentHistory = (history) => {
+  if (!Array.isArray(history)) return [];
+
+  return history.slice(-60).flatMap((entry) => {
+    if (!entry || typeof entry !== "object") return [];
+
+    if (entry.type === "step") {
+      return [
+        {
+          type: "step",
+          stepIndex: entry.stepIndex,
+          reflection: cloneAgentSessionValue(entry.reflection),
+          action: entry.action
+            ? {
+                name: entry.action.name,
+                input: cloneAgentSessionValue(entry.action.input),
+                output: cloneAgentSessionValue(entry.action.output),
+              }
+            : undefined,
+        },
+      ];
+    }
+
+    if (["error", "retry", "observation", "user_takeover"].includes(entry.type)) {
+      return [
+        {
+          type: entry.type,
+          message: entry.message,
+          content: entry.content,
+          attempt: entry.attempt,
+          maxAttempts: entry.maxAttempts,
+        },
+      ];
+    }
+
+    return [];
+  });
+};
+
+const isAgentPanelOpen = (agent) => {
+  const wrapper = getPanelWrapper(agent);
+  return Boolean(wrapper && !agent?.disposed && wrapper.style.display !== "none");
+};
+
+const getPageAgentStorage = (storageName) => {
+  try {
+    return window[storageName] || null;
+  } catch (error) {
+    return null;
+  }
+};
+
+const readPageAgentSession = () => {
+  const storages = [getPageAgentStorage("sessionStorage"), getPageAgentStorage("localStorage")].filter(Boolean);
+
+  for (const storage of storages) {
+    try {
+      const session = JSON.parse(storage.getItem(pageAgentSessionKey) || "null");
+      if (session && Date.now() - Number(session.updatedAt || 0) <= pageAgentSessionMaxAge) {
+        return session;
+      }
+      storage.removeItem(pageAgentSessionKey);
+    } catch (error) {
+      // Try the next browser storage implementation.
+    }
+  }
+
+  try {
+    if (window.name.startsWith(pageAgentWindowNamePrefix)) {
+      const session = JSON.parse(window.name.slice(pageAgentWindowNamePrefix.length));
+      if (session && Date.now() - Number(session.updatedAt || 0) <= pageAgentSessionMaxAge) {
+        return session;
+      }
+      window.name = "";
+    }
+  } catch (error) {
+    // Window name is only a last-resort fallback for restricted browsers.
+  }
+
+  return null;
+};
+
+const persistPageAgentSession = (agent = activePageAgentForSession) => {
+  if (!agent) return;
+
+  const serializedSession = JSON.stringify({
+    task: String(agent.task || ""),
+    history: compactAgentHistory(agent.history),
+    panelOpen: isAgentPanelOpen(agent),
+    updatedAt: Date.now(),
+  });
+  let persisted = false;
+
+  for (const storageName of ["sessionStorage", "localStorage"]) {
+    try {
+      const storage = getPageAgentStorage(storageName);
+      storage?.setItem(pageAgentSessionKey, serializedSession);
+      persisted = persisted || storage?.getItem(pageAgentSessionKey) === serializedSession;
+    } catch (error) {
+      // A storage implementation can be unavailable in strict privacy modes.
+    }
+  }
+
+  if (!persisted) {
+    try {
+      window.name = `${pageAgentWindowNamePrefix}${serializedSession}`;
+    } catch (error) {
+      // The conversation still works on the current page when every store is blocked.
+    }
+  }
+};
+
+const installPageAgentSession = (agent) => {
+  if (!agent) return null;
+  activePageAgentForSession = agent;
+
+  const session = readPageAgentSession();
+  if (session && !agent.task && agent.history.length === 0) {
+    agent.task = String(session.task || "");
+    agent.history = Array.isArray(session.history) ? session.history : [];
+    agent.dispatchEvent(new Event("historychange"));
+
+    if (session.panelOpen) {
+      agent.panel.show();
+    }
+  }
+
+  if (!pageAgentSessionAgents.has(agent)) {
+    pageAgentSessionAgents.add(agent);
+    agent.addEventListener("historychange", () => persistPageAgentSession(agent));
+    agent.addEventListener("statuschange", () => persistPageAgentSession(agent));
+  }
+
+  return agent;
+};
+
+window.addEventListener("pagehide", () => {
+  if (!pageAgentLeavingOrigin) persistPageAgentSession();
+});
+document.addEventListener("click", (event) => {
+  const link = event.target.closest?.("a[href]");
+  if (!link || (link.target && link.target !== "_self")) return;
+
+  try {
+    if (new URL(link.href, location.href).origin !== location.origin && window.name.startsWith(pageAgentWindowNamePrefix)) {
+      pageAgentLeavingOrigin = true;
+      window.name = "";
+    }
+  } catch (error) {
+    // Ignore malformed links; the browser will handle them normally.
+  }
+});
 
 const getSpeechRecognition = () => window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -886,6 +1096,7 @@ const createOrReusePageAgent = () => {
 
   const existingWrapper = getPanelWrapper(window.pageAgent);
   if (window.pageAgent && existingWrapper && document.body.contains(existingWrapper)) {
+    installPageAgentSession(window.pageAgent);
     installAgentVoiceInput(window.pageAgent);
     return window.pageAgent;
   }
@@ -897,6 +1108,7 @@ const createOrReusePageAgent = () => {
   }
 
   window.pageAgent = new window.PageAgent(pageAgentConfig);
+  installPageAgentSession(window.pageAgent);
   installAgentVoiceInput(window.pageAgent);
   return window.pageAgent;
 };
@@ -907,6 +1119,10 @@ const preloadPageAgent = async () => {
 
   try {
     await loadPageAgentScript();
+    const session = readPageAgentSession();
+    if (session?.panelOpen) {
+      createOrReusePageAgent();
+    }
     setAgentButtonState("ready");
     setAgentStatus("PageAgent 已就绪");
   } catch (error) {

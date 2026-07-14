@@ -798,6 +798,10 @@ html[data-theme="dark"] .theme-toggle span {
   text-align: right;
 }
 
+.news-updated[data-state="stale"] {
+  color: var(--amber);
+}
+
 .news-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

@@ -1,6 +1,14 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { mergeVerifiedEvents, normalizeCountry, officialEventMatches, parseEventJsonLd } from "./update-exhibitions.mjs";
+import {
+  categoryOf,
+  loadCuratedEvents,
+  mergeVerifiedEvents,
+  normalizeCountry,
+  officialEventMatches,
+  parseEventJsonLd,
+  roundRobinPaths,
+} from "./update-exhibitions.mjs";
 
 test("normalizes Taiwan and Hong Kong labels", () => {
   assert.equal(normalizeCountry("Taiwan", "Taipei"), "中国台湾");
@@ -21,6 +29,38 @@ test("reads Event JSON-LD from a Next.js flight payload", () => {
   const flightValue = JSON.stringify(JSON.stringify(event));
   const html = `<script>self.__next_f.push([1,${flightValue}])</script>`;
   assert.deepEqual(parseEventJsonLd(html), event);
+});
+
+test("reads Event JSON-LD from a standard script and @graph", () => {
+  const event = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: "ChinaJoy 2026",
+    startDate: "2026-07-31",
+    endDate: "2026-08-03",
+  };
+  const html = `<script type="application/ld+json">${JSON.stringify({ "@graph": [{ "@type": "WebSite" }, event] })}</script>`;
+  assert.deepEqual(parseEventJsonLd(html), event);
+});
+
+test("classifies ChinaJoy and digital entertainment as games", () => {
+  assert.equal(categoryOf("ChinaJoy 2026", "AI 数字娱乐体验"), "游戏");
+  assert.equal(categoryOf("中国国际数码互动娱乐展览会", ""), "游戏");
+});
+
+test("keeps discovery balanced across search terms", () => {
+  const paths = roundRobinPaths([
+    ["/detail/a1", "/detail/a2", "/detail/a3"],
+    ["/detail/b1", "/detail/b2", "/detail/b3"],
+  ], 8);
+  assert.deepEqual(paths.slice(4), ["/detail/a1", "/detail/b1", "/detail/a2", "/detail/b2"]);
+});
+
+test("curated Shanghai baseline contains ChinaJoy and broad future coverage", async () => {
+  const events = await loadCuratedEvents();
+  assert.ok(events.length >= 30);
+  assert.ok(events.some((event) => event.id === "chinajoy-2026" && event.category === "游戏"));
+  assert.ok(new Set(events.map((event) => event.startDate.slice(0, 7))).size >= 6);
 });
 
 test("official events replace matching aggregator records", () => {

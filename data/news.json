@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-07-13T06:11:57.281Z",
-  "source": "Google News RSS + Bing News RSS",
+  "generatedAt": "2026-07-14T12:23:38.716Z",
+  "checkedAt": "2026-07-14T12:23:38.716Z",
+  "contentUpdatedAt": "2026-07-14T12:23:38.716Z",
+  "source": "Google News RSS + WIRED AI RSS + Le Monde AI RSS（Bing 仅作可用性探测）",
+  "status": {
+    "contentChanged": true,
+    "freshTopics": 3,
+    "staleTopics": [],
+    "sourceErrors": 0
+  },
   "topics": [
     {
       "id": "ai",
@@ -8,84 +16,96 @@
       "description": "模型、产品、监管与资本动向",
       "items": [
         {
-          "title": "印度AI投入仅12.5亿美元，为何跑不出一家OpenAI？",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBSRHBNUnFSSExLYzJSdVh4ZjU0a1g5V0NmLVdDTDc2R0JwNjJZX0JUUHZxRWZJaFF3TVU2VXQ0TU5aYTl6U2FoVTQ4ZDBndlBCbEVlbzFEaGhjQllpN3VnTzhEMUVBS2pGc0ZwaUo2Qms?oc=5",
-          "source": "中华网",
-          "domain": "中华网",
-          "publishedAt": "2026-07-13T05:47:19.000Z",
-          "summary": "印度AI领域仅投入12.5亿美元，未能出现类似OpenAI的领先企业。",
-          "reason": "印度AI领域仅投入12.5亿美元，未能出现类似OpenAI的领先企业。",
+          "title": "比OpenAI快！中企阶耀星辰推全球首款AI手机 - 国际 - 即时国际",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9FQUtjYkNxSGRYODhaZ3VEMDZpSHV0N2pqQjI5a2RRM0NIUHI4dU9rN0F4NFUybGN6ZE9RYjFCRmNPaVAxUU95SGF3UE04V1VjcHZmd0c4LThVT09DVG1HbjFzVUF0d0NLMEgwelJGOA?oc=5",
+          "source": "Sin Chew Daily",
+          "domain": "Sin Chew Daily",
+          "publishedAt": "2026-07-14T11:52:00.000Z",
+          "summary": "",
+          "reason": "",
           "tags": [
             "OpenAI",
             "AI"
           ]
         },
         {
-          "title": "突发人事变动！OpenAI安全负责人离职，组织架构大洗牌",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOXVINk5ROTV1TVJRamlkdmY2cXl2UEZSSXY4RU4tM0NnaEduZE5IdXRKd1N5S1J0RGdSTzRMendRSVVRSVJOQmkyVC1kTUprQ1AtTnVVaE02dWJBQmlVTnBzckNuSlBuTGZMdHpKdGZLVGktMlVoRmdhdVppbGhBSFZXYkZ0OTJ0VkF6MU53?oc=5",
-          "source": "搜狐网",
-          "domain": "搜狐网",
-          "publishedAt": "2026-07-13T04:07:00.000Z",
-          "summary": "OpenAI安全负责人离职，导致组织架构发生重大调整。",
-          "reason": "OpenAI安全负责人离职，导致组织架构发生重大调整。",
+          "title": "AI 终端混战：谁在做加法，谁在重写规则",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mbjNLQ0hhbFBsbmpGaXRGbXphRE4yTmpsOGFVRDJWVmJ4Z054bmx2Nm1xLVF0Q2VNTl9lb2tVSm5laWhNQ241MFQtODRPdXk2UElfZXJ2elhHMEhh?oc=5",
+          "source": "网易新闻客户端",
+          "domain": "网易新闻客户端",
+          "publishedAt": "2026-07-14T05:24:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "title": "刚刚，GPT 5.6 发布会上，OpenAI 暴露了哪些 Agent 技术路线？",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBpbXhZdmpSQ1dCSkZobjdIN1h2RzJKSy1nbDlGV1gxMHVDeS1EMEpFRFpxVmtfWENkWHhBZ09sLVRfMUprWWJYdW5mSWR0MXVWcG9yb3pENFNWTUFDTl9NUUlZbVJFR0ZEcHc?oc=5",
+          "source": "雷峰网",
+          "domain": "雷峰网",
+          "publishedAt": "2026-07-14T04:13:00.000Z",
+          "summary": "",
+          "reason": "",
           "tags": [
             "OpenAI",
             "AI"
           ]
         },
         {
-          "title": "【Anthropic】延长旗舰模型Fable5访问权限至7月19日，以应对竞争与修复品牌信任",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQWprYS1GQzg4RmJtcklUYVV0emUwOXZmZS1PcHEyZW1DTkZkQm5odmlJS01nc2toNEtyV1J1NmFxcFBod1NXcDlSdUEtWm1neEVCeEVwZFZpQ3B1NzlMR3NTa3U3SHhjTXpDQ2M2MU4tbW5HY2NUbkNVSmpZNDF2M1ZzTV9SQk1RNE5XSA?oc=5",
-          "source": "搜狐网",
-          "domain": "搜狐网",
-          "publishedAt": "2026-07-13T04:12:07.000Z",
-          "summary": "Anthropic将旗舰模型Fable5的访问权限延长至7月19日，以应对竞争和修复品牌信任。",
-          "reason": "Anthropic将旗舰模型Fable5的访问权限延长至7月19日，以应对竞争和修复品牌信任。",
+          "title": "抢滩 OpenAI 腹地!Anthropic 启动 Claude 卢比计价，全面发力印度市场",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBxWkhfay1ZbVp0V2NLb0J6QzBqQWl4eGlmMFkwMmU2bjV6MGlvUGpJR3haRjk1M1dIRHhJM3FycU9WVnZHTFA0UVVMazk5UQ?oc=5",
+          "source": "AIBase",
+          "domain": "AIBase",
+          "publishedAt": "2026-07-14T01:41:00.000Z",
+          "summary": "",
+          "reason": "",
           "tags": [
-            "Anthropic"
+            "OpenAI",
+            "Anthropic",
+            "AI"
           ]
         },
         {
-          "title": "ChatGPT走向全家共用，OpenAI急招家庭产品经理",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBoak5scVZ5dmxqTFE2Q3dxUjQ2alVFemJJNUZ2a3hiRUJSQ2FMbVJMZVdON2stM2NBVDE0M0t6elQ5OFpNVzkwb1dRR000eDlwOS1HYm9VQk96Y1FBZnNDWTNn?oc=5",
-          "source": "手机网易网",
-          "domain": "手机网易网",
-          "publishedAt": "2026-07-13T02:27:36.000Z",
-          "summary": "OpenAI计划推出家庭共享功能，正在招聘家庭产品经理。",
-          "reason": "OpenAI计划推出家庭共享功能，正在招聘家庭产品经理。",
+          "title": "苹果起诉OpenAI AI Agent时代的硬件入口争夺战开打",
+          "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxOOFc0eTQwRk5xSGxseENROWJONWs2Y0NvSk5EdE90RWR0dEVmTzdzSERfVFU3dHRzdVRiYlJsVlZXV20wRi1ZNVBvYVl0X1h2T1VzdlpXcDVMRTI1MFhidFBvV0NHMXQyOEQtTV9HbWZ4QUNkUTF4TEdzbUYtaU9RQnU1WFMxd1BEaWZiNlNqM2NwS241cUR5ekM4aWt4Qjh2a2NlNDNvYkF3N29wTnZLQ1JjV0Q1ZGlzRDJ2bmRJSEdiZlBFdktGN3JpUzlXTE9KUW5nRzNILW9pd2h6X3RDQUp2R0NOU2hhVHBsNTQzVzA4ZmtOYlVxVkdiOFM1M2xNTkVHeWVlelFQeUtPWHFrRWpoem1Ieng0dFYyRldhUUJUMVNVZFQzZC1CZlNQMkFpOHVZUFkzbWQ?oc=5",
+          "source": "新浪网",
+          "domain": "新浪网",
+          "publishedAt": "2026-07-14T01:46:09.000Z",
+          "summary": "",
+          "reason": "",
           "tags": [
             "OpenAI",
             "AI"
           ]
         },
         {
-          "title": "苹果诉OpenAI 窃取商业机密，马斯克下场炮轰：“骗子奥特曼”_综述_全球资讯",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBJeDFtc2tHRzhMWGx6bWpJczNwYThScU5QM2RzT3pqcG90enlzeTZHWHNqaVA0RkNhQnNQSEpCWVVjbHFsdXh4amlTcGxZbENjaE8zZzVtNmlrUG0xcG5BaVBkcWxhU3c?oc=5",
-          "source": "bihainews.com",
-          "domain": "bihainews.com",
-          "publishedAt": "2026-07-13T02:03:02.000Z",
-          "summary": "苹果起诉OpenAI窃取商业机密，马斯克批评OpenAI负责人奥特曼。",
-          "reason": "苹果起诉OpenAI窃取商业机密，马斯克批评OpenAI负责人奥特曼。",
-          "tags": [
-            "OpenAI",
-            "AI"
-          ]
-        },
-        {
-          "title": "马斯克与奥特曼隔空“开火”再升级 苹果起诉OpenAI引爆新一轮口水战 两位AI巨头互指“骗子”",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1QYzZDYUJJZlF0bUdHbURSYm1SUEZfYkJVX0Jwd1BXOXlWQ0hhbXBWWm9Jd2tUbHVibFBWMUgyUUpYMGhZT1VSOTlWYVg?oc=5",
-          "source": "美南新聞",
-          "domain": "美南新聞",
-          "publishedAt": "2026-07-13T01:50:14.000Z",
-          "summary": "马斯克与奥特曼因苹果起诉OpenAI事件升级争论，双方互指对方为骗子。",
-          "reason": "马斯克与奥特曼因苹果起诉OpenAI事件升级争论，双方互指对方为骗子。",
+          "title": "软银646亿美元豪赌OpenAI，AI双雄IPO之争谁能活到最后？",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBqUkczR1Y1LUJ3SEI4UGhBbGVqckRCaWpETnBKSEdDOHJ1U2ZlSmlFMU1yRHdoZjZCRzUxRVMyQW96ZTZyQXp6ak8xWGhmSFJTZ0d4R3NjUzhVUDJTUi1BWG1sWjJhdjA0NGxz?oc=5",
+          "source": "blog.csdn.net",
+          "domain": "blog.csdn.net",
+          "publishedAt": "2026-07-14T01:16:02.000Z",
+          "summary": "",
+          "reason": "",
           "tags": [
             "OpenAI",
             "AI"
           ]
         }
       ],
-      "stale": false
+      "stale": false,
+      "attemptedAt": "2026-07-14T12:06:57.577Z",
+      "lastSuccessfulAt": "2026-07-14T12:06:57.577Z",
+      "latestPublishedAt": "2026-07-14T11:52:00.000Z",
+      "liveItemCount": 6,
+      "providerStats": [
+        {
+          "provider": "google-verified-run",
+          "ok": true,
+          "itemCount": 6
+        }
+      ]
     },
     {
       "id": "us-stocks",
@@ -93,81 +113,90 @@
       "description": "美股指数、科技股、财报与宏观信号",
       "items": [
         {
-          "title": "“黑色星期五”只是前奏？高盛、巴克莱齐警告：美股急跌风险仍存！",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5wS3U3cmw5ZENpNWdsYUhpd2xGbDlXR1FNelJEZnY3dmt2N2xkQktwelRCZFBVdzlfZk1lX2QzNDVYVlZfY2lhcA?oc=5",
-          "source": "财联社",
-          "domain": "财联社",
-          "publishedAt": "2026-07-13T04:34:23.000Z",
-          "summary": "高盛和巴克莱警告美股存在急跌风险，提示投资者注意市场波动。",
-          "reason": "高盛和巴克莱警告美股存在急跌风险，提示投资者注意市场波动。",
+          "title": "美股三大指数全线收跌，存储芯片股重挫，闪迪跌12.63%，SK海力士跌9.32%，希捷科技跌5.46%，美光科技跌4.32%；沃什将迎国会大考",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1NbXQxcEdVVDFMekVXNW9oRDdncDE3T2JNc0NnblJKX0MxaEZvV25reWx3Z3RjTmQxYktnNWF6enhEY3VtazFBTHZpZFZoaFU0YkF1SUo1RUxnR2xFVkZGRmF3?oc=5",
+          "source": "手机网易网",
+          "domain": "手机网易网",
+          "publishedAt": "2026-07-14T05:36:43.000Z",
+          "summary": "",
+          "reason": "",
           "tags": [
             "美股"
           ]
         },
         {
-          "title": "华尔街早报：美股期指齐跌，警惕SK海力士引发存储踩踏，美股财报季开启",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UYXZpN1l3eVQzSWdJN3ExTlZyak0wa0MtV3pJZ1UteUhSNXlzOUgxUUNXSkh6UWxFVW1DUmZ6QTRDSURqdUs0eml1LTRZaGl1UkM1dFptWlo2ZkJQVmVlbTB3b2lDVzZKY2lEaHUtbXhFZlJYRE5NeTViNkxxY3M?oc=5",
+          "title": "早盘：美股涨跌不一 芯片股拖累纳指下滑",
+          "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOVmZsaXA2NmJ5U1ZGamI2XzNqZkd0OHBUazU2NlVsYTlTZE9MclZIUnd0NEk2dmtRZGRXQllIbVJYM3M0dW1zMklTams3SUV4WGVpaXpLNzNLV29uTTJkTmF1V0VMQTRDeGxKUVprdUxQUEx3VHZDNkR4cTJvQjJVc0wzZ3VERjFuTUd6d09PMG50YVdwUkx3ajRWc0g2d2tiT0ZYVjdQb3QtNzBXSUZVTEF3cnY1d2NpcEtPZGVuaWpKdnUtMi13Y2o4bHpvSlJuN1VwWXlUTVY0d3NfSFprQWJ1M096ekxTSEl6cW9FeDZRRUhCZ2cybEpjd0hpMXFCdkFacUdfdTJXVnZRVVlkdUxpMlJuTTJhOGRR?oc=5",
+          "source": "新浪财经",
+          "domain": "新浪财经",
+          "publishedAt": "2026-07-14T05:06:53.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "美股"
+          ]
+        },
+        {
+          "title": "美股科技股全线大跌，SK海力士股价重挫9.3%",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5TWmtnYV9mUzI5VnJmWEZYRkExVFVfMlBCT0piYkh3U0NicDNjUFJIZWczc3RrNFctbm1qNDJwdHJZVklUYUpCanBwWVZRVDgtekZIcWpjczQ?oc=5",
+          "source": "Jiemian.com",
+          "domain": "Jiemian.com",
+          "publishedAt": "2026-07-14T04:50:31.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "美股"
+          ]
+        },
+        {
+          "title": "华尔街早报：美股集体受挫，苹果逆势新高，今晚CPI与沃什听证会将定利率路径",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE91dXVTMDJCRWlrS01aS1FkazI1dER5OUpsbmRYellrMTZsc3BCQVAwNktpdk42WW1kYWV4Y3hiUXhaLUc4MENocTIxZkYtbTVCNVc5MEtKNkM3cXBpUVR3ckpZeFlOdzMwR0VWTHY2TTVCV01OREVDdU5BNmJmUWc?oc=5",
           "source": "PANews",
           "domain": "PANews",
-          "publishedAt": "2026-07-13T04:26:06.000Z",
-          "summary": "美股期指下跌，SK海力士可能引发存储行业踩踏，美股财报季开始。",
-          "reason": "美股期指下跌，SK海力士可能引发存储行业踩踏，美股财报季开始。",
+          "publishedAt": "2026-07-14T04:34:35.000Z",
+          "summary": "",
+          "reason": "",
           "tags": [
             "美股"
           ]
         },
         {
-          "title": "早盘综述 | 美股因SK海力士登陆纳斯达克而上涨；金管局提议加快零售基金审批",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZ1hpcXB6UHNSRm9OQmpEanVQZEV5Qy14S0FRSWVUWmVuN3dKWXJJMkkwQmZUMFVkRkpuLUo5MUV6TUxIQTR0N1hsd2JDRHRSeTJaOXFoM29WMklmOHRBQWI4OHNORU1zVm5DWG0yUng3YmRiMGJyVEZMeWJPU0pyTUZEYmZpQmJINU1rRmdOY1pQM09zbkpoY1FwVV8yTks4Z1RMWnBoWmRIdw?oc=5",
-          "source": "Moomoo",
-          "domain": "Moomoo",
-          "publishedAt": "2026-07-13T01:08:50.000Z",
-          "summary": "SK海力士登陆纳斯达克推动美股上涨，金管局提议加快零售基金审批。",
-          "reason": "SK海力士登陆纳斯达克推动美股上涨，金管局提议加快零售基金审批。",
-          "tags": [
-            "美股",
-            "纳斯达克"
-          ]
-        },
-        {
-          "title": "美股收盘| 联储决议前美股四连阳，标普500指数创近两年新高；明星科技股、中概股多数上涨，博通涨超4%",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNUNVYThBcFJiNGtURHJ1bXlFNVR4ZlRobDJBX2hrN1dCTy1SMm5faTQ4Z19LWUVXSFNISy10N083RUpqNVl3NktOQmVSOVozaUlWRXM5VWp2REs0WWhvdldGZjAzdzFvLWx3a1l1OENfQ1JISlhxdXhDdFpzd2xmV1c5MTdrNFp2Qk1STWpfWU9LRUNuZG1XMHRzN0NvQTJ1?oc=5",
-          "source": "富途牛牛",
-          "domain": "富途牛牛",
-          "publishedAt": "2026-07-12T15:14:21.000Z",
-          "summary": "美股四连阳，标普500指数创近两年新高，科技股和中概股普遍上涨。",
-          "reason": "美股四连阳，标普500指数创近两年新高，科技股和中概股普遍上涨。",
+          "title": "技术面正在“接管市场”，美股关键技术位等待抄底资金“接棒”-市场参考",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBjUlpoWjk1WjY1SUpRdmkxTldSSjJ2VUpvR0w1cTVZdjNEbC0zdTRHb002ZUtEb2djN1ZnUTVQSjlIN0FXbTZFM3NxdFdxUVE?oc=5",
+          "source": "金十数据",
+          "domain": "金十数据",
+          "publishedAt": "2026-07-14T01:27:48.000Z",
+          "summary": "",
+          "reason": "",
           "tags": [
             "美股"
           ]
         },
         {
-          "title": "美股收盘：Meta、英伟达推动指数小幅收高 SK海力士闪耀纳斯达克",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBXU1RCc1pGNlJyVXFQaklrbE9yTHlTY2ZXNVNfeE1HclpBYnNxUC1RSGlXOVo5N1dhcENseXZzN29lcXB0NTg2TA?oc=5",
-          "source": "财联社",
-          "domain": "财联社",
-          "publishedAt": "2026-07-12T14:11:46.000Z",
-          "summary": "美股收盘小幅上涨，Meta和英伟达表现推动指数上扬，SK海力士在纳斯达克表现突出。",
-          "reason": "美股收盘小幅上涨，Meta和英伟达表现推动指数上扬，SK海力士在纳斯达克表现突出。",
-          "tags": [
-            "美股",
-            "纳斯达克"
-          ]
-        },
-        {
-          "title": "美股还能一路涨？ 大摩最新警告：有3大风险",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1mUHlJSnZ6d3RQZlN1a2hDSnN5ZmdhVW41ZXM4R25YNkE2aEYxZzhoZnJqOTFNbjQwYnc2QW5Md2JoWU45US1yajJQUWVNcE9CQjFrbmhNbmJRNzJFdVJsdzhB?oc=5",
-          "source": "万维读者网",
-          "domain": "万维读者网",
-          "publishedAt": "2026-07-12T13:26:23.000Z",
-          "summary": "摩根士丹利警告美股上涨面临三大风险，可能影响未来走势。",
-          "reason": "摩根士丹利警告美股上涨面临三大风险，可能影响未来走势。",
+          "title": "科技股全线大跌|科技股|美股|金银|英伟达|特斯拉|黄金期货|白银期货_新浪新闻",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE81WV9fUHRaaDc0MnRFMllOQlUtWndTdXdSdlUwSS11V1VHZHhtM3BuTU5ZLUsyOWFjUk1nb3V0Z0ZxdTY0OTQyZVJicGNPd3NBTGp0YndlQUlFeXBhaEI3Y2lyWQ?oc=5",
+          "source": "新浪网",
+          "domain": "新浪网",
+          "publishedAt": "2026-07-14T00:51:00.000Z",
+          "summary": "",
+          "reason": "",
           "tags": [
             "美股"
           ]
         }
       ],
-      "stale": false
+      "stale": false,
+      "attemptedAt": "2026-07-14T12:06:57.577Z",
+      "lastSuccessfulAt": "2026-07-14T12:06:57.577Z",
+      "latestPublishedAt": "2026-07-14T05:36:43.000Z",
+      "liveItemCount": 6,
+      "providerStats": [
+        {
+          "provider": "google-verified-run",
+          "ok": true,
+          "itemCount": 6
+        }
+      ]
     },
     {
       "id": "a-shares",
@@ -175,37 +204,13 @@
       "description": "A股市场、政策、行业板块与资金面",
       "items": [
         {
-          "title": "今日A股十大热股：商业航天、算力受热捧，中国卫星热榜第一，浪潮信息3天2板领衔算力租赁",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSExKbmJ6QWlrWXg0NkNNWWRLU0hCYk5DcXNFQ0xwZTFLMW5SY21nNmJMWUsxbFlCVmk4RThnbVlJTGR4OHRvclY1b09aY3hpTlduQlN6cXVxU0F5RmhiRDYxRVRBdVdiZ1RONGxNNHNzRDhvZGotcEVTRWhGVExuNFVqeTRqbWFm?oc=5",
-          "source": "搜狐网",
-          "domain": "搜狐网",
-          "publishedAt": "2026-07-13T01:09:55.000Z",
-          "summary": "商业航天与算力概念股在A股受热捧，中国卫星和浪潮信息表现突出。",
-          "reason": "商业航天与算力概念股在A股受热捧，中国卫星和浪潮信息表现突出。",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "超级IPO来了！长鑫科技本周申购，A股怎么走？",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQkNqSmR3T0M3QUowRU9aWXJfcjNWb1g4X0dqdzllaHV0QmdqY2J0b3lsc05ZZ2NHZVNrQzliVGJGeXd0b29SUWtRTm5FSlVVaWE1Vmo1dDVobXM2X0tkX190NF9BaWFDcWxKNkJhRmYtTlNzRU9ENk5TSk94X1BqeERBbWpubU5nRkRBTTd6em9tSGx5ZXNWaw?oc=5",
+          "title": "三重因素共振！A股连续调整背后，超跌反弹预期升温",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE11OUM1TVJuVWNlSFY1a1UwNEFFV1RHbld2SUV4VHl1SVRkbF9WZVBsMHJnZEdCQUVDWUFHX3ZIcWpZNlhvQXVXVFNUNThWVFpSSlZoUXJXQzItV3lGd1hJSTVZbm1oemhQMXhVTi01dWlHdw?oc=5",
           "source": "新浪网",
           "domain": "新浪网",
-          "publishedAt": "2026-07-12T23:19:33.000Z",
-          "summary": "长鑫科技本周启动IPO申购，市场关注其对A股走势的影响。",
-          "reason": "长鑫科技本周启动IPO申购，市场关注其对A股走势的影响。",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "广发金工 | AI识图仍关注半导体、芯片：A股量化择时研究报告",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBEQlh6NWtOUU1qeTR0NGpUWTRRRkhncHpCU0c0X2JzLTU1QzhuUkQxMmhuZWU4aUk0NmhVaHVOLXJod1pxZTBIUUtKQlJReVRLd0E3ZklQYmtqNGRMLU1BR2RaSkNHcm9naHRKMXRfSkJOZi1NMkE?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-07-12T23:05:00.000Z",
-          "summary": "广发金工研究报告指出，A股量化择时仍聚焦半导体和芯片领域。",
-          "reason": "广发金工研究报告指出，A股量化择时仍聚焦半导体和芯片领域。",
+          "publishedAt": "2026-07-14T10:58:00.000Z",
+          "summary": "",
+          "reason": "",
           "tags": [
             "A股"
           ]
@@ -215,7 +220,7 @@
           "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBVV0ZlMTB6MG5fUjdLTi1UTDVOOVBuX0RCOUtCeHhDTk1SMUhaTC12OWxKSUl2d0tmRFc3ektueEYzMFQ5NVg2NQ?oc=5",
           "source": "财联社",
           "domain": "财联社",
-          "publishedAt": "2026-07-12T20:44:27.000Z",
+          "publishedAt": "2026-07-14T09:15:13.000Z",
           "summary": "丁向群被任命为国家金融监管总局党委书记，上证50和科创50等指数调整样本。",
           "reason": "丁向群被任命为国家金融监管总局党委书记，上证50和科创50等指数调整样本。",
           "tags": [
@@ -223,31 +228,68 @@
           ]
         },
         {
-          "title": "生死时刻到来，下周A股要选择方向了",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4teVFjT2gwVU9CNFYzV3lweWduMks5Wm5vNEFGQUQxcDMzN0lOaHBBUVRrT2FjazVVelVMeEV5R0RYT3BNdTdSQVVDcHA2czZI?oc=5",
-          "source": "凤凰网财经",
-          "domain": "凤凰网财经",
-          "publishedAt": "2026-07-12T00:01:50.000Z",
-          "summary": "A股市场面临关键时刻，下周可能会选择新的运行方向。",
-          "reason": "A股市场面临关键时刻，下周可能会选择新的运行方向。",
+          "title": "上证指数盘中失守3900点关口，A股调整怎么看？",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ZTnBmb0RvUXpQNnByMzY5aXV5V3RNb3BXeEt3bnN4cm1NQ1FrN3dyWkxrNlZiLXhxTVdsVUY1eTFOY3hyZG1fTS05VHMxU2pXUkFxdFc5U19jb0U1aDdfRTZn?oc=5",
+          "source": "手机网易网",
+          "domain": "手机网易网",
+          "publishedAt": "2026-07-14T07:59:13.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "A股",
+            "上证"
+          ]
+        },
+        {
+          "title": "亚太股市强势反攻|亚太股市|创业板指|上证指数|深证成指|日韩股市_新浪新闻",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBmRkY4eG96YTRnLVJNUjJkQnNlR0otcTRGdEZqQ2oyVmxVRE1yWmpULW12UmVyNC1BbFJzTVhBbHc0bHdvT3RUVFFMaDBBZ0h1cVRoRFptelB3QUNYVm5QUzFYNA?oc=5",
+          "source": "新浪网",
+          "domain": "新浪网",
+          "publishedAt": "2026-07-14T05:53:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "上证",
+            "创业板"
+          ]
+        },
+        {
+          "title": "A股午评：沪指半日跌0.66%，航天系、6G、半导体等概念走弱",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE40YlFST3dlZG9UZFJuaGhPWVpLVWtuNnI4OUozOXdfR2EtOXI0NkpBc0pqUEJpM3kteC0wajlBem1UT3dDTmNhLU9maV94REROZktzY0YtSWtNN3d4UHlDVw?oc=5",
+          "source": "东方财富",
+          "domain": "东方财富",
+          "publishedAt": "2026-07-14T04:18:49.000Z",
+          "summary": "",
+          "reason": "",
           "tags": [
             "A股"
           ]
         },
         {
-          "title": "本周沪深两市主力资金净流出590.34亿 科技板块资金高低切换",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5FR3A1WVhpUzE1RW1CVlVCa2hPb0VKd2gxZUhZVXhFV2NtaXZzajZfRW52UUtseHp2bEsyamFYbWlBcDc4cF9yaEUta1MzcXFmOUM0YVVIMnlvcko2WXhwbW5EWGY1VW9rYXZHTGN5TUU?oc=5",
-          "source": "中华网",
-          "domain": "中华网",
-          "publishedAt": "2026-07-11T13:17:46.000Z",
-          "summary": "本周沪深两市主力资金净流出590.34亿元，科技板块资金出现高低切换。",
-          "reason": "本周沪深两市主力资金净流出590.34亿元，科技板块资金出现高低切换。",
+          "title": "A股跌破年线 是撤离信号还是“黄金坑”？",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBTU09lME9QdEtsREdEWU9OUWlhQURVZHBRb1JkeG5TbjdubzRhMmplVDB5Y1FkTjc5TE9QSGo4UlFxeFJmeWZwcGJDd1huMmpSTVZLbEJ2V0FtcE8zM1VDYUZn?oc=5",
+          "source": "手机网易网",
+          "domain": "手机网易网",
+          "publishedAt": "2026-07-14T02:47:11.000Z",
+          "summary": "",
+          "reason": "",
           "tags": [
-            "沪深"
+            "A股"
           ]
         }
       ],
-      "stale": false
+      "stale": false,
+      "attemptedAt": "2026-07-14T12:06:57.577Z",
+      "lastSuccessfulAt": "2026-07-14T12:06:57.577Z",
+      "latestPublishedAt": "2026-07-14T10:58:00.000Z",
+      "liveItemCount": 6,
+      "providerStats": [
+        {
+          "provider": "google-verified-run",
+          "ok": true,
+          "itemCount": 6
+        }
+      ]
     }
   ]
 }

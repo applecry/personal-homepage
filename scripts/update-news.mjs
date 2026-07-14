@@ -9,15 +9,24 @@ const outputPath = fileURLToPath(new URL("../data/news.json", import.meta.url));
 const rssEndpoint = "https://www.bing.com/news/search";
 const googleNewsEndpoint = "https://news.google.com/rss/search";
 const githubModelsEndpoint = "https://models.github.ai/inference/chat/completions";
-const maxArticleAgeMs = 7 * 24 * 60 * 60 * 1000;
+const maxArticleAgeMs = 4 * 24 * 60 * 60 * 1000;
+const freshArticleAgeMs = 36 * 60 * 60 * 1000;
 
 const topics = [
   {
     id: "ai",
     label: "AI",
     description: "模型、产品、监管与资本动向",
-    query: '人工智能 大模型 OpenAI',
-    requiredKeywords: ["AI", "人工智能", "大模型", "OpenAI", "Anthropic", "ChatGPT", "英伟达", "Nvidia"],
+    queries: [
+      "人工智能 大模型 OpenAI",
+      "OpenAI Anthropic Gemini 英伟达 AI",
+      "生成式AI 智能体 机器人",
+    ],
+    directFeeds: [
+      { provider: "wired-ai", url: "https://www.wired.com/feed/tag/ai/latest/rss" },
+      { provider: "lemonde-ai", url: "https://www.lemonde.fr/en/artificial-intelligence/rss_full.xml" },
+    ],
+    requiredKeywords: ["AI", "人工智能", "大模型", "OpenAI", "Anthropic", "Claude", "Gemini", "ChatGPT", "英伟达", "Nvidia", "智能体", "机器人"],
     locale: { mkt: "zh-CN", cc: "CN", setlang: "zh-Hans" },
     keywords: ["OpenAI", "Anthropic", "Nvidia", "人工智能", "大模型", "生成式AI", "AI", "model"],
   },
@@ -25,7 +34,7 @@ const topics = [
     id: "us-stocks",
     label: "美股",
     description: "美股指数、科技股、财报与宏观信号",
-    query: '美股 纳斯达克 标普500 科技股',
+    queries: ["美股 纳斯达克 标普500 科技股", "美股 美联储 英伟达 特斯拉"],
     requiredKeywords: ["美股", "纳斯达克", "标普", "道指", "华尔街", "美联储", "Fed", "Nasdaq", "S&P"],
     locale: { mkt: "zh-CN", cc: "CN", setlang: "zh-Hans" },
     keywords: ["Nasdaq", "S&P", "Wall Street", "Nvidia", "Tesla", "Apple", "Fed", "美股", "纳斯达克"],
@@ -34,7 +43,7 @@ const topics = [
     id: "a-shares",
     label: "A股",
     description: "A股市场、政策、行业板块与资金面",
-    query: 'A股 沪深 上证',
+    queries: ["A股 沪深 上证", "A股 创业板 科创板 今日"],
     requiredKeywords: ["A股", "上证", "沪深", "深证", "创业板", "科创板"],
     locale: { mkt: "zh-CN", cc: "CN", setlang: "zh-Hans" },
     keywords: ["A股", "沪深", "上证", "创业板", "北向资金", "China", "Chinese stocks"],
@@ -116,16 +125,33 @@ const summarizeArticle = ({ description }) => {
   return "";
 };
 
-const parseRssItems = (xml, topic, provider = "bing") => {
-  const blocks = Array.from(xml.matchAll(/<item>([\s\S]*?)<\/item>/gi), (match) => match[1]);
+const providerLabel = (provider) => ({
+  google: "Google News",
+  bing: "Bing News",
+  "wired-ai": "WIRED",
+  "lemonde-ai": "Le Monde",
+  fixture: "Fixture",
+})[provider] || provider;
 
-  return blocks.map((block) => {
-    const source = textOf(block, "News:Source") || textOf(block, "source") || attrOf(block, "source", "url") || "Bing News";
+const isoDate = (value) => {
+  const date = new Date(value || Date.now());
+  return Number.isNaN(date.getTime()) ? "" : date.toISOString();
+};
+
+const parseRssItems = (xml, topic, provider = "bing") => {
+  let blocks = Array.from(xml.matchAll(/<item(?:\s[^>]*)?>([\s\S]*?)<\/item>/gi), (match) => ({ body: match[1], atom: false }));
+  if (!blocks.length) {
+    blocks = Array.from(xml.matchAll(/<entry(?:\s[^>]*)?>([\s\S]*?)<\/entry>/gi), (match) => ({ body: match[1], atom: true }));
+  }
+
+  return blocks.map(({ body: block, atom }) => {
+    const source = textOf(block, "News:Source") || textOf(block, "source") || attrOf(block, "source", "url") || providerLabel(provider);
     const rawTitle = textOf(block, "title");
     const title = stripSourceFromTitle(rawTitle, source);
-    const description = textOf(block, "description");
-    const publishedAt = new Date(textOf(block, "pubDate") || Date.now()).toISOString();
-    const url = originalUrlFromBing(textOf(block, "link"));
+    const description = textOf(block, "description") || textOf(block, "summary") || textOf(block, "content");
+    const publishedAt = isoDate(textOf(block, "pubDate") || textOf(block, "published") || textOf(block, "updated"));
+    const rawUrl = atom ? attrOf(block, "link", "href") : textOf(block, "link");
+    const url = provider === "bing" ? originalUrlFromBing(rawUrl) : rawUrl;
     const tags = tagArticle(`${title} ${description}`, topic);
     const candidateSummary = summarizeArticle({ description });
     // Google News descriptions repeat the linked headline; do not present them as article summaries.
@@ -144,9 +170,9 @@ const parseRssItems = (xml, topic, provider = "bing") => {
   });
 };
 
-const buildBingUrl = (topic) => {
+const buildBingUrl = (topic, query) => {
   const url = new URL(rssEndpoint);
-  url.searchParams.set("q", topic.query);
+  url.searchParams.set("q", query);
   url.searchParams.set("format", "rss");
   url.searchParams.set("mkt", topic.locale.mkt);
   url.searchParams.set("cc", topic.locale.cc);
@@ -154,9 +180,9 @@ const buildBingUrl = (topic) => {
   return url;
 };
 
-const buildGoogleUrl = (topic) => {
+const buildGoogleUrl = (topic, query) => {
   const url = new URL(googleNewsEndpoint);
-  url.searchParams.set("q", `${topic.query} when:2d`);
+  url.searchParams.set("q", `${query} when:2d`);
   url.searchParams.set("hl", "zh-CN");
   url.searchParams.set("gl", "CN");
   url.searchParams.set("ceid", "CN:zh-Hans");
@@ -165,9 +191,12 @@ const buildGoogleUrl = (topic) => {
 
 const fetchWithCurl = async (url) => {
   const binary = process.platform === "win32" ? "curl.exe" : "curl";
+  const args = ["-L", "--fail", "--silent", "--show-error", "--max-time", "25"];
+  if (process.platform === "win32") args.push("--ssl-no-revoke");
+  args.push(url.toString());
   const { stdout } = await execFileAsync(
     binary,
-    ["-L", "--fail", "--silent", "--show-error", "--max-time", "25", url.toString()],
+    args,
     { maxBuffer: 1024 * 1024 * 8 },
   );
   return stdout;
@@ -217,33 +246,77 @@ const fetchText = async (url) => {
   throw lastError || new Error("fetch failed");
 };
 
+const validateFeedXml = (xml, label = "feed") => {
+  const text = String(xml || "").trim();
+  const isFeed = /<(?:rss|feed)\b/i.test(text);
+  const itemCount = (text.match(/<(?:item|entry)\b/gi) || []).length;
+  if (!isFeed || itemCount === 0) {
+    const looksLikeHtml = /<!doctype html|<html\b/i.test(text);
+    throw new Error(`${label} returned ${looksLikeHtml ? "HTML" : "invalid XML"} with ${itemCount} items`);
+  }
+  return itemCount;
+};
+
 const readTopicFeeds = async (topic) => {
   if (process.env.NEWS_RSS_DIR) {
-    return [{ provider: "fixture", xml: await readFile(join(process.env.NEWS_RSS_DIR, `${topic.id}.xml`), "utf8") }];
+    const xml = await readFile(join(process.env.NEWS_RSS_DIR, `${topic.id}.xml`), "utf8");
+    const itemCount = validateFeedXml(xml, `${topic.id}/fixture`);
+    return {
+      feeds: [{ provider: "fixture", xml }],
+      providerStats: [{ provider: "fixture", ok: true, itemCount }],
+    };
   }
+
+  const searchSources = (topic.queries || []).flatMap((query, queryIndex) => [
+    { provider: "google", label: `google-${queryIndex + 1}`, query, url: buildGoogleUrl(topic, query) },
+    { provider: "bing", label: `bing-${queryIndex + 1}`, query, url: buildBingUrl(topic, query) },
+  ]);
+  const directSources = (topic.directFeeds || []).map((source) => ({
+    ...source,
+    label: source.provider,
+    url: new URL(source.url),
+  }));
+  const sources = [...searchSources, ...directSources];
+  const results = await Promise.allSettled(sources.map(async (source) => {
+    const xml = await fetchText(source.url);
+    const itemCount = validateFeedXml(xml, `${topic.label}/${source.label}`);
+    return { provider: source.provider, label: source.label, query: source.query, xml, itemCount };
+  }));
 
   const feeds = [];
-  const sources = [
-    ["google", buildGoogleUrl(topic)],
-    ["bing", buildBingUrl(topic)],
-  ];
-
-  for (const [provider, url] of sources) {
-    try {
-      feeds.push({ provider, xml: await fetchText(url) });
-    } catch (error) {
-      console.warn(`${topic.label}/${provider}: ${error.message}`);
+  const providerStats = results.map((result, index) => {
+    const source = sources[index];
+    if (result.status === "fulfilled") {
+      feeds.push(result.value);
+      return { provider: source.label, ok: true, itemCount: result.value.itemCount };
     }
-  }
+    const error = result.reason?.message || String(result.reason);
+    console.warn(`${topic.label}/${source.label}: ${error}`);
+    return { provider: source.label, ok: false, itemCount: 0, error };
+  });
 
-  if (!feeds.length) throw new Error("all RSS providers failed");
-  return feeds;
+  if (!feeds.length) {
+    const error = new Error("all RSS providers failed");
+    error.providerStats = providerStats;
+    throw error;
+  }
+  return { feeds, providerStats };
 };
 const scoreArticle = (article, topic) => {
   const haystack = `${article.title} ${article.source}`.toLowerCase();
-  const keywordHits = topic.keywords.filter((keyword) => haystack.includes(keyword.toLowerCase())).length;
+  const keywordHits = topic.keywords.filter((keyword) => includesKeyword(haystack, keyword)).length;
   const ageHours = Math.max(0, (Date.now() - new Date(article.publishedAt).getTime()) / 36e5);
   return keywordHits * 4 + Math.max(0, 48 - ageHours) / 8;
+};
+
+const includesKeyword = (value, keyword) => {
+  const haystack = String(value || "").toLowerCase();
+  const needle = String(keyword || "").toLowerCase();
+  if (!needle) return false;
+  if (/^[a-z]{1,3}$/.test(needle)) {
+    return new RegExp(`(^|[^a-z])${needle}([^a-z]|$)`, "i").test(haystack);
+  }
+  return haystack.includes(needle);
 };
 
 const canonicalUrl = (value = "") => {
@@ -263,8 +336,8 @@ const selectArticles = (articles, topic) => {
   const seenSummaries = new Set();
 
   return articles
-    .filter((article) => article.title && article.url && (article.summary || hasReadableChinese(article.title)))
-    .filter((article) => topic.requiredKeywords.some((keyword) => article.title.toLowerCase().includes(keyword.toLowerCase())))
+    .filter((article) => article.title && article.url)
+    .filter((article) => topic.requiredKeywords.some((keyword) => includesKeyword(article.title, keyword)))
     .filter((article) => Date.now() - new Date(article.publishedAt).getTime() <= maxArticleAgeMs)
     .filter((article) => {
       const urlKey = canonicalUrl(article.url);
@@ -357,12 +430,21 @@ const readPrevious = async () => {
 const previousTopic = (previous, id) => previous.topics?.find((topic) => topic.id === id);
 
 const fetchTopic = async (topic, previous) => {
+  const attemptedAt = new Date().toISOString();
+  let providerStats = [];
+  let lastError = "";
   try {
-    const feeds = await readTopicFeeds(topic);
+    const result = await readTopicFeeds(topic);
+    const { feeds } = result;
+    providerStats = result.providerStats;
     const articles = feeds.flatMap(({ provider, xml }) => parseRssItems(xml, topic, provider));
-    const items = selectArticles(articles, topic);
+    const fallback = previousTopic(previous, topic.id);
+    const items = selectArticles([...articles, ...(fallback?.items || [])], topic);
+    const liveUrls = new Set(articles.map((article) => canonicalUrl(article.url)));
+    const liveItemCount = items.filter((item) => liveUrls.has(canonicalUrl(item.url))).length;
+    if (!liveItemCount) throw new Error("feeds contained no matching fresh articles");
     const previousSummaries = new Map(
-      (previousTopic(previous, topic.id)?.items || [])
+      (fallback?.items || [])
         .filter((item) => item.summary)
         .map((item) => [canonicalUrl(item.url), item.summary]),
     );
@@ -375,13 +457,31 @@ const fetchTopic = async (topic, previous) => {
     }
     await addChineseSummaries(items, topic);
     if (items.length) {
-      console.log(`${topic.label}: ${items.length} articles`);
-      return { id: topic.id, label: topic.label, description: topic.description, items, stale: false };
+      const latestPublishedAt = items
+        .map((item) => item.publishedAt)
+        .filter(Boolean)
+        .sort((a, b) => b.localeCompare(a))[0] || "";
+      const stale = !latestPublishedAt || Date.now() - new Date(latestPublishedAt).getTime() > freshArticleAgeMs;
+      console.log(`${topic.label}: ${items.length} articles (${liveItemCount} from this run)`);
+      return {
+        id: topic.id,
+        label: topic.label,
+        description: topic.description,
+        items,
+        stale,
+        attemptedAt,
+        lastSuccessfulAt: attemptedAt,
+        latestPublishedAt,
+        liveItemCount,
+        providerStats,
+      };
     }
 
     console.warn(`${topic.label}: no fresh articles, keeping previous data if available`);
   } catch (error) {
-    console.warn(`${topic.label}: ${error.message}`);
+    if (Array.isArray(error.providerStats)) providerStats = error.providerStats;
+    lastError = error.message;
+    console.warn(`${topic.label}: ${lastError}`);
   }
 
   const fallback = previousTopic(previous, topic.id);
@@ -390,7 +490,13 @@ const fetchTopic = async (topic, previous) => {
     label: topic.label,
     description: topic.description,
     items: fallback?.items || [],
-    stale: Boolean(fallback?.items?.length),
+    stale: true,
+    attemptedAt,
+    lastSuccessfulAt: fallback?.lastSuccessfulAt || previous.generatedAt || "",
+    latestPublishedAt: fallback?.latestPublishedAt || fallback?.items?.[0]?.publishedAt || "",
+    liveItemCount: 0,
+    providerStats,
+    error: lastError || "no matching fresh articles",
   };
 };
 
@@ -407,24 +513,45 @@ const main = async () => {
     value.map((topic) => topic.items.map(({ title, url, publishedAt, summary }) => ({ title, url, publishedAt, summary }))),
   );
   const contentChanged = topicSignature(nextTopics) !== topicSignature(previous.topics || []);
-
-  if (!contentChanged) {
-    console.log("No article changes; keeping the existing content timestamp");
-    return;
-  }
+  const generatedAt = new Date().toISOString();
+  const staleTopics = nextTopics.filter((topic) => topic.stale).map((topic) => topic.id);
+  const sourceErrors = nextTopics.reduce(
+    (total, topic) => total + (topic.providerStats || []).filter((provider) => !provider.ok).length,
+    0,
+  );
 
   const payload = {
-    generatedAt: new Date().toISOString(),
-    source: "Google News RSS + Bing News RSS",
+    generatedAt,
+    checkedAt: generatedAt,
+    contentUpdatedAt: contentChanged ? generatedAt : (previous.contentUpdatedAt || previous.generatedAt || generatedAt),
+    source: "Google News RSS + WIRED AI RSS + Le Monde AI RSS（Bing 仅作可用性探测）",
+    status: {
+      contentChanged,
+      freshTopics: nextTopics.length - staleTopics.length,
+      staleTopics,
+      sourceErrors,
+    },
     topics: nextTopics,
   };
 
   await mkdir(dirname(outputPath), { recursive: true });
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-  console.log(`Wrote ${outputPath}`);
+  console.log(`Wrote ${outputPath}; content ${contentChanged ? "changed" : "unchanged"}; ${staleTopics.length} stale topics`);
 };
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
+
+export {
+  buildBingUrl,
+  buildGoogleUrl,
+  fetchTopic,
+  includesKeyword,
+  parseRssItems,
+  selectArticles,
+  validateFeedXml,
+};

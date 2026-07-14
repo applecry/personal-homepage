@@ -2,6 +2,14 @@ const app = document.querySelector("[data-atlas-app]");
 
 if (app && window.L) {
   const colors = { 艺术: "#d45745", 科技: "#167d84", 游戏: "#245de8", 商贸: "#9b6a22" };
+  const readSavedEvents = () => {
+    try {
+      const value = JSON.parse(localStorage.getItem("exhibit-atlas-saved") || "[]");
+      return Array.isArray(value) ? value : [];
+    } catch {
+      return [];
+    }
+  };
   const state = {
     events: [],
     sources: [],
@@ -9,7 +17,7 @@ if (app && window.L) {
     category: "全部",
     query: "",
     savedOnly: false,
-    saved: new Set(JSON.parse(localStorage.getItem("exhibit-atlas-saved") || "[]")),
+    saved: new Set(readSavedEvents()),
     markers: new Map(),
   };
 
@@ -74,7 +82,8 @@ if (app && window.L) {
     const regionMatch = regionMatches(event);
     const categoryMatch = state.category === "全部" || event.category === state.category;
     const query = state.query.trim().toLowerCase();
-    const haystack = `${event.name} ${event.nameZh} ${event.city} ${event.country} ${event.venue} ${event.category}`.toLowerCase();
+    const aliases = Array.isArray(event.aliases) ? event.aliases.join(" ") : "";
+    const haystack = `${event.name} ${event.nameZh} ${aliases} ${event.city} ${event.country} ${event.venue} ${event.category}`.toLowerCase();
     const queryMatch = !query || haystack.includes(query);
     const savedMatch = !state.savedOnly || state.saved.has(event.id);
     return regionMatch && categoryMatch && queryMatch && savedMatch;
@@ -88,7 +97,11 @@ if (app && window.L) {
   });
 
   const saveState = () => {
-    localStorage.setItem("exhibit-atlas-saved", JSON.stringify([...state.saved]));
+    try {
+      localStorage.setItem("exhibit-atlas-saved", JSON.stringify([...state.saved]));
+    } catch {
+      // The exhibition list remains usable when storage is blocked or full.
+    }
     app.querySelector("[data-saved-count]").textContent = state.saved.size;
   };
 
@@ -216,11 +229,21 @@ if (app && window.L) {
     fetch("./data/exhibition-signals.json", { cache: "no-store" }).then((response) => response.json()).catch(() => null),
   ])
     .then(([data, signals]) => {
-      state.events = (data.events || []).map((event) => ({ ...event, country: normalizeCountry(event.country, event.city) }));
+      state.events = (Array.isArray(data.events) ? data.events : [])
+        .filter((event) => event && event.id && event.nameZh && event.startDate && event.endDate && Number.isFinite(event.lat) && Number.isFinite(event.lng))
+        .map((event) => ({
+          ...event,
+          category: colors[event.category] ? event.category : "商贸",
+          country: normalizeCountry(event.country, event.city),
+        }));
       state.sources = data.sources || [];
-      const updatedAt = new Date(data.updatedAt);
-      const updateText = Number.isNaN(updatedAt.getTime()) ? "更新时间待确认" : `${String(updatedAt.getMonth() + 1).padStart(2, "0")}/${String(updatedAt.getDate()).padStart(2, "0")} ${String(updatedAt.getHours()).padStart(2, "0")}:${String(updatedAt.getMinutes()).padStart(2, "0")}`;
-      app.querySelector("[data-atlas-sync]").textContent = `上海自动采集 · 内容更新 ${updateText}`;
+      const checkedAt = new Date(data.checkedAt || data.collection?.checkedAt || data.updatedAt);
+      const updateText = Number.isNaN(checkedAt.getTime())
+        ? "更新时间待确认"
+        : new Intl.DateTimeFormat("zh-CN", {
+          timeZone: "Asia/Shanghai", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false,
+        }).format(checkedAt);
+      app.querySelector("[data-atlas-sync]").textContent = `官方基线 + 每日自动发现 · 检查 ${updateText} · 共 ${state.events.length} 场`;
       app.querySelector("[data-source-list]").innerHTML = state.sources.map((source) => `<a href="${source.url}" target="_blank" rel="noreferrer"><strong>${source.name}${source.automated ? " · 自动" : ""}</strong><span>${source.scope}${source.status ? ` · ${source.status}` : ""}</span><i>↗</i></a>`).join("");
       renderSocialSignals(signals);
       saveState();

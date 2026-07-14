@@ -23,12 +23,12 @@ Cloudflare Pages 构建设置：
 自动更新由 GitHub Actions 完成：
 
 - 工作流：`.github/workflows/update-news.yml`
-- 运行时间：每天 08:30（Asia/Shanghai）
+- 运行时间：每天 08:17、14:17（Asia/Shanghai）各检查一次；GitHub 定时任务可能延迟启动
 - 手动运行：GitHub 仓库的 Actions 页面里选择 `Update daily news signals`，点击 `Run workflow`
 - 数据生成脚本：`scripts/update-news.mjs`
-- 数据源：Bing News RSS
+- 数据源：Google News RSS、WIRED AI RSS、Le Monde AI RSS；Bing 仅保留为可用性探测
 
-脚本会尽量抓取最新主题相关新闻，只保留带有中文原始摘要且不重复的条目，每个主题最多展示 6 条。抓取失败时会保留上一次数据，避免首页变空。
+脚本会并行抓取多个查询与来源，校验响应确实为含条目的 RSS/Atom，再去重并为每个主题保留最多 6 条。每次运行都会记录检查时间、来源状态与主题新鲜度；抓取失败时保留上一次数据，并在页面明确标注“沿用旧结果”。工作流最后会校验 AI 主题本次是否取得新结果，避免静默成功。
 
 ## 文件结构
 
@@ -73,4 +73,4 @@ Cloudflare Pages 构建设置：
 node scripts/update-xhs-exhibition-signals.mjs
 ```
 
-该步骤依赖本机浏览器登录态，不放进 GitHub Actions，也不会把 Cookie 写入仓库。官方与聚合站排期仍由 `.github/workflows/update-exhibitions.yml` 每日更新。
+该步骤依赖本机浏览器登录态，不放进 GitHub Actions，也不会把 Cookie 写入仓库。展会事实数据以 `data/exhibitions-curated.json` 中的上海市商务委重点展会排期和近期官方发布为基线，包含 ChinaJoy、WAIC 等核心活动；`.github/workflows/update-exhibitions.yml` 每日从公开聚合页补充长尾排期并记录检查状态。
