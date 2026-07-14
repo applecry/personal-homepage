@@ -62,3 +62,15 @@ Cloudflare Pages 构建设置：
 ## Music
 
 页面包含一个轻量音乐面板，内置 NIGHT DANCER、Judgement（恶魔人）、Night Cruising、日落大道四首常驻背景音。音乐文件放在 `assets/audio/`，切换歌单后可直接播放对应音频。
+
+## 小红书展览线索
+
+展览页会从 `data/exhibition-signals.json` 读取小红书公开搜索结果，把它们作为“社交热度与展览发现线索”展示，不会把用户笔记直接当成日期、票价或场馆事实。
+
+本地更新前需要在 Chrome/Edge 中安装 OpenCLI 扩展并登录小红书，然后运行：
+
+```powershell
+node scripts/update-xhs-exhibition-signals.mjs
+```
+
+该步骤依赖本机浏览器登录态，不放进 GitHub Actions，也不会把 Cookie 写入仓库。官方与聚合站排期仍由 `.github/workflows/update-exhibitions.yml` 每日更新。

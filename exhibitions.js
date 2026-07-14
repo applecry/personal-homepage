@@ -27,6 +27,11 @@ if (app && window.L) {
   const searchPanel = app.querySelector("[data-search-panel]");
   const searchInput = app.querySelector("[data-search-input]");
   const sourcesPanel = app.querySelector("[data-sources-panel]");
+  const socialSignalList = app.querySelector("[data-social-signal-list]");
+
+  const escapeHtml = (value = "") => String(value).replace(/[&<>"]/g, (character) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;",
+  })[character]);
 
   const normalizeCountry = (country = "", city = "") => {
     const value = `${country} ${city}`.toLowerCase();
@@ -190,15 +195,34 @@ if (app && window.L) {
     sourcesPanel.setAttribute("aria-hidden", "true");
   });
 
-  fetch("./data/exhibitions.json", { cache: "no-store" })
-    .then((response) => response.json())
-    .then((data) => {
+  const renderSocialSignals = (signals) => {
+    const items = signals?.items || [];
+    const updatedAt = new Date(signals?.updatedAt);
+    app.querySelector("[data-signal-updated]").textContent = Number.isNaN(updatedAt.getTime())
+      ? "等待本地采集"
+      : `${String(updatedAt.getMonth() + 1).padStart(2, "0")}/${String(updatedAt.getDate()).padStart(2, "0")} 更新`;
+    socialSignalList.innerHTML = items.length
+      ? items.slice(0, 8).map((item, index) => `
+        <a class="atlas-signal" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">
+          <span>${String(index + 1).padStart(2, "0")}</span>
+          <div><strong>${escapeHtml(item.title)}</strong><small>${escapeHtml(item.author)} · ${escapeHtml(item.publishedAt || "近期")}</small></div>
+          <i>${Number(item.likes || 0).toLocaleString("zh-CN")} 赞</i>
+        </a>`).join("")
+      : '<div class="atlas-signal-empty">尚无社交热度线索</div>';
+  };
+
+  Promise.all([
+    fetch("./data/exhibitions.json", { cache: "no-store" }).then((response) => response.json()),
+    fetch("./data/exhibition-signals.json", { cache: "no-store" }).then((response) => response.json()).catch(() => null),
+  ])
+    .then(([data, signals]) => {
       state.events = (data.events || []).map((event) => ({ ...event, country: normalizeCountry(event.country, event.city) }));
       state.sources = data.sources || [];
       const updatedAt = new Date(data.updatedAt);
       const updateText = Number.isNaN(updatedAt.getTime()) ? "更新时间待确认" : `${String(updatedAt.getMonth() + 1).padStart(2, "0")}/${String(updatedAt.getDate()).padStart(2, "0")} ${String(updatedAt.getHours()).padStart(2, "0")}:${String(updatedAt.getMinutes()).padStart(2, "0")}`;
       app.querySelector("[data-atlas-sync]").textContent = `上海自动采集 · 内容更新 ${updateText}`;
       app.querySelector("[data-source-list]").innerHTML = state.sources.map((source) => `<a href="${source.url}" target="_blank" rel="noreferrer"><strong>${source.name}${source.automated ? " · 自动" : ""}</strong><span>${source.scope}${source.status ? ` · ${source.status}` : ""}</span><i>↗</i></a>`).join("");
+      renderSocialSignals(signals);
       saveState();
       render();
     })
