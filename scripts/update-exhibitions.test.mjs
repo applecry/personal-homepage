@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { normalizeCountry, parseEventJsonLd } from "./update-exhibitions.mjs";
+import { mergeVerifiedEvents, normalizeCountry, officialEventMatches, parseEventJsonLd } from "./update-exhibitions.mjs";
 
 test("normalizes Taiwan and Hong Kong labels", () => {
   assert.equal(normalizeCountry("Taiwan", "Taipei"), "中国台湾");
@@ -21,4 +21,26 @@ test("reads Event JSON-LD from a Next.js flight payload", () => {
   const flightValue = JSON.stringify(JSON.stringify(event));
   const html = `<script>self.__next_f.push([1,${flightValue}])</script>`;
   assert.deepEqual(parseEventJsonLd(html), event);
+});
+
+test("official events replace matching aggregator records", () => {
+  const aggregator = {
+    id: "aggregator-waic",
+    nameZh: "2026上海世界人工智能大会 WAIC",
+    startDate: "2026-07-17",
+  };
+  const official = {
+    id: "waic-2026",
+    nameZh: "2026世界人工智能大会",
+    aliases: ["WAIC", "世界人工智能大会"],
+    startDate: "2026-07-17",
+  };
+  assert.equal(officialEventMatches(aggregator, official), true);
+  assert.deepEqual(mergeVerifiedEvents([aggregator], [official]), [official]);
+});
+
+test("similarly named events on another date are preserved", () => {
+  const event = { id: "other-waic", nameZh: "WAIC 城市活动", startDate: "2026-07-21" };
+  const official = { id: "waic-2026", aliases: ["WAIC"], startDate: "2026-07-17" };
+  assert.deepEqual(mergeVerifiedEvents([event], [official]), [event, official]);
 });

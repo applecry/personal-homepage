@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T05:35:45.001Z",
+  "updatedAt": "2026-07-14T07:43:50.292Z",
   "focusCity": "上海",
   "geographyPolicy": {
     "Taiwan": "中国台湾",
@@ -7,9 +7,9 @@
   },
   "collection": {
     "mode": "daily",
-    "checkedAt": "2026-07-14T05:35:45.001Z",
-    "source": "展查查公开结构化数据",
-    "collected": 4
+    "checkedAt": "2026-07-14T07:43:50.292Z",
+    "source": "上海市政府官方发布 + 展查查公开结构化数据",
+    "collected": 5
   },
   "events": [
     {
@@ -31,7 +31,7 @@
       "sourceUrl": "https://www.expofinder.com/detail/ITSGRLnq",
       "url": "https://www.expofinder.com/detail/ITSGRLnq",
       "verification": "聚合平台待官网复核",
-      "collectedAt": "2026-07-14T05:35:33.744Z",
+      "collectedAt": "2026-07-14T07:43:41.227Z",
       "featured": false
     },
     {
@@ -53,8 +53,35 @@
       "sourceUrl": "https://www.expofinder.com/detail/uzkWVcq6",
       "url": "https://www.expofinder.com/detail/uzkWVcq6",
       "verification": "聚合平台待官网复核",
-      "collectedAt": "2026-07-14T05:35:30.373Z",
+      "collectedAt": "2026-07-14T07:43:35.465Z",
       "featured": false
+    },
+    {
+      "id": "waic-2026",
+      "name": "2026 World Artificial Intelligence Conference",
+      "nameZh": "2026世界人工智能大会暨人工智能全球治理高级别会议（WAIC）",
+      "aliases": [
+        "WAIC",
+        "世界人工智能大会",
+        "上海世界人工智能大会"
+      ],
+      "category": "科技",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "世博中心、上海世博展览馆、张江科学会堂、徐汇西岸国际会展中心",
+      "startDate": "2026-07-17",
+      "endDate": "2026-07-20",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "大会于上海世博、张江和西岸三大片区举行，设置论坛会议、展览展示、评奖赛事、应用体验、创新孵化与招才引智等板块。",
+      "visitorType": "公众需通过官方 Hi WAIC 应用注册购票",
+      "source": "上海市人民政府官方发布",
+      "sourceUrl": "https://www.shanghai.gov.cn/nw4411/20260708/ba4c8e75f2744b43a6080ebb82a3aab2.html",
+      "url": "https://www.shanghai.gov.cn/nw4411/20260708/ba4c8e75f2744b43a6080ebb82a3aab2.html",
+      "verification": "官方发布已核验日期与三大片区会场",
+      "collectedAt": "2026-07-14T07:43:28.214Z",
+      "featured": true
     },
     {
       "id": "expofinder-yaYnmW6k",
@@ -75,7 +102,7 @@
       "sourceUrl": "https://www.expofinder.com/detail/yaYnmW6k",
       "url": "https://www.expofinder.com/detail/yaYnmW6k",
       "verification": "聚合平台待官网复核",
-      "collectedAt": "2026-07-14T05:35:30.029Z",
+      "collectedAt": "2026-07-14T07:43:30.912Z",
       "featured": false
     },
     {
@@ -97,7 +124,7 @@
       "sourceUrl": "https://www.expofinder.com/detail/q2TfK24G",
       "url": "https://www.expofinder.com/detail/q2TfK24G",
       "verification": "聚合平台待官网复核",
-      "collectedAt": "2026-07-14T05:35:30.726Z",
+      "collectedAt": "2026-07-14T07:43:33.536Z",
       "featured": false
     },
     {
@@ -254,6 +281,13 @@
     }
   ],
   "sources": [
+    {
+      "name": "上海市人民政府",
+      "scope": "上海重大活动官方日期与场馆核验",
+      "url": "https://www.shanghai.gov.cn/",
+      "automated": true,
+      "status": "可访问"
+    },
     {
       "name": "展查查",
       "scope": "上海排期自动采集与结构化详情",

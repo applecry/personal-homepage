@@ -10,8 +10,36 @@ const anchoredDetailPaths = ["/detail/q2TfK24G", "/detail/yaYnmW6k", "/detail/1E
 const listUrlFor = (keyword) => `https://www.expofinder.com/list?keyword=${encodeURIComponent(keyword)}`;
 const shanghaiListUrl = listUrlFor(shanghaiSearchTerms[0]);
 const maxDetails = 20;
+const waicOfficialUrl = "https://www.shanghai.gov.cn/nw4411/20260708/ba4c8e75f2744b43a6080ebb82a3aab2.html";
+
+const verifiedOfficialEvents = [
+  {
+    id: "waic-2026",
+    name: "2026 World Artificial Intelligence Conference",
+    nameZh: "2026世界人工智能大会暨人工智能全球治理高级别会议（WAIC）",
+    aliases: ["WAIC", "世界人工智能大会", "上海世界人工智能大会"],
+    category: "科技",
+    region: "亚洲",
+    city: "上海",
+    country: "中国",
+    venue: "世博中心、上海世博展览馆、张江科学会堂、徐汇西岸国际会展中心",
+    startDate: "2026-07-17",
+    endDate: "2026-07-20",
+    lat: 31.185,
+    lng: 121.489,
+    summary: "大会于上海世博、张江和西岸三大片区举行，设置论坛会议、展览展示、评奖赛事、应用体验、创新孵化与招才引智等板块。",
+    visitorType: "公众需通过官方 Hi WAIC 应用注册购票",
+    source: "上海市人民政府官方发布",
+    sourceUrl: waicOfficialUrl,
+    url: waicOfficialUrl,
+    verification: "官方发布已核验日期与三大片区会场",
+    collectedAt: new Date().toISOString(),
+    featured: true,
+  },
+];
 
 const sourceDefinitions = [
+  { name: "上海市人民政府", scope: "上海重大活动官方日期与场馆核验", url: "https://www.shanghai.gov.cn/", probe: waicOfficialUrl, automated: true },
   { name: "展查查", scope: "上海排期自动采集与结构化详情", url: "https://www.expofinder.com/", probe: shanghaiListUrl, automated: true },
   { name: "去展网", scope: "上海近期排期发现与交叉核验", url: "https://www.qufair.com/", probe: "https://www.qufair.com/fl/0-274-0/" },
   { name: "第一展会网", scope: "上海展馆、行业与排期交叉核验", url: "https://www.onezh.com/", probe: "https://www.onezh.com/zhanhui/1_21_0_0_20260101/20261231/" },
@@ -206,8 +234,19 @@ const collectShanghai = async () => {
     await new Promise((resolve) => setTimeout(resolve, 800));
   }
   if (missingSchema || rejectedEvents) console.warn(`Skipped details: ${missingSchema} without Event schema, ${rejectedEvents} outside Shanghai or invalid`);
-  return events;
+  return mergeVerifiedEvents(events, verifiedOfficialEvents);
 };
+
+const officialEventMatches = (event, official) => {
+  if (event.startDate !== official.startDate) return false;
+  const name = `${event.name || ""} ${event.nameZh || ""}`.toLowerCase();
+  return (official.aliases || []).some((alias) => name.includes(alias.toLowerCase()));
+};
+
+const mergeVerifiedEvents = (events, officialEvents) => [
+  ...events.filter((event) => !officialEvents.some((official) => officialEventMatches(event, official))),
+  ...officialEvents,
+];
 
 const eventKey = (event) => event.id || `${event.nameZh || event.name}|${event.startDate}`.replace(/\s+/g, "").toLowerCase();
 const contentSignature = (events) => JSON.stringify(events.map((event) => ({
@@ -247,7 +286,7 @@ const main = async () => {
     updatedAt: new Date().toISOString(),
     focusCity: "上海",
     geographyPolicy: { Taiwan: "中国台湾", HongKong: "中国香港" },
-    collection: { mode: "daily", checkedAt: new Date().toISOString(), source: "展查查公开结构化数据", collected: collected.length },
+    collection: { mode: "daily", checkedAt: new Date().toISOString(), source: "上海市政府官方发布 + 展查查公开结构化数据", collected: collected.length },
     events: merged,
     sources: sourceResults.map(({ probe, ...source }) => source),
   };
@@ -262,4 +301,4 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   });
 }
 
-export { normalizeCountry, parseEventJsonLd };
+export { mergeVerifiedEvents, normalizeCountry, officialEventMatches, parseEventJsonLd };
