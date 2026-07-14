@@ -1,0 +1,42 @@
+name: Update Shanghai exhibitions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update-exhibitions.mjs"
+      - "scripts/update-exhibitions.test.mjs"
+      - ".github/workflows/update-exhibitions.yml"
+  schedule:
+    # 07:45 Asia/Shanghai, every day.
+    - cron: "45 23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-exhibitions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Test exhibition collector
+        run: node --test scripts/update-exhibitions.test.mjs
+
+      - name: Collect Shanghai exhibitions
+        run: node scripts/update-exhibitions.mjs
+
+      - name: Commit exhibition updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/exhibitions.json
+          git diff --cached --quiet || git commit -m "Update Shanghai exhibitions"
+          git push

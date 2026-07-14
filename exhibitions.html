@@ -7,7 +7,7 @@
     <title>Exhibit Atlas 全球展览网 | applecry</title>
     <meta name="description" content="在一张地图上发现全球值得去的展会，按地区、时间与行业筛选，并直达官方信息。" />
     <link rel="stylesheet" href="./assets/vendor/leaflet.css" />
-    <link rel="stylesheet" href="./exhibitions.css?v=20260714-1" />
+    <link rel="stylesheet" href="./exhibitions.css?v=20260714-2" />
   </head>
   <body>
     <div class="atlas-app" data-atlas-app>
@@ -17,7 +17,9 @@
           <span><strong>Exhibit Atlas.</strong><small>by applecry</small></span>
         </a>
         <nav class="atlas-region-tabs" aria-label="地区筛选">
-          <button class="is-active" type="button" data-region="全部">全球</button>
+          <button class="is-active" type="button" data-region="上海">上海</button>
+          <button type="button" data-region="中国">中国</button>
+          <button type="button" data-region="全部">全球</button>
           <button type="button" data-region="亚洲">亚洲</button>
           <button type="button" data-region="欧洲">欧洲</button>
           <button type="button" data-region="美洲">美洲</button>
@@ -34,13 +36,13 @@
 
         <section class="atlas-overview" aria-labelledby="atlas-title">
           <p class="atlas-kicker">GLOBAL EXHIBITION RADAR</p>
-          <div class="atlas-overview-title"><span></span><h1 id="atlas-title">全球展览</h1></div>
+          <div class="atlas-overview-title"><span></span><h1 id="atlas-title" data-atlas-title>上海展览</h1></div>
           <div class="atlas-metrics">
             <div><strong data-visible-count>0</strong><span>当前展会</span></div>
             <div><strong data-city-count>0</strong><span>城市</span></div>
-            <div><strong data-country-count>0</strong><span>国家</span></div>
+            <div><strong data-venue-count>0</strong><span>展馆</span></div>
           </div>
-          <p class="atlas-sync">官方来源核验 · 更新于 2026.07.14</p>
+          <p class="atlas-sync" data-atlas-sync>正在读取上海展会数据…</p>
         </section>
 
         <aside class="atlas-filter-panel" aria-label="展会类型筛选">
@@ -64,12 +66,12 @@
 
         <section class="atlas-search" data-search-panel aria-hidden="true">
           <label for="atlas-search-input">搜索城市、国家、展会或场馆</label>
-          <div><span aria-hidden="true">⌕</span><input id="atlas-search-input" type="search" placeholder="例如：东京、艺术、gamescom" data-search-input /><button type="button" data-search-close aria-label="关闭搜索">×</button></div>
+          <div><span aria-hidden="true">⌕</span><input id="atlas-search-input" type="search" placeholder="例如：新国际博览中心、珠宝、人工智能" data-search-input /><button type="button" data-search-close aria-label="关闭搜索">×</button></div>
         </section>
 
         <aside class="atlas-sources" data-sources-panel aria-hidden="true">
           <header><div><span>DATA SOURCES</span><h2>数据从哪里来</h2></div><button type="button" data-sources-close aria-label="关闭数据源">×</button></header>
-          <p>当前条目以展会官方页面为日期依据；以下国内平台用于后续扩展和交叉核验，不直接替代官方来源。</p>
+          <p>上海排期由公开页面每日采集；聚合信息会标注“待官网复核”。台湾统一显示为“中国台湾”，香港统一显示为“中国香港”。</p>
           <div data-source-list></div>
         </aside>
 
@@ -81,6 +83,6 @@
       </main>
     </div>
     <script src="./assets/vendor/leaflet.js"></script>
-    <script src="./exhibitions.js?v=20260714-1"></script>
+    <script src="./exhibitions.js?v=20260714-2"></script>
   </body>
 </html>

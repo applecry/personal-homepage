@@ -5,7 +5,7 @@ if (app && window.L) {
   const state = {
     events: [],
     sources: [],
-    region: "全部",
+    region: "上海",
     category: "全部",
     query: "",
     savedOnly: false,
@@ -13,7 +13,7 @@ if (app && window.L) {
     markers: new Map(),
   };
 
-  const map = L.map("exhibition-map", { zoomControl: false, minZoom: 2, maxZoom: 12, worldCopyJump: true }).setView([28, 35], 2.35);
+  const map = L.map("exhibition-map", { zoomControl: false, minZoom: 2, maxZoom: 14, worldCopyJump: true }).setView([31.2304, 121.4737], 10.4);
   L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
     attribution: "&copy; OpenStreetMap &copy; CARTO",
     subdomains: "abcd",
@@ -28,6 +28,33 @@ if (app && window.L) {
   const searchInput = app.querySelector("[data-search-input]");
   const sourcesPanel = app.querySelector("[data-sources-panel]");
 
+  const normalizeCountry = (country = "", city = "") => {
+    const value = `${country} ${city}`.toLowerCase();
+    if (/台湾|taiwan|taipei|台北/.test(value)) return "中国台湾";
+    if (/香港|hong kong/.test(value)) return "中国香港";
+    return country;
+  };
+
+  const regionMatches = (event) => {
+    if (state.region === "全部") return true;
+    if (state.region === "上海") return event.city === "上海";
+    if (state.region === "中国") return event.country === "中国" || event.country === "中国台湾" || event.country === "中国香港";
+    return event.region === state.region;
+  };
+
+  const focusMap = () => {
+    const views = {
+      上海: [[31.2304, 121.4737], 10.4],
+      中国: [[34.4, 104.2], 4],
+      全部: [[28, 35], 2.35],
+      亚洲: [[32, 100], 3.2],
+      欧洲: [[51, 12], 4],
+      美洲: [[24, -82], 3],
+    };
+    const [center, zoom] = views[state.region] || views.全部;
+    map.flyTo(center, zoom, { duration: 0.65 });
+  };
+
   const formatDate = (start, end) => {
     const a = new Date(`${start}T00:00:00`);
     const b = new Date(`${end}T00:00:00`);
@@ -39,7 +66,7 @@ if (app && window.L) {
   };
 
   const filteredEvents = () => state.events.filter((event) => {
-    const regionMatch = state.region === "全部" || event.region === state.region;
+    const regionMatch = regionMatches(event);
     const categoryMatch = state.category === "全部" || event.category === state.category;
     const query = state.query.trim().toLowerCase();
     const haystack = `${event.name} ${event.nameZh} ${event.city} ${event.country} ${event.venue} ${event.category}`.toLowerCase();
@@ -65,7 +92,7 @@ if (app && window.L) {
     const saved = state.saved.has(event.id);
     detailContent.innerHTML = `
       <p class="detail-category" style="--accent:${colors[event.category]}">${event.category} · ${event.region}</p>
-      <p class="detail-date">${formatDate(event.startDate, event.endDate)} / 2026</p>
+      <p class="detail-date">${formatDate(event.startDate, event.endDate)} / ${event.startDate.slice(0, 4)}</p>
       <h2>${event.nameZh}</h2>
       <p class="detail-name">${event.name}</p>
       <p class="detail-summary">${event.summary}</p>
@@ -74,9 +101,10 @@ if (app && window.L) {
         <div><dt>场馆</dt><dd>${event.venue}</dd></div>
         <div><dt>适合</dt><dd>${event.visitorType}</dd></div>
         <div><dt>来源</dt><dd>${event.source}</dd></div>
+        ${event.verification ? `<div><dt>核验</dt><dd>${event.verification}</dd></div>` : ""}
       </dl>
       <div class="detail-actions">
-        <a href="${event.url}" target="_blank" rel="noreferrer">打开官方网站 ↗</a>
+        <a href="${event.url}" target="_blank" rel="noreferrer">打开来源页面 ↗</a>
         <button type="button" data-save-event="${event.id}">${saved ? "已收藏" : "♡ 收藏"}</button>
       </div>`;
     detailPanel.classList.add("is-open");
@@ -114,8 +142,9 @@ if (app && window.L) {
     }
     app.querySelector("[data-visible-count]").textContent = events.length;
     app.querySelector("[data-city-count]").textContent = new Set(events.map((event) => event.city)).size;
-    app.querySelector("[data-country-count]").textContent = new Set(events.map((event) => event.country)).size;
+    app.querySelector("[data-venue-count]").textContent = new Set(events.map((event) => event.venue)).size;
     app.querySelector("[data-list-label]").textContent = `${state.savedOnly ? "我的收藏" : state.region === "全部" ? "全球" : state.region} · ${state.category}`;
+    app.querySelector("[data-atlas-title]").textContent = `${state.region === "全部" ? "全球" : state.region}展览`;
   };
 
   app.querySelectorAll("[data-region]").forEach((button) => button.addEventListener("click", () => {
@@ -123,6 +152,7 @@ if (app && window.L) {
     state.savedOnly = false;
     app.querySelectorAll("[data-region]").forEach((item) => item.classList.toggle("is-active", item === button));
     render();
+    focusMap();
   }));
 
   app.querySelectorAll("[data-category]").forEach((button) => button.addEventListener("click", () => {
@@ -163,9 +193,12 @@ if (app && window.L) {
   fetch("./data/exhibitions.json", { cache: "no-store" })
     .then((response) => response.json())
     .then((data) => {
-      state.events = data.events || [];
+      state.events = (data.events || []).map((event) => ({ ...event, country: normalizeCountry(event.country, event.city) }));
       state.sources = data.sources || [];
-      app.querySelector("[data-source-list]").innerHTML = state.sources.map((source) => `<a href="${source.url}" target="_blank" rel="noreferrer"><strong>${source.name}</strong><span>${source.scope}</span><i>↗</i></a>`).join("");
+      const updatedAt = new Date(data.updatedAt);
+      const updateText = Number.isNaN(updatedAt.getTime()) ? "更新时间待确认" : `${String(updatedAt.getMonth() + 1).padStart(2, "0")}/${String(updatedAt.getDate()).padStart(2, "0")} ${String(updatedAt.getHours()).padStart(2, "0")}:${String(updatedAt.getMinutes()).padStart(2, "0")}`;
+      app.querySelector("[data-atlas-sync]").textContent = `上海自动采集 · 内容更新 ${updateText}`;
+      app.querySelector("[data-source-list]").innerHTML = state.sources.map((source) => `<a href="${source.url}" target="_blank" rel="noreferrer"><strong>${source.name}${source.automated ? " · 自动" : ""}</strong><span>${source.scope}${source.status ? ` · ${source.status}` : ""}</span><i>↗</i></a>`).join("");
       saveState();
       render();
     })
