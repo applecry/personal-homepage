@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f4f1" />
+    <title>Exhibit Atlas 全球展览网 | applecry</title>
+    <meta name="description" content="在一张地图上发现全球值得去的展会，按地区、时间与行业筛选，并直达官方信息。" />
+    <link rel="stylesheet" href="./assets/vendor/leaflet.css" />
+    <link rel="stylesheet" href="./exhibitions.css?v=20260714-1" />
+  </head>
+  <body>
+    <div class="atlas-app" data-atlas-app>
+      <header class="atlas-header">
+        <a class="atlas-brand" href="./index.html#works" aria-label="返回 applecry 主页">
+          <span class="atlas-brand-mark" aria-hidden="true">◎</span>
+          <span><strong>Exhibit Atlas.</strong><small>by applecry</small></span>
+        </a>
+        <nav class="atlas-region-tabs" aria-label="地区筛选">
+          <button class="is-active" type="button" data-region="全部">全球</button>
+          <button type="button" data-region="亚洲">亚洲</button>
+          <button type="button" data-region="欧洲">欧洲</button>
+          <button type="button" data-region="美洲">美洲</button>
+        </nav>
+        <div class="atlas-actions">
+          <button type="button" data-search-toggle aria-label="搜索展会"><span aria-hidden="true">⌕</span><b>搜索</b></button>
+          <button type="button" data-sources-toggle aria-label="查看数据源"><span aria-hidden="true">▤</span><b>数据源</b></button>
+          <button type="button" data-saved-toggle aria-label="查看收藏"><span aria-hidden="true">♡</span><b><span data-saved-count>0</span> 收藏</b></button>
+        </div>
+      </header>
+
+      <main class="atlas-stage">
+        <div id="exhibition-map" class="atlas-map" aria-label="全球展览地图"></div>
+
+        <section class="atlas-overview" aria-labelledby="atlas-title">
+          <p class="atlas-kicker">GLOBAL EXHIBITION RADAR</p>
+          <div class="atlas-overview-title"><span></span><h1 id="atlas-title">全球展览</h1></div>
+          <div class="atlas-metrics">
+            <div><strong data-visible-count>0</strong><span>当前展会</span></div>
+            <div><strong data-city-count>0</strong><span>城市</span></div>
+            <div><strong data-country-count>0</strong><span>国家</span></div>
+          </div>
+          <p class="atlas-sync">官方来源核验 · 更新于 2026.07.14</p>
+        </section>
+
+        <aside class="atlas-filter-panel" aria-label="展会类型筛选">
+          <span class="atlas-filter-title">兴趣</span>
+          <button class="is-active" type="button" data-category="全部"><i>✦</i>全部</button>
+          <button type="button" data-category="艺术"><i>◫</i>艺术</button>
+          <button type="button" data-category="科技"><i>⌁</i>科技</button>
+          <button type="button" data-category="游戏"><i>◆</i>游戏</button>
+          <button type="button" data-category="商贸"><i>▦</i>商贸</button>
+        </aside>
+
+        <section class="atlas-list" aria-label="展会列表">
+          <header><span>接下来值得去</span><strong data-list-label>全球 · 全部</strong></header>
+          <div class="atlas-list-scroll" data-event-list></div>
+        </section>
+
+        <aside class="atlas-detail" data-detail-panel aria-hidden="true">
+          <button class="atlas-detail-close" type="button" data-detail-close aria-label="关闭详情">×</button>
+          <div data-detail-content></div>
+        </aside>
+
+        <section class="atlas-search" data-search-panel aria-hidden="true">
+          <label for="atlas-search-input">搜索城市、国家、展会或场馆</label>
+          <div><span aria-hidden="true">⌕</span><input id="atlas-search-input" type="search" placeholder="例如：东京、艺术、gamescom" data-search-input /><button type="button" data-search-close aria-label="关闭搜索">×</button></div>
+        </section>
+
+        <aside class="atlas-sources" data-sources-panel aria-hidden="true">
+          <header><div><span>DATA SOURCES</span><h2>数据从哪里来</h2></div><button type="button" data-sources-close aria-label="关闭数据源">×</button></header>
+          <p>当前条目以展会官方页面为日期依据；以下国内平台用于后续扩展和交叉核验，不直接替代官方来源。</p>
+          <div data-source-list></div>
+        </aside>
+
+        <footer class="atlas-map-note">
+          <span><i class="legend-dot"></i> 已核验日期</span>
+          <span>地图 © OpenStreetMap</span>
+          <span>拖动探索 · 滚轮缩放</span>
+        </footer>
+      </main>
+    </div>
+    <script src="./assets/vendor/leaflet.js"></script>
+    <script src="./exhibitions.js?v=20260714-1"></script>
+  </body>
+</html>
