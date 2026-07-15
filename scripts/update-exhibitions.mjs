@@ -6,6 +6,10 @@ import { promisify } from "node:util";
 const execFileAsync = promisify(execFile);
 const outputPath = fileURLToPath(new URL("../data/exhibitions.json", import.meta.url));
 const curatedPath = fileURLToPath(new URL("../data/exhibitions-curated.json", import.meta.url));
+const shanghaiFilingBaseUrl = "https://expo.sww.sh.gov.cn/browser/";
+const shanghaiFilingListUrl = `${shanghaiFilingBaseUrl}search-entp-index.jspx?code=SEARCH`;
+const neccCalendarUrl = "https://www.neccsh.com/cecsh/exhibitioninfo/exhibitionlist.jspx?v=1";
+const sniecCalendarUrl = "https://www.sniec.net/";
 const shanghaiSearchTerms = [
   "上海",
   "上海新国际博览中心",
@@ -18,14 +22,20 @@ const shanghaiSearchTerms = [
 const anchoredDetailPaths = ["/detail/q2TfK24G", "/detail/yaYnmW6k", "/detail/1EwTjMpx", "/detail/uzkWVcq6"];
 const listUrlFor = (keyword) => `https://www.expofinder.com/list?keyword=${encodeURIComponent(keyword)}`;
 const shanghaiListUrl = listUrlFor(shanghaiSearchTerms[0]);
-const maxDetails = 120;
+const maxDetails = 80;
 const shanghaiCalendarUrl = "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html";
 const chinajoyOfficialUrl = "https://btb.chinajoy.net/news/63876";
 const waicOfficialUrl = "https://www.shanghai.gov.cn/nw4411/20260708/ba4c8e75f2744b43a6080ebb82a3aab2.html";
 
 const sourceDefinitions = [
+  { name: "上海市会展业公共信息服务平台", scope: "上海已备案会展主库：状态、文号、主办方、面积、内容与同期展会", url: shanghaiFilingListUrl, probe: shanghaiFilingListUrl, automated: true, authority: "official" },
   { name: "上海市商务委员会", scope: "2026 年上海重点展会官方基线（90 场，收录当前日期之后的排期）", url: shanghaiCalendarUrl, probe: shanghaiCalendarUrl },
   { name: "上海市人民政府", scope: "WAIC、ChinaJoy 与月度重点展会官方核验", url: "https://www.shanghai.gov.cn/", probe: waicOfficialUrl },
+  { name: "国家会展中心（上海）", scope: "场馆排期、展厅号与展会官网交叉核验", url: neccCalendarUrl, probe: neccCalendarUrl, authority: "venue" },
+  { name: "上海新国际博览中心", scope: "场馆排期与日期交叉核验", url: sniecCalendarUrl, probe: sniecCalendarUrl, authority: "venue" },
+  { name: "上海世博展览馆", scope: "世博展览馆项目与活动交叉核验", url: "https://sweecc.dlg-expo.com/", probe: "https://sweecc.dlg-expo.com/", authority: "venue" },
+  { name: "上海世贸商城", scope: "时尚、珠宝、茶业与消费类中小型展会排期", url: "https://www.shanghaimart.com/activity/activ_list.aspx", probe: "https://www.shanghaimart.com/activity/activ_list.aspx", authority: "venue" },
+  { name: "上海跨国采购会展中心", scope: "跨采中心展览预告与会议活动", url: "https://www.shcec.com.cn/", probe: "https://www.shcec.com.cn/", authority: "venue" },
   { name: "ChinaJoy", scope: "ChinaJoy 日期、场馆与主题官方核验", url: "https://chinajoy.net/", probe: chinajoyOfficialUrl },
   { name: "展查查", scope: "上海长尾排期自动发现与结构化详情", url: "https://www.expofinder.com/", probe: shanghaiListUrl, automated: true },
   { name: "去展网", scope: "上海近期排期发现与交叉核验", url: "https://www.qufair.com/", probe: "https://www.qufair.com/fl/0-274-0/" },
@@ -41,9 +51,13 @@ const venueCoordinates = [
   [/世贸商城|Shanghai Mart/, [31.2019, 121.407]],
   [/上海展览中心/, [31.2291, 121.4545]],
   [/跨国采购/, [31.236, 121.392]],
+  [/汽车会展中心/, [31.2853, 121.1768]],
+  [/汽车博物馆/, [31.2788, 121.1809]],
+  [/艺仓美术馆/, [31.2035, 121.5072]],
 ];
 
 const decodeEntities = (value = "") => value
+  .replace(/&nbsp;|&#160;/g, " ")
   .replace(/&amp;/g, "&")
   .replace(/&lt;/g, "<")
   .replace(/&gt;/g, ">")
@@ -54,6 +68,122 @@ const cleanText = (value = "") => decodeEntities(value)
   .replace(/<[^>]+>/g, " ")
   .replace(/\s+/g, " ")
   .trim();
+
+const cleanMultilineText = (value = "") => decodeEntities(value)
+  .replace(/<br\s*\/?\s*>/gi, "\n")
+  .replace(/<[^>]+>/g, " ")
+  .replace(/[ \t]+/g, " ")
+  .replace(/ *\n */g, "\n")
+  .replace(/\n+/g, "\n")
+  .trim();
+
+const normalizeIsoDate = (value = "") => {
+  const match = String(value).trim().match(/(\d{4})-(\d{1,2})-(\d{1,2})/);
+  if (match) return `${match[1]}-${match[2].padStart(2, "0")}-${match[3].padStart(2, "0")}`;
+  const english = String(value).trim().match(/^([A-Za-z]{3})\s+(\d{1,2}),\s*(\d{4})$/);
+  if (english) {
+    const month = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"].indexOf(english[1].toLowerCase()) + 1;
+    if (month) return `${english[3]}-${String(month).padStart(2, "0")}-${english[2].padStart(2, "0")}`;
+  }
+  const parsed = new Date(String(value).trim());
+  return Number.isNaN(parsed.getTime()) ? "" : parsed.toISOString().slice(0, 10);
+};
+
+const canonicalVenue = (value = "") => {
+  const venue = cleanText(value).replace(/\s+/g, "");
+  if (/国家会展中心.*上海/.test(venue)) return "国家会展中心（上海）";
+  if (/新国际博览中心|新国际展览中心|新国际会展中心/.test(venue)) return "上海新国际博览中心";
+  if (/世博展览馆/.test(venue)) return "上海世博展览馆";
+  if (/世贸商城展览馆/.test(venue)) return "上海世贸商城展览馆";
+  if (/跨国采购会展中心/.test(venue)) return "上海跨国采购会展中心";
+  return cleanText(value).replace(/\([^)]*区\)|（[^）]*区）/g, "").trim();
+};
+
+const filingDetailUrl = (code) => new URL(`search-entp-expo.jspx?code=${encodeURIComponent(code)}`, shanghaiFilingBaseUrl).toString();
+
+const parseFilingList = (html) => Array.from(html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi), ([, row]) => {
+  const link = row.match(/search-entp-expo\.jspx\?code=([a-f0-9-]+)[^>]*class=["']ggxx["'][^>]*>([\s\S]*?)<\/a>/i);
+  if (!link) return null;
+  const cells = Array.from(row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi), (match) => match[1]);
+  if (cells.length < 5) return null;
+  const dates = cleanText(cells[4]).match(/(\d{4}-\d{1,2}-\d{1,2})\s*至\s*(\d{4}-\d{1,2}-\d{1,2})/);
+  const name = cleanText(link[2]);
+  const filingStatus = cleanText(cells[0]).replace(name, "").trim() || "已备案";
+  const organizers = cleanMultilineText(cells[1]).split("\n").map(cleanText).filter(Boolean);
+  const venue = canonicalVenue(cells[2]);
+  if (!name || !dates || !venue) return null;
+  const [lat, lng] = coordinatesFor(venue);
+  return {
+    id: `sh-filing-${link[1]}`,
+    filingCode: link[1],
+    name,
+    nameZh: name,
+    category: categoryOf(name, ""),
+    eventType: "展览",
+    exhibitionType: cleanText(cells[3]),
+    region: "亚洲",
+    city: "上海",
+    country: "中国",
+    venue,
+    startDate: normalizeIsoDate(dates[1]),
+    endDate: normalizeIsoDate(dates[2]),
+    lat,
+    lng,
+    organizers,
+    filingStatus,
+    summary: `${name}已在上海市会展业公共信息服务平台备案。`,
+    visitorType: "开放安排以主办方规则为准",
+    source: "上海市会展业公共信息服务平台",
+    sourceUrl: filingDetailUrl(link[1]),
+    url: filingDetailUrl(link[1]),
+    verification: "上海市会展业公共信息服务平台备案信息",
+    confidence: "official",
+    collectedAt: new Date().toISOString(),
+    featured: false,
+  };
+}).filter(Boolean);
+
+const parseFilingDetail = (html, fallback = {}) => {
+  const mainBlock = html.match(/<li[^>]+class=["'][^"']*table01[^"']*["'][^>]*>([\s\S]*?)<\/li>/i)?.[1] || "";
+  const text = cleanMultilineText(mainBlock);
+  const title = cleanText(html.match(/tableheadleft[^>]*>[\s\S]*?<b>([\s\S]*?)<\/b>/i)?.[1] || fallback.nameZh || "");
+  const dateMatch = text.match(/日期：\s*(\d{4}-\d{1,2}-\d{1,2})\s*至\s*(\d{4}-\d{1,2}-\d{1,2})/);
+  const organizersText = text.match(/主办：([\s\S]*?)\n日期：/)?.[1] || "";
+  const venue = canonicalVenue(text.match(/地址：([^\n]*?)(?:面积：|\n)/)?.[1] || fallback.venue || "");
+  const content = cleanText(text.match(/内容：([\s\S]*?)(?:\*本平台|$)/)?.[1] || "");
+  const filingStatus = cleanText(text.match(/展会状态:\s*([^\n]+)/)?.[1] || fallback.filingStatus || "已备案");
+  const concurrentEvents = Array.from(html.matchAll(/search-entp-expo\.jspx\?code=([a-f0-9-]+)[^>]*class=["']ggxx["'][^>]*>([\s\S]*?)<\/a>\s*\(([^)]+)\)/gi), (match) => {
+    const [startDate, endDate] = match[3].split(/至/).map((date) => normalizeIsoDate(date));
+    return {
+      filingCode: match[1],
+      nameZh: cleanText(match[2]),
+      startDate,
+      endDate,
+      url: filingDetailUrl(match[1]),
+    };
+  });
+  const [lat, lng] = coordinatesFor(venue || fallback.venue || "");
+  return {
+    ...fallback,
+    name: title || fallback.name,
+    nameZh: title || fallback.nameZh,
+    category: categoryOf(title || fallback.nameZh, content),
+    venue: venue || fallback.venue,
+    startDate: dateMatch ? normalizeIsoDate(dateMatch[1]) : fallback.startDate,
+    endDate: dateMatch ? normalizeIsoDate(dateMatch[2]) : fallback.endDate,
+    lat,
+    lng,
+    organizers: organizersText.split(/[、,，;；]|\n/).map(cleanText).filter(Boolean).length
+      ? organizersText.split(/[、,，;；]|\n/).map(cleanText).filter(Boolean)
+      : (fallback.organizers || []),
+    filingStatus,
+    filingNumber: cleanText(text.match(/展会文号：([^\n]+)/)?.[1] || ""),
+    exhibitionArea: Number(text.match(/面积：\s*([\d,.]+)\s*平方米/)?.[1]?.replace(/,/g, "")) || null,
+    summary: content || fallback.summary,
+    concurrentEvents,
+    status: /取消/.test(filingStatus) ? "取消" : /延期|变更/.test(filingStatus) ? "变更" : fallback.status,
+  };
+};
 
 const fetchWithCurl = async (url) => {
   const binary = process.platform === "win32" ? "curl.exe" : "curl";
@@ -258,6 +388,78 @@ const roundRobinPaths = (pathGroups, limit = maxDetails) => {
   return result.slice(0, limit);
 };
 
+const collectFilingEvents = async () => {
+  const listHtml = await fetchText(shanghaiFilingListUrl);
+  const listEvents = parseFilingList(listHtml);
+  if (!listEvents.length) throw new Error("Shanghai filing platform returned no exhibition records");
+  const events = [];
+  for (let offset = 0; offset < listEvents.length; offset += 8) {
+    const batch = listEvents.slice(offset, offset + 8);
+    const results = await Promise.allSettled(batch.map(async (event) => {
+      const detailHtml = await fetchText(event.sourceUrl);
+      return parseFilingDetail(detailHtml, event);
+    }));
+    results.forEach((result, index) => events.push(result.status === "fulfilled" ? result.value : batch[index]));
+  }
+  return events;
+};
+
+const normalizedEventName = (value = "") => cleanText(value)
+  .toLowerCase()
+  .replace(/[\s·•・—–\-（）()《》“”"'，,。.、:：]/g, "");
+
+const filingMatchesEvent = (filing, event) => {
+  if (!filing || !event) return false;
+  if (filing.filingCode && filing.filingCode === event.filingCode) return true;
+  if (filing.startDate !== event.startDate) return false;
+  const filingName = normalizedEventName(filing.nameZh || filing.name);
+  const names = [event.nameZh, event.name, ...(event.aliases || [])].map(normalizedEventName).filter(Boolean);
+  return names.some((name) => name === filingName
+    || (name.length >= 8 && (filingName.includes(name) || name.includes(filingName))));
+};
+
+const enrichWithFiling = (event, filing) => {
+  const officialUrl = event.url && !String(event.url).includes("english.shanghai.gov.cn/en-InvestmentCalendar")
+    ? event.url
+    : filing.url;
+  return {
+    ...event,
+    venue: filing.venue || event.venue,
+    startDate: filing.startDate || event.startDate,
+    endDate: filing.endDate || event.endDate,
+    lat: filing.lat,
+    lng: filing.lng,
+    organizers: filing.organizers,
+    eventType: filing.eventType,
+    exhibitionType: filing.exhibitionType,
+    filingCode: filing.filingCode,
+    filingNumber: filing.filingNumber,
+    filingStatus: filing.filingStatus,
+    exhibitionArea: filing.exhibitionArea,
+    concurrentEvents: filing.concurrentEvents,
+    source: filing.source,
+    sourceUrl: filing.sourceUrl,
+    url: officialUrl,
+    verification: "上海市会展业公共信息服务平台备案信息已核验",
+    verificationSources: [...new Set([filing.sourceUrl, event.sourceUrl, event.url].filter(Boolean))],
+    confidence: "official",
+    status: filing.status || event.status,
+    collectedAt: filing.collectedAt,
+  };
+};
+
+const mergeFilingEvents = (events, filings) => {
+  const remaining = [...events];
+  const merged = filings.map((filing) => {
+    const matches = remaining.filter((event) => filingMatchesEvent(filing, event));
+    if (!matches.length) return filing;
+    const event = matches.find((item) => !String(item.id || "").startsWith("sh-filing-")) || matches[0];
+    matches.forEach((match) => remaining.splice(remaining.indexOf(match), 1));
+    return enrichWithFiling(event, filing);
+  });
+  return [...merged, ...remaining];
+};
+
 const collectShanghai = async (verifiedOfficialEvents) => {
   const listResults = await Promise.allSettled(
     shanghaiSearchTerms.map((keyword) => fetchText(listUrlFor(keyword))),
@@ -307,16 +509,22 @@ const mergeVerifiedEvents = (events, officialEvents) => [
   ...officialEvents,
 ];
 
-const eventKey = (event) => event.id || `${event.nameZh || event.name}|${event.startDate}`.replace(/\s+/g, "").toLowerCase();
+const eventKey = (event) => `${normalizedEventName(event.nameZh || event.name)}|${event.startDate}`;
 const contentSignature = (events) => JSON.stringify(events.map(({ collectedAt, ...event }) => event));
 
 const main = async () => {
   const previous = JSON.parse(await readFile(outputPath, "utf8"));
   const verifiedOfficialEvents = await loadCuratedEvents();
-  const [collected, sourceResults] = await Promise.all([
+  const filingPromise = collectFilingEvents().catch((error) => {
+    console.warn(`Shanghai filing collection failed; continuing with curated and discovered records: ${error.message}`);
+    return [];
+  });
+  const [discoveredEvents, filingEvents, sourceResults] = await Promise.all([
     collectShanghai(verifiedOfficialEvents),
+    filingPromise,
     Promise.all(sourceDefinitions.map(probeSource)),
   ]);
+  const collected = mergeFilingEvents(discoveredEvents, filingEvents);
 
   if (!collected.length) {
     console.warn("No usable Shanghai Event data; keeping the previous file unchanged");
@@ -327,7 +535,10 @@ const main = async () => {
   const preserved = previous.events
     .map((event) => ({ ...event, country: normalizeCountry(event.country, event.city), city: normalizeCity(event.city, event.country) }))
     .filter((event) => event.endDate >= today);
-  const combined = mergeVerifiedEvents([...preserved, ...collected], verifiedOfficialEvents);
+  const combined = mergeFilingEvents(
+    mergeVerifiedEvents([...preserved, ...collected], verifiedOfficialEvents),
+    filingEvents,
+  );
   const mergedByKey = new Map();
   for (const event of combined) {
     if (event.endDate >= today) mergedByKey.set(eventKey(event), event);
@@ -346,16 +557,17 @@ const main = async () => {
     collection: {
       mode: "daily",
       checkedAt: now,
-      source: "上海市商务委重点展会基线 + 近期官方发布 + 展查查长尾发现",
+      source: "上海会展业备案平台主库 + 场馆排期核验 + 商务委重点展会 + 展查查长尾发现",
       collected: collected.length,
       curated: verifiedOfficialEvents.length,
+      officialFiled: filingEvents.length,
       total: merged.length,
     },
     events: merged,
     sources: sourceResults.map(({ probe, ...source }) => source),
   };
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-  console.log(`Wrote ${merged.length} exhibitions (${verifiedOfficialEvents.length} curated; ${collected.length - verifiedOfficialEvents.length} discovered; content ${contentChanged ? "changed" : "unchanged"})`);
+  console.log(`Wrote ${merged.length} exhibitions (${filingEvents.length} official Shanghai filings; ${verifiedOfficialEvents.length} curated; content ${contentChanged ? "changed" : "unchanged"})`);
 };
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -367,11 +579,17 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 
 export {
   categoryOf,
+  canonicalVenue,
+  collectFilingEvents,
   detailPathsFromList,
+  filingMatchesEvent,
   loadCuratedEvents,
+  mergeFilingEvents,
   mergeVerifiedEvents,
   normalizeCountry,
   officialEventMatches,
   parseEventJsonLd,
+  parseFilingDetail,
+  parseFilingList,
   roundRobinPaths,
 };

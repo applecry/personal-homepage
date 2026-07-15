@@ -73,4 +73,4 @@ Cloudflare Pages 构建设置：
 node scripts/update-xhs-exhibition-signals.mjs
 ```
 
-该步骤依赖本机浏览器登录态，不放进 GitHub Actions，也不会把 Cookie 写入仓库。展会事实数据以 `data/exhibitions-curated.json` 中的上海市商务委重点展会排期和近期官方发布为基线，包含 ChinaJoy、WAIC 等核心活动；`.github/workflows/update-exhibitions.yml` 每日从公开聚合页补充长尾排期并记录检查状态。
+该步骤依赖本机浏览器登录态，不放进 GitHub Actions，也不会把 Cookie 写入仓库。展会事实数据以“上海市会展业公共信息服务平台”的已备案项目为主库，并结合 `data/exhibitions-curated.json` 中的上海市商务委重点展会排期与近期官方发布；采集器会补充备案状态、文号、主办方、展览面积、展会类型和同期展会，并探测国家会展中心、上海新国际博览中心、上海世博展览馆等场馆排期。`.github/workflows/update-exhibitions.yml` 每日更新上海排期，同时从公开聚合页补充待官网复核的长尾线索；既有的未来全球精选会继续保留，避免上海日更误删其他地区内容。
