@@ -8,7 +8,7 @@
     <meta name="description" content="在一张地图上发现全球值得去的展会，按地区、时间与行业筛选，并直达官方信息。" />
     <link rel="stylesheet" href="./assets/vendor/leaflet.css" />
     <link rel="stylesheet" href="./exhibitions.css?v=20260715-1" />
-    <link rel="stylesheet" href="./page-agent.css?v=20260714-1" />
+    <link rel="stylesheet" href="./page-agent.css?v=20260715-2" />
   </head>
   <body>
     <div class="atlas-app" data-atlas-app>
@@ -98,7 +98,10 @@
     </div>
     <div class="agent-dock" data-page-agent-ignore="true">
       <div class="agent-status" data-agent-status aria-live="polite">PageAgent 准备中</div>
-      <button class="agent-wake-button" type="button" data-agent-wake aria-label="唤醒 PageAgent"><span>AI</span></button>
+      <button class="agent-wake-button" type="button" data-agent-wake aria-label="唤醒 PageAgent">
+        <span class="agent-mascot" aria-hidden="true"><img src="./assets/ai-assistant-girl.png?v=20260715-1" alt="" /><i></i></span>
+        <span class="agent-button-label">打开 AI 助手</span>
+      </button>
     </div>
     <script src="./assets/vendor/leaflet.js"></script>
     <script src="./exhibitions.js?v=20260715-1"></script>
