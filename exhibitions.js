@@ -16,8 +16,15 @@ if (app && window.L && window.ExhibitionAtlasCore) {
     { id: "sniec", match: "上海新国际博览中心", aliases: ["上海新国际展览中心", "上海新国际会展中心"], name: "上海新国际博览中心", short: "新博", district: "浦东新区", address: "龙阳路 2345 号", transit: "地铁 7 号线 · 花木路站", lat: 31.2117, lng: 121.5635 },
     { id: "sweecc", match: "上海世博展览馆", name: "上海世博展览馆", short: "世博", district: "浦东新区", address: "国展路 1099 号", transit: "地铁 8 号线 · 中华艺术宫站", lat: 31.1850, lng: 121.4890 },
     { id: "expo-center", match: "世博中心", name: "上海世博中心", short: "世中", district: "浦东新区", address: "世博大道 1500 号", transit: "地铁 8 号线 · 中华艺术宫站", lat: 31.1900, lng: 121.4898 },
+    { id: "shanghai-exhibition-center", match: "上海展览中心", name: "上海展览中心", short: "上展", district: "静安区", address: "延安中路 1000 号", transit: "地铁 2 / 7 / 14 号线 · 静安寺站", lat: 31.2291, lng: 121.4545 },
+    { id: "shcec", match: "上海跨国采购会展中心", name: "上海跨国采购会展中心", short: "跨采", district: "普陀区", address: "光复西路 2739 号", transit: "地铁 2 / 13 / 15 号线 · 大渡河路站", lat: 31.2360, lng: 121.3920 },
+    { id: "shanghai-mart", match: "上海世贸商城展览馆", aliases: ["上海世贸商城"], name: "上海世贸商城展览馆", short: "世贸", district: "长宁区", address: "延安西路 2299 号", transit: "地铁 10 号线 · 伊犁路站", lat: 31.2019, lng: 121.4070 },
     { id: "zhangjiang", match: "张江科学会堂", name: "张江科学会堂", short: "张江", district: "浦东新区", address: "海科路 1393 号", transit: "地铁 13 号线 · 学林路站", lat: 31.1765, lng: 121.6022 },
     { id: "west-bund", match: "徐汇西岸国际会展中心", name: "西岸国际会展中心", short: "西岸", district: "徐汇区", address: "龙腾大道 2555 号", transit: "地铁 11 号线 · 云锦路站", lat: 31.1734, lng: 121.4590 },
+    { id: "auto-expo", match: "上海汽车会展中心", name: "上海汽车会展中心", short: "汽展", district: "嘉定区", address: "博园路 7575 号", transit: "请从展会来源页确认到场方式", lat: 31.2853, lng: 121.1768 },
+    { id: "auto-museum", match: "上海汽车博物馆", name: "上海汽车博物馆", short: "汽博", district: "嘉定区", address: "博园路 7565 号", transit: "请从展会来源页确认到场方式", lat: 31.2788, lng: 121.1809 },
+    { id: "modern-art-museum", match: "上海艺仓美术馆", name: "上海艺仓美术馆", short: "艺仓", district: "浦东新区", address: "滨江大道 4777 号", transit: "请从展会来源页确认到场方式", lat: 31.2035, lng: 121.5072 },
+    { id: "litang-cultural-center", match: "里滩文化中心", name: "里滩文化中心", short: "里滩", district: "黄浦区", address: "局门路 689 号", transit: "请从展会来源页确认到场方式", lat: 31.2304, lng: 121.4737 },
   ];
   const readSavedEvents = () => {
     try {
@@ -229,7 +236,11 @@ if (app && window.L && window.ExhibitionAtlasCore) {
     return [{
       id: `${event.city}-${event.venue}`,
       name: event.venue,
-      short: event.venue.replace(/[（(].*?[）)]/g, "").slice(0, 2),
+      short: event.venue
+        .replace(/[（(].*?[）)]/g, "")
+        .replace(new RegExp(`^${event.city}市?`), "")
+        .replace(/(?:国际)?(?:会展中心|展览中心|博览中心|展览馆|博物馆|美术馆)$/, "")
+        .slice(0, 2) || event.city.slice(0, 2),
       district: event.city,
       address: "地址以主办方最新通知为准",
       transit: "请从展会来源页确认到场方式",
