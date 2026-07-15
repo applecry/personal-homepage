@@ -473,6 +473,14 @@ const setAgentButtonState = (state) => {
   }
 };
 
+const syncAgentExecutionState = (agent) => {
+  if (!agentWake) return;
+  const isThinking = agent?.status === "running";
+  agentWake.classList.toggle("is-thinking", isThinking);
+  agentWake.setAttribute("aria-busy", isThinking ? "true" : "false");
+  agentWake.setAttribute("aria-label", isThinking ? "PageAgent 正在思考" : "唤醒 PageAgent");
+};
+
 const loadScript = (src) =>
   new Promise((resolve, reject) => {
     const absoluteSrc = new URL(src, location.href).href;
@@ -704,8 +712,13 @@ const installPageAgentSession = (agent) => {
   if (!pageAgentSessionAgents.has(agent)) {
     pageAgentSessionAgents.add(agent);
     agent.addEventListener("historychange", () => persistPageAgentSession(agent));
-    agent.addEventListener("statuschange", () => persistPageAgentSession(agent));
+    agent.addEventListener("statuschange", () => {
+      persistPageAgentSession(agent);
+      syncAgentExecutionState(agent);
+    });
   }
+
+  syncAgentExecutionState(agent);
 
   if (session?.status === "running") {
     queueMicrotask(() => resumePageAgentTask(agent, session));

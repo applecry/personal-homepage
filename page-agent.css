@@ -100,16 +100,23 @@
 }
 
 .agent-mascot img {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
   filter: drop-shadow(0 12px 13px rgba(11, 18, 15, 0.3));
   transform-origin: 50% 78%;
-  transition: transform 190ms cubic-bezier(.2,.8,.2,1), filter 190ms ease;
+  transition: opacity 240ms ease, transform 240ms cubic-bezier(.2,.8,.2,1), filter 190ms ease;
 }
 
-.agent-mascot i {
+.agent-mascot-thinking {
+  opacity: 0;
+  transform: translateY(3px) scale(.94);
+}
+
+.agent-mascot-eye {
   position: absolute;
   top: 24%;
   left: 63%;
@@ -120,6 +127,63 @@
   box-shadow: 0 0 8px 3px rgba(255, 45, 65, 0.62);
   mix-blend-mode: screen;
   animation: agent-mascot-eye 2.8s ease-in-out infinite;
+  transition: opacity 180ms ease;
+}
+
+.agent-thinking-dots {
+  position: absolute;
+  top: 7px;
+  right: -1px;
+  display: flex;
+  align-items: end;
+  gap: 3px;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.agent-thinking-dots i {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #9fe8ff;
+  box-shadow: 0 0 9px rgba(86, 207, 255, .72);
+}
+
+.agent-thinking-dots i:nth-child(2) { width: 7px; height: 7px; }
+.agent-thinking-dots i:nth-child(3) { width: 10px; height: 10px; }
+
+.agent-wake-button.is-thinking .agent-mascot-idle {
+  opacity: 0;
+  transform: translateY(3px) scale(.94);
+}
+
+.agent-wake-button.is-thinking .agent-mascot-thinking {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.agent-wake-button.is-thinking .agent-mascot-eye {
+  opacity: 0;
+  animation: none;
+}
+
+.agent-wake-button.is-thinking .agent-thinking-dots {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.agent-wake-button.is-thinking .agent-thinking-dots i {
+  animation: agent-thinking-dot 1.2s ease-in-out infinite;
+}
+
+.agent-wake-button.is-thinking .agent-thinking-dots i:nth-child(2) { animation-delay: 140ms; }
+.agent-wake-button.is-thinking .agent-thinking-dots i:nth-child(3) { animation-delay: 280ms; }
+
+.agent-wake-button.is-thinking::after {
+  background: #72d8ff;
+  box-shadow: 0 0 0 4px rgba(114, 216, 255, 0.16), 0 3px 12px rgba(0, 0, 0, 0.25);
 }
 
 .agent-button-label {
@@ -153,6 +217,11 @@
 .agent-wake-button.is-ready::after {
   background: #7ee5a9;
   box-shadow: 0 0 0 4px rgba(126, 229, 169, 0.14), 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+.agent-wake-button.is-ready.is-thinking::after {
+  background: #72d8ff;
+  box-shadow: 0 0 0 4px rgba(114, 216, 255, 0.16), 0 3px 12px rgba(0, 0, 0, 0.25);
 }
 
 .agent-wake-button.is-loading {
@@ -190,6 +259,11 @@
   88% { opacity: 0.48; transform: scale(.9); }
 }
 
+@keyframes agent-thinking-dot {
+  0%, 100% { opacity: .35; transform: translateY(0) scale(.82); }
+  50% { opacity: 1; transform: translateY(-4px) scale(1.08); }
+}
+
 @media (max-width: 560px) {
   .agent-dock {
     right: 10px;
@@ -210,7 +284,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .agent-mascot,
-  .agent-mascot i,
+  .agent-mascot-eye,
+  .agent-thinking-dots i,
   .agent-wake-button.is-loading .agent-mascot {
     animation: none;
   }

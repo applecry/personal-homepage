@@ -17,7 +17,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="./assets/applecry-workbench.png" />
     <link rel="stylesheet" href="./styles.css?v=20260714-2" />
-    <link rel="stylesheet" href="./page-agent.css?v=20260715-2" />
+    <link rel="stylesheet" href="./page-agent.css?v=20260715-3" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -299,10 +299,15 @@
     <div class="agent-dock" data-page-agent-ignore="true">
       <div class="agent-status" data-agent-status aria-live="polite">PageAgent 准备中</div>
       <button class="agent-wake-button" type="button" data-agent-wake aria-label="唤醒 PageAgent">
-        <span class="agent-mascot" aria-hidden="true"><img src="./assets/ai-assistant-girl.png?v=20260715-1" alt="" /><i></i></span>
+        <span class="agent-mascot" aria-hidden="true">
+          <img class="agent-mascot-idle" src="./assets/ai-assistant-girl.png?v=20260715-1" alt="" />
+          <img class="agent-mascot-thinking" src="./assets/ai-assistant-girl-thinking.png?v=20260715-1" alt="" />
+          <i class="agent-mascot-eye"></i>
+          <span class="agent-thinking-dots"><i></i><i></i><i></i></span>
+        </span>
         <span class="agent-button-label">打开 AI 助手</span>
       </button>
     </div>
-    <script src="./script.js?v=20260715-1"></script>
+    <script src="./script.js?v=20260715-2"></script>
   </body>
 </html>
