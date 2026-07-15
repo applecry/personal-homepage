@@ -436,6 +436,7 @@ const pageAgentSessionKey = "applecry-page-agent-session-v1";
 const pageAgentWindowNamePrefix = `${pageAgentSessionKey}:`;
 const pageAgentSessionMaxAge = 12 * 60 * 60 * 1000;
 const pageAgentSessionAgents = new WeakSet();
+const pageAgentResumedAgents = new WeakSet();
 let activePageAgentForSession = null;
 let pageAgentLeavingOrigin = false;
 
@@ -623,7 +624,9 @@ const persistPageAgentSession = (agent = activePageAgentForSession) => {
   const serializedSession = JSON.stringify({
     task: String(agent.task || ""),
     history: compactAgentHistory(agent.history),
+    status: String(agent.status || "idle"),
     panelOpen: isAgentPanelOpen(agent),
+    pageUrl: location.href,
     updatedAt: Date.now(),
   });
   let persisted = false;
@@ -647,6 +650,42 @@ const persistPageAgentSession = (agent = activePageAgentForSession) => {
   }
 };
 
+const resumePageAgentTask = (agent, session) => {
+  if (
+    !agent
+    || pageAgentResumedAgents.has(agent)
+    || session?.status !== "running"
+    || !String(session?.task || "").trim()
+    || agent.status !== "idle"
+  ) {
+    return;
+  }
+
+  pageAgentResumedAgents.add(agent);
+  const task = String(session.task);
+  const history = Array.isArray(session.history) ? session.history.map(cloneAgentSessionValue) : [];
+  const previousUrl = String(session.pageUrl || "");
+
+  // PageAgent.execute() creates a fresh private execution loop and clears public
+  // history synchronously. Start that loop first, then immediately restore the
+  // saved context before its first asynchronous browser observation begins.
+  const execution = agent.execute(task);
+  agent.task = task;
+  agent.history = history;
+  agent.pushObservation?.(
+    `The task continued after a same-site page navigation${previousUrl ? ` from ${previousUrl}` : ""}. `
+      + "Keep working toward the original user request using the restored history and the current page. Do not stop merely because navigation completed.",
+  );
+  agent.dispatchEvent(new Event("historychange"));
+  agent.panel?.show?.();
+  setAgentStatus("页面已切换，PageAgent 继续执行中");
+
+  Promise.resolve(execution).catch((error) => {
+    console.warn("PageAgent task resume failed", error);
+    setAgentStatus("PageAgent 续跑失败，可重新提交任务", "error");
+  });
+};
+
 const installPageAgentSession = (agent) => {
   if (!agent) return null;
   activePageAgentForSession = agent;
@@ -666,6 +705,10 @@ const installPageAgentSession = (agent) => {
     pageAgentSessionAgents.add(agent);
     agent.addEventListener("historychange", () => persistPageAgentSession(agent));
     agent.addEventListener("statuschange", () => persistPageAgentSession(agent));
+  }
+
+  if (session?.status === "running") {
+    queueMicrotask(() => resumePageAgentTask(agent, session));
   }
 
   return agent;
