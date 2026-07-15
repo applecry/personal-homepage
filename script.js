@@ -425,6 +425,7 @@ if (musicPlayer) {
 
 const agentWake = document.querySelector("[data-agent-wake]");
 const agentStatus = document.querySelector("[data-agent-status]");
+const agentDock = document.querySelector(".agent-dock");
 const pageAgentScriptSources = [
   "./assets/vendor/page-agent.demo.js?autoInit=false",
   "https://cdn.jsdelivr.net/npm/page-agent@1.11.0/dist/iife/page-agent.demo.js?autoInit=false",
@@ -432,6 +433,8 @@ const pageAgentScriptSources = [
 ];
 let pageAgentScriptPromise = null;
 let agentStatusTimer = null;
+let agentDockPositionFrame = null;
+let agentDockReturnTimer = null;
 const pageAgentSessionKey = "applecry-page-agent-session-v1";
 const pageAgentWindowNamePrefix = `${pageAgentSessionKey}:`;
 const pageAgentSessionMaxAge = 12 * 60 * 60 * 1000;
@@ -473,12 +476,59 @@ const setAgentButtonState = (state) => {
   }
 };
 
+const clampAgentPosition = (value, minimum, maximum) => Math.min(Math.max(value, minimum), maximum);
+
+const positionAgentDockByPanel = (agent) => {
+  if (!agentDock) return;
+  const isWorking = agent?.status === "running";
+
+  window.cancelAnimationFrame(agentDockPositionFrame);
+
+  if (!isWorking) {
+    if (agentDock.classList.contains("is-agent-working")) {
+      window.clearTimeout(agentDockReturnTimer);
+      agentDock.classList.add("is-agent-returning");
+      agentDockReturnTimer = window.setTimeout(() => agentDock.classList.remove("is-agent-returning"), 740);
+    }
+    agentDock.classList.remove("is-agent-working");
+    agentDock.style.removeProperty("--agent-fly-x");
+    agentDock.style.removeProperty("--agent-fly-y");
+    return;
+  }
+
+  window.clearTimeout(agentDockReturnTimer);
+  agentDockPositionFrame = window.requestAnimationFrame(() => {
+    const panel = getPanelWrapper(agent);
+    if (!panel || panel.style.display === "none") return;
+
+    const panelRect = panel.getBoundingClientRect();
+    const dockStyle = window.getComputedStyle(agentDock);
+    const dockWidth = agentDock.offsetWidth;
+    const dockHeight = agentDock.offsetHeight;
+    const baseLeft = window.innerWidth - Number.parseFloat(dockStyle.right || "0") - dockWidth;
+    const baseTop = window.innerHeight - Number.parseFloat(dockStyle.bottom || "0") - dockHeight;
+    const compact = window.innerWidth <= 620 || panelRect.left < dockWidth + 24;
+    const targetLeft = compact
+      ? clampAgentPosition(panelRect.left + 6, 8, window.innerWidth - dockWidth - 8)
+      : clampAgentPosition(panelRect.left - dockWidth - 12, 8, window.innerWidth - dockWidth - 8);
+    const targetTop = compact
+      ? clampAgentPosition(panelRect.top - dockHeight + 14, 8, window.innerHeight - dockHeight - 8)
+      : clampAgentPosition(panelRect.top + (panelRect.height - dockHeight) / 2, 8, window.innerHeight - dockHeight - 8);
+
+    agentDock.style.setProperty("--agent-fly-x", `${Math.round(targetLeft - baseLeft)}px`);
+    agentDock.style.setProperty("--agent-fly-y", `${Math.round(targetTop - baseTop)}px`);
+    agentDock.classList.remove("is-agent-returning");
+    agentDock.classList.add("is-agent-working");
+  });
+};
+
 const syncAgentExecutionState = (agent) => {
   if (!agentWake) return;
   const isThinking = agent?.status === "running";
   agentWake.classList.toggle("is-thinking", isThinking);
   agentWake.setAttribute("aria-busy", isThinking ? "true" : "false");
   agentWake.setAttribute("aria-label", isThinking ? "PageAgent 正在思考" : "唤醒 PageAgent");
+  positionAgentDockByPanel(agent);
 };
 
 const loadScript = (src) =>
@@ -730,6 +780,7 @@ const installPageAgentSession = (agent) => {
 window.addEventListener("pagehide", () => {
   if (!pageAgentLeavingOrigin) persistPageAgentSession();
 });
+window.addEventListener("resize", () => positionAgentDockByPanel(activePageAgentForSession));
 document.addEventListener("click", (event) => {
   const link = event.target.closest?.("a[href]");
   if (!link || (link.target && link.target !== "_self")) return;

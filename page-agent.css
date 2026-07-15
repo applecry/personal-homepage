@@ -8,7 +8,14 @@
   width: 84px;
   height: 96px;
   margin: 0;
+  transform: translate3d(0, 0, 0);
+  transition: transform 720ms cubic-bezier(.2, .86, .2, 1);
+  will-change: transform;
   pointer-events: none;
+}
+
+.agent-dock.is-agent-working {
+  transform: translate3d(var(--agent-fly-x, 0), var(--agent-fly-y, 0), 0);
 }
 
 .agent-status {
@@ -60,6 +67,11 @@
   pointer-events: auto;
   isolation: isolate;
   transition: filter 180ms ease, opacity 180ms ease;
+}
+
+.agent-dock.is-agent-working .agent-status {
+  opacity: 0;
+  transform: translateX(-5px);
 }
 
 .agent-wake-button::before {
@@ -224,6 +236,14 @@
   box-shadow: 0 0 0 4px rgba(114, 216, 255, 0.16), 0 3px 12px rgba(0, 0, 0, 0.25);
 }
 
+.agent-dock.is-agent-working .agent-wake-button {
+  animation: agent-mascot-arrive 720ms cubic-bezier(.2, .86, .2, 1);
+}
+
+.agent-dock.is-agent-returning .agent-wake-button {
+  animation: agent-mascot-return 720ms cubic-bezier(.2, .86, .2, 1);
+}
+
 .agent-wake-button.is-loading {
   cursor: progress;
   opacity: 0.78;
@@ -264,6 +284,20 @@
   50% { opacity: 1; transform: translateY(-4px) scale(1.08); }
 }
 
+@keyframes agent-mascot-arrive {
+  0% { transform: rotate(0) scale(1); }
+  42% { transform: rotate(-7deg) scale(.9); }
+  78% { transform: rotate(2deg) scale(1.04); }
+  100% { transform: rotate(0) scale(1); }
+}
+
+@keyframes agent-mascot-return {
+  0% { transform: rotate(0) scale(1); }
+  42% { transform: rotate(7deg) scale(.9); }
+  78% { transform: rotate(-2deg) scale(1.04); }
+  100% { transform: rotate(0) scale(1); }
+}
+
 @media (max-width: 560px) {
   .agent-dock {
     right: 10px;
@@ -283,10 +317,19 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .agent-dock {
+    transition: none;
+  }
+
   .agent-mascot,
   .agent-mascot-eye,
   .agent-thinking-dots i,
   .agent-wake-button.is-loading .agent-mascot {
+    animation: none;
+  }
+
+  .agent-dock.is-agent-working .agent-wake-button,
+  .agent-dock.is-agent-returning .agent-wake-button {
     animation: none;
   }
 }
