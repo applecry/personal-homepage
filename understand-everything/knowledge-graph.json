@@ -1,0 +1,159 @@
+{
+  "version": "1.0.0",
+  "kind": "codebase",
+  "project": {
+    "name": "personal-homepage",
+    "languages": ["HTML", "CSS", "JavaScript", "JSON"],
+    "frameworks": ["Vanilla JavaScript", "Leaflet", "PageAgent", "Web Speech API", "GitHub Actions", "Cloudflare Pages"],
+    "description": "applecry 的静态个人工作台及其 PageAgent 专属知识系统。结构入口图用于仪表盘加载，完整业务流程位于 domain-graph.json。",
+    "analyzedAt": "2026-07-16T05:50:15.410Z",
+    "gitCommitHash": "0ba2e183b0d66dea575846d25b578a141c133685"
+  },
+  "nodes": [
+    {
+      "id": "config:page-agent-knowledge",
+      "type": "config",
+      "name": "PageAgent Runtime Knowledge",
+      "filePath": "page-agent-knowledge.js",
+      "summary": "向 PageAgent 提供稳定系统说明、页面能力、业务规则和排障顺序的浏览器运行时知识包。",
+      "tags": ["pageagent", "knowledge", "instructions"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:script-js",
+      "type": "file",
+      "name": "Site Runtime and PageAgent Integration",
+      "filePath": "script.js",
+      "summary": "负责首页交互、新闻与音乐，以及 PageAgent 加载、知识注入、语音输入和跨页面会话续跑。",
+      "tags": ["runtime", "pageagent", "voice"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:exhibitions-js",
+      "type": "file",
+      "name": "Exhibit Atlas UI",
+      "filePath": "exhibitions.js",
+      "summary": "驱动展览地图、列表、搜索、筛选、收藏、详情、数据源和日历导出。",
+      "tags": ["exhibitions", "map", "planning"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:conventions-js",
+      "type": "file",
+      "name": "Convention Guest Radar UI",
+      "filePath": "conventions.js",
+      "summary": "驱动漫展搜索、范围筛选、排序、嘉宾面板、活动详情和来源展示。",
+      "tags": ["conventions", "guests", "verification"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:system-overview",
+      "type": "document",
+      "name": "System Overview",
+      "filePath": ".pageagent/system-overview.md",
+      "summary": "描述产品定位、核心模块、技术边界和 PageAgent 判断协议。",
+      "tags": ["documentation", "system", "pageagent"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:business-rules",
+      "type": "document",
+      "name": "Business Rules",
+      "filePath": ".pageagent/business-rules.md",
+      "summary": "记录数据可信度、展览日期状态、嘉宾核验、新闻新鲜度和会话规则。",
+      "tags": ["documentation", "rules", "trust"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:page-map",
+      "type": "document",
+      "name": "Page Map",
+      "filePath": ".pageagent/page-map.yaml",
+      "summary": "将站内 URL、数据文件和用户可执行动作映射到各产品页面。",
+      "tags": ["documentation", "routing", "capabilities"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:troubleshooting",
+      "type": "document",
+      "name": "Troubleshooting Playbook",
+      "filePath": ".pageagent/troubleshooting.md",
+      "summary": "提供 PageAgent、语音、新闻、展览地图和漫展嘉宾雷达的稳定排障顺序。",
+      "tags": ["documentation", "diagnostics", "operations"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:page-agent-knowledge",
+      "target": "file:script-js",
+      "type": "configures",
+      "direction": "forward",
+      "description": "知识包通过 PageAgent instructions 配置注入运行时。",
+      "weight": 1
+    },
+    {
+      "source": "document:system-overview",
+      "target": "config:page-agent-knowledge",
+      "type": "documents",
+      "direction": "forward",
+      "description": "维护系统定位与稳定边界。",
+      "weight": 0.8
+    },
+    {
+      "source": "document:business-rules",
+      "target": "config:page-agent-knowledge",
+      "type": "documents",
+      "direction": "forward",
+      "description": "维护 PageAgent 必须遵循的业务规则。",
+      "weight": 0.9
+    },
+    {
+      "source": "document:page-map",
+      "target": "config:page-agent-knowledge",
+      "type": "documents",
+      "direction": "forward",
+      "description": "维护页面级知识路由。",
+      "weight": 0.8
+    },
+    {
+      "source": "document:troubleshooting",
+      "target": "config:page-agent-knowledge",
+      "type": "documents",
+      "direction": "forward",
+      "description": "维护 PageAgent 的诊断路径。",
+      "weight": 0.8
+    },
+    {
+      "source": "file:script-js",
+      "target": "file:exhibitions-js",
+      "type": "related",
+      "direction": "bidirectional",
+      "description": "PageAgent 在 Exhibit Atlas 页面上操作展览 UI。",
+      "weight": 0.6
+    },
+    {
+      "source": "file:script-js",
+      "target": "file:conventions-js",
+      "type": "related",
+      "direction": "bidirectional",
+      "description": "PageAgent 在漫展嘉宾雷达页面上操作活动 UI。",
+      "weight": 0.6
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:runtime",
+      "name": "Runtime",
+      "description": "浏览器运行时与产品交互模块。",
+      "nodeIds": ["config:page-agent-knowledge", "file:script-js", "file:exhibitions-js", "file:conventions-js"]
+    },
+    {
+      "id": "layer:knowledge",
+      "name": "Knowledge Base",
+      "description": "PageAgent 专属知识库的可维护文档。",
+      "nodeIds": ["document:system-overview", "document:business-rules", "document:page-map", "document:troubleshooting"]
+    }
+  ],
+  "tour": []
+}
