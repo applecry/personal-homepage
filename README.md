@@ -47,6 +47,8 @@ Cloudflare Pages 构建设置：
 
 页面右下角的 `AI` 按钮会在页面空闲后预加载本地 PageAgent SDK：`assets/vendor/page-agent.demo.js`，点击按钮打开面板。面板输入框增强了基于 Web Speech API 的语音输入，录音时实时把识别文字写入输入框，用户确认后再发送给 PageAgent。
 
+PageAgent 启动时会加载 `page-agent-knowledge.js` 中的专属知识库。稳定的系统定位通过 `instructions.system` 注入，每个页面的目标、能力、业务规则和排障顺序通过 `getPageInstructions(url)` 按需注入。维护说明和详细规则位于 `.pageagent/`；修改后运行 `node --test scripts/page-agent-knowledge.test.mjs` 校验知识覆盖。
+
 当前配置使用演示模型网关，不在前端暴露真实模型 Key。正式使用时建议把 `script.js` 里的 `baseURL` 换成自己的后端 LLM Proxy，并在服务端保存 API Key、做限流和审计。
 
 ### 语音输入权限

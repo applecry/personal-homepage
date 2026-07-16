@@ -1,0 +1,57 @@
+version: 2026.07.16-1
+pages:
+  - id: home
+    paths: ["/", "/index.html"]
+    title: applecry 公开工作台
+    data:
+      - data/news.json
+      - assets/audio/*.mp3
+    actions:
+      - 切换深浅主题
+      - 切换 AI、美股、A股新闻主题
+      - 播放、暂停、切换音乐
+      - 打开笔记和项目入口
+
+  - id: exhibitions
+    paths: ["/exhibitions.html"]
+    title: Exhibit Atlas 全球展览网
+    data:
+      - data/exhibitions.json
+      - data/exhibition-signals.json
+    actions:
+      - 按地区、类别、日期筛选
+      - 搜索和排序
+      - 打开展会或场馆详情
+      - 收藏展会
+      - 生成 ICS 日历
+      - 查看数据源与社交线索
+
+  - id: conventions
+    paths: ["/conventions.html"]
+    title: 漫展嘉宾雷达
+    data:
+      - data/conventions.json
+    actions:
+      - 搜索嘉宾、漫展、城市
+      - 筛选上海、本周末、嘉宾已公布
+      - 按日期、嘉宾数量、最近官宣排序
+      - 查看详情、票务和官宣来源
+
+  - id: projects
+    paths: ["/projects.html"]
+    title: 项目档案
+    actions:
+      - 定位项目
+      - 阅读状态和下一步
+      - 进入已上线项目
+
+  - id: notes
+    pathPrefix: /notes/
+    title: 公开笔记
+    actions:
+      - 阅读文章
+      - 返回笔记索引或首页
+
+navigation:
+  internal: PageAgent 可以在同源页面间继续任务，并保留最长 12 小时的任务会话。
+  external: 外部链接通常打开新标签；当前 PageAgent 只保证单页/同源流程，不应声称已在新标签完成操作。

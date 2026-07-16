@@ -443,12 +443,60 @@ const pageAgentResumedAgents = new WeakSet();
 let activePageAgentForSession = null;
 let pageAgentLeavingOrigin = false;
 
+const pageAgentKnowledge = window.ApplecryPageAgentKnowledge || {
+  version: "fallback",
+  system: "你是 applecry 公开工作台的站内助手。先观察当前页面，再执行用户任务；不要虚构页面能力或数据事实。",
+  pages: {},
+};
+
+const resolvePageAgentKnowledge = (url) => {
+  let pathname = "";
+  try {
+    pathname = new URL(url, window.location.href).pathname;
+  } catch (error) {
+    pathname = window.location.pathname;
+  }
+
+  return Object.values(pageAgentKnowledge.pages || {}).find((page) => {
+    const pathMatch = (page.paths || []).some((path) => {
+      if (path === "/") return pathname === "/" || pathname === "";
+      return pathname.endsWith(path);
+    });
+    const prefixMatch = (page.prefixes || []).some((prefix) => pathname.includes(prefix));
+    return pathMatch || prefixMatch;
+  });
+};
+
+const formatPageAgentKnowledgeList = (label, items = []) => (
+  items.length ? `${label}：\n${items.map((item) => `- ${item}`).join("\n")}` : ""
+);
+
+const getPageAgentInstructions = (url) => {
+  const page = resolvePageAgentKnowledge(url);
+  if (!page) {
+    return "当前 URL 没有专属页面条目。使用系统总览和当前页面观察完成任务，不要猜测未显示的能力。";
+  }
+
+  return [
+    `知识库版本：${pageAgentKnowledge.version}`,
+    `当前页面：${page.name}`,
+    `页面目标：${page.purpose}`,
+    formatPageAgentKnowledgeList("可执行能力", page.capabilities),
+    formatPageAgentKnowledgeList("业务规则", page.rules),
+    formatPageAgentKnowledgeList("遇到问题时的排查顺序", page.diagnostics),
+  ].filter(Boolean).join("\n\n");
+};
+
 const pageAgentConfig = {
   model: "qwen3.5-plus",
   baseURL: "https://page-ag-testing-ohftxirgbn.cn-shanghai.fcapp.run",
   apiKey: "NA",
   language: "zh-CN",
   promptForNextTask: true,
+  instructions: {
+    system: pageAgentKnowledge.system,
+    getPageInstructions: getPageAgentInstructions,
+  },
   transformPageContent: async (content) => {
     return content
       .replace(/\b(1[3-9]\d)(\d{4})(\d{4})\b/g, "$1****$3")
