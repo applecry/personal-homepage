@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17131f" />
+    <title>漫展嘉宾雷达 | Exhibit Atlas</title>
+    <meta name="description" content="从嘉宾出发发现近期漫展，聚合 B站会员购、大麦与主办方官宣，查看出席日期、签售安排与购票入口。" />
+    <meta property="og:title" content="漫展嘉宾雷达 | Exhibit Atlas" />
+    <meta property="og:description" content="先看谁会来，再决定去哪场。按嘉宾、出席日和签售安排发现近期漫展。" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:title" content="漫展嘉宾雷达 | Exhibit Atlas" />
+    <meta name="twitter:description" content="先看谁会来，再决定去哪场。" />
+    <link rel="stylesheet" href="./conventions.css?v=20260716-1" />
+    <link rel="stylesheet" href="./page-agent.css?v=20260715-4" />
+  </head>
+  <body>
+    <div class="con-app" data-con-app>
+      <header class="con-header">
+        <a class="con-brand" href="./index.html#works" aria-label="返回 applecry 主页">
+          <span class="con-brand-mark" aria-hidden="true">◎</span>
+          <span><strong>Exhibit Atlas.</strong><small>by applecry</small></span>
+        </a>
+        <nav class="con-product-nav" aria-label="展览产品">
+          <a href="./exhibitions.html">展会地图</a>
+          <a class="is-active" href="./conventions.html" aria-current="page">漫展嘉宾</a>
+        </nav>
+        <button class="con-source-button" type="button" data-source-open><span aria-hidden="true">▤</span> 数据来源</button>
+      </header>
+
+      <main>
+        <section class="con-hero" aria-labelledby="con-title">
+          <div class="con-hero-copy">
+            <p class="con-eyebrow">COMIC CON RADAR / GUEST-FIRST</p>
+            <h1 id="con-title">先看谁会来，<br />再决定去哪场。</h1>
+            <p class="con-lead">漫展不只是一张日期表。这里把嘉宾、出席日和签售安排放在最前面，再补上场馆、票价和官方购票入口。</p>
+            <div class="con-source-chips" aria-label="当前数据源">
+              <span class="source-chip source-chip--bili">B站会员购</span>
+              <span class="source-chip source-chip--damai">大麦</span>
+              <span class="source-chip">主办方官宣复核</span>
+            </div>
+          </div>
+          <div class="con-hero-radar" aria-label="漫展数据概览">
+            <p>LIVE GUEST INDEX</p>
+            <div><strong data-event-total>0</strong><span>近期漫展</span></div>
+            <div><strong data-guest-total>0</strong><span>已公布嘉宾</span></div>
+            <div><strong data-city-total>0</strong><span>覆盖城市</span></div>
+            <small data-sync-note>正在读取嘉宾名单…</small>
+          </div>
+        </section>
+
+        <section class="con-explorer" aria-labelledby="con-list-title">
+          <header class="con-explorer-head">
+            <div>
+              <p class="con-eyebrow">UPCOMING / 接下来</p>
+              <h2 id="con-list-title">按嘉宾找漫展</h2>
+            </div>
+            <label class="con-search">
+              <span aria-hidden="true">⌕</span>
+              <span class="sr-only">搜索漫展、嘉宾或城市</span>
+              <input type="search" placeholder="搜嘉宾、漫展、城市" data-search />
+            </label>
+          </header>
+
+          <div class="con-toolbar" aria-label="漫展筛选">
+            <div class="con-filter-tabs" role="group" aria-label="范围">
+              <button class="is-active" type="button" data-scope="all">全部近期</button>
+              <button type="button" data-scope="shanghai">上海</button>
+              <button type="button" data-scope="weekend">本周末</button>
+              <button type="button" data-scope="guests">嘉宾已公布</button>
+            </div>
+            <label class="con-sort"><span>排序</span><select data-sort><option value="date">日期优先</option><option value="guests">嘉宾最多</option><option value="updated">最近官宣</option></select></label>
+          </div>
+
+          <div class="con-content-grid">
+            <div class="con-list" data-convention-list aria-live="polite"></div>
+            <aside class="guest-board" aria-labelledby="guest-board-title">
+              <div class="guest-board-head"><div><p>GUEST BOARD</p><h3 id="guest-board-title">本周嘉宾</h3></div><span data-week-guest-count>0</span></div>
+              <p>按出席日期整理。点嘉宾名字可直接筛出对应漫展。</p>
+              <div data-guest-board></div>
+              <footer>嘉宾安排可能临时调整，请在出发前回到来源页复核。</footer>
+            </aside>
+          </div>
+        </section>
+
+        <section class="con-policy" aria-labelledby="policy-title">
+          <div><p class="con-eyebrow">DATA POLICY / 数据原则</p><h2 id="policy-title">票务归票务，嘉宾归官宣。</h2></div>
+          <div class="con-policy-grid">
+            <article><span>01</span><h3>双平台发现</h3><p>B站会员购与大麦用于发现活动、核对日期、场馆、票价和购票状态。</p></article>
+            <article><span>02</span><h3>嘉宾单独复核</h3><p>优先采用平台结构化嘉宾名单；没有时回到主办方官宣，并保留每位嘉宾的出席日。</p></article>
+            <article><span>03</span><h3>不把空白当答案</h3><p>未公布就明确显示“嘉宾待公布”，不会根据海报角色或票根图案猜测真人嘉宾。</p></article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="con-footer"><span>Exhibit Atlas · 漫展嘉宾雷达</span><a href="./exhibitions.html">返回展会地图 →</a></footer>
+
+      <aside class="con-sources" data-source-panel aria-hidden="true">
+        <header><div><p>DATA SOURCES</p><h2>数据从哪里来</h2></div><button type="button" data-source-close aria-label="关闭数据来源">×</button></header>
+        <p>票务平台负责活动事实与购票状态，嘉宾名单优先采用平台结构化字段，并用主办方官宣补足出席日与签售安排。</p>
+        <div data-source-list></div>
+        <small>页面只提供信息索引，不代替票务平台与主办方的最终通知。</small>
+      </aside>
+      <div class="con-scrim" data-scrim hidden></div>
+
+      <dialog class="con-dialog" data-convention-dialog>
+        <button class="con-dialog-close" type="button" data-dialog-close aria-label="关闭漫展详情">×</button>
+        <div data-dialog-content></div>
+      </dialog>
+    </div>
+
+    <div class="agent-dock" data-page-agent-ignore="true">
+      <div class="agent-status" data-agent-status aria-live="polite">PageAgent 准备中</div>
+      <button class="agent-wake-button" type="button" data-agent-wake aria-label="唤醒 PageAgent">
+        <span class="agent-mascot" aria-hidden="true">
+          <img class="agent-mascot-idle" src="./assets/ai-assistant-girl.png?v=20260715-1" alt="" />
+          <img class="agent-mascot-thinking" src="./assets/ai-assistant-girl-thinking.png?v=20260715-1" alt="" />
+          <i class="agent-mascot-eye"></i><span class="agent-thinking-dots"><i></i><i></i><i></i></span>
+        </span>
+        <span class="agent-button-label">打开 AI 助手</span>
+      </button>
+    </div>
+    <script src="./exhibitions-core.js?v=20260715-1"></script>
+    <script src="./conventions-core.js?v=20260716-1"></script>
+    <script src="./conventions.js?v=20260716-1"></script>
+    <script src="./script.js?v=20260715-3"></script>
+  </body>
+</html>

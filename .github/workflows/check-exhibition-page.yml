@@ -9,6 +9,12 @@ on:
       - "exhibitions.js"
       - "exhibitions-core.js"
       - "scripts/exhibitions-ui.test.mjs"
+      - "conventions.html"
+      - "conventions.css"
+      - "conventions.js"
+      - "conventions-core.js"
+      - "data/conventions.json"
+      - "scripts/conventions-ui.test.mjs"
       - ".github/workflows/check-exhibition-page.yml"
   pull_request:
     paths:
@@ -17,6 +23,12 @@ on:
       - "exhibitions.js"
       - "exhibitions-core.js"
       - "scripts/exhibitions-ui.test.mjs"
+      - "conventions.html"
+      - "conventions.css"
+      - "conventions.js"
+      - "conventions-core.js"
+      - "data/conventions.json"
+      - "scripts/conventions-ui.test.mjs"
       - ".github/workflows/check-exhibition-page.yml"
 
 permissions:
@@ -39,6 +51,8 @@ jobs:
         run: |
           node --check exhibitions-core.js
           node --check exhibitions.js
+          node --check conventions-core.js
+          node --check conventions.js
 
       - name: Test exhibition interactions
-        run: node --test scripts/exhibitions-ui.test.mjs
+        run: node --test scripts/exhibitions-ui.test.mjs scripts/conventions-ui.test.mjs

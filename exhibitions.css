@@ -37,10 +37,11 @@ button { cursor: pointer; }
 .atlas-region-tabs button { min-width: 62px; padding: 8px 12px; border: 0; border-radius: 6px; background: transparent; color: var(--atlas-muted); font-size: 0.78rem; font-weight: 760; }
 .atlas-region-tabs button.is-active { background: #fff; color: var(--atlas-ink); box-shadow: 0 2px 10px rgba(20, 28, 23, 0.09); }
 .atlas-actions { display: flex; justify-content: flex-end; gap: 7px; }
-.atlas-actions button { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 7px 11px; border: 1px solid var(--atlas-line); border-radius: 8px; background: #fff; }
-.atlas-actions button:hover, .atlas-actions button.is-active { border-color: var(--atlas-ink); background: var(--atlas-ink); color: #fff; }
-.atlas-actions button span { font-size: 1.05rem; }
-.atlas-actions button b { font-size: 0.76rem; }
+.atlas-actions button, .atlas-actions a { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 7px 11px; border: 1px solid var(--atlas-line); border-radius: 8px; background: #fff; text-decoration: none; }
+.atlas-actions button:hover, .atlas-actions button.is-active, .atlas-actions a:hover { border-color: var(--atlas-ink); background: var(--atlas-ink); color: #fff; }
+.atlas-actions button span, .atlas-actions a span { font-size: 1.05rem; }
+.atlas-actions button b, .atlas-actions a b { font-size: 0.76rem; }
+.atlas-conventions-link { color: var(--atlas-blue); }
 
 .atlas-stage { position: relative; min-height: 0; overflow: hidden; }
 .atlas-map { position: absolute; inset: 0; background: #d8dad7; }
@@ -243,7 +244,7 @@ button { cursor: pointer; }
   .atlas-header { grid-template-columns: auto 1fr; padding: 0 12px; }
   .atlas-region-tabs { order: 3; position: absolute; top: 76px; left: 12px; z-index: 900; }
   .atlas-actions b { display: none; }
-  .atlas-actions button { width: 40px; justify-content: center; }
+  .atlas-actions button, .atlas-actions a { width: 40px; justify-content: center; }
   .atlas-overview { top: 70px; width: calc(100% - 24px); }
   .atlas-filter-panel { top: 248px; left: 12px; display: flex; width: calc(100% - 24px); overflow-x: auto; }
   .atlas-filter-panel { scrollbar-width: none; }

@@ -1,0 +1,244 @@
+{
+  "updatedAt": "2026-07-16T09:30:00+08:00",
+  "checkedAt": "2026-07-16T09:30:00+08:00",
+  "coverage": "中国大陆近期 ACGN 漫展；首批重点覆盖上海与本周末活动",
+  "policy": "票务事实以 B站会员购和大麦为主；嘉宾名单优先采用平台结构化字段，并以主办方官宣补足出席日期和签售安排。",
+  "sources": [
+    {
+      "id": "bilibili-membership",
+      "name": "B站会员购",
+      "short": "B",
+      "role": "漫展发现、日期场馆、票价、结构化参展嘉宾",
+      "url": "https://show.bilibili.com/platform/home.html",
+      "status": "主数据源"
+    },
+    {
+      "id": "damai",
+      "name": "大麦",
+      "short": "麦",
+      "role": "大型漫展与二次元活动、票务状态、场馆和入场规则",
+      "url": "https://search.damai.cn/search.htm?keyword=%E6%BC%AB%E5%B1%95",
+      "status": "主数据源"
+    },
+    {
+      "id": "organizer",
+      "name": "主办方官宣",
+      "short": "官",
+      "role": "逐日嘉宾、舞台时间、签售规则与临时变更复核",
+      "url": "https://weibo.com/2531071125",
+      "status": "嘉宾复核"
+    }
+  ],
+  "events": [
+    {
+      "id": "worldline-24-chengdu-2026",
+      "name": "第二十四届世界线动漫展",
+      "type": "综合漫展",
+      "city": "成都",
+      "venue": "中国西部国际博览城",
+      "startDate": "2026-07-16",
+      "endDate": "2026-07-20",
+      "price": "¥69.9 起",
+      "ticketStatus": "售票中",
+      "guestStatus": "rolling",
+      "guestUpdatedAt": "2026-07-16",
+      "summary": "暑期大型综合动漫展，会员购同时提供多场嘉宾签售与内场专票。",
+      "guests": [
+        { "name": "倔强的小红", "role": "嘉宾内场", "date": "2026-07-18", "time": "以票务页为准" },
+        { "name": "虎纹章鱼", "role": "签售嘉宾", "date": "2026-07-19", "time": "以票务页为准" }
+      ],
+      "ticketSources": [
+        { "platform": "B站会员购", "url": "https://show.bilibili.com/platform/search.html?searchValue=%E4%B8%96%E7%95%8C%E7%BA%BF", "label": "活动与嘉宾专票", "primary": true }
+      ],
+      "verification": "活动与嘉宾专票均来自 B站会员购公开搜索页；嘉宾仍在分批公布。",
+      "featured": true
+    },
+    {
+      "id": "haikou-summer-carnival-2026",
+      "name": "海口·暑假动漫嘉年华",
+      "type": "动漫嘉年华",
+      "city": "海口",
+      "venue": "海南国际会议展览中心",
+      "startDate": "2026-07-18",
+      "endDate": "2026-07-19",
+      "price": "¥65 起",
+      "ticketStatus": "售票中",
+      "guestStatus": "announced",
+      "guestUpdatedAt": "2026-07-10",
+      "summary": "两日暑假动漫嘉年华，普通票、现场票与多次出入速通票在售。",
+      "guests": [
+        { "name": "百合欧皇子", "role": "参展嘉宾", "date": "2026-07-18", "time": "以现场为准" },
+        { "name": "黑鹿其", "role": "参展嘉宾", "date": "2026-07-18", "time": "以现场为准" },
+        { "name": "凌宇沫", "role": "参展嘉宾", "date": "2026-07-18", "time": "以现场为准" },
+        { "name": "月半子", "role": "参展嘉宾", "date": "2026-07-19", "time": "以现场为准" },
+        { "name": "染轻", "role": "参展嘉宾", "date": "2026-07-19", "time": "以现场为准" },
+        { "name": "时岚toki", "role": "参展嘉宾", "date": "2026-07-19", "time": "以现场为准" },
+        { "name": "有事摇铃", "role": "参展嘉宾", "date": "2026-07-19", "time": "以现场为准" }
+      ],
+      "ticketSources": [
+        { "platform": "B站会员购", "url": "https://show.bilibili.com/platform/detail.html?id=113900", "label": "查看票务与完整嘉宾", "primary": true }
+      ],
+      "verification": "嘉宾名单来自 B站会员购活动页的“参展嘉宾”结构化区。"
+    },
+    {
+      "id": "blue-archive-only-fuzhou-2026",
+      "name": "蔚蓝档案同人ONLY 3.0·霓波余晖",
+      "type": "IP ONLY",
+      "city": "福州",
+      "venue": "福州海峡文化艺术中心",
+      "startDate": "2026-07-18",
+      "endDate": "2026-07-18",
+      "price": "¥78 起",
+      "ticketStatus": "售票中",
+      "guestStatus": "announced",
+      "guestUpdatedAt": "2026-07-09",
+      "summary": "蔚蓝档案主题同人展，含舞台互动、同人游戏与 DJ 环节。",
+      "guests": [
+        { "name": "苏枕袖", "role": "参展嘉宾", "date": "2026-07-18", "time": "以现场为准" },
+        { "name": "Xie阿钟", "role": "参展嘉宾", "date": "2026-07-18", "time": "以现场为准" },
+        { "name": "燕砸", "role": "参展嘉宾", "date": "2026-07-18", "time": "以现场为准" }
+      ],
+      "ticketSources": [
+        { "platform": "B站会员购", "url": "https://show.bilibili.com/platform/detail.html?id=1001482", "label": "查看票务与嘉宾", "primary": true }
+      ],
+      "verification": "嘉宾名单来自 B站会员购活动页的“参展嘉宾”结构化区。"
+    },
+    {
+      "id": "arknights-only-fuzhou-2026",
+      "name": "明日方舟同人ONLY 2.0·Adele's Dream",
+      "type": "IP ONLY",
+      "city": "福州",
+      "venue": "福州海峡文化艺术中心",
+      "startDate": "2026-07-19",
+      "endDate": "2026-07-19",
+      "price": "¥78 起",
+      "ticketStatus": "售票中",
+      "guestStatus": "announced",
+      "guestUpdatedAt": "2026-07-10",
+      "summary": "明日方舟主题同人展，设嘉宾舞台、签售与观众互动。",
+      "guests": [
+        { "name": "百合欧皇子", "role": "特邀嘉宾", "date": "2026-07-19", "time": "以现场为准" },
+        { "name": "百蕙Kiru", "role": "特邀嘉宾", "date": "2026-07-19", "time": "以现场为准" },
+        { "name": "Akiya", "role": "特邀嘉宾", "date": "2026-07-19", "time": "以现场为准" }
+      ],
+      "ticketSources": [
+        { "platform": "B站会员购", "url": "https://show.bilibili.com/platform/detail.html?id=1001507", "label": "查看票务与嘉宾", "primary": true }
+      ],
+      "verification": "嘉宾名单来自 B站会员购活动页的“参展嘉宾”结构化区。"
+    },
+    {
+      "id": "ido54-beijing-2026",
+      "name": "第十三届动漫北京暨 IDO 动漫游戏嘉年华 54th",
+      "type": "综合漫展",
+      "city": "北京",
+      "venue": "北人亦创国际会展中心",
+      "startDate": "2026-07-18",
+      "endDate": "2026-07-19",
+      "price": "¥80 起",
+      "ticketStatus": "售票中",
+      "guestStatus": "announced",
+      "guestUpdatedAt": "2026-06-19",
+      "summary": "两日大型动漫游戏嘉年华，嘉宾按日出席，部分见面会或签售需另购内场/预约票。",
+      "guests": [
+        { "name": "马洋", "role": "配音演员", "date": "2026-07-18", "time": "以官宣排期为准" },
+        { "name": "顺子", "role": "配音演员", "date": "2026-07-18", "time": "以官宣排期为准" },
+        { "name": "赵成晨", "role": "配音演员", "date": "2026-07-18", "time": "12:00 舞台 / 13:15 签售" },
+        { "name": "安雪璃", "role": "声优", "date": "2026-07-18", "time": "以官宣排期为准" },
+        { "name": "荷煜", "role": "作家", "date": "2026-07-18", "time": "11:00 / 13:30 签售" },
+        { "name": "RE-Vendur", "role": "漫画家", "date": "2026-07-18", "time": "11:30 签售" },
+        { "name": "凌宇沫", "role": "漫画家", "date": "2026-07-18", "time": "以官宣排期为准" },
+        { "name": "夕楼76", "role": "COSER", "date": "2026-07-18", "time": "以官宣排期为准" },
+        { "name": "墨泽", "role": "COSER", "date": "2026-07-18", "time": "13:00 签售" },
+        { "name": "郭鸿博", "role": "配音演员", "date": "2026-07-19", "time": "12:00 舞台 / 13:30 签售" },
+        { "name": "吕书君", "role": "配音演员", "date": "2026-07-19", "time": "12:00 舞台 / 13:30 签售" },
+        { "name": "Cifer", "role": "配音演员 / 音乐人", "date": "2026-07-19", "time": "12:00 舞台 / 13:30 签售" },
+        { "name": "马嘉豪", "role": "配音演员 / 音乐人", "date": "2026-07-19", "time": "12:00 舞台 / 13:30 签售" },
+        { "name": "梁阿渣", "role": "漫画家", "date": "2026-07-19", "time": "12:00 签售" }
+      ],
+      "ticketSources": [
+        { "platform": "B站会员购", "url": "https://show.bilibili.com/platform/home.html?cityId=110100", "label": "购买漫展门票", "primary": true },
+        { "platform": "主办方官宣", "url": "https://weibo.com/2531071125/5311581766025293", "label": "复核嘉宾排期" }
+      ],
+      "verification": "活动信息来自 B站会员购北京页；逐日嘉宾和部分签售时间来自 IDO 次元官方官宣。",
+      "featured": true
+    },
+    {
+      "id": "axg-novacity-shanghai-0718",
+      "name": "AXG × 诺瓦城·动漫游戏嘉年华",
+      "type": "动漫游戏嘉年华",
+      "city": "上海",
+      "venue": "诺瓦城",
+      "startDate": "2026-07-18",
+      "endDate": "2026-07-18",
+      "price": "¥78 起",
+      "ticketStatus": "售票中",
+      "guestStatus": "pending",
+      "guestUpdatedAt": "2026-07-10",
+      "summary": "上海周末动漫游戏嘉年华；票务页当前未提供可核验的结构化嘉宾名单。",
+      "guests": [],
+      "ticketSources": [
+        { "platform": "B站会员购", "url": "https://show.bilibili.com/platform/home.html?cityId=310100", "label": "查看上海票务", "primary": true }
+      ],
+      "verification": "日期、场馆和起售价来自 B站会员购公开列表；嘉宾待主办方或平台正式公布。"
+    },
+    {
+      "id": "ijoy29-beijing-2026",
+      "name": "第29届 IJOY 动漫游戏狂欢节",
+      "type": "综合漫展",
+      "city": "北京",
+      "venue": "北京国家会议中心",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-26",
+      "price": "¥80 起",
+      "ticketStatus": "售票中",
+      "guestStatus": "pending",
+      "guestUpdatedAt": "2026-07-10",
+      "summary": "北京暑期综合动漫游戏展；当前公开票务列表尚未提供嘉宾字段。",
+      "guests": [],
+      "ticketSources": [
+        { "platform": "B站会员购", "url": "https://show.bilibili.com/platform/home.html?cityId=110100", "label": "查看北京票务", "primary": true }
+      ],
+      "verification": "活动排期来自 B站会员购北京公开列表；嘉宾待公布。"
+    },
+    {
+      "id": "chinajoy-shanghai-2026",
+      "name": "第二十三届 ChinaJoy",
+      "type": "游戏 / ACGN",
+      "city": "上海",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-07-31",
+      "endDate": "2026-08-03",
+      "price": "以大麦最新票档为准",
+      "ticketStatus": "分轮开售",
+      "guestStatus": "pending",
+      "guestUpdatedAt": "2026-07-09",
+      "summary": "大型数字娱乐与 ACGN 展会。大麦已公布分轮售票信息，但当前不把角色票根或展商形象误作真人嘉宾。",
+      "guests": [],
+      "ticketSources": [
+        { "platform": "大麦", "url": "https://search.damai.cn/search.htm?keyword=ChinaJoy", "label": "查看大麦票务", "primary": true },
+        { "platform": "展会官网", "url": "https://www.chinajoy.net/", "label": "查看官方公告" }
+      ],
+      "verification": "日期与场馆由 ChinaJoy 官方信息复核；大麦作为官方售票入口之一。嘉宾阵容待可核验官宣。",
+      "featured": true
+    },
+    {
+      "id": "axg-novacity-shanghai-0816",
+      "name": "AXG × 诺瓦城·动漫游戏嘉年华（8月场）",
+      "type": "动漫游戏嘉年华",
+      "city": "上海",
+      "venue": "诺瓦城",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "price": "¥78 起",
+      "ticketStatus": "售票中",
+      "guestStatus": "pending",
+      "guestUpdatedAt": "2026-07-10",
+      "summary": "AXG × 诺瓦城的 8 月场次；先收录排期，嘉宾公布后再逐人补充。",
+      "guests": [],
+      "ticketSources": [
+        { "platform": "B站会员购", "url": "https://show.bilibili.com/platform/home.html?cityId=310100", "label": "查看上海票务", "primary": true }
+      ],
+      "verification": "日期、场馆和起售价来自 B站会员购公开列表；嘉宾待主办方或平台正式公布。"
+    }
+  ]
+}
