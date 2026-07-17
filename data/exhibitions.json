@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-16T01:08:54.364Z",
-  "checkedAt": "2026-07-16T01:08:54.364Z",
+  "updatedAt": "2026-07-17T01:12:45.403Z",
+  "checkedAt": "2026-07-17T01:12:45.403Z",
   "focusCity": "上海",
   "geographyPolicy": {
     "Taiwan": "中国台湾",
@@ -8,12 +8,12 @@
   },
   "collection": {
     "mode": "daily",
-    "checkedAt": "2026-07-16T01:08:54.364Z",
+    "checkedAt": "2026-07-17T01:12:45.403Z",
     "source": "上海会展业备案平台主库 + 场馆排期核验 + 商务委重点展会 + 展查查长尾发现",
-    "collected": 117,
+    "collected": 146,
     "curated": 37,
-    "officialFiled": 84,
-    "total": 119
+    "officialFiled": 81,
+    "total": 146
   },
   "events": [
     {
@@ -43,7 +43,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f1309817-1af9-4e47-9506-366cdf446038",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.490Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第112号",
       "exhibitionArea": 4000,
@@ -63,18 +63,25 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=31190015-e91a-46fc-bf01-26f10535575a"
         },
         {
-          "filingCode": "12eef09e-dda9-4a13-b0d8-efa2579da685",
-          "nameZh": "第20届上海国际渔业博览会",
+          "filingCode": "491d803e-8036-4280-9046-217452dc2ccf",
+          "nameZh": "2026国际（上海）薄膜与胶带技术及应用创新展",
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=12eef09e-dda9-4a13-b0d8-efa2579da685"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=491d803e-8036-4280-9046-217452dc2ccf"
         },
         {
-          "filingCode": "1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
-          "nameZh": "2026上海国际药食同源产业博览会",
+          "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
+          "nameZh": "第17届上海国际餐饮食材展览会",
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09"
+        },
+        {
+          "filingCode": "75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+          "nameZh": "2026国际（上海）显示技术及应用创新展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=75b422f0-5dcd-474c-8a4f-2c32a8de9f9f"
         },
         {
           "filingCode": "9cba8317-3ff5-4084-a959-6128d3b09f77",
@@ -84,6 +91,13 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9cba8317-3ff5-4084-a959-6128d3b09f77"
         },
         {
+          "filingCode": "1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
+          "nameZh": "2026上海国际药食同源产业博览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
+        },
+        {
           "filingCode": "10a3f132-984a-4b6d-9e50-6ef3a6df077e",
           "nameZh": "2026亚太素食展",
           "startDate": "2026-08-26",
@@ -91,11 +105,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=10a3f132-984a-4b6d-9e50-6ef3a6df077e"
         },
         {
-          "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
-          "nameZh": "第17届上海国际餐饮食材展览会",
+          "filingCode": "12eef09e-dda9-4a13-b0d8-efa2579da685",
+          "nameZh": "第20届上海国际渔业博览会",
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=12eef09e-dda9-4a13-b0d8-efa2579da685"
         },
         {
           "filingCode": "bbbed506-7735-4515-8c10-16c9b2c8b26f",
@@ -133,46 +147,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=81088759-3657-4410-a72a-a96efcbb7e89"
         },
         {
-          "filingCode": "6d0aa259-8cb9-49e8-ae0b-76a6f36fec8b",
-          "nameZh": "2026上海书展",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-18",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=6d0aa259-8cb9-49e8-ae0b-76a6f36fec8b"
-        },
-        {
-          "filingCode": "cff87a00-7b8d-4e1f-8d43-77d6c7f2d767",
-          "nameZh": "2026上海国际智能汽车电子科技创新展览会",
+          "filingCode": "bcdd3701-cfd8-428d-bfef-769c92218c6d",
+          "nameZh": "2026上海具身智能机器人产业展览会",
           "startDate": "2026-08-12",
           "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cff87a00-7b8d-4e1f-8d43-77d6c7f2d767"
-        },
-        {
-          "filingCode": "b410a750-14f4-4968-b244-421848de4e38",
-          "nameZh": "2026上海国际汽车内饰与外饰展览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b410a750-14f4-4968-b244-421848de4e38"
-        },
-        {
-          "filingCode": "0b3eebce-3631-4b0d-a739-2d8dec6be162",
-          "nameZh": "2026上海国际磨削、去毛刺、研磨、抛光、清洗及真空镀膜展览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0b3eebce-3631-4b0d-a739-2d8dec6be162"
-        },
-        {
-          "filingCode": "0ca5af10-ff23-4b85-8bfc-89c1a55504b6",
-          "nameZh": "2026亚洲金属建筑博览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0ca5af10-ff23-4b85-8bfc-89c1a55504b6"
-        },
-        {
-          "filingCode": "57a8e63b-c22c-454c-8edf-c9c5d715e02b",
-          "nameZh": "2026上海国际汽车底盘、汽车测试与质量监控展览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=57a8e63b-c22c-454c-8edf-c9c5d715e02b"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bcdd3701-cfd8-428d-bfef-769c92218c6d"
         },
         {
           "filingCode": "0f90a1b8-0cb2-41de-8742-93469df899a0",
@@ -189,18 +168,25 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d315496f-f793-46bb-b1d5-255eaa5c0f13"
         },
         {
-          "filingCode": "ee12b376-514b-4772-a1c5-67ca07a585f3",
-          "nameZh": "2026上海国际新能源汽车技术与供应链展览会",
+          "filingCode": "0b3eebce-3631-4b0d-a739-2d8dec6be162",
+          "nameZh": "2026上海国际磨削、去毛刺、研磨、抛光、清洗及真空镀膜展览会",
           "startDate": "2026-08-12",
           "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=ee12b376-514b-4772-a1c5-67ca07a585f3"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0b3eebce-3631-4b0d-a739-2d8dec6be162"
         },
         {
-          "filingCode": "bcdd3701-cfd8-428d-bfef-769c92218c6d",
-          "nameZh": "2026上海具身智能机器人产业展览会",
+          "filingCode": "b410a750-14f4-4968-b244-421848de4e38",
+          "nameZh": "2026上海国际汽车内饰与外饰展览会",
           "startDate": "2026-08-12",
           "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bcdd3701-cfd8-428d-bfef-769c92218c6d"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b410a750-14f4-4968-b244-421848de4e38"
+        },
+        {
+          "filingCode": "57a8e63b-c22c-454c-8edf-c9c5d715e02b",
+          "nameZh": "2026上海国际汽车底盘、汽车测试与质量监控展览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=57a8e63b-c22c-454c-8edf-c9c5d715e02b"
         },
         {
           "filingCode": "51292548-6e5b-4c24-b9cc-5f536f313ba4",
@@ -208,6 +194,34 @@
           "startDate": "2026-08-12",
           "endDate": "2026-08-14",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=51292548-6e5b-4c24-b9cc-5f536f313ba4"
+        },
+        {
+          "filingCode": "cff87a00-7b8d-4e1f-8d43-77d6c7f2d767",
+          "nameZh": "2026上海国际智能汽车电子科技创新展览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cff87a00-7b8d-4e1f-8d43-77d6c7f2d767"
+        },
+        {
+          "filingCode": "6d0aa259-8cb9-49e8-ae0b-76a6f36fec8b",
+          "nameZh": "2026上海书展",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-18",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=6d0aa259-8cb9-49e8-ae0b-76a6f36fec8b"
+        },
+        {
+          "filingCode": "ee12b376-514b-4772-a1c5-67ca07a585f3",
+          "nameZh": "2026上海国际新能源汽车技术与供应链展览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=ee12b376-514b-4772-a1c5-67ca07a585f3"
+        },
+        {
+          "filingCode": "0ca5af10-ff23-4b85-8bfc-89c1a55504b6",
+          "nameZh": "2026亚洲金属建筑博览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0ca5af10-ff23-4b85-8bfc-89c1a55504b6"
         },
         {
           "filingCode": "30b75431-2d98-4036-a23c-520a18dae3a4",
@@ -252,20 +266,6 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0e9f2fdc-fae3-43a6-8fa0-8c8e8c3aec36"
         },
         {
-          "filingCode": "746146a9-56be-4db7-a325-0b5cf04eaba5",
-          "nameZh": "第119届中国日用百货商品交易会",
-          "startDate": "2026-07-23",
-          "endDate": "2026-07-25",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=746146a9-56be-4db7-a325-0b5cf04eaba5"
-        },
-        {
-          "filingCode": "232b31f6-beed-4704-ba7d-fc92612980c9",
-          "nameZh": "2026上海国际视觉影像产业展览会",
-          "startDate": "2026-07-23",
-          "endDate": "2026-07-26",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=232b31f6-beed-4704-ba7d-fc92612980c9"
-        },
-        {
           "filingCode": "01d81804-b5eb-4ff3-a87f-ec4e15406099",
           "nameZh": "第27届上海国际摄影器材和数码影像展览会",
           "startDate": "2026-07-23",
@@ -278,6 +278,20 @@
           "startDate": "2026-07-23",
           "endDate": "2026-07-26",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=76599d41-6e24-49f5-8487-1e41ab469f28"
+        },
+        {
+          "filingCode": "232b31f6-beed-4704-ba7d-fc92612980c9",
+          "nameZh": "2026上海国际视觉影像产业展览会",
+          "startDate": "2026-07-23",
+          "endDate": "2026-07-26",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=232b31f6-beed-4704-ba7d-fc92612980c9"
+        },
+        {
+          "filingCode": "746146a9-56be-4db7-a325-0b5cf04eaba5",
+          "nameZh": "第119届中国日用百货商品交易会",
+          "startDate": "2026-07-23",
+          "endDate": "2026-07-25",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=746146a9-56be-4db7-a325-0b5cf04eaba5"
         },
         {
           "filingCode": "c48e0b2b-f675-4012-bb82-02f38063eb70",
@@ -308,13 +322,6 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=774b4287-d455-4bec-9e2e-a0b074bd23f6"
         },
         {
-          "filingCode": "392350fd-d9d7-4d27-b2d9-b32db2e52b90",
-          "nameZh": "第九届全球授权展•上海站",
-          "startDate": "2026-07-15",
-          "endDate": "2026-07-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=392350fd-d9d7-4d27-b2d9-b32db2e52b90"
-        },
-        {
           "filingCode": "5e68c021-ca2a-4246-958e-4421ec6b6dd2",
           "nameZh": "2026CBME国际孕婴童展",
           "startDate": "2026-07-15",
@@ -322,11 +329,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=5e68c021-ca2a-4246-958e-4421ec6b6dd2"
         },
         {
-          "filingCode": "e1f80f0b-14fe-43e9-a5fd-0921f366d8f4",
-          "nameZh": "2026CBME供应链展",
+          "filingCode": "392350fd-d9d7-4d27-b2d9-b32db2e52b90",
+          "nameZh": "第九届全球授权展•上海站",
           "startDate": "2026-07-15",
           "endDate": "2026-07-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e1f80f0b-14fe-43e9-a5fd-0921f366d8f4"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=392350fd-d9d7-4d27-b2d9-b32db2e52b90"
         },
         {
           "filingCode": "cc88099c-044b-4c9c-981a-627b8dc6e8d5",
@@ -334,6 +341,13 @@
           "startDate": "2026-07-15",
           "endDate": "2026-07-17",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cc88099c-044b-4c9c-981a-627b8dc6e8d5"
+        },
+        {
+          "filingCode": "e1f80f0b-14fe-43e9-a5fd-0921f366d8f4",
+          "nameZh": "2026CBME供应链展",
+          "startDate": "2026-07-15",
+          "endDate": "2026-07-17",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e1f80f0b-14fe-43e9-a5fd-0921f366d8f4"
         },
         {
           "filingCode": "d5d62153-a7ec-4c22-b82c-3e9211dd6a12",
@@ -350,18 +364,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e639951d-92b1-411c-983e-db2519e9cbda"
         },
         {
-          "filingCode": "d2bb47a3-ce6a-433c-90b7-7cb52b97aa46",
-          "nameZh": "2026第十届上海国际旅游民宿产业博览会",
+          "filingCode": "4f1a49ba-a123-4f10-9393-aeef9e915168",
+          "nameZh": "2026上海国际工业装配与传输技术展览会",
           "startDate": "2026-07-08",
           "endDate": "2026-07-10",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d2bb47a3-ce6a-433c-90b7-7cb52b97aa46"
-        },
-        {
-          "filingCode": "23799bce-c413-476e-86bb-2f76e56af19e",
-          "nameZh": "2026亚洲汽车轻量化展览会",
-          "startDate": "2026-07-08",
-          "endDate": "2026-07-10",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=23799bce-c413-476e-86bb-2f76e56af19e"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=4f1a49ba-a123-4f10-9393-aeef9e915168"
         },
         {
           "filingCode": "6441e74b-6cb5-4f46-b89d-ee1f96df97e0",
@@ -371,18 +378,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=6441e74b-6cb5-4f46-b89d-ee1f96df97e0"
         },
         {
-          "filingCode": "4f1a49ba-a123-4f10-9393-aeef9e915168",
-          "nameZh": "2026上海国际工业装配与传输技术展览会",
+          "filingCode": "bb3c9bf8-a52f-4151-a23f-e721d3fdb6d8",
+          "nameZh": "2026上海国际铜工业展览会",
           "startDate": "2026-07-08",
           "endDate": "2026-07-10",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=4f1a49ba-a123-4f10-9393-aeef9e915168"
-        },
-        {
-          "filingCode": "0394c6c2-90f0-4aa4-9360-d7043b85570d",
-          "nameZh": "2026第九届上海国际旅游景区装备及乐园博览会",
-          "startDate": "2026-07-08",
-          "endDate": "2026-07-10",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0394c6c2-90f0-4aa4-9360-d7043b85570d"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb3c9bf8-a52f-4151-a23f-e721d3fdb6d8"
         },
         {
           "filingCode": "d6866030-0655-40b3-ab22-7e17080178dc",
@@ -392,11 +392,32 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d6866030-0655-40b3-ab22-7e17080178dc"
         },
         {
-          "filingCode": "bb3c9bf8-a52f-4151-a23f-e721d3fdb6d8",
-          "nameZh": "2026上海国际铜工业展览会",
+          "filingCode": "48ac383a-af32-4f2e-9326-48a09566be8d",
+          "nameZh": "2026第八届上海国际竹产业博览会",
           "startDate": "2026-07-08",
           "endDate": "2026-07-10",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb3c9bf8-a52f-4151-a23f-e721d3fdb6d8"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=48ac383a-af32-4f2e-9326-48a09566be8d"
+        },
+        {
+          "filingCode": "23799bce-c413-476e-86bb-2f76e56af19e",
+          "nameZh": "2026亚洲汽车轻量化展览会",
+          "startDate": "2026-07-08",
+          "endDate": "2026-07-10",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=23799bce-c413-476e-86bb-2f76e56af19e"
+        },
+        {
+          "filingCode": "d2bb47a3-ce6a-433c-90b7-7cb52b97aa46",
+          "nameZh": "2026第十届上海国际旅游民宿产业博览会",
+          "startDate": "2026-07-08",
+          "endDate": "2026-07-10",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d2bb47a3-ce6a-433c-90b7-7cb52b97aa46"
+        },
+        {
+          "filingCode": "0394c6c2-90f0-4aa4-9360-d7043b85570d",
+          "nameZh": "2026第九届上海国际旅游景区装备及乐园博览会",
+          "startDate": "2026-07-08",
+          "endDate": "2026-07-10",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0394c6c2-90f0-4aa4-9360-d7043b85570d"
         },
         {
           "filingCode": "61d8e65d-cafd-4b99-bae6-35a3e97b1f3d",
@@ -404,13 +425,6 @@
           "startDate": "2026-07-08",
           "endDate": "2026-07-10",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=61d8e65d-cafd-4b99-bae6-35a3e97b1f3d"
-        },
-        {
-          "filingCode": "48ac383a-af32-4f2e-9326-48a09566be8d",
-          "nameZh": "2026第八届上海国际竹产业博览会",
-          "startDate": "2026-07-08",
-          "endDate": "2026-07-10",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=48ac383a-af32-4f2e-9326-48a09566be8d"
         },
         {
           "filingCode": "7f0fb25f-e810-4038-95ca-4c51419f1634",
@@ -462,18 +476,18 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f7647d50-7f2d-4895-b319-4f2e68d07495"
         },
         {
-          "filingCode": "98d5b956-cff5-436f-bb3c-82d338b83158",
-          "nameZh": "2026慕尼黑上海电子展",
-          "startDate": "2026-07-01",
-          "endDate": "2026-07-03",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=98d5b956-cff5-436f-bb3c-82d338b83158"
-        },
-        {
           "filingCode": "9a6a7b53-f0cc-481a-8b67-79c027510af8",
           "nameZh": "2026第25届上海国际电机博览会",
           "startDate": "2026-07-01",
           "endDate": "2026-07-03",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9a6a7b53-f0cc-481a-8b67-79c027510af8"
+        },
+        {
+          "filingCode": "98d5b956-cff5-436f-bb3c-82d338b83158",
+          "nameZh": "2026慕尼黑上海电子展",
+          "startDate": "2026-07-01",
+          "endDate": "2026-07-03",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=98d5b956-cff5-436f-bb3c-82d338b83158"
         },
         {
           "filingCode": "1b220642-59a8-4d49-9575-e10727f4bed1",
@@ -483,18 +497,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1b220642-59a8-4d49-9575-e10727f4bed1"
         },
         {
-          "filingCode": "af2ad3cd-4320-4377-8fe7-a8e8bb8457e9",
-          "nameZh": "2026上海国际跨境电商出口暨外贸工厂展览会",
+          "filingCode": "ddd16dde-ccce-4d99-977e-d5822a2761c4",
+          "nameZh": "2026“珠宝非凡匠艺之境“艺术展",
           "startDate": "2026-06-26",
-          "endDate": "2026-06-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=af2ad3cd-4320-4377-8fe7-a8e8bb8457e9"
-        },
-        {
-          "filingCode": "049bf75e-e218-4b09-bcb9-43d37d2e5847",
-          "nameZh": "第22届上海国际鞋业及时尚配饰展览会",
-          "startDate": "2026-06-26",
-          "endDate": "2026-06-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=049bf75e-e218-4b09-bcb9-43d37d2e5847"
+          "endDate": "2026-06-27",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=ddd16dde-ccce-4d99-977e-d5822a2761c4"
         },
         {
           "filingCode": "e45db2bc-c2af-42e7-9d61-e21404c87366",
@@ -504,11 +511,25 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e45db2bc-c2af-42e7-9d61-e21404c87366"
         },
         {
-          "filingCode": "ddd16dde-ccce-4d99-977e-d5822a2761c4",
-          "nameZh": "2026“珠宝非凡匠艺之境“艺术展",
+          "filingCode": "049bf75e-e218-4b09-bcb9-43d37d2e5847",
+          "nameZh": "第22届上海国际鞋业及时尚配饰展览会",
           "startDate": "2026-06-26",
-          "endDate": "2026-06-27",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=ddd16dde-ccce-4d99-977e-d5822a2761c4"
+          "endDate": "2026-06-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=049bf75e-e218-4b09-bcb9-43d37d2e5847"
+        },
+        {
+          "filingCode": "af2ad3cd-4320-4377-8fe7-a8e8bb8457e9",
+          "nameZh": "2026上海国际跨境电商出口暨外贸工厂展览会",
+          "startDate": "2026-06-26",
+          "endDate": "2026-06-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=af2ad3cd-4320-4377-8fe7-a8e8bb8457e9"
+        },
+        {
+          "filingCode": "e38170b8-3502-4bcd-9ebf-d4b5f8dd8be8",
+          "nameZh": "第27届上海国际礼品、文创产品及家居用品展览会",
+          "startDate": "2026-06-26",
+          "endDate": "2026-06-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e38170b8-3502-4bcd-9ebf-d4b5f8dd8be8"
         },
         {
           "filingCode": "0de2fd30-5a50-40ec-b39f-945997888881",
@@ -525,13 +546,6 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=3b426a2a-63ae-4543-86b5-2ac8d196d642"
         },
         {
-          "filingCode": "e38170b8-3502-4bcd-9ebf-d4b5f8dd8be8",
-          "nameZh": "第27届上海国际礼品、文创产品及家居用品展览会",
-          "startDate": "2026-06-26",
-          "endDate": "2026-06-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e38170b8-3502-4bcd-9ebf-d4b5f8dd8be8"
-        },
-        {
           "filingCode": "a88ef8bc-9cb0-43a3-ac7a-bf2f054087bd",
           "nameZh": "第120届上海文化用品商品交易会",
           "startDate": "2026-06-26",
@@ -546,11 +560,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=c862b6eb-2822-4eea-a4f2-163dc8f390b9"
         },
         {
-          "filingCode": "6a963834-e019-4a1c-b34a-959bce48028f",
-          "nameZh": "2026上海国际薄膜工业展览会",
+          "filingCode": "1696359c-980d-427c-ac7a-0b94fa430057",
+          "nameZh": "2026上海国际医疗器械展览会",
           "startDate": "2026-06-24",
           "endDate": "2026-06-26",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=6a963834-e019-4a1c-b34a-959bce48028f"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1696359c-980d-427c-ac7a-0b94fa430057"
         },
         {
           "filingCode": "0e65a638-ddaa-4b2a-888c-5b3642d713b7",
@@ -574,13 +588,6 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=c2f39de0-24a2-4801-87b6-ccaa97380a77"
         },
         {
-          "filingCode": "08798f84-3c35-4c3f-961c-738af5aa1c81",
-          "nameZh": "2026上海紧固件专业展览会",
-          "startDate": "2026-06-24",
-          "endDate": "2026-06-26",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=08798f84-3c35-4c3f-961c-738af5aa1c81"
-        },
-        {
           "filingCode": "2187aff0-0589-407f-ba2f-a326b0055443",
           "nameZh": "2026第十三届国际物流、交通运输及远程信息处理博览会(简称：2026亚洲物流双年展）",
           "startDate": "2026-06-24",
@@ -588,11 +595,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=2187aff0-0589-407f-ba2f-a326b0055443"
         },
         {
-          "filingCode": "161c3ac5-ec67-415b-a5a2-f72964b5f031",
-          "nameZh": "2026亚洲航空货运博览会",
+          "filingCode": "6a963834-e019-4a1c-b34a-959bce48028f",
+          "nameZh": "2026上海国际薄膜工业展览会",
           "startDate": "2026-06-24",
           "endDate": "2026-06-26",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=161c3ac5-ec67-415b-a5a2-f72964b5f031"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=6a963834-e019-4a1c-b34a-959bce48028f"
         },
         {
           "filingCode": "fd39284d-6df4-4326-806b-add27c518fe0",
@@ -602,13 +609,6 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=fd39284d-6df4-4326-806b-add27c518fe0"
         },
         {
-          "filingCode": "1696359c-980d-427c-ac7a-0b94fa430057",
-          "nameZh": "2026上海国际医疗器械展览会",
-          "startDate": "2026-06-24",
-          "endDate": "2026-06-26",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1696359c-980d-427c-ac7a-0b94fa430057"
-        },
-        {
           "filingCode": "b2083c21-7b33-48a8-88dc-4c2bed8b5766",
           "nameZh": "2026上海国际检验医学及体外诊断试剂展览会",
           "startDate": "2026-06-24",
@@ -616,11 +616,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b2083c21-7b33-48a8-88dc-4c2bed8b5766"
         },
         {
-          "filingCode": "228b7089-5994-432d-81f7-9b3a63d31798",
-          "nameZh": "2026上海国际养老产业及康复展览会",
+          "filingCode": "08798f84-3c35-4c3f-961c-738af5aa1c81",
+          "nameZh": "2026上海紧固件专业展览会",
           "startDate": "2026-06-24",
           "endDate": "2026-06-26",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=228b7089-5994-432d-81f7-9b3a63d31798"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=08798f84-3c35-4c3f-961c-738af5aa1c81"
         },
         {
           "filingCode": "d494e0fa-c1a0-44e3-a34e-790c65dc3444",
@@ -630,11 +630,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d494e0fa-c1a0-44e3-a34e-790c65dc3444"
         },
         {
-          "filingCode": "b650def5-ff61-48d4-913d-edfb8874db3d",
-          "nameZh": "2026上海国际绕线机、线圈、磁性材料、绝缘材料及电机制造展览会",
+          "filingCode": "161c3ac5-ec67-415b-a5a2-f72964b5f031",
+          "nameZh": "2026亚洲航空货运博览会",
           "startDate": "2026-06-24",
           "endDate": "2026-06-26",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b650def5-ff61-48d4-913d-edfb8874db3d"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=161c3ac5-ec67-415b-a5a2-f72964b5f031"
         },
         {
           "filingCode": "e8e0bea2-aa28-4756-8465-371395fd4c74",
@@ -642,6 +642,20 @@
           "startDate": "2026-06-24",
           "endDate": "2026-06-26",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e8e0bea2-aa28-4756-8465-371395fd4c74"
+        },
+        {
+          "filingCode": "b650def5-ff61-48d4-913d-edfb8874db3d",
+          "nameZh": "2026上海国际绕线机、线圈、磁性材料、绝缘材料及电机制造展览会",
+          "startDate": "2026-06-24",
+          "endDate": "2026-06-26",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b650def5-ff61-48d4-913d-edfb8874db3d"
+        },
+        {
+          "filingCode": "228b7089-5994-432d-81f7-9b3a63d31798",
+          "nameZh": "2026上海国际养老产业及康复展览会",
+          "startDate": "2026-06-24",
+          "endDate": "2026-06-26",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=228b7089-5994-432d-81f7-9b3a63d31798"
         },
         {
           "filingCode": "1d97577c-1434-4eca-a539-e4d8e7d369a8",
@@ -812,60 +826,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9ffd2707-a265-447f-b950-e32a6ee40d74"
         },
         {
-          "filingCode": "71a3397f-aed1-4c66-8efc-c23eec507d33",
-          "nameZh": "2026上海国际工业自动化及机器人展",
-          "startDate": "2026-06-03",
-          "endDate": "2026-06-05",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=71a3397f-aed1-4c66-8efc-c23eec507d33"
-        },
-        {
-          "filingCode": "4b61640b-1adf-4fcc-9f8a-dd2a3af7484b",
-          "nameZh": "2026上海国际半导体制造自动化技术展",
-          "startDate": "2026-06-03",
-          "endDate": "2026-06-05",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=4b61640b-1adf-4fcc-9f8a-dd2a3af7484b"
-        },
-        {
-          "filingCode": "b15df350-c05c-45b7-b578-cb86d2812947",
-          "nameZh": "第十九届(2026)国际太阳能光伏和智慧能源(上海)展览会",
-          "startDate": "2026-06-03",
-          "endDate": "2026-06-05",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b15df350-c05c-45b7-b578-cb86d2812947"
-        },
-        {
-          "filingCode": "9675bd52-9cdf-4d94-a961-2b118b4d998a",
-          "nameZh": "第十届(2026)国际氢能与燃料电池(上海)展览会",
-          "startDate": "2026-06-03",
-          "endDate": "2026-06-05",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9675bd52-9cdf-4d94-a961-2b118b4d998a"
-        },
-        {
-          "filingCode": "9e63ae88-c84e-4c5c-93c4-83305ec67a83",
-          "nameZh": "第15届上海国际长时储能及液流电池展览会",
-          "startDate": "2026-06-03",
-          "endDate": "2026-06-05",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9e63ae88-c84e-4c5c-93c4-83305ec67a83"
-        },
-        {
           "filingCode": "4ba41877-e883-413b-806a-a7335e951748",
           "nameZh": "2026上海国际智能工厂展览会",
           "startDate": "2026-06-03",
           "endDate": "2026-06-05",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=4ba41877-e883-413b-806a-a7335e951748"
-        },
-        {
-          "filingCode": "eae2e44a-efdf-47b9-8b8c-1efe7bf941eb",
-          "nameZh": "2026上海国际轴承展",
-          "startDate": "2026-06-03",
-          "endDate": "2026-06-05",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=eae2e44a-efdf-47b9-8b8c-1efe7bf941eb"
-        },
-        {
-          "filingCode": "f5b72a36-4e58-40fe-be0d-706794c03e5f",
-          "nameZh": "第十二届(2026)国际储能和电池(上海)展览会",
-          "startDate": "2026-06-03",
-          "endDate": "2026-06-05",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f5b72a36-4e58-40fe-be0d-706794c03e5f"
         },
         {
           "filingCode": "47c9a0b2-f4d6-48d2-b400-70c8341e9d70",
@@ -875,11 +840,32 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=47c9a0b2-f4d6-48d2-b400-70c8341e9d70"
         },
         {
+          "filingCode": "eae2e44a-efdf-47b9-8b8c-1efe7bf941eb",
+          "nameZh": "2026上海国际轴承展",
+          "startDate": "2026-06-03",
+          "endDate": "2026-06-05",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=eae2e44a-efdf-47b9-8b8c-1efe7bf941eb"
+        },
+        {
           "filingCode": "693dca8b-ab67-45ab-9b0c-f3d1727310b7",
           "nameZh": "2026上海国际船舶海工技术展",
           "startDate": "2026-06-03",
           "endDate": "2026-06-05",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=693dca8b-ab67-45ab-9b0c-f3d1727310b7"
+        },
+        {
+          "filingCode": "9675bd52-9cdf-4d94-a961-2b118b4d998a",
+          "nameZh": "第十届(2026)国际氢能与燃料电池(上海)展览会",
+          "startDate": "2026-06-03",
+          "endDate": "2026-06-05",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9675bd52-9cdf-4d94-a961-2b118b4d998a"
+        },
+        {
+          "filingCode": "f5b72a36-4e58-40fe-be0d-706794c03e5f",
+          "nameZh": "第十二届(2026)国际储能和电池(上海)展览会",
+          "startDate": "2026-06-03",
+          "endDate": "2026-06-05",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f5b72a36-4e58-40fe-be0d-706794c03e5f"
         },
         {
           "filingCode": "c798b714-e74e-4ee3-a72a-c01786baf03f",
@@ -889,11 +875,18 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=c798b714-e74e-4ee3-a72a-c01786baf03f"
         },
         {
-          "filingCode": "a745fd71-abaf-4f2c-8046-46fa2e8ca5c4",
-          "nameZh": "第26届上海国际新型电力装备展览会",
+          "filingCode": "4de45c9a-3c31-41f5-8ae1-b00eeb03d53a",
+          "nameZh": "第12届上海国际数据中心产业展览会",
           "startDate": "2026-06-03",
           "endDate": "2026-06-05",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=a745fd71-abaf-4f2c-8046-46fa2e8ca5c4"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=4de45c9a-3c31-41f5-8ae1-b00eeb03d53a"
+        },
+        {
+          "filingCode": "9e63ae88-c84e-4c5c-93c4-83305ec67a83",
+          "nameZh": "第15届上海国际长时储能及液流电池展览会",
+          "startDate": "2026-06-03",
+          "endDate": "2026-06-05",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9e63ae88-c84e-4c5c-93c4-83305ec67a83"
         },
         {
           "filingCode": "a2579695-02c4-4f40-b983-bb2e4970eb23",
@@ -903,11 +896,39 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=a2579695-02c4-4f40-b983-bb2e4970eb23"
         },
         {
-          "filingCode": "4de45c9a-3c31-41f5-8ae1-b00eeb03d53a",
-          "nameZh": "第12届上海国际数据中心产业展览会",
+          "filingCode": "4b61640b-1adf-4fcc-9f8a-dd2a3af7484b",
+          "nameZh": "2026上海国际半导体制造自动化技术展",
           "startDate": "2026-06-03",
           "endDate": "2026-06-05",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=4de45c9a-3c31-41f5-8ae1-b00eeb03d53a"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=4b61640b-1adf-4fcc-9f8a-dd2a3af7484b"
+        },
+        {
+          "filingCode": "71a3397f-aed1-4c66-8efc-c23eec507d33",
+          "nameZh": "2026上海国际工业自动化及机器人展",
+          "startDate": "2026-06-03",
+          "endDate": "2026-06-05",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=71a3397f-aed1-4c66-8efc-c23eec507d33"
+        },
+        {
+          "filingCode": "df4a9d7f-8355-4468-8737-c00288892cc7",
+          "nameZh": "2026制造业数智化博览会（上海）",
+          "startDate": "2026-06-03",
+          "endDate": "2026-06-05",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=df4a9d7f-8355-4468-8737-c00288892cc7"
+        },
+        {
+          "filingCode": "a745fd71-abaf-4f2c-8046-46fa2e8ca5c4",
+          "nameZh": "第26届上海国际新型电力装备展览会",
+          "startDate": "2026-06-03",
+          "endDate": "2026-06-05",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=a745fd71-abaf-4f2c-8046-46fa2e8ca5c4"
+        },
+        {
+          "filingCode": "b15df350-c05c-45b7-b578-cb86d2812947",
+          "nameZh": "第十九届(2026)国际太阳能光伏和智慧能源(上海)展览会",
+          "startDate": "2026-06-03",
+          "endDate": "2026-06-05",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b15df350-c05c-45b7-b578-cb86d2812947"
         },
         {
           "filingCode": "60e3adac-af32-404b-8256-950940c9f4f3",
@@ -929,13 +950,6 @@
           "startDate": "2026-06-03",
           "endDate": "2026-06-05",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=37aa198a-4d05-499a-864d-3daa4d82d9d8"
-        },
-        {
-          "filingCode": "df4a9d7f-8355-4468-8737-c00288892cc7",
-          "nameZh": "2026制造业数智化博览会（上海）",
-          "startDate": "2026-06-03",
-          "endDate": "2026-06-05",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=df4a9d7f-8355-4468-8737-c00288892cc7"
         },
         {
           "filingCode": "05d79a4a-29b0-48d2-adc8-72eb299af32e",
@@ -980,13 +994,6 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=86e07231-26a1-483c-b502-08987b8f10db"
         },
         {
-          "filingCode": "28c4ff50-d2fb-4231-b1fc-ddaefb46aeb4",
-          "nameZh": "2026亚洲家居装饰展览会",
-          "startDate": "2026-05-27",
-          "endDate": "2026-05-29",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=28c4ff50-d2fb-4231-b1fc-ddaefb46aeb4"
-        },
-        {
           "filingCode": "973ca1a4-5fb3-4947-adf1-b09a7ae47492",
           "nameZh": "第六届全球文旅住宿大产业博览会",
           "startDate": "2026-05-27",
@@ -994,11 +1001,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=973ca1a4-5fb3-4947-adf1-b09a7ae47492"
         },
         {
-          "filingCode": "d6f1f52f-6cb0-4c95-a5de-0036615572e3",
-          "nameZh": "第二十三届上海国际公共安全产品博览会",
-          "startDate": "2026-05-26",
-          "endDate": "2026-05-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d6f1f52f-6cb0-4c95-a5de-0036615572e3"
+          "filingCode": "28c4ff50-d2fb-4231-b1fc-ddaefb46aeb4",
+          "nameZh": "2026亚洲家居装饰展览会",
+          "startDate": "2026-05-27",
+          "endDate": "2026-05-29",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=28c4ff50-d2fb-4231-b1fc-ddaefb46aeb4"
         },
         {
           "filingCode": "10ff1736-213a-442a-b905-22087ac54b58",
@@ -1006,6 +1013,13 @@
           "startDate": "2026-05-26",
           "endDate": "2026-05-28",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=10ff1736-213a-442a-b905-22087ac54b58"
+        },
+        {
+          "filingCode": "d6f1f52f-6cb0-4c95-a5de-0036615572e3",
+          "nameZh": "第二十三届上海国际公共安全产品博览会",
+          "startDate": "2026-05-26",
+          "endDate": "2026-05-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d6f1f52f-6cb0-4c95-a5de-0036615572e3"
         },
         {
           "filingCode": "dc432619-b0cc-46cb-a01a-37eff082d453",
@@ -1323,18 +1337,18 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e9eb3116-8e58-4ec1-8fd2-ec374c5c8c05"
         },
         {
-          "filingCode": "4371b900-f206-4a04-adfe-b2689bb54266",
-          "nameZh": "2026上海国际眼科和视光技术及设备展览会",
-          "startDate": "2026-04-10",
-          "endDate": "2026-04-12",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=4371b900-f206-4a04-adfe-b2689bb54266"
-        },
-        {
           "filingCode": "c26c03d6-2a0c-437e-8b2e-1c55ced9b718",
           "nameZh": "2026上海国际高级HI-FI演示会",
           "startDate": "2026-04-10",
           "endDate": "2026-04-12",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=c26c03d6-2a0c-437e-8b2e-1c55ced9b718"
+        },
+        {
+          "filingCode": "4371b900-f206-4a04-adfe-b2689bb54266",
+          "nameZh": "2026上海国际眼科和视光技术及设备展览会",
+          "startDate": "2026-04-10",
+          "endDate": "2026-04-12",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=4371b900-f206-4a04-adfe-b2689bb54266"
         },
         {
           "filingCode": "dfaa1f49-b599-49bf-bc4f-b05a9c6f7f66",
@@ -1928,7 +1942,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=a831999b-3c1d-4c31-981c-c88c67ecb029",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.490Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第295号",
       "exhibitionArea": 1988,
@@ -1941,18 +1955,18 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=14e2a101-1e2a-4c4e-9c76-6e42ebe1ee18"
         },
         {
-          "filingCode": "6c5f6e48-53b3-4371-a97d-a58a18761577",
-          "nameZh": "2026上海AI算力产业展览会",
-          "startDate": "2026-09-10",
-          "endDate": "2026-09-12",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=6c5f6e48-53b3-4371-a97d-a58a18761577"
-        },
-        {
           "filingCode": "cde19df7-4f2c-4345-b47a-5a1fe2572650",
           "nameZh": "2026上海网络安全博览会",
           "startDate": "2026-09-10",
           "endDate": "2026-09-12",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cde19df7-4f2c-4345-b47a-5a1fe2572650"
+        },
+        {
+          "filingCode": "6c5f6e48-53b3-4371-a97d-a58a18761577",
+          "nameZh": "2026上海AI算力产业展览会",
+          "startDate": "2026-09-10",
+          "endDate": "2026-09-12",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=6c5f6e48-53b3-4371-a97d-a58a18761577"
         },
         {
           "filingCode": "4a1f3337-88f2-4cbf-9579-c3d8b887e7ff",
@@ -1983,11 +1997,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=31190015-e91a-46fc-bf01-26f10535575a"
         },
         {
-          "filingCode": "12eef09e-dda9-4a13-b0d8-efa2579da685",
-          "nameZh": "第20届上海国际渔业博览会",
+          "filingCode": "75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+          "nameZh": "2026国际（上海）显示技术及应用创新展",
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=12eef09e-dda9-4a13-b0d8-efa2579da685"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=75b422f0-5dcd-474c-8a4f-2c32a8de9f9f"
         },
         {
           "filingCode": "10a3f132-984a-4b6d-9e50-6ef3a6df077e",
@@ -1995,6 +2009,27 @@
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=10a3f132-984a-4b6d-9e50-6ef3a6df077e"
+        },
+        {
+          "filingCode": "12eef09e-dda9-4a13-b0d8-efa2579da685",
+          "nameZh": "第20届上海国际渔业博览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=12eef09e-dda9-4a13-b0d8-efa2579da685"
+        },
+        {
+          "filingCode": "491d803e-8036-4280-9046-217452dc2ccf",
+          "nameZh": "2026国际（上海）薄膜与胶带技术及应用创新展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=491d803e-8036-4280-9046-217452dc2ccf"
+        },
+        {
+          "filingCode": "1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
+          "nameZh": "2026上海国际药食同源产业博览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
         },
         {
           "filingCode": "9cba8317-3ff5-4084-a959-6128d3b09f77",
@@ -2009,13 +2044,6 @@
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09"
-        },
-        {
-          "filingCode": "1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
-          "nameZh": "2026上海国际药食同源产业博览会",
-          "startDate": "2026-08-26",
-          "endDate": "2026-08-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
         },
         {
           "filingCode": "bbbed506-7735-4515-8c10-16c9b2c8b26f",
@@ -2053,60 +2081,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=81088759-3657-4410-a72a-a96efcbb7e89"
         },
         {
-          "filingCode": "b410a750-14f4-4968-b244-421848de4e38",
-          "nameZh": "2026上海国际汽车内饰与外饰展览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b410a750-14f4-4968-b244-421848de4e38"
-        },
-        {
-          "filingCode": "57a8e63b-c22c-454c-8edf-c9c5d715e02b",
-          "nameZh": "2026上海国际汽车底盘、汽车测试与质量监控展览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=57a8e63b-c22c-454c-8edf-c9c5d715e02b"
-        },
-        {
-          "filingCode": "cff87a00-7b8d-4e1f-8d43-77d6c7f2d767",
-          "nameZh": "2026上海国际智能汽车电子科技创新展览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cff87a00-7b8d-4e1f-8d43-77d6c7f2d767"
-        },
-        {
-          "filingCode": "0ca5af10-ff23-4b85-8bfc-89c1a55504b6",
-          "nameZh": "2026亚洲金属建筑博览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0ca5af10-ff23-4b85-8bfc-89c1a55504b6"
-        },
-        {
-          "filingCode": "51292548-6e5b-4c24-b9cc-5f536f313ba4",
-          "nameZh": "2026上海国际商用车、专用车、轻量化及技术装备展览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=51292548-6e5b-4c24-b9cc-5f536f313ba4"
-        },
-        {
           "filingCode": "ee12b376-514b-4772-a1c5-67ca07a585f3",
           "nameZh": "2026上海国际新能源汽车技术与供应链展览会",
           "startDate": "2026-08-12",
           "endDate": "2026-08-14",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=ee12b376-514b-4772-a1c5-67ca07a585f3"
-        },
-        {
-          "filingCode": "0f90a1b8-0cb2-41de-8742-93469df899a0",
-          "nameZh": "2026上海国际汽车涂料、粘接与密封技术产品展览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0f90a1b8-0cb2-41de-8742-93469df899a0"
-        },
-        {
-          "filingCode": "0b3eebce-3631-4b0d-a739-2d8dec6be162",
-          "nameZh": "2026上海国际磨削、去毛刺、研磨、抛光、清洗及真空镀膜展览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0b3eebce-3631-4b0d-a739-2d8dec6be162"
         },
         {
           "filingCode": "6d0aa259-8cb9-49e8-ae0b-76a6f36fec8b",
@@ -2123,11 +2102,60 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bcdd3701-cfd8-428d-bfef-769c92218c6d"
         },
         {
+          "filingCode": "0f90a1b8-0cb2-41de-8742-93469df899a0",
+          "nameZh": "2026上海国际汽车涂料、粘接与密封技术产品展览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0f90a1b8-0cb2-41de-8742-93469df899a0"
+        },
+        {
+          "filingCode": "57a8e63b-c22c-454c-8edf-c9c5d715e02b",
+          "nameZh": "2026上海国际汽车底盘、汽车测试与质量监控展览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=57a8e63b-c22c-454c-8edf-c9c5d715e02b"
+        },
+        {
+          "filingCode": "cff87a00-7b8d-4e1f-8d43-77d6c7f2d767",
+          "nameZh": "2026上海国际智能汽车电子科技创新展览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cff87a00-7b8d-4e1f-8d43-77d6c7f2d767"
+        },
+        {
           "filingCode": "d315496f-f793-46bb-b1d5-255eaa5c0f13",
           "nameZh": "2026亚洲混凝土世界博览会",
           "startDate": "2026-08-12",
           "endDate": "2026-08-14",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d315496f-f793-46bb-b1d5-255eaa5c0f13"
+        },
+        {
+          "filingCode": "0b3eebce-3631-4b0d-a739-2d8dec6be162",
+          "nameZh": "2026上海国际磨削、去毛刺、研磨、抛光、清洗及真空镀膜展览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0b3eebce-3631-4b0d-a739-2d8dec6be162"
+        },
+        {
+          "filingCode": "b410a750-14f4-4968-b244-421848de4e38",
+          "nameZh": "2026上海国际汽车内饰与外饰展览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b410a750-14f4-4968-b244-421848de4e38"
+        },
+        {
+          "filingCode": "0ca5af10-ff23-4b85-8bfc-89c1a55504b6",
+          "nameZh": "2026亚洲金属建筑博览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0ca5af10-ff23-4b85-8bfc-89c1a55504b6"
+        },
+        {
+          "filingCode": "51292548-6e5b-4c24-b9cc-5f536f313ba4",
+          "nameZh": "2026上海国际商用车、专用车、轻量化及技术装备展览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=51292548-6e5b-4c24-b9cc-5f536f313ba4"
         },
         {
           "filingCode": "30b75431-2d98-4036-a23c-520a18dae3a4",
@@ -2144,18 +2172,18 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=dc5649df-ce63-460f-a7c1-18022f5fe563"
         },
         {
-          "filingCode": "a5c5a52d-01bd-4bdd-b49e-a9f7c12c0400",
-          "nameZh": "2026上海国际汽配展",
-          "startDate": "2026-08-05",
-          "endDate": "2026-08-07",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=a5c5a52d-01bd-4bdd-b49e-a9f7c12c0400"
-        },
-        {
           "filingCode": "2115dee5-6220-4cfc-b628-72fba715b470",
           "nameZh": "2026国际粉体、散料、流体加工展览会",
           "startDate": "2026-08-05",
           "endDate": "2026-08-07",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=2115dee5-6220-4cfc-b628-72fba715b470"
+        },
+        {
+          "filingCode": "a5c5a52d-01bd-4bdd-b49e-a9f7c12c0400",
+          "nameZh": "2026上海国际汽配展",
+          "startDate": "2026-08-05",
+          "endDate": "2026-08-07",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=a5c5a52d-01bd-4bdd-b49e-a9f7c12c0400"
         },
         {
           "filingCode": "36886fa1-f315-4af7-8bb1-860974cf8c25",
@@ -2172,25 +2200,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0e9f2fdc-fae3-43a6-8fa0-8c8e8c3aec36"
         },
         {
-          "filingCode": "746146a9-56be-4db7-a325-0b5cf04eaba5",
-          "nameZh": "第119届中国日用百货商品交易会",
-          "startDate": "2026-07-23",
-          "endDate": "2026-07-25",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=746146a9-56be-4db7-a325-0b5cf04eaba5"
-        },
-        {
           "filingCode": "01d81804-b5eb-4ff3-a87f-ec4e15406099",
           "nameZh": "第27届上海国际摄影器材和数码影像展览会",
           "startDate": "2026-07-23",
           "endDate": "2026-07-26",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=01d81804-b5eb-4ff3-a87f-ec4e15406099"
-        },
-        {
-          "filingCode": "76599d41-6e24-49f5-8487-1e41ab469f28",
-          "nameZh": "2026第三十届上海国际茶业交易博览会",
-          "startDate": "2026-07-23",
-          "endDate": "2026-07-26",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=76599d41-6e24-49f5-8487-1e41ab469f28"
         },
         {
           "filingCode": "232b31f6-beed-4704-ba7d-fc92612980c9",
@@ -2200,6 +2214,20 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=232b31f6-beed-4704-ba7d-fc92612980c9"
         },
         {
+          "filingCode": "76599d41-6e24-49f5-8487-1e41ab469f28",
+          "nameZh": "2026第三十届上海国际茶业交易博览会",
+          "startDate": "2026-07-23",
+          "endDate": "2026-07-26",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=76599d41-6e24-49f5-8487-1e41ab469f28"
+        },
+        {
+          "filingCode": "746146a9-56be-4db7-a325-0b5cf04eaba5",
+          "nameZh": "第119届中国日用百货商品交易会",
+          "startDate": "2026-07-23",
+          "endDate": "2026-07-25",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=746146a9-56be-4db7-a325-0b5cf04eaba5"
+        },
+        {
           "filingCode": "c48e0b2b-f675-4012-bb82-02f38063eb70",
           "nameZh": "2026国际低空经济博览会",
           "startDate": "2026-07-22",
@@ -2207,18 +2235,18 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=c48e0b2b-f675-4012-bb82-02f38063eb70"
         },
         {
-          "filingCode": "8d641d92-4e6d-4351-a0b3-115f503d554f",
-          "nameZh": "2026第十四届上海珠宝首饰玉石交易会",
-          "startDate": "2026-07-17",
-          "endDate": "2026-07-20",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=8d641d92-4e6d-4351-a0b3-115f503d554f"
-        },
-        {
           "filingCode": "f7f58b45-ec58-4980-9e02-b5cadd73f7d2",
           "nameZh": "2026人工智能博览会",
           "startDate": "2026-07-17",
           "endDate": "2026-07-20",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f7f58b45-ec58-4980-9e02-b5cadd73f7d2"
+        },
+        {
+          "filingCode": "8d641d92-4e6d-4351-a0b3-115f503d554f",
+          "nameZh": "2026第十四届上海珠宝首饰玉石交易会",
+          "startDate": "2026-07-17",
+          "endDate": "2026-07-20",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=8d641d92-4e6d-4351-a0b3-115f503d554f"
         },
         {
           "filingCode": "774b4287-d455-4bec-9e2e-a0b074bd23f6",
@@ -2235,25 +2263,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d5d62153-a7ec-4c22-b82c-3e9211dd6a12"
         },
         {
-          "filingCode": "392350fd-d9d7-4d27-b2d9-b32db2e52b90",
-          "nameZh": "第九届全球授权展•上海站",
-          "startDate": "2026-07-15",
-          "endDate": "2026-07-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=392350fd-d9d7-4d27-b2d9-b32db2e52b90"
-        },
-        {
           "filingCode": "cc88099c-044b-4c9c-981a-627b8dc6e8d5",
           "nameZh": "2026上海文创生态展览会",
           "startDate": "2026-07-15",
           "endDate": "2026-07-17",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cc88099c-044b-4c9c-981a-627b8dc6e8d5"
-        },
-        {
-          "filingCode": "e1f80f0b-14fe-43e9-a5fd-0921f366d8f4",
-          "nameZh": "2026CBME供应链展",
-          "startDate": "2026-07-15",
-          "endDate": "2026-07-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e1f80f0b-14fe-43e9-a5fd-0921f366d8f4"
         },
         {
           "filingCode": "5e68c021-ca2a-4246-958e-4421ec6b6dd2",
@@ -2263,18 +2277,25 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=5e68c021-ca2a-4246-958e-4421ec6b6dd2"
         },
         {
+          "filingCode": "e1f80f0b-14fe-43e9-a5fd-0921f366d8f4",
+          "nameZh": "2026CBME供应链展",
+          "startDate": "2026-07-15",
+          "endDate": "2026-07-17",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e1f80f0b-14fe-43e9-a5fd-0921f366d8f4"
+        },
+        {
+          "filingCode": "392350fd-d9d7-4d27-b2d9-b32db2e52b90",
+          "nameZh": "第九届全球授权展•上海站",
+          "startDate": "2026-07-15",
+          "endDate": "2026-07-17",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=392350fd-d9d7-4d27-b2d9-b32db2e52b90"
+        },
+        {
           "filingCode": "e639951d-92b1-411c-983e-db2519e9cbda",
           "nameZh": "2026哔哩哔哩上海国际数字娱乐动漫文化博览会",
           "startDate": "2026-07-10",
           "endDate": "2026-07-12",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e639951d-92b1-411c-983e-db2519e9cbda"
-        },
-        {
-          "filingCode": "48ac383a-af32-4f2e-9326-48a09566be8d",
-          "nameZh": "2026第八届上海国际竹产业博览会",
-          "startDate": "2026-07-08",
-          "endDate": "2026-07-10",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=48ac383a-af32-4f2e-9326-48a09566be8d"
         },
         {
           "filingCode": "0394c6c2-90f0-4aa4-9360-d7043b85570d",
@@ -2284,11 +2305,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0394c6c2-90f0-4aa4-9360-d7043b85570d"
         },
         {
-          "filingCode": "d2bb47a3-ce6a-433c-90b7-7cb52b97aa46",
-          "nameZh": "2026第十届上海国际旅游民宿产业博览会",
+          "filingCode": "48ac383a-af32-4f2e-9326-48a09566be8d",
+          "nameZh": "2026第八届上海国际竹产业博览会",
           "startDate": "2026-07-08",
           "endDate": "2026-07-10",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d2bb47a3-ce6a-433c-90b7-7cb52b97aa46"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=48ac383a-af32-4f2e-9326-48a09566be8d"
         },
         {
           "filingCode": "23799bce-c413-476e-86bb-2f76e56af19e",
@@ -2333,6 +2354,13 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=61d8e65d-cafd-4b99-bae6-35a3e97b1f3d"
         },
         {
+          "filingCode": "d2bb47a3-ce6a-433c-90b7-7cb52b97aa46",
+          "nameZh": "2026第十届上海国际旅游民宿产业博览会",
+          "startDate": "2026-07-08",
+          "endDate": "2026-07-10",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d2bb47a3-ce6a-433c-90b7-7cb52b97aa46"
+        },
+        {
           "filingCode": "7f0fb25f-e810-4038-95ca-4c51419f1634",
           "nameZh": "2026国际动漫游戏博览会",
           "startDate": "2026-07-04",
@@ -2375,18 +2403,18 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f7647d50-7f2d-4895-b319-4f2e68d07495"
         },
         {
-          "filingCode": "98d5b956-cff5-436f-bb3c-82d338b83158",
-          "nameZh": "2026慕尼黑上海电子展",
-          "startDate": "2026-07-01",
-          "endDate": "2026-07-03",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=98d5b956-cff5-436f-bb3c-82d338b83158"
-        },
-        {
           "filingCode": "9a6a7b53-f0cc-481a-8b67-79c027510af8",
           "nameZh": "2026第25届上海国际电机博览会",
           "startDate": "2026-07-01",
           "endDate": "2026-07-03",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9a6a7b53-f0cc-481a-8b67-79c027510af8"
+        },
+        {
+          "filingCode": "98d5b956-cff5-436f-bb3c-82d338b83158",
+          "nameZh": "2026慕尼黑上海电子展",
+          "startDate": "2026-07-01",
+          "endDate": "2026-07-03",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=98d5b956-cff5-436f-bb3c-82d338b83158"
         },
         {
           "filingCode": "61f1256c-5798-400a-bb55-24db15a9f812",
@@ -2403,32 +2431,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1b220642-59a8-4d49-9575-e10727f4bed1"
         },
         {
-          "filingCode": "ddd16dde-ccce-4d99-977e-d5822a2761c4",
-          "nameZh": "2026“珠宝非凡匠艺之境“艺术展",
-          "startDate": "2026-06-26",
-          "endDate": "2026-06-27",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=ddd16dde-ccce-4d99-977e-d5822a2761c4"
-        },
-        {
           "filingCode": "a88ef8bc-9cb0-43a3-ac7a-bf2f054087bd",
           "nameZh": "第120届上海文化用品商品交易会",
           "startDate": "2026-06-26",
           "endDate": "2026-06-28",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=a88ef8bc-9cb0-43a3-ac7a-bf2f054087bd"
-        },
-        {
-          "filingCode": "e38170b8-3502-4bcd-9ebf-d4b5f8dd8be8",
-          "nameZh": "第27届上海国际礼品、文创产品及家居用品展览会",
-          "startDate": "2026-06-26",
-          "endDate": "2026-06-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e38170b8-3502-4bcd-9ebf-d4b5f8dd8be8"
-        },
-        {
-          "filingCode": "e45db2bc-c2af-42e7-9d61-e21404c87366",
-          "nameZh": "第22届上海国际箱包展览会",
-          "startDate": "2026-06-26",
-          "endDate": "2026-06-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e45db2bc-c2af-42e7-9d61-e21404c87366"
         },
         {
           "filingCode": "af2ad3cd-4320-4377-8fe7-a8e8bb8457e9",
@@ -2438,11 +2445,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=af2ad3cd-4320-4377-8fe7-a8e8bb8457e9"
         },
         {
-          "filingCode": "3b426a2a-63ae-4543-86b5-2ac8d196d642",
-          "nameZh": "2026上海国际珠宝玉石首饰展览会",
+          "filingCode": "e38170b8-3502-4bcd-9ebf-d4b5f8dd8be8",
+          "nameZh": "第27届上海国际礼品、文创产品及家居用品展览会",
           "startDate": "2026-06-26",
-          "endDate": "2026-06-29",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=3b426a2a-63ae-4543-86b5-2ac8d196d642"
+          "endDate": "2026-06-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e38170b8-3502-4bcd-9ebf-d4b5f8dd8be8"
         },
         {
           "filingCode": "049bf75e-e218-4b09-bcb9-43d37d2e5847",
@@ -2450,6 +2457,27 @@
           "startDate": "2026-06-26",
           "endDate": "2026-06-28",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=049bf75e-e218-4b09-bcb9-43d37d2e5847"
+        },
+        {
+          "filingCode": "e45db2bc-c2af-42e7-9d61-e21404c87366",
+          "nameZh": "第22届上海国际箱包展览会",
+          "startDate": "2026-06-26",
+          "endDate": "2026-06-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e45db2bc-c2af-42e7-9d61-e21404c87366"
+        },
+        {
+          "filingCode": "3b426a2a-63ae-4543-86b5-2ac8d196d642",
+          "nameZh": "2026上海国际珠宝玉石首饰展览会",
+          "startDate": "2026-06-26",
+          "endDate": "2026-06-29",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=3b426a2a-63ae-4543-86b5-2ac8d196d642"
+        },
+        {
+          "filingCode": "ddd16dde-ccce-4d99-977e-d5822a2761c4",
+          "nameZh": "2026“珠宝非凡匠艺之境“艺术展",
+          "startDate": "2026-06-26",
+          "endDate": "2026-06-27",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=ddd16dde-ccce-4d99-977e-d5822a2761c4"
         },
         {
           "filingCode": "0de2fd30-5a50-40ec-b39f-945997888881",
@@ -2492,6 +2520,13 @@
           "startDate": "2026-06-24",
           "endDate": "2026-06-26",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1696359c-980d-427c-ac7a-0b94fa430057"
+        },
+        {
+          "filingCode": "228b7089-5994-432d-81f7-9b3a63d31798",
+          "nameZh": "2026上海国际养老产业及康复展览会",
+          "startDate": "2026-06-24",
+          "endDate": "2026-06-26",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=228b7089-5994-432d-81f7-9b3a63d31798"
         },
         {
           "filingCode": "0e65a638-ddaa-4b2a-888c-5b3642d713b7",
@@ -2557,13 +2592,6 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e8e0bea2-aa28-4756-8465-371395fd4c74"
         },
         {
-          "filingCode": "228b7089-5994-432d-81f7-9b3a63d31798",
-          "nameZh": "2026上海国际养老产业及康复展览会",
-          "startDate": "2026-06-24",
-          "endDate": "2026-06-26",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=228b7089-5994-432d-81f7-9b3a63d31798"
-        },
-        {
           "filingCode": "1d97577c-1434-4eca-a539-e4d8e7d369a8",
           "nameZh": "2026阀门世界亚洲博览会",
           "startDate": "2026-06-22",
@@ -2590,13 +2618,6 @@
           "startDate": "2026-06-16",
           "endDate": "2026-06-28",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=4b8e63a5-82c9-4ec4-acca-292c34b8bff8"
-        },
-        {
-          "filingCode": "76e5e962-09e3-46f5-8890-a1d962676a8e",
-          "nameZh": "2026乐活康养产业产品展览会",
-          "startDate": "2026-06-15",
-          "endDate": "2026-06-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=76e5e962-09e3-46f5-8890-a1d962676a8e"
         },
         {
           "filingCode": "2b0752f1-e916-4c61-8424-2a8a501bd23d",
@@ -2639,6 +2660,13 @@
           "startDate": "2026-06-15",
           "endDate": "2026-06-17",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=5215b89f-4c8a-40f8-ba67-e141cf2ba3c4"
+        },
+        {
+          "filingCode": "76e5e962-09e3-46f5-8890-a1d962676a8e",
+          "nameZh": "2026乐活康养产业产品展览会",
+          "startDate": "2026-06-15",
+          "endDate": "2026-06-17",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=76e5e962-09e3-46f5-8890-a1d962676a8e"
         },
         {
           "filingCode": "3761f336-a0f9-45d3-b567-32e635ad5d4e",
@@ -2688,12 +2716,34 @@
       ]
     },
     {
+      "id": "expofinder-dLH4cO1X",
+      "name": "2026 上海全球授权展览会LEC",
+      "nameZh": "2026 上海全球授权展览会LEC",
+      "category": "商贸",
       "region": "亚洲",
       "city": "上海",
       "country": "中国",
-      "source": "上海市会展业公共信息服务平台",
-      "sourceUrl": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=5e68c021-ca2a-4246-958e-4421ec6b6dd2",
-      "verification": "上海市会展业公共信息服务平台备案信息已核验",
+      "venue": "上海国家会展中心",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-17",
+      "lat": 31.1889,
+      "lng": 121.299,
+      "summary": "2026 上海全球授权展览会LEC将于2026.07.15-07.17在中国·上海·上海国家会展中心举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/dLH4cO1X",
+      "url": "https://www.expofinder.com/detail/dLH4cO1X",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:11.130Z",
+      "featured": false
+    },
+    {
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "source": "上海市人民政府 2026 年 7 月重点展会",
+      "sourceUrl": "https://english.shanghai.gov.cn/en-UpcomingExpos/20260701/d95e894671da42629bafdac6298a8b3e.html",
+      "verification": "上海市政府 2026 年 7 月展会指南已复核日期与场馆",
       "visitorType": "专业观众",
       "id": "cbme-china-2026",
       "name": "CBME China 2026",
@@ -2711,52 +2761,52 @@
       "lat": 31.1889,
       "lng": 121.299,
       "url": "https://english.shanghai.gov.cn/en-UpcomingExpos/20260701/d95e894671da42629bafdac6298a8b3e.html",
-      "collectedAt": "2026-07-16T01:08:37.489Z",
-      "featured": false,
-      "organizers": [
-        "亿百媒会展(上海)有限公司"
-      ],
-      "eventType": "展览",
-      "exhibitionType": "涉外经济技术展",
-      "filingCode": "5e68c021-ca2a-4246-958e-4421ec6b6dd2",
-      "filingNumber": "沪商展览(2026)-XZ26-第293号",
-      "filingStatus": "正常",
-      "exhibitionArea": 155000,
-      "concurrentEvents": [
-        {
-          "filingCode": "cc88099c-044b-4c9c-981a-627b8dc6e8d5",
-          "nameZh": "2026上海文创生态展览会",
-          "startDate": "2026-07-15",
-          "endDate": "2026-07-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cc88099c-044b-4c9c-981a-627b8dc6e8d5"
-        },
-        {
-          "filingCode": "392350fd-d9d7-4d27-b2d9-b32db2e52b90",
-          "nameZh": "第九届全球授权展•上海站",
-          "startDate": "2026-07-15",
-          "endDate": "2026-07-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=392350fd-d9d7-4d27-b2d9-b32db2e52b90"
-        },
-        {
-          "filingCode": "d5d62153-a7ec-4c22-b82c-3e9211dd6a12",
-          "nameZh": "第二十届上海国际压铸暨有色铸造展",
-          "startDate": "2026-07-15",
-          "endDate": "2026-07-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d5d62153-a7ec-4c22-b82c-3e9211dd6a12"
-        },
-        {
-          "filingCode": "e1f80f0b-14fe-43e9-a5fd-0921f366d8f4",
-          "nameZh": "2026CBME供应链展",
-          "startDate": "2026-07-15",
-          "endDate": "2026-07-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e1f80f0b-14fe-43e9-a5fd-0921f366d8f4"
-        }
-      ],
-      "verificationSources": [
-        "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=5e68c021-ca2a-4246-958e-4421ec6b6dd2",
-        "https://english.shanghai.gov.cn/en-UpcomingExpos/20260701/d95e894671da42629bafdac6298a8b3e.html"
-      ],
-      "confidence": "official"
+      "collectedAt": "2026-07-17T01:12:00.814Z",
+      "featured": false
+    },
+    {
+      "id": "expofinder-6CUkMArg",
+      "name": "2026第五届上海智慧档案展览会暨发展大会",
+      "nameZh": "2026第五届上海智慧档案展览会暨发展大会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-17",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "summary": "2026第五届上海智慧档案展览会暨发展大会将于2026.07.15-07.17在中国·上海·上海新国际博览中心举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/6CUkMArg",
+      "url": "https://www.expofinder.com/detail/6CUkMArg",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:13.034Z",
+      "featured": false
+    },
+    {
+      "id": "expofinder-tyT7EMe8",
+      "name": "2026上海国际婚纱礼服、彩妆造型及时尚配饰展",
+      "nameZh": "2026上海国际婚纱礼服、彩妆造型及时尚配饰展",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海世博展览馆",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-17",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026上海国际婚纱礼服、彩妆造型及时尚配饰展将于2026.07.15-07.17在中国·上海·上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/tyT7EMe8",
+      "url": "https://www.expofinder.com/detail/tyT7EMe8",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:15.432Z",
+      "featured": false
     },
     {
       "id": "sh-filing-cc88099c-044b-4c9c-981a-627b8dc6e8d5",
@@ -2824,6 +2874,72 @@
       ]
     },
     {
+      "id": "expofinder-QZcGzt51",
+      "name": "2026中国（上海）国际婚纱摄影器材展览会",
+      "nameZh": "2026中国（上海）国际婚纱摄影器材展览会",
+      "category": "艺术",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海世博展览馆",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-17",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026中国（上海）国际婚纱摄影器材展览会将于2026.07.15-07.17在中国·上海·上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/QZcGzt51",
+      "url": "https://www.expofinder.com/detail/QZcGzt51",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:13.669Z",
+      "featured": false
+    },
+    {
+      "id": "expofinder-OtSr1J40",
+      "name": "2026中国国际涂料博览会暨第二十四届中国国际涂料展览会",
+      "nameZh": "2026中国国际涂料博览会暨第二十四届中国国际涂料展览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-17",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "summary": "2026中国国际涂料博览会暨第二十四届中国国际涂料展览会将于2026.07.15-07.17在中国·上海·上海新国际博览中心举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/OtSr1J40",
+      "url": "https://www.expofinder.com/detail/OtSr1J40",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:15.723Z",
+      "featured": false
+    },
+    {
+      "id": "expofinder-QZrtzt51",
+      "name": "2026中国上海国际压铸暨有色铸造展览会",
+      "nameZh": "2026中国上海国际压铸暨有色铸造展览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心N1-N4馆",
+      "startDate": "2026-07-15",
+      "endDate": "2026-07-17",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "summary": "2026中国上海国际压铸暨有色铸造展览会将于2026.07.15-07.17在中国·上海·上海新国际博览中心N1-N4馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/QZrtzt51",
+      "url": "https://www.expofinder.com/detail/QZrtzt51",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:20.958Z",
+      "featured": false
+    },
+    {
       "id": "expofinder-YjA7OiaQ",
       "name": "2026中国上海智慧财务展览会暨发展大会",
       "nameZh": "2026中国上海智慧财务展览会暨发展大会",
@@ -2842,7 +2958,7 @@
       "sourceUrl": "https://www.expofinder.com/detail/YjA7OiaQ",
       "url": "https://www.expofinder.com/detail/YjA7OiaQ",
       "verification": "聚合平台待官网复核",
-      "collectedAt": "2026-07-15T01:01:36.399Z",
+      "collectedAt": "2026-07-17T01:12:10.567Z",
       "featured": false
     },
     {
@@ -2864,70 +2980,8 @@
       "sourceUrl": "https://www.expofinder.com/detail/uzJFVcq6",
       "url": "https://www.expofinder.com/detail/uzJFVcq6",
       "verification": "聚合平台待官网复核",
-      "collectedAt": "2026-07-16T01:08:42.570Z",
+      "collectedAt": "2026-07-17T01:12:07.344Z",
       "featured": false
-    },
-    {
-      "id": "sh-filing-e1f80f0b-14fe-43e9-a5fd-0921f366d8f4",
-      "filingCode": "e1f80f0b-14fe-43e9-a5fd-0921f366d8f4",
-      "name": "2026CBME供应链展",
-      "nameZh": "2026CBME供应链展",
-      "category": "科技",
-      "eventType": "展览",
-      "exhibitionType": "涉外经济技术展",
-      "region": "亚洲",
-      "city": "上海",
-      "country": "中国",
-      "venue": "国家会展中心（上海）",
-      "startDate": "2026-07-15",
-      "endDate": "2026-07-17",
-      "lat": 31.1889,
-      "lng": 121.299,
-      "organizers": [
-        "亿百媒会展(上海)有限公司"
-      ],
-      "filingStatus": "正常",
-      "summary": "食品、用品、童装的OEM/ODM代工厂、包装包材、原材料、机械设备、检测机构等",
-      "visitorType": "开放安排以主办方规则为准",
-      "source": "上海市会展业公共信息服务平台",
-      "sourceUrl": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e1f80f0b-14fe-43e9-a5fd-0921f366d8f4",
-      "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e1f80f0b-14fe-43e9-a5fd-0921f366d8f4",
-      "verification": "上海市会展业公共信息服务平台备案信息",
-      "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.489Z",
-      "featured": false,
-      "filingNumber": "沪商展览(2026)-XZ26-第294号",
-      "exhibitionArea": 14000,
-      "concurrentEvents": [
-        {
-          "filingCode": "cc88099c-044b-4c9c-981a-627b8dc6e8d5",
-          "nameZh": "2026上海文创生态展览会",
-          "startDate": "2026-07-15",
-          "endDate": "2026-07-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cc88099c-044b-4c9c-981a-627b8dc6e8d5"
-        },
-        {
-          "filingCode": "392350fd-d9d7-4d27-b2d9-b32db2e52b90",
-          "nameZh": "第九届全球授权展•上海站",
-          "startDate": "2026-07-15",
-          "endDate": "2026-07-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=392350fd-d9d7-4d27-b2d9-b32db2e52b90"
-        },
-        {
-          "filingCode": "d5d62153-a7ec-4c22-b82c-3e9211dd6a12",
-          "nameZh": "第二十届上海国际压铸暨有色铸造展",
-          "startDate": "2026-07-15",
-          "endDate": "2026-07-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d5d62153-a7ec-4c22-b82c-3e9211dd6a12"
-        },
-        {
-          "filingCode": "5e68c021-ca2a-4246-958e-4421ec6b6dd2",
-          "nameZh": "2026CBME国际孕婴童展",
-          "startDate": "2026-07-15",
-          "endDate": "2026-07-17",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=5e68c021-ca2a-4246-958e-4421ec6b6dd2"
-        }
-      ]
     },
     {
       "id": "sh-filing-d5d62153-a7ec-4c22-b82c-3e9211dd6a12",
@@ -3078,7 +3132,7 @@
       "sourceUrl": "https://www.expofinder.com/detail/uzkWVcq6",
       "url": "https://www.expofinder.com/detail/uzkWVcq6",
       "verification": "聚合平台待官网复核",
-      "collectedAt": "2026-07-16T01:08:42.809Z",
+      "collectedAt": "2026-07-17T01:12:08.290Z",
       "featured": false
     },
     {
@@ -3130,7 +3184,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=774b4287-d455-4bec-9e2e-a0b074bd23f6",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.490Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第265号",
       "exhibitionArea": 17250,
@@ -3164,7 +3218,7 @@
       "featured": true,
       "lat": 31.185,
       "lng": 121.489,
-      "collectedAt": "2026-07-16T01:08:36.115Z"
+      "collectedAt": "2026-07-17T01:12:00.814Z"
     },
     {
       "id": "sh-filing-8d641d92-4e6d-4351-a0b3-115f503d554f",
@@ -3193,7 +3247,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=8d641d92-4e6d-4351-a0b3-115f503d554f",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.489Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第308号",
       "exhibitionArea": 4500,
@@ -3237,7 +3291,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f7f58b45-ec58-4980-9e02-b5cadd73f7d2",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.489Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第301号",
       "exhibitionArea": 70000,
@@ -3278,7 +3332,7 @@
       "lat": 31.1889,
       "lng": 121.299,
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=c48e0b2b-f675-4012-bb82-02f38063eb70",
-      "collectedAt": "2026-07-16T01:08:37.489Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "organizers": [
         "国家会展中心(上海)有限责任公司东浩兰生(集团)有限公司",
@@ -3304,6 +3358,50 @@
         "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html"
       ],
       "confidence": "official"
+    },
+    {
+      "id": "expofinder-vAsb9Ijd",
+      "name": "2026第119届中国（上海）日用百货商品交易展览会",
+      "nameZh": "2026第119届中国（上海）日用百货商品交易展览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-25",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "summary": "2026第119届中国（上海）日用百货商品交易展览会将于2026.07.23-07.25在中国·上海·上海新国际博览中心举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/vAsb9Ijd",
+      "url": "https://www.expofinder.com/detail/vAsb9Ijd",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:16.145Z",
+      "featured": false
+    },
+    {
+      "id": "expofinder-PT3TFbCk",
+      "name": "2026第42届中国（上海）国际婚纱摄影器材展览会",
+      "nameZh": "2026第42届中国（上海）国际婚纱摄影器材展览会",
+      "category": "艺术",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海世博展览馆",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-25",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026第42届中国（上海）国际婚纱摄影器材展览会将于2026.07.23-07.25在中国·上海·上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/PT3TFbCk",
+      "url": "https://www.expofinder.com/detail/PT3TFbCk",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:09.495Z",
+      "featured": false
     },
     {
       "id": "sh-filing-76599d41-6e24-49f5-8487-1e41ab469f28",
@@ -3332,7 +3430,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=76599d41-6e24-49f5-8487-1e41ab469f28",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.489Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第132号",
       "exhibitionArea": 5200,
@@ -3390,7 +3488,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=232b31f6-beed-4704-ba7d-fc92612980c9",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第320号",
       "exhibitionArea": 20000,
@@ -3422,6 +3520,50 @@
       ]
     },
     {
+      "id": "expofinder-Lf4WXERk",
+      "name": "2026上海国际孕婴童肖像摄影展",
+      "nameZh": "2026上海国际孕婴童肖像摄影展",
+      "category": "艺术",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海世博展览馆",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-25",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026上海国际孕婴童肖像摄影展将于2026.07.23-07.25在中国·上海·上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/Lf4WXERk",
+      "url": "https://www.expofinder.com/detail/Lf4WXERk",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:13.577Z",
+      "featured": false
+    },
+    {
+      "id": "expofinder-1EC0jMpx",
+      "name": "2026中国上海国际摄影器材和数码影像展览会",
+      "nameZh": "2026中国上海国际摄影器材和数码影像展览会",
+      "category": "艺术",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海世博展览馆",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-26",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026中国上海国际摄影器材和数码影像展览会将于2026.07.23-07.26在中国·上海·上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/1EC0jMpx",
+      "url": "https://www.expofinder.com/detail/1EC0jMpx",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:16.253Z",
+      "featured": false
+    },
+    {
       "region": "亚洲",
       "city": "上海",
       "country": "中国",
@@ -3446,7 +3588,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-UpcomingExpos/20260701/d95e894671da42629bafdac6298a8b3e.html",
-      "collectedAt": "2026-07-16T01:08:37.489Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "organizers": [
         "励展华百展览（北京）有限公司"
@@ -3491,7 +3633,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=01d81804-b5eb-4ff3-a87f-ec4e15406099",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.489Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第319号",
       "exhibitionArea": 7000,
@@ -3549,7 +3691,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0e9f2fdc-fae3-43a6-8fa0-8c8e8c3aec36",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.489Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第331号",
       "exhibitionArea": 3660,
@@ -3585,17 +3727,17 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f5a873b8-097b-43aa-b78b-b23643c43c29",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.489Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第371号",
       "exhibitionArea": 1600,
       "concurrentEvents": [
         {
-          "filingCode": "b6e35627-37b9-4d37-8505-e272189a0dbb",
-          "nameZh": "2026第十五届上海国际客车展览会",
+          "filingCode": "f6d79288-593c-45a8-bd23-21fb2c6a3553",
+          "nameZh": "2026亚洲保温展",
           "startDate": "2026-12-09",
           "endDate": "2026-12-11",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b6e35627-37b9-4d37-8505-e272189a0dbb"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f6d79288-593c-45a8-bd23-21fb2c6a3553"
         },
         {
           "filingCode": "cb87a810-5fb8-432b-8d70-3c3cdcd118c3",
@@ -3605,6 +3747,13 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cb87a810-5fb8-432b-8d70-3c3cdcd118c3"
         },
         {
+          "filingCode": "b6e35627-37b9-4d37-8505-e272189a0dbb",
+          "nameZh": "2026第十五届上海国际客车展览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b6e35627-37b9-4d37-8505-e272189a0dbb"
+        },
+        {
           "filingCode": "c70f1038-a792-47c3-92b5-49431ec2623c",
           "nameZh": "2026上海国际公共交通博览会",
           "startDate": "2026-12-09",
@@ -3612,25 +3761,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=c70f1038-a792-47c3-92b5-49431ec2623c"
         },
         {
-          "filingCode": "eaeff025-d9a8-4a67-b719-3b2ef7a4769c",
-          "nameZh": "2026上海洁净技术与设备展览会",
+          "filingCode": "67e94a85-dc5e-4599-ab9f-d92ab53d2b8f",
+          "nameZh": "2026上海国际智慧口岸科技装备展览会",
           "startDate": "2026-12-09",
           "endDate": "2026-12-11",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=eaeff025-d9a8-4a67-b719-3b2ef7a4769c"
-        },
-        {
-          "filingCode": "f6d79288-593c-45a8-bd23-21fb2c6a3553",
-          "nameZh": "2026亚洲保温展",
-          "startDate": "2026-12-09",
-          "endDate": "2026-12-11",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f6d79288-593c-45a8-bd23-21fb2c6a3553"
-        },
-        {
-          "filingCode": "43f47acb-3c8e-47fd-b288-9b166b9b40dc",
-          "nameZh": "2026上海国际先进轨道交通技术展览会",
-          "startDate": "2026-12-09",
-          "endDate": "2026-12-11",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=43f47acb-3c8e-47fd-b288-9b166b9b40dc"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=67e94a85-dc5e-4599-ab9f-d92ab53d2b8f"
         },
         {
           "filingCode": "9a8c23cf-8699-4cac-964c-03b1224811c7",
@@ -3640,11 +3775,18 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9a8c23cf-8699-4cac-964c-03b1224811c7"
         },
         {
-          "filingCode": "67e94a85-dc5e-4599-ab9f-d92ab53d2b8f",
-          "nameZh": "2026上海国际智慧口岸科技装备展览会",
+          "filingCode": "eaeff025-d9a8-4a67-b719-3b2ef7a4769c",
+          "nameZh": "2026上海洁净技术与设备展览会",
           "startDate": "2026-12-09",
           "endDate": "2026-12-11",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=67e94a85-dc5e-4599-ab9f-d92ab53d2b8f"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=eaeff025-d9a8-4a67-b719-3b2ef7a4769c"
+        },
+        {
+          "filingCode": "43f47acb-3c8e-47fd-b288-9b166b9b40dc",
+          "nameZh": "2026上海国际先进轨道交通技术展览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=43f47acb-3c8e-47fd-b288-9b166b9b40dc"
         },
         {
           "filingCode": "637b2622-8bb0-4920-8663-52c5bfe73a01",
@@ -3710,18 +3852,18 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=35c39dea-f04e-4e15-a314-be878cfe64c8"
         },
         {
-          "filingCode": "5f1da157-eb9d-4f2a-baa3-f8e4ffe011d6",
-          "nameZh": "2026国际人工智能数据中心建设展览会",
-          "startDate": "2026-10-26",
-          "endDate": "2026-10-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=5f1da157-eb9d-4f2a-baa3-f8e4ffe011d6"
-        },
-        {
           "filingCode": "b7bc80de-d216-4c9b-9011-3af82b01ef03",
           "nameZh": "2026国际算电协同产业链展览会",
           "startDate": "2026-10-26",
           "endDate": "2026-10-28",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b7bc80de-d216-4c9b-9011-3af82b01ef03"
+        },
+        {
+          "filingCode": "5f1da157-eb9d-4f2a-baa3-f8e4ffe011d6",
+          "nameZh": "2026国际人工智能数据中心建设展览会",
+          "startDate": "2026-10-26",
+          "endDate": "2026-10-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=5f1da157-eb9d-4f2a-baa3-f8e4ffe011d6"
         },
         {
           "filingCode": "8fa743f7-fd68-4773-956f-27c22941810d",
@@ -3857,6 +3999,13 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=10a3f132-984a-4b6d-9e50-6ef3a6df077e"
         },
         {
+          "filingCode": "491d803e-8036-4280-9046-217452dc2ccf",
+          "nameZh": "2026国际（上海）薄膜与胶带技术及应用创新展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=491d803e-8036-4280-9046-217452dc2ccf"
+        },
+        {
           "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
           "nameZh": "第17届上海国际餐饮食材展览会",
           "startDate": "2026-08-26",
@@ -3869,6 +4018,13 @@
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
+        },
+        {
+          "filingCode": "75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+          "nameZh": "2026国际（上海）显示技术及应用创新展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=75b422f0-5dcd-474c-8a4f-2c32a8de9f9f"
         },
         {
           "filingCode": "bbbed506-7735-4515-8c10-16c9b2c8b26f",
@@ -3904,20 +4060,6 @@
           "startDate": "2026-08-13",
           "endDate": "2026-08-16",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=81088759-3657-4410-a72a-a96efcbb7e89"
-        },
-        {
-          "filingCode": "51292548-6e5b-4c24-b9cc-5f536f313ba4",
-          "nameZh": "2026上海国际商用车、专用车、轻量化及技术装备展览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=51292548-6e5b-4c24-b9cc-5f536f313ba4"
-        },
-        {
-          "filingCode": "0f90a1b8-0cb2-41de-8742-93469df899a0",
-          "nameZh": "2026上海国际汽车涂料、粘接与密封技术产品展览会",
-          "startDate": "2026-08-12",
-          "endDate": "2026-08-14",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0f90a1b8-0cb2-41de-8742-93469df899a0"
         },
         {
           "filingCode": "57a8e63b-c22c-454c-8edf-c9c5d715e02b",
@@ -3981,6 +4123,20 @@
           "startDate": "2026-08-12",
           "endDate": "2026-08-14",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bcdd3701-cfd8-428d-bfef-769c92218c6d"
+        },
+        {
+          "filingCode": "51292548-6e5b-4c24-b9cc-5f536f313ba4",
+          "nameZh": "2026上海国际商用车、专用车、轻量化及技术装备展览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=51292548-6e5b-4c24-b9cc-5f536f313ba4"
+        },
+        {
+          "filingCode": "0f90a1b8-0cb2-41de-8742-93469df899a0",
+          "nameZh": "2026上海国际汽车涂料、粘接与密封技术产品展览会",
+          "startDate": "2026-08-12",
+          "endDate": "2026-08-14",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0f90a1b8-0cb2-41de-8742-93469df899a0"
         },
         {
           "filingCode": "30b75431-2d98-4036-a23c-520a18dae3a4",
@@ -4097,7 +4253,7 @@
       "featured": true,
       "lat": 31.2117,
       "lng": 121.5635,
-      "collectedAt": "2026-07-16T01:08:36.115Z"
+      "collectedAt": "2026-07-17T01:12:00.814Z"
     },
     {
       "id": "sh-filing-36886fa1-f315-4af7-8bb1-860974cf8c25",
@@ -4126,7 +4282,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=36886fa1-f315-4af7-8bb1-860974cf8c25",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第37号",
       "exhibitionArea": 11500,
@@ -4162,7 +4318,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=2115dee5-6220-4cfc-b628-72fba715b470",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第340号",
       "exhibitionArea": 8500,
@@ -4206,7 +4362,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=a5c5a52d-01bd-4bdd-b49e-a9f7c12c0400",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第256号",
       "exhibitionArea": 35800,
@@ -4222,6 +4378,50 @@
       "verificationSources": [
         "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=a5c5a52d-01bd-4bdd-b49e-a9f7c12c0400"
       ]
+    },
+    {
+      "id": "expofinder-afTpcBKm",
+      "name": "2026中国国际绿色建筑建材（上海）博览会",
+      "nameZh": "2026中国国际绿色建筑建材（上海）博览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海世博展览馆",
+      "startDate": "2026-08-05",
+      "endDate": "2026-08-07",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026中国国际绿色建筑建材（上海）博览会将于2026.08.05-08.07在中国·上海·上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/afTpcBKm",
+      "url": "https://www.expofinder.com/detail/afTpcBKm",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:18.904Z",
+      "featured": false
+    },
+    {
+      "id": "expofinder-57mX6rqa",
+      "name": "2026第九届上海世界燕窝及天然滋补品博览会",
+      "nameZh": "2026第九届上海世界燕窝及天然滋补品博览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-08-06",
+      "endDate": "2026-08-08",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "summary": "2026第九届上海世界燕窝及天然滋补品博览会将于2026.08.06-08.08在中国·上海·上海新国际博览中心举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/57mX6rqa",
+      "url": "https://www.expofinder.com/detail/57mX6rqa",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:23.205Z",
+      "featured": false
     },
     {
       "id": "sh-filing-dc5649df-ce63-460f-a7c1-18022f5fe563",
@@ -4250,7 +4450,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=dc5649df-ce63-460f-a7c1-18022f5fe563",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第363号",
       "exhibitionArea": 11500,
@@ -4258,6 +4458,50 @@
       "verificationSources": [
         "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=dc5649df-ce63-460f-a7c1-18022f5fe563"
       ]
+    },
+    {
+      "id": "expofinder-6CmRMArg",
+      "name": "2026第十一届上海国际酵素产业博览会",
+      "nameZh": "2026第十一届上海国际酵素产业博览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-08-06",
+      "endDate": "2026-08-08",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "summary": "2026第十一届上海国际酵素产业博览会将于2026.08.06-08.08在中国·上海·上海新国际博览中心举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/6CmRMArg",
+      "url": "https://www.expofinder.com/detail/6CmRMArg",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:20.833Z",
+      "featured": false
+    },
+    {
+      "id": "expofinder-uZa1Vcq6",
+      "name": "2026第67届中国特许加盟展上海站",
+      "nameZh": "2026第67届中国特许加盟展上海站",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-09",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "summary": "2026第67届中国特许加盟展上海站将于2026.08.07-08.09在中国·上海·上海新国际博览中心举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/uZa1Vcq6",
+      "url": "https://www.expofinder.com/detail/uZa1Vcq6",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:25.674Z",
+      "featured": false
     },
     {
       "id": "sh-filing-30b75431-2d98-4036-a23c-520a18dae3a4",
@@ -4286,7 +4530,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=30b75431-2d98-4036-a23c-520a18dae3a4",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第346号",
       "exhibitionArea": 25000,
@@ -4294,6 +4538,28 @@
       "verificationSources": [
         "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=30b75431-2d98-4036-a23c-520a18dae3a4"
       ]
+    },
+    {
+      "id": "expofinder-q2lIK24G",
+      "name": "2026中国（上海）国际生物制药与技术装备展览会",
+      "nameZh": "2026中国（上海）国际生物制药与技术装备展览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-09",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "summary": "2026中国（上海）国际生物制药与技术装备展览会将于2026.08.07-08.09在中国·上海·上海新国际博览中心举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/q2lIK24G",
+      "url": "https://www.expofinder.com/detail/q2lIK24G",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:20.638Z",
+      "featured": false
     },
     {
       "id": "sh-filing-0b3eebce-3631-4b0d-a739-2d8dec6be162",
@@ -4322,7 +4588,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0b3eebce-3631-4b0d-a739-2d8dec6be162",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第323号",
       "exhibitionArea": 5900,
@@ -4422,7 +4688,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=57a8e63b-c22c-454c-8edf-c9c5d715e02b",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第314号",
       "exhibitionArea": 1000,
@@ -4522,7 +4788,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b410a750-14f4-4968-b244-421848de4e38",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第317号",
       "exhibitionArea": 10000,
@@ -4622,7 +4888,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0f90a1b8-0cb2-41de-8742-93469df899a0",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第309号",
       "exhibitionArea": 1000,
@@ -4722,7 +4988,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=51292548-6e5b-4c24-b9cc-5f536f313ba4",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第313号",
       "exhibitionArea": 1000,
@@ -4822,7 +5088,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=ee12b376-514b-4772-a1c5-67ca07a585f3",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第311号",
       "exhibitionArea": 5000,
@@ -4922,7 +5188,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cff87a00-7b8d-4e1f-8d43-77d6c7f2d767",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第310号",
       "exhibitionArea": 3000,
@@ -5022,7 +5288,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bcdd3701-cfd8-428d-bfef-769c92218c6d",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第318号",
       "exhibitionArea": 3000,
@@ -5122,7 +5388,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=6d0aa259-8cb9-49e8-ae0b-76a6f36fec8b",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第316号",
       "exhibitionArea": 44000,
@@ -5243,7 +5509,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=d315496f-f793-46bb-b1d5-255eaa5c0f13",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第215号",
       "exhibitionArea": 27000,
@@ -5343,7 +5609,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0ca5af10-ff23-4b85-8bfc-89c1a55504b6",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第216号",
       "exhibitionArea": 4000,
@@ -5417,6 +5683,72 @@
       ]
     },
     {
+      "id": "expofinder-wHMO8NlP",
+      "name": "2026英佛国际汽车创新技术周（上海）",
+      "nameZh": "2026英佛国际汽车创新技术周（上海）",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-14",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "summary": "2026英佛国际汽车创新技术周（上海）将于2026.08.12-08.14在中国·上海·上海新国际博览中心举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/wHMO8NlP",
+      "url": "https://www.expofinder.com/detail/wHMO8NlP",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:23.654Z",
+      "featured": false
+    },
+    {
+      "id": "expofinder-dqF4cO1X",
+      "name": "2026中国上海国际智能汽车科技博览会",
+      "nameZh": "2026中国上海国际智能汽车科技博览会",
+      "category": "科技",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心（浦东）",
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-14",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "summary": "2026中国上海国际智能汽车科技博览会将于2026.08.12-08.14在中国·上海·上海新国际博览中心（浦东）举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/dqF4cO1X",
+      "url": "https://www.expofinder.com/detail/dqF4cO1X",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:36.366Z",
+      "featured": false
+    },
+    {
+      "id": "expofinder-GozYCOrP",
+      "name": "2026中国上海亚洲混凝土世界博览会",
+      "nameZh": "2026中国上海亚洲混凝土世界博览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-14",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "summary": "2026中国上海亚洲混凝土世界博览会将于2026.08.12-08.14在中国·上海·上海新国际博览中心举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/GozYCOrP",
+      "url": "https://www.expofinder.com/detail/GozYCOrP",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:29.029Z",
+      "featured": false
+    },
+    {
       "id": "sh-filing-81088759-3657-4410-a72a-a96efcbb7e89",
       "filingCode": "81088759-3657-4410-a72a-a96efcbb7e89",
       "name": "2026上海国际珠宝玉石展览会（夏季展）",
@@ -5443,7 +5775,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=81088759-3657-4410-a72a-a96efcbb7e89",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第349号",
       "exhibitionArea": 5500,
@@ -5479,7 +5811,7 @@
       "sourceUrl": "https://www.expofinder.com/detail/yaYnmW6k",
       "url": "https://www.expofinder.com/detail/yaYnmW6k",
       "verification": "聚合平台待官网复核",
-      "collectedAt": "2026-07-16T01:08:41.791Z",
+      "collectedAt": "2026-07-17T01:12:08.132Z",
       "featured": false
     },
     {
@@ -5509,7 +5841,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=2a5da511-e2cb-4057-a1be-629be2ac6740",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.567Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第365号",
       "exhibitionArea": 28900,
@@ -5541,7 +5873,7 @@
       "lat": 31.1889,
       "lng": 121.299,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -5569,7 +5901,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=0d6429b3-4956-4f8d-8be7-7f0a31941568",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "organizers": [
         "上海万耀亚宠展览有限公司"
       ],
@@ -5621,7 +5953,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=47973dd0-f234-425c-99bc-395344403dbd",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第195号",
       "exhibitionArea": 28500,
@@ -5629,6 +5961,28 @@
       "verificationSources": [
         "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=47973dd0-f234-425c-99bc-395344403dbd"
       ]
+    },
+    {
+      "id": "expofinder-46WHebOg",
+      "name": "2026中国上海亚洲国际集约化畜牧展览会",
+      "nameZh": "2026中国上海亚洲国际集约化畜牧展览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海世博展览馆",
+      "startDate": "2026-08-19",
+      "endDate": "2026-08-21",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026中国上海亚洲国际集约化畜牧展览会将于2026.08.19-08.21在中国·上海·上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/46WHebOg",
+      "url": "https://www.expofinder.com/detail/46WHebOg",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:18.502Z",
+      "featured": false
     },
     {
       "id": "sh-filing-bbbed506-7735-4515-8c10-16c9b2c8b26f",
@@ -5657,7 +6011,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bbbed506-7735-4515-8c10-16c9b2c8b26f",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第341号",
       "exhibitionArea": 14000,
@@ -5665,6 +6019,28 @@
       "verificationSources": [
         "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bbbed506-7735-4515-8c10-16c9b2c8b26f"
       ]
+    },
+    {
+      "id": "expofinder-jmy4t5AB",
+      "name": "2026中国上海国际新零售社区社群团购博览会",
+      "nameZh": "2026中国上海国际新零售社区社群团购博览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海世博展览馆",
+      "startDate": "2026-08-24",
+      "endDate": "2026-08-26",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026中国上海国际新零售社区社群团购博览会将于2026.08.24-08.26在中国·上海·上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/jmy4t5AB",
+      "url": "https://www.expofinder.com/detail/jmy4t5AB",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:21.084Z",
+      "featured": false
     },
     {
       "region": "亚洲",
@@ -5689,8 +6065,188 @@
       "lat": 31.1889,
       "lng": 121.299,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
+    },
+    {
+      "id": "expofinder-IjgpGRLn",
+      "name": "2026中国（上海）国际流行时尚纱线（2027秋冬季）展览会",
+      "nameZh": "2026中国（上海）国际流行时尚纱线（2027秋冬季）展览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海世博展览馆",
+      "startDate": "2026-08-25",
+      "endDate": "2026-08-27",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026中国（上海）国际流行时尚纱线（2027秋冬季）展览会将于2026.08.25-08.27在中国·上海·上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/IjgpGRLn",
+      "url": "https://www.expofinder.com/detail/IjgpGRLn",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:28.509Z",
+      "featured": false
+    },
+    {
+      "id": "sh-filing-491d803e-8036-4280-9046-217452dc2ccf",
+      "filingCode": "491d803e-8036-4280-9046-217452dc2ccf",
+      "name": "2026国际（上海）薄膜与胶带技术及应用创新展",
+      "nameZh": "2026国际（上海）薄膜与胶带技术及应用创新展",
+      "category": "商贸",
+      "eventType": "展览",
+      "exhibitionType": "涉外经济技术展",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-08-26",
+      "endDate": "2026-08-28",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "organizers": [
+        "上海励程展览有限公司"
+      ],
+      "filingStatus": "正常",
+      "summary": "功能性薄膜、原料及化工产品、胶粘制品、制程设备及配件",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "上海市会展业公共信息服务平台",
+      "sourceUrl": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=491d803e-8036-4280-9046-217452dc2ccf",
+      "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=491d803e-8036-4280-9046-217452dc2ccf",
+      "verification": "上海市会展业公共信息服务平台备案信息已核验",
+      "confidence": "official",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
+      "featured": false,
+      "filingNumber": "沪商展览(2026)-XZ26-第373号",
+      "exhibitionArea": 6000,
+      "concurrentEvents": [
+        {
+          "filingCode": "1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
+          "nameZh": "2026上海国际药食同源产业博览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
+        },
+        {
+          "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
+          "nameZh": "第17届上海国际餐饮食材展览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09"
+        },
+        {
+          "filingCode": "10a3f132-984a-4b6d-9e50-6ef3a6df077e",
+          "nameZh": "2026亚太素食展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=10a3f132-984a-4b6d-9e50-6ef3a6df077e"
+        },
+        {
+          "filingCode": "12eef09e-dda9-4a13-b0d8-efa2579da685",
+          "nameZh": "第20届上海国际渔业博览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=12eef09e-dda9-4a13-b0d8-efa2579da685"
+        },
+        {
+          "filingCode": "9cba8317-3ff5-4084-a959-6128d3b09f77",
+          "nameZh": "2026上海国际汽车测试、质量监控设备博览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9cba8317-3ff5-4084-a959-6128d3b09f77"
+        },
+        {
+          "filingCode": "75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+          "nameZh": "2026国际（上海）显示技术及应用创新展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=75b422f0-5dcd-474c-8a4f-2c32a8de9f9f"
+        }
+      ],
+      "verificationSources": [
+        "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=491d803e-8036-4280-9046-217452dc2ccf"
+      ]
+    },
+    {
+      "id": "sh-filing-75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+      "filingCode": "75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+      "name": "2026国际（上海）显示技术及应用创新展",
+      "nameZh": "2026国际（上海）显示技术及应用创新展",
+      "category": "商贸",
+      "eventType": "展览",
+      "exhibitionType": "涉外经济技术展",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-08-26",
+      "endDate": "2026-08-28",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "organizers": [
+        "上海励程展览有限公司"
+      ],
+      "filingStatus": "正常",
+      "summary": "显示面板、触摸屏、显示材料及设备、终端应用产品",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "上海市会展业公共信息服务平台",
+      "sourceUrl": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+      "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+      "verification": "上海市会展业公共信息服务平台备案信息已核验",
+      "confidence": "official",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
+      "featured": false,
+      "filingNumber": "沪商展览(2026)-XZ26-第374号",
+      "exhibitionArea": 15805,
+      "concurrentEvents": [
+        {
+          "filingCode": "1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
+          "nameZh": "2026上海国际药食同源产业博览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
+        },
+        {
+          "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
+          "nameZh": "第17届上海国际餐饮食材展览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09"
+        },
+        {
+          "filingCode": "10a3f132-984a-4b6d-9e50-6ef3a6df077e",
+          "nameZh": "2026亚太素食展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=10a3f132-984a-4b6d-9e50-6ef3a6df077e"
+        },
+        {
+          "filingCode": "12eef09e-dda9-4a13-b0d8-efa2579da685",
+          "nameZh": "第20届上海国际渔业博览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=12eef09e-dda9-4a13-b0d8-efa2579da685"
+        },
+        {
+          "filingCode": "9cba8317-3ff5-4084-a959-6128d3b09f77",
+          "nameZh": "2026上海国际汽车测试、质量监控设备博览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9cba8317-3ff5-4084-a959-6128d3b09f77"
+        },
+        {
+          "filingCode": "491d803e-8036-4280-9046-217452dc2ccf",
+          "nameZh": "2026国际（上海）薄膜与胶带技术及应用创新展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=491d803e-8036-4280-9046-217452dc2ccf"
+        }
+      ],
+      "verificationSources": [
+        "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=75b422f0-5dcd-474c-8a4f-2c32a8de9f9f"
+      ]
     },
     {
       "id": "sh-filing-9cba8317-3ff5-4084-a959-6128d3b09f77",
@@ -5719,11 +6275,25 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9cba8317-3ff5-4084-a959-6128d3b09f77",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第35号",
       "exhibitionArea": 23000,
       "concurrentEvents": [
+        {
+          "filingCode": "75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+          "nameZh": "2026国际（上海）显示技术及应用创新展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=75b422f0-5dcd-474c-8a4f-2c32a8de9f9f"
+        },
+        {
+          "filingCode": "1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
+          "nameZh": "2026上海国际药食同源产业博览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
+        },
         {
           "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
           "nameZh": "第17届上海国际餐饮食材展览会",
@@ -5746,11 +6316,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=12eef09e-dda9-4a13-b0d8-efa2579da685"
         },
         {
-          "filingCode": "1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
-          "nameZh": "2026上海国际药食同源产业博览会",
+          "filingCode": "491d803e-8036-4280-9046-217452dc2ccf",
+          "nameZh": "2026国际（上海）薄膜与胶带技术及应用创新展",
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=491d803e-8036-4280-9046-217452dc2ccf"
         }
       ],
       "verificationSources": [
@@ -5784,11 +6354,25 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第330号",
       "exhibitionArea": 1000,
       "concurrentEvents": [
+        {
+          "filingCode": "75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+          "nameZh": "2026国际（上海）显示技术及应用创新展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=75b422f0-5dcd-474c-8a4f-2c32a8de9f9f"
+        },
+        {
+          "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
+          "nameZh": "第17届上海国际餐饮食材展览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09"
+        },
         {
           "filingCode": "10a3f132-984a-4b6d-9e50-6ef3a6df077e",
           "nameZh": "2026亚太素食展",
@@ -5811,11 +6395,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9cba8317-3ff5-4084-a959-6128d3b09f77"
         },
         {
-          "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
-          "nameZh": "第17届上海国际餐饮食材展览会",
+          "filingCode": "491d803e-8036-4280-9046-217452dc2ccf",
+          "nameZh": "2026国际（上海）薄膜与胶带技术及应用创新展",
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=491d803e-8036-4280-9046-217452dc2ccf"
         }
       ],
       "verificationSources": [
@@ -5849,11 +6433,25 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=10a3f132-984a-4b6d-9e50-6ef3a6df077e",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第326号",
       "exhibitionArea": 2625,
       "concurrentEvents": [
+        {
+          "filingCode": "75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+          "nameZh": "2026国际（上海）显示技术及应用创新展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=75b422f0-5dcd-474c-8a4f-2c32a8de9f9f"
+        },
+        {
+          "filingCode": "1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
+          "nameZh": "2026上海国际药食同源产业博览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
+        },
         {
           "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
           "nameZh": "第17届上海国际餐饮食材展览会",
@@ -5876,11 +6474,11 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9cba8317-3ff5-4084-a959-6128d3b09f77"
         },
         {
-          "filingCode": "1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
-          "nameZh": "2026上海国际药食同源产业博览会",
+          "filingCode": "491d803e-8036-4280-9046-217452dc2ccf",
+          "nameZh": "2026国际（上海）薄膜与胶带技术及应用创新展",
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=491d803e-8036-4280-9046-217452dc2ccf"
         }
       ],
       "verificationSources": [
@@ -5888,11 +6486,33 @@
       ]
     },
     {
+      "id": "expofinder-grTnf5FU",
+      "name": "2026中国上海Automotive Testing Expo汽车测试技术展览会",
+      "nameZh": "2026中国上海Automotive Testing Expo汽车测试技术展览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "浦东新区上海世博展览馆",
+      "startDate": "2026-08-26",
+      "endDate": "2026-08-28",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026中国上海Automotive Testing Expo汽车测试技术展览会将于2026.08.26-08.28在中国·上海·浦东新区上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/grTnf5FU",
+      "url": "https://www.expofinder.com/detail/grTnf5FU",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:23.270Z",
+      "featured": false
+    },
+    {
       "region": "亚洲",
       "city": "上海",
       "country": "中国",
       "source": "上海市会展业公共信息服务平台",
-      "sourceUrl": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=12eef09e-dda9-4a13-b0d8-efa2579da685",
+      "sourceUrl": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "visitorType": "专业观众",
       "id": "world-seafood-shanghai-2026",
@@ -5910,39 +6530,25 @@
       "summary": "汇集水产、冷链、餐饮食材、加工设备与供应链服务的专业展会。",
       "lat": 31.2117,
       "lng": 121.5635,
-      "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=12eef09e-dda9-4a13-b0d8-efa2579da685",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "organizers": [
         "上海艾歌展览服务有限公司"
       ],
       "eventType": "展览",
       "exhibitionType": "涉外经济技术展",
-      "filingCode": "12eef09e-dda9-4a13-b0d8-efa2579da685",
-      "filingNumber": "沪商展览(2026)-XZ26-第325号",
+      "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
+      "filingNumber": "沪商展览(2026)-XZ26-第327号",
       "filingStatus": "正常",
-      "exhibitionArea": 34500,
+      "exhibitionArea": 4000,
       "concurrentEvents": [
         {
-          "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
-          "nameZh": "第17届上海国际餐饮食材展览会",
+          "filingCode": "75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+          "nameZh": "2026国际（上海）显示技术及应用创新展",
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09"
-        },
-        {
-          "filingCode": "10a3f132-984a-4b6d-9e50-6ef3a6df077e",
-          "nameZh": "2026亚太素食展",
-          "startDate": "2026-08-26",
-          "endDate": "2026-08-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=10a3f132-984a-4b6d-9e50-6ef3a6df077e"
-        },
-        {
-          "filingCode": "9cba8317-3ff5-4084-a959-6128d3b09f77",
-          "nameZh": "2026上海国际汽车测试、质量监控设备博览会",
-          "startDate": "2026-08-26",
-          "endDate": "2026-08-28",
-          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9cba8317-3ff5-4084-a959-6128d3b09f77"
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=75b422f0-5dcd-474c-8a4f-2c32a8de9f9f"
         },
         {
           "filingCode": "1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
@@ -5950,46 +6556,7 @@
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
-        }
-      ],
-      "verificationSources": [
-        "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=12eef09e-dda9-4a13-b0d8-efa2579da685",
-        "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html"
-      ],
-      "confidence": "official"
-    },
-    {
-      "id": "sh-filing-bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
-      "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
-      "name": "第17届上海国际餐饮食材展览会",
-      "nameZh": "第17届上海国际餐饮食材展览会",
-      "category": "商贸",
-      "eventType": "展览",
-      "exhibitionType": "涉外经济技术展",
-      "region": "亚洲",
-      "city": "上海",
-      "country": "中国",
-      "venue": "上海新国际博览中心",
-      "startDate": "2026-08-26",
-      "endDate": "2026-08-28",
-      "lat": 31.2117,
-      "lng": 121.5635,
-      "organizers": [
-        "上海艾歌展览服务有限公司"
-      ],
-      "filingStatus": "正常",
-      "summary": "中式餐饮：快餐.火锅。饭店等连锁加盟企业，西式餐饮：日本料理，韩国拌饭等连锁餐饮企业，时尚饮品：咖啡，奶茶，茶坊，甜品，饮料等连锁餐饮企业。",
-      "visitorType": "开放安排以主办方规则为准",
-      "source": "上海市会展业公共信息服务平台",
-      "sourceUrl": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
-      "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
-      "verification": "上海市会展业公共信息服务平台备案信息",
-      "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
-      "featured": false,
-      "filingNumber": "沪商展览(2026)-XZ26-第327号",
-      "exhibitionArea": 4000,
-      "concurrentEvents": [
+        },
         {
           "filingCode": "10a3f132-984a-4b6d-9e50-6ef3a6df077e",
           "nameZh": "2026亚太素食展",
@@ -6012,11 +6579,92 @@
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9cba8317-3ff5-4084-a959-6128d3b09f77"
         },
         {
+          "filingCode": "491d803e-8036-4280-9046-217452dc2ccf",
+          "nameZh": "2026国际（上海）薄膜与胶带技术及应用创新展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=491d803e-8036-4280-9046-217452dc2ccf"
+        }
+      ],
+      "verificationSources": [
+        "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
+        "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html"
+      ],
+      "confidence": "official"
+    },
+    {
+      "id": "sh-filing-12eef09e-dda9-4a13-b0d8-efa2579da685",
+      "filingCode": "12eef09e-dda9-4a13-b0d8-efa2579da685",
+      "name": "第20届上海国际渔业博览会",
+      "nameZh": "第20届上海国际渔业博览会",
+      "category": "艺术",
+      "eventType": "展览",
+      "exhibitionType": "涉外经济技术展",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海新国际博览中心",
+      "startDate": "2026-08-26",
+      "endDate": "2026-08-28",
+      "lat": 31.2117,
+      "lng": 121.5635,
+      "organizers": [
+        "上海艾歌展览服务有限公司"
+      ],
+      "filingStatus": "正常",
+      "summary": "水(海)产品 | 冷冻、冰鲜、鲜活、干制等水(海)产品、水产区域公用品牌、地理标志性水(海)产品； 精加工类水产食品/预制菜 | 精加工类水产食品、水产预制菜、调理调味食品、罐头食品、预制方便食品、即食、休闲类食品；水产佐餐食品；调味品、鱼糜鱼浆制品等产品； 高端滋补 | 燕、鲍、翅、参、肚等滋补类食材及加工制品，刺身食材、大盆菜等； 电商礼品| 特设电商优品专区，线上+线下展销一体，聚焦水产海鲜创意礼品、渠道爆品、礼赠预售、包装设计等 水产养殖 | 海洋牧场建设及装备技术、远洋捕捞工具和设备、休闲渔业与设备、水产饲料与种苗、养殖模式与设备、养殖自动化设备及仪器等； 加工设备及配套服务 | 加工、包装设备、包装材料、称量、检测设备、冷冻、冷藏设备设施、冷链物流设备设施、中央厨房设备等。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "上海市会展业公共信息服务平台",
+      "sourceUrl": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=12eef09e-dda9-4a13-b0d8-efa2579da685",
+      "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=12eef09e-dda9-4a13-b0d8-efa2579da685",
+      "verification": "上海市会展业公共信息服务平台备案信息",
+      "confidence": "official",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
+      "featured": false,
+      "filingNumber": "沪商展览(2026)-XZ26-第325号",
+      "exhibitionArea": 34500,
+      "concurrentEvents": [
+        {
+          "filingCode": "75b422f0-5dcd-474c-8a4f-2c32a8de9f9f",
+          "nameZh": "2026国际（上海）显示技术及应用创新展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=75b422f0-5dcd-474c-8a4f-2c32a8de9f9f"
+        },
+        {
           "filingCode": "1c26aa55-f4c7-4a16-95df-e0d967b53b9c",
           "nameZh": "2026上海国际药食同源产业博览会",
           "startDate": "2026-08-26",
           "endDate": "2026-08-28",
           "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=1c26aa55-f4c7-4a16-95df-e0d967b53b9c"
+        },
+        {
+          "filingCode": "bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09",
+          "nameZh": "第17届上海国际餐饮食材展览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bb6a2ad6-1f18-4b8c-bf6a-b681f09e0a09"
+        },
+        {
+          "filingCode": "10a3f132-984a-4b6d-9e50-6ef3a6df077e",
+          "nameZh": "2026亚太素食展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=10a3f132-984a-4b6d-9e50-6ef3a6df077e"
+        },
+        {
+          "filingCode": "9cba8317-3ff5-4084-a959-6128d3b09f77",
+          "nameZh": "2026上海国际汽车测试、质量监控设备博览会",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9cba8317-3ff5-4084-a959-6128d3b09f77"
+        },
+        {
+          "filingCode": "491d803e-8036-4280-9046-217452dc2ccf",
+          "nameZh": "2026国际（上海）薄膜与胶带技术及应用创新展",
+          "startDate": "2026-08-26",
+          "endDate": "2026-08-28",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=491d803e-8036-4280-9046-217452dc2ccf"
         }
       ]
     },
@@ -6044,7 +6692,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -6074,7 +6722,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=31190015-e91a-46fc-bf01-26f10535575a",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第136号",
       "exhibitionArea": 38160,
@@ -6106,7 +6754,7 @@
       "lat": 31.1889,
       "lng": 121.299,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -6136,7 +6784,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=8093da7d-8fd2-4b30-a48d-e35ade73eca9",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第36号",
       "exhibitionArea": 36000,
@@ -6144,6 +6792,28 @@
       "verificationSources": [
         "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=8093da7d-8fd2-4b30-a48d-e35ade73eca9"
       ]
+    },
+    {
+      "id": "expofinder-owxqtObd",
+      "name": "2026中国上海国际轮胎轮毂博览会",
+      "nameZh": "2026中国上海国际轮胎轮毂博览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海世博展览馆",
+      "startDate": "2026-09-02",
+      "endDate": "2026-09-04",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026中国上海国际轮胎轮毂博览会将于2026.09.02-09.04在中国·上海·上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/owxqtObd",
+      "url": "https://www.expofinder.com/detail/owxqtObd",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:23.228Z",
+      "featured": false
     },
     {
       "region": "亚洲",
@@ -6169,7 +6839,29 @@
       "lat": 31.1889,
       "lng": 121.299,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
+      "featured": false
+    },
+    {
+      "id": "expofinder-mRAioYDP",
+      "name": "2026中国（上海）国际建筑贸易博览会",
+      "nameZh": "2026中国（上海）国际建筑贸易博览会",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "国家会展中心（上海）",
+      "startDate": "2026-09-05",
+      "endDate": "2026-09-08",
+      "lat": 31.1889,
+      "lng": 121.299,
+      "summary": "2026中国（上海）国际建筑贸易博览会将于2026.09.05-09.08在中国·上海·国家会展中心（上海）举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/mRAioYDP",
+      "url": "https://www.expofinder.com/detail/mRAioYDP",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:45.130Z",
       "featured": false
     },
     {
@@ -6197,7 +6889,7 @@
       "lat": 31.1889,
       "lng": 121.299,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z"
+      "collectedAt": "2026-07-17T01:12:00.814Z"
     },
     {
       "region": "亚洲",
@@ -6223,7 +6915,7 @@
       "lat": 31.185,
       "lng": 121.489,
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=61b01918-77f3-4f5b-844a-412afa674276",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "organizers": [
         "上海博华国际展览有限公司"
@@ -6272,7 +6964,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -6302,7 +6994,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=4a1f3337-88f2-4cbf-9579-c3d8b887e7ff",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第232号",
       "exhibitionArea": 6225,
@@ -6338,7 +7030,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=14e2a101-1e2a-4c4e-9c76-6e42ebe1ee18",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第299号",
       "exhibitionArea": 2000,
@@ -6389,7 +7081,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cde19df7-4f2c-4345-b47a-5a1fe2572650",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第300号",
       "exhibitionArea": 2000,
@@ -6440,7 +7132,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=6c5f6e48-53b3-4371-a97d-a58a18761577",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第298号",
       "exhibitionArea": 2000,
@@ -6491,7 +7183,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f40210d2-02ca-46de-b673-1a259e319bf0",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-DZ26-第1号",
       "exhibitionArea": 40000,
@@ -6535,7 +7227,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=bebdf951-4b73-4b31-99d5-d777457c49a6",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-DZ26-第2号",
       "exhibitionArea": 40000,
@@ -6575,7 +7267,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -6605,7 +7297,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=43030982-b8f5-4b7d-a458-b263feb2a8a6",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第34号",
       "exhibitionArea": 13000,
@@ -6638,7 +7330,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -6668,7 +7360,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=a13d0e99-0ce9-4f60-873f-d1ed7f0fec33",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第257号",
       "exhibitionArea": 18930,
@@ -6712,7 +7404,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=5657f1f0-09e0-420f-b20e-5998763aabff",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第372号",
       "exhibitionArea": 10000,
@@ -6756,7 +7448,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=edfa25a2-fd42-42fe-a1b1-711cb791e17d",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第333号",
       "exhibitionArea": 17000,
@@ -6789,7 +7481,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -6819,7 +7511,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=a90616cd-fe3b-4f06-9eb8-f6bfcb16a52f",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第278号",
       "exhibitionArea": 5485,
@@ -6852,7 +7544,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=64717603-3a9b-424d-99b5-ec9907f7b066",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "organizers": [
         "中国联合装备集团有限公司中国轻工机械协会",
@@ -6903,7 +7595,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -6931,7 +7623,7 @@
       "lat": 31.1889,
       "lng": 121.299,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z"
+      "collectedAt": "2026-07-17T01:12:00.814Z"
     },
     {
       "id": "sh-filing-7e044768-d8b1-42b4-9a50-6f83017155d1",
@@ -6960,7 +7652,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=7e044768-d8b1-42b4-9a50-6f83017155d1",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第350号",
       "exhibitionArea": 12631,
@@ -6993,7 +7685,7 @@
       "lat": 31.185,
       "lng": 121.489,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -7023,7 +7715,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=a03fce89-297c-4f54-a960-f81584b6a1da",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第347号",
       "exhibitionArea": 5200,
@@ -7059,7 +7751,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f4a62c00-6617-488c-bd40-d8bb60932b12",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第337号",
       "exhibitionArea": 15000,
@@ -7100,7 +7792,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -7126,7 +7818,7 @@
       "lat": 31.1889,
       "lng": 121.299,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -7153,17 +7845,14 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
-      "id": "sh-filing-8fa743f7-fd68-4773-956f-27c22941810d",
-      "filingCode": "8fa743f7-fd68-4773-956f-27c22941810d",
+      "id": "expofinder-YjxQOiaQ",
       "name": "2026国际口腔器械展览会",
       "nameZh": "2026国际口腔器械展览会",
       "category": "商贸",
-      "eventType": "展览",
-      "exhibitionType": "涉外经济技术展",
       "region": "亚洲",
       "city": "上海",
       "country": "中国",
@@ -7172,25 +7861,29 @@
       "endDate": "2026-10-25",
       "lat": 31.185,
       "lng": 121.489,
-      "organizers": [
-        "上海博星展览有限公司"
-      ],
-      "filingStatus": "正常",
-      "summary": "口腔医疗设备、器械、材料的最新产品、技术与解决方案，包括口腔内科、口腔外科、口腔修复、口腔正畸、口腔种植、义齿加工、口腔保健等各个领域。",
+      "summary": "2026国际口腔器械展览会将于2026.10.22-10.25在中国·上海·上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
       "visitorType": "开放安排以主办方规则为准",
       "source": "上海市会展业公共信息服务平台",
       "sourceUrl": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=8fa743f7-fd68-4773-956f-27c22941810d",
-      "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=8fa743f7-fd68-4773-956f-27c22941810d",
+      "url": "https://www.expofinder.com/detail/YjxQOiaQ",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
-      "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
+      "organizers": [
+        "上海博星展览有限公司"
+      ],
+      "eventType": "展览",
+      "exhibitionType": "涉外经济技术展",
+      "filingCode": "8fa743f7-fd68-4773-956f-27c22941810d",
       "filingNumber": "沪商展览(2026)-XZ26-第148号",
+      "filingStatus": "正常",
       "exhibitionArea": 47500,
       "concurrentEvents": [],
       "verificationSources": [
-        "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=8fa743f7-fd68-4773-956f-27c22941810d"
-      ]
+        "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=8fa743f7-fd68-4773-956f-27c22941810d",
+        "https://www.expofinder.com/detail/YjxQOiaQ"
+      ],
+      "confidence": "official"
     },
     {
       "id": "sh-filing-5f1da157-eb9d-4f2a-baa3-f8e4ffe011d6",
@@ -7219,7 +7912,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=5f1da157-eb9d-4f2a-baa3-f8e4ffe011d6",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第356号",
       "exhibitionArea": 2500,
@@ -7263,7 +7956,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b7bc80de-d216-4c9b-9011-3af82b01ef03",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第354号",
       "exhibitionArea": 5000,
@@ -7304,7 +7997,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z"
+      "collectedAt": "2026-07-17T01:12:00.814Z"
     },
     {
       "id": "sh-filing-aeb9064d-d907-4152-9178-7523d98d9cd3",
@@ -7333,7 +8026,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=aeb9064d-d907-4152-9178-7523d98d9cd3",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第118号",
       "exhibitionArea": 9465,
@@ -7377,7 +8070,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=35c39dea-f04e-4e15-a314-be878cfe64c8",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第117号",
       "exhibitionArea": 28900,
@@ -7419,7 +8112,29 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
+      "featured": false
+    },
+    {
+      "id": "expofinder-OtHv1J40",
+      "name": "2026中国上海国际汽车动力系统与智能装备展览会",
+      "nameZh": "2026中国上海国际汽车动力系统与智能装备展览会",
+      "category": "科技",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海世博展览馆",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-05",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026中国上海国际汽车动力系统与智能装备展览会将于2026.11.03-11.05在中国·上海·上海世博展览馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/OtHv1J40",
+      "url": "https://www.expofinder.com/detail/OtHv1J40",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:38.041Z",
       "featured": false
     },
     {
@@ -7447,7 +8162,29 @@
       "featured": true,
       "lat": 31.1889,
       "lng": 121.299,
-      "collectedAt": "2026-07-16T01:08:36.115Z"
+      "collectedAt": "2026-07-17T01:12:00.814Z"
+    },
+    {
+      "id": "expofinder-GE1OYCOr",
+      "name": "2026中国国际教育展-上海站",
+      "nameZh": "2026中国国际教育展-上海站",
+      "category": "商贸",
+      "region": "亚洲",
+      "city": "上海",
+      "country": "中国",
+      "venue": "上海世博展览馆地下一层4号馆",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "lat": 31.185,
+      "lng": 121.489,
+      "summary": "2026中国国际教育展-上海站将于2026.11.08-11.08在中国·上海·上海世博展览馆地下一层4号馆举办。预计300家参展企业、2w+专业观众、3w+㎡展览面积。",
+      "visitorType": "开放安排以主办方规则为准",
+      "source": "展查查（公开结构化数据）",
+      "sourceUrl": "https://www.expofinder.com/detail/GE1OYCOr",
+      "url": "https://www.expofinder.com/detail/GE1OYCOr",
+      "verification": "聚合平台待官网复核",
+      "collectedAt": "2026-07-17T01:12:42.685Z",
+      "featured": false
     },
     {
       "id": "sh-filing-253618db-9cd3-41c3-9581-19ba222af3fe",
@@ -7468,7 +8205,7 @@
       "organizers": [
         "上海微电机研究所（中国电子科技集团公司第二十一研究所）"
       ],
-      "filingStatus": "已备案",
+      "filingStatus": "正常",
       "summary": "机器人、人工智能及智慧化物流自动分拣设备、材料等",
       "visitorType": "开放安排以主办方规则为准",
       "source": "上海市会展业公共信息服务平台",
@@ -7476,10 +8213,10 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=253618db-9cd3-41c3-9581-19ba222af3fe",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
-      "filingNumber": "",
-      "exhibitionArea": null,
+      "filingNumber": "沪商展览(2026)-XZ26-第114号",
+      "exhibitionArea": 1500,
       "concurrentEvents": [],
       "verificationSources": [
         "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=253618db-9cd3-41c3-9581-19ba222af3fe"
@@ -7509,7 +8246,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -7539,7 +8276,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=c2157f45-b882-4b6a-a004-605a1a12717e",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2025)-XZ26-第398号",
       "exhibitionArea": 8500,
@@ -7583,7 +8320,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=585040bd-2120-440d-8274-1806c70e972c",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-DZ26-第5号",
       "exhibitionArea": 22000,
@@ -7624,7 +8361,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -7654,7 +8391,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=531a9868-68c4-4f8f-bcc2-eb905f14c4e9",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-DZ26-第4号",
       "exhibitionArea": 76075,
@@ -7690,7 +8427,7 @@
       "organizers": [
         "上海艾歌展览服务有限公司"
       ],
-      "filingStatus": "已备案",
+      "filingStatus": "正常",
       "summary": "车用空调产品及配件、车用空调生产设备及材料、商用车空调系统及配件、汽车热管理系统及配件、冷冻冷藏运输设备及材料；压缩机、冷凝器、蒸发器、散热器、温控器、风机、电子扇、过滤网、热力膨胀阀、空调管路、空调电机、空调轴承、皮带、开关、离合器、接头、高低压阀、电磁阀、换向阀、暖风机、水箱、密封件、贮液罐、制冷剂、冷媒、车用空调生产设备，管路切割、检测仪器，模具、铝料、钢料、橡胶品、复合材料等",
       "visitorType": "开放安排以主办方规则为准",
       "source": "上海市会展业公共信息服务平台",
@@ -7698,11 +8435,19 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e895397f-a7c0-48f3-8a04-71c37ff1226a",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
-      "filingNumber": "",
-      "exhibitionArea": null,
-      "concurrentEvents": [],
+      "filingNumber": "沪商展览(2026)-XZ26-第328号",
+      "exhibitionArea": 34500,
+      "concurrentEvents": [
+        {
+          "filingCode": "531a9868-68c4-4f8f-bcc2-eb905f14c4e9",
+          "nameZh": "2026中国国际慕尼黑分析生化展",
+          "startDate": "2026-11-16",
+          "endDate": "2026-11-18",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=531a9868-68c4-4f8f-bcc2-eb905f14c4e9"
+        }
+      ],
       "verificationSources": [
         "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=e895397f-a7c0-48f3-8a04-71c37ff1226a"
       ]
@@ -7734,7 +8479,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=315af6ec-deec-4312-a963-e407261fdb13",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.488Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第345号",
       "exhibitionArea": 5485,
@@ -7767,7 +8512,7 @@
       "url": "https://www.citme.com.cn",
       "lat": 31.1889,
       "lng": 121.299,
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -7795,7 +8540,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z"
+      "collectedAt": "2026-07-17T01:12:00.814Z"
     },
     {
       "id": "sh-filing-6150065b-348e-497b-94e2-5cf0ad1bedbf",
@@ -7816,7 +8561,7 @@
       "organizers": [
         "环亚物博（上海）会展有限公司"
       ],
-      "filingStatus": "已备案",
+      "filingStatus": "正常",
       "summary": "聚焦智能物流、跨境运输、绿色供应链等前沿领域，展示涵盖国际货代与综合物流服务、多式联运与跨境运输通道、航空货运、公路/铁路运输、港口航运与船务服务、生鲜供应链/冷链物流、物流科技与数字化解决方案、智能仓储与物流装备、跨境电商物流与供应链等物流全产业链。",
       "visitorType": "开放安排以主办方规则为准",
       "source": "上海市会展业公共信息服务平台",
@@ -7824,10 +8569,10 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=6150065b-348e-497b-94e2-5cf0ad1bedbf",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.565Z",
       "featured": false,
-      "filingNumber": "",
-      "exhibitionArea": null,
+      "filingNumber": "沪商展览(2026)-XZ26-第279号",
+      "exhibitionArea": 10000,
       "concurrentEvents": [],
       "verificationSources": [
         "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=6150065b-348e-497b-94e2-5cf0ad1bedbf"
@@ -7860,7 +8605,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=7e5cce48-56ce-434d-9a89-bf57f8e90151",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.566Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-DZ26-第3号",
       "exhibitionArea": 339400,
@@ -7900,7 +8645,7 @@
       "lat": 31.1889,
       "lng": 121.299,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -7928,7 +8673,7 @@
       "lat": 31.1889,
       "lng": 121.299,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z"
+      "collectedAt": "2026-07-17T01:12:00.814Z"
     },
     {
       "id": "sh-filing-637b2622-8bb0-4920-8663-52c5bfe73a01",
@@ -7957,7 +8702,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=637b2622-8bb0-4920-8663-52c5bfe73a01",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.565Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第133号",
       "exhibitionArea": 5200,
@@ -8001,7 +8746,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=25bcda66-e5ad-489c-a9d1-3d72f9c1c6b6",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.565Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第324号",
       "exhibitionArea": 5000,
@@ -8034,7 +8779,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -8061,7 +8806,7 @@
       "lat": 31.2117,
       "lng": 121.5635,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     },
     {
@@ -8091,7 +8836,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b6e35627-37b9-4d37-8505-e272189a0dbb",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.565Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第107号",
       "exhibitionArea": 12000,
@@ -8169,7 +8914,7 @@
       "organizers": [
         "晟格会展（上海）有限公司"
       ],
-      "filingStatus": "已备案",
+      "filingStatus": "正常",
       "summary": "轨道交通车辆及零部件、公交客车及零部件、动力电池、智慧公交系统、城市交通设施设备、隧道及地下工程、轨道交通通信信号、车辆内饰及材料、电气化铁路设备、轨道安防与应急技术、工务养护、轨道交通供电等。",
       "visitorType": "开放安排以主办方规则为准",
       "source": "上海市会展业公共信息服务平台",
@@ -8177,11 +8922,61 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=c70f1038-a792-47c3-92b5-49431ec2623c",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.565Z",
       "featured": false,
-      "filingNumber": "",
-      "exhibitionArea": null,
-      "concurrentEvents": [],
+      "filingNumber": "沪商展览(2026)-XZ26-第174号",
+      "exhibitionArea": 24000,
+      "concurrentEvents": [
+        {
+          "filingCode": "eaeff025-d9a8-4a67-b719-3b2ef7a4769c",
+          "nameZh": "2026上海洁净技术与设备展览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=eaeff025-d9a8-4a67-b719-3b2ef7a4769c"
+        },
+        {
+          "filingCode": "f6d79288-593c-45a8-bd23-21fb2c6a3553",
+          "nameZh": "2026亚洲保温展",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f6d79288-593c-45a8-bd23-21fb2c6a3553"
+        },
+        {
+          "filingCode": "9a8c23cf-8699-4cac-964c-03b1224811c7",
+          "nameZh": "第五届EESA储能展",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9a8c23cf-8699-4cac-964c-03b1224811c7"
+        },
+        {
+          "filingCode": "67e94a85-dc5e-4599-ab9f-d92ab53d2b8f",
+          "nameZh": "2026上海国际智慧口岸科技装备展览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=67e94a85-dc5e-4599-ab9f-d92ab53d2b8f"
+        },
+        {
+          "filingCode": "b6e35627-37b9-4d37-8505-e272189a0dbb",
+          "nameZh": "2026第十五届上海国际客车展览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b6e35627-37b9-4d37-8505-e272189a0dbb"
+        },
+        {
+          "filingCode": "43f47acb-3c8e-47fd-b288-9b166b9b40dc",
+          "nameZh": "2026上海国际先进轨道交通技术展览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=43f47acb-3c8e-47fd-b288-9b166b9b40dc"
+        },
+        {
+          "filingCode": "cb87a810-5fb8-432b-8d70-3c3cdcd118c3",
+          "nameZh": "2026亚洲绿色工厂设计、建设及厂务展览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cb87a810-5fb8-432b-8d70-3c3cdcd118c3"
+        }
+      ],
       "verificationSources": [
         "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=c70f1038-a792-47c3-92b5-49431ec2623c"
       ]
@@ -8213,7 +9008,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=43f47acb-3c8e-47fd-b288-9b166b9b40dc",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.565Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第106号",
       "exhibitionArea": 12000,
@@ -8299,7 +9094,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=67e94a85-dc5e-4599-ab9f-d92ab53d2b8f",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.565Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第302号",
       "exhibitionArea": 5900,
@@ -8385,7 +9180,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=eaeff025-d9a8-4a67-b719-3b2ef7a4769c",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.565Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第369号",
       "exhibitionArea": 3000,
@@ -8463,7 +9258,7 @@
       "organizers": [
         "上海展业展览有限公司"
       ],
-      "filingStatus": "已备案",
+      "filingStatus": "正常",
       "summary": "建筑材料应用：墙体（屋面）保温、保温装饰一体板、金属复合维护系统、金属夹芯板、系统节能门窗及幕墙等保温材料及技术。工业高温应用：石油化工、管道、电力、新能源电池、陶瓷、水泥、石化、钢铁冶炼、电解铝、新能源、工业窑炉、高温管道、海事、航天航空、被动防火等保温材料及技术。工业低温应用：船舶、LNG储罐、LNG船、冷链、物流运输、冰箱、冷却器、烘烤设备、热水器、造纸、制药、供热、暖通空调、制冷装置等保温材料及技术。防腐防火材料应用：建筑、船舶、桥梁、钢结构、管道、镀锌、不锈钢、铝合金、金属表面等。设备：施工设备、生产设备、包装设备、喷涂设备等。",
       "visitorType": "开放安排以主办方规则为准",
       "source": "上海市会展业公共信息服务平台",
@@ -8471,11 +9266,61 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f6d79288-593c-45a8-bd23-21fb2c6a3553",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.565Z",
       "featured": false,
-      "filingNumber": "",
-      "exhibitionArea": null,
-      "concurrentEvents": [],
+      "filingNumber": "沪商展览(2026)-XZ26-第366号",
+      "exhibitionArea": 7700,
+      "concurrentEvents": [
+        {
+          "filingCode": "eaeff025-d9a8-4a67-b719-3b2ef7a4769c",
+          "nameZh": "2026上海洁净技术与设备展览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=eaeff025-d9a8-4a67-b719-3b2ef7a4769c"
+        },
+        {
+          "filingCode": "9a8c23cf-8699-4cac-964c-03b1224811c7",
+          "nameZh": "第五届EESA储能展",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9a8c23cf-8699-4cac-964c-03b1224811c7"
+        },
+        {
+          "filingCode": "67e94a85-dc5e-4599-ab9f-d92ab53d2b8f",
+          "nameZh": "2026上海国际智慧口岸科技装备展览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=67e94a85-dc5e-4599-ab9f-d92ab53d2b8f"
+        },
+        {
+          "filingCode": "c70f1038-a792-47c3-92b5-49431ec2623c",
+          "nameZh": "2026上海国际公共交通博览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=c70f1038-a792-47c3-92b5-49431ec2623c"
+        },
+        {
+          "filingCode": "b6e35627-37b9-4d37-8505-e272189a0dbb",
+          "nameZh": "2026第十五届上海国际客车展览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=b6e35627-37b9-4d37-8505-e272189a0dbb"
+        },
+        {
+          "filingCode": "43f47acb-3c8e-47fd-b288-9b166b9b40dc",
+          "nameZh": "2026上海国际先进轨道交通技术展览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=43f47acb-3c8e-47fd-b288-9b166b9b40dc"
+        },
+        {
+          "filingCode": "cb87a810-5fb8-432b-8d70-3c3cdcd118c3",
+          "nameZh": "2026亚洲绿色工厂设计、建设及厂务展览会",
+          "startDate": "2026-12-09",
+          "endDate": "2026-12-11",
+          "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cb87a810-5fb8-432b-8d70-3c3cdcd118c3"
+        }
+      ],
       "verificationSources": [
         "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=f6d79288-593c-45a8-bd23-21fb2c6a3553"
       ]
@@ -8507,7 +9352,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=cb87a810-5fb8-432b-8d70-3c3cdcd118c3",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.565Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第368号",
       "exhibitionArea": 4700,
@@ -8593,7 +9438,7 @@
       "url": "https://expo.sww.sh.gov.cn/browser/search-entp-expo.jspx?code=9a8c23cf-8699-4cac-964c-03b1224811c7",
       "verification": "上海市会展业公共信息服务平台备案信息已核验",
       "confidence": "official",
-      "collectedAt": "2026-07-16T01:08:37.487Z",
+      "collectedAt": "2026-07-17T01:12:02.565Z",
       "featured": false,
       "filingNumber": "沪商展览(2026)-XZ26-第290号",
       "exhibitionArea": 25875,
@@ -8676,7 +9521,7 @@
       "lat": 31.1889,
       "lng": 121.299,
       "url": "https://english.shanghai.gov.cn/en-InvestmentCalendar/20260115/5c0e7fa323474298b5a24f7ea81f7972.html",
-      "collectedAt": "2026-07-16T01:08:36.115Z",
+      "collectedAt": "2026-07-17T01:12:00.814Z",
       "featured": false
     }
   ],
@@ -8753,7 +9598,7 @@
       "name": "去展网",
       "scope": "上海近期排期发现与交叉核验",
       "url": "https://www.qufair.com/",
-      "status": "受访问验证限制"
+      "status": "可访问"
     },
     {
       "name": "第一展会网",
