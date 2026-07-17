@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#081018" />
+    <meta
+      name="description"
+      content="当数字停止跳动，给损失、焦虑和不确定留一间不催人振作的夜间休息室。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="世界休市以后" />
+    <meta
+      property="og:description"
+      content="当数字停止跳动，我们回到生活里。"
+    />
+    <meta
+      property="og:image"
+      content="https://lijunearth.online/after-market-closes/assets/og-warm-v2.png"
+    />
+    <title>世界休市以后</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="世界休市以后首页">
+          <span class="brand-dot"></span>
+          <span>世界休市以后</span>
+        </a>
+        <a class="market-state" href="../">
+          <span></span>
+          返回公开工作台
+        </a>
+      </header>
+
+      <section class="hero" id="top">
+        <div class="hero-art" aria-hidden="true">
+          <img
+            src="./assets/warm-night-room-v1.png"
+            alt=""
+            width="1680"
+            height="945"
+          />
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">夜间休息室 · 2026.07.17</p>
+          <h1>
+            当数字停止跳动，<br />
+            我们回到生活里。
+          </h1>
+          <p class="hero-deck">
+            有些损失还没有被接受，有些担心也不会立刻消失。<br />
+            但现在，你可以先不做决定。在这里坐一会儿。
+          </p>
+          <div class="hero-note">
+            <span>今晚</span>
+            <p>不预测，不劝你振作，也不急着给答案。</p>
+          </div>
+          <button class="hero-enter" type="button" data-scroll="checkin">
+            我想进来坐一会儿
+            <span aria-hidden="true">↓</span>
+          </button>
+        </div>
+
+        <div class="scene-caption">
+          <span>ROOM 23:47</span>
+          <p>灯还亮着，热水也还在冒气。</p>
+        </div>
+      </section>
+
+      <section class="checkin-section" id="checkin">
+        <div class="checkin-heading">
+          <p class="eyebrow">01 / 先说说此刻</p>
+          <div>
+            <h2>不用整理好情绪，再走进来。</h2>
+            <p>不需要填写量表，只选一句最接近的。</p>
+          </div>
+        </div>
+
+        <div class="checkin-panel" aria-live="polite">
+          <div data-mood-picker>
+            <p class="panel-index">今晚，你更接近</p>
+            <h2>你现在更接近哪种感觉？</h2>
+            <p class="panel-intro">没有正确答案，也不会留下公开记录。</p>
+            <div class="mood-list">
+              <button type="button" data-mood="loss">
+                <span>我亏钱了</span><small>很难接受</small><b aria-hidden="true">→</b>
+              </button>
+              <button type="button" data-mood="regret">
+                <span>我很后悔</span><small>一直责怪自己</small><b aria-hidden="true">→</b>
+              </button>
+              <button type="button" data-mood="future">
+                <span>我害怕未来</span><small>不知道会不会更差</small><b aria-hidden="true">→</b>
+              </button>
+              <button type="button" data-mood="quiet">
+                <span>我不想说话</span><small>只想安静一会儿</small><b aria-hidden="true">→</b>
+              </button>
+            </div>
+          </div>
+
+          <div class="response-panel" data-mood-response hidden>
+            <button class="back-button" type="button" data-mood-back>
+              ← 换一种感受
+            </button>
+            <p class="panel-index">今晚，你选择了</p>
+            <h2 data-response-title></h2>
+            <p class="response-copy" data-response-copy></p>
+            <div class="presence">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <p>此刻有 <strong>2,146</strong> 个人也在这里</p>
+            </div>
+            <div class="response-actions">
+              <button type="button" data-scroll="room">进入安静房间</button>
+              <button type="button" data-scroll="pause">把决定留到明天</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkin-companion" aria-hidden="true">
+          <span class="companion-light">●</span>
+          <p>我们不催你往前走，只替你把灯开着。</p>
+        </div>
+      </section>
+
+      <section class="room-section" id="room">
+        <div class="section-copy">
+          <p class="eyebrow">02 / THE QUIET ROOM</p>
+          <h2>这里没有人需要表现得很好。</h2>
+          <p>
+            不能发言，没有头像，也不会比较谁失去得更多。大家只是让一扇窗亮着，安静地一起待五分钟。
+          </p>
+        </div>
+
+        <div class="quiet-room" data-quiet-room>
+          <div class="room-topline">
+            <span>休市房间 · 静音共处</span>
+            <span class="live-label"><i></i>2,146 人在房间里</span>
+          </div>
+          <div class="window-wall" data-window-wall aria-hidden="true"></div>
+          <div class="room-control">
+            <p data-timer>05:00</p>
+            <button type="button" data-room-toggle>我也坐五分钟</button>
+          </div>
+        </div>
+
+        <div class="city-list" aria-label="世界各地的匿名陪伴">
+          <div><span>上海</span><p>386 人觉得疲惫</p></div>
+          <div><span>东京</span><p>241 人选择先休息</p></div>
+          <div><span>伦敦</span><p>97 人暂时离开数字</p></div>
+          <div><span>新加坡</span><p>184 人正在安静坐着</p></div>
+        </div>
+      </section>
+
+      <section class="pause-section" id="pause">
+        <div class="pause-copy">
+          <p class="eyebrow">03 / 明天再决定</p>
+          <h2>今晚先放在这里。</h2>
+          <p>
+            冲动不一定是错误，但它可以等情绪稍微平静后再被看见。内容只保存在你的设备上。
+          </p>
+          <blockquote>
+            “这件事还没有解决，但今晚的你已经不用继续处理它了。”
+          </blockquote>
+        </div>
+
+        <div class="decision-drawer">
+          <form data-decision-form>
+            <label for="decision">现在特别想做的决定</label>
+            <textarea
+              id="decision"
+              name="decision"
+              placeholder="例如：全部卖掉、辞职、给某个人发一段话……"
+              rows="5"
+              data-decision
+            ></textarea>
+            <fieldset>
+              <legend>多久以后再打开？</legend>
+              <div class="delay-options">
+                <button type="button" data-delay="12" aria-pressed="false">12 小时</button>
+                <button class="is-selected" type="button" data-delay="24" aria-pressed="true">24 小时</button>
+                <button type="button" data-delay="48" aria-pressed="false">48 小时</button>
+              </div>
+            </fieldset>
+            <button class="save-decision" type="submit" data-save-decision disabled>
+              今晚先放在这里
+            </button>
+          </form>
+
+          <div class="saved-state" data-saved-state role="status" hidden>
+            <span aria-hidden="true">✓</span>
+            <p class="panel-index">已经替你收好</p>
+            <h3><span data-saved-delay>24</span> 小时以后再看。</h3>
+            <p>现在不用继续处理它。去喝点水，或者看看窗外。</p>
+            <button type="button" data-reset-decision>再放下一件事</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="still-section">
+        <div class="still-heading">
+          <p class="eyebrow">04 / 世界还有灯亮着</p>
+          <h2>生活仍然在一些很小的地方发生。</h2>
+        </div>
+        <div class="message-list">
+          <article>
+            <div class="moment-art moment-art-1">
+              <img src="./assets/small-lights-v1.png" alt="" width="2048" height="683" />
+            </div>
+            <div class="moment-copy">
+              <span>01</span>
+              <p>今天没有等到好消息，但我给自己煮了一碗面。</p>
+              <small>广州 · 22:47</small>
+            </div>
+          </article>
+          <article>
+            <div class="moment-art moment-art-2">
+              <img src="./assets/small-lights-v1.png" alt="" width="2048" height="683" />
+            </div>
+            <div class="moment-copy">
+              <span>02</span>
+              <p>雨停以后走了十分钟，回家时鞋有一点湿。</p>
+              <small>东京 · 23:12</small>
+            </div>
+          </article>
+          <article>
+            <div class="moment-art moment-art-3">
+              <img src="./assets/small-lights-v1.png" alt="" width="2048" height="683" />
+            </div>
+            <div class="moment-copy">
+              <span>03</span>
+              <p>一家小书店还亮着灯，橱窗里的猫已经睡着了。</p>
+              <small>上海 · 23:26</small>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        <div>
+          <p class="footer-mark">世界休市以后</p>
+          <h2>
+            市场明天还会开。<br />
+            今晚，你可以先休息。
+          </h2>
+        </div>
+        <p class="care-note">
+          这里提供的是短暂陪伴，不代替专业帮助。如果你感到自己无法承受，请尽快联系身边可信任的人或当地专业支持。
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
