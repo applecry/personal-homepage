@@ -3,6 +3,12 @@
 
   const guestCount = (events = []) => new Set(events.flatMap((event) => (event.guests || []).map((guest) => guest.name))).size;
 
+  const addDays = (value, days) => {
+    const date = new Date(`${value}T00:00:00Z`);
+    date.setUTCDate(date.getUTCDate() + days);
+    return date.toISOString().slice(0, 10);
+  };
+
   const endOfWeekend = (today) => {
     const date = new Date(`${today}T00:00:00Z`);
     const weekday = date.getUTCDay();
@@ -17,19 +23,32 @@
     return end.toISOString().slice(0, 10);
   };
 
+  const dateWindow = (today, mode = "all") => {
+    if (mode === "today") return { start: today, end: today };
+    if (mode === "weekend") return { start: startOfWeekend(today), end: endOfWeekend(today) };
+    if (mode === "month") return { start: today, end: addDays(today, 29) };
+    return null;
+  };
+
+  const overlapsWindow = (event, window) => !window
+    || (event.startDate <= window.end && event.endDate >= window.start);
+
+  const isSaved = (eventId, savedIds = []) => {
+    if (savedIds instanceof Set) return savedIds.has(eventId);
+    return Array.isArray(savedIds) && savedIds.includes(eventId);
+  };
+
   const conventionMatches = (event, state, today) => {
     if (event.endDate < today) return false;
     const query = String(state.query || "").trim().toLowerCase();
     const guests = (event.guests || []).map((guest) => `${guest.name} ${guest.role || ""}`).join(" ");
     const haystack = `${event.name} ${event.city} ${event.venue} ${event.type || ""} ${guests}`.toLowerCase();
     if (query && !haystack.includes(query)) return false;
-    if (state.scope === "shanghai" && event.city !== "上海") return false;
+    if (state.city && state.city !== "all" && event.city !== state.city) return false;
     if (state.scope === "guests" && !hasPublishedGuests(event)) return false;
-    if (state.scope === "weekend") {
-      const start = startOfWeekend(today);
-      const end = endOfWeekend(today);
-      if (event.startDate > end || event.endDate < start) return false;
-    }
+    if (state.scope === "pending" && hasPublishedGuests(event)) return false;
+    if (state.scope === "saved" && !isSaved(event.id, state.savedIds)) return false;
+    if (!overlapsWindow(event, dateWindow(today, state.dateMode))) return false;
     return true;
   };
 
@@ -45,9 +64,7 @@
     return String(a.startDate).localeCompare(String(b.startDate)) || String(a.name).localeCompare(String(b.name), "zh-CN");
   });
 
-  const guestsForWeekend = (events, today) => {
-    const start = startOfWeekend(today);
-    const end = endOfWeekend(today);
+  const guestsForWindow = (events, start, end) => {
     return events.flatMap((event) => (event.guests || [])
       .filter((guest) => {
         const date = guest.date || event.startDate;
@@ -56,12 +73,28 @@
       .map((guest) => ({ ...guest, eventId: event.id, eventName: event.name, city: event.city })));
   };
 
+  const guestsForWeekend = (events, today) => {
+    return guestsForWindow(events, startOfWeekend(today), endOfWeekend(today));
+  };
+
+  const findNewGuests = (event, previousNames) => {
+    if (!Array.isArray(previousNames)) return [];
+    const previous = new Set(previousNames);
+    return (event.guests || []).filter((guest) => !previous.has(guest.name));
+  };
+
   const core = {
+    addDays,
     conventionMatches,
+    dateWindow,
     endOfWeekend,
+    findNewGuests,
     guestCount,
+    guestsForWindow,
     guestsForWeekend,
     hasPublishedGuests,
+    isSaved,
+    overlapsWindow,
     sortConventions,
     startOfWeekend,
   };

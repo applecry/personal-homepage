@@ -9,9 +9,15 @@
     <meta property="og:title" content="漫展嘉宾雷达 | Exhibit Atlas" />
     <meta property="og:description" content="先看谁会来，再决定去哪场。按嘉宾、出席日和签售安排发现近期漫展。" />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://applecry.github.io/personal-homepage/assets/conventions-social-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="632" />
+    <meta property="og:image:alt" content="以嘉宾、票根和雷达信号构成的漫展发现插画" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="漫展嘉宾雷达 | Exhibit Atlas" />
     <meta name="twitter:description" content="先看谁会来，再决定去哪场。" />
-    <link rel="stylesheet" href="./conventions.css?v=20260716-1" />
+    <meta name="twitter:image" content="https://applecry.github.io/personal-homepage/assets/conventions-social-preview.png" />
+    <link rel="stylesheet" href="./conventions.css?v=20260718-1" />
     <link rel="stylesheet" href="./page-agent.css?v=20260715-4" />
   </head>
   <body>
@@ -65,18 +71,26 @@
           <div class="con-toolbar" aria-label="漫展筛选">
             <div class="con-filter-tabs" role="group" aria-label="范围">
               <button class="is-active" type="button" data-scope="all">全部近期</button>
-              <button type="button" data-scope="shanghai">上海</button>
-              <button type="button" data-scope="weekend">本周末</button>
               <button type="button" data-scope="guests">嘉宾已公布</button>
+              <button type="button" data-scope="pending">嘉宾待官宣</button>
+              <button type="button" data-scope="saved">我的关注 <span data-saved-count>0</span></button>
             </div>
-            <label class="con-sort"><span>排序</span><select data-sort><option value="date">日期优先</option><option value="guests">嘉宾最多</option><option value="updated">最近官宣</option></select></label>
+            <div class="con-toolbar-selects">
+              <label class="con-sort"><span>城市</span><select data-city><option value="all">全部城市</option></select></label>
+              <label class="con-sort"><span>日期</span><select data-date-mode><option value="all">全部近期</option><option value="today">今天</option><option value="weekend">本周末</option><option value="month">未来 30 天</option></select></label>
+              <label class="con-sort"><span>排序</span><select data-sort><option value="date">日期优先</option><option value="guests">嘉宾最多</option><option value="updated">最近官宣</option></select></label>
+            </div>
+          </div>
+          <div class="con-results-bar">
+            <span data-results-note>正在整理近期漫展…</span>
+            <button type="button" data-reset-filters>清除筛选</button>
           </div>
 
           <div class="con-content-grid">
             <div class="con-list" data-convention-list aria-live="polite"></div>
             <aside class="guest-board" aria-labelledby="guest-board-title">
-              <div class="guest-board-head"><div><p>GUEST BOARD</p><h3 id="guest-board-title">本周嘉宾</h3></div><span data-week-guest-count>0</span></div>
-              <p>按出席日期整理。点嘉宾名字可直接筛出对应漫展。</p>
+              <div class="guest-board-head"><div><p>GUEST BOARD</p><h3 id="guest-board-title" data-guest-board-title>近期嘉宾</h3></div><span data-week-guest-count>0</span></div>
+              <p data-guest-board-copy>按未来 30 天出席日期整理。点嘉宾名字可直接筛出对应漫展。</p>
               <div data-guest-board></div>
               <footer>嘉宾安排可能临时调整，请在出发前回到来源页复核。</footer>
             </aside>
@@ -88,7 +102,7 @@
           <div class="con-policy-grid">
             <article><span>01</span><h3>双平台发现</h3><p>B站会员购与大麦用于发现活动、核对日期、场馆、票价和购票状态。</p></article>
             <article><span>02</span><h3>嘉宾单独复核</h3><p>优先采用平台结构化嘉宾名单；没有时回到主办方官宣，并保留每位嘉宾的出席日。</p></article>
-            <article><span>03</span><h3>不把空白当答案</h3><p>未公布就明确显示“嘉宾待公布”，不会根据海报角色或票根图案猜测真人嘉宾。</p></article>
+            <article><span>03</span><h3>关注后看变化</h3><p>关注活动保存在当前设备。再次访问时，会标出相较上次浏览新增的嘉宾；临时调整仍以来源页为准。</p></article>
           </div>
         </section>
       </main>
@@ -121,9 +135,9 @@
       </button>
     </div>
     <script src="./exhibitions-core.js?v=20260715-1"></script>
-    <script src="./conventions-core.js?v=20260716-1"></script>
-    <script src="./conventions.js?v=20260716-1"></script>
-    <script src="./page-agent-knowledge.js?v=20260716-1"></script>
-    <script src="./script.js?v=20260716-1"></script>
+    <script src="./conventions-core.js?v=20260718-1"></script>
+    <script src="./conventions.js?v=20260718-1"></script>
+    <script src="./page-agent-knowledge.js?v=20260718-1"></script>
+    <script src="./script.js?v=20260718-1"></script>
   </body>
 </html>

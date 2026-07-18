@@ -15,6 +15,7 @@ on:
       - "conventions-core.js"
       - "data/conventions.json"
       - "scripts/conventions-ui.test.mjs"
+      - "scripts/conventions-data.test.mjs"
       - ".github/workflows/check-exhibition-page.yml"
   pull_request:
     paths:
@@ -29,6 +30,7 @@ on:
       - "conventions-core.js"
       - "data/conventions.json"
       - "scripts/conventions-ui.test.mjs"
+      - "scripts/conventions-data.test.mjs"
       - ".github/workflows/check-exhibition-page.yml"
 
 permissions:
@@ -55,4 +57,4 @@ jobs:
           node --check conventions.js
 
       - name: Test exhibition interactions
-        run: node --test scripts/exhibitions-ui.test.mjs scripts/conventions-ui.test.mjs
+        run: node --test scripts/exhibitions-ui.test.mjs scripts/conventions-ui.test.mjs scripts/conventions-data.test.mjs

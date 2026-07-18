@@ -79,9 +79,11 @@ node scripts/update-xhs-exhibition-signals.mjs
 
 ## 漫展嘉宾雷达
 
-`conventions.html` 是 Exhibit Atlas 的漫展入口，默认把嘉宾、出席日期和签售安排放在活动日期与票务之前。页面读取 `data/conventions.json`，支持按嘉宾、漫展、城市搜索，并可筛选上海、本周末和“嘉宾已公布”。
+`conventions.html` 是 Exhibit Atlas 的漫展入口，默认把嘉宾、出席日期和签售安排放在活动日期与票务之前。页面读取 `data/conventions.json`，支持按嘉宾、漫展、城市搜索，按城市与日期筛选，并可只看“嘉宾已公布”“嘉宾待官宣”或当前设备关注的活动。
 
 - 活动发现、日期、场馆、票价和购票状态：B站会员购、大麦
 - 嘉宾名单：优先使用票务页的结构化“参展嘉宾”字段；没有时使用主办方官宣复核
 - 未公布嘉宾：明确显示“嘉宾待公布”，不会从海报角色、票根图案或展商名单猜测真人嘉宾
+- 我的关注：使用浏览器 `localStorage` 保存，不需要账号；再次访问时会将当前嘉宾名单与本设备上次快照比较，标出新增嘉宾
 - 详情页：逐人展示出席日与签售时间，并保留平台/主办方来源链接和日历导出
+- 数据校验：`scripts/conventions-data.test.mjs` 检查日期区间、嘉宾状态、重复嘉宾与 HTTPS 来源；GitHub Actions 会和交互测试一起运行

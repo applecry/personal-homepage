@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-16T09:30:00+08:00",
-  "checkedAt": "2026-07-16T09:30:00+08:00",
-  "coverage": "中国大陆近期 ACGN 漫展；首批重点覆盖上海与本周末活动",
+  "updatedAt": "2026-07-18T14:20:00+08:00",
+  "checkedAt": "2026-07-18T14:20:00+08:00",
+  "coverage": "中国大陆近期 ACGN 漫展；优先覆盖已公开嘉宾、暑期大型展与重点城市活动",
   "policy": "票务事实以 B站会员购和大麦为主；嘉宾名单优先采用平台结构化字段，并以主办方官宣补足出席日期和签售安排。",
   "sources": [
     {
@@ -41,7 +41,7 @@
       "price": "¥69.9 起",
       "ticketStatus": "售票中",
       "guestStatus": "rolling",
-      "guestUpdatedAt": "2026-07-16",
+      "guestUpdatedAt": "2026-07-18",
       "summary": "暑期大型综合动漫展，会员购同时提供多场嘉宾签售与内场专票。",
       "guests": [
         { "name": "倔强的小红", "role": "嘉宾内场", "date": "2026-07-18", "time": "以票务页为准" },
@@ -50,7 +50,7 @@
       "ticketSources": [
         { "platform": "B站会员购", "url": "https://show.bilibili.com/platform/search.html?searchValue=%E4%B8%96%E7%95%8C%E7%BA%BF", "label": "活动与嘉宾专票", "primary": true }
       ],
-      "verification": "活动与嘉宾专票均来自 B站会员购公开搜索页；嘉宾仍在分批公布。",
+      "verification": "活动、日期、场馆、票价与嘉宾专票均由 B站会员购公开搜索页在 7 月 18 日复核；嘉宾仍在分批公布。",
       "featured": true
     },
     {
@@ -199,6 +199,25 @@
         { "platform": "B站会员购", "url": "https://show.bilibili.com/platform/home.html?cityId=110100", "label": "查看北京票务", "primary": true }
       ],
       "verification": "活动排期来自 B站会员购北京公开列表；嘉宾待公布。"
+    },
+    {
+      "id": "cgf16-wuhan-2026",
+      "name": "第十六届 CGF 动漫游戏节",
+      "type": "综合漫展",
+      "city": "武汉",
+      "venue": "武汉中国光谷科技会展中心",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-26",
+      "price": "¥65 起",
+      "ticketStatus": "售票中",
+      "guestStatus": "pending",
+      "guestUpdatedAt": "2026-07-18",
+      "summary": "武汉暑期综合动漫游戏节；会员购公开列表已提供日期、场馆与起售价，嘉宾阵容仍待可核验官宣。",
+      "guests": [],
+      "ticketSources": [
+        { "platform": "B站会员购", "url": "https://show.bilibili.com/platform/home.html?cityId=420100", "label": "查看武汉票务", "primary": true }
+      ],
+      "verification": "活动日期、场馆、起售价由 B站会员购武汉公开列表在 7 月 18 日复核；当前未录入未经确认的嘉宾。"
     },
     {
       "id": "chinajoy-shanghai-2026",
