@@ -13,9 +13,11 @@ on:
       - "conventions.css"
       - "conventions.js"
       - "conventions-core.js"
+      - "assets/conventions-anime-hero.jpg"
       - "data/conventions.json"
       - "scripts/conventions-ui.test.mjs"
       - "scripts/conventions-data.test.mjs"
+      - "scripts/conventions-visual.test.mjs"
       - "scripts/update-conventions.mjs"
       - "scripts/update-conventions.test.mjs"
       - ".github/workflows/check-exhibition-page.yml"
@@ -31,9 +33,11 @@ on:
       - "conventions.css"
       - "conventions.js"
       - "conventions-core.js"
+      - "assets/conventions-anime-hero.jpg"
       - "data/conventions.json"
       - "scripts/conventions-ui.test.mjs"
       - "scripts/conventions-data.test.mjs"
+      - "scripts/conventions-visual.test.mjs"
       - "scripts/update-conventions.mjs"
       - "scripts/update-conventions.test.mjs"
       - ".github/workflows/check-exhibition-page.yml"
@@ -63,4 +67,4 @@ jobs:
           node --check conventions.js
 
       - name: Test exhibition interactions
-        run: node --test scripts/exhibitions-ui.test.mjs scripts/conventions-ui.test.mjs scripts/conventions-data.test.mjs scripts/update-conventions.test.mjs
+        run: node --test scripts/exhibitions-ui.test.mjs scripts/conventions-ui.test.mjs scripts/conventions-data.test.mjs scripts/conventions-visual.test.mjs scripts/update-conventions.test.mjs
