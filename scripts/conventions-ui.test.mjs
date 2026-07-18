@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
+import { createRequire } from "node:module";
 import test from "node:test";
 
-await import("../conventions-core.js");
+const require = createRequire(import.meta.url);
 const {
   conventionMatches,
   dateWindow,
@@ -11,7 +12,7 @@ const {
   hasPublishedGuests,
   progressiveSlice,
   sortConventions,
-} = globalThis.ConventionRadarCore;
+} = require("../conventions-core.js");
 
 const events = [
   {
