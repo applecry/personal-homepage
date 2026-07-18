@@ -101,15 +101,39 @@
               <button type="button" data-calendar-next aria-label="下一个月">→</button>
               <button class="calendar-today" type="button" data-calendar-today>回到本月</button>
             </div>
-            <div class="calendar-category-tabs" aria-label="日历展会类型筛选">
-              <button class="is-active" type="button" data-category="全部">全部</button>
-              <button type="button" data-category="艺术">艺术</button>
-              <button type="button" data-category="科技">科技</button>
-              <button type="button" data-category="游戏">游戏</button>
-              <button type="button" data-category="商贸">商贸</button>
-            </div>
             <p class="calendar-month-total"><strong data-calendar-count>0</strong><span>场展会与本月有交集</span></p>
           </header>
+          <form class="calendar-filters" data-calendar-filters aria-label="日历筛选">
+            <strong>筛选</strong>
+            <label>
+              <span>地区</span>
+              <select data-calendar-region aria-label="按地区筛选日历">
+                <option value="上海">上海</option>
+                <option value="中国">中国</option>
+                <option value="全部">全球</option>
+                <option value="亚洲">亚洲</option>
+                <option value="欧洲">欧洲</option>
+                <option value="美洲">美洲</option>
+              </select>
+            </label>
+            <label>
+              <span>类型</span>
+              <select data-calendar-category aria-label="按类型筛选日历">
+                <option value="全部">全部类型</option>
+                <option value="艺术">艺术</option>
+                <option value="科技">科技</option>
+                <option value="游戏">游戏</option>
+                <option value="商贸">商贸</option>
+              </select>
+            </label>
+            <label class="calendar-filter-search">
+              <span>关键词</span>
+              <input type="search" data-calendar-query placeholder="展会、城市或场馆" autocomplete="off" />
+            </label>
+            <button class="calendar-filter-saved" type="button" data-calendar-saved aria-pressed="false"><span aria-hidden="true">♡</span> 只看收藏</button>
+            <button class="calendar-filter-reset" type="reset" data-calendar-reset>清除筛选</button>
+            <small data-calendar-filter-summary aria-live="polite">上海 · 全部类型</small>
+          </form>
           <div class="atlas-calendar-weekdays" aria-hidden="true">
             <span>周一</span><span>周二</span><span>周三</span><span>周四</span><span>周五</span><span>周六</span><span>周日</span>
           </div>
@@ -173,7 +197,7 @@
     </div>
     <script src="./assets/vendor/leaflet.js"></script>
     <script src="./exhibitions-core.js?v=20260718-1"></script>
-    <script src="./exhibitions.js?v=20260718-1"></script>
+    <script src="./exhibitions.js?v=20260718-2"></script>
     <script src="./page-agent-knowledge.js?v=20260716-1"></script>
     <script src="./script.js?v=20260716-1"></script>
   </body>

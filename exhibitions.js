@@ -88,6 +88,12 @@ if (app && window.L && window.ExhibitionAtlasCore) {
   const calendarAgendaTitle = app.querySelector("[data-calendar-agenda-title]");
   const calendarAgendaList = app.querySelector("[data-calendar-agenda-list]");
   const viewToggle = app.querySelector("[data-view-toggle]");
+  const calendarRegion = app.querySelector("[data-calendar-region]");
+  const calendarCategory = app.querySelector("[data-calendar-category]");
+  const calendarQuery = app.querySelector("[data-calendar-query]");
+  const calendarSaved = app.querySelector("[data-calendar-saved]");
+  const calendarReset = app.querySelector("[data-calendar-reset]");
+  const calendarFilterSummary = app.querySelector("[data-calendar-filter-summary]");
 
   const escapeHtml = (value = "") => String(value).replace(/[&<>"]/g, (character) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;",
@@ -303,6 +309,13 @@ if (app && window.L && window.ExhibitionAtlasCore) {
     const monthEvents = events.filter((event) => event.startDate <= range.end && event.endDate >= range.start);
     calendarTitle.textContent = `${year} 年 ${month} 月`;
     calendarCount.textContent = monthEvents.length;
+    const filterLabels = [
+      state.region === "全部" ? "全球" : state.region,
+      state.category === "全部" ? "全部类型" : state.category,
+      state.query ? `“${state.query}”` : "",
+      state.savedOnly ? "只看收藏" : "",
+    ].filter(Boolean);
+    calendarFilterSummary.textContent = filterLabels.join(" · ");
     calendarGrid.textContent = "";
 
     days.forEach((day) => {
@@ -676,6 +689,13 @@ if (app && window.L && window.ExhibitionAtlasCore) {
     dateEndInput.value = state.dateEnd;
     customDates.hidden = state.dateMode !== "custom";
     searchInput.value = state.query;
+    calendarRegion.value = state.region;
+    calendarCategory.value = state.category;
+    calendarQuery.value = state.query;
+    calendarSaved.classList.toggle("is-active", state.savedOnly);
+    calendarSaved.setAttribute("aria-pressed", String(state.savedOnly));
+    calendarSaved.querySelector("span").textContent = state.savedOnly ? "♥" : "♡";
+    calendarReset.disabled = state.region === "上海" && state.category === "全部" && !state.query && !state.savedOnly;
     const range = activeDateRange();
     dateError.textContent = range?.invalid ? "结束日期不能早于开始日期" : "";
   };
@@ -772,6 +792,32 @@ if (app && window.L && window.ExhibitionAtlasCore) {
     renderCalendar();
   });
   app.querySelector("[data-calendar-agenda-close]").addEventListener("click", closeCalendarAgenda);
+  calendarRegion.addEventListener("change", () => {
+    state.region = calendarRegion.value;
+    state.savedOnly = false;
+    render();
+  });
+  calendarCategory.addEventListener("change", () => {
+    state.category = calendarCategory.value;
+    render();
+  });
+  calendarQuery.addEventListener("input", () => {
+    state.query = calendarQuery.value;
+    render();
+  });
+  calendarSaved.addEventListener("click", () => {
+    state.savedOnly = !state.savedOnly;
+    render();
+  });
+  app.querySelector("[data-calendar-filters]").addEventListener("reset", (event) => {
+    event.preventDefault();
+    state.region = "上海";
+    state.category = "全部";
+    state.query = "";
+    state.savedOnly = false;
+    closeCalendarAgenda();
+    render();
+  });
   app.querySelector("[data-search-toggle]").addEventListener("click", () => {
     searchPanel.classList.add("is-open");
     searchPanel.setAttribute("aria-hidden", "false");
