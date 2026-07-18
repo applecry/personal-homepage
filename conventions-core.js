@@ -38,13 +38,37 @@
     return Array.isArray(savedIds) && savedIds.includes(eventId);
   };
 
+  const normalizeLocationTerm = (value = "") => String(value)
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/\s+/gu, "")
+    .replace(/特别行政区$|自治县$|地区$|市$|县$|区$|省$/u, "");
+
+  const locationMatches = (event, state = {}) => {
+    if (state.province && state.province !== "all" && event.province !== state.province) return false;
+    const cityQuery = normalizeLocationTerm(state.cityQuery || "");
+    if (cityQuery && !normalizeLocationTerm(event.city).includes(cityQuery)) return false;
+    if (state.city && state.city !== "all" && event.city !== state.city) return false;
+    return true;
+  };
+
+  const uniqueTicketSources = (sources = []) => {
+    const unique = new Map();
+    for (const source of sources) {
+      const key = `${String(source.platform || "").trim().toLowerCase()}|${String(source.label || "").trim().toLowerCase()}`;
+      const current = unique.get(key);
+      if (!current || (!current.primary && source.primary)) unique.set(key, source);
+    }
+    return [...unique.values()];
+  };
+
   const conventionMatches = (event, state, today) => {
     if (event.endDate < today) return false;
     const query = String(state.query || "").trim().toLowerCase();
     const guests = (event.guests || []).map((guest) => `${guest.name} ${guest.role || ""}`).join(" ");
-    const haystack = `${event.name} ${event.city} ${event.venue} ${event.type || ""} ${guests}`.toLowerCase();
+    const haystack = `${event.name} ${event.province || ""} ${event.city} ${event.venue} ${event.type || ""} ${guests}`.toLowerCase();
     if (query && !haystack.includes(query)) return false;
-    if (state.city && state.city !== "all" && event.city !== state.city) return false;
+    if (!locationMatches(event, state)) return false;
     if (state.scope === "guests" && !hasPublishedGuests(event)) return false;
     if (state.scope === "pending" && hasPublishedGuests(event)) return false;
     if (state.scope === "saved" && !isSaved(event.id, state.savedIds)) return false;
@@ -105,10 +129,13 @@
     guestsForWeekend,
     hasPublishedGuests,
     isSaved,
+    locationMatches,
+    normalizeLocationTerm,
     overlapsWindow,
     progressiveSlice,
     sortConventions,
     startOfWeekend,
+    uniqueTicketSources,
   };
 
   root.ConventionRadarCore = core;

@@ -10,14 +10,17 @@ const {
   guestCount,
   guestsForWeekend,
   hasPublishedGuests,
+  locationMatches,
   progressiveSlice,
   sortConventions,
+  uniqueTicketSources,
 } = require("../conventions-core.js");
 
 const events = [
   {
     id: "ido",
     name: "IDO 动漫游戏嘉年华",
+    province: "北京",
     city: "北京",
     venue: "亦创会展中心",
     startDate: "2026-07-18",
@@ -31,6 +34,7 @@ const events = [
   {
     id: "axg",
     name: "AXG 动漫游戏嘉年华",
+    province: "上海",
     city: "上海",
     venue: "诺瓦城",
     startDate: "2026-07-18",
@@ -41,6 +45,7 @@ const events = [
   {
     id: "future",
     name: "未来动漫展",
+    province: "上海",
     city: "上海",
     venue: "展览馆",
     startDate: "2026-08-20",
@@ -50,6 +55,7 @@ const events = [
   {
     id: "past",
     name: "往期漫展",
+    province: "上海",
     city: "上海",
     venue: "展览馆",
     startDate: "2026-07-01",
@@ -74,6 +80,25 @@ test("city, pending and saved filters compose", () => {
   assert.equal(conventionMatches(events[0], { city: "上海", scope: "all" }, "2026-07-16"), false);
   assert.equal(conventionMatches(events[0], { city: "all", scope: "saved", savedIds: new Set(["ido"]) }, "2026-07-16"), true);
   assert.equal(conventionMatches(events[1], { city: "all", scope: "saved", savedIds: new Set(["ido"]) }, "2026-07-16"), false);
+});
+
+test("province cascade and typed city queries filter locations fuzzily", () => {
+  assert.equal(locationMatches(events[1], { province: "上海", cityQuery: "" }), true);
+  assert.equal(locationMatches(events[0], { province: "上海", cityQuery: "" }), false);
+  assert.equal(locationMatches(events[1], { province: "all", cityQuery: "上" }), true);
+  assert.equal(locationMatches(events[1], { province: "all", cityQuery: "上海市" }), true);
+  assert.equal(locationMatches(events[0], { province: "all", cityQuery: "海" }), false);
+});
+
+test("detail actions collapse duplicate discovery records", () => {
+  const sources = uniqueTicketSources([
+    { platform: "次元黄页", label: "查看发现记录", url: "https://example.com/?search=100" },
+    { platform: "次元黄页", label: "查看发现记录", url: "https://example.com/?search=活动名" },
+    { platform: "B站会员购", label: "查看官方票务与嘉宾", url: "https://example.com/ticket", primary: true },
+  ]);
+  assert.equal(sources.length, 2);
+  assert.equal(sources[0].url, "https://example.com/?search=100");
+  assert.equal(sources[1].platform, "B站会员购");
 });
 
 test("date modes select today, weekend and the next 30 days", () => {

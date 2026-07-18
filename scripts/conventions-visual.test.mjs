@@ -38,6 +38,14 @@ test("convention hero uses a descriptive anime key visual", () => {
   assert.ok(html.includes("https://applecry.github.io/personal-homepage/assets/conventions-anime-hero.jpg"));
 });
 
+test("convention section exposes cascading province and fuzzy city controls", () => {
+  assert.ok(html.includes("<title>漫展专区 | Exhibit Atlas</title>"));
+  assert.ok(html.includes("data-province"));
+  assert.ok(html.includes("data-city-input"));
+  assert.ok(html.includes("data-city-options"));
+  assert.ok(html.includes("手输"));
+});
+
 test("anime hero is an optimized social-preview-sized JPEG", () => {
   assert.deepEqual(jpegDimensions(image), { width: 1200, height: 633 });
   assert.ok(image.length > 100_000, "hero image is unexpectedly small");

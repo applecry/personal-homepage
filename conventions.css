@@ -85,7 +85,12 @@ a { text-decoration: none; }
 .con-filter-tabs button.is-active span { background: rgba(255,255,255,.2); color: #fff; }
 .con-toolbar-selects { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 9px; }
 .con-sort { display: flex; align-items: center; gap: 8px; color: var(--con-muted); font-size: .68rem; font-weight: 780; }
-.con-sort select { min-height: 36px; padding: 0 28px 0 9px; border: 1px solid var(--con-line); border-radius: 7px; background: #fff; color: var(--con-ink); font-size: .7rem; font-weight: 760; }
+.con-sort select, .con-sort input { min-height: 36px; border: 1px solid var(--con-line); border-radius: 7px; background: #fff; color: var(--con-ink); font-size: .7rem; font-weight: 760; }
+.con-sort select { padding: 0 28px 0 9px; }
+.con-sort input { width: 210px; padding: 0 10px; outline: 0; }
+.con-sort input::placeholder { color: #8b8495; font-weight: 680; }
+.con-sort input:focus { border-color: var(--con-purple); box-shadow: 0 0 0 3px rgba(109,60,242,.1); }
+.con-city-combobox { min-width: 0; }
 .con-results-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; color: var(--con-muted); font-size: .66rem; }
 .con-results-bar button { padding: 5px 0; border: 0; border-bottom: 1px solid var(--con-muted); background: transparent; color: var(--con-muted); font-size: .64rem; font-weight: 780; }
 .con-results-bar button:hover { border-color: var(--con-purple); color: var(--con-purple); }
@@ -240,6 +245,8 @@ a { text-decoration: none; }
   .guest-board [data-guest-board] { display: grid; grid-template-columns: repeat(2, 1fr); max-height: none; }
   .guest-board-item:nth-last-child(2):nth-child(odd) { border-bottom: 0; }
   .con-policy-grid { grid-template-columns: 1fr; }
+  .con-toolbar { align-items: flex-start; flex-direction: column; }
+  .con-toolbar-selects { justify-content: flex-start; width: 100%; }
 }
 
 @media (max-width: 680px) {
@@ -247,6 +254,10 @@ a { text-decoration: none; }
   .con-product-nav { order: 3; grid-column: 1 / -1; justify-content: center; margin-bottom: 8px; }
   .con-brand small, .con-source-button span { display: none; }
   .con-source-button { padding-inline: 9px; }
+  .con-toolbar-selects { display: grid; grid-template-columns: 1fr 1fr; }
+  .con-sort { align-items: stretch; flex-direction: column; gap: 5px; }
+  .con-sort select, .con-sort input { width: 100%; }
+  .con-city-combobox { grid-column: 1 / -1; }
   .con-hero { width: calc(100% - 30px); padding: 58px 0 55px; }
   .con-hero h1 { font-size: clamp(3.25rem, 17vw, 5rem); }
   .con-hero::before, .con-hero::after { display: none; }

@@ -51,7 +51,7 @@ test("every convention has coherent dates, sources and guest status", () => {
   assert.equal(new Set(ids).size, ids.length, "event ids must be unique");
 
   payload.events.forEach((event) => {
-    for (const field of ["id", "name", "type", "city", "venue", "startDate", "endDate", "price", "ticketStatus", "guestStatus", "summary", "verification"]) {
+    for (const field of ["id", "name", "type", "province", "city", "venue", "startDate", "endDate", "price", "ticketStatus", "guestStatus", "summary", "verification"]) {
       assert.ok(typeof event[field] === "string" && event[field].trim(), `${event.id || "event"} missing ${field}`);
     }
     assert.match(event.startDate, isoDate);
@@ -80,5 +80,7 @@ test("every convention has coherent dates, sources and guest status", () => {
       assert.ok(source.platform && source.label, `${event.id} has an incomplete ticket source`);
       assert.equal(new URL(source.url).protocol, "https:");
     });
+    const sourceActions = event.ticketSources.map((source) => `${source.platform}|${source.label}`);
+    assert.equal(new Set(sourceActions).size, sourceActions.length, `${event.id} repeats the same source action`);
   });
 });

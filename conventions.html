@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#17131f" />
-    <title>漫展嘉宾雷达 | Exhibit Atlas</title>
+    <title>漫展专区 | Exhibit Atlas</title>
     <meta name="description" content="从嘉宾出发发现近期漫展，聚合 B站会员购、大麦与主办方官宣，查看出席日期、签售安排与购票入口。" />
-    <meta property="og:title" content="漫展嘉宾雷达 | Exhibit Atlas" />
+    <meta property="og:title" content="漫展专区 | Exhibit Atlas" />
     <meta property="og:description" content="先看谁会来，再决定去哪场。按嘉宾、出席日和签售安排发现近期漫展。" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://applecry.github.io/personal-homepage/assets/conventions-anime-hero.jpg" />
@@ -14,10 +14,10 @@
     <meta property="og:image:height" content="633" />
     <meta property="og:image:alt" content="两位原创动漫角色置身漫展舞台、漫画分镜与票根拼贴之间" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="漫展嘉宾雷达 | Exhibit Atlas" />
+    <meta name="twitter:title" content="漫展专区 | Exhibit Atlas" />
     <meta name="twitter:description" content="先看谁会来，再决定去哪场。" />
     <meta name="twitter:image" content="https://applecry.github.io/personal-homepage/assets/conventions-anime-hero.jpg" />
-    <link rel="stylesheet" href="./conventions.css?v=20260718-4" />
+    <link rel="stylesheet" href="./conventions.css?v=20260718-5" />
     <link rel="stylesheet" href="./page-agent.css?v=20260715-4" />
   </head>
   <body>
@@ -29,7 +29,7 @@
         </a>
         <nav class="con-product-nav" aria-label="展览产品">
           <a href="./exhibitions.html">展会地图</a>
-          <a class="is-active" href="./conventions.html" aria-current="page">漫展嘉宾</a>
+          <a class="is-active" href="./conventions.html" aria-current="page">漫展专区</a>
         </nav>
         <button class="con-source-button" type="button" data-source-open><span aria-hidden="true">▤</span> 数据来源</button>
       </header>
@@ -50,7 +50,7 @@
           <div class="con-hero-stage">
             <figure class="con-anime-visual">
               <img src="./assets/conventions-anime-hero.jpg" width="1200" height="633" alt="两位原创动漫角色站在漫展舞台与漫画分镜拼贴之间" fetchpriority="high" />
-              <figcaption><span>ORIGINAL KEY VISUAL</span><strong>漫展嘉宾雷达</strong></figcaption>
+              <figcaption><span>ORIGINAL KEY VISUAL</span><strong>漫展专区</strong></figcaption>
             </figure>
             <div class="con-hero-radar" aria-label="漫展数据概览">
               <p>LIVE GUEST INDEX</p>
@@ -77,8 +77,8 @@
             </div>
             <label class="con-search">
               <span aria-hidden="true">⌕</span>
-              <span class="sr-only">搜索漫展、嘉宾或城市</span>
-              <input type="search" placeholder="搜嘉宾、漫展、城市" data-search />
+              <span class="sr-only">搜索漫展、嘉宾、省份或城市</span>
+              <input type="search" placeholder="搜嘉宾、漫展、省份、城市" data-search />
             </label>
           </header>
 
@@ -90,7 +90,12 @@
               <button type="button" data-scope="saved">我的关注 <span data-saved-count>0</span></button>
             </div>
             <div class="con-toolbar-selects">
-              <label class="con-sort"><span>城市</span><select data-city><option value="all">全部城市</option></select></label>
+              <label class="con-sort"><span>省份</span><select data-province><option value="all">全部省份</option></select></label>
+              <label class="con-sort con-city-combobox">
+                <span>城市</span>
+                <input type="search" data-city-input list="con-city-options" placeholder="全部城市 / 手输" autocomplete="off" />
+                <datalist id="con-city-options" data-city-options></datalist>
+              </label>
               <label class="con-sort"><span>日期</span><select data-date-mode><option value="all">全部近期</option><option value="today">今天</option><option value="weekend">本周末</option><option value="month">未来 30 天</option></select></label>
               <label class="con-sort"><span>排序</span><select data-sort><option value="date">日期优先</option><option value="guests">嘉宾最多</option><option value="updated">最近官宣</option></select></label>
             </div>
@@ -121,7 +126,7 @@
         </section>
       </main>
 
-      <footer class="con-footer"><span>Exhibit Atlas · 漫展嘉宾雷达</span><a href="./exhibitions.html">返回展会地图 →</a></footer>
+      <footer class="con-footer"><span>Exhibit Atlas · 漫展专区</span><a href="./exhibitions.html">返回展会地图 →</a></footer>
 
       <aside class="con-sources" data-source-panel aria-hidden="true">
         <header><div><p>DATA SOURCES</p><h2>数据从哪里来</h2></div><button type="button" data-source-close aria-label="关闭数据来源">×</button></header>
@@ -149,9 +154,10 @@
       </button>
     </div>
     <script src="./exhibitions-core.js?v=20260715-1"></script>
-    <script src="./conventions-core.js?v=20260718-3"></script>
-    <script src="./conventions.js?v=20260718-3"></script>
-    <script src="./page-agent-knowledge.js?v=20260718-1"></script>
+    <script src="./conventions-regions.js?v=20260718-1"></script>
+    <script src="./conventions-core.js?v=20260718-4"></script>
+    <script src="./conventions.js?v=20260718-4"></script>
+    <script src="./page-agent-knowledge.js?v=20260718-2"></script>
     <script src="./script.js?v=20260718-1"></script>
   </body>
 </html>

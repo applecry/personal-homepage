@@ -1,6 +1,6 @@
 (() => {
   const app = document.querySelector("[data-con-app]");
-  if (!app || !window.ConventionRadarCore || !window.ExhibitionAtlasCore) return;
+  if (!app || !window.ConventionRadarCore || !window.ConventionRegions || !window.ExhibitionAtlasCore) return;
 
   const {
     addDays,
@@ -11,9 +11,12 @@
     guestsForWindow,
     hasPublishedGuests,
     isSaved,
+    locationMatches,
     progressiveSlice,
     sortConventions,
+    uniqueTicketSources,
   } = window.ConventionRadarCore;
+  const { resolveProvince } = window.ConventionRegions;
   const { buildIcs, deriveEventStatus, todayInTimeZone } = window.ExhibitionAtlasCore;
   const SAVED_KEY = "exhibit-atlas-convention-follows-v1";
   const SNAPSHOT_KEY = "exhibit-atlas-convention-guests-v1";
@@ -23,7 +26,9 @@
     sources: [],
     query: "",
     scope: "all",
+    province: "all",
     city: "all",
+    cityQuery: "",
     dateMode: "all",
     sort: "date",
     savedIds: new Set(),
@@ -34,7 +39,9 @@
   const list = app.querySelector("[data-convention-list]");
   const search = app.querySelector("[data-search]");
   const sort = app.querySelector("[data-sort]");
-  const city = app.querySelector("[data-city]");
+  const province = app.querySelector("[data-province]");
+  const cityInput = app.querySelector("[data-city-input]");
+  const cityOptions = app.querySelector("[data-city-options]");
   const dateMode = app.querySelector("[data-date-mode]");
   const guestBoard = app.querySelector("[data-guest-board]");
   const sourcePanel = app.querySelector("[data-source-panel]");
@@ -162,7 +169,8 @@
 
   const renderResultsNote = (events) => {
     const parts = [`${events.length} 场活动`];
-    if (state.city !== "all") parts.push(state.city);
+    if (state.province !== "all") parts.push(state.province);
+    if (state.cityQuery.trim()) parts.push(`城市“${state.cityQuery.trim()}”`);
     if (state.dateMode === "today") parts.push("今天");
     if (state.dateMode === "weekend") parts.push("本周末");
     if (state.dateMode === "month") parts.push("未来 30 天");
@@ -202,13 +210,15 @@
     const window = boardWindow();
     const events = state.events.filter((event) => {
       if (event.endDate < today()) return false;
-      if (state.city !== "all" && event.city !== state.city) return false;
+      if (!locationMatches(event, state)) return false;
       if (state.scope === "saved" && !isSaved(event.id, state.savedIds)) return false;
       return event.startDate <= window.end && event.endDate >= window.start;
     });
     const guests = guestsForWindow(events, window.start, window.end)
       .sort((a, b) => String(a.date).localeCompare(String(b.date)) || a.name.localeCompare(b.name, "zh-CN"));
-    const title = state.city === "all" ? "近期嘉宾" : `${state.city}嘉宾`;
+    const title = state.cityQuery.trim()
+      ? `${state.cityQuery.trim()}相关嘉宾`
+      : state.province === "all" ? "近期嘉宾" : `${state.province}漫展嘉宾`;
     app.querySelector("[data-guest-board-title]").textContent = title;
     app.querySelector("[data-guest-board-copy]").textContent = `按 ${shortDate(window.start)}—${shortDate(window.end)} 出席日期整理，点名字可筛出对应漫展。`;
     app.querySelector("[data-week-guest-count]").textContent = String(guests.length);
@@ -269,11 +279,34 @@
     app.querySelector("[data-sync-note]").textContent = `${text} · 嘉宾变动以来源页为准`;
   };
 
-  const populateCities = () => {
-    const cities = [...new Set(state.events.filter((event) => event.endDate >= today()).map((event) => event.city))]
+  const populateCityOptions = () => {
+    const cities = [...new Set(state.events
+      .filter((event) => event.endDate >= today())
+      .filter((event) => state.province === "all" || event.province === state.province)
+      .map((event) => event.city))]
       .sort((a, b) => a.localeCompare(b, "zh-CN"));
-    city.innerHTML = `<option value="all">全部城市</option>${cities.map((name) => `<option value="${escapeHtml(name)}">${escapeHtml(name)}</option>`).join("")}`;
-    city.value = state.city;
+    cityOptions.innerHTML = cities
+      .map((name) => `<option value="${escapeHtml(name)}">${escapeHtml(name)}</option>`)
+      .join("");
+    cityInput.placeholder = state.province === "all"
+      ? `全部城市 / 手输模糊匹配（${cities.length}）`
+      : `${state.province}城市 / 手输模糊匹配（${cities.length}）`;
+  };
+
+  const populateLocations = () => {
+    const provinces = [...new Set(state.events
+      .filter((event) => event.endDate >= today())
+      .map((event) => event.province || "待确认"))]
+      .sort((left, right) => {
+        if (left === "待确认") return 1;
+        if (right === "待确认") return -1;
+        return left.localeCompare(right, "zh-CN");
+      });
+    province.innerHTML = `<option value="all">全部省份</option>${provinces
+      .map((name) => `<option value="${escapeHtml(name)}">${escapeHtml(name)}</option>`)
+      .join("")}`;
+    province.value = state.province;
+    populateCityOptions();
   };
 
   const persistGuestSnapshot = () => {
@@ -309,7 +342,7 @@
     const guests = event.guests || [];
     const saved = isSaved(event.id, state.savedIds);
     const newGuests = state.newGuests.get(event.id) || [];
-    const sourceActions = (event.ticketSources || []).map((source, index) => {
+    const sourceActions = uniqueTicketSources(event.ticketSources || []).map((source, index) => {
       const url = safeHttpUrl(source.url);
       if (!url) return "";
       return `<a class="dialog-action${source.primary || index === 0 ? " dialog-action--primary" : ""}" href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(source.platform)} · ${escapeHtml(source.label)} ↗</a>`;
@@ -380,10 +413,14 @@
   const resetFilters = () => {
     state.query = "";
     state.scope = "all";
+    state.province = "all";
     state.city = "all";
+    state.cityQuery = "";
     state.dateMode = "all";
     search.value = "";
-    city.value = "all";
+    province.value = "all";
+    cityInput.value = "";
+    populateCityOptions();
     dateMode.value = "all";
     resetVisibleCount();
     renderList();
@@ -408,10 +445,14 @@
     if (guestButton) {
       state.query = guestButton.dataset.guestQuery;
       state.scope = "all";
+      state.province = "all";
       state.city = "all";
+      state.cityQuery = "";
       state.dateMode = "all";
       search.value = state.query;
-      city.value = "all";
+      province.value = "all";
+      cityInput.value = "";
+      populateCityOptions();
       dateMode.value = "all";
       resetVisibleCount();
       renderList();
@@ -445,8 +486,19 @@
     resetVisibleCount();
     renderList();
   });
-  city.addEventListener("change", () => {
-    state.city = city.value;
+  province.addEventListener("change", () => {
+    state.province = province.value;
+    state.city = "all";
+    state.cityQuery = "";
+    cityInput.value = "";
+    populateCityOptions();
+    resetVisibleCount();
+    renderList();
+    renderGuestBoard();
+  });
+  cityInput.addEventListener("input", () => {
+    state.city = "all";
+    state.cityQuery = cityInput.value;
     resetVisibleCount();
     renderList();
     renderGuestBoard();
@@ -479,7 +531,12 @@
       return response.json();
     })
     .then((payload) => {
-      state.events = Array.isArray(payload.events) ? payload.events : [];
+      state.events = Array.isArray(payload.events)
+        ? payload.events.map((event) => ({
+          ...event,
+          province: event.province && event.province !== "待确认" ? event.province : resolveProvince(event.city),
+        }))
+        : [];
       state.sources = Array.isArray(payload.sources) ? payload.sources : [];
       state.savedIds = new Set(readJsonStorage(SAVED_KEY, []).filter((id) => state.events.some((event) => event.id === id)));
       const previousSnapshot = readJsonStorage(SNAPSHOT_KEY, {});
@@ -487,7 +544,7 @@
         const additions = findNewGuests(event, previousSnapshot[event.id]);
         if (additions.length) state.newGuests.set(event.id, additions);
       });
-      populateCities();
+      populateLocations();
       updateOverview(payload);
       renderList();
       renderGuestBoard();

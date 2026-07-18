@@ -1,9 +1,12 @@
 import { createHash } from "node:crypto";
+import { createRequire } from "node:module";
 import { readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const DATA_URL = new URL("../data/conventions.json", import.meta.url);
+const require = createRequire(import.meta.url);
+const { resolveProvince } = require("../conventions-regions.js");
 const BILIBILI_LIST_URL = "https://show.bilibili.com/api/ticket/project/listV2";
 const BILIBILI_DETAIL_URL = "https://show.bilibili.com/api/ticket/project/getV2";
 const YUNMANZHAN_URL = "https://www.yunmanzhan.com/index.php";
@@ -184,11 +187,13 @@ export const parseYunmanzhanHtml = (html, page = 1) => {
 export const conventionFromBilibiliListItem = (item, observedAt) => {
   const name = cleanEventName(item.project_name);
   const detailUrl = `https://show.bilibili.com/platform/detail.html?id=${item.project_id}`;
+  const city = cleanCity(item.city, item.project_name);
   return {
     id: `bilibili-${item.project_id}`,
     name,
     type: inferType(name, item.third_category_name),
-    city: cleanCity(item.city, item.project_name),
+    province: resolveProvince(city),
+    city,
     venue: normalizeSpace(item.venue_name) || "场馆待确认",
     startDate: item.start_time,
     endDate: item.end_time || item.start_time,
@@ -223,6 +228,7 @@ export const conventionFromYunmanzhan = (item, observedAt) => ({
   id: `yunmanzhan-${item.externalId}`,
   name: item.name,
   type: inferType(item.name),
+  province: resolveProvince(item.city),
   city: item.city,
   venue: item.venue,
   startDate: item.startDate,
@@ -265,10 +271,15 @@ const findMatch = (events, candidate) => {
     .sort((a, b) => b.score - a.score)[0]?.event;
 };
 
-const uniqueSources = (sources = []) => [...new Map(sources.map((source) => [
-  `${source.platform}|${source.url}`,
-  source,
-])).values()];
+export const uniqueSources = (sources = []) => {
+  const unique = new Map();
+  for (const source of sources) {
+    const key = `${String(source.platform || "").trim().toLowerCase()}|${String(source.label || "").trim().toLowerCase()}`;
+    const current = unique.get(key);
+    if (!current || (!current.primary && source.primary)) unique.set(key, source);
+  }
+  return [...unique.values()];
+};
 
 export const mergeCandidate = (events, candidate, observedAt) => {
   const match = findMatch(events, candidate);
@@ -280,7 +291,7 @@ export const mergeCandidate = (events, candidate, observedAt) => {
     || match.id.startsWith("yunmanzhan-");
   const candidateIsOfficial = candidate.sourceIds?.includes("bilibili-membership");
   if (isDiscoveryOnly || candidateIsOfficial) {
-    for (const field of ["name", "type", "city", "venue", "startDate", "endDate", "price", "ticketStatus", "summary", "verification"]) {
+    for (const field of ["name", "type", "province", "city", "venue", "startDate", "endDate", "price", "ticketStatus", "summary", "verification"]) {
       if (candidate[field]) match[field] = candidate[field];
     }
     if (candidateIsOfficial) match.verificationLevel = "ticket-verified";
@@ -537,6 +548,8 @@ const bilibiliProjectIdsFromEvents = (events) => new Set(events.flatMap((event) 
 
 const withBaselineMetadata = (event, observedAt) => ({
   ...event,
+  province: event.province && event.province !== "待确认" ? event.province : resolveProvince(event.city),
+  ticketSources: uniqueSources(event.ticketSources || []),
   sourceIds: event.sourceIds?.length
     ? event.sourceIds
     : [...new Set((event.ticketSources || []).map((source) => {

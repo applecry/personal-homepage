@@ -7,6 +7,7 @@ import {
   mergeCandidate,
   parseYunmanzhanHtml,
   parseYunmanzhanPageCount,
+  uniqueSources,
   updateConventionDataset,
 } from "./update-conventions.mjs";
 
@@ -93,10 +94,21 @@ test("Bilibili list mapping keeps official field provenance", () => {
     third_category_name: "Only同人展",
   }, observedAt);
   assert.equal(event.id, "bilibili-1003947");
+  assert.equal(event.province, "上海");
   assert.equal(event.city, "上海");
   assert.equal(event.price, "¥89 起");
   assert.equal(event.verificationLevel, "ticket-verified");
   assert.equal(event.fieldSources.guests, "bilibili-membership");
+});
+
+test("source actions keep one semantic link per platform and purpose", () => {
+  const sources = uniqueSources([
+    { platform: "次元黄页", label: "查看发现记录", url: "https://www.yunmanzhan.com/index.php?search=9802" },
+    { platform: "次元黄页", label: "查看发现记录", url: "https://www.yunmanzhan.com/index.php?search=活动名" },
+    { platform: "B站会员购", label: "查看官方票务与嘉宾", url: "https://show.bilibili.com/detail?id=1", primary: true },
+  ]);
+  assert.equal(sources.length, 2);
+  assert.equal(sources[0].url, "https://www.yunmanzhan.com/index.php?search=9802");
 });
 
 test("discovery records merge into an existing curated event instead of duplicating it", () => {
