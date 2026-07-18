@@ -1,0 +1,53 @@
+name: Update convention radar
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update-conventions.mjs"
+      - "scripts/update-conventions.test.mjs"
+      - ".github/workflows/update-conventions.yml"
+  schedule:
+    # Every two hours, offset from the top of the hour to reduce scheduler congestion.
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: convention-radar-updates
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update-conventions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Test convention collector
+        run: node --test scripts/update-conventions.test.mjs
+
+      - name: Collect conventions and structured guests
+        run: node scripts/update-conventions.mjs
+        env:
+          CONVENTION_DISCOVERY_PAGES: "4"
+
+      - name: Validate generated dataset
+        run: node --test scripts/conventions-data.test.mjs scripts/conventions-ui.test.mjs
+
+      - name: Commit convention updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/conventions.json
+          git diff --cached --quiet || git commit -m "Update convention radar"
+          git pull --rebase origin main
+          git push

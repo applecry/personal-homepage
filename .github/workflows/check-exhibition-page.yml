@@ -16,7 +16,10 @@ on:
       - "data/conventions.json"
       - "scripts/conventions-ui.test.mjs"
       - "scripts/conventions-data.test.mjs"
+      - "scripts/update-conventions.mjs"
+      - "scripts/update-conventions.test.mjs"
       - ".github/workflows/check-exhibition-page.yml"
+      - ".github/workflows/update-conventions.yml"
   pull_request:
     paths:
       - "exhibitions.html"
@@ -31,7 +34,10 @@ on:
       - "data/conventions.json"
       - "scripts/conventions-ui.test.mjs"
       - "scripts/conventions-data.test.mjs"
+      - "scripts/update-conventions.mjs"
+      - "scripts/update-conventions.test.mjs"
       - ".github/workflows/check-exhibition-page.yml"
+      - ".github/workflows/update-conventions.yml"
 
 permissions:
   contents: read
@@ -57,4 +63,4 @@ jobs:
           node --check conventions.js
 
       - name: Test exhibition interactions
-        run: node --test scripts/exhibitions-ui.test.mjs scripts/conventions-ui.test.mjs scripts/conventions-data.test.mjs
+        run: node --test scripts/exhibitions-ui.test.mjs scripts/conventions-ui.test.mjs scripts/conventions-data.test.mjs scripts/update-conventions.test.mjs

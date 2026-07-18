@@ -208,19 +208,40 @@
   };
 
   const renderSources = (payload = {}) => {
+    const healthById = new Map((payload.sourceHealth || []).map((health) => [health.sourceId, health]));
+    const healthLabel = {
+      healthy: "正常",
+      partial: "部分失败",
+      unavailable: "暂时不可用",
+      "manual-review": "人工复核",
+    };
     sourceList.innerHTML = state.sources.map((source) => {
       const url = safeHttpUrl(source.url);
+      const health = healthById.get(source.id);
+      const note = health?.note ? `${source.role}；${health.note}` : source.role;
+      const status = health ? `${healthLabel[health.status] || health.status} · ${health.itemCount || 0} 条` : source.status;
       return `<a class="con-source-row" href="${escapeHtml(url)}" target="_blank" rel="noreferrer">
         <span>${escapeHtml(source.short)}</span>
-        <div><strong>${escapeHtml(source.name)}</strong><small>${escapeHtml(source.role)}</small></div>
-        <i>${escapeHtml(source.status)} ↗</i>
+        <div><strong>${escapeHtml(source.name)}</strong><small>${escapeHtml(note)}</small></div>
+        <i data-health="${escapeHtml(health?.status || "unknown")}">${escapeHtml(status)} ↗</i>
       </a>`;
     }).join("");
     const checked = new Date(payload.checkedAt);
     const checkedText = Number.isNaN(checked.getTime())
       ? "最近核对时间未记录"
       : `数据集最近核对：${new Intl.DateTimeFormat("zh-CN", { dateStyle: "medium", timeStyle: "short" }).format(checked)}`;
-    sourceList.insertAdjacentHTML("beforeend", `<p class="con-source-checked">${escapeHtml(checkedText)}。每场活动的嘉宾状态与核验日期会单独显示。</p>`);
+    const stats = payload.stats || {};
+    const statsText = Number.isFinite(stats.eventCount)
+      ? `当前 ${stats.eventCount} 场，${stats.guestVerifiedEvents || 0} 场已有结构化嘉宾，共 ${stats.guestCount || 0} 位。`
+      : "";
+    sourceList.insertAdjacentHTML("beforeend", `<p class="con-source-checked">${escapeHtml(checkedText)}。${escapeHtml(statsText)}每场活动的嘉宾状态与核验日期会单独显示。</p>`);
+    const changes = Array.isArray(payload.changes) ? payload.changes.slice(0, 6) : [];
+    if (changes.length) {
+      sourceList.insertAdjacentHTML("beforeend", `<section class="con-change-feed" aria-label="最近数据变更">
+        <h3>最近变更</h3>
+        ${changes.map((change) => `<p><time datetime="${escapeHtml(change.at)}">${escapeHtml(shortDate(String(change.at).slice(0, 10)))}</time><span>${escapeHtml(change.eventName)}</span><small>${escapeHtml(change.summary)}</small></p>`).join("")}
+      </section>`);
+    }
   };
 
   const updateOverview = (payload) => {

@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="漫展嘉宾雷达 | Exhibit Atlas" />
     <meta name="twitter:description" content="先看谁会来，再决定去哪场。" />
     <meta name="twitter:image" content="https://applecry.github.io/personal-homepage/assets/conventions-social-preview.png" />
-    <link rel="stylesheet" href="./conventions.css?v=20260718-1" />
+    <link rel="stylesheet" href="./conventions.css?v=20260718-2" />
     <link rel="stylesheet" href="./page-agent.css?v=20260715-4" />
   </head>
   <body>
@@ -43,6 +43,7 @@
             <div class="con-source-chips" aria-label="当前数据源">
               <span class="source-chip source-chip--bili">B站会员购</span>
               <span class="source-chip source-chip--damai">大麦</span>
+              <span class="source-chip">全国漫展发现</span>
               <span class="source-chip">主办方官宣复核</span>
             </div>
           </div>
@@ -100,9 +101,9 @@
         <section class="con-policy" aria-labelledby="policy-title">
           <div><p class="con-eyebrow">DATA POLICY / 数据原则</p><h2 id="policy-title">票务归票务，嘉宾归官宣。</h2></div>
           <div class="con-policy-grid">
-            <article><span>01</span><h3>双平台发现</h3><p>B站会员购与大麦用于发现活动、核对日期、场馆、票价和购票状态。</p></article>
-            <article><span>02</span><h3>嘉宾单独复核</h3><p>优先采用平台结构化嘉宾名单；没有时回到主办方官宣，并保留每位嘉宾的出席日。</p></article>
-            <article><span>03</span><h3>关注后看变化</h3><p>关注活动保存在当前设备。再次访问时，会标出相较上次浏览新增的嘉宾；临时调整仍以来源页为准。</p></article>
+            <article><span>01</span><h3>先广覆盖发现</h3><p>全国漫展黄页负责找到更多活动；B站会员购与大麦再核对日期、场馆、票价和购票状态。</p></article>
+            <article><span>02</span><h3>嘉宾单独复核</h3><p>只展示平台结构化嘉宾名单或主办方官宣；没有可靠名单的活动明确标为“嘉宾待官宣”。</p></article>
+            <article><span>03</span><h3>失败不清空</h3><p>自动更新每两小时运行；单个来源失败会保留上一版，并记录嘉宾、日期、场馆与票务状态的变化。</p></article>
           </div>
         </section>
       </main>
@@ -111,7 +112,7 @@
 
       <aside class="con-sources" data-source-panel aria-hidden="true">
         <header><div><p>DATA SOURCES</p><h2>数据从哪里来</h2></div><button type="button" data-source-close aria-label="关闭数据来源">×</button></header>
-        <p>票务平台负责活动事实与购票状态，嘉宾名单优先采用平台结构化字段，并用主办方官宣补足出席日与签售安排。</p>
+        <p>发现源负责覆盖面，票务平台负责活动事实与购票状态；嘉宾名单只采用平台结构化字段，并用主办方官宣补足出席日与签售安排。</p>
         <div data-source-list></div>
         <small>页面只提供信息索引，不代替票务平台与主办方的最终通知。</small>
       </aside>
@@ -135,8 +136,8 @@
       </button>
     </div>
     <script src="./exhibitions-core.js?v=20260715-1"></script>
-    <script src="./conventions-core.js?v=20260718-1"></script>
-    <script src="./conventions.js?v=20260718-1"></script>
+    <script src="./conventions-core.js?v=20260718-2"></script>
+    <script src="./conventions.js?v=20260718-2"></script>
     <script src="./page-agent-knowledge.js?v=20260718-1"></script>
     <script src="./script.js?v=20260718-1"></script>
   </body>
