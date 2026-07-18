@@ -10,6 +10,8 @@ on:
   schedule:
     # Every two hours, offset from the top of the hour to reduce scheduler congestion.
     - cron: "17 */2 * * *"
+    # One complete horizon scan per day at 04:41 Asia/Shanghai.
+    - cron: "41 20 * * *"
   workflow_dispatch:
 
 concurrency:
@@ -39,6 +41,7 @@ jobs:
         run: node scripts/update-conventions.mjs
         env:
           CONVENTION_DISCOVERY_PAGES: "4"
+          CONVENTION_DISCOVERY_MODE: ${{ github.event_name == 'schedule' && github.event.schedule == '17 */2 * * *' && 'quick' || 'full' }}
 
       - name: Validate generated dataset
         run: node --test scripts/conventions-data.test.mjs scripts/conventions-ui.test.mjs

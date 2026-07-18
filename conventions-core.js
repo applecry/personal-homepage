@@ -64,6 +64,17 @@
     return String(a.startDate).localeCompare(String(b.startDate)) || String(a.name).localeCompare(String(b.name), "zh-CN");
   });
 
+  const progressiveSlice = (events = [], visibleCount = 24) => {
+    const count = Math.max(1, Number(visibleCount) || 24);
+    const items = events.slice(0, count);
+    return {
+      items,
+      shown: items.length,
+      remaining: Math.max(0, events.length - items.length),
+      total: events.length,
+    };
+  };
+
   const guestsForWindow = (events, start, end) => {
     return events.flatMap((event) => (event.guests || [])
       .filter((guest) => {
@@ -95,6 +106,7 @@
     hasPublishedGuests,
     isSaved,
     overlapsWindow,
+    progressiveSlice,
     sortConventions,
     startOfWeekend,
   };

@@ -6,6 +6,7 @@ import {
   diffEvents,
   mergeCandidate,
   parseYunmanzhanHtml,
+  parseYunmanzhanPageCount,
   updateConventionDataset,
 } from "./update-conventions.mjs";
 
@@ -51,8 +52,30 @@ test("Yunmanzhan parser extracts stable row fields without trusting guests", () 
     price: "69.9元 起",
     discoveryStatus: "进行中",
     ticketStatus: "待票务复核",
-    sourceUrl: "https://www.yunmanzhan.com/index.php?search=9802",
+    sourceUrl: "https://www.yunmanzhan.com/index.php?search=%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%B1%8A%E4%B8%96%E7%95%8C%E7%BA%BF%E5%8A%A8%E6%BC%AB%E5%B1%95%E3%80%90%E7%AA%81%E7%A0%B4%E5%8D%87%E7%BA%A7%E3%80%91",
   });
+});
+
+test("Yunmanzhan parser handles alternate city separators and honest unknown-city fallbacks", () => {
+  const html = `
+    <table><tbody>
+      <tr><td><div id="title-1"><strong>天津•同人ONLY</strong><small class="text-muted">天津•天津</small></div></td><td>2026-08-08</td><td>品所中心</td><td>78元</td><td>未开始</td></tr>
+      <tr><td><div id="title-2"><strong>2026鹰角嘉年华</strong><small class="text-muted"></small></div></td><td>2026-08-09</td><td>国家会展中心</td><td>待定</td><td>未开始</td></tr>
+    </tbody></table>`;
+  const parsed = parseYunmanzhanHtml(html, 1);
+  assert.equal(parsed[0].city, "天津");
+  assert.equal(parsed[0].name, "同人ONLY");
+  assert.equal(parsed[1].city, "城市待确认");
+});
+
+test("Yunmanzhan pagination parser finds the actual last page", () => {
+  const html = `
+    <a href="index.php?year=2026&month=8&page=2">2</a>
+    <a href="index.php?year=2026&month=8&page=17">Last</a>
+    <input type="number" min="1" max="17">
+    <span>页 / 共 17 页</span>`;
+  assert.equal(parseYunmanzhanPageCount(html), 17);
+  assert.equal(parseYunmanzhanPageCount("<table></table>"), 1);
 });
 
 test("Bilibili list mapping keeps official field provenance", () => {
@@ -94,6 +117,24 @@ test("discovery records merge into an existing curated event instead of duplicat
   assert.equal(events[0].externalIds.yunmanzhan, "9802");
   assert.deepEqual(events[0].sourceIds, ["yunmanzhan"]);
   assert.equal(events[0].ticketSources.length, 2);
+});
+
+test("same stable id wins even when a previous same-source merge changed the external id", () => {
+  const events = [{
+    ...structuredClone(validEvent),
+    id: "yunmanzhan-11241",
+    sourceIds: ["yunmanzhan"],
+    externalIds: { yunmanzhan: "11242" },
+    verificationLevel: "discovery-only",
+  }];
+  const candidate = {
+    ...structuredClone(events[0]),
+    externalIds: { yunmanzhan: "11241" },
+    city: "上海",
+  };
+  mergeCandidate(events, candidate, observedAt);
+  assert.equal(events.length, 1);
+  assert.equal(events[0].city, "上海");
 });
 
 test("Bilibili details add unique structured guests and preserve known appearance dates", () => {
@@ -161,4 +202,78 @@ test("collector preserves old data and exposes health when both automated source
   assert.equal(next.sourceHealth.find((source) => source.sourceId === "bilibili-membership").status, "unavailable");
   assert.equal(next.sourceHealth.find((source) => source.sourceId === "yunmanzhan").status, "unavailable");
   assert.equal(next.stats.eventCount, 1);
+});
+
+test("complete scans give missing discovery records three-run grace instead of deleting immediately", async () => {
+  const discoveryEvent = {
+    ...structuredClone(validEvent),
+    id: "yunmanzhan-9802",
+    sourceIds: ["yunmanzhan"],
+    externalIds: { yunmanzhan: "9802" },
+    verificationLevel: "discovery-only",
+    ticketSources: [{
+      platform: "次元黄页",
+      url: "https://www.yunmanzhan.com/index.php?search=9802",
+      label: "查看发现记录",
+    }],
+    firstSeenAt: "2026-07-17T08:00:00+08:00",
+    lastSeenAt: "2026-07-17T08:00:00+08:00",
+  };
+  const fetchers = {
+    bilibiliList: async () => [],
+    yunmanzhan: async () => ({ items: [], pagesChecked: 1, complete: true }),
+  };
+  let previous = {
+    updatedAt: discoveryEvent.lastSeenAt,
+    checkedAt: discoveryEvent.lastSeenAt,
+    coverage: "test coverage",
+    policy: "test policy with 嘉宾",
+    sources: [],
+    events: [discoveryEvent],
+  };
+  for (let run = 1; run <= 2; run += 1) {
+    previous = await updateConventionDataset({
+      previous,
+      now: new Date(`2026-07-${18 + run}T10:00:00Z`),
+      fetchers,
+    });
+    assert.equal(previous.events.length, 1);
+    assert.equal(previous.events[0].missingRuns, run);
+  }
+  const third = await updateConventionDataset({
+    previous,
+    now: new Date("2026-07-21T10:00:00Z"),
+    fetchers,
+  });
+  assert.equal(third.events.length, 0);
+});
+
+test("collector no longer truncates a valid horizon at 260 events", async () => {
+  const previous = {
+    updatedAt: "2026-07-17T08:00:00+08:00",
+    checkedAt: "2026-07-17T08:00:00+08:00",
+    coverage: "test coverage",
+    policy: "test policy with 嘉宾",
+    sources: [],
+    events: Array.from({ length: 300 }, (_, index) => ({
+      ...structuredClone(validEvent),
+      id: `official-${index}`,
+      name: `未来漫展 ${index}`,
+      startDate: "2026-08-01",
+      endDate: "2026-08-02",
+      sourceIds: ["bilibili-membership"],
+      verificationLevel: "ticket-verified",
+      firstSeenAt: "2026-07-17T08:00:00+08:00",
+      lastSeenAt: "2026-07-17T08:00:00+08:00",
+    })),
+  };
+  const next = await updateConventionDataset({
+    previous,
+    now: new Date("2026-07-18T10:00:00Z"),
+    fetchers: {
+      bilibiliList: async () => { throw new Error("offline"); },
+      yunmanzhan: async () => { throw new Error("offline"); },
+    },
+  });
+  assert.equal(next.events.length, 300);
 });

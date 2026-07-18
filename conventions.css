@@ -91,6 +91,10 @@ a { text-decoration: none; }
 .con-results-bar button:hover { border-color: var(--con-purple); color: var(--con-purple); }
 .con-content-grid { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 38px; align-items: start; margin-top: 26px; }
 .con-list { display: grid; gap: 12px; }
+.con-load-more { display: grid; justify-items: center; gap: 4px; width: 100%; padding: 18px; border: 1px dashed rgba(109,60,242,.45); background: rgba(109,60,242,.035); color: var(--con-ink); cursor: pointer; transition: border-color 160ms ease, background 160ms ease, transform 160ms ease; }
+.con-load-more:hover { border-color: var(--con-purple); background: rgba(109,60,242,.08); transform: translateY(-1px); }
+.con-load-more strong { font-size: .78rem; }
+.con-load-more span { color: var(--con-muted); font-size: .64rem; }
 .con-card { position: relative; display: grid; grid-template-columns: 112px minmax(0, 1fr) auto; gap: 22px; align-items: stretch; overflow: hidden; padding: 22px; border: 1px solid var(--con-line); background: #fff; transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease; }
 .con-card::after { position: absolute; top: -1px; right: -1px; border-style: solid; border-width: 0 24px 24px 0; border-color: transparent rgba(109,60,242,.18) transparent transparent; content: ""; transition: border-width 160ms ease, border-color 160ms ease; }
 .con-card:hover { z-index: 1; border-color: rgba(109,60,242,.5); box-shadow: 8px 8px 0 rgba(109,60,242,.14); transform: translate(-2px, -2px); }

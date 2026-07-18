@@ -10,7 +10,9 @@ const YUNMANZHAN_URL = "https://www.yunmanzhan.com/index.php";
 const BILIBILI_VERSION = "134";
 const DEFAULT_TIMEOUT_MS = 15_000;
 const DEFAULT_YUNMANZHAN_PAGES = 4;
-const MAX_EVENTS = 260;
+const DEFAULT_DISCOVERY_MODE = "full";
+const DISCOVERY_CONCURRENCY = 3;
+const MISSING_RUN_LIMIT = 3;
 const DISCOVERY_SOURCE = {
   id: "yunmanzhan",
   name: "次元黄页",
@@ -64,16 +66,16 @@ const addDays = (date, days) => {
 const cleanCity = (value = "", fallbackName = "") => {
   const prefix = normalizeSpace(fallbackName)
     .replace(/^【[^】]+】/u, "")
-    .match(/^([^·]{1,12})·/)?.[1];
-  const raw = prefix || normalizeSpace(value).split("·").at(-1) || "";
+    .match(/^([^·•・]{1,12})[·•・]/u)?.[1];
+  const raw = prefix || normalizeSpace(value).split(/[·•・]/u).at(-1) || "";
   return raw
     .replace(/(壮族|回族|维吾尔族|彝族|土家族|苗族|蒙古族|藏族|傣族|白族|哈尼族|朝鲜族)*自治州$/u, "")
     .replace(/特别行政区$|市$/u, "")
-    .trim() || normalizeSpace(value);
+    .trim() || normalizeSpace(value) || "城市待确认";
 };
 
 const cleanEventName = (value = "") => normalizeSpace(value)
-  .replace(/^[^·]{1,12}·/, "")
+  .replace(/^[^·•・]{1,12}[·•・]/u, "")
   .replace(/^【免费(?:活动|漫展)?】/u, "")
   .trim();
 
@@ -141,7 +143,7 @@ const isYunmanzhanConventionLike = (item = {}) => {
   return /漫|动漫|二次元|次元|同人|only|cos|acg|电竞|游戏|国潮|宅舞|嘉年华/iu.test(name);
 };
 
-const sourceUrlForYunmanzhan = (externalId) => `${YUNMANZHAN_URL}?search=${encodeURIComponent(externalId)}`;
+const sourceUrlForYunmanzhan = (name) => `${YUNMANZHAN_URL}?search=${encodeURIComponent(cleanEventName(name))}`;
 
 export const parseYunmanzhanHtml = (html, page = 1) => {
   const events = [];
@@ -173,7 +175,7 @@ export const parseYunmanzhanHtml = (html, page = 1) => {
         : /延期/u.test(statusText)
           ? "已延期"
           : "待票务复核",
-      sourceUrl: sourceUrlForYunmanzhan(externalId),
+      sourceUrl: sourceUrlForYunmanzhan(rawName),
     });
   }
   return events;
@@ -251,6 +253,8 @@ export const conventionFromYunmanzhan = (item, observedAt) => ({
 });
 
 const findMatch = (events, candidate) => {
+  const idMatch = events.find((event) => event.id === candidate.id);
+  if (idMatch) return idMatch;
   const externalMatch = events.find((event) => Object.entries(candidate.externalIds || {})
     .some(([key, value]) => String(event.externalIds?.[key] || "") === String(value)));
   if (externalMatch) return externalMatch;
@@ -287,6 +291,8 @@ export const mergeCandidate = (events, candidate, observedAt) => {
   match.ticketSources = uniqueSources([...(match.ticketSources || []), ...(candidate.ticketSources || [])]);
   match.firstSeenAt ||= candidate.firstSeenAt || observedAt;
   match.lastSeenAt = observedAt;
+  delete match.missingSinceAt;
+  delete match.missingRuns;
   return match;
 };
 
@@ -462,6 +468,68 @@ const fetchYunmanzhanPages = async (pageCount) => {
   return pages;
 };
 
+export const parseYunmanzhanPageCount = (html = "") => {
+  const candidates = [
+    ...[...String(html).matchAll(/[?&]page=(\d+)/g)].map((match) => Number(match[1])),
+    ...[...String(html).matchAll(/\bmax=["'](\d+)["']/g)].map((match) => Number(match[1])),
+    ...[...String(html).matchAll(/共\s*(\d+)\s*页/g)].map((match) => Number(match[1])),
+  ].filter((value) => Number.isInteger(value) && value > 0);
+  return candidates.length ? Math.max(...candidates) : 1;
+};
+
+const monthWindows = (startDate, endDate) => {
+  const current = new Date(`${startDate.slice(0, 7)}-01T00:00:00Z`);
+  const end = new Date(`${endDate.slice(0, 7)}-01T00:00:00Z`);
+  const windows = [];
+  while (current <= end) {
+    windows.push({
+      year: current.getUTCFullYear(),
+      month: current.getUTCMonth() + 1,
+    });
+    current.setUTCMonth(current.getUTCMonth() + 1);
+  }
+  return windows;
+};
+
+const fetchYunmanzhanMonthPage = async ({ year, month, page }) => {
+  const url = new URL(YUNMANZHAN_URL);
+  url.searchParams.set("current_year", "1");
+  url.searchParams.set("year", String(year));
+  url.searchParams.set("month", String(month));
+  url.searchParams.set("sort", "time");
+  url.searchParams.set("page", String(page));
+  const html = await request(url);
+  const parsed = parseYunmanzhanHtml(html, page);
+  if (!parsed.length) throw new Error(`${year}-${String(month).padStart(2, "0")} 第 ${page} 页没有解析到漫展行`);
+  return { html, parsed };
+};
+
+const fetchYunmanzhanHorizon = async (today, horizon) => {
+  const events = [];
+  let pagesChecked = 0;
+  for (const window of monthWindows(today, horizon)) {
+    const first = await fetchYunmanzhanMonthPage({ ...window, page: 1 });
+    events.push(...first.parsed);
+    pagesChecked += 1;
+    const pageCount = parseYunmanzhanPageCount(first.html);
+    for (let page = 2; page <= pageCount; page += DISCOVERY_CONCURRENCY) {
+      const batch = Array.from(
+        { length: Math.min(DISCOVERY_CONCURRENCY, pageCount - page + 1) },
+        (_, index) => fetchYunmanzhanMonthPage({ ...window, page: page + index }),
+      );
+      const results = await Promise.all(batch);
+      results.forEach((result) => events.push(...result.parsed));
+      pagesChecked += results.length;
+    }
+  }
+  return {
+    items: events,
+    pagesChecked,
+    complete: true,
+    coverageMode: "full",
+  };
+};
+
 const bilibiliProjectIdsFromEvents = (events) => new Set(events.flatMap((event) => (event.ticketSources || [])
   .filter((source) => /B站会员购/u.test(source.platform))
   .map((source) => source.url.match(/[?&]id=(\d+)/)?.[1])
@@ -489,15 +557,20 @@ export const updateConventionDataset = async ({
   previous,
   now = new Date(),
   yunmanzhanPages = Number(process.env.CONVENTION_DISCOVERY_PAGES || DEFAULT_YUNMANZHAN_PAGES),
+  discoveryMode = process.env.CONVENTION_DISCOVERY_MODE || DEFAULT_DISCOVERY_MODE,
   fetchers = {},
 } = {}) => {
   const observedAt = timestampInShanghai(now);
   const today = dateInShanghai(now);
   const horizon = addDays(today, 120);
-  const events = previous.events.map((event) => withBaselineMetadata(structuredClone(event), observedAt));
+  const uniquePreviousEvents = [...new Map(previous.events.map((event) => [event.id, event])).values()];
+  const events = uniquePreviousEvents.map((event) => withBaselineMetadata(structuredClone(event), observedAt));
   const sourceHealth = [];
   let bilibiliItems = [];
   let yunmanzhanHealthy = false;
+  let yunmanzhanComplete = false;
+  let yunmanzhanPagesChecked = 0;
+  let yunmanzhanItemCount = 0;
 
   try {
     bilibiliItems = await (fetchers.bilibiliList || fetchBilibiliList)();
@@ -551,19 +624,35 @@ export const updateConventionDataset = async ({
   }
 
   try {
-    const discovered = await (fetchers.yunmanzhan || (() => fetchYunmanzhanPages(yunmanzhanPages)))();
+    const result = await (fetchers.yunmanzhan || (() => (
+      discoveryMode === "quick"
+        ? fetchYunmanzhanPages(yunmanzhanPages).then((items) => ({
+          items,
+          pagesChecked: yunmanzhanPages,
+          complete: false,
+          coverageMode: "quick",
+        }))
+        : fetchYunmanzhanHorizon(today, horizon)
+    )))();
+    const discovered = Array.isArray(result) ? result : result.items;
+    yunmanzhanComplete = Array.isArray(result) ? discoveryMode === "full" : Boolean(result.complete);
+    yunmanzhanPagesChecked = Array.isArray(result) ? yunmanzhanPages : Number(result.pagesChecked || 0);
     const eligible = discovered.filter((item) => item.endDate >= addDays(today, -7)
       && item.startDate <= horizon
       && isYunmanzhanConventionLike(item));
     for (const item of eligible) mergeCandidate(events, conventionFromYunmanzhan(item, observedAt), observedAt);
     yunmanzhanHealthy = true;
+    yunmanzhanItemCount = eligible.length;
     sourceHealth.push({
       sourceId: "yunmanzhan",
       status: "healthy",
       checkedAt: observedAt,
       itemCount: eligible.length,
-      pagesChecked: yunmanzhanPages,
-      note: "用于广覆盖发现；不会单独确认嘉宾。",
+      pagesChecked: yunmanzhanPagesChecked,
+      coverageMode: yunmanzhanComplete ? "full" : "quick",
+      note: yunmanzhanComplete
+        ? "已按月份完整扫描未来 120 天；用于广覆盖发现，不会单独确认嘉宾。"
+        : "本轮为高频轻量扫描；完整覆盖由每日任务补齐，不会因未出现在本轮而删除活动。",
     });
   } catch (error) {
     sourceHealth.push({
@@ -571,7 +660,8 @@ export const updateConventionDataset = async ({
       status: "unavailable",
       checkedAt: observedAt,
       itemCount: 0,
-      pagesChecked: yunmanzhanPages,
+      pagesChecked: yunmanzhanPagesChecked,
+      coverageMode: discoveryMode,
       error: compactError(error),
       note: "本轮发现源失败，已保留上一版活动。",
     });
@@ -592,16 +682,28 @@ export const updateConventionDataset = async ({
     note: "逐日出席、签售和临时变更仍以主办方官宣人工复核。",
   });
 
+  if (yunmanzhanHealthy && yunmanzhanComplete) {
+    events.forEach((event) => {
+      const missingFromCompleteScan = event.verificationLevel === "discovery-only"
+        && event.sourceIds?.length === 1
+        && event.sourceIds[0] === "yunmanzhan"
+        && event.lastSeenAt !== observedAt;
+      if (!missingFromCompleteScan) return;
+      event.missingSinceAt ||= observedAt;
+      event.missingRuns = Number(event.missingRuns || 0) + 1;
+    });
+  }
+
   const nextEvents = events
     .filter((event) => event.endDate >= addDays(today, -7)
       && event.startDate <= horizon
       && !(yunmanzhanHealthy
+        && yunmanzhanComplete
         && event.verificationLevel === "discovery-only"
         && event.sourceIds?.length === 1
         && event.sourceIds[0] === "yunmanzhan"
-        && event.lastSeenAt !== observedAt))
-    .sort((a, b) => a.startDate.localeCompare(b.startDate) || a.city.localeCompare(b.city, "zh-CN") || a.name.localeCompare(b.name, "zh-CN"))
-    .slice(0, MAX_EVENTS);
+        && Number(event.missingRuns || 0) >= MISSING_RUN_LIMIT))
+    .sort((a, b) => a.startDate.localeCompare(b.startDate) || a.city.localeCompare(b.city, "zh-CN") || a.name.localeCompare(b.name, "zh-CN"));
   const newChanges = diffEvents(previous.events, nextEvents, observedAt);
   const changes = [...newChanges, ...(previous.changes || [])]
     .filter((change, index, all) => all.findIndex((item) => item.id === change.id) === index)
@@ -613,7 +715,7 @@ export const updateConventionDataset = async ({
       .map((source) => [source.id, source])).values()],
     updatedAt: observedAt,
     checkedAt: observedAt,
-    coverage: `中国大陆未来 120 天 ACGN 漫展；B站会员购官方列表 + 次元黄页近 ${yunmanzhanPages * 50} 条发现记录，嘉宾仅展示平台结构化名单或主办方官宣`,
+    coverage: `中国大陆未来 120 天 ACGN 漫展；B站会员购官方列表 + 次元黄页${yunmanzhanComplete ? "完整月份扫描" : "高频轻量扫描"}（本轮 ${yunmanzhanPagesChecked} 页、${yunmanzhanItemCount} 条），嘉宾仅展示平台结构化名单或主办方官宣`,
     policy: "广覆盖发现不等于嘉宾确认；票务事实优先 B站会员购和大麦，嘉宾名单仅采用 B站结构化详情或主办方官宣，抓取失败保留上一版并公开来源健康度。",
     sourceHealth,
     changes,

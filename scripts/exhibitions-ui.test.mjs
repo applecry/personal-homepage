@@ -1,8 +1,7 @@
 import assert from "node:assert/strict";
-import { createRequire } from "node:module";
 import test from "node:test";
 
-const require = createRequire(import.meta.url);
+await import("../exhibitions-core.js");
 const {
   addDays,
   buildIcs,
@@ -13,7 +12,7 @@ const {
   eventMatchesDate,
   sortEvents,
   todayInTimeZone,
-} = require("../exhibitions-core.js");
+} = globalThis.ExhibitionAtlasCore;
 
 const event = {
   id: "chinajoy-2026",

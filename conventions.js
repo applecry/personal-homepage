@@ -11,11 +11,13 @@
     guestsForWindow,
     hasPublishedGuests,
     isSaved,
+    progressiveSlice,
     sortConventions,
   } = window.ConventionRadarCore;
   const { buildIcs, deriveEventStatus, todayInTimeZone } = window.ExhibitionAtlasCore;
   const SAVED_KEY = "exhibit-atlas-convention-follows-v1";
   const SNAPSHOT_KEY = "exhibit-atlas-convention-guests-v1";
+  const PAGE_SIZE = 24;
   const state = {
     events: [],
     sources: [],
@@ -26,6 +28,7 @@
     sort: "date",
     savedIds: new Set(),
     newGuests: new Map(),
+    visibleCount: PAGE_SIZE,
   };
 
   const list = app.querySelector("[data-convention-list]");
@@ -172,12 +175,22 @@
 
   const renderList = () => {
     const events = visibleEvents();
+    const page = progressiveSlice(events, state.visibleCount);
+    const loadMore = page.remaining
+      ? `<button class="con-load-more" type="button" data-load-more>
+          <strong>继续查看</strong><span>再显示 ${Math.min(PAGE_SIZE, page.remaining)} 场 · 还剩 ${page.remaining} 场</span>
+        </button>`
+      : "";
     list.innerHTML = events.length
-      ? events.map(renderCard).join("")
+      ? `${page.items.map(renderCard).join("")}${loadMore}`
       : `<div class="con-empty"><strong>没有匹配的近期漫展</strong><span>${state.scope === "saved" ? "还没有关注活动，先在全部近期里点一下“关注”。" : "试试清除搜索或筛选条件。"}</span></div>`;
     updateScopeButtons();
     updateSavedCount();
     renderResultsNote(events);
+  };
+
+  const resetVisibleCount = () => {
+    state.visibleCount = PAGE_SIZE;
   };
 
   const boardWindow = () => dateWindow(today(), state.dateMode) || {
@@ -372,6 +385,7 @@
     search.value = "";
     city.value = "all";
     dateMode.value = "all";
+    resetVisibleCount();
     renderList();
     renderGuestBoard();
   };
@@ -380,6 +394,7 @@
     const scopeButton = event.target.closest("[data-scope]");
     if (scopeButton) {
       state.scope = scopeButton.dataset.scope;
+      resetVisibleCount();
       renderList();
       renderGuestBoard();
       return;
@@ -398,9 +413,17 @@
       search.value = state.query;
       city.value = "all";
       dateMode.value = "all";
+      resetVisibleCount();
       renderList();
       renderGuestBoard();
       document.querySelector(".con-explorer")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+    const loadMoreButton = event.target.closest("[data-load-more]");
+    if (loadMoreButton) {
+      state.visibleCount += PAGE_SIZE;
+      renderList();
+      list.querySelector("[data-load-more]")?.focus();
       return;
     }
     const eventButton = event.target.closest("[data-open-event]");
@@ -414,19 +437,23 @@
 
   search.addEventListener("input", () => {
     state.query = search.value;
+    resetVisibleCount();
     renderList();
   });
   sort.addEventListener("change", () => {
     state.sort = sort.value;
+    resetVisibleCount();
     renderList();
   });
   city.addEventListener("change", () => {
     state.city = city.value;
+    resetVisibleCount();
     renderList();
     renderGuestBoard();
   });
   dateMode.addEventListener("change", () => {
     state.dateMode = dateMode.value;
+    resetVisibleCount();
     renderList();
     renderGuestBoard();
   });

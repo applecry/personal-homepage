@@ -539,9 +539,13 @@ const main = async () => {
     mergeVerifiedEvents([...preserved, ...collected], verifiedOfficialEvents),
     filingEvents,
   );
-  const mergedByKey = new Map();
+  const mergedById = new Map();
   for (const event of combined) {
-    if (event.endDate >= today) mergedByKey.set(eventKey(event), event);
+    if (event.endDate >= today) mergedById.set(event.id, event);
+  }
+  const mergedByKey = new Map();
+  for (const event of mergedById.values()) {
+    mergedByKey.set(eventKey(event), event);
   }
   const merged = [...mergedByKey.values()];
   merged.sort((a, b) => a.startDate.localeCompare(b.startDate) || a.nameZh.localeCompare(b.nameZh, "zh-CN"));

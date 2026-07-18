@@ -1,8 +1,7 @@
 import assert from "node:assert/strict";
-import { createRequire } from "node:module";
 import test from "node:test";
 
-const require = createRequire(import.meta.url);
+await import("../conventions-core.js");
 const {
   conventionMatches,
   dateWindow,
@@ -10,8 +9,9 @@ const {
   guestCount,
   guestsForWeekend,
   hasPublishedGuests,
+  progressiveSlice,
   sortConventions,
-} = require("../conventions-core.js");
+} = globalThis.ConventionRadarCore;
 
 const events = [
   {
@@ -100,4 +100,13 @@ test("guest count deduplicates the same person across conventions", () => {
 
 test("guest sorting prefers the fullest announced lineup", () => {
   assert.deepEqual(sortConventions(events.slice(0, 2), "guests").map((event) => event.id), ["ido", "axg"]);
+});
+
+test("progressive rendering reports shown and remaining events", () => {
+  assert.deepEqual(progressiveSlice(events, 2), {
+    items: events.slice(0, 2),
+    shown: 2,
+    remaining: 2,
+    total: 4,
+  });
 });
