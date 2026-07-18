@@ -43,6 +43,28 @@
     return event.startDate <= range.end && event.endDate >= range.start;
   };
 
+  const calendarDaysForMonth = (monthKey) => {
+    const [year, month] = String(monthKey).split("-").map(Number);
+    if (!year || !month || month < 1 || month > 12) return [];
+    const first = new Date(Date.UTC(year, month - 1, 1));
+    const mondayOffset = (first.getUTCDay() + 6) % 7;
+    const start = new Date(first);
+    start.setUTCDate(start.getUTCDate() - mondayOffset);
+    return Array.from({ length: 42 }, (_, index) => {
+      const date = new Date(start);
+      date.setUTCDate(start.getUTCDate() + index);
+      return {
+        date: formatIsoDate(date),
+        day: date.getUTCDate(),
+        inMonth: date.getUTCMonth() === month - 1,
+      };
+    });
+  };
+
+  const eventsOnDate = (events, date) => events.filter((event) => (
+    event.startDate <= date && event.endDate >= date
+  ));
+
   const sortEvents = (events, mode = "date") => [...events].sort((a, b) => {
     if (mode === "featured") {
       const featuredDifference = Number(Boolean(b.featured)) - Number(Boolean(a.featured));
@@ -122,9 +144,11 @@
   const core = {
     addDays,
     buildIcs,
+    calendarDaysForMonth,
     dateRangeFor,
     deriveEventStatus,
     escapeIcsText,
+    eventsOnDate,
     eventMatchesDate,
     foldIcsLine,
     sortEvents,

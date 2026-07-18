@@ -7,7 +7,7 @@
     <title>Exhibit Atlas 全球展览网 | applecry</title>
     <meta name="description" content="在一张地图上发现全球值得去的展会，按地区、时间与行业筛选，并直达官方信息。" />
     <link rel="stylesheet" href="./assets/vendor/leaflet.css" />
-    <link rel="stylesheet" href="./exhibitions.css?v=20260716-1" />
+    <link rel="stylesheet" href="./exhibitions.css?v=20260718-1" />
     <link rel="stylesheet" href="./page-agent.css?v=20260715-4" />
   </head>
   <body>
@@ -27,6 +27,7 @@
         </nav>
         <div class="atlas-actions">
           <a class="atlas-conventions-link" href="./conventions.html" aria-label="打开漫展嘉宾雷达"><span aria-hidden="true">✦</span><b>漫展嘉宾</b></a>
+          <button type="button" data-view-toggle aria-label="切换到日历视图" aria-pressed="false"><span aria-hidden="true">▦</span><b data-view-toggle-label>日历</b></button>
           <button type="button" data-search-toggle aria-label="搜索展会"><span aria-hidden="true">⌕</span><b>搜索</b></button>
           <button type="button" data-sources-toggle aria-label="查看数据源"><span aria-hidden="true">▤</span><b>数据源</b></button>
           <button type="button" data-saved-toggle aria-label="查看收藏"><span aria-hidden="true">♡</span><b><span data-saved-count>0</span> 收藏</b></button>
@@ -89,6 +90,39 @@
           <div class="atlas-list-scroll" data-event-list aria-live="polite"></div>
         </section>
 
+        <section class="atlas-calendar" data-calendar-panel aria-label="展会月历" aria-hidden="true">
+          <header class="atlas-calendar-head">
+            <div class="calendar-month-navigation">
+              <button type="button" data-calendar-prev aria-label="上一个月">←</button>
+              <div>
+                <span>EXHIBITION CALENDAR</span>
+                <h2 data-calendar-title aria-live="polite">2026 年 7 月</h2>
+              </div>
+              <button type="button" data-calendar-next aria-label="下一个月">→</button>
+              <button class="calendar-today" type="button" data-calendar-today>回到本月</button>
+            </div>
+            <div class="calendar-category-tabs" aria-label="日历展会类型筛选">
+              <button class="is-active" type="button" data-category="全部">全部</button>
+              <button type="button" data-category="艺术">艺术</button>
+              <button type="button" data-category="科技">科技</button>
+              <button type="button" data-category="游戏">游戏</button>
+              <button type="button" data-category="商贸">商贸</button>
+            </div>
+            <p class="calendar-month-total"><strong data-calendar-count>0</strong><span>场展会与本月有交集</span></p>
+          </header>
+          <div class="atlas-calendar-weekdays" aria-hidden="true">
+            <span>周一</span><span>周二</span><span>周三</span><span>周四</span><span>周五</span><span>周六</span><span>周日</span>
+          </div>
+          <div class="atlas-calendar-grid" data-calendar-grid role="grid" aria-labelledby="atlas-title"></div>
+          <aside class="calendar-agenda" data-calendar-agenda aria-hidden="true">
+            <header>
+              <div><span>DAY AGENDA</span><h3 data-calendar-agenda-title>当日展会</h3></div>
+              <button type="button" data-calendar-agenda-close aria-label="关闭当日展会清单">×</button>
+            </header>
+            <div data-calendar-agenda-list></div>
+          </aside>
+        </section>
+
         <aside class="atlas-venue-preview" data-venue-panel aria-hidden="true">
           <button class="atlas-venue-close" type="button" data-venue-close aria-label="关闭场馆预览">×</button>
           <div data-venue-content></div>
@@ -138,8 +172,8 @@
       </button>
     </div>
     <script src="./assets/vendor/leaflet.js"></script>
-    <script src="./exhibitions-core.js?v=20260715-1"></script>
-    <script src="./exhibitions.js?v=20260715-4"></script>
+    <script src="./exhibitions-core.js?v=20260718-1"></script>
+    <script src="./exhibitions.js?v=20260718-1"></script>
     <script src="./page-agent-knowledge.js?v=20260716-1"></script>
     <script src="./script.js?v=20260716-1"></script>
   </body>

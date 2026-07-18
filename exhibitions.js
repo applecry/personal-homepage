@@ -3,9 +3,11 @@ const app = document.querySelector("[data-atlas-app]");
 if (app && window.L && window.ExhibitionAtlasCore) {
   const {
     buildIcs,
+    calendarDaysForMonth,
     dateRangeFor,
     deriveEventStatus,
     eventMatchesDate,
+    eventsOnDate,
     sortEvents,
     todayInTimeZone,
   } = window.ExhibitionAtlasCore;
@@ -50,6 +52,9 @@ if (app && window.L && window.ExhibitionAtlasCore) {
     eventRows: new Map(),
     activeVenueId: "",
     activeEventId: "",
+    viewMode: "map",
+    calendarMonth: "",
+    calendarAgendaDate: "",
   };
 
   const map = L.map("exhibition-map", { zoomControl: false, minZoom: 2, maxZoom: 14, worldCopyJump: true }).setView([31.2304, 121.4737], 10.4);
@@ -75,6 +80,14 @@ if (app && window.L && window.ExhibitionAtlasCore) {
   const dateStartInput = app.querySelector("[data-date-start]");
   const dateEndInput = app.querySelector("[data-date-end]");
   const dateError = app.querySelector("[data-date-error]");
+  const calendarPanel = app.querySelector("[data-calendar-panel]");
+  const calendarGrid = app.querySelector("[data-calendar-grid]");
+  const calendarTitle = app.querySelector("[data-calendar-title]");
+  const calendarCount = app.querySelector("[data-calendar-count]");
+  const calendarAgenda = app.querySelector("[data-calendar-agenda]");
+  const calendarAgendaTitle = app.querySelector("[data-calendar-agenda-title]");
+  const calendarAgendaList = app.querySelector("[data-calendar-agenda-list]");
+  const viewToggle = app.querySelector("[data-view-toggle]");
 
   const escapeHtml = (value = "") => String(value).replace(/[&<>"]/g, (character) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;",
@@ -91,6 +104,7 @@ if (app && window.L && window.ExhibitionAtlasCore) {
   };
 
   const currentDate = () => todayInTimeZone(new Date(), "Asia/Shanghai");
+  state.calendarMonth = currentDate().slice(0, 7);
   const activeDateRange = () => dateRangeFor(state.dateMode, currentDate(), state.dateStart, state.dateEnd);
 
   const verificationState = (event) => {
@@ -226,6 +240,125 @@ if (app && window.L && window.ExhibitionAtlasCore) {
       return regionMatch && categoryMatch && queryMatch && savedMatch && eventMatchesDate(event, dateRange);
     });
     return sortEvents(matches, state.sortMode);
+  };
+
+  const calendarFilteredEvents = () => {
+    const query = state.query.trim().toLowerCase();
+    return sortEvents(state.events.filter((event) => {
+      const regionMatch = regionMatches(event);
+      const categoryMatch = state.category === "全部" || event.category === state.category;
+      const searchMatch = !query || [event.nameZh, event.name, event.city, event.country, event.venue, event.summary]
+        .some((value) => String(value || "").toLowerCase().includes(query));
+      const savedMatch = !state.savedOnly || state.saved.has(event.id);
+      return regionMatch && categoryMatch && searchMatch && savedMatch;
+    }), state.sortMode);
+  };
+
+  const monthRange = (monthKey) => {
+    const [year, month] = monthKey.split("-").map(Number);
+    const end = new Date(Date.UTC(year, month, 0));
+    return {
+      start: `${monthKey}-01`,
+      end: `${end.getUTCFullYear()}-${String(end.getUTCMonth() + 1).padStart(2, "0")}-${String(end.getUTCDate()).padStart(2, "0")}`,
+    };
+  };
+
+  const shiftCalendarMonth = (amount) => {
+    const [year, month] = state.calendarMonth.split("-").map(Number);
+    const next = new Date(Date.UTC(year, month - 1 + amount, 1));
+    state.calendarMonth = `${next.getUTCFullYear()}-${String(next.getUTCMonth() + 1).padStart(2, "0")}`;
+    state.calendarAgendaDate = "";
+    renderCalendar();
+  };
+
+  const closeCalendarAgenda = () => {
+    state.calendarAgendaDate = "";
+    calendarAgenda.classList.remove("is-open");
+    calendarAgenda.setAttribute("aria-hidden", "true");
+  };
+
+  const openCalendarAgenda = (date, dayEvents) => {
+    state.calendarAgendaDate = date;
+    const value = new Date(`${date}T00:00:00Z`);
+    calendarAgendaTitle.textContent = `${value.getUTCMonth() + 1} 月 ${value.getUTCDate()} 日 · ${dayEvents.length} 场`;
+    calendarAgendaList.textContent = "";
+    dayEvents.forEach((event) => {
+      const button = document.createElement("button");
+      button.className = "calendar-agenda-event";
+      button.type = "button";
+      button.style.setProperty("--event-color", colors[event.category] || colors.商贸);
+      button.innerHTML = `<span><strong>${escapeHtml(event.nameZh)}</strong><small>${escapeHtml(event.city)} · ${escapeHtml(event.venue)}</small></span><i aria-hidden="true">›</i>`;
+      button.addEventListener("click", () => openDetail(event, { focusMap: false }));
+      calendarAgendaList.append(button);
+    });
+    calendarAgenda.classList.add("is-open");
+    calendarAgenda.setAttribute("aria-hidden", "false");
+  };
+
+  function renderCalendar() {
+    const events = calendarFilteredEvents();
+    const days = calendarDaysForMonth(state.calendarMonth);
+    const [year, month] = state.calendarMonth.split("-").map(Number);
+    const range = monthRange(state.calendarMonth);
+    const monthEvents = events.filter((event) => event.startDate <= range.end && event.endDate >= range.start);
+    calendarTitle.textContent = `${year} 年 ${month} 月`;
+    calendarCount.textContent = monthEvents.length;
+    calendarGrid.textContent = "";
+
+    days.forEach((day) => {
+      const dayEvents = eventsOnDate(events, day.date);
+      const cell = document.createElement("div");
+      cell.className = `calendar-day${day.inMonth ? "" : " is-outside"}${day.date === currentDate() ? " is-today" : ""}`;
+      cell.setAttribute("role", "gridcell");
+      cell.setAttribute("aria-label", `${day.date}，${dayEvents.length} 场展会`);
+      const visibleEvents = dayEvents.slice(0, 3);
+      cell.innerHTML = `
+        <button class="calendar-day-top" type="button"${dayEvents.length ? "" : " disabled"}>
+          <span class="calendar-day-number">${day.day}</span>
+          ${dayEvents.length ? `<span class="calendar-day-count">${dayEvents.length} 场</span>` : ""}
+        </button>
+        <div class="calendar-day-events">
+          ${visibleEvents.map((event) => `<button class="calendar-event-chip" type="button" data-calendar-event="${escapeHtml(event.id)}" style="--event-color:${colors[event.category] || colors.商贸}" title="${escapeHtml(event.nameZh)}"><span>${escapeHtml(event.nameZh)}</span></button>`).join("")}
+          ${dayEvents.length > 3 ? `<button class="calendar-day-more" type="button" data-calendar-more>+${dayEvents.length - 3} 场，查看当日</button>` : ""}
+          ${!dayEvents.length ? '<span class="calendar-day-empty">暂无排期</span>' : ""}
+        </div>`;
+      cell.querySelectorAll("[data-calendar-event]").forEach((button) => button.addEventListener("click", () => {
+        const event = dayEvents.find((item) => item.id === button.dataset.calendarEvent);
+        if (event) openDetail(event, { focusMap: false });
+      }));
+      cell.querySelector("[data-calendar-more]")?.addEventListener("click", () => openCalendarAgenda(day.date, dayEvents));
+      cell.querySelector(".calendar-day-top").addEventListener("click", () => {
+        if (dayEvents.length) openCalendarAgenda(day.date, dayEvents);
+      });
+      calendarGrid.append(cell);
+    });
+
+    if (state.calendarAgendaDate) {
+      const selectedEvents = eventsOnDate(events, state.calendarAgendaDate);
+      if (selectedEvents.length) openCalendarAgenda(state.calendarAgendaDate, selectedEvents);
+      else closeCalendarAgenda();
+    }
+  }
+
+  const setViewMode = (mode) => {
+    state.viewMode = mode === "calendar" ? "calendar" : "map";
+    const calendarActive = state.viewMode === "calendar";
+    app.classList.toggle("is-calendar-view", calendarActive);
+    calendarPanel.setAttribute("aria-hidden", String(!calendarActive));
+    viewToggle.classList.toggle("is-active", calendarActive);
+    viewToggle.setAttribute("aria-pressed", String(calendarActive));
+    viewToggle.setAttribute("aria-label", calendarActive ? "切换到地图视图" : "切换到日历视图");
+    app.querySelector("[data-view-toggle-label]").textContent = calendarActive ? "地图" : "日历";
+    if (calendarActive) {
+      closeVenue();
+      renderCalendar();
+    } else {
+      closeCalendarAgenda();
+      window.setTimeout(() => {
+        map.invalidateSize();
+        focusMap();
+      }, 0);
+    }
   };
 
   const venuePointsFor = (event) => {
@@ -611,6 +744,7 @@ if (app && window.L && window.ExhibitionAtlasCore) {
     app.querySelector("[data-list-label]").textContent = `${state.savedOnly ? "我的收藏" : state.region === "全部" ? "全球" : state.region} · ${state.category} · ${dateLabels[state.dateMode]}`;
     app.querySelector("[data-atlas-title]").textContent = `${state.region === "全部" ? "全球" : state.region}展览`;
     syncFilterControls();
+    if (state.viewMode === "calendar") renderCalendar();
     restoreHighlights();
   };
 
@@ -629,6 +763,15 @@ if (app && window.L && window.ExhibitionAtlasCore) {
 
   app.querySelector("[data-detail-close]").addEventListener("click", closeDetail);
   app.querySelector("[data-venue-close]").addEventListener("click", closeVenue);
+  viewToggle.addEventListener("click", () => setViewMode(state.viewMode === "calendar" ? "map" : "calendar"));
+  app.querySelector("[data-calendar-prev]").addEventListener("click", () => shiftCalendarMonth(-1));
+  app.querySelector("[data-calendar-next]").addEventListener("click", () => shiftCalendarMonth(1));
+  app.querySelector("[data-calendar-today]").addEventListener("click", () => {
+    state.calendarMonth = currentDate().slice(0, 7);
+    closeCalendarAgenda();
+    renderCalendar();
+  });
+  app.querySelector("[data-calendar-agenda-close]").addEventListener("click", closeCalendarAgenda);
   app.querySelector("[data-search-toggle]").addEventListener("click", () => {
     searchPanel.classList.add("is-open");
     searchPanel.setAttribute("aria-hidden", "false");
@@ -681,6 +824,14 @@ if (app && window.L && window.ExhibitionAtlasCore) {
     syncAtlasPanelState();
   });
   app.querySelector("[data-sources-close]").addEventListener("click", closeSources);
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    if (calendarAgenda.classList.contains("is-open")) closeCalendarAgenda();
+    else if (detailPanel.classList.contains("is-open")) closeDetail();
+    else if (venuePanel.classList.contains("is-open")) closeVenue();
+    else if (sourcesPanel.classList.contains("is-open")) closeSources();
+  });
 
   const renderSocialSignals = (signals) => {
     const items = signals?.items || [];

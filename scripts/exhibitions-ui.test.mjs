@@ -6,8 +6,10 @@ const require = createRequire(import.meta.url);
 const {
   addDays,
   buildIcs,
+  calendarDaysForMonth,
   dateRangeFor,
   deriveEventStatus,
+  eventsOnDate,
   eventMatchesDate,
   sortEvents,
   todayInTimeZone,
@@ -53,6 +55,20 @@ test("future 30 days includes today and the twenty-ninth following day", () => {
     start: "2026-07-15",
     end: "2026-08-13",
   });
+});
+
+test("calendar month uses a stable Monday-first six-week grid", () => {
+  const days = calendarDaysForMonth("2026-07");
+  assert.equal(days.length, 42);
+  assert.deepEqual(days[0], { date: "2026-06-29", day: 29, inMonth: false });
+  assert.deepEqual(days[41], { date: "2026-08-09", day: 9, inMonth: false });
+});
+
+test("calendar date includes every overlapping multi-day exhibition", () => {
+  assert.deepEqual(eventsOnDate([
+    event,
+    { ...event, id: "later", startDate: "2026-08-04", endDate: "2026-08-05" },
+  ], "2026-08-01").map((item) => item.id), ["chinajoy-2026"]);
 });
 
 test("derived status respects explicit cancellation before calendar dates", () => {
