@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
+import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const DATA_URL = new URL("../data/conventions.json", import.meta.url);
@@ -642,6 +643,6 @@ const main = async () => {
   }, null, 2));
 };
 
-if (process.argv[1] && fileURLToPath(import.meta.url) === fileURLToPath(new URL(`file:///${process.argv[1].replace(/\\/g, "/")}`))) {
+if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
   await main();
 }
