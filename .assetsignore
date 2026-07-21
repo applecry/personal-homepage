@@ -1,0 +1,4 @@
+# Deployment metadata and local dependencies are not public site assets.
+**/.git
+**/node_modules
+**/.DS_Store
