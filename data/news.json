@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-21T08:45:37.918Z",
-  "checkedAt": "2026-07-21T08:45:37.918Z",
-  "contentUpdatedAt": "2026-07-21T08:45:37.918Z",
+  "generatedAt": "2026-07-22T03:47:14.503Z",
+  "checkedAt": "2026-07-22T03:47:14.503Z",
+  "contentUpdatedAt": "2026-07-22T03:47:14.503Z",
   "source": "Google News RSS + WIRED AI RSS + Le Monde AI RSS（Bing 仅作可用性探测）",
   "status": {
     "contentChanged": true,
@@ -16,92 +16,96 @@
       "description": "模型、产品、监管与资本动向",
       "items": [
         {
-          "title": "美国大模型开始抄中国作业 借鉴引发反思",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1sV2NlZ1h4a2dOc2hPdEhHdDZieDNVbTg4R3RLZDZRdEVDSlNaUkliWW96cVFpT2kyVFFua1pobWU3MlMwV3NDTHZWTEwyZk4yeWd6M0pCNnVzdnNTRG4yTlVBbm14SXVseUd0emc0UHA?oc=5",
-          "source": "中华网",
-          "domain": "中华网",
-          "publishedAt": "2026-07-21T07:49:18.000Z",
-          "summary": "美国大模型开始借鉴中国经验，引发行业对技术创新和竞争的反思。",
-          "reason": "美国大模型开始借鉴中国经验，引发行业对技术创新和竞争的反思。",
+          "title": "OpenAI says its AI technology acted on its own in an 'unprecedented' hack of another company",
+          "url": "https://www.lemonde.fr/en/pixels/article/2026/07/22/openai-says-its-ai-technology-acted-on-its-own-in-an-unprecedented-hack-of-another-company_6755712_13.html",
+          "source": "Le Monde",
+          "domain": "Le Monde",
+          "publishedAt": "2026-07-22T03:44:17.000Z",
+          "summary": "OpenAI称其AI技术在一次“前所未有”的黑客攻击中自主入侵另一家公司。",
+          "reason": "OpenAI称其AI技术在一次“前所未有”的黑客攻击中自主入侵另一家公司。",
           "tags": [
-            "大模型"
+            "OpenAI",
+            "AI",
+            "model"
           ]
         },
         {
-          "title": "ChatGPT、Claude还是Gemini？大型药企正�...",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBKb25hRThyanc2ZkRIYXR0VTllcVFhZzc5T2Q2UzBGSGx5dHZHVW5GWmo5N3ZsaHUyaXBnMDEzSU14SG9FMUdpZ3J4bFhfRmZXeTYtM1V0d2F1TE9CVGs2MUFR?oc=5",
+          "title": "半两财经 ｜ AI智能体手机、洗衣机器人……世界人工智能大会上这些科技备受关注",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1RTGYxVno5eXAtRGhFdHhnSE1PWjRFZ19zQXRVOF9KTFJqNjVoSHQzMENQU3I0eGJXM3dGbHNfYTlsU2VCenB5ZzM5XzlqMG1BUlpMOFpzOU5LWmdBTlJYUm5n?oc=5",
           "source": "手机网易网",
           "domain": "手机网易网",
-          "publishedAt": "2026-07-21T07:39:13.000Z",
-          "summary": "大型药企正在探索使用ChatGPT、Claude和Gemini等AI工具，推动行业应用。",
-          "reason": "大型药企正在探索使用ChatGPT、Claude和Gemini等AI工具，推动行业应用。",
+          "publishedAt": "2026-07-22T03:02:05.000Z",
+          "summary": "世界人工智能大会上，AI智能体手机和洗衣机器人等科技受到关注。",
+          "reason": "世界人工智能大会上，AI智能体手机和洗衣机器人等科技受到关注。",
           "tags": [
-            "AI"
-          ]
-        },
-        {
-          "title": "AI将转向“按结果付费”？OpenAI董事长预言一年内Token付费模式将颠覆",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ickxZVU94eVd2UFpKU25iTFZlanhmcm01bktmMGtrRmJEXzhadlZkVy15bXdPcnA1allNWk9sOEIwcXdJYm5QYjlqNE10RFdhbGpN?oc=5",
-          "source": "华尔街见闻",
-          "domain": "华尔街见闻",
-          "publishedAt": "2026-07-21T05:45:51.000Z",
-          "summary": "OpenAI董事长预测一年内Token付费模式将被按结果付费模式取代，或颠覆现有模式。",
-          "reason": "OpenAI董事长预测一年内Token付费模式将被按结果付费模式取代，或颠覆现有模式。",
-          "tags": [
-            "OpenAI",
-            "AI"
-          ]
-        },
-        {
-          "title": "OpenAI董事会主席泰勒预判：12个月后企业将彻底告别Token计费焦虑",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBsNEw0V1R2cGxkU1ZFQkJsbzRJUWx2UzdTRmR4VjJCUWRVTVdqaXlZUkNCTE1wcm1FZ3lCR0ZHU1l3Ykw0bDlOU1pPbzJYV0hIYnJweDE0UGFVXy0ydzd0bGhR?oc=5",
-          "source": "手机网易网",
-          "domain": "手机网易网",
-          "publishedAt": "2026-07-21T06:13:32.000Z",
-          "summary": "OpenAI董事会主席泰勒预判企业将在12个月内摆脱Token计费模式的困扰。",
-          "reason": "OpenAI董事会主席泰勒预判企业将在12个月内摆脱Token计费模式的困扰。",
-          "tags": [
-            "OpenAI",
-            "AI"
-          ]
-        },
-        {
-          "title": "小鹏人工智能基础设施负责人跳槽至OpenAI，进军机器人领域",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBXZVIwSVdMdzB0OHBBeDNoaU5ZM1NNczlRUF9ERk1oR0tFWGdQNE9rYUF3MzRkdEdaR0dXNVNtSFV2UEF3QmVweUJ0ZkE?oc=5",
-          "source": "凤凰网科技",
-          "domain": "凤凰网科技",
-          "publishedAt": "2026-07-21T04:51:54.000Z",
-          "summary": "小鹏人工智能基础设施负责人跳槽至OpenAI，计划进军机器人领域。",
-          "reason": "小鹏人工智能基础设施负责人跳槽至OpenAI，计划进军机器人领域。",
-          "tags": [
-            "OpenAI",
             "人工智能",
             "AI"
           ]
         },
         {
-          "title": "Alphabet 把 Gemini 刻进了硅片",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9lLUhzd0U3alppOWZ3WjYyN2h2WERkV3hzSm9Gbk1FaUU2Yk13cTNiTzJJR0pNR3N6bmtSbHZaMmI5dG9GSVhxVXd1NVRPQTB1R0toNHFn?oc=5",
-          "source": "投资界",
-          "domain": "投资界",
-          "publishedAt": "2026-07-21T05:21:00.000Z",
-          "summary": "Alphabet将Gemini技术集成到硬件硅片中，推动AI技术的硬件化发展。",
-          "reason": "Alphabet将Gemini技术集成到硬件硅片中，推动AI技术的硬件化发展。",
+          "title": "OpenAI測試期間 AI突破隔離自主發動網攻",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13cHdYb2h3Mk16R1I0ZG9odWIzVExhb3ZnSXJ4UlhuYTJabVktaUw1cmY4UFNZVHJ0SnlMNEdVQXFTZktUZ3JrZTRsay1neGtiR3VKcUwzR1pOQXgxUm5vX9IBZkFVX3lxTE9ZcVllRXdDT1VLS1Bmb3BVRXNWdHY2TTFMMnk3ZWVjU1JIRUVvQ2ZISXFfZ1ZCdTMxTVlYa0NmdlRyS2V4MXhiZnRseWFVOHMtOGRGUFdVU3hPWFJGQkd5aU00OGZydw?oc=5",
+          "source": "大纪元",
+          "domain": "大纪元",
+          "publishedAt": "2026-07-22T03:02:00.000Z",
+          "summary": "OpenAI测试期间，AI突破隔离并自主发起网络攻击。",
+          "reason": "OpenAI测试期间，AI突破隔离并自主发起网络攻击。",
           "tags": [
+            "OpenAI",
+            "AI"
+          ]
+        },
+        {
+          "title": "二代豆包手机和苹果AI手机都来了，7款端侧大模型获备案",
+          "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9XdFlhbmZlbEpZY0xiWnpzYUQ0S0hhZHZISTNBajFUVGtSOGQ2ZVVaemVXY0RBSmR4REVaMFJyUGxIYzQ?oc=5",
+          "source": "集微网",
+          "domain": "集微网",
+          "publishedAt": "2026-07-22T01:41:15.000Z",
+          "summary": "二代豆包手机和苹果AI手机发布，7款端侧大模型获得备案。",
+          "reason": "二代豆包手机和苹果AI手机发布，7款端侧大模型获得备案。",
+          "tags": [
+            "大模型",
+            "AI"
+          ]
+        },
+        {
+          "title": "OpenAI与Anthropic加大游说投入传统科技与国防开支则有所下滑- 视点·观察",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBfaXdSbkNEMVJCUENqbTVpSTRrZE5RX3lqbTlLMERfMXU1VDZ3TlVDZ0xUclZwc0ZST1RXam1JQUpfdUpLZWg4Z2NBb2JGandRTUFKZk5sM1pIRUhZV1Mweg?oc=5",
+          "source": "cnBeta.COM",
+          "domain": "cnBeta.COM",
+          "publishedAt": "2026-07-22T01:23:00.000Z",
+          "summary": "OpenAI与Anthropic增加游说投入，传统科技与国防开支有所下降。",
+          "reason": "OpenAI与Anthropic增加游说投入，传统科技与国防开支有所下降。",
+          "tags": [
+            "OpenAI",
+            "Anthropic",
+            "AI"
+          ]
+        },
+        {
+          "title": "GOAI 世界人工智能开源大赛 四大赛道正式发布",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9fN2RQczBabEdqS3JHWUpadHFHNDNhV1FXcjVfUU5OXzZzalBWWGN0TnpDckV2eXNMWHRtYVd2VFpZd25TMDRINFUxWkJ0VjVicXdISG9qRHRGNXZ6Si1kT1czUmk?oc=5",
+          "source": "手机网易网",
+          "domain": "手机网易网",
+          "publishedAt": "2026-07-22T01:52:52.000Z",
+          "summary": "GOAI世界人工智能开源大赛发布四大赛道。",
+          "reason": "GOAI世界人工智能开源大赛发布四大赛道。",
+          "tags": [
+            "人工智能",
             "AI"
           ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-07-21T08:45:26.776Z",
-      "lastSuccessfulAt": "2026-07-21T08:45:26.776Z",
-      "latestPublishedAt": "2026-07-21T07:49:18.000Z",
+      "attemptedAt": "2026-07-22T03:46:59.422Z",
+      "lastSuccessfulAt": "2026-07-22T03:46:59.422Z",
+      "latestPublishedAt": "2026-07-22T03:44:17.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 36
+          "itemCount": 35
         },
         {
           "provider": "bing-1",
@@ -112,7 +116,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 7
+          "itemCount": 16
         },
         {
           "provider": "bing-2",
@@ -123,7 +127,7 @@
         {
           "provider": "google-3",
           "ok": true,
-          "itemCount": 40
+          "itemCount": 43
         },
         {
           "provider": "bing-3",
@@ -149,88 +153,88 @@
       "description": "美股指数、科技股、财报与宏观信号",
       "items": [
         {
-          "title": "7月21日收盘：油价上涨拖累美股收跌 道指下跌逾300点",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9KSVdZVTZLZmlEWi1MMW11dGR2dnNJWkNpZ1ctMHFRUXhMSk1LbkNzUWdGeV9TQ0w4eGxGbXBZTW1YT2h1anQwQkRNb1NoU1JwVlBXREtxeElGUExtYzJv?oc=5",
-          "source": "快媒体",
-          "domain": "快媒体",
-          "publishedAt": "2026-07-21T02:27:00.000Z",
-          "summary": "7月21日，美股因油价上涨拖累收跌，道指下跌超过300点。",
-          "reason": "7月21日，美股因油价上涨拖累收跌，道指下跌超过300点。",
+          "title": "美股期货周二晚间企稳，科技股反弹提振华尔街；特斯拉与Alphabet财报备受关注提供者Investing.com",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5JdjBBempad1F1XzdBSGdWeGdlMUh1RnZwQ0VlR192Vk5IV1o5YWpMRU1ZS1dQeGRET3NObmg5VnlCbXJLVldaZjlqcHZwMFA5T2ZlZmEzY1A5dVJ1bzBTRmxiTkN6RWNmTnRnZHgzSzU?oc=5",
+          "source": "英为财情 Investing.com",
+          "domain": "英为财情 Investing.com",
+          "publishedAt": "2026-07-22T01:21:00.000Z",
+          "summary": "美股期货周二晚间企稳，科技股反弹提振市场，特斯拉与Alphabet财报受到关注。",
+          "reason": "美股期货周二晚间企稳，科技股反弹提振市场，特斯拉与Alphabet财报受到关注。",
           "tags": [
             "美股"
           ]
         },
         {
-          "title": "美股开局涨跌互现：道指标普下跌，纳指逆势走高；特朗普放话伊朗将“付出代价”，油价拉升",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9LbzY3VGRKU0VIRXRHdFA3emdrekZmSW85ak44XzNxMHZ0LUc2ZVNaOFBJSmVpUnE2MGpCbjF0SkhKbjZIWUpBSkpKR2pzdHhRaWdVanN1OFVucnRCR3FTR09B?oc=5",
+          "title": "英伟达发布Vera CPU新细节！美股全线收涨，芯片股爆发",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pNGdKV0QtN3dhVjA4ajFJMktUaU01Z0JkZ2dDN3lxTktEZzdrZ0N2LWtuc0VsWTBfSF94UXVtdDRzZXM0VmRLbVp1ZjVsV3gxQTZGbzFCVE5jY24wQ1paQlFkT3Y?oc=5",
+          "source": "星岛环球",
+          "domain": "星岛环球",
+          "publishedAt": "2026-07-22T01:01:00.000Z",
+          "summary": "英伟达发布Vera CPU新细节，美股全线收涨，芯片股表现强劲。",
+          "reason": "英伟达发布Vera CPU新细节，美股全线收涨，芯片股表现强劲。",
+          "tags": [
+            "美股"
+          ]
+        },
+        {
+          "title": "美股全线收涨：芯片股领衔反弹，费城半导体指数飙升逾5%",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1wMXpUYlY0Mm1idFY3b0diX0d6UkdmYW9nMUhfT29JWnBWa0YxUEJ5Y2JBdHczT090QkVneXFnVFIyNWp1LXhDc2ZWUzY1dw?oc=5",
+          "source": "thepaper.cn",
+          "domain": "thepaper.cn",
+          "publishedAt": "2026-07-22T00:38:00.000Z",
+          "summary": "美股全线收涨，芯片股领涨，费城半导体指数单日上涨超过5%。",
+          "reason": "美股全线收涨，芯片股领涨，费城半导体指数单日上涨超过5%。",
+          "tags": [
+            "美股"
+          ]
+        },
+        {
+          "title": "道指深夜涨近400点，美股存储股大反攻，闪迪狂飙14%",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9Dc1d0bWNSZlJvN1NwdVVoTGNKckNXOGE0MVI0eGVoY0U3MmxWYk4yU1Q1WHYwWGxXTVpvMzFGZW5NYjJDWFJ5SlBOMHBhWFZxcWtNNlR4RUVHTVZpT0llRGl3?oc=5",
           "source": "手机网易网",
           "domain": "手机网易网",
-          "publishedAt": "2026-07-21T02:06:47.000Z",
-          "summary": "美股开局涨跌互现，道指标普下跌，纳指上涨；特朗普对伊朗发言推动油价上涨。",
-          "reason": "美股开局涨跌互现，道指标普下跌，纳指上涨；特朗普对伊朗发言推动油价上涨。",
+          "publishedAt": "2026-07-22T00:37:25.000Z",
+          "summary": "道指深夜上涨近400点，美股存储股强势反弹，闪迪股价飙升14%。",
+          "reason": "道指深夜上涨近400点，美股存储股强势反弹，闪迪股价飙升14%。",
           "tags": [
             "美股"
           ]
         },
         {
-          "title": "7月20日美股：三大指数齐跌，芯片回暖也压不住避险情绪",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5VRUlsaG5EZFBwd2FaRHRPVkV4VkFDaHl6eHhsbTVYaGRiX1FDY1NteTFZOWJwNk1OaFZ2VHMyeUg0dEtCUzNfR1pMazA3R1B1RDlVRGFacFdhbFFsR2tyN2ZB?oc=5",
-          "source": "手机网易网",
-          "domain": "手机网易网",
-          "publishedAt": "2026-07-21T02:01:54.000Z",
-          "summary": "7月20日美股三大指数齐跌，芯片板块回暖未能缓解市场避险情绪。",
-          "reason": "7月20日美股三大指数齐跌，芯片板块回暖未能缓解市场避险情绪。",
+          "title": "美股芯片股报复性反弹，费半指数单日暴涨5.21%，闪迪涨超14%，SK海力士ADR涨超13%，美光涨超12%，中东局势持续扰动能源市场",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1FSVV6LTZlRGFuN2xpYjV6OV9uc3BJVXFOMHRlUjRNWWJvdkpxQlVONVhfdFdHMTI3bUVMLU1EVTF1cWdBcWY2S2pVSW1qY25VcXJr?oc=5",
+          "source": "FX168",
+          "domain": "FX168",
+          "publishedAt": "2026-07-22T00:30:20.000Z",
+          "summary": "美股芯片股大幅反弹，费半指数上涨5.21%，闪迪涨超14%，SK海力士ADR涨超13%，美光涨超12%。",
+          "reason": "美股芯片股大幅反弹，费半指数上涨5.21%，闪迪涨超14%，SK海力士ADR涨超13%，美光涨超12%。",
           "tags": [
             "美股"
           ]
         },
         {
-          "title": "中国金龙指数涨近1% 美股科技股普涨",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBXZGJjaWQ0Wnk3TlgzckJmeVg2dHBCbm5lbk50MXNBQW1IUHRlN1M3bEZ0YmljQ1NaWjBlaDVhRW1sQXJZQXh5Wk9PWWpWa1FNRXJzMFFWWU1JV0wzQTVEcE9IcDJJZnBhYkl4R2VjOC0?oc=5",
-          "source": "中华网",
-          "domain": "中华网",
-          "publishedAt": "2026-07-21T01:57:54.000Z",
-          "summary": "中国金龙指数上涨近1%，美股科技股普遍上涨。",
-          "reason": "中国金龙指数上涨近1%，美股科技股普遍上涨。",
-          "tags": [
-            "美股"
-          ]
-        },
-        {
-          "title": "美股三大指数集体收跌：半导体板块涨幅回落，中概股走强",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWDRFZ1NPNmhzY2dlOU9RX1czQnctbE9OWnZKZ29qVXpWZWUzeWRGZ2RtMHJXa0htN2V5Rm5mbEpvMndMMEpXYjgxMWFReWdrUUM5dUdmQnEyZTE0N2NBR0VWakttVDRadHRVSWFXaTdOWXFucTd0UmxldDFzUlg4Uk1fdlBHRXNl?oc=5",
-          "source": "搜狐网",
-          "domain": "搜狐网",
-          "publishedAt": "2026-07-21T00:20:44.000Z",
-          "summary": "美股三大指数集体收跌，半导体板块涨幅回落，中概股表现强劲。",
-          "reason": "美股三大指数集体收跌，半导体板块涨幅回落，中概股表现强劲。",
-          "tags": [
-            "美股"
-          ]
-        },
-        {
-          "title": "美股高开低走，道指跌超300点，芯片股企稳，闪迪美光反攻，国际油价巨震后收高",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPalpwaXp5Q05LcFZvcFlEZ1c5dUdiUDFPbzdZbnBFVmZUME9HUl9NSGx3X1o2TzBueERYSk44UzN6YTF0Rl9lOG5RVVFhcXBNOXdVSHdyZDgybFFfaFFJS2RueV9lZzhaTkl1VDlBd0NiSExraGMtdE1pWUNrczdQSjBPUmpfOUpRRFZOVw?oc=5",
-          "source": "搜狐网",
-          "domain": "搜狐网",
-          "publishedAt": "2026-07-21T00:00:04.000Z",
-          "summary": "美股高开低走，道指跌超300点，芯片股企稳，国际油价震荡后收高。",
-          "reason": "美股高开低走，道指跌超300点，芯片股企稳，国际油价震荡后收高。",
+          "title": "地缘政治风险与亮眼财报交织，美股周二全线反弹，标普终结三连跌，道指涨近400点",
+          "url": "https://news.google.com/rss/articles/CBMi5wNBVV95cUxNVU5zSWR2WjZRaDFDMVpmRHY1bjctNUxuNXJFMDE1OEtvZUpfdTY0RHNnTkNrR0VMLThiY0lrVXBxQS0wVlctV3NmNm8wbEdMRWJNTnEwS0VvOVZjLUlnWjQ2eF9QNURCdTVHbV8zM3RuWVJudzV0YkM5T1hub1NaRHo2Vjh2bDVNbTA3cWhxcl8tTmhzRWdsMk9nLTNzRGJHY3UwWnRhZWd0T3diXzRra2stQl85bGQtbkV2c2pGanNjbVVWVk1SdFFCQ0RING80dGhQQXJMZ2ZNdXA4cDEwQVFyOVV4Y0pZNDdCOHBuRHRGN29Db1JXYnVKOXh2M3A0eUpCcFljbHlBZmx6UDhCUXVGMVJKSk51SEUzcG82RHNPVFNGN0pjOTl3bHBIR3Z0b3k5RktqbmJZeDJtRmRKek10UVN1dU0xWkNiTHY1dnhneXVGWEJjdllJYVBCYkNJLV8wRHQ4U2xsZjViZ0hwTkxPWlZzWU5MRnE4ZXJnT2VoS3dBTXdER2JoUjhRc1VkejZYa1p5aWpLU3luaDdPRkx5ZVRBc3VPcnMwb2tmSEhtd3RTR1doQTY2MDB5bTgyRVpVZjlPZTk3a1RKbzdyR2tEX3F4NmctT00zdTUxeEx5amlmb1hn?oc=5",
+          "source": "Newswav",
+          "domain": "Newswav",
+          "publishedAt": "2026-07-22T00:19:49.000Z",
+          "summary": "地缘政治风险与亮眼财报交织，美股周二全线反弹，标普终结三连跌，道指上涨近400点。",
+          "reason": "地缘政治风险与亮眼财报交织，美股周二全线反弹，标普终结三连跌，道指上涨近400点。",
           "tags": [
             "美股"
           ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-07-21T08:45:30.797Z",
-      "lastSuccessfulAt": "2026-07-21T08:45:30.797Z",
-      "latestPublishedAt": "2026-07-21T02:27:00.000Z",
+      "attemptedAt": "2026-07-22T03:47:04.168Z",
+      "lastSuccessfulAt": "2026-07-22T03:47:04.168Z",
+      "latestPublishedAt": "2026-07-22T01:21:00.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 33
+          "itemCount": 43
         },
         {
           "provider": "bing-1",
@@ -241,7 +245,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 8
+          "itemCount": 7
         },
         {
           "provider": "bing-2",
@@ -257,89 +261,89 @@
       "description": "A股市场、政策、行业板块与资金面",
       "items": [
         {
-          "title": "A股三大指数高开低走跌超1% 成交额突破万亿盘中巨震",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5LOG1mZkl6bERDbWhQdDJxdnRkTUxQRExhMGZEZkdnenJmYm8wRlp4cVNRWlFDOXZlMHpaX2VZWDdSZG4zTDJmbU8waGhvaG1jcVJhOVZfSHU4SXdvaG9Kdnln?oc=5",
-          "source": "手机网易网",
-          "domain": "手机网易网",
-          "publishedAt": "2026-07-21T08:20:16.000Z",
-          "summary": "A股三大指数高开低走，跌幅超1%，成交额突破万亿，盘中出现剧烈波动。",
-          "reason": "A股三大指数高开低走，跌幅超1%，成交额突破万亿，盘中出现剧烈波动。",
+          "title": "7月17日沪深主板融券净卖出排行榜： 中国银行融券净卖出居首",
+          "url": "https://news.google.com/rss/articles/CBMijwNBVV95cUxQb3hkUnFQSjdKLWUxUlFNVWgzNlVaSklYcXRsSGZkS1cxZ1hmX29TTUxEUDhLXzJMYnVmTXRyRHJQTktfN2tMZmt4YnRqeFFuS0xuVE1Xd0lmYTRKTnlpTXlfZmdPY09wTlV3N0lQZDhNRHJPVkVsRS1hemxhNk9iSXF6M3d6UENDMUpBSEJvSnpfNzkzTE5VOFJMcmNhWU45Z0plR0o0bFBlRUM0T1poM2p4SHJpV04tc29QUXpXWXlieWxOMTNkZWRhd1lKQ1ZrVTRWam05VkVoQlR5bG9CSGxYamVMMnZOYy12VE5qTzJ4b2ZwZ3BaX1JEYmtTNmdaLUVKaVNpcXRfLXEzaVRrZlZLVk51OFVmOEJOMmlZd3BKSmRzT0daMEZoYklseHpuXzVNN1FFYlhYUzJEbkZYMzAxVmtGTjQ4T1ZhNGJSaVFMV0VTN2VQMEVnaWFSTmlhWndYTTFqdjZvUkl6a1JWVzhxS1NEc1NTTnI0dGtlZncxNDNORU1sRlM5enNMSjQ?oc=5",
+          "source": "MSN",
+          "domain": "MSN",
+          "publishedAt": "2026-07-22T01:02:20.000Z",
+          "summary": "7月17日，沪深主板融券净卖出排行榜中，中国银行融券净卖出额居首。",
+          "reason": "7月17日，沪深主板融券净卖出排行榜中，中国银行融券净卖出额居首。",
+          "tags": [
+            "沪深"
+          ]
+        },
+        {
+          "title": "申万宏源王胜：A股具有较好配置价值",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPb3BNajdEaG9KUFd2U3pMSXdGYmFrVlp1NTVUSlFkaEw1M25EQWZnY1Y2aEExX280R2JmSGdSbHhfWDRlQTl4azNXRHUtZE4xdEx0djdPejJlb29yZXlQSTZNdmlISVlPUVp2YjFMMl9VRnNLRk1HZ1dJRkYzNWZLS3gzdFZQOGw0Z3FrVHA4UklXN0hMN252eHpCZmstUQ?oc=5",
+          "source": "新浪财经",
+          "domain": "新浪财经",
+          "publishedAt": "2026-07-22T01:01:57.000Z",
+          "summary": "申万宏源分析师王胜认为，A股市场当前具有较好的配置价值。",
+          "reason": "申万宏源分析师王胜认为，A股市场当前具有较好的配置价值。",
           "tags": [
             "A股"
           ]
         },
         {
-          "title": "财中ETF风向标｜四大期指异动带动A股集体上涨，上证中盘ETF易方达(510130)盘中微跌",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5aTDFzMGgwOURQVTFKaWZMb3pXanNWdnBqY3cxUjd2c21uLXhWU0NpSFUwUGs5N19HMmpULUlPbTBUdmFvMGc1dXBZdDFfOFpjYWRqRDRkbl9DWDZqUGt2V2NPdU1MZy1DOXpKbFAtVQ?oc=5",
+          "title": "A股市场昨日上演V形反转 “双创”指数创年内最大单日涨幅",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdmZ6YXM5MEswZ1g3ZUNXb0VfcWxpYnRMLUt1MjNZcV9ITFVEaDlaeFNkckNQNkh0Q0FsWkg5clAzelh2SC1vejBtUEJKRC00dkZaYlBxa3lKRnJUVk0yb2tmYUoyY1ZtTm9iMW9HYUI0dnAwVFRzRlhGdVdubEtZVVowelozclZIYzY0dHR4X0dHLXBm?oc=5",
           "source": "新浪财经",
           "domain": "新浪财经",
-          "publishedAt": "2026-07-21T07:05:47.000Z",
-          "summary": "四大期指异动带动A股集体上涨，上证中盘ETF易方达盘中出现微跌。",
-          "reason": "四大期指异动带动A股集体上涨，上证中盘ETF易方达盘中出现微跌。",
+          "publishedAt": "2026-07-22T00:03:36.000Z",
+          "summary": "A股市场昨日出现V形反转，“双创”指数创下年内最大单日涨幅。",
+          "reason": "A股市场昨日出现V形反转，“双创”指数创下年内最大单日涨幅。",
+          "tags": [
+            "A股"
+          ]
+        },
+        {
+          "title": "A股深“V”反弹，创业板指涨超7%，科创50涨近11%！“六大方阵”齐出手，机构：提振市场信心",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdEZ4NElLbWgwWEd0THBZSUNRMEZMQnFhRlRLaF9pZ2xCb20yV0NueEYtdXExMkFlcTBfMVJ0Tlg3eGVCZk5IVDBVNUNWZmJRT0lCWUJ1Qm9POTMzZUZvdHI1eEhsVjFldk8tREtha1hDbkJDc2lxTjFSTjY0dEpiZUhlVQ?oc=5",
+          "source": "新浪网",
+          "domain": "新浪网",
+          "publishedAt": "2026-07-21T17:27:17.000Z",
+          "summary": "A股深V反弹，创业板指涨超7%，科创50涨近11%，多方力量提振市场信心。",
+          "reason": "A股深V反弹，创业板指涨超7%，科创50涨近11%，多方力量提振市场信心。",
           "tags": [
             "A股",
+            "创业板"
+          ]
+        },
+        {
+          "title": "7月21日收盘分析：创业板暴涨7%，科创50涨超10%，成长股全线爆发",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQckwwWW14TzJWVHpmdmV3Mmp1NlBaR1hiaEd0SzUwTmNYcmZldUR1QlRGcXBSODNQU0ZmN1g5M1gxZDl4OFNacGplVDAyblZFNktseHY3UmdVU0RUQTltUFhGNXpNNktCZDd6cFZ1el9Eb3Ezd2tWSEgySjJkdXhmeWhjV0E2ZXdDTXpTSA?oc=5",
+          "source": "Sohu",
+          "domain": "Sohu",
+          "publishedAt": "2026-07-21T16:00:00.000Z",
+          "summary": "7月21日收盘，创业板暴涨7%，科创50涨超10%，成长股全面上涨。",
+          "reason": "7月21日收盘，创业板暴涨7%，科创50涨超10%，成长股全面上涨。",
+          "tags": [
+            "创业板"
+          ]
+        },
+        {
+          "title": "上证指数(000001)实时行情, 股票股价, 今日最新指数, 走势图",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5vWVh2TzI2RFNLX2dnS2pCTEJPak1lXzdlLTZ1cUlFeHBGUmt2dllZVm5qOWpCdFhsRGtRdWRQRmZYTmtrYi1UbHd1RVQ1NHJjRXFocFJn?oc=5",
+          "source": "Moomoo",
+          "domain": "Moomoo",
+          "publishedAt": "2026-07-21T15:41:49.000Z",
+          "summary": "上证指数(000001)提供实时行情、股票股价、最新指数及走势图信息。",
+          "reason": "上证指数(000001)提供实时行情、股票股价、最新指数及走势图信息。",
+          "tags": [
             "上证"
-          ]
-        },
-        {
-          "title": "A股，突发暴涨！官媒：十大重磅信号_热门点击_热点报道",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ST09XaXlVTHpIdTUwRE1vZWx3cFIxTjU5UnBWNHVhZWlqeEVlaGdCa19vYjZENEFueTZYYzFualN3ZHJfVUdtOEc5U1djRGI3WlNHRDlNTm1WQ3BOZGxYdERB?oc=5",
-          "source": "证券之星",
-          "domain": "证券之星",
-          "publishedAt": "2026-07-21T07:58:43.000Z",
-          "summary": "A股突发暴涨，官媒报道十大重磅信号引发市场关注。",
-          "reason": "A股突发暴涨，官媒报道十大重磅信号引发市场关注。",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "A股早盘反转，午后涨幅扩大：沪指涨1.79%，创指涨7.05%",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQakEySFVMRzloVVRpSHRaRnRkSDFvRWdEZEFRdkJxM0xreUZuRWxkRUhmTUJlTFlxclVpNlAzVlB1cnljLTBmLUQxd1NQaG1mZVRDdlptMDRzSS1kZXpYNml2RmNfRGJYWVN3eVJYYlhjX1E3Q0tscWlkMHlLMmtjNmlOTkE5SnJabjI1dGJucVNPTWJjNlNkMQ?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-07-21T07:48:21.000Z",
-          "summary": "A股早盘反转，午后涨幅扩大，沪指涨1.79%，创业板指涨7.05%。",
-          "reason": "A股早盘反转，午后涨幅扩大，沪指涨1.79%，创业板指涨7.05%。",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "A股收评：深V大反攻！沪指收复3800点，科创50飙升逾10%",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA0ZVg4WDdldlR6cjNLTm13anoydnZvM0JWWFVObHVIT21LQ2dLUkp6N0RjUFdNd05pVUM5VUZLNDJmNk52VmJoMWoteXFOQmV5MlY2UzQxS011c2x4YlFINGVR?oc=5",
-          "source": "手机网易网",
-          "domain": "手机网易网",
-          "publishedAt": "2026-07-21T07:15:22.000Z",
-          "summary": "A股深V反攻，沪指收复3800点，科创50指数飙升逾10%。",
-          "reason": "A股深V反攻，沪指收复3800点，科创50指数飙升逾10%。",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "A股突然爆发，发生了什么？四大利好吹响“集结号”",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMG9ZdmFzblpZYU5zUDNacnIwblF0dUZMTnlRZWRQWmQ4MWZ2SlhQQ0FINi1vcUFVV05ibk85VUQxaVItUnFWcWJHR2JqZkF0SFR5NzhxRDhxMFdhWENTUlFLZFIyb184SGNOTldKejRFSU9pakZtTHQwakF6VmJhNHFwd2FXa1ktTXdtcg?oc=5",
-          "source": "21财经",
-          "domain": "21财经",
-          "publishedAt": "2026-07-21T07:14:00.000Z",
-          "summary": "A股突然爆发，四大利好因素推动市场情绪高涨。",
-          "reason": "A股突然爆发，四大利好因素推动市场情绪高涨。",
-          "tags": [
-            "A股"
           ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-07-21T08:45:33.973Z",
-      "lastSuccessfulAt": "2026-07-21T08:45:33.973Z",
-      "latestPublishedAt": "2026-07-21T08:20:16.000Z",
+      "attemptedAt": "2026-07-22T03:47:08.325Z",
+      "lastSuccessfulAt": "2026-07-22T03:47:08.325Z",
+      "latestPublishedAt": "2026-07-22T01:02:20.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 81
+          "itemCount": 83
         },
         {
           "provider": "bing-1",
@@ -350,7 +354,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 31
+          "itemCount": 30
         },
         {
           "provider": "bing-2",
