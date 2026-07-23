@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-23T22:28:59+08:00",
-  "checkedAt": "2026-07-23T22:28:59+08:00",
+  "updatedAt": "2026-07-24T01:44:09+08:00",
+  "checkedAt": "2026-07-24T01:44:09+08:00",
   "coverage": "中国大陆未来 120 天 ACGN 漫展；B站会员购官方列表 + 次元黄页高频轻量扫描（本轮 4 页、192 条），嘉宾仅展示平台结构化名单或主办方官宣",
   "policy": "广覆盖发现不等于嘉宾确认；票务事实优先 B站会员购和大麦，嘉宾名单仅采用 B站结构化详情或主办方官宣，抓取失败保留上一版并公开来源健康度。",
   "sources": [
@@ -139,201 +139,6 @@
       "province": "四川"
     },
     {
-      "id": "yunmanzhan-9680",
-      "name": "星部落动漫嘉年华（取消）",
-      "type": "综合漫展",
-      "city": "江西",
-      "venue": "天鹅湖大酒店",
-      "startDate": "2026-07-16",
-      "endDate": "2026-07-16",
-      "price": "¥29元 起",
-      "ticketStatus": "已取消",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=9680",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“取消”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "9680"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
-      "province": "江西"
-    },
-    {
-      "id": "yunmanzhan-10705",
-      "name": "星部落动漫嘉年华",
-      "type": "综合漫展",
-      "city": "丽水",
-      "venue": "飞达国际大酒店",
-      "startDate": "2026-07-16",
-      "endDate": "2026-07-16",
-      "price": "¥39元 起",
-      "ticketStatus": "待票务复核",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=10705",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“已结束”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "10705"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
-      "province": "浙江"
-    },
-    {
-      "id": "yunmanzhan-10243",
-      "name": "第五届夜白动漫游戏茶话会",
-      "type": "动漫游戏展",
-      "city": "廉江",
-      "venue": "众成豪宴",
-      "startDate": "2026-07-16",
-      "endDate": "2026-07-16",
-      "price": "¥30元 起",
-      "ticketStatus": "待票务复核",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=10243",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“已结束”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "10243"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
-      "province": "广东"
-    },
-    {
-      "id": "yunmanzhan-10246",
-      "name": "云舟动漫游戏展",
-      "type": "动漫游戏展",
-      "city": "六枝",
-      "venue": "好百年宴会艺术中心(六枝店)",
-      "startDate": "2026-07-16",
-      "endDate": "2026-07-16",
-      "price": "¥36元 起",
-      "ticketStatus": "待票务复核",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=10246",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“已结束”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "10246"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
-      "province": "贵州"
-    },
-    {
-      "id": "yunmanzhan-10245",
-      "name": "拾光动漫嘉年华",
-      "type": "综合漫展",
-      "city": "盘州",
-      "venue": "喜门迎酒楼(聚然居小区店)",
-      "startDate": "2026-07-16",
-      "endDate": "2026-07-16",
-      "price": "¥39.9元 起",
-      "ticketStatus": "待票务复核",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=10245",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“已结束”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "10245"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
-      "province": "贵州"
-    },
-    {
       "id": "yunmanzhan-10248",
       "name": "「潮起静安」鸣潮沉浸式PARTY（同人ONLY）",
       "type": "IP ONLY",
@@ -410,201 +215,6 @@
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
       "lastSeenAt": "2026-07-23T05:42:53+08:00",
       "province": "河南"
-    },
-    {
-      "id": "yunmanzhan-10959",
-      "name": "第九届梦起国风动漫嘉年华",
-      "type": "综合漫展",
-      "city": "息县",
-      "venue": "金融大厦",
-      "startDate": "2026-07-16",
-      "endDate": "2026-07-16",
-      "price": "¥30元 起",
-      "ticketStatus": "待票务复核",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=10959",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“已结束”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "10959"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
-      "province": "河南"
-    },
-    {
-      "id": "yunmanzhan-8884",
-      "name": "第11届ICGC动漫嘉年华",
-      "type": "综合漫展",
-      "city": "盐城",
-      "venue": "中韩文化客厅",
-      "startDate": "2026-07-16",
-      "endDate": "2026-07-16",
-      "price": "¥58元 起",
-      "ticketStatus": "待票务复核",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=8884",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“已结束”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "8884"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
-      "province": "江苏"
-    },
-    {
-      "id": "yunmanzhan-10696",
-      "name": "第十届摸鱼动漫游戏嘉年华",
-      "type": "动漫游戏展",
-      "city": "宜昌",
-      "venue": "三峡双创中心",
-      "startDate": "2026-07-16",
-      "endDate": "2026-07-16",
-      "price": "¥45元 起",
-      "ticketStatus": "待票务复核",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=10696",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“已结束”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "10696"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
-      "province": "湖北"
-    },
-    {
-      "id": "yunmanzhan-10706",
-      "name": "江华雪霁漫展",
-      "type": "综合漫展",
-      "city": "永州",
-      "venue": "维也纳酒店",
-      "startDate": "2026-07-16",
-      "endDate": "2026-07-16",
-      "price": "¥50元 起",
-      "ticketStatus": "待票务复核",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=10706",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“已结束”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "10706"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
-      "province": "湖南"
-    },
-    {
-      "id": "yunmanzhan-10244",
-      "name": "习水foryou动漫游戏嘉年华",
-      "type": "动漫游戏展",
-      "city": "遵义",
-      "venue": "阿富尔连锁酒店",
-      "startDate": "2026-07-16",
-      "endDate": "2026-07-16",
-      "price": "¥39.9元 起",
-      "ticketStatus": "待票务复核",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=10244",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“已结束”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "10244"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
-      "province": "贵州"
     },
     {
       "id": "yunmanzhan-10252",
@@ -1904,8 +1514,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:20:47+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24",
       "province": "云南"
     },
     {
@@ -2231,7 +1841,7 @@
       "price": "¥78 起",
       "ticketStatus": "售票中",
       "guestStatus": "announced",
-      "guestUpdatedAt": "2026-07-23",
+      "guestUpdatedAt": "2026-07-24",
       "summary": "蔚蓝档案主题同人展，含舞台互动、同人游戏与 DJ 环节。",
       "guests": [
         {
@@ -2284,7 +1894,7 @@
       ],
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:20:47+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "externalIds": {
         "bilibili": "1001482",
         "yunmanzhan": "9810"
@@ -2660,7 +2270,7 @@
       "price": "¥65 起",
       "ticketStatus": "售票中",
       "guestStatus": "announced",
-      "guestUpdatedAt": "2026-07-23",
+      "guestUpdatedAt": "2026-07-24",
       "summary": "两日暑假动漫嘉年华，普通票、现场票与多次出入速通票在售。",
       "guests": [
         {
@@ -2727,7 +2337,7 @@
       ],
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:20:47+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "externalIds": {
         "bilibili": "113900",
         "yunmanzhan": "8175"
@@ -8083,7 +7693,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "湖南"
     },
     {
@@ -8448,7 +8058,7 @@
       "price": "¥78 起",
       "ticketStatus": "售票中",
       "guestStatus": "announced",
-      "guestUpdatedAt": "2026-07-23",
+      "guestUpdatedAt": "2026-07-24",
       "summary": "明日方舟主题同人展，设嘉宾舞台、签售与观众互动。",
       "guests": [
         {
@@ -8491,7 +8101,7 @@
       ],
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:20:47+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "externalIds": {
         "bilibili": "1001507",
         "yunmanzhan": "9811"
@@ -10309,8 +9919,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T19:17:47+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23"
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-10340",
@@ -10481,8 +10091,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:20:47+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24",
       "province": "辽宁"
     },
     {
@@ -11731,7 +11341,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "云南"
     },
     {
@@ -13447,7 +13057,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -14042,7 +13652,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "云南"
     },
     {
@@ -14222,7 +13832,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14237,7 +13847,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -14276,7 +13886,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "海南"
     },
     {
@@ -14300,7 +13910,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14315,7 +13925,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "重庆"
     },
     {
@@ -14339,7 +13949,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14354,7 +13964,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "安徽"
     },
     {
@@ -14378,7 +13988,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14393,7 +14003,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "福建"
     },
     {
@@ -14417,7 +14027,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14432,7 +14042,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "贵州"
     },
     {
@@ -14462,7 +14072,7 @@
           "primary": true
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan",
         "bilibili-membership"
@@ -14481,7 +14091,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "浙江"
     },
     {
@@ -14505,7 +14115,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14520,7 +14130,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "浙江"
     },
     {
@@ -14544,7 +14154,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14559,7 +14169,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "吉林"
     },
     {
@@ -14583,7 +14193,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14598,7 +14208,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -14622,7 +14232,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14637,7 +14247,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "吉林"
     },
     {
@@ -14661,7 +14271,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14676,7 +14286,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "吉林"
     },
     {
@@ -14700,7 +14310,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14715,7 +14325,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -14739,7 +14349,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14754,7 +14364,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广西"
     },
     {
@@ -14778,7 +14388,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14793,7 +14403,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "云南"
     },
     {
@@ -14817,7 +14427,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14832,7 +14442,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "安徽"
     },
     {
@@ -14871,7 +14481,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "四川"
     },
     {
@@ -14895,7 +14505,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14910,7 +14520,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -14934,7 +14544,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14949,7 +14559,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "云南"
     },
     {
@@ -14973,7 +14583,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -14988,7 +14598,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "上海"
     },
     {
@@ -15012,7 +14622,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -15027,7 +14637,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -15051,7 +14661,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -15066,7 +14676,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "辽宁"
     },
     {
@@ -15090,7 +14700,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -15105,7 +14715,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "吉林"
     },
     {
@@ -15129,7 +14739,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -15144,7 +14754,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -15168,7 +14778,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -15183,7 +14793,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "陕西"
     },
     {
@@ -15207,7 +14817,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -15222,7 +14832,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "香港"
     },
     {
@@ -15246,7 +14856,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -15261,7 +14871,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "湖北"
     },
     {
@@ -15285,7 +14895,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -15300,7 +14910,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "四川"
     },
     {
@@ -15324,7 +14934,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -15339,7 +14949,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江西"
     },
     {
@@ -15363,7 +14973,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -15378,7 +14988,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "湖南"
     },
     {
@@ -15417,7 +15027,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江西"
     },
     {
@@ -15456,7 +15066,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "浙江"
     },
     {
@@ -15495,7 +15105,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "陕西"
     },
     {
@@ -15612,7 +15222,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -15690,7 +15300,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -15768,7 +15378,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -15807,7 +15417,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "北京"
     },
     {
@@ -15845,7 +15455,7 @@
       ],
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T14:20:47+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "externalIds": {
         "yunmanzhan": "9483"
       },
@@ -15894,7 +15504,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "北京"
     },
     {
@@ -15949,9 +15559,9 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "北京",
-      "guestUpdatedAt": "2026-07-23"
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-10430",
@@ -15989,7 +15599,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "北京"
     },
     {
@@ -16028,7 +15638,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "北京"
     },
     {
@@ -16036,7 +15646,7 @@
       "name": "狮城夏季动漫游戏展",
       "type": "动漫游戏展",
       "city": "沧州",
-      "venue": "沧州大学城-共享体育馆",
+      "venue": "大化工业遗存文化区",
       "startDate": "2026-07-25",
       "endDate": "2026-07-26",
       "price": "¥40元 起",
@@ -16057,7 +15667,7 @@
         "yunmanzhan"
       ],
       "externalIds": {
-        "yunmanzhan": "10796"
+        "yunmanzhan": "10440"
       },
       "fieldSources": {
         "discovery": "yunmanzhan",
@@ -16067,7 +15677,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -16145,7 +15755,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "湖南"
     },
     {
@@ -16184,7 +15794,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -16223,7 +15833,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "四川"
     },
     {
@@ -16262,7 +15872,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -16301,7 +15911,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "云南"
     },
     {
@@ -16340,7 +15950,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "辽宁"
     },
     {
@@ -16418,7 +16028,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山西"
     },
     {
@@ -16457,7 +16067,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "四川"
     },
     {
@@ -16535,7 +16145,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -16574,7 +16184,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "重庆"
     },
     {
@@ -16613,7 +16223,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -16652,7 +16262,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -16691,7 +16301,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -16730,7 +16340,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "湖北"
     },
     {
@@ -16769,7 +16379,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -16808,7 +16418,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江西"
     },
     {
@@ -16847,7 +16457,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -16886,7 +16496,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "福建"
     },
     {
@@ -16925,7 +16535,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "辽宁"
     },
     {
@@ -16964,7 +16574,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "安徽"
     },
     {
@@ -17003,7 +16613,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "安徽"
     },
     {
@@ -17042,7 +16652,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -17120,7 +16730,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -17159,7 +16769,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -17198,7 +16808,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -17237,7 +16847,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "贵州"
     },
     {
@@ -17302,9 +16912,9 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "贵州",
-      "guestUpdatedAt": "2026-07-23"
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-9313",
@@ -17342,7 +16952,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广西"
     },
     {
@@ -17381,7 +16991,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -17459,7 +17069,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -17498,7 +17108,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "陕西"
     },
     {
@@ -17537,7 +17147,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "浙江"
     },
     {
@@ -17615,7 +17225,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "浙江"
     },
     {
@@ -17654,7 +17264,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "安徽"
     },
     {
@@ -17693,7 +17303,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -17771,7 +17381,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -17815,13 +17425,13 @@
     },
     {
       "id": "yunmanzhan-10794",
-      "name": "第八届JNBF马迷嘉年华小马宝莉同人only",
+      "name": "第八届JNBF马迷同人only嘉年华",
       "type": "IP ONLY",
       "city": "济南",
       "venue": "山东舜和国际酒店",
       "startDate": "2026-07-25",
       "endDate": "2026-07-26",
-      "price": "¥218元 起",
+      "price": "¥108元 起",
       "ticketStatus": "待票务复核",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
@@ -17839,7 +17449,7 @@
         "yunmanzhan"
       ],
       "externalIds": {
-        "yunmanzhan": "9877"
+        "yunmanzhan": "10427"
       },
       "fieldSources": {
         "discovery": "yunmanzhan",
@@ -17849,7 +17459,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -17888,7 +17498,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -17927,7 +17537,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -17966,7 +17576,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -18044,7 +17654,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "黑龙江"
     },
     {
@@ -18083,7 +17693,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "浙江"
     },
     {
@@ -18161,7 +17771,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "浙江"
     },
     {
@@ -18200,7 +17810,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "安徽"
     },
     {
@@ -18239,7 +17849,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -18278,7 +17888,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "辽宁"
     },
     {
@@ -18317,7 +17927,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江西"
     },
     {
@@ -18356,7 +17966,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山西"
     },
     {
@@ -18395,7 +18005,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江西"
     },
     {
@@ -18434,7 +18044,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -18473,7 +18083,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "贵州"
     },
     {
@@ -18551,7 +18161,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "新疆"
     },
     {
@@ -18629,7 +18239,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "云南"
     },
     {
@@ -18668,7 +18278,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "西藏"
     },
     {
@@ -18707,7 +18317,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -18746,7 +18356,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "甘肃"
     },
     {
@@ -18785,7 +18395,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "甘肃"
     },
     {
@@ -18824,7 +18434,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "甘肃"
     },
     {
@@ -18863,7 +18473,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -18941,7 +18551,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "云南"
     },
     {
@@ -18980,7 +18590,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山西"
     },
     {
@@ -19019,7 +18629,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "安徽"
     },
     {
@@ -19058,7 +18668,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广西"
     },
     {
@@ -19097,7 +18707,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "福建"
     },
     {
@@ -19175,7 +18785,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -19214,7 +18824,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -19253,7 +18863,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -19292,7 +18902,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江西"
     },
     {
@@ -19331,7 +18941,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "四川"
     },
     {
@@ -19370,7 +18980,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -19409,7 +19019,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -19448,7 +19058,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -19487,7 +19097,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -19565,7 +19175,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广西"
     },
     {
@@ -19616,8 +19226,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24",
       "province": "内蒙古"
     },
     {
@@ -19656,7 +19266,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "甘肃"
     },
     {
@@ -19695,7 +19305,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -19734,7 +19344,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -19773,7 +19383,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -19812,7 +19422,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -19851,7 +19461,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -19890,7 +19500,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "甘肃"
     },
     {
@@ -19929,7 +19539,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "四川"
     },
     {
@@ -19968,7 +19578,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "四川"
     },
     {
@@ -20007,7 +19617,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广西"
     },
     {
@@ -20280,7 +19890,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山西"
     },
     {
@@ -20319,7 +19929,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江西"
     },
     {
@@ -20407,7 +20017,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "上海"
     },
     {
@@ -20446,7 +20056,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "上海"
     },
     {
@@ -20485,7 +20095,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "上海"
     },
     {
@@ -20563,7 +20173,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "上海"
     },
     {
@@ -20641,7 +20251,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江西"
     },
     {
@@ -20680,7 +20290,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "浙江"
     },
     {
@@ -20719,7 +20329,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "湖南"
     },
     {
@@ -20758,7 +20368,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -20807,7 +20417,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -20846,7 +20456,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -20924,7 +20534,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -20963,7 +20573,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -21016,8 +20626,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24",
       "province": "江苏"
     },
     {
@@ -21056,7 +20666,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -21095,7 +20705,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山西"
     },
     {
@@ -21212,7 +20822,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -21290,7 +20900,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -21329,7 +20939,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "天津"
     },
     {
@@ -21407,7 +21017,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "天津"
     },
     {
@@ -21446,7 +21056,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "云南"
     },
     {
@@ -21485,7 +21095,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -21524,7 +21134,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "浙江"
     },
     {
@@ -21602,7 +21212,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "新疆"
     },
     {
@@ -21680,7 +21290,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -21766,7 +21376,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "陕西"
     },
     {
@@ -21883,7 +21493,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "青海"
     },
     {
@@ -21922,7 +21532,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -22000,7 +21610,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山西"
     },
     {
@@ -22039,7 +21649,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "湖南"
     },
     {
@@ -22078,7 +21688,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "辽宁"
     },
     {
@@ -22117,7 +21727,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -22156,7 +21766,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江西"
     },
     {
@@ -22195,7 +21805,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -22234,7 +21844,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "贵州"
     },
     {
@@ -22283,7 +21893,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -22322,7 +21932,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T05:42:53+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -22361,7 +21971,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "陕西"
     },
     {
@@ -22400,7 +22010,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "吉林"
     },
     {
@@ -22439,7 +22049,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -22522,14 +22132,14 @@
     },
     {
       "id": "yunmanzhan-9488",
-      "name": "喵梦国风动漫游戏嘉年华3rd",
+      "name": "喵梦国风动漫游戏嘉年华3rd（取消）",
       "type": "动漫游戏展",
       "city": "扬州",
-      "venue": "扬州南部体育公园",
+      "venue": "扬州大学扬子津校区文体馆",
       "startDate": "2026-07-25",
       "endDate": "2026-07-26",
       "price": "¥9.9元 起",
-      "ticketStatus": "待票务复核",
+      "ticketStatus": "已取消",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
       "guests": [],
@@ -22541,12 +22151,12 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“取消”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
       "externalIds": {
-        "yunmanzhan": "9488"
+        "yunmanzhan": "10437"
       },
       "fieldSources": {
         "discovery": "yunmanzhan",
@@ -22556,7 +22166,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "江苏"
     },
     {
@@ -22595,7 +22205,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -22634,7 +22244,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -22673,7 +22283,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -22712,7 +22322,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "宁夏"
     },
     {
@@ -22751,7 +22361,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "湖南"
     },
     {
@@ -22829,7 +22439,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山西"
     },
     {
@@ -22868,7 +22478,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -22907,7 +22517,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "辽宁"
     },
     {
@@ -22946,7 +22556,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "吉林"
     },
     {
@@ -22985,7 +22595,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "吉林"
     },
     {
@@ -23063,7 +22673,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "黑龙江"
     },
     {
@@ -23102,7 +22712,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -23141,7 +22751,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -23180,7 +22790,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -23219,7 +22829,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -23258,7 +22868,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "湖北"
     },
     {
@@ -23297,7 +22907,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "湖北"
     },
     {
@@ -23336,7 +22946,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -23375,7 +22985,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -23414,7 +23024,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "四川"
     },
     {
@@ -23742,9 +23352,9 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北",
-      "guestUpdatedAt": "2026-07-23"
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-8436",
@@ -23940,8 +23550,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24",
       "province": "四川"
     },
     {
@@ -24263,7 +23873,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "吉林"
     },
     {
@@ -24663,7 +24273,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -24782,7 +24392,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-19T21:50:52+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00"
+      "lastSeenAt": "2026-07-24T01:44:09+08:00"
     },
     {
       "id": "yunmanzhan-10447",
@@ -25690,9 +25300,9 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "辽宁",
-      "guestUpdatedAt": "2026-07-23"
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-11037",
@@ -27034,8 +26644,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24",
       "province": "天津"
     },
     {
@@ -28382,9 +27992,9 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南",
-      "guestUpdatedAt": "2026-07-23"
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-10810",
@@ -29524,7 +29134,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "云南"
     },
     {
@@ -30203,9 +29813,9 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "辽宁",
-      "guestUpdatedAt": "2026-07-23"
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-11240",
@@ -30916,7 +30526,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "云南"
     },
     {
@@ -31612,9 +31222,9 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "上海",
-      "guestUpdatedAt": "2026-07-23"
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-9212",
@@ -32341,8 +31951,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24",
       "province": "重庆"
     },
     {
@@ -32469,7 +32079,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -32890,9 +32500,9 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东",
-      "guestUpdatedAt": "2026-07-23"
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-11384",
@@ -33681,7 +33291,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "山东"
     },
     {
@@ -33931,8 +33541,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24",
       "province": "江苏"
     },
     {
@@ -34176,7 +33786,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "上海"
     },
     {
@@ -34520,8 +34130,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24",
       "province": "广东"
     },
     {
@@ -34570,7 +34180,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -34611,7 +34221,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T21:46:28+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00"
+      "lastSeenAt": "2026-07-24T01:44:09+08:00"
     },
     {
       "id": "yunmanzhan-11377",
@@ -34821,9 +34431,9 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "黑龙江",
-      "guestUpdatedAt": "2026-07-23"
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-9819",
@@ -35213,7 +34823,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "浙江"
     },
     {
@@ -35253,7 +34863,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T14:21:30+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "湖北"
     },
     {
@@ -36394,7 +36004,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "湖南"
     },
     {
@@ -36591,7 +36201,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-22T22:20:06+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00"
+      "lastSeenAt": "2026-07-24T01:44:09+08:00"
     },
     {
       "id": "bilibili-1004103",
@@ -36637,8 +36247,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-20T19:11:38+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23"
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-10881",
@@ -36933,8 +36543,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-20T12:01:27+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23"
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-11399",
@@ -37027,9 +36637,9 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "福建",
-      "guestUpdatedAt": "2026-07-23"
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-10534",
@@ -37904,8 +37514,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-23T18:34:23+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23"
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-10529",
@@ -38265,7 +37875,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "云南"
     },
     {
@@ -38813,7 +38423,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-20T15:27:15+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00"
+      "lastSeenAt": "2026-07-24T01:44:09+08:00"
     },
     {
       "id": "yunmanzhan-10016",
@@ -39062,9 +38672,9 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "四川",
-      "guestUpdatedAt": "2026-07-23"
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-11083",
@@ -39385,7 +38995,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南"
     },
     {
@@ -39590,7 +39200,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "广东"
     },
     {
@@ -40099,7 +39709,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-19T14:41:51+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00"
+      "lastSeenAt": "2026-07-24T01:44:09+08:00"
     },
     {
       "id": "yunmanzhan-9755",
@@ -41221,9 +40831,9 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河南",
-      "guestUpdatedAt": "2026-07-23"
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-9335",
@@ -41388,7 +40998,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "吉林"
     },
     {
@@ -41513,8 +41123,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-23T14:38:49+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23"
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-11410",
@@ -41562,7 +41172,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "贵州"
     },
     {
@@ -42118,7 +41728,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
       "province": "河北"
     },
     {
@@ -47742,8 +47352,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-23T18:34:23+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23"
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "bilibili-1004180",
@@ -47816,8 +47426,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-23T18:34:23+08:00",
-      "lastSeenAt": "2026-07-23T22:28:59+08:00",
-      "guestUpdatedAt": "2026-07-23"
+      "lastSeenAt": "2026-07-24T01:44:09+08:00",
+      "guestUpdatedAt": "2026-07-24"
     },
     {
       "id": "yunmanzhan-11434",
@@ -64781,8 +64391,8 @@
     {
       "sourceId": "bilibili-membership",
       "status": "healthy",
-      "checkedAt": "2026-07-23T22:28:59+08:00",
-      "itemCount": 22,
+      "checkedAt": "2026-07-24T01:44:09+08:00",
+      "itemCount": 18,
       "detailChecks": 61,
       "detailFailures": 0,
       "note": "公开列表接口正常；正在复核有嘉宾标记的详情页。"
@@ -64790,7 +64400,7 @@
     {
       "sourceId": "yunmanzhan",
       "status": "healthy",
-      "checkedAt": "2026-07-23T22:28:59+08:00",
+      "checkedAt": "2026-07-24T01:44:09+08:00",
       "itemCount": 192,
       "pagesChecked": 4,
       "coverageMode": "quick",
@@ -64799,19 +64409,52 @@
     {
       "sourceId": "damai",
       "status": "manual-review",
-      "checkedAt": "2026-07-23T22:28:59+08:00",
+      "checkedAt": "2026-07-24T01:44:09+08:00",
       "itemCount": 1,
       "note": "公开搜索页动态化且无稳定匿名接口；仅作为大型活动票务复核源，不自动推断嘉宾。"
     },
     {
       "sourceId": "organizer",
       "status": "manual-review",
-      "checkedAt": "2026-07-23T22:28:59+08:00",
+      "checkedAt": "2026-07-24T01:44:09+08:00",
       "itemCount": 1,
       "note": "逐日出席、签售和临时变更仍以主办方官宣人工复核。"
     }
   ],
   "changes": [
+    {
+      "id": "a60bf9f1ae00",
+      "type": "venue_changed",
+      "eventId": "yunmanzhan-10796",
+      "eventName": "狮城夏季动漫游戏展",
+      "at": "2026-07-24T01:44:09+08:00",
+      "summary": "场馆变更：沧州大学城-共享体育馆 → 大化工业遗存文化区",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "cc4e01b6fb77",
+      "type": "venue_changed",
+      "eventId": "yunmanzhan-9488",
+      "eventName": "喵梦国风动漫游戏嘉年华3rd（取消）",
+      "at": "2026-07-24T01:44:09+08:00",
+      "summary": "场馆变更：扬州南部体育公园 → 扬州大学扬子津校区文体馆",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "3c97d902854f",
+      "type": "ticket_status_changed",
+      "eventId": "yunmanzhan-9488",
+      "eventName": "喵梦国风动漫游戏嘉年华3rd（取消）",
+      "at": "2026-07-24T01:44:09+08:00",
+      "summary": "票务状态：待票务复核 → 已取消",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
     {
       "id": "d976005c3043",
       "type": "event_added",
@@ -66186,49 +65829,13 @@
         "yunmanzhan",
         "bilibili-membership"
       ]
-    },
-    {
-      "id": "005705c160b1",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-6721",
-      "eventName": "小符狸国风动漫嘉年华",
-      "at": "2026-07-21T05:47:54+08:00",
-      "summary": "票务状态：预售中 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "b9260c3a62c0",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11371",
-      "eventName": "第四届·晓蠱动漫庆典",
-      "at": "2026-07-21T05:47:54+08:00",
-      "summary": "票务状态：预售中 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "6dfafd6e8002",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11394",
-      "eventName": "cosACG×步步高Partyone暑假漫展",
-      "at": "2026-07-21T05:47:54+08:00",
-      "summary": "票务状态：预售中 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
     }
   ],
   "stats": {
-    "eventCount": 1630,
+    "eventCount": 1620,
     "guestVerifiedEvents": 33,
     "guestCount": 123,
-    "discoveryOnlyEvents": 1562,
-    "generatedAt": "2026-07-23T22:28:59+08:00"
+    "discoveryOnlyEvents": 1552,
+    "generatedAt": "2026-07-24T01:44:09+08:00"
   }
 }
