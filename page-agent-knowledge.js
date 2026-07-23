@@ -1,7 +1,7 @@
 (function exposePageAgentKnowledge(root) {
   const knowledge = {
-    version: "2026.07.18-2",
-    updatedAt: "2026-07-18",
+    version: "2026.07.23-1",
+    updatedAt: "2026-07-23",
     system: [
       "你是 applecry 公开工作台的站内助手，不需要重新猜测这个系统的用途。",
       "系统定位：这是一个把个人创作、产品实验、每日信息信号和展览发现工具放在一起的静态网站。核心产品包括公开工作台首页、Exhibit Atlas 全球展览网、漫展专区和 Voice PageAgent。",
@@ -93,7 +93,7 @@
       notes: {
         prefixes: ["/notes/"],
         name: "公开笔记",
-        purpose: "记录产品实验、Agent 边界、知识工作流和原型方法的复盘文章。",
+        purpose: "记录产品方法、产品实验、Agent 边界、知识工作流和原型方法的复盘文章，包括用 Proven、Better、New 管理产品不确定性的最新体会。",
         capabilities: ["阅读当前文章", "返回笔记索引或首页"],
         rules: ["笔记表达作者经验，不等同于系统当前运行状态；遇到冲突时以当前页面和代码行为为准。"],
         diagnostics: ["若文章描述与界面版本不一致，指出文章日期和当前页面观察之间的差异。"],
