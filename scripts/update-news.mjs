@@ -11,6 +11,8 @@ const googleNewsEndpoint = "https://news.google.com/rss/search";
 const githubModelsEndpoint = "https://models.github.ai/inference/chat/completions";
 const maxArticleAgeMs = 4 * 24 * 60 * 60 * 1000;
 const freshArticleAgeMs = 36 * 60 * 60 * 1000;
+const newsHistoryDays = 7;
+const newsTimeZone = "Asia/Shanghai";
 
 const topics = [
   {
@@ -51,6 +53,57 @@ const topics = [
 ];
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const newsDateKey = (value) => {
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: newsTimeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(date);
+  const part = (type) => parts.find((entry) => entry.type === type)?.value || "";
+  return `${part("year")}-${part("month")}-${part("day")}`;
+};
+
+const buildNewsHistory = (previous, current, now = current.checkedAt) => {
+  const currentDate = new Date(now);
+  const cutoffDate = new Date(currentDate.getTime() - (newsHistoryDays - 1) * 24 * 60 * 60 * 1000);
+  const cutoffKey = newsDateKey(cutoffDate);
+  const snapshots = new Map();
+  const addSnapshot = (snapshot) => {
+    const checkedAt = snapshot?.checkedAt || snapshot?.generatedAt;
+    const date = snapshot?.date || newsDateKey(checkedAt);
+    if (!date || !Array.isArray(snapshot?.topics) || date < cutoffKey) return;
+    snapshots.set(date, {
+      date,
+      checkedAt,
+      contentUpdatedAt: snapshot.contentUpdatedAt || checkedAt,
+      topics: snapshot.topics,
+    });
+  };
+
+  (Array.isArray(previous.history) ? previous.history : []).forEach(addSnapshot);
+  if (Array.isArray(previous.topics) && previous.topics.length) {
+    addSnapshot({
+      date: newsDateKey(previous.checkedAt || previous.generatedAt),
+      checkedAt: previous.checkedAt || previous.generatedAt,
+      contentUpdatedAt: previous.contentUpdatedAt,
+      topics: previous.topics,
+    });
+  }
+  addSnapshot({
+    date: newsDateKey(current.checkedAt),
+    checkedAt: current.checkedAt,
+    contentUpdatedAt: current.contentUpdatedAt,
+    topics: current.topics,
+  });
+
+  return [...snapshots.values()]
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, newsHistoryDays);
+};
 
 const decodeEntities = (value = "") =>
   value
@@ -520,10 +573,11 @@ const main = async () => {
     0,
   );
 
+  const contentUpdatedAt = contentChanged ? generatedAt : (previous.contentUpdatedAt || previous.generatedAt || generatedAt);
   const payload = {
     generatedAt,
     checkedAt: generatedAt,
-    contentUpdatedAt: contentChanged ? generatedAt : (previous.contentUpdatedAt || previous.generatedAt || generatedAt),
+    contentUpdatedAt,
     source: "Google News RSS + WIRED AI RSS + Le Monde AI RSS（Bing 仅作可用性探测）",
     status: {
       contentChanged,
@@ -532,6 +586,11 @@ const main = async () => {
       sourceErrors,
     },
     topics: nextTopics,
+    history: buildNewsHistory(previous, {
+      checkedAt: generatedAt,
+      contentUpdatedAt,
+      topics: nextTopics,
+    }, generatedAt),
   };
 
   await mkdir(dirname(outputPath), { recursive: true });
@@ -549,8 +608,10 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 export {
   buildBingUrl,
   buildGoogleUrl,
+  buildNewsHistory,
   fetchTopic,
   includesKeyword,
+  newsDateKey,
   parseRssItems,
   selectArticles,
   validateFeedXml,

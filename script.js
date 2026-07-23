@@ -108,8 +108,12 @@ if (newsSection) {
   const grid = newsSection.querySelector("[data-news-grid]");
   const updated = newsSection.querySelector("[data-news-updated]");
   const tabs = Array.from(newsSection.querySelectorAll("[data-news-topic]"));
+  const history = newsSection.querySelector("[data-news-history]");
+  const historyList = newsSection.querySelector("[data-news-history-list]");
   let activeTopic = tabs.find((tab) => tab.classList.contains("is-active"))?.dataset.newsTopic || "ai";
   let newsTopics = [];
+  let newsSnapshots = [];
+  let activeNewsDate = "";
   let newsPayload = null;
   let newsRequestId = 0;
 
@@ -126,6 +130,29 @@ if (newsSection) {
       timeZone: "Asia/Shanghai",
     }).format(date);
   };
+
+  const newsDateKey = (value) => {
+    const date = value instanceof Date ? value : new Date(value);
+    if (Number.isNaN(date.getTime())) return "";
+    const parts = new Intl.DateTimeFormat("en-US", {
+      timeZone: "Asia/Shanghai",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).formatToParts(date);
+    const part = (type) => parts.find((entry) => entry.type === type)?.value || "";
+    return `${part("year")}-${part("month")}-${part("day")}`;
+  };
+
+  const formatNewsDate = (value) => {
+    const match = String(value || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!match) return value || "今日";
+    return value === newsDateKey(new Date()) ? "今天" : `${match[2]}.${match[3]}`;
+  };
+
+  const normalizeTopics = (topics) => (Array.isArray(topics) ? topics : [])
+    .filter((topic) => topic && typeof topic === "object")
+    .map((topic) => ({ ...topic, items: Array.isArray(topic.items) ? topic.items : [] }));
 
   const renderNewsEmpty = (message = "今天还没有抓到足够清晰的信号。") => {
     grid.textContent = "";
@@ -180,20 +207,48 @@ if (newsSection) {
     return card;
   };
 
-  const renderNewsStatus = (topic) => {
+  const renderNewsHistory = () => {
+    if (!history || !historyList) return;
+    history.hidden = !newsSnapshots.length;
+    historyList.textContent = "";
+    newsSnapshots.forEach((snapshot) => {
+      const button = document.createElement("button");
+      const isActive = snapshot.date === activeNewsDate;
+      button.className = `news-history-button${isActive ? " is-active" : ""}`;
+      button.type = "button";
+      button.textContent = formatNewsDate(snapshot.date);
+      button.title = snapshot.date;
+      button.setAttribute("aria-pressed", String(isActive));
+      button.addEventListener("click", () => {
+        activeNewsDate = snapshot.date;
+        newsTopics = snapshot.topics;
+        renderNewsTopic();
+      });
+      historyList.append(button);
+    });
+  };
+
+  const renderNewsStatus = (topic, snapshot) => {
     if (!newsPayload) return;
-    const checkedAt = newsPayload.checkedAt || newsPayload.generatedAt;
+    const checkedAt = snapshot?.checkedAt || newsPayload.checkedAt || newsPayload.generatedAt;
     const latestAt = topic?.latestPublishedAt || topic?.items?.[0]?.publishedAt;
+    const isLatest = snapshot?.date === newsSnapshots[0]?.date;
+    const prefix = isLatest ? `检查 ${formatNewsTime(checkedAt)}` : `历史 ${snapshot?.date || ""}`;
     if (topic?.stale) {
-      updated.textContent = `检查 ${formatNewsTime(checkedAt)} · ${topic.label} 暂无新结果，沿用 ${formatNewsTime(latestAt)}`;
+      updated.textContent = `${prefix} · ${topic.label} 暂无新结果，沿用 ${formatNewsTime(latestAt)}`;
       updated.dataset.state = "stale";
       return;
     }
-    updated.textContent = `检查 ${formatNewsTime(checkedAt)} · ${topic?.label || "新闻"} 最新 ${formatNewsTime(latestAt)} · ${newsPayload.source || "Daily news"}`;
+    updated.textContent = `${prefix} · ${topic?.label || "新闻"} 最新 ${formatNewsTime(latestAt)} · ${newsPayload.source || "Daily news"}`;
     updated.dataset.state = "fresh";
   };
 
   const renderNewsTopic = () => {
+    const snapshot = newsSnapshots.find((item) => item.date === activeNewsDate) || newsSnapshots[0];
+    if (snapshot) {
+      activeNewsDate = snapshot.date;
+      newsTopics = snapshot.topics;
+    }
     const requestedTopic = newsTopics.find((item) => item.id === activeTopic);
     const topic = requestedTopic || newsTopics[0];
     if (!requestedTopic && topic) activeTopic = topic.id;
@@ -204,8 +259,9 @@ if (newsSection) {
     });
 
     if (!topic?.items?.length) {
-      renderNewsStatus(topic);
+      renderNewsStatus(topic, snapshot);
       renderNewsEmpty("GitHub Actions 首次运行后，这里会显示这个主题的每日推荐。");
+      renderNewsHistory();
       return;
     }
 
@@ -213,7 +269,8 @@ if (newsSection) {
     topic.items
       .filter((item) => item && typeof item === "object" && item.title && item.url)
       .forEach((item, index) => grid.append(createNewsCard(item, index)));
-    renderNewsStatus(topic);
+    renderNewsStatus(topic, snapshot);
+    renderNewsHistory();
   };
 
   tabs.forEach((tab) => {
@@ -233,9 +290,25 @@ if (newsSection) {
       .then((data) => {
         if (requestId !== newsRequestId) return;
         newsPayload = data;
-        newsTopics = (Array.isArray(data.topics) ? data.topics : [])
-          .filter((topic) => topic && typeof topic === "object")
-          .map((topic) => ({ ...topic, items: Array.isArray(topic.items) ? topic.items : [] }));
+        const currentDate = newsDateKey(data.checkedAt || data.generatedAt || Date.now());
+        const rawSnapshots = Array.isArray(data.history) && data.history.length
+          ? data.history
+          : [{ date: currentDate, checkedAt: data.checkedAt || data.generatedAt, topics: data.topics }];
+        const snapshotsByDate = new Map();
+        rawSnapshots.forEach((snapshot) => {
+          if (!snapshot?.date) return;
+          snapshotsByDate.set(snapshot.date, {
+            ...snapshot,
+            topics: normalizeTopics(snapshot.topics),
+          });
+        });
+        newsSnapshots = [...snapshotsByDate.values()]
+          .sort((a, b) => b.date.localeCompare(a.date))
+          .slice(0, 7);
+        if (!newsSnapshots.some((snapshot) => snapshot.date === activeNewsDate)) {
+          activeNewsDate = newsSnapshots[0]?.date || "";
+        }
+        newsTopics = newsSnapshots.find((snapshot) => snapshot.date === activeNewsDate)?.topics || [];
         renderNewsTopic();
       })
       .catch(() => {

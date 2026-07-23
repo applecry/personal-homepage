@@ -2,7 +2,9 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   buildGoogleUrl,
+  buildNewsHistory,
   includesKeyword,
+  newsDateKey,
   parseRssItems,
   selectArticles,
   validateFeedXml,
@@ -52,4 +54,27 @@ test("selects relevant, recent and unique stories", () => {
   ], topic);
   assert.equal(items.length, 1);
   assert.equal(items[0].url, "https://example.com/1");
+});
+
+test("uses the Shanghai calendar date for news snapshots", () => {
+  assert.equal(newsDateKey("2026-07-22T16:30:00.000Z"), "2026-07-23");
+});
+
+test("keeps one snapshot per day for the latest seven calendar days", () => {
+  const makeTopic = (title) => [{ id: "ai", label: "AI", items: [{ title, url: `https://example.com/${title}` }] }];
+  const history = buildNewsHistory({
+    checkedAt: "2026-07-22T08:00:00.000Z",
+    topics: makeTopic("22-latest"),
+    history: [
+      { date: "2026-07-22", checkedAt: "2026-07-22T01:00:00.000Z", topics: makeTopic("22-old") },
+      { date: "2026-07-21", checkedAt: "2026-07-21T01:00:00.000Z", topics: makeTopic("21") },
+      { date: "2026-07-16", checkedAt: "2026-07-16T01:00:00.000Z", topics: makeTopic("expired") },
+    ],
+  }, {
+    checkedAt: "2026-07-23T03:00:00.000Z",
+    topics: makeTopic("23"),
+  }, "2026-07-23T03:00:00.000Z");
+
+  assert.deepEqual(history.map((snapshot) => snapshot.date), ["2026-07-23", "2026-07-22", "2026-07-21"]);
+  assert.equal(history[1].topics[0].items[0].title, "22-latest");
 });
