@@ -288,6 +288,23 @@ button { cursor: pointer; }
 .atlas-social-signals > header { align-items: end; }
 .atlas-social-signals h3 { margin: 3px 0 0; font-size: 1rem; }
 .atlas-social-signals header small { color: var(--atlas-muted); font-size: .64rem; }
+.atlas-signal-freshness { display: grid; gap: 4px; margin-top: 12px; padding: 10px 11px; border: 1px solid var(--atlas-line); border-radius: 7px; background: rgba(17,23,19,.035); }
+.atlas-signal-freshness strong { font-size: .72rem; }
+.atlas-signal-freshness > span { color: var(--atlas-muted); font-size: .67rem; line-height: 1.5; }
+.atlas-signal-freshness[data-state="current"] { border-color: rgba(63,143,104,.3); background: rgba(63,143,104,.08); }
+.atlas-signal-freshness[data-state="stale"],
+.atlas-signal-freshness[data-state="missing"],
+.atlas-signal-freshness[data-state="error"] { border-color: rgba(180,93,22,.34); background: rgba(194,113,31,.1); }
+.atlas-signal-freshness[data-state="stale"] strong,
+.atlas-signal-freshness[data-state="missing"] strong,
+.atlas-signal-freshness[data-state="error"] strong { color: #8a4314; }
+.atlas-signal-local-actions { display: grid; gap: 6px; margin-top: 4px; }
+.atlas-signal-local-actions[hidden] { display: none; }
+.atlas-signal-local-actions button { width: fit-content; padding: 7px 9px; border: 1px solid rgba(138,67,20,.3); border-radius: 6px; background: #fff; color: #71360f; font-size: .68rem; font-weight: 780; }
+.atlas-signal-local-actions button:hover { border-color: #71360f; background: #71360f; color: #fff; }
+.atlas-signal-local-actions button:disabled { cursor: wait; opacity: .62; }
+.atlas-signal-local-actions small { color: var(--atlas-muted); font-size: .62rem; line-height: 1.45; }
+.atlas-signal-local-actions code { overflow-wrap: anywhere; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
 .atlas-social-signals > p { margin: 10px 0 4px; color: var(--atlas-muted); font-size: .72rem; line-height: 1.55; }
 .atlas-social-signals [data-social-signal-list] { display: grid; }
 .atlas-signal { display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; gap: 10px; align-items: start; padding: 12px 0; border-bottom: 1px solid var(--atlas-line); color: var(--atlas-ink); text-decoration: none; }

@@ -512,6 +512,27 @@ const mergeVerifiedEvents = (events, officialEvents) => [
 const eventKey = (event) => `${normalizedEventName(event.nameZh || event.name)}|${event.startDate}`;
 const contentSignature = (events) => JSON.stringify(events.map(({ collectedAt, ...event }) => event));
 
+const mergeExhibitionHistory = ({
+  previousEvents = [],
+  collectedEvents = [],
+  verifiedOfficialEvents = [],
+  filingEvents = [],
+} = {}) => {
+  const preserved = previousEvents
+    .map((event) => ({ ...event, country: normalizeCountry(event.country, event.city), city: normalizeCity(event.city, event.country) }));
+  const combined = mergeFilingEvents(
+    mergeVerifiedEvents([...preserved, ...collectedEvents], verifiedOfficialEvents),
+    filingEvents,
+  );
+  const mergedById = new Map(combined.map((event) => [event.id, event]));
+  const mergedByKey = new Map();
+  for (const event of mergedById.values()) {
+    mergedByKey.set(eventKey(event), event);
+  }
+  return [...mergedByKey.values()]
+    .sort((a, b) => a.startDate.localeCompare(b.startDate) || a.nameZh.localeCompare(b.nameZh, "zh-CN"));
+};
+
 const main = async () => {
   const previous = JSON.parse(await readFile(outputPath, "utf8"));
   const verifiedOfficialEvents = await loadCuratedEvents();
@@ -531,24 +552,12 @@ const main = async () => {
     return;
   }
 
-  const today = shanghaiDate(new Date());
-  const preserved = previous.events
-    .map((event) => ({ ...event, country: normalizeCountry(event.country, event.city), city: normalizeCity(event.city, event.country) }))
-    .filter((event) => event.endDate >= today);
-  const combined = mergeFilingEvents(
-    mergeVerifiedEvents([...preserved, ...collected], verifiedOfficialEvents),
+  const merged = mergeExhibitionHistory({
+    previousEvents: previous.events,
+    collectedEvents: collected,
+    verifiedOfficialEvents,
     filingEvents,
-  );
-  const mergedById = new Map();
-  for (const event of combined) {
-    if (event.endDate >= today) mergedById.set(event.id, event);
-  }
-  const mergedByKey = new Map();
-  for (const event of mergedById.values()) {
-    mergedByKey.set(eventKey(event), event);
-  }
-  const merged = [...mergedByKey.values()];
-  merged.sort((a, b) => a.startDate.localeCompare(b.startDate) || a.nameZh.localeCompare(b.nameZh, "zh-CN"));
+  });
 
   const now = new Date().toISOString();
   const contentChanged = contentSignature(merged) !== contentSignature(previous.events || []);
@@ -588,6 +597,7 @@ export {
   detailPathsFromList,
   filingMatchesEvent,
   loadCuratedEvents,
+  mergeExhibitionHistory,
   mergeFilingEvents,
   mergeVerifiedEvents,
   normalizeCountry,

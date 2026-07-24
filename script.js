@@ -333,7 +333,7 @@ if (newsSection) {
   });
 }
 const musicPlayer = document.querySelector("[data-music-player]");
-if (musicPlayer) {
+if (musicPlayer && !window.QiaomuPersistentMusic) {
   const deck = musicPlayer.querySelector("[data-music-deck]");
   const trackButtons = Array.from(musicPlayer.querySelectorAll(".track-item"));
   const title = musicPlayer.querySelector("[data-music-title]");

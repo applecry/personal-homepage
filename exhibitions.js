@@ -4,10 +4,14 @@ if (app && window.L && window.ExhibitionAtlasCore) {
   const {
     buildIcs,
     calendarDaysForMonth,
+    currentAndUpcomingEvents,
     dateRangeFor,
     deriveEventStatus,
+    eventMatchesDefaultScope,
     eventMatchesDate,
     eventsOnDate,
+    isCurrentOrUpcoming,
+    signalFreshness,
     sortEvents,
     todayInTimeZone,
   } = window.ExhibitionAtlasCore;
@@ -55,6 +59,7 @@ if (app && window.L && window.ExhibitionAtlasCore) {
     viewMode: "map",
     calendarMonth: "",
     calendarAgendaDate: "",
+    catalogUpdatedAt: "",
   };
 
   const map = L.map("exhibition-map", { zoomControl: false, minZoom: 2, maxZoom: 14, worldCopyJump: true }).setView([31.2304, 121.4737], 10.4);
@@ -74,6 +79,11 @@ if (app && window.L && window.ExhibitionAtlasCore) {
   const searchInput = app.querySelector("[data-search-input]");
   const sourcesPanel = app.querySelector("[data-sources-panel]");
   const socialSignalList = app.querySelector("[data-social-signal-list]");
+  const signalFreshnessPanel = app.querySelector("[data-signal-freshness]");
+  const signalFreshnessTitle = app.querySelector("[data-signal-freshness-title]");
+  const signalFreshnessDetail = app.querySelector("[data-signal-freshness-detail]");
+  const signalLocalActions = app.querySelector("[data-signal-local-actions]");
+  const signalRefreshButton = app.querySelector("[data-signal-refresh]");
   const dateFilter = app.querySelector("[data-date-filter]");
   const sortFilter = app.querySelector("[data-sort-filter]");
   const customDates = app.querySelector("[data-custom-dates]");
@@ -110,6 +120,7 @@ if (app && window.L && window.ExhibitionAtlasCore) {
   };
 
   const currentDate = () => todayInTimeZone(new Date(), "Asia/Shanghai");
+  const isLoopbackPreview = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
   state.calendarMonth = currentDate().slice(0, 7);
   const activeDateRange = () => dateRangeFor(state.dateMode, currentDate(), state.dateStart, state.dateEnd);
 
@@ -235,6 +246,7 @@ if (app && window.L && window.ExhibitionAtlasCore) {
 
   const filteredEvents = () => {
     const dateRange = activeDateRange();
+    const today = currentDate();
     const query = state.query.trim().toLowerCase();
     const matches = state.events.filter((event) => {
       const regionMatch = regionMatches(event);
@@ -243,7 +255,8 @@ if (app && window.L && window.ExhibitionAtlasCore) {
       const haystack = `${event.name} ${event.nameZh} ${aliases} ${event.city} ${event.country} ${event.venue} ${event.category} ${event.visitorType || ""}`.toLowerCase();
       const queryMatch = !query || haystack.includes(query);
       const savedMatch = !state.savedOnly || state.saved.has(event.id);
-      return regionMatch && categoryMatch && queryMatch && savedMatch && eventMatchesDate(event, dateRange);
+      const defaultDateMatch = eventMatchesDefaultScope(event, today, state.dateMode);
+      return regionMatch && categoryMatch && queryMatch && savedMatch && defaultDateMatch && eventMatchesDate(event, dateRange);
     });
     return sortEvents(matches, state.sortMode);
   };
@@ -879,12 +892,32 @@ if (app && window.L && window.ExhibitionAtlasCore) {
     else if (sourcesPanel.classList.contains("is-open")) closeSources();
   });
 
+  const shortSignalDate = (value) => {
+    const match = String(value || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    return match ? `${match[2]}/${match[3]}` : "未知日期";
+  };
+
   const renderSocialSignals = (signals) => {
     const items = signals?.items || [];
-    const updatedAt = new Date(signals?.updatedAt);
-    app.querySelector("[data-signal-updated]").textContent = Number.isNaN(updatedAt.getTime())
-      ? "等待本地采集"
-      : `${String(updatedAt.getMonth() + 1).padStart(2, "0")}/${String(updatedAt.getDate()).padStart(2, "0")} 更新`;
+    const freshness = signalFreshness(signals?.updatedAt, state.catalogUpdatedAt);
+    app.querySelector("[data-signal-updated]").textContent = freshness.signalDate
+      ? `${shortSignalDate(freshness.signalDate)} 更新`
+      : "等待本地采集";
+    signalFreshnessPanel.dataset.state = freshness.state;
+    if (freshness.reason === "behind-catalog") {
+      signalFreshnessTitle.textContent = "热度线索已过期";
+      signalFreshnessDetail.textContent = `线索采集于 ${shortSignalDate(freshness.signalDate)}，早于主展会数据 ${shortSignalDate(freshness.catalogDate)}；当前结果仅供发现参考。`;
+    } else if (freshness.reason === "age") {
+      signalFreshnessTitle.textContent = "热度线索已超过 7 天";
+      signalFreshnessDetail.textContent = `最近采集于 ${shortSignalDate(freshness.signalDate)}；热度可能已经变化，建议使用本机登录态刷新。`;
+    } else if (freshness.reason === "missing") {
+      signalFreshnessTitle.textContent = "热度线索尚未采集";
+      signalFreshnessDetail.textContent = "当前没有可确认的采集时间；主展会的日期、票价和场馆信息不受影响。";
+    } else {
+      signalFreshnessTitle.textContent = "热度线索与主展会数据同步";
+      signalFreshnessDetail.textContent = `最近采集于 ${shortSignalDate(freshness.signalDate)}；这些内容仍然只是热度与发现线索。`;
+    }
+    signalLocalActions.hidden = !isLoopbackPreview;
     socialSignalList.innerHTML = items.length
       ? items.slice(0, 8).map((item, index) => `
         <a class="atlas-signal" href="${escapeHtml(safeHttpUrl(item.url) || "#")}" target="_blank" rel="noreferrer">
@@ -894,6 +927,40 @@ if (app && window.L && window.ExhibitionAtlasCore) {
         </a>`).join("")
       : '<div class="atlas-signal-empty">尚无社交热度线索</div>';
   };
+
+  signalRefreshButton.addEventListener("click", async () => {
+    if (!isLoopbackPreview || signalRefreshButton.disabled) return;
+    const previousLabel = signalRefreshButton.textContent;
+    signalRefreshButton.disabled = true;
+    signalRefreshButton.textContent = "正在调用本机登录态…";
+    signalFreshnessPanel.dataset.state = "loading";
+    signalFreshnessTitle.textContent = "正在刷新小红书热度线索";
+    signalFreshnessDetail.textContent = "请保持已登录小红书的 Chrome/Edge 窗口开启；旧数据会保留到刷新成功。";
+
+    try {
+      const response = await fetch("/__local/xhs-refresh", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Exhibit-Atlas-Local": "refresh",
+        },
+        body: "{}",
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error || "本地刷新服务未启动");
+      const nextSignals = await fetch(`./data/exhibition-signals.json?t=${Date.now()}`, { cache: "no-store" }).then((item) => item.json());
+      renderSocialSignals(nextSignals);
+      signalRefreshButton.textContent = `已刷新 ${Number(result.count || nextSignals.items?.length || 0)} 条`;
+      window.setTimeout(() => { signalRefreshButton.textContent = previousLabel; }, 2400);
+    } catch (error) {
+      signalFreshnessPanel.dataset.state = "error";
+      signalFreshnessTitle.textContent = "未能刷新，旧线索已保留";
+      signalFreshnessDetail.textContent = `${error.message}。可执行下方命令重试。`;
+      signalRefreshButton.textContent = "重试刷新";
+    } finally {
+      signalRefreshButton.disabled = false;
+    }
+  });
 
   Promise.all([
     fetch("./data/exhibitions.json", { cache: "no-store" }).then((response) => response.json()),
@@ -909,13 +976,16 @@ if (app && window.L && window.ExhibitionAtlasCore) {
         }));
       state.sources = data.sources || [];
       const checkedAt = new Date(data.checkedAt || data.collection?.checkedAt || data.updatedAt);
+      state.catalogUpdatedAt = data.checkedAt || data.collection?.checkedAt || data.updatedAt || "";
       const updateText = Number.isNaN(checkedAt.getTime())
         ? "更新时间待确认"
         : new Intl.DateTimeFormat("zh-CN", {
           timeZone: "Asia/Shanghai", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false,
         }).format(checkedAt);
-      const officialFiled = Number(data.collection?.officialFiled || 0);
-      app.querySelector("[data-atlas-sync]").textContent = `上海备案主库 + 场馆核验 + 每日发现 · 检查 ${updateText} · 共 ${state.events.length} 场${officialFiled ? `（备案 ${officialFiled}）` : ""}`;
+      const upcomingEvents = currentAndUpcomingEvents(state.events, currentDate());
+      const officialFiled = upcomingEvents.filter((event) => event.filingCode).length;
+      const upcomingCount = upcomingEvents.length;
+      app.querySelector("[data-atlas-sync]").textContent = `上海备案主库 + 场馆核验 + 每日发现 · 检查 ${updateText} · 近期 ${upcomingCount} 场${officialFiled ? `（备案 ${officialFiled}）` : ""}`;
       app.querySelector("[data-source-list]").innerHTML = state.sources.map((source) => `<a href="${escapeHtml(safeHttpUrl(source.url) || "#")}" target="_blank" rel="noreferrer"><strong>${escapeHtml(source.name)}${source.automated ? " · 自动" : ""}</strong><span>${escapeHtml(source.scope)}${source.status ? ` · ${escapeHtml(source.status)}` : ""}</span><i>↗</i></a>`).join("");
       renderSocialSignals(signals);
       saveState();

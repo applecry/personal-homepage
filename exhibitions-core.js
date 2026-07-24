@@ -19,6 +19,48 @@
     return `${values.year}-${values.month}-${values.day}`;
   };
 
+  const daysBetween = (earlier, later) => Math.round((
+    Date.parse(`${later}T00:00:00Z`) - Date.parse(`${earlier}T00:00:00Z`)
+  ) / 86400000);
+
+  const signalFreshness = (signalsUpdatedAt, catalogUpdatedAt, options = {}) => {
+    const timeZone = options.timeZone || "Asia/Shanghai";
+    const maxAgeDays = Number.isFinite(options.maxAgeDays) ? options.maxAgeDays : 7;
+    const signalDateValue = new Date(signalsUpdatedAt);
+    const catalogDateValue = new Date(catalogUpdatedAt);
+    const signalValid = !Number.isNaN(signalDateValue.getTime());
+    const catalogValid = !Number.isNaN(catalogDateValue.getTime());
+
+    if (!signalValid) {
+      return {
+        state: "missing",
+        stale: true,
+        reason: "missing",
+        signalDate: "",
+        catalogDate: catalogValid ? todayInTimeZone(catalogDateValue, timeZone) : "",
+        ageDays: null,
+        lagDays: null,
+      };
+    }
+
+    const signalDate = todayInTimeZone(signalDateValue, timeZone);
+    const catalogDate = catalogValid ? todayInTimeZone(catalogDateValue, timeZone) : "";
+    const today = todayInTimeZone(options.now || new Date(), timeZone);
+    const ageDays = Math.max(0, daysBetween(signalDate, today));
+    const lagDays = catalogDate ? daysBetween(signalDate, catalogDate) : null;
+    const reason = lagDays > 0 ? "behind-catalog" : ageDays > maxAgeDays ? "age" : "current";
+
+    return {
+      state: reason === "current" ? "current" : "stale",
+      stale: reason !== "current",
+      reason,
+      signalDate,
+      catalogDate,
+      ageDays,
+      lagDays,
+    };
+  };
+
   const dateRangeFor = (mode, today, customStart = "", customEnd = "") => {
     if (!mode || mode === "all") return null;
     if (mode === "ongoing") return { start: today, end: today };
@@ -42,6 +84,18 @@
     if (range.invalid) return false;
     return event.startDate <= range.end && event.endDate >= range.start;
   };
+
+  const isCurrentOrUpcoming = (event, today) => Boolean(
+    event?.endDate && today && event.endDate >= today
+  );
+
+  const currentAndUpcomingEvents = (events = [], today) => (
+    events.filter((event) => isCurrentOrUpcoming(event, today))
+  );
+
+  const eventMatchesDefaultScope = (event, today, dateMode = "all") => (
+    dateMode === "custom" || isCurrentOrUpcoming(event, today)
+  );
 
   const calendarDaysForMonth = (monthKey) => {
     const [year, month] = String(monthKey).split("-").map(Number);
@@ -145,12 +199,16 @@
     addDays,
     buildIcs,
     calendarDaysForMonth,
+    currentAndUpcomingEvents,
     dateRangeFor,
     deriveEventStatus,
     escapeIcsText,
+    eventMatchesDefaultScope,
     eventsOnDate,
     eventMatchesDate,
     foldIcsLine,
+    isCurrentOrUpcoming,
+    signalFreshness,
     sortEvents,
     todayInTimeZone,
   };

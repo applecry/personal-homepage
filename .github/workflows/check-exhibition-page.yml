@@ -9,6 +9,9 @@ on:
       - "exhibitions.js"
       - "exhibitions-core.js"
       - "scripts/exhibitions-ui.test.mjs"
+      - "scripts/update-xhs-exhibition-signals.mjs"
+      - "scripts/update-xhs-exhibition-signals.test.mjs"
+      - "scripts/serve-exhibitions-local.mjs"
       - "conventions.html"
       - "conventions.css"
       - "conventions.js"
@@ -29,6 +32,9 @@ on:
       - "exhibitions.js"
       - "exhibitions-core.js"
       - "scripts/exhibitions-ui.test.mjs"
+      - "scripts/update-xhs-exhibition-signals.mjs"
+      - "scripts/update-xhs-exhibition-signals.test.mjs"
+      - "scripts/serve-exhibitions-local.mjs"
       - "conventions.html"
       - "conventions.css"
       - "conventions.js"
@@ -63,8 +69,10 @@ jobs:
         run: |
           node --check exhibitions-core.js
           node --check exhibitions.js
+          node --check scripts/update-xhs-exhibition-signals.mjs
+          node --check scripts/serve-exhibitions-local.mjs
           node --check conventions-core.js
           node --check conventions.js
 
       - name: Test exhibition interactions
-        run: node --test scripts/exhibitions-ui.test.mjs scripts/conventions-ui.test.mjs scripts/conventions-data.test.mjs scripts/conventions-visual.test.mjs scripts/update-conventions.test.mjs
+        run: node --test scripts/exhibitions-ui.test.mjs scripts/update-xhs-exhibition-signals.test.mjs scripts/conventions-ui.test.mjs scripts/conventions-data.test.mjs scripts/conventions-visual.test.mjs scripts/update-conventions.test.mjs

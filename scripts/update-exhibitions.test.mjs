@@ -6,6 +6,7 @@ import {
   categoryOf,
   filingMatchesEvent,
   loadCuratedEvents,
+  mergeExhibitionHistory,
   mergeFilingEvents,
   mergeVerifiedEvents,
   normalizeCountry,
@@ -89,6 +90,31 @@ test("similarly named events on another date are preserved", () => {
   const event = { id: "other-waic", nameZh: "WAIC 城市活动", startDate: "2026-07-21" };
   const official = { id: "waic-2026", aliases: ["WAIC"], startDate: "2026-07-17" };
   assert.deepEqual(mergeVerifiedEvents([event], [official]), [event, official]);
+});
+
+test("daily merges preserve ended events for history instead of deleting them", () => {
+  const ended = {
+    id: "history-2026",
+    name: "历史展会",
+    nameZh: "历史展会",
+    city: "上海",
+    country: "中国",
+    startDate: "2026-07-11",
+    endDate: "2026-07-18",
+  };
+  const upcoming = {
+    ...ended,
+    id: "upcoming-2026",
+    name: "未来展会",
+    nameZh: "未来展会",
+    startDate: "2026-07-25",
+    endDate: "2026-07-27",
+  };
+  const merged = mergeExhibitionHistory({
+    previousEvents: [ended],
+    collectedEvents: [upcoming],
+  });
+  assert.deepEqual(merged.map((event) => event.id), ["history-2026", "upcoming-2026"]);
 });
 
 test("normalizes Shanghai venue names from filing records", () => {

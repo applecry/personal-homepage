@@ -7,10 +7,14 @@ const {
   addDays,
   buildIcs,
   calendarDaysForMonth,
+  currentAndUpcomingEvents,
   dateRangeFor,
   deriveEventStatus,
+  eventMatchesDefaultScope,
   eventsOnDate,
   eventMatchesDate,
+  isCurrentOrUpcoming,
+  signalFreshness,
   sortEvents,
   todayInTimeZone,
 } = require("../exhibitions-core.js");
@@ -31,10 +35,50 @@ test("uses Shanghai calendar date rather than the machine timezone", () => {
   assert.equal(todayInTimeZone(new Date("2026-07-14T16:30:00Z")), "2026-07-15");
 });
 
+test("marks social signals stale when the exhibition catalog is from a later Shanghai date", () => {
+  assert.deepEqual(signalFreshness(
+    "2026-07-14T06:30:31.567Z",
+    "2026-07-21T01:10:53.323Z",
+    { now: new Date("2026-07-24T04:00:00Z") },
+  ), {
+    state: "stale",
+    stale: true,
+    reason: "behind-catalog",
+    signalDate: "2026-07-14",
+    catalogDate: "2026-07-21",
+    ageDays: 10,
+    lagDays: 7,
+  });
+});
+
+test("keeps same-day social signals current and handles missing timestamps explicitly", () => {
+  assert.equal(signalFreshness(
+    "2026-07-21T00:10:00Z",
+    "2026-07-21T08:10:00Z",
+    { now: new Date("2026-07-24T04:00:00Z") },
+  ).state, "current");
+  assert.equal(signalFreshness("", "2026-07-21T08:10:00Z").reason, "missing");
+});
+
 test("date filters include events whose date ranges overlap", () => {
   const today = dateRangeFor("ongoing", "2026-08-01");
   assert.equal(eventMatchesDate(event, today), true);
   assert.equal(eventMatchesDate(event, dateRangeFor("ongoing", "2026-08-04")), false);
+});
+
+test("default exhibition scope excludes ended events but keeps events ending today", () => {
+  const values = [
+    { id: "ended", endDate: "2026-07-18" },
+    { id: "today", endDate: "2026-07-21" },
+    { id: "future", endDate: "2026-07-31" },
+  ];
+  assert.equal(isCurrentOrUpcoming(values[0], "2026-07-21"), false);
+  assert.deepEqual(
+    currentAndUpcomingEvents(values, "2026-07-21").map((item) => item.id),
+    ["today", "future"],
+  );
+  assert.equal(eventMatchesDefaultScope(values[0], "2026-07-21", "all"), false);
+  assert.equal(eventMatchesDefaultScope(values[0], "2026-07-21", "custom"), true);
 });
 
 test("Sunday still resolves to the current Saturday-Sunday weekend", () => {

@@ -1,5 +1,5 @@
 import { execFile } from "node:child_process";
-import { access, readFile, writeFile } from "node:fs/promises";
+import { access, readFile, rename, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
@@ -73,34 +73,52 @@ const collect = async () => {
   return uniqueSignals(parseOpenCliJson(stdout)).slice(0, limit);
 };
 
-const main = async () => {
-  const previous = await readFile(outputPath, "utf8").then(JSON.parse).catch(() => null);
+const writeJsonAtomically = async (targetPath, payload) => {
+  const temporaryPath = `${targetPath}.${process.pid}.${Date.now()}.tmp`;
   try {
-    const items = await collect();
+    await writeFile(temporaryPath, `${JSON.stringify(payload, null, 2)}\n`, { encoding: "utf8", flag: "wx" });
+    await rename(temporaryPath, targetPath);
+  } catch (error) {
+    await unlink(temporaryPath).catch(() => {});
+    throw error;
+  }
+};
+
+const updateSignals = async (options = {}) => {
+  const targetPath = options.outputPath || outputPath;
+  const collectSignals = options.collectSignals || collect;
+  const now = options.now || (() => new Date());
+  const previous = await readFile(targetPath, "utf8").then(JSON.parse).catch(() => null);
+  try {
+    const items = await collectSignals();
     if (!items.length) throw new Error("No Xiaohongshu exhibition signals returned");
     const payload = {
-      updatedAt: new Date().toISOString(),
+      updatedAt: now().toISOString(),
       platform: "小红书",
       query,
       role: "社交热度与展览发现线索，不作为日期、票价或场馆信息的事实来源",
       items,
     };
-    await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-    console.log(`Wrote ${items.length} Xiaohongshu exhibition signals`);
+    await writeJsonAtomically(targetPath, payload);
+    return { count: items.length, updatedAt: payload.updatedAt, outputPath: targetPath };
   } catch (error) {
     if (previous?.items?.length) {
-      console.warn(`Xiaohongshu update failed; keeping ${previous.items.length} previous signals: ${error.message}`);
-      return;
+      error.preserved = true;
+      error.preservedCount = previous.items.length;
     }
     throw error;
   }
 };
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  main().catch((error) => {
-    console.error(error);
+  updateSignals().then((result) => {
+    console.log(`Wrote ${result.count} Xiaohongshu exhibition signals`);
+  }).catch((error) => {
+    console.error(error.preserved
+      ? `Xiaohongshu update failed; kept ${error.preservedCount} previous signals: ${error.message}`
+      : error);
     process.exitCode = 1;
   });
 }
 
-export { normalizeSignal, normalizeXhsUrl, parseOpenCliJson, uniqueSignals };
+export { collect, normalizeSignal, normalizeXhsUrl, parseOpenCliJson, uniqueSignals, updateSignals, writeJsonAtomically };

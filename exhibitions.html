@@ -7,7 +7,7 @@
     <title>Exhibit Atlas 全球展览网 | applecry</title>
     <meta name="description" content="在一张地图上发现全球值得去的展会，按地区、时间与行业筛选，并直达官方信息。" />
     <link rel="stylesheet" href="./assets/vendor/leaflet.css" />
-    <link rel="stylesheet" href="./exhibitions.css?v=20260718-1" />
+    <link rel="stylesheet" href="./exhibitions.css?v=20260724-1" />
     <link rel="stylesheet" href="./page-agent.css?v=20260715-4" />
   </head>
   <body>
@@ -171,6 +171,14 @@
               <div><span>SOCIAL SIGNALS</span><h3 id="social-signals-title">小红书热度线索</h3></div>
               <small data-signal-updated>等待本地采集</small>
             </header>
+            <div class="atlas-signal-freshness" data-signal-freshness data-state="loading" role="status" aria-live="polite">
+              <strong data-signal-freshness-title>正在核对线索新鲜度</strong>
+              <span data-signal-freshness-detail>热度线索会与主展会数据的更新时间比较。</span>
+              <div class="atlas-signal-local-actions" data-signal-local-actions hidden>
+                <button type="button" data-signal-refresh>使用本机登录态刷新</button>
+                <small>命令：<code>node scripts/update-xhs-exhibition-signals.mjs</code></small>
+              </div>
+            </div>
             <p>用于发现近期热门展览与观众兴趣，不作为日期、票价或场馆信息的事实来源。</p>
             <div data-social-signal-list></div>
           </section>
@@ -196,9 +204,10 @@
       </button>
     </div>
     <script src="./assets/vendor/leaflet.js"></script>
-    <script src="./exhibitions-core.js?v=20260718-1"></script>
-    <script src="./exhibitions.js?v=20260718-2"></script>
+    <script src="./exhibitions-core.js?v=20260724-2"></script>
+    <script src="./exhibitions.js?v=20260724-2"></script>
     <script src="./page-agent-knowledge.js?v=20260718-2"></script>
+    <script src="./persistent-music.js?v=20260724-1"></script>
     <script src="./script.js?v=20260716-1"></script>
   </body>
 </html>
