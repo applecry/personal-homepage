@@ -31,6 +31,14 @@
   const scriptUrl = new URL(document.currentScript?.src || window.location.href);
   const siteRoot = new URL("./", scriptUrl);
   const storageKey = "qiaomu-music-state-v1";
+  const controlStorageKey = "qiaomu-music-control-v1";
+  const instanceId = typeof window.crypto?.randomUUID === "function"
+    ? window.crypto.randomUUID()
+    : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  const controlChannel = typeof BroadcastChannel === "function"
+    ? new BroadcastChannel(controlStorageKey)
+    : null;
+  const seenControlEvents = new Set();
   const tracks = [
     {
       id: "night-dancer",
@@ -101,6 +109,7 @@
   let needsResume = false;
   let lastSavedSecond = -1;
   let pendingSeek = state.currentTime;
+  let activeClaim = null;
   const audio = new Audio();
   audio.preload = "metadata";
 
@@ -207,6 +216,67 @@
     }
   };
 
+  const sendControl = (type, detail = {}) => {
+    const message = {
+      type,
+      detail,
+      sender: instanceId,
+      eventId: `${instanceId}-${Date.now()}-${Math.random().toString(36).slice(2)}`,
+    };
+    seenControlEvents.add(message.eventId);
+    controlChannel?.postMessage(message);
+    try {
+      window.localStorage.setItem(controlStorageKey, JSON.stringify(message));
+    } catch {
+      // BroadcastChannel is sufficient when local storage is unavailable.
+    }
+  };
+
+  const compareClaims = (left, right) => {
+    if (!left) return -1;
+    if (!right) return 1;
+    if (left.at !== right.at) return left.at - right.at;
+    return String(left.owner).localeCompare(String(right.owner));
+  };
+
+  const claimPlayback = () => {
+    activeClaim = { at: Date.now(), owner: instanceId };
+    sendControl("claim", { claim: activeClaim });
+  };
+
+  const handleControl = (message) => {
+    if (
+      !message
+      || message.sender === instanceId
+      || seenControlEvents.has(message.eventId)
+    ) return;
+
+    seenControlEvents.add(message.eventId);
+    if (seenControlEvents.size > 100) {
+      const oldest = seenControlEvents.values().next().value;
+      seenControlEvents.delete(oldest);
+    }
+
+    if (message.type === "pause-all") {
+      activeClaim = null;
+      state.playing = false;
+      needsResume = false;
+      audio.pause();
+      saveState(true);
+      render();
+      return;
+    }
+
+    const remoteClaim = message.detail?.claim;
+    if (message.type === "claim" && compareClaims(remoteClaim, activeClaim) > 0) {
+      activeClaim = remoteClaim;
+      state.playing = false;
+      needsResume = false;
+      audio.pause();
+      render();
+    }
+  };
+
   const render = () => {
     const duration = Number.isFinite(audio.duration) && audio.duration > 0 ? audio.duration : 0;
     const currentTime = effectiveTime();
@@ -267,12 +337,15 @@
     needsResume = false;
 
     if (!shouldPlay) {
+      activeClaim = null;
       audio.pause();
       saveState(true);
       render();
+      sendControl("pause-all");
       return;
     }
 
+    claimPlayback();
     saveState(true);
     try {
       await audio.play();
@@ -329,6 +402,7 @@
     render();
   });
   audio.addEventListener("play", () => {
+    if (activeClaim?.owner !== instanceId) claimPlayback();
     state.playing = true;
     needsResume = false;
     saveState(true);
@@ -346,6 +420,16 @@
     needsResume = false;
     saveState(true);
     render();
+  });
+
+  controlChannel?.addEventListener("message", (event) => handleControl(event.data));
+  window.addEventListener("storage", (event) => {
+    if (event.key !== controlStorageKey || !event.newValue) return;
+    try {
+      handleControl(JSON.parse(event.newValue));
+    } catch {
+      // Ignore malformed cross-tab control messages.
+    }
   });
 
   const shellUrl = window.location.href;
@@ -423,6 +507,7 @@
     closeSoftPage();
   });
   window.addEventListener("pagehide", () => saveState(true));
+  window.addEventListener("unload", () => controlChannel?.close());
   window.addEventListener("pageshow", (event) => {
     if (!event.persisted) return;
     const restored = readState();

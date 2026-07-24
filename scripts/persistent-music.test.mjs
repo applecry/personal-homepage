@@ -31,6 +31,7 @@ test("homepage tracks expose stable ids for cross-page restoration", async () =>
   for (const id of ["night-dancer", "judgement", "night-cruising", "sunset-road"]) {
     assert.ok(html.includes(`data-track-id="${id}"`), id);
   }
+  assert.match(html, /src="\.\/script\.js\?v=20260724-\d+"/);
 });
 
 test("player keeps one audio instance during active same-origin navigation", async () => {
@@ -39,4 +40,12 @@ test("player keeps one audio instance during active same-origin navigation", asy
   assert.match(source, /document\.createElement\("iframe"\)/);
   assert.match(source, /window\.history\.pushState/);
   assert.match(source, /window\.top\.QiaomuPersistentMusic/);
+});
+
+test("playing and pausing coordinate every open page and tab", async () => {
+  const source = await readFile(new URL("persistent-music.js", root), "utf8");
+  assert.match(source, /new BroadcastChannel\(controlStorageKey\)/);
+  assert.match(source, /sendControl\("claim"/);
+  assert.match(source, /sendControl\("pause-all"/);
+  assert.match(source, /window\.addEventListener\("storage"/);
 });
