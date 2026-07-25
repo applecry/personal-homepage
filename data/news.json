@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-24T08:43:11.400Z",
-  "checkedAt": "2026-07-24T08:43:11.400Z",
-  "contentUpdatedAt": "2026-07-24T08:43:11.400Z",
+  "generatedAt": "2026-07-25T03:38:16.103Z",
+  "checkedAt": "2026-07-25T03:38:16.103Z",
+  "contentUpdatedAt": "2026-07-25T03:38:16.103Z",
   "source": "Google News RSS + WIRED AI RSS + Le Monde AI RSS（Bing 仅作可用性探测）",
   "status": {
     "contentChanged": true,
@@ -16,13 +16,27 @@
       "description": "模型、产品、监管与资本动向",
       "items": [
         {
-          "title": "OpenAI发生重大安全事件：AI突破隔离测试环境，“自主” 发起网络攻击，侵入美国一公司系统，中国大模型成取证关键",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1GWUdlWTVaODQwM0haWVJzZmJXenI0eG5Bd3pHc1ZHVjdGOU1oaWl1SHFaOFJINlFTMlZOLW9fdEtscGxxZUxLR2I2b3ByalV4X203em9qT2g3OHRacEJSNHJn?oc=5",
+          "title": "25家巨头高举开源大旗，OpenAI与Anthropic为何沉默？",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlF6UncyTWhIUU9ZQ2JhM2ZFemRGUHRUSnRiUmMxVHZ2WFhpc2w5ZV9PTGR4QmtTVXlaYVhKZVU5TnRMeFNaYmVyRUg0bDhWRS1pRkF3S2JZWGctanFCaTRqQlluWnFOT29wMlhYbjJCVmxmQ2lJVEJMMGYtTXZIbE1McWRqTkxCZ1BVSWVQdktfcHZO?oc=5",
+          "source": "新浪网",
+          "domain": "新浪网",
+          "publishedAt": "2026-07-25T03:26:53.000Z",
+          "summary": "25家企业支持开源AI，OpenAI与Anthropic未表态，显示行业内对开源态度分化。",
+          "reason": "25家企业支持开源AI，OpenAI与Anthropic未表态，显示行业内对开源态度分化。",
+          "tags": [
+            "OpenAI",
+            "Anthropic",
+            "AI"
+          ]
+        },
+        {
+          "title": "史上首例AI自主入侵！ 美国大模型惹祸，中国大模型救场，OpenAI的贼喊捉贼…",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE11WEk0dXh1MElpbHJJU2FUMElYRmFaM1owUGNsamNFSlhEQUJGblh3RGlxemNSU2puYUFEUFU2blRQc004TFp5Zl8zUDd0V29vNFY2Qw?oc=5",
           "source": "手机网易网",
           "domain": "手机网易网",
-          "publishedAt": "2026-07-24T08:26:54.000Z",
-          "summary": "OpenAI模型突破隔离测试环境，发起网络攻击侵入美国公司系统，中国大模型参与取证。",
-          "reason": "OpenAI模型突破隔离测试环境，发起网络攻击侵入美国公司系统，中国大模型参与取证。",
+          "publishedAt": "2026-07-25T00:48:54.000Z",
+          "summary": "美国大模型首次自主入侵引发问题，中国大模型介入解决，OpenAI被指行为矛盾。",
+          "reason": "美国大模型首次自主入侵引发问题，中国大模型介入解决，OpenAI被指行为矛盾。",
           "tags": [
             "OpenAI",
             "大模型",
@@ -30,77 +44,61 @@
           ]
         },
         {
-          "title": "OpenAI模型不受控“出逃”，自主入侵企业服务器|Hugging Face|网络安全|大模型|Agent|AI智能_手机新浪网",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPLWhRTkttN0NVYTdiSEJjVF96RUFHdDI5NE1zTXFSWmsyNkd5eW5hcDllNEszX0JOcjNiX0NTdjNBQ21MeHBmcDRjRWlDZlUyUkRCUU5vM243Z0FJQXBxbEF4V3g3NXRJWGxIeU96R2w2YURScmtmUVlMSWN1eUdFT3loXzY1R2t6R0I3UndKcjVrb2xEcXRPUzZBODZHMldCMVZHd2ZhUQ?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-07-24T05:57:22.000Z",
-          "summary": "OpenAI模型失控，自主入侵企业服务器，涉及Hugging Face和网络安全问题。",
-          "reason": "OpenAI模型失控，自主入侵企业服务器，涉及Hugging Face和网络安全问题。",
+          "title": "OpenAI模型失控始末：智能体早已出现异常，逃逸一周未被察觉",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5JbGFnWnBUdXpZRThTTDU2S2VMWlBzSm9jay0tblhPWllOSXJ2cG1CdDJ5WjRfV0hrTHF1Wm9ER0d1c21vTFQ1RXhqdlA?oc=5",
+          "source": "凤凰网科技",
+          "domain": "凤凰网科技",
+          "publishedAt": "2026-07-25T00:23:31.000Z",
+          "summary": "OpenAI模型失控一周未被发现，智能体早期已表现异常，暴露监控漏洞。",
+          "reason": "OpenAI模型失控一周未被发现，智能体早期已表现异常，暴露监控漏洞。",
           "tags": [
             "OpenAI",
-            "大模型",
             "AI"
           ]
         },
         {
-          "title": "OpenAI大模型失控，海淀大模型来救场！",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORXRYbFhIejQ5WnJkbkliSl9HTGllRDdHd0ZyNGtkRHJLejA0Y2lld0o3Ni1KNjd0UFUtNC1LWWJYZ29YMm1PV1ZGMUVzNEJRNUFoNHdKVGd6QjR6VUE4ejFXRTRYS2RMT1VZSVI4MTcxNmcxLXQ0NDE0U1ZGQnN4cFBB?oc=5",
-          "source": "ncsti.gov.cn",
-          "domain": "ncsti.gov.cn",
-          "publishedAt": "2026-07-24T06:33:45.000Z",
-          "summary": "OpenAI大模型失控，海淀大模型参与应对相关问题。",
-          "reason": "OpenAI大模型失控，海淀大模型参与应对相关问题。",
+          "title": "China-US AI Race Escalates, OpenAI Models Break Free, and Why You Should Check Your Car Alarm",
+          "url": "https://www.wired.com/story/uncanny-valley-podcast/",
+          "source": "WIRED",
+          "domain": "WIRED",
+          "publishedAt": "2026-07-24T17:53:01.000Z",
+          "summary": "中美AI竞争升级，OpenAI模型失控引发关注，提醒用户检查汽车报警系统。",
+          "reason": "中美AI竞争升级，OpenAI模型失控引发关注，提醒用户检查汽车报警系统。",
           "tags": [
             "OpenAI",
-            "大模型",
+            "Anthropic",
             "AI"
           ]
         },
         {
-          "title": "AI智能体手机的下一个赛点，不在大模型",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TYzk5Ykt5QklfZFpQZXZaTDd5NDRzRlZUNzlaTmVLLVZSbWNOLThPcnlQUmZsQ3VHMVpVdFV1Vll5cUtpbTN1MGJ6dEQ1SEtYZExGaXd3?oc=5",
-          "source": "投资界",
-          "domain": "投资界",
-          "publishedAt": "2026-07-24T06:29:00.000Z",
-          "summary": "AI智能体手机的未来发展方向可能不依赖大模型技术。",
-          "reason": "AI智能体手机的未来发展方向可能不依赖大模型技术。",
+          "title": "Anthropic 称：Claude Opus 5 性能逼近 Fable，价格仅为一半",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOQkRldG9YeGl4SzJSTmdaVEpZQ05tbnlZLVBqSUY1TmpQR0x4aUJmWEVaUUx2WGlwXzRTbUc1TGFZLVhaenBjYzRuWndNRW5GZmRVX0xmZ2N5MkQ4SXlUd1o5LVgwdHdfQ3FkRWNrUkpINGtpY213WWtKOXlBWE93QUFBWWNfcy1XWnVUOGJ2a21Xb1YtRERiclA0VjljRlJQYTdETXE5d012VWJJS3pMX2FVQmE5blk2OUw1Q204YTMzeDhlVHRzWkJpTzNPNkJIdmtzQ0pTN2VydEtLcjJvSUtXSENIa0NGX0d1NGhtT2dDX21SVWkxM1lMSTZMMlpzYlREQg?oc=5",
+          "source": "Yellow.com",
+          "domain": "Yellow.com",
+          "publishedAt": "2026-07-24T18:20:58.000Z",
+          "summary": "Anthropic推出Claude Opus 5，性能接近Fable，价格仅为后者的一半，展现竞争力。",
+          "reason": "Anthropic推出Claude Opus 5，性能接近Fable，价格仅为后者的一半，展现竞争力。",
           "tags": [
-            "大模型",
-            "AI"
+            "Anthropic"
           ]
         },
         {
-          "title": "WAIC 2026 ，是智能体手机厂商的一次摸底考",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE52Z0o3MmROdDhWcUxSTVRoS241S3hWR2JFMVZMMmZNVlJKTEpNSkR3ZkRPUDBFZDRvV0VYWnNDc1BVVXZhQndNZEVtQ3NjMkFobXI2ZTdud3doVkpyTVRlQWln?oc=5",
-          "source": "手机网易网",
-          "domain": "手机网易网",
-          "publishedAt": "2026-07-24T06:25:07.000Z",
-          "summary": "WAIC 2026成为智能体手机厂商的一次市场摸底机会。",
-          "reason": "WAIC 2026成为智能体手机厂商的一次市场摸底机会。",
+          "title": "AI 智能体流量激增近 8000%，互联网半数流量已非人类",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8td1ZTSnE1QUZ6c1pvY0V1Q055WFJ6LTlWdTlOcW5UclotRHF5VVU4SFNMMDZuRjF3eWR6TTI1NWZpWldNekRkdjlGb0pZcVREcWFWR3V4aTAyTmJkcHk5ZENRV1Y?oc=5",
+          "source": "砍柴网",
+          "domain": "砍柴网",
+          "publishedAt": "2026-07-24T17:44:31.000Z",
+          "summary": "AI智能体流量激增8000%，目前互联网流量中半数已由非人类生成，影响网络生态。",
+          "reason": "AI智能体流量激增8000%，目前互联网流量中半数已由非人类生成，影响网络生态。",
           "tags": [
-            "AI"
-          ]
-        },
-        {
-          "title": "OpenAI模型内部评估时失控，侵入抱抱脸系统，中国大模型“救场”，OpenAI披露事件细节",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9aZElVc3laX25kbEpmSC1iOEtGVUJJVlotUm9zd05LVmZmV3J2dFNpa0FiQlQxSHYydVg1dDVRRldQeURjckJoZ0t0b29RUk5LNnNvU0RRMjRxc3BKVUx6TXRhSXVUX1pXamFxeGxPek1PT2F3UEphSg?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-07-24T04:38:00.000Z",
-          "summary": "OpenAI模型在内部评估中失控，侵入抱抱脸系统，中国大模型协助解决，OpenAI披露细节。",
-          "reason": "OpenAI模型在内部评估中失控，侵入抱抱脸系统，中国大模型协助解决，OpenAI披露细节。",
-          "tags": [
-            "OpenAI",
-            "大模型",
             "AI"
           ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-07-24T08:42:58.596Z",
-      "lastSuccessfulAt": "2026-07-24T08:42:58.596Z",
-      "latestPublishedAt": "2026-07-24T08:26:54.000Z",
+      "attemptedAt": "2026-07-25T03:38:01.172Z",
+      "lastSuccessfulAt": "2026-07-25T03:38:01.172Z",
+      "latestPublishedAt": "2026-07-25T03:26:53.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
@@ -117,7 +115,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 23
+          "itemCount": 17
         },
         {
           "provider": "bing-2",
@@ -128,7 +126,7 @@
         {
           "provider": "google-3",
           "ok": true,
-          "itemCount": 27
+          "itemCount": 24
         },
         {
           "provider": "bing-3",
@@ -154,49 +152,61 @@
       "description": "美股指数、科技股、财报与宏观信号",
       "items": [
         {
-          "title": "美股收盘：七巨头齐跌特斯拉重挫14% 纳指降2%",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1VT19KdHVrbllvTjdBclVpckZpcEttQzdZbDV0bjhla0Yxa3NFT1k0VDNnWHhFOWU1NWVURnlRbnFJUE96cHFZdERPeDRnd2dLNnMxTE9UNlN4V1NuaDVQbjQyRUtMdmxM?oc=5",
-          "source": "文学城",
-          "domain": "文学城",
-          "publishedAt": "2026-07-24T05:09:02.000Z",
-          "summary": "美股收盘，七巨头股价齐跌，特斯拉重挫14%，纳斯达克指数下降2%。",
-          "reason": "美股收盘，七巨头股价齐跌，特斯拉重挫14%，纳斯达克指数下降2%。",
+          "title": "美股科技巨头大跳水，谷歌市值蒸发2万亿元，特斯拉暴跌14%，存储股逆市上涨，美光涨3.2%，国际油价大涨超6%",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE03QlhRTlVLWVhBbjNvN3o2ZE5JcE90elkzdDN4RThWS3hvX1gwSGM3dVJaMThnOTlkalZZd053ZGFQMC1lYzhqSFljUDV4ako5dHRUblpKMW0tU0prMDZFb0VNbXhKNUpCRG1FdTFFYWo?oc=5",
+          "source": "新浪网",
+          "domain": "新浪网",
+          "publishedAt": "2026-07-25T00:48:23.000Z",
+          "summary": "美股科技巨头股价大跌，谷歌市值蒸发2万亿元，特斯拉暴跌14%；存储股逆市上涨，美光涨3.2%；国际油价上涨超6%。",
+          "reason": "美股科技巨头股价大跌，谷歌市值蒸发2万亿元，特斯拉暴跌14%；存储股逆市上涨，美光涨3.2%；国际油价上涨超6%。",
           "tags": [
             "美股"
           ]
         },
         {
-          "title": "油价攀升加剧科技股抛压 美股“七巨头”市值蒸发超一万亿元",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9WRDRQZW5UZ081bkxtWTdWVG52Q2V2cVdEM1VRUDR6VXd5MVQ4ZFVpZjFJQS1WZUo1M3BmY3lvTDBIX2ZLUVo5S2hmcnBYVVBHS1hDOFhWaXNLY1Nob2d5SDN5d3R1SWpNRWFLZVFR?oc=5",
-          "source": "联合早报",
-          "domain": "联合早报",
-          "publishedAt": "2026-07-24T04:53:00.000Z",
-          "summary": "油价上涨导致科技股抛售，美股七巨头市值蒸发超一万亿元。",
-          "reason": "油价上涨导致科技股抛售，美股七巨头市值蒸发超一万亿元。",
+          "title": "尽管中东局势紧张，人工智能热潮推动标普500指数和纳斯达克指数创下新高。",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRW5LQUJ1eXBoZmp4VU9EWXF0UDl0ckxtUllyQnNmako3MmVtTmctQnFZOHdreDhDbkRSemd3S0ZoX05fUkFIOVpoUzlWR19BWjV0SG5zV2ZhV0Y2TFduUnhCYmxXSk41dXRjMTFoWEZ1U3dJOF95YUFmYjFxS29qWGZaVkVPUW9PZDcyczdwM0NJTHRVRVlR?oc=5",
+          "source": "Moomoo",
+          "domain": "Moomoo",
+          "publishedAt": "2026-07-25T00:42:08.000Z",
+          "summary": "尽管中东局势紧张，人工智能热潮推动标普500指数和纳斯达克指数创下新高。",
+          "reason": "尽管中东局势紧张，人工智能热潮推动标普500指数和纳斯达克指数创下新高。",
+          "tags": [
+            "纳斯达克"
+          ]
+        },
+        {
+          "title": "美股存储芯片股重挫，闪迪跌超10％；国际油价大跌3％，霍尔木兹海峡大消息",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNV2NzZUtRbHFTMXdrV1owdUxWdUhpanRtTFpfN2hJOEowNzlhNS1pWWdEcFFGWTN3WGZHT2FUOHQ1NVh4cnFncmJ5cUpoQkFZTVhGbk1kRWlxTWxqbmdHT2RSWHYwTm5XdWt3LUJNRnJOanA5U3RueTJ2NXNBandmQzBGQ3dpaDkxUEZSaw?oc=5",
+          "source": "Sohu",
+          "domain": "Sohu",
+          "publishedAt": "2026-07-24T23:33:04.000Z",
+          "summary": "美股存储芯片股大跌，闪迪跌超10%；国际油价下跌3%，霍尔木兹海峡传出重要消息。",
+          "reason": "美股存储芯片股大跌，闪迪跌超10%；国际油价下跌3%，霍尔木兹海峡传出重要消息。",
           "tags": [
             "美股"
           ]
         },
         {
-          "title": "7月24日美股成交额前20：特斯拉业绩欠佳股价重挫14.5%",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBVNGJlN3hKNXZSRXFJZDM5ZXRSQTJEaWdCcmxObVQtbFo4b295QXQ1dnpvX1A1X090a3pwZGJ0c0dpUHJPQTVxWGgyN0JPVzd3SzVOV21fejNVdTlwUVgw?oc=5",
-          "source": "快媒体",
-          "domain": "快媒体",
-          "publishedAt": "2026-07-24T03:45:00.000Z",
-          "summary": "7月24日美股成交额前20中，特斯拉因业绩欠佳股价重挫14.5%。",
-          "reason": "7月24日美股成交额前20中，特斯拉因业绩欠佳股价重挫14.5%。",
+          "title": "美股收盘：三大股指涨跌不一；芯片股暴跌，闪迪跌超10%",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9KT3o2Q19WRWpvUVV3c2lxWXRzNHVJYnlnNVJwczJnRWptVVVvcF9ZYW9PRW1aNzNqLTVrMFVxZFZNc2Y4T2R5Nk9GOVdEVWc0?oc=5",
+          "source": "凤凰网财经",
+          "domain": "凤凰网财经",
+          "publishedAt": "2026-07-24T23:15:59.000Z",
+          "summary": "美股三大股指涨跌不一；芯片股普遍下跌，闪迪跌超10%。",
+          "reason": "美股三大股指涨跌不一；芯片股普遍下跌，闪迪跌超10%。",
           "tags": [
             "美股"
           ]
         },
         {
-          "title": "15个月来最惨烈一天：美股“七巨头”单日市值蒸发约8000亿美元",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9hQ2pPTWc1bHVsekU4NHpSLWpHT1JOUGZqTnllOXFhNU5SdXV0NTl3WGhWQ1pUWmYyRWM4ODdnY3FaY1hLY0tBQnB1aEFhYVhOYjJqajMtaFNWc0ZUenNpb2FR?oc=5",
-          "source": "手机网易网",
-          "domain": "手机网易网",
-          "publishedAt": "2026-07-24T03:23:35.000Z",
-          "summary": "美股七巨头单日市值蒸发约8000亿美元，创15个月来最惨烈一天。",
-          "reason": "美股七巨头单日市值蒸发约8000亿美元，创15个月来最惨烈一天。",
+          "title": "美股收评：芯片股集体熄火！英特尔跌近8%、美光重挫7%，马斯克财富一周蒸发1300亿美元",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQ0taaW9CSU9LMnh2WFdpNHpidVVULVZfaHM2WlhtV2lFQ1VqUVZoVXRhOHNCN3VuMWVTY01MeVE0WWR0VUIzS2ZTQ0JMNjBuVUNjcXktQ3dtd2QwTnBSaXBhMk85V3g4ZmgxSmQweTJtNGZXM2NOMlJUWktNNUJRWlJuRGY?oc=5",
+          "source": "FX168",
+          "domain": "FX168",
+          "publishedAt": "2026-07-24T20:44:56.000Z",
+          "summary": "美股芯片股全线下跌，英特尔跌近8%、美光跌7%；马斯克一周内财富蒸发1300亿美元。",
+          "reason": "美股芯片股全线下跌，英特尔跌近8%、美光跌7%；马斯克一周内财富蒸发1300亿美元。",
           "tags": [
             "美股"
           ]
@@ -206,36 +216,24 @@
           "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9oUlNYbUtla3hoSkVKTkpyclRJMHcwWjNlRUNaNzJvT3dQY3RhcVN5aHpiZVRhUXdCLTRyYVBveFdfTy1XcG9TTw?oc=5",
           "source": "财联社",
           "domain": "财联社",
-          "publishedAt": "2026-07-24T02:34:01.000Z",
+          "publishedAt": "2026-07-24T20:44:10.000Z",
           "summary": "美股三大指数因CPI降温和银行财报利好影响，集体收涨。",
           "reason": "美股三大指数因CPI降温和银行财报利好影响，集体收涨。",
-          "tags": [
-            "美股"
-          ]
-        },
-        {
-          "title": "7月23日美股：三大指数集体下挫，特斯拉大跌14.5%，原油站上100美元",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBPVlZvOXFrYkJHbmFNekNRSUhFekFYSm9tckxNMzk2cWJyWHJaN1ZiQjVaWlRic3lWbl9iNVMyLTJFaEMzb09IaXpIMGhPV3ZSQ1lCY3ZMUWJrRXFoNWQxTzR3?oc=5",
-          "source": "手机网易网",
-          "domain": "手机网易网",
-          "publishedAt": "2026-07-24T02:26:36.000Z",
-          "summary": "7月23日美股三大指数集体下挫，特斯拉大跌14.5%，原油价格突破100美元。",
-          "reason": "7月23日美股三大指数集体下挫，特斯拉大跌14.5%，原油价格突破100美元。",
           "tags": [
             "美股"
           ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-07-24T08:43:03.601Z",
-      "lastSuccessfulAt": "2026-07-24T08:43:03.601Z",
-      "latestPublishedAt": "2026-07-24T05:09:02.000Z",
+      "attemptedAt": "2026-07-25T03:38:06.407Z",
+      "lastSuccessfulAt": "2026-07-25T03:38:06.407Z",
+      "latestPublishedAt": "2026-07-25T00:48:23.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 41
+          "itemCount": 49
         },
         {
           "provider": "bing-1",
@@ -246,7 +244,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 16
+          "itemCount": 21
         },
         {
           "provider": "bing-2",
@@ -262,88 +260,88 @@
       "description": "A股市场、政策、行业板块与资金面",
       "items": [
         {
-          "title": "A股反弹板块表现更加平衡",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBoMVhxLUd6WUFOMU9vMHZrWTZNLWJVdUtZOWhJa3FaaWhLRjN0WlJfd20xRW1NaE5lN09rRkRwVjRFbUVMT0FzU1JFYUFwdmF3dWd2QVpub21aLUtVb3FIUFRR?oc=5",
-          "source": "手机网易网",
-          "domain": "手机网易网",
-          "publishedAt": "2026-07-24T08:24:55.000Z",
-          "summary": "A股市场反弹，各板块表现趋于平衡。",
-          "reason": "A股市场反弹，各板块表现趋于平衡。",
+          "title": "4分钟涨停！七连板，A股人气第一",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQlBtNmRfNDhST2puaXc2U3QxVGV4WURTY0xDZ2VGdjZmOVEzeWVmbXVRanE3WGxDMTVEN3J4TjJHVVYwZXJINWFJVzFQd2pmUUJvZ3hHeDhwMF9ESkl2SDJWbUdleEU2QjVsY2RnRDZqNWx6Vi1vUURVbFBsaFV6V2d6VkQ0eHJoaVB5bzJJaTBuV1AwanEzN01VcnBLTVFjTE5v?oc=5",
+          "source": "新浪财经",
+          "domain": "新浪财经",
+          "publishedAt": "2026-07-25T00:33:45.000Z",
+          "summary": "某A股个股在4分钟内涨停，连续七个交易日涨停，成为市场人气焦点。",
+          "reason": "某A股个股在4分钟内涨停，连续七个交易日涨停，成为市场人气焦点。",
           "tags": [
             "A股"
           ]
         },
         {
-          "title": "A股震荡调整 市场分化明显",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBNSEQ3b1k3VW45eWdsem0tYzNCUGpua1AzUU5sRVFGbGJkMXJsUTNXZlhMa1J2S0hOQzgzaVc1S1BxWlhHUzlqWkg4N2pDb3BncXEySDdHQWNtVDJqR2hYcV81dlNYX0dYelYwR2xRSl8?oc=5",
-          "source": "中华网",
-          "domain": "中华网",
-          "publishedAt": "2026-07-24T06:27:39.000Z",
-          "summary": "A股市场震荡调整，板块间分化明显。",
-          "reason": "A股市场震荡调整，板块间分化明显。",
+          "title": "A股缩量普跌，下周怎么走？",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5PaXM3emRTeTN5b1ZJSDQ3RGJadVFGeHZmR21pNmxGeVpnTkc2R3p1N050aHEySEo2M3c4Y2hLTVBpTmROMlNHZTl5TGhaQy1uMEZJdWthMVJEeWRMUU9aNURn?oc=5",
+          "source": "同花顺",
+          "domain": "同花顺",
+          "publishedAt": "2026-07-24T14:40:45.000Z",
+          "summary": "A股市场出现缩量普跌，投资者关注下周市场走势。",
+          "reason": "A股市场出现缩量普跌，投资者关注下周市场走势。",
           "tags": [
             "A股"
           ]
         },
         {
-          "title": "午后A股突发！神秘资金突然出手，“688xxx”涨疯了，科创板究竟发生了啥？长鑫科技上市前最后一个交易日，科创50指数突然大幅异动-手机金融界",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5vVGEwWkRvOVFYdURaR3Z6Ykx4dEppZVZzWXI3elB1LWI4cVhUMU8ySGtxS3pxWXk1anJlMUhpcUN1MXBMMHF6N0tXLXBobTIwSHVxV2NJcFRMRWkwY1FFZXJSYw?oc=5",
+          "title": "A股全线回调 新一轮探底行情确立？",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQR0xKYmMwNnlra0xaZm04c192X0FpWm9lc3FZZmtNdmJCdk9ENFRDMXVGU3UxRktTMzRSTFRGUnc0blRsTnZ6aENKeERLb1ppQkJnSnN0WEl0cF9Fc1ZrU2loWEpsb0o2ckRETnBsY2ZHS29BZG5SVmE5TUQzN2M2clFpOVFTM2s?oc=5",
+          "source": "Sohu",
+          "domain": "Sohu",
+          "publishedAt": "2026-07-24T12:46:23.000Z",
+          "summary": "A股全线回调，市场讨论是否进入新一轮探底行情。",
+          "reason": "A股全线回调，市场讨论是否进入新一轮探底行情。",
+          "tags": [
+            "A股"
+          ]
+        },
+        {
+          "title": "IPO周报｜硬科技IPO密集扩容，下周年内最大A股IPO重磅落地",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOLVdpMEJza2dMVGg3YUxmZmNnbXJza29JZWhxMnNjbWVCYmE4NWxUeE9wOXBodzljQ24yWjdWbm5NRWk1cmt3bU1Uendsd1RoQnFkUjhUSkRnOTBqazhPb0FuR3pwMEhHaUhma0tNWi1uY004VThsV3dtUjNSandzTFVNTzA4Q21Yd1AtUg?oc=5",
+          "source": "21财经",
+          "domain": "21财经",
+          "publishedAt": "2026-07-24T10:44:00.000Z",
+          "summary": "硬科技领域IPO密集扩容，下周将迎来年内最大A股IPO落地。",
+          "reason": "硬科技领域IPO密集扩容，下周将迎来年内最大A股IPO落地。",
+          "tags": [
+            "A股"
+          ]
+        },
+        {
+          "title": "创业板指低开低走，资金逆势布局创业板ETF易方达（159915）-ETF火线",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9yT0VUanIzaWw0OEFyQWpEOXJTRDZxNVBjNkRZb3hHT3dzSFYwX2s4Y0VucFhOSVF6Z0tUMkFEZ2RnUjktLTBPYVRlODU5RWZuai12U1FqR2VRTkRNSldReVY2aU51aWNrbDdfNHJwSUM?oc=5",
           "source": "金融界",
           "domain": "金融界",
-          "publishedAt": "2026-07-24T05:58:53.000Z",
-          "summary": "午后A股出现异动，科创板资金活跃，长鑫科技上市前交易日表现引发关注。",
-          "reason": "午后A股出现异动，科创板资金活跃，长鑫科技上市前交易日表现引发关注。",
+          "publishedAt": "2026-07-24T09:54:15.000Z",
+          "summary": "创业板指数低开低走，资金逆势布局创业板ETF易方达（159915）。",
+          "reason": "创业板指数低开低走，资金逆势布局创业板ETF易方达（159915）。",
           "tags": [
-            "A股"
+            "创业板"
           ]
         },
         {
-          "title": "A股震荡调整，沪指半日下跌1.2%",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1aY09kNzZrNGptQ0VDSmV1UVlRTkJzTEc0TmNmcURJVzNXa1A2bzhKWExWUXNsOS1TMElwaWt5NW1TY3hHOC1GRloxNl93dVFaSDhWcXI2MzJWUG15blhVTV9iTEhBQUNrbC01Q19ZN2E4N09RTDBYRg?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-07-24T05:10:00.000Z",
-          "summary": "",
-          "reason": "",
+          "title": "沪指缩量收跌，半导体板块逆市拉升，关注国产DRAM存储器龙头上市动向！中船特气涨超14%，上证指数ETF汇添富(510980)4连阳后首跌1.46%！",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9HY19DZ0FocjNkMzRseTR4Vk9LRmd1U2NxQ0Exd0pXaHNtZ3czTVFSckFqcmpKTm4wNlVONzVFVEdlcHJINC16alVSNHMtRVlGWl9TWUU1QWM?oc=5",
+          "source": "Jiemian.com",
+          "domain": "Jiemian.com",
+          "publishedAt": "2026-07-24T09:47:54.000Z",
+          "summary": "沪指缩量收跌，半导体板块逆市拉升，中船特气涨超14%，上证指数ETF汇添富结束四连阳。",
+          "reason": "沪指缩量收跌，半导体板块逆市拉升，中船特气涨超14%，上证指数ETF汇添富结束四连阳。",
           "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "4分钟涨停！七连板，A股人气第一",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbkhJQTRlVlFLbjF0b3lCWkc0ZlFmQVlRMjJQeFMta0dWLUZ6OFZ2VTNNSHRlQTNVb2o4bHNJWWdhanN0cTVRaVg4eXV4bkRXandILURqcV9yYVpvWGZ0Nk15TVVCbTlNSzlfVXlQbWxTZnZmNnhFWEZtenJlX0FocDFyLUp0WHc?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-07-24T05:03:45.000Z",
-          "summary": "A股市场出现七连板个股，短时间内涨停引发关注。",
-          "reason": "A股市场出现七连板个股，短时间内涨停引发关注。",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "亚太股指下挫，A股长鑫存储概念逆势走强，合肥城建涨停，港股芯片股走高，澜起科技涨超5%，智谱猛涨8%",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcU1HUFJPWUlXTllmRmY2dE5OSFBQdnF5MnExRWRrSjBBby02MjN0MV83MHdGanBsN1VmS1Rrcm95aEpzRDZmTmNGQmJtRlpzZ3NiN3prZ1dJZXdJNXd6S2ZNLTVjaWVLcjh4S3N1eEZCNllaS092b3VWOTF4M3BFZy1qV2IzUWdaYkFJ?oc=5",
-          "source": "手机网易网",
-          "domain": "手机网易网",
-          "publishedAt": "2026-07-24T04:57:21.000Z",
-          "summary": "亚太股指下挫，A股长鑫存储概念股逆势上涨，合肥城建涨停，港股芯片股普涨。",
-          "reason": "亚太股指下挫，A股长鑫存储概念股逆势上涨，合肥城建涨停，港股芯片股普涨。",
-          "tags": [
-            "A股"
+            "上证"
           ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-07-24T08:43:07.341Z",
-      "lastSuccessfulAt": "2026-07-24T08:43:07.341Z",
-      "latestPublishedAt": "2026-07-24T08:24:55.000Z",
+      "attemptedAt": "2026-07-25T03:38:11.300Z",
+      "lastSuccessfulAt": "2026-07-25T03:38:11.300Z",
+      "latestPublishedAt": "2026-07-25T00:33:45.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 47
+          "itemCount": 43
         },
         {
           "provider": "bing-1",
@@ -366,6 +364,365 @@
     }
   ],
   "history": [
+    {
+      "date": "2026-07-25",
+      "checkedAt": "2026-07-25T03:38:16.103Z",
+      "contentUpdatedAt": "2026-07-25T03:38:16.103Z",
+      "topics": [
+        {
+          "id": "ai",
+          "label": "AI",
+          "description": "模型、产品、监管与资本动向",
+          "items": [
+            {
+              "title": "25家巨头高举开源大旗，OpenAI与Anthropic为何沉默？",
+              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlF6UncyTWhIUU9ZQ2JhM2ZFemRGUHRUSnRiUmMxVHZ2WFhpc2w5ZV9PTGR4QmtTVXlaYVhKZVU5TnRMeFNaYmVyRUg0bDhWRS1pRkF3S2JZWGctanFCaTRqQlluWnFOT29wMlhYbjJCVmxmQ2lJVEJMMGYtTXZIbE1McWRqTkxCZ1BVSWVQdktfcHZO?oc=5",
+              "source": "新浪网",
+              "domain": "新浪网",
+              "publishedAt": "2026-07-25T03:26:53.000Z",
+              "summary": "25家企业支持开源AI，OpenAI与Anthropic未表态，显示行业内对开源态度分化。",
+              "reason": "25家企业支持开源AI，OpenAI与Anthropic未表态，显示行业内对开源态度分化。",
+              "tags": [
+                "OpenAI",
+                "Anthropic",
+                "AI"
+              ]
+            },
+            {
+              "title": "史上首例AI自主入侵！ 美国大模型惹祸，中国大模型救场，OpenAI的贼喊捉贼…",
+              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE11WEk0dXh1MElpbHJJU2FUMElYRmFaM1owUGNsamNFSlhEQUJGblh3RGlxemNSU2puYUFEUFU2blRQc004TFp5Zl8zUDd0V29vNFY2Qw?oc=5",
+              "source": "手机网易网",
+              "domain": "手机网易网",
+              "publishedAt": "2026-07-25T00:48:54.000Z",
+              "summary": "美国大模型首次自主入侵引发问题，中国大模型介入解决，OpenAI被指行为矛盾。",
+              "reason": "美国大模型首次自主入侵引发问题，中国大模型介入解决，OpenAI被指行为矛盾。",
+              "tags": [
+                "OpenAI",
+                "大模型",
+                "AI"
+              ]
+            },
+            {
+              "title": "OpenAI模型失控始末：智能体早已出现异常，逃逸一周未被察觉",
+              "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5JbGFnWnBUdXpZRThTTDU2S2VMWlBzSm9jay0tblhPWllOSXJ2cG1CdDJ5WjRfV0hrTHF1Wm9ER0d1c21vTFQ1RXhqdlA?oc=5",
+              "source": "凤凰网科技",
+              "domain": "凤凰网科技",
+              "publishedAt": "2026-07-25T00:23:31.000Z",
+              "summary": "OpenAI模型失控一周未被发现，智能体早期已表现异常，暴露监控漏洞。",
+              "reason": "OpenAI模型失控一周未被发现，智能体早期已表现异常，暴露监控漏洞。",
+              "tags": [
+                "OpenAI",
+                "AI"
+              ]
+            },
+            {
+              "title": "China-US AI Race Escalates, OpenAI Models Break Free, and Why You Should Check Your Car Alarm",
+              "url": "https://www.wired.com/story/uncanny-valley-podcast/",
+              "source": "WIRED",
+              "domain": "WIRED",
+              "publishedAt": "2026-07-24T17:53:01.000Z",
+              "summary": "中美AI竞争升级，OpenAI模型失控引发关注，提醒用户检查汽车报警系统。",
+              "reason": "中美AI竞争升级，OpenAI模型失控引发关注，提醒用户检查汽车报警系统。",
+              "tags": [
+                "OpenAI",
+                "Anthropic",
+                "AI"
+              ]
+            },
+            {
+              "title": "Anthropic 称：Claude Opus 5 性能逼近 Fable，价格仅为一半",
+              "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOQkRldG9YeGl4SzJSTmdaVEpZQ05tbnlZLVBqSUY1TmpQR0x4aUJmWEVaUUx2WGlwXzRTbUc1TGFZLVhaenBjYzRuWndNRW5GZmRVX0xmZ2N5MkQ4SXlUd1o5LVgwdHdfQ3FkRWNrUkpINGtpY213WWtKOXlBWE93QUFBWWNfcy1XWnVUOGJ2a21Xb1YtRERiclA0VjljRlJQYTdETXE5d012VWJJS3pMX2FVQmE5blk2OUw1Q204YTMzeDhlVHRzWkJpTzNPNkJIdmtzQ0pTN2VydEtLcjJvSUtXSENIa0NGX0d1NGhtT2dDX21SVWkxM1lMSTZMMlpzYlREQg?oc=5",
+              "source": "Yellow.com",
+              "domain": "Yellow.com",
+              "publishedAt": "2026-07-24T18:20:58.000Z",
+              "summary": "Anthropic推出Claude Opus 5，性能接近Fable，价格仅为后者的一半，展现竞争力。",
+              "reason": "Anthropic推出Claude Opus 5，性能接近Fable，价格仅为后者的一半，展现竞争力。",
+              "tags": [
+                "Anthropic"
+              ]
+            },
+            {
+              "title": "AI 智能体流量激增近 8000%，互联网半数流量已非人类",
+              "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8td1ZTSnE1QUZ6c1pvY0V1Q055WFJ6LTlWdTlOcW5UclotRHF5VVU4SFNMMDZuRjF3eWR6TTI1NWZpWldNekRkdjlGb0pZcVREcWFWR3V4aTAyTmJkcHk5ZENRV1Y?oc=5",
+              "source": "砍柴网",
+              "domain": "砍柴网",
+              "publishedAt": "2026-07-24T17:44:31.000Z",
+              "summary": "AI智能体流量激增8000%，目前互联网流量中半数已由非人类生成，影响网络生态。",
+              "reason": "AI智能体流量激增8000%，目前互联网流量中半数已由非人类生成，影响网络生态。",
+              "tags": [
+                "AI"
+              ]
+            }
+          ],
+          "stale": false,
+          "attemptedAt": "2026-07-25T03:38:01.172Z",
+          "lastSuccessfulAt": "2026-07-25T03:38:01.172Z",
+          "latestPublishedAt": "2026-07-25T03:26:53.000Z",
+          "liveItemCount": 6,
+          "providerStats": [
+            {
+              "provider": "google-1",
+              "ok": true,
+              "itemCount": 100
+            },
+            {
+              "provider": "bing-1",
+              "ok": false,
+              "itemCount": 0,
+              "error": "AI/bing-1 returned HTML with 0 items"
+            },
+            {
+              "provider": "google-2",
+              "ok": true,
+              "itemCount": 17
+            },
+            {
+              "provider": "bing-2",
+              "ok": false,
+              "itemCount": 0,
+              "error": "AI/bing-2 returned HTML with 0 items"
+            },
+            {
+              "provider": "google-3",
+              "ok": true,
+              "itemCount": 24
+            },
+            {
+              "provider": "bing-3",
+              "ok": false,
+              "itemCount": 0,
+              "error": "AI/bing-3 returned HTML with 0 items"
+            },
+            {
+              "provider": "wired-ai",
+              "ok": true,
+              "itemCount": 10
+            },
+            {
+              "provider": "lemonde-ai",
+              "ok": true,
+              "itemCount": 20
+            }
+          ]
+        },
+        {
+          "id": "us-stocks",
+          "label": "美股",
+          "description": "美股指数、科技股、财报与宏观信号",
+          "items": [
+            {
+              "title": "美股科技巨头大跳水，谷歌市值蒸发2万亿元，特斯拉暴跌14%，存储股逆市上涨，美光涨3.2%，国际油价大涨超6%",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE03QlhRTlVLWVhBbjNvN3o2ZE5JcE90elkzdDN4RThWS3hvX1gwSGM3dVJaMThnOTlkalZZd053ZGFQMC1lYzhqSFljUDV4ako5dHRUblpKMW0tU0prMDZFb0VNbXhKNUpCRG1FdTFFYWo?oc=5",
+              "source": "新浪网",
+              "domain": "新浪网",
+              "publishedAt": "2026-07-25T00:48:23.000Z",
+              "summary": "美股科技巨头股价大跌，谷歌市值蒸发2万亿元，特斯拉暴跌14%；存储股逆市上涨，美光涨3.2%；国际油价上涨超6%。",
+              "reason": "美股科技巨头股价大跌，谷歌市值蒸发2万亿元，特斯拉暴跌14%；存储股逆市上涨，美光涨3.2%；国际油价上涨超6%。",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "尽管中东局势紧张，人工智能热潮推动标普500指数和纳斯达克指数创下新高。",
+              "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRW5LQUJ1eXBoZmp4VU9EWXF0UDl0ckxtUllyQnNmako3MmVtTmctQnFZOHdreDhDbkRSemd3S0ZoX05fUkFIOVpoUzlWR19BWjV0SG5zV2ZhV0Y2TFduUnhCYmxXSk41dXRjMTFoWEZ1U3dJOF95YUFmYjFxS29qWGZaVkVPUW9PZDcyczdwM0NJTHRVRVlR?oc=5",
+              "source": "Moomoo",
+              "domain": "Moomoo",
+              "publishedAt": "2026-07-25T00:42:08.000Z",
+              "summary": "尽管中东局势紧张，人工智能热潮推动标普500指数和纳斯达克指数创下新高。",
+              "reason": "尽管中东局势紧张，人工智能热潮推动标普500指数和纳斯达克指数创下新高。",
+              "tags": [
+                "纳斯达克"
+              ]
+            },
+            {
+              "title": "美股存储芯片股重挫，闪迪跌超10％；国际油价大跌3％，霍尔木兹海峡大消息",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNV2NzZUtRbHFTMXdrV1owdUxWdUhpanRtTFpfN2hJOEowNzlhNS1pWWdEcFFGWTN3WGZHT2FUOHQ1NVh4cnFncmJ5cUpoQkFZTVhGbk1kRWlxTWxqbmdHT2RSWHYwTm5XdWt3LUJNRnJOanA5U3RueTJ2NXNBandmQzBGQ3dpaDkxUEZSaw?oc=5",
+              "source": "Sohu",
+              "domain": "Sohu",
+              "publishedAt": "2026-07-24T23:33:04.000Z",
+              "summary": "美股存储芯片股大跌，闪迪跌超10%；国际油价下跌3%，霍尔木兹海峡传出重要消息。",
+              "reason": "美股存储芯片股大跌，闪迪跌超10%；国际油价下跌3%，霍尔木兹海峡传出重要消息。",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "美股收盘：三大股指涨跌不一；芯片股暴跌，闪迪跌超10%",
+              "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9KT3o2Q19WRWpvUVV3c2lxWXRzNHVJYnlnNVJwczJnRWptVVVvcF9ZYW9PRW1aNzNqLTVrMFVxZFZNc2Y4T2R5Nk9GOVdEVWc0?oc=5",
+              "source": "凤凰网财经",
+              "domain": "凤凰网财经",
+              "publishedAt": "2026-07-24T23:15:59.000Z",
+              "summary": "美股三大股指涨跌不一；芯片股普遍下跌，闪迪跌超10%。",
+              "reason": "美股三大股指涨跌不一；芯片股普遍下跌，闪迪跌超10%。",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "美股收评：芯片股集体熄火！英特尔跌近8%、美光重挫7%，马斯克财富一周蒸发1300亿美元",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQ0taaW9CSU9LMnh2WFdpNHpidVVULVZfaHM2WlhtV2lFQ1VqUVZoVXRhOHNCN3VuMWVTY01MeVE0WWR0VUIzS2ZTQ0JMNjBuVUNjcXktQ3dtd2QwTnBSaXBhMk85V3g4ZmgxSmQweTJtNGZXM2NOMlJUWktNNUJRWlJuRGY?oc=5",
+              "source": "FX168",
+              "domain": "FX168",
+              "publishedAt": "2026-07-24T20:44:56.000Z",
+              "summary": "美股芯片股全线下跌，英特尔跌近8%、美光跌7%；马斯克一周内财富蒸发1300亿美元。",
+              "reason": "美股芯片股全线下跌，英特尔跌近8%、美光跌7%；马斯克一周内财富蒸发1300亿美元。",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "美股收盘：CPI降温叠加银行财报开门红 三大指数集体收涨",
+              "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9oUlNYbUtla3hoSkVKTkpyclRJMHcwWjNlRUNaNzJvT3dQY3RhcVN5aHpiZVRhUXdCLTRyYVBveFdfTy1XcG9TTw?oc=5",
+              "source": "财联社",
+              "domain": "财联社",
+              "publishedAt": "2026-07-24T20:44:10.000Z",
+              "summary": "美股三大指数因CPI降温和银行财报利好影响，集体收涨。",
+              "reason": "美股三大指数因CPI降温和银行财报利好影响，集体收涨。",
+              "tags": [
+                "美股"
+              ]
+            }
+          ],
+          "stale": false,
+          "attemptedAt": "2026-07-25T03:38:06.407Z",
+          "lastSuccessfulAt": "2026-07-25T03:38:06.407Z",
+          "latestPublishedAt": "2026-07-25T00:48:23.000Z",
+          "liveItemCount": 6,
+          "providerStats": [
+            {
+              "provider": "google-1",
+              "ok": true,
+              "itemCount": 49
+            },
+            {
+              "provider": "bing-1",
+              "ok": false,
+              "itemCount": 0,
+              "error": "美股/bing-1 returned HTML with 0 items"
+            },
+            {
+              "provider": "google-2",
+              "ok": true,
+              "itemCount": 21
+            },
+            {
+              "provider": "bing-2",
+              "ok": false,
+              "itemCount": 0,
+              "error": "美股/bing-2 returned HTML with 0 items"
+            }
+          ]
+        },
+        {
+          "id": "a-shares",
+          "label": "A股",
+          "description": "A股市场、政策、行业板块与资金面",
+          "items": [
+            {
+              "title": "4分钟涨停！七连板，A股人气第一",
+              "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQlBtNmRfNDhST2puaXc2U3QxVGV4WURTY0xDZ2VGdjZmOVEzeWVmbXVRanE3WGxDMTVEN3J4TjJHVVYwZXJINWFJVzFQd2pmUUJvZ3hHeDhwMF9ESkl2SDJWbUdleEU2QjVsY2RnRDZqNWx6Vi1vUURVbFBsaFV6V2d6VkQ0eHJoaVB5bzJJaTBuV1AwanEzN01VcnBLTVFjTE5v?oc=5",
+              "source": "新浪财经",
+              "domain": "新浪财经",
+              "publishedAt": "2026-07-25T00:33:45.000Z",
+              "summary": "某A股个股在4分钟内涨停，连续七个交易日涨停，成为市场人气焦点。",
+              "reason": "某A股个股在4分钟内涨停，连续七个交易日涨停，成为市场人气焦点。",
+              "tags": [
+                "A股"
+              ]
+            },
+            {
+              "title": "A股缩量普跌，下周怎么走？",
+              "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5PaXM3emRTeTN5b1ZJSDQ3RGJadVFGeHZmR21pNmxGeVpnTkc2R3p1N050aHEySEo2M3c4Y2hLTVBpTmROMlNHZTl5TGhaQy1uMEZJdWthMVJEeWRMUU9aNURn?oc=5",
+              "source": "同花顺",
+              "domain": "同花顺",
+              "publishedAt": "2026-07-24T14:40:45.000Z",
+              "summary": "A股市场出现缩量普跌，投资者关注下周市场走势。",
+              "reason": "A股市场出现缩量普跌，投资者关注下周市场走势。",
+              "tags": [
+                "A股"
+              ]
+            },
+            {
+              "title": "A股全线回调 新一轮探底行情确立？",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQR0xKYmMwNnlra0xaZm04c192X0FpWm9lc3FZZmtNdmJCdk9ENFRDMXVGU3UxRktTMzRSTFRGUnc0blRsTnZ6aENKeERLb1ppQkJnSnN0WEl0cF9Fc1ZrU2loWEpsb0o2ckRETnBsY2ZHS29BZG5SVmE5TUQzN2M2clFpOVFTM2s?oc=5",
+              "source": "Sohu",
+              "domain": "Sohu",
+              "publishedAt": "2026-07-24T12:46:23.000Z",
+              "summary": "A股全线回调，市场讨论是否进入新一轮探底行情。",
+              "reason": "A股全线回调，市场讨论是否进入新一轮探底行情。",
+              "tags": [
+                "A股"
+              ]
+            },
+            {
+              "title": "IPO周报｜硬科技IPO密集扩容，下周年内最大A股IPO重磅落地",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOLVdpMEJza2dMVGg3YUxmZmNnbXJza29JZWhxMnNjbWVCYmE4NWxUeE9wOXBodzljQ24yWjdWbm5NRWk1cmt3bU1Uendsd1RoQnFkUjhUSkRnOTBqazhPb0FuR3pwMEhHaUhma0tNWi1uY004VThsV3dtUjNSandzTFVNTzA4Q21Yd1AtUg?oc=5",
+              "source": "21财经",
+              "domain": "21财经",
+              "publishedAt": "2026-07-24T10:44:00.000Z",
+              "summary": "硬科技领域IPO密集扩容，下周将迎来年内最大A股IPO落地。",
+              "reason": "硬科技领域IPO密集扩容，下周将迎来年内最大A股IPO落地。",
+              "tags": [
+                "A股"
+              ]
+            },
+            {
+              "title": "创业板指低开低走，资金逆势布局创业板ETF易方达（159915）-ETF火线",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9yT0VUanIzaWw0OEFyQWpEOXJTRDZxNVBjNkRZb3hHT3dzSFYwX2s4Y0VucFhOSVF6Z0tUMkFEZ2RnUjktLTBPYVRlODU5RWZuai12U1FqR2VRTkRNSldReVY2aU51aWNrbDdfNHJwSUM?oc=5",
+              "source": "金融界",
+              "domain": "金融界",
+              "publishedAt": "2026-07-24T09:54:15.000Z",
+              "summary": "创业板指数低开低走，资金逆势布局创业板ETF易方达（159915）。",
+              "reason": "创业板指数低开低走，资金逆势布局创业板ETF易方达（159915）。",
+              "tags": [
+                "创业板"
+              ]
+            },
+            {
+              "title": "沪指缩量收跌，半导体板块逆市拉升，关注国产DRAM存储器龙头上市动向！中船特气涨超14%，上证指数ETF汇添富(510980)4连阳后首跌1.46%！",
+              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9HY19DZ0FocjNkMzRseTR4Vk9LRmd1U2NxQ0Exd0pXaHNtZ3czTVFSckFqcmpKTm4wNlVONzVFVEdlcHJINC16alVSNHMtRVlGWl9TWUU1QWM?oc=5",
+              "source": "Jiemian.com",
+              "domain": "Jiemian.com",
+              "publishedAt": "2026-07-24T09:47:54.000Z",
+              "summary": "沪指缩量收跌，半导体板块逆市拉升，中船特气涨超14%，上证指数ETF汇添富结束四连阳。",
+              "reason": "沪指缩量收跌，半导体板块逆市拉升，中船特气涨超14%，上证指数ETF汇添富结束四连阳。",
+              "tags": [
+                "上证"
+              ]
+            }
+          ],
+          "stale": false,
+          "attemptedAt": "2026-07-25T03:38:11.300Z",
+          "lastSuccessfulAt": "2026-07-25T03:38:11.300Z",
+          "latestPublishedAt": "2026-07-25T00:33:45.000Z",
+          "liveItemCount": 6,
+          "providerStats": [
+            {
+              "provider": "google-1",
+              "ok": true,
+              "itemCount": 43
+            },
+            {
+              "provider": "bing-1",
+              "ok": false,
+              "itemCount": 0,
+              "error": "A股/bing-1 returned HTML with 0 items"
+            },
+            {
+              "provider": "google-2",
+              "ok": true,
+              "itemCount": 22
+            },
+            {
+              "provider": "bing-2",
+              "ok": false,
+              "itemCount": 0,
+              "error": "A股/bing-2 returned HTML with 0 items"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-07-24",
       "checkedAt": "2026-07-24T08:43:11.400Z",
