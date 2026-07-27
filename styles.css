@@ -1490,6 +1490,38 @@ html[data-theme="dark"] .theme-toggle span {
   min-height: 360px;
 }
 
+.work-card-daotu {
+  grid-column: span 6;
+  min-height: 390px;
+  border-color: rgba(211, 167, 81, 0.4);
+  background: #080a08;
+}
+
+.work-card-daotu .work-card-image {
+  object-position: center 44%;
+}
+
+.work-card-daotu .work-card-scrim {
+  background:
+    linear-gradient(90deg, rgba(4, 7, 5, 0.97), rgba(4, 7, 5, 0.78) 48%, rgba(4, 7, 5, 0.08)),
+    linear-gradient(180deg, rgba(4, 7, 5, 0.04) 30%, rgba(4, 7, 5, 0.88) 100%);
+}
+
+.work-card-daotu .work-card-visual-copy {
+  width: min(650px, 72%);
+  min-height: 390px;
+  padding: 32px;
+}
+
+.work-card-daotu .work-tag {
+  border-color: rgba(229, 187, 99, 0.52);
+  color: #f0c56c;
+}
+
+.work-card-daotu .work-arrow {
+  color: #f0c56c;
+}
+
 .work-card-visual .work-card-image {
   object-position: center;
 }
@@ -1825,11 +1857,16 @@ html[data-theme="dark"] .theme-toggle span {
 @media (max-width: 900px) {
   .work-card-night,
   .work-card-visual,
-  .work-card-atlas {
+  .work-card-atlas,
+  .work-card-daotu {
     grid-column: auto;
   }
 
   .work-card-night-copy {
+    width: 100%;
+  }
+
+  .work-card-daotu .work-card-visual-copy {
     width: 100%;
   }
 
