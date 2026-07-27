@@ -1,13 +1,17 @@
 {
-  "generatedAt": "2026-07-26T08:39:44.666Z",
-  "checkedAt": "2026-07-26T08:39:44.666Z",
+  "generatedAt": "2026-07-27T04:05:19.546Z",
+  "checkedAt": "2026-07-27T04:05:19.546Z",
   "contentUpdatedAt": "2026-07-26T08:39:44.666Z",
   "source": "Google News RSS + WIRED AI RSS + Le Monde AI RSS（Bing 仅作可用性探测）",
   "status": {
-    "contentChanged": true,
-    "freshTopics": 3,
-    "staleTopics": [],
-    "sourceErrors": 7
+    "contentChanged": false,
+    "freshTopics": 0,
+    "staleTopics": [
+      "ai",
+      "us-stocks",
+      "a-shares"
+    ],
+    "sourceErrors": 14
   },
   "topics": [
     {
@@ -93,16 +97,17 @@
           ]
         }
       ],
-      "stale": false,
-      "attemptedAt": "2026-07-26T08:39:33.036Z",
+      "stale": true,
+      "attemptedAt": "2026-07-27T04:02:21.092Z",
       "lastSuccessfulAt": "2026-07-26T08:39:33.036Z",
       "latestPublishedAt": "2026-07-26T05:48:45.000Z",
-      "liveItemCount": 6,
+      "liveItemCount": 0,
       "providerStats": [
         {
           "provider": "google-1",
-          "ok": true,
-          "itemCount": 30
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-1",
@@ -112,8 +117,9 @@
         },
         {
           "provider": "google-2",
-          "ok": true,
-          "itemCount": 6
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-2",
@@ -123,8 +129,9 @@
         },
         {
           "provider": "google-3",
-          "ok": true,
-          "itemCount": 29
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-3",
@@ -142,7 +149,8 @@
           "ok": true,
           "itemCount": 20
         }
-      ]
+      ],
+      "error": "feeds contained no matching fresh articles"
     },
     {
       "id": "us-stocks",
@@ -222,16 +230,17 @@
           ]
         }
       ],
-      "stale": false,
-      "attemptedAt": "2026-07-26T08:39:37.760Z",
+      "stale": true,
+      "attemptedAt": "2026-07-27T04:03:21.918Z",
       "lastSuccessfulAt": "2026-07-26T08:39:37.760Z",
       "latestPublishedAt": "2026-07-26T04:13:55.000Z",
-      "liveItemCount": 6,
+      "liveItemCount": 0,
       "providerStats": [
         {
           "provider": "google-1",
-          "ok": true,
-          "itemCount": 25
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-1",
@@ -241,8 +250,9 @@
         },
         {
           "provider": "google-2",
-          "ok": true,
-          "itemCount": 18
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-2",
@@ -250,7 +260,8 @@
           "itemCount": 0,
           "error": "美股/bing-2 returned HTML with 0 items"
         }
-      ]
+      ],
+      "error": "all RSS providers failed"
     },
     {
       "id": "a-shares",
@@ -331,16 +342,17 @@
           ]
         }
       ],
-      "stale": false,
-      "attemptedAt": "2026-07-26T08:39:41.364Z",
+      "stale": true,
+      "attemptedAt": "2026-07-27T04:04:21.194Z",
       "lastSuccessfulAt": "2026-07-26T08:39:41.364Z",
       "latestPublishedAt": "2026-07-26T07:14:14.000Z",
-      "liveItemCount": 6,
+      "liveItemCount": 0,
       "providerStats": [
         {
           "provider": "google-1",
-          "ok": true,
-          "itemCount": 22
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-1",
@@ -350,8 +362,9 @@
         },
         {
           "provider": "google-2",
-          "ok": true,
-          "itemCount": 32
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-2",
@@ -359,10 +372,379 @@
           "itemCount": 0,
           "error": "A股/bing-2 returned HTML with 0 items"
         }
-      ]
+      ],
+      "error": "all RSS providers failed"
     }
   ],
   "history": [
+    {
+      "date": "2026-07-27",
+      "checkedAt": "2026-07-27T04:05:19.546Z",
+      "contentUpdatedAt": "2026-07-26T08:39:44.666Z",
+      "topics": [
+        {
+          "id": "ai",
+          "label": "AI",
+          "description": "模型、产品、监管与资本动向",
+          "items": [
+            {
+              "title": "史无前例！美国出现人工智能失控事故，更多内幕曝光",
+              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5mZ1RMeEpHTG5tV09lbGI1aWdEenJHczNTa3dlOGo3ZDZiRXFrMy1wMjczcUR1V3h0Z2ZweWFzeXc0ekJrT1FRS0pma1JlMVJXa0ZYMFFqbWlhRjdMbzVNZUZMNERxYS1UYkxFbmZVYmVCU01FODVPcg?oc=5",
+              "source": "新浪新闻_手机新浪网",
+              "domain": "新浪新闻_手机新浪网",
+              "publishedAt": "2026-07-26T05:48:45.000Z",
+              "summary": "美国发生人工智能失控事故，相关内幕被曝光，引发关注。",
+              "reason": "美国发生人工智能失控事故，相关内幕被曝光，引发关注。",
+              "tags": [
+                "人工智能"
+              ]
+            },
+            {
+              "title": "OpenAI游说美国限制中国开源模型黄仁勋马斯克公开反对- AI 人工智能",
+              "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlcXJIbXU5am93R1dTd3Fpc3ZCVURQSzFkYmw4MlJ4NG5ORTktRFFjdHpCdmNTdnhQWHhQNVNLU1lmMDkzY044ZU1hWkh6TldCQXpvZVlqaW5CTFRTWms1Uw?oc=5",
+              "source": "cnBeta.COM",
+              "domain": "cnBeta.COM",
+              "publishedAt": "2026-07-26T03:29:00.000Z",
+              "summary": "OpenAI游说美国限制中国开源模型，黄仁勋和马斯克公开表示反对。",
+              "reason": "OpenAI游说美国限制中国开源模型，黄仁勋和马斯克公开表示反对。",
+              "tags": [
+                "OpenAI",
+                "人工智能",
+                "AI"
+              ]
+            },
+            {
+              "title": "ChatGPT宕机对人工智能行业有哪些影响？",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0waXJ1S3Z0NWtCWlVhd29FQVdaVHJHVlNQZlJqR04tdGg5YU80dnFYUVNUVnBtX3VwbHBLQ3V2TzVyc0d3WnR1SklycUtzdHdGYnBrZWc4Z25CYkh6ZnhJZUFLWUlTVzU2cFhPd1J5ZWtIbFYtMWxBazBDRE5CVVk?oc=5",
+              "source": "手机新浪网",
+              "domain": "手机新浪网",
+              "publishedAt": "2026-07-26T04:03:28.000Z",
+              "summary": "ChatGPT宕机事件引发讨论，分析其对人工智能行业的影响。",
+              "reason": "ChatGPT宕机事件引发讨论，分析其对人工智能行业的影响。",
+              "tags": [
+                "人工智能"
+              ]
+            },
+            {
+              "title": "OpenAI公开支持开放权重却被曝推动限制中国模型- AI 人工智能",
+              "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9UQWlvcEVfcGJXWGU1Q3JXRDcxQzlBb3JhU3dZbl93R2czQmpHdjVjVjllSGN3UWE5alc1Z3RBa1JjbS1NUDFCT1MtVGhQS21QWUdleDBCYXZzRVpEWWJKeA?oc=5",
+              "source": "cnBeta.COM",
+              "domain": "cnBeta.COM",
+              "publishedAt": "2026-07-26T02:02:00.000Z",
+              "summary": "OpenAI支持开放权重，但被指推动限制中国AI模型发展，引发争议。",
+              "reason": "OpenAI支持开放权重，但被指推动限制中国AI模型发展，引发争议。",
+              "tags": [
+                "OpenAI",
+                "人工智能",
+                "AI"
+              ]
+            },
+            {
+              "title": "黄仁勋首次X平台发文 携硅谷巨头力挺开源AI",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBwR3lNMGkxTVptMF9BaVIzVW9HaEZfd01oVDBLRWV3NDN4aHRHZnNTQnNRczE5WmszamJOQnozUzB2T3o4Q3VpZlNmcG1DV08wTHo4a3BQV19qRGZkNEZ2ZjVJLXIyVFBZ?oc=5",
+              "source": "早晨报",
+              "domain": "早晨报",
+              "publishedAt": "2026-07-26T02:20:00.000Z",
+              "summary": "黄仁勋首次在X平台发文，与硅谷巨头共同支持开源AI。",
+              "reason": "黄仁勋首次在X平台发文，与硅谷巨头共同支持开源AI。",
+              "tags": [
+                "AI"
+              ]
+            },
+            {
+              "title": "AI周报|OpenAI遭遇史上首次评测失控事故；梁文锋4小时投资会讲话流出",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYjMzMVQ3eVVYUk9xOFo3dHd6Rkxmb2NoZkI5aE5NZlJZV21MRkJKLW5uYm9JU29vYUphZ01QNVo3VXNoa1hVMHB4ZFJpRWFOUE1uRGdadnZuQ0lpenRyUExvQzhoLThWQkJ0NTNDMUJSZ3ZfY0pueW1iaGtDS2xSbTFqcEQ3SUtP?oc=5",
+              "source": "Sohu",
+              "domain": "Sohu",
+              "publishedAt": "2026-07-26T01:04:00.000Z",
+              "summary": "OpenAI首次遭遇评测失控事故，梁文锋投资会讲话内容被披露。",
+              "reason": "OpenAI首次遭遇评测失控事故，梁文锋投资会讲话内容被披露。",
+              "tags": [
+                "OpenAI",
+                "AI"
+              ]
+            }
+          ],
+          "stale": true,
+          "attemptedAt": "2026-07-27T04:02:21.092Z",
+          "lastSuccessfulAt": "2026-07-26T08:39:33.036Z",
+          "latestPublishedAt": "2026-07-26T05:48:45.000Z",
+          "liveItemCount": 0,
+          "providerStats": [
+            {
+              "provider": "google-1",
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
+            },
+            {
+              "provider": "bing-1",
+              "ok": false,
+              "itemCount": 0,
+              "error": "AI/bing-1 returned HTML with 0 items"
+            },
+            {
+              "provider": "google-2",
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
+            },
+            {
+              "provider": "bing-2",
+              "ok": false,
+              "itemCount": 0,
+              "error": "AI/bing-2 returned HTML with 0 items"
+            },
+            {
+              "provider": "google-3",
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
+            },
+            {
+              "provider": "bing-3",
+              "ok": false,
+              "itemCount": 0,
+              "error": "AI/bing-3 returned HTML with 0 items"
+            },
+            {
+              "provider": "wired-ai",
+              "ok": true,
+              "itemCount": 10
+            },
+            {
+              "provider": "lemonde-ai",
+              "ok": true,
+              "itemCount": 20
+            }
+          ],
+          "error": "feeds contained no matching fresh articles"
+        },
+        {
+          "id": "us-stocks",
+          "label": "美股",
+          "description": "美股指数、科技股、财报与宏观信号",
+          "items": [
+            {
+              "title": "芯片股波动剧烈，三大因素如何影响下周美股走势？",
+              "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQUVBBdzZFYV9laEJZR0pVVklkd1JiQzVIZEtDSHZPWFFick56UVVDcmhqZFV6UGROUjFiOGUxWWJRQmpxWjdjVEdkWEhkajQ1aFE5Q1M2bmd6RWdkQWc1ZEZuQXh2NkpXbmlKb2htSF83bVVvVTJKY1J4N2RmME1wRWlqUmZDRWZyd3lUUGdKdUNnOERhWG9SSmx1V3J3dHhZbHF1RWxlWWU2M0JMd1Nhb0hVaGxsUUVoM0tQMkpJYUxpZUVNdExDWHVCUXM2TjR1N3AtOWdyV1VRQk5Eb3IxWUt6VVA2ZHFKYm0tdmxteHd0cDRHTGhWREtfNi1kQQ?oc=5",
+              "source": "finance.sina.com.cn",
+              "domain": "finance.sina.com.cn",
+              "publishedAt": "2026-07-26T04:13:55.000Z",
+              "summary": "芯片股波动剧烈，分析三大因素对下周美股走势的影响。",
+              "reason": "芯片股波动剧烈，分析三大因素对下周美股走势的影响。",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "警惕AI泡沫风险，美股或将迎来大回调",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbGRXUU9LMTROMDlLTkdEdEcxZGJxeWRBdm10VE93eC03ckNvS1RoUE04aUNHYjd3c0kzdEpFYjFpVTVSNGU0VF9rQXozX0k4OUl1TFk1b0xjSDJkckFraHpNSjBPNUIzMEVYVEhYNzdZSXlXYnhlREd1dmFteGNLZmE2M1k1OHI5dDItWGFGMlJpeEZvTUx4RGhueUJ1cVozMFgyLXpQb2ZTbGZlU3ZFOUhMaHNSWk1fY3RRaWdncC1sUElEUEZfeEhR?oc=5",
+              "source": "TradingKey",
+              "domain": "TradingKey",
+              "publishedAt": "2026-07-25T18:07:03.000Z",
+              "summary": "警惕AI泡沫风险，美股可能面临大幅回调的风险。",
+              "reason": "警惕AI泡沫风险，美股可能面临大幅回调的风险。",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "15个月来最惨烈一天：美股“七巨头”单日市值蒸发约8000亿美元",
+              "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8yRGRTQ3ZGcDVkUW1LNVZIM3VwbmROYVk0NE9zYk9DdE1qdmZzV1NWVS1IZV9pWFBFdUxXRld5M1lyWm1OeTljSA?oc=5",
+              "source": "财联社",
+              "domain": "财联社",
+              "publishedAt": "2026-07-25T17:45:44.000Z",
+              "summary": "美股“七巨头”单日市值蒸发约8000亿美元，创15个月来最惨烈一天。",
+              "reason": "美股“七巨头”单日市值蒸发约8000亿美元，创15个月来最惨烈一天。",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "美股收盘：七巨头齐跌特斯拉重挫14% 纳指降2%布油站上100美元",
+              "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1mcm45RjJvNUlaSkQzdWd3VnVESk5JbEdjYlhPTi1kLVZUdmtjMVJiYmVzUVVJWHZtVVZJMzM3WDVzS1RhRVEzTg?oc=5",
+              "source": "财联社",
+              "domain": "财联社",
+              "publishedAt": "2026-07-25T16:44:15.000Z",
+              "summary": "美股收盘七巨头齐跌，特斯拉重挫14%，纳指下降2%，布伦特原油价格突破100美元。",
+              "reason": "美股收盘七巨头齐跌，特斯拉重挫14%，纳指下降2%，布伦特原油价格突破100美元。",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "富途早报| 降息预期升温，标普、纳指再创新高；“国会山女股神”佩洛西再出手！押注博通、英伟达",
+              "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVmVQcUhCMWNUZWdkVk4zcEZzNU5xbkZQdXplS05FazFMYzJtSTNIMTc0Z2haRS15NW9pSWNJWVFDYzR1c0FQLU1xS0xjTlRGc1p2WEZmdFloYkJDa2JXVkF3a0tKenJaWVVJdERoaWUtYWJOMnA3cmgxTmg0UHVVV01xVW03UTU0THZNZU0tSWc0dUx6bFE3cWNxTkhSZm95?oc=5",
+              "source": "富途牛牛",
+              "domain": "富途牛牛",
+              "publishedAt": "2026-07-25T13:05:15.000Z",
+              "summary": "降息预期升温，标普和纳指创新高；佩洛西押注博通和英伟达。",
+              "reason": "降息预期升温，标普和纳指创新高；佩洛西押注博通和英伟达。",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "美股存储、光通信重挫，闪迪跌超10%，A股相关概念或迎来深度调整",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQODhtRXczeXVzWmxLbXhDNDJHcTFnVlhxV2RKNkQyVXp1aTIwbzJvTG1qXzMzaEFNVnJoY0JiTnVSMVNGSEhTd2NvblF5aGRtQXhPaVNSRDJyRGZhMWlNMEVIZ0NhQ0FZSHdkVXlUTXJsb0lyTHlZbkgxckhfLXZNWXN3WmpaMklsOG12X3Q1WHlLdFhGWTE2RDI1ZC1iWFBkQ0JfQjZYZ2xlSDM4Y0wxdTAwTQ?oc=5",
+              "source": "东方财富",
+              "domain": "东方财富",
+              "publishedAt": "2026-07-25T10:16:38.000Z",
+              "summary": "美股存储和光通信板块重挫，闪迪跌超10%，A股相关概念或受影响。",
+              "reason": "美股存储和光通信板块重挫，闪迪跌超10%，A股相关概念或受影响。",
+              "tags": [
+                "美股"
+              ]
+            }
+          ],
+          "stale": true,
+          "attemptedAt": "2026-07-27T04:03:21.918Z",
+          "lastSuccessfulAt": "2026-07-26T08:39:37.760Z",
+          "latestPublishedAt": "2026-07-26T04:13:55.000Z",
+          "liveItemCount": 0,
+          "providerStats": [
+            {
+              "provider": "google-1",
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
+            },
+            {
+              "provider": "bing-1",
+              "ok": false,
+              "itemCount": 0,
+              "error": "美股/bing-1 returned HTML with 0 items"
+            },
+            {
+              "provider": "google-2",
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
+            },
+            {
+              "provider": "bing-2",
+              "ok": false,
+              "itemCount": 0,
+              "error": "美股/bing-2 returned HTML with 0 items"
+            }
+          ],
+          "error": "all RSS providers failed"
+        },
+        {
+          "id": "a-shares",
+          "label": "A股",
+          "description": "A股市场、政策、行业板块与资金面",
+          "items": [
+            {
+              "title": "4只新股扎堆申购！量子硬核龙头来袭，高频IPO撕开A股估值假象",
+              "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE00Y3dLdXVYeDZKQ3FNUjlUNTFlS2NndnVlWmxieTVDMWJYcW5VSldFYnV0NDRLSUttOWxxckJKbU81bURUdHgweTZpQjdPRy16?oc=5",
+              "source": "凤凰网财经",
+              "domain": "凤凰网财经",
+              "publishedAt": "2026-07-26T07:14:14.000Z",
+              "summary": "4只新股集中申购，量子硬核龙头企业引关注，高频IPO或影响A股估值。",
+              "reason": "4只新股集中申购，量子硬核龙头企业引关注，高频IPO或影响A股估值。",
+              "tags": [
+                "A股"
+              ]
+            },
+            {
+              "title": "明天，长鑫科技上市！下周还有这些大事，A股要选择方向了？",
+              "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5JQ0hQUVM4UnBZUlNFNXVqZ3hrZjdyNXl0U0U5OWlMb0d0TFVzaW9XTjVyMllkNXcwdDFlOG1uS19zMjVjZDlUUmdGLW16NG5oUU1iTEFzUGJWWGhBeGFiUVA4bTRfRWQ5UFFwYk9KMkFxRXlkVlE?oc=5",
+              "source": "新浪财经",
+              "domain": "新浪财经",
+              "publishedAt": "2026-07-26T07:08:00.000Z",
+              "summary": "长鑫科技将于明天上市，下周A股或面临方向选择的重要事件。",
+              "reason": "长鑫科技将于明天上市，下周A股或面临方向选择的重要事件。",
+              "tags": [
+                "A股"
+              ]
+            },
+            {
+              "title": "今天不知道大家有没有发现，上证的成交金额与深证之间的差别越来越小了，由以往最大相差30%左右，目前已经缩小到不到10%，...",
+              "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9LWEhJU1B3Q0M4Tm85bnVGNV8tMDhKaFJsY0hWcXVMM21WbEVQd29WX1ZpNktkMzlsRFNzN1NiTXRZMlYwQnpmYmRENzFZUGlw?oc=5",
+              "source": "雪球",
+              "domain": "雪球",
+              "publishedAt": "2026-07-25T22:33:29.000Z",
+              "summary": "上证与深证成交金额差距缩小，从最大30%降至不到10%，市场结构变化显现。",
+              "reason": "上证与深证成交金额差距缩小，从最大30%降至不到10%，市场结构变化显现。",
+              "tags": [
+                "上证"
+              ]
+            },
+            {
+              "title": "A股缩量整理 半导体设备板块表现强势",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOM004RjBhMVhTU2dUVWI2NFFxWkkwRXlhRldRb0taVXI0WDh1eHJVSVczWHVSQ0poalJxX0h2LUdPZVdsSmN5ME90cWh0UG91czhEWHBiVW5UWEIzQmlKdlJDUmIxTUd1WlFMQ0lvaTVBZTdVS2s0NzE5Z29zbW9pZTE4Yw?oc=5",
+              "source": "手机新浪网",
+              "domain": "手机新浪网",
+              "publishedAt": "2026-07-25T19:27:51.000Z",
+              "summary": "A股市场缩量整理，半导体设备板块表现强势。",
+              "reason": "A股市场缩量整理，半导体设备板块表现强势。",
+              "tags": [
+                "A股"
+              ]
+            },
+            {
+              "title": "精选丨张诚：可考虑上证50 沪深300等ETF",
+              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB1ckZ5RXZZNm8zZ1JHMnhUUFhuSG54ZU5GWTBkRlhiRUxFNi01VDJXLWliaGxXVzJ4clhLWEF3cllRVHpXN2hkYkNNX3VEMlUtM2tjUA?oc=5",
+              "source": "第一财经",
+              "domain": "第一财经",
+              "publishedAt": "2026-07-25T10:02:00.000Z",
+              "summary": "张诚建议投资者可考虑上证50和沪深300等ETF。",
+              "reason": "张诚建议投资者可考虑上证50和沪深300等ETF。",
+              "tags": [
+                "沪深",
+                "上证"
+              ]
+            },
+            {
+              "title": "如何看待近期A股市场的大幅波动？重阳投资：市场风格差异有望淡化 成长和价值有望再平衡",
+              "url": "https://news.google.com/rss/articles/CBMikwhBVV95cUxQQ0J0N3pzblJjS0dJY1NqM0gzX25tZEdtbmhnN1JBVGRFN0c5NHo3S3gzQ3owanpjckZxWUdJek9LSWoyazFQLV9hVjFmMjJUektkZ0RxR3F6dUZ3TnZJbU82bXd1UndXYUtHcko2cV9jeDAzQm1hUG9lcG9GQ2M2VDJOTi10NFgwWDhNbW5FbGN5M3VnN01feHhIT05QMDN6eVVtd1VySjl6RE84QjNvcDA4RVVfV1BvUlVHM2M0ci04NUthcTdyWmZscW5seHdTRUdBOFpHZHM0eHF0YVF0TGdVWC1OdjVRejhPT1JJWF8wbnBpTHBwblVaYjdkSTRhNVpuQXhxNnNHYVpPLTJzQU9CZE5BQ2FJNGtqeTQ3N1Nma2ZwRTEwcURZNExIVmNFclhVTWlBUU9LOWJzd1hnMHo4OGJ0MVZXdHAwNTFpZlpCal9WYlU4eVp6Y2dzcGU2T21neXA3X0p3bDMtYXRKdktQN1djRmt4N3Y0SWxZb1J1M1RRVlA2LWhxZ185WFp2MjNnSWRYS0xuQ0YtWEd5dURkZG90SENxX2JlVTVWelRQX09hSm1RbC1YcEtxRG5mUzdzTUMtUmZoeHlJSndKY2hqOENDVGdZa0pSY0VDZms3bDdfTnh0VlViaXM5Y0N6TU1teTl3WWVxcXBCalF6c05ZdE96dnZiVDNQQk9NazNVb2dIb2hoU1dfRXFwaldfR1A1eTZCOFlUVjludkE0c2REYkFQalg2WU9rZnVZbjE0OXdwZG4tQlZYT3RvdUk5S0ZEd0VwZHJzbHBYRjhSdl9oNWNqVUhmaVZCZHBybVRxb1V5YV8xYmp3VE9iNk43WC1heTFDcW5PZDlmdF9nX0stbGRQaElpaUNLeTZMM1loMjlpRVJKUFZ4cXRwdFcydjF2Zms3RlE2dUlZTGUtaUozcVJmOWhJbllHbHpwa0lvTk9EcERlcDJpbVZ3Z1N3T2xfamlPVlllYnZ3c2JCWHdCLWxhejhzdW8zZXF5blRRZkFWQ3ZPNHQtQ3QzQ183dnpKLWlzak05TjRScGNpTFU3RnFUYURxT1JMRVNid1BfSW5ld2JnR2FQamxhSUpXcHBVTUN4NTkzYmRuZ3U3ZTZKQ2RUZ1NWMjVtcE5JckNoQ0JUYklXWmFiZW9Hb0lKeVRuTl9Xd3JEYXU4OEZJYlEya1JnbzRIc09TSFVmcVNReGZWMVlIS1lOSF9UUVRnN1VfUmN5LVJPN2tXNnk1NUpEWktCdXVheU04bUE1cFRoXzVrb1VwMW94ek51VHFmeFVRNGhTTnJ1SmE3TjhGRU1GZ2Z5SU9oRVY1a09RQW52Y1M1R196UGxmRUpWbUxEallWT1JzaWE3M1BBYXh3RkFuaw?oc=5",
+              "source": "finance.sina.com.cn",
+              "domain": "finance.sina.com.cn",
+              "publishedAt": "2026-07-25T10:39:57.000Z",
+              "summary": "近期A股市场波动显著，重阳投资认为市场风格差异或淡化，成长与价值可能再平衡。",
+              "reason": "近期A股市场波动显著，重阳投资认为市场风格差异或淡化，成长与价值可能再平衡。",
+              "tags": [
+                "A股"
+              ]
+            }
+          ],
+          "stale": true,
+          "attemptedAt": "2026-07-27T04:04:21.194Z",
+          "lastSuccessfulAt": "2026-07-26T08:39:41.364Z",
+          "latestPublishedAt": "2026-07-26T07:14:14.000Z",
+          "liveItemCount": 0,
+          "providerStats": [
+            {
+              "provider": "google-1",
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
+            },
+            {
+              "provider": "bing-1",
+              "ok": false,
+              "itemCount": 0,
+              "error": "A股/bing-1 returned HTML with 0 items"
+            },
+            {
+              "provider": "google-2",
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
+            },
+            {
+              "provider": "bing-2",
+              "ok": false,
+              "itemCount": 0,
+              "error": "A股/bing-2 returned HTML with 0 items"
+            }
+          ],
+          "error": "all RSS providers failed"
+        }
+      ]
+    },
     {
       "date": "2026-07-26",
       "checkedAt": "2026-07-26T08:39:44.666Z",
