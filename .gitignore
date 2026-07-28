@@ -1,3 +1,10 @@
 tmp-news-rss/
 .DS_Store
 .understand-anything/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
