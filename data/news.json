@@ -1,13 +1,16 @@
 {
-  "generatedAt": "2026-08-02T03:53:34.653Z",
-  "checkedAt": "2026-08-02T03:53:34.653Z",
-  "contentUpdatedAt": "2026-08-02T03:53:34.653Z",
+  "generatedAt": "2026-08-02T08:40:18.584Z",
+  "checkedAt": "2026-08-02T08:40:18.584Z",
+  "contentUpdatedAt": "2026-08-02T08:40:18.584Z",
   "source": "Google News RSS + WIRED AI RSS + Le Monde AI RSS（Bing 仅作可用性探测）",
   "status": {
     "contentChanged": true,
-    "freshTopics": 3,
-    "staleTopics": [],
-    "sourceErrors": 7
+    "freshTopics": 1,
+    "staleTopics": [
+      "us-stocks",
+      "a-shares"
+    ],
+    "sourceErrors": 14
   },
   "topics": [
     {
@@ -15,6 +18,30 @@
       "label": "AI",
       "description": "模型、产品、监管与资本动向",
       "items": [
+        {
+          "title": "Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives",
+          "url": "https://www.wired.com/story/europeans-are-about-to-find-out-how-entrenched-ai-is-in-their-daily-lives/",
+          "source": "WIRED",
+          "domain": "WIRED",
+          "publishedAt": "2026-08-02T08:34:28.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "title": "'I don't let my AI talk to me like that'",
+          "url": "https://www.lemonde.fr/en/m-le-mag/article/2026/08/02/i-don-t-let-my-ai-talk-to-me-like-that_6756079_117.html",
+          "source": "Le Monde",
+          "domain": "Le Monde",
+          "publishedAt": "2026-08-02T08:00:11.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "AI"
+          ]
+        },
         {
           "title": "OpenAI官宣降价",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTVluTXYyeE9kaFg5ekdrbFVZUFZYbWJPeUo2Y2F2bUdIWGJ1TUUtZk1BTmdVZ0F4ZmZKV1FYSENPQXRJSUpreXpRMTljWWdZWWNIRHJmQV9qYUNKMDU4YjZwX1phc3M5eU1oZndERUdHa0VobnoxamRzektqNkNxaFhkZl9wV2MyRndIVg?oc=5",
@@ -64,42 +91,19 @@
           "tags": [
             "AI"
           ]
-        },
-        {
-          "title": "头部AI企业布局为何接连出现AI模型突破安全隔离的事故？",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmSlRPTkxjVHFMbjNHQ3VqTFhiOVBzLW5tN1FMa2tDZ0xyMGhXZmJzZ2ljTTA5enN4dElJTXdaSmRRUlo1VGRESDVCbG5RcTV1WGlQMFEybktoUE1wRHFPZGo4TmoyNHRHeEVNaUxlMDh5c2FUamhoWF9pMFNTLXc?oc=5",
-          "source": "手机新浪网",
-          "domain": "手机新浪网",
-          "publishedAt": "2026-08-01T19:46:34.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "AI"
-          ]
-        },
-        {
-          "title": "AI企业如何防止模型误把真实服务器当测试靶场？",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5IX2RhRzZZMWdrLThuMW5qY25KakZTSkNRRXhab1RtTUxSeW50dC1rV1drMi1CQ0lCYmFVZ3FCQ1BPaEQ1NHlvbVRZWlRvUDJKeFoybHM4a0owQU9LR3o5MUxDVDljaFoxTVdoVlQ4djMwN3hfc0N0dFlTTHhnRmc?oc=5",
-          "source": "手机新浪网",
-          "domain": "手机新浪网",
-          "publishedAt": "2026-08-01T19:22:33.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "AI"
-          ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-08-02T03:53:29.628Z",
-      "lastSuccessfulAt": "2026-08-02T03:53:29.628Z",
-      "latestPublishedAt": "2026-08-02T02:53:00.000Z",
-      "liveItemCount": 6,
+      "attemptedAt": "2026-08-02T08:37:06.040Z",
+      "lastSuccessfulAt": "2026-08-02T08:37:06.040Z",
+      "latestPublishedAt": "2026-08-02T08:34:28.000Z",
+      "liveItemCount": 2,
       "providerStats": [
         {
           "provider": "google-1",
-          "ok": true,
-          "itemCount": 37
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-1",
@@ -109,8 +113,9 @@
         },
         {
           "provider": "google-2",
-          "ok": true,
-          "itemCount": 5
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-2",
@@ -120,8 +125,9 @@
         },
         {
           "provider": "google-3",
-          "ok": true,
-          "itemCount": 36
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-3",
@@ -219,16 +225,17 @@
           ]
         }
       ],
-      "stale": false,
-      "attemptedAt": "2026-08-02T03:53:31.472Z",
+      "stale": true,
+      "attemptedAt": "2026-08-02T08:38:11.004Z",
       "lastSuccessfulAt": "2026-08-02T03:53:31.472Z",
       "latestPublishedAt": "2026-08-01T12:47:42.000Z",
-      "liveItemCount": 6,
+      "liveItemCount": 0,
       "providerStats": [
         {
           "provider": "google-1",
-          "ok": true,
-          "itemCount": 23
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-1",
@@ -238,8 +245,9 @@
         },
         {
           "provider": "google-2",
-          "ok": true,
-          "itemCount": 13
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-2",
@@ -247,7 +255,8 @@
           "itemCount": 0,
           "error": "美股/bing-2 returned HTML with 0 items"
         }
-      ]
+      ],
+      "error": "all RSS providers failed"
     },
     {
       "id": "a-shares",
@@ -327,16 +336,17 @@
           ]
         }
       ],
-      "stale": false,
-      "attemptedAt": "2026-08-02T03:53:33.084Z",
+      "stale": true,
+      "attemptedAt": "2026-08-02T08:39:14.061Z",
       "lastSuccessfulAt": "2026-08-02T03:53:33.084Z",
       "latestPublishedAt": "2026-08-01T15:09:50.000Z",
-      "liveItemCount": 6,
+      "liveItemCount": 0,
       "providerStats": [
         {
           "provider": "google-1",
-          "ok": true,
-          "itemCount": 29
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-1",
@@ -346,8 +356,9 @@
         },
         {
           "provider": "google-2",
-          "ok": true,
-          "itemCount": 16
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-2",
@@ -355,20 +366,45 @@
           "itemCount": 0,
           "error": "A股/bing-2 returned HTML with 0 items"
         }
-      ]
+      ],
+      "error": "all RSS providers failed"
     }
   ],
   "history": [
     {
       "date": "2026-08-02",
-      "checkedAt": "2026-08-02T03:53:34.653Z",
-      "contentUpdatedAt": "2026-08-02T03:53:34.653Z",
+      "checkedAt": "2026-08-02T08:40:18.584Z",
+      "contentUpdatedAt": "2026-08-02T08:40:18.584Z",
       "topics": [
         {
           "id": "ai",
           "label": "AI",
           "description": "模型、产品、监管与资本动向",
           "items": [
+            {
+              "title": "Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives",
+              "url": "https://www.wired.com/story/europeans-are-about-to-find-out-how-entrenched-ai-is-in-their-daily-lives/",
+              "source": "WIRED",
+              "domain": "WIRED",
+              "publishedAt": "2026-08-02T08:34:28.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "AI"
+              ]
+            },
+            {
+              "title": "'I don't let my AI talk to me like that'",
+              "url": "https://www.lemonde.fr/en/m-le-mag/article/2026/08/02/i-don-t-let-my-ai-talk-to-me-like-that_6756079_117.html",
+              "source": "Le Monde",
+              "domain": "Le Monde",
+              "publishedAt": "2026-08-02T08:00:11.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "AI"
+              ]
+            },
             {
               "title": "OpenAI官宣降价",
               "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTVluTXYyeE9kaFg5ekdrbFVZUFZYbWJPeUo2Y2F2bUdIWGJ1TUUtZk1BTmdVZ0F4ZmZKV1FYSENPQXRJSUpreXpRMTljWWdZWWNIRHJmQV9qYUNKMDU4YjZwX1phc3M5eU1oZndERUdHa0VobnoxamRzektqNkNxaFhkZl9wV2MyRndIVg?oc=5",
@@ -418,42 +454,19 @@
               "tags": [
                 "AI"
               ]
-            },
-            {
-              "title": "头部AI企业布局为何接连出现AI模型突破安全隔离的事故？",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmSlRPTkxjVHFMbjNHQ3VqTFhiOVBzLW5tN1FMa2tDZ0xyMGhXZmJzZ2ljTTA5enN4dElJTXdaSmRRUlo1VGRESDVCbG5RcTV1WGlQMFEybktoUE1wRHFPZGo4TmoyNHRHeEVNaUxlMDh5c2FUamhoWF9pMFNTLXc?oc=5",
-              "source": "手机新浪网",
-              "domain": "手机新浪网",
-              "publishedAt": "2026-08-01T19:46:34.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
-            },
-            {
-              "title": "AI企业如何防止模型误把真实服务器当测试靶场？",
-              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5IX2RhRzZZMWdrLThuMW5qY25KakZTSkNRRXhab1RtTUxSeW50dC1rV1drMi1CQ0lCYmFVZ3FCQ1BPaEQ1NHlvbVRZWlRvUDJKeFoybHM4a0owQU9LR3o5MUxDVDljaFoxTVdoVlQ4djMwN3hfc0N0dFlTTHhnRmc?oc=5",
-              "source": "手机新浪网",
-              "domain": "手机新浪网",
-              "publishedAt": "2026-08-01T19:22:33.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
             }
           ],
           "stale": false,
-          "attemptedAt": "2026-08-02T03:53:29.628Z",
-          "lastSuccessfulAt": "2026-08-02T03:53:29.628Z",
-          "latestPublishedAt": "2026-08-02T02:53:00.000Z",
-          "liveItemCount": 6,
+          "attemptedAt": "2026-08-02T08:37:06.040Z",
+          "lastSuccessfulAt": "2026-08-02T08:37:06.040Z",
+          "latestPublishedAt": "2026-08-02T08:34:28.000Z",
+          "liveItemCount": 2,
           "providerStats": [
             {
               "provider": "google-1",
-              "ok": true,
-              "itemCount": 37
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-1",
@@ -463,8 +476,9 @@
             },
             {
               "provider": "google-2",
-              "ok": true,
-              "itemCount": 5
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-2",
@@ -474,8 +488,9 @@
             },
             {
               "provider": "google-3",
-              "ok": true,
-              "itemCount": 36
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-3",
@@ -573,16 +588,17 @@
               ]
             }
           ],
-          "stale": false,
-          "attemptedAt": "2026-08-02T03:53:31.472Z",
+          "stale": true,
+          "attemptedAt": "2026-08-02T08:38:11.004Z",
           "lastSuccessfulAt": "2026-08-02T03:53:31.472Z",
           "latestPublishedAt": "2026-08-01T12:47:42.000Z",
-          "liveItemCount": 6,
+          "liveItemCount": 0,
           "providerStats": [
             {
               "provider": "google-1",
-              "ok": true,
-              "itemCount": 23
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-1",
@@ -592,8 +608,9 @@
             },
             {
               "provider": "google-2",
-              "ok": true,
-              "itemCount": 13
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-2",
@@ -601,7 +618,8 @@
               "itemCount": 0,
               "error": "美股/bing-2 returned HTML with 0 items"
             }
-          ]
+          ],
+          "error": "all RSS providers failed"
         },
         {
           "id": "a-shares",
@@ -681,16 +699,17 @@
               ]
             }
           ],
-          "stale": false,
-          "attemptedAt": "2026-08-02T03:53:33.084Z",
+          "stale": true,
+          "attemptedAt": "2026-08-02T08:39:14.061Z",
           "lastSuccessfulAt": "2026-08-02T03:53:33.084Z",
           "latestPublishedAt": "2026-08-01T15:09:50.000Z",
-          "liveItemCount": 6,
+          "liveItemCount": 0,
           "providerStats": [
             {
               "provider": "google-1",
-              "ok": true,
-              "itemCount": 29
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-1",
@@ -700,8 +719,9 @@
             },
             {
               "provider": "google-2",
-              "ok": true,
-              "itemCount": 16
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-2",
@@ -709,7 +729,8 @@
               "itemCount": 0,
               "error": "A股/bing-2 returned HTML with 0 items"
             }
-          ]
+          ],
+          "error": "all RSS providers failed"
         }
       ]
     },
