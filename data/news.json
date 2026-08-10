@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-10T02:34:41.636Z",
-  "checkedAt": "2026-08-10T02:34:41.636Z",
-  "contentUpdatedAt": "2026-08-10T02:34:41.636Z",
+  "generatedAt": "2026-08-10T08:04:25.525Z",
+  "checkedAt": "2026-08-10T08:04:25.525Z",
+  "contentUpdatedAt": "2026-08-10T08:04:25.525Z",
   "source": "Google News RSS + WIRED AI RSS + Le Monde AI RSS（Bing 仅作可用性探测）",
   "status": {
     "contentChanged": true,
@@ -16,11 +16,60 @@
       "description": "模型、产品、监管与资本动向",
       "items": [
         {
-          "title": "中国AI大模型调用量连续十五周领跑：环比增长570%，DeepSeek-V4-Flash正式版登顶！MiniMax M3",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0xcXNBbjF6MmtWd1FDcVFUQ3BCX1dwLV9jVVFiang5MEY4SG16ZTB5Ym05RS1QUmgwOVhjLU04RWVwTlBYOGx3bEJUUUpfSW44R1hNWHIwX0lpWmZuczhzWEVNc2cwZw?oc=5",
-          "source": "mrjjxw.com",
-          "domain": "mrjjxw.com",
-          "publishedAt": "2026-08-10T02:27:00.000Z",
+          "title": "一周 AI 大公司动向回顾：Google AI 部门现大规模离职潮，苹果和 OpenAI 激辩窃取商业机密",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iWlpMQWgzSk9pR2Z1NnVlXzN4M2t6T2Nxcno5aEVma1lwd1NOSnp2c0RuNVpJeXF3S29rM0dfMTlIaXViMGhEVS01aEpiVlJHMmFqVQ?oc=5",
+          "source": "深潮TechFlow",
+          "domain": "深潮TechFlow",
+          "publishedAt": "2026-08-10T06:13:40.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "OpenAI",
+            "AI"
+          ]
+        },
+        {
+          "title": "IPv6：智能体AI时代不可替代的网络基础-AI基础设施",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBQcnhaTnd1bHhoVWVneUFsMlZNUXZlMGQtZG4zVVo0VGtZY1VxSWYxQ2wtX2RXX200OXlwSHZiX0VwLWJFUVA0UmNTbVlWZ2tuMEl2WDdMQjlBOEJWcEt3Slo2WG8yRTRja1B5Q0hMa1N0Zw?oc=5",
+          "source": "至顶网",
+          "domain": "至顶网",
+          "publishedAt": "2026-08-10T05:37:26.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "title": "Hugging Face称中国在开源权重AI下载量中居首 占比达41%",
+          "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxObzNkNHpnR3ZVNWRqT0lNOWRHWFRWaklRTm9OWUtmdG13TEhNRFFhdDBESjRqYnZ5VkJXTGYtR0lKVDJMeEU3dTBUZFdjb3dKWUtFQl9lOHcxVi01cHIxWjZuS1BjUUNRLWVLOUd5d2dEa2N3SzZkR1gyWjM0UGRRU1FfenJsTU1JQk9DMmg4aWNzYTJmbjdJRWdrc3VtbG56RzluejViSmNtTE5MdnZuQWdMOS14NExOdHYtSUNXOGl3azMyTVNrbmsxUGFuX0VvTW52R3VoVmtWakRqcFJDZzdBblJpM1RMa2lsVUdrdG91MDJrQ1U0QldURjZQX2hnTUNDZTVTbFZ1RTRFMTFkbU5fOGhsbGFDNXdOU1RUT1ZRUkk?oc=5",
+          "source": "Yellow.com",
+          "domain": "Yellow.com",
+          "publishedAt": "2026-08-10T05:25:08.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "title": "谁有资格定义AI汽车？",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE96TGtaUl9hc2lhQzNvcUhNR0QyLV9mNEREdjhERXc2Wno3SzFESU1XNVdWaVRhTmdfRnFNSEJJNjJuSExISjM0ejVUdkRYX3lrbHo4dlVxZ0l5ZFNib2daQzRzVzRtYlJT?oc=5",
+          "source": "火星财经",
+          "domain": "火星财经",
+          "publishedAt": "2026-08-10T04:44:58.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "title": "中国AI大模型调用量连续十五周领跑：环比增长570%，DeepSeek-V4-Flash正式版登顶！MiniMax M3、阶跃星辰Step 3.7 Flash跌出榜单",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQY1lleGhlaG8wc1dUSDZRNWo5Yy1PTVhsSk5mcVhYS1ZMZVhrX2lpMWJvNHdpSWVwSm9ZUVBHd1N5a3VBc3ZpdFM1akdlNzNBc2JyeHNHeXpCeVFYMHFqVGNtVTNXRU9hMjdUMmctalpSV3VyRDZzYWtaTlcyeDR2SG9KemxJZGc?oc=5",
+          "source": "新浪财经",
+          "domain": "新浪财经",
+          "publishedAt": "2026-08-10T03:33:45.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -29,78 +78,28 @@
           ]
         },
         {
-          "title": "OpenAI都撤了，AI浏览器只剩一条窄路",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaVRCYzgtcGEyZTZVaWQxTDJpMm9DTkQxcjY2WGs5dEs0QkVnU1lWV3NLbzdmRnUzN0xBYlVjbFlrakVZWkpjM1EyOFRJWm5mMnlPTEFyUnpIRTVtQ0RzeTU5TExLTDMwckIzdjRIZEZsNEY4ZHlxa3FfUXl6VFA2ZUlGeC1vS1VBNnlmcHU2WGVDajZEelpKUXRtQVNGRGZnQXFibjRWOA?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-08-10T01:40:41.000Z",
+          "title": "英伟达股东会摘要：黄仁勋豪言AI投资回报率的问题“已有答案”",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUS1QxajZRN255MHRmZHpGQXFBOGM3M2IzaEJ3OVRpVEpXTlpuamJma0tBSzJRV2ZjZXlqTkJxem5teHZtWExLQw?oc=5",
+          "source": "财联社",
+          "domain": "财联社",
+          "publishedAt": "2026-08-10T04:25:23.000Z",
           "summary": "",
           "reason": "",
           "tags": [
-            "OpenAI",
-            "AI"
-          ]
-        },
-        {
-          "title": "KT建成NH Nonghyup Bank新一代AICC，AI呼叫机器人直办业务增至180项",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVWhXQVZQMWowNzI5dWZON2hRQ28ybVhOZDZUT3plWHFnQzhoTUxSNHlvWHA3Ynl2eVRqZk1IbXJmbFc0czlEQ2c5dzBtV3ZTUm1iQ3laTXdUSlJkcFlLa0lNSGxDM0hmcENjelZiUnplc0VwaUREUFQ3UnFJRDJWaXpOV3B4Z1pUQUVuS19rUTRqNWs2QUlOUFAya1I?oc=5",
-          "source": "디지털투데이",
-          "domain": "디지털투데이",
-          "publishedAt": "2026-08-10T02:06:37.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "AI"
-          ]
-        },
-        {
-          "title": "深度丨祛魅AI万能叙事，下一个《王的猜想》仍源于人类创造力",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBNd2c1VzJxNFRydWhLMUVaSEd1aTZzSFB0b25QQnRRTlRjR1Y2QlJTa1JsRWI2SXIyUkJpdU9fekFHOWVrTFowM0JsTk93eEF4dy1lZ19DSmpLRUtpcEJ6UGJRTXJ2MUVPSEJNVTNR?oc=5",
-          "source": "OFweek",
-          "domain": "OFweek",
-          "publishedAt": "2026-08-10T01:50:00.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "AI"
-          ]
-        },
-        {
-          "title": "市场监管总局：上半年人形机器人新设企业11.6万户，新兴产业形成新增长点",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BNTd6MTVjRWQ3VUlWbWJYWnJ3THNMZzhKcHNmRUE0ckhzandaWjhqUjVsME9rTXBQbVowZENuT1ZJdGwtR2x1dW1SXy1CQXJjaHZERGlYNGk4d2x3?oc=5",
-          "source": "电子工程专辑",
-          "domain": "电子工程专辑",
-          "publishedAt": "2026-08-10T02:28:08.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "AI"
-          ]
-        },
-        {
-          "title": "OpenAI因网络安全担忧放缓Astra模型开发进程",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5lbGlkQU1WeGR1Z0JkV2ZMMS0zM093b0Q4eGdKQjNPSlY1Z1F1SXRSVTNLUVRtY0VRSHhPb0tlbUlKMmU2MHYyQVpKRmhMOWlJa3pNVHZWdVVYSUw4YVpnZ2RR?oc=5",
-          "source": "观点网",
-          "domain": "观点网",
-          "publishedAt": "2026-08-10T01:17:56.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "OpenAI",
             "AI"
           ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-08-10T02:34:36.567Z",
-      "lastSuccessfulAt": "2026-08-10T02:34:36.567Z",
-      "latestPublishedAt": "2026-08-10T02:28:08.000Z",
+      "attemptedAt": "2026-08-10T08:04:20.475Z",
+      "lastSuccessfulAt": "2026-08-10T08:04:20.475Z",
+      "latestPublishedAt": "2026-08-10T06:13:40.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 31
+          "itemCount": 30
         },
         {
           "provider": "bing-1",
@@ -122,7 +121,7 @@
         {
           "provider": "google-3",
           "ok": true,
-          "itemCount": 40
+          "itemCount": 49
         },
         {
           "provider": "bing-3",
@@ -148,11 +147,11 @@
       "description": "美股指数、科技股、财报与宏观信号",
       "items": [
         {
-          "title": "美股存储概念深夜跳水，希捷科技重挫10%，SpaceX大涨9%，纽约黄金站上4400美元",
-          "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOYTZUNzE4VXhIdUxEeGxmTW9aVjdVRlZSMXdLTk9MZXBWSjJZLUtVakJ3WEczNFBhbVlrOUlmbVk1Qm5IR21oQ0QxTC01ZG1vdlprX1NzYUI2ZGhQZ3FPLS13TUFMR0ROdUxETExkLTcxY0xwMUo5SzZnOENNSlhlX0hSSHUyZ19UcU5NdWhTdW5SZ04ydVhZakZ1MHloTmd6SzlmMjJ0dlR5VXI5bng3WTJobUVLbEUtaG5yajI4ME5ZUEN1a1BGandVYW9WLWUtUkhFTnZDeHV1bFY4NUJST1FHbWpBMlZsWUVIRXJtZGVzUnZRbjBVZk91RjdKaDlfZDVLcnNkVFJQVm9vaTUzWTlqQ2RtS2w5X1pMdXNpR0NlOHloNXp0U0hNUk42ZzJ4S0x2NXhyUnkxUQ?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-08-09T02:14:31.000Z",
+          "title": "期权扫描| SpaceX解禁后两日劲升23%！看涨期权占比攀升至近6成；Palantir期权成交环比放量逾2.5倍，多张Call飙升700% 港美股资讯",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5FZzUxOFptc2NxQ01FUDhXOXBPNG5Vd1FFbG1XTWdZR3hGVXZZUUtjRkwyU01MY2JydS1lRGh4bHdkTkpWaUlwU2ZiVndLUFB5Z0FCWWtPZkRxNEVfQXJMaUJn?oc=5",
+          "source": "hstong.com",
+          "domain": "hstong.com",
+          "publishedAt": "2026-08-10T06:21:00.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -160,11 +159,47 @@
           ]
         },
         {
-          "title": "【美股盘前】戴尔暴涨引爆AI硬件行情，美股期指齐涨，原油因美伊停火希望走低",
-          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPNjZJUWhMUHA0YTJUU01tRFZSTUtPOC1DM0FaV21IdnZjeG8zbUJfbnAxOEdYWEdpUU0tZ1VmQWpJaF9oN0k4TG9RaE5kYUc0UkVqdjlmZ3JyWE95RTA4YUFUNUw2TXIwTHM3U1ZKc0Nrbk5uWlFBSWp5bGp5eF81QVpxRnlQNzMzbjhjdTc3T3hlTTNCT0UwNlQwWDNHMy1LQUpwcHUzaTdnUmFVZEF1VnNYNUdSY21IMEx3dlVNSXdJOXMzakVmWkJVR24xOVdGNDBZQ1F2TGZyUkZnaDJYWXNQX2dLd185RjAwcXQtRFFMemZGS1JUd1M1eGNHYU9fRHVVaWVDMGhLZw?oc=5",
+          "title": "美股新高后市如何？本周将迎CPI考验 伯克希尔Q2三年多来首次净买入股票",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE95RlplYTRNbWs4Y2swbVJ3QkJndlM1Uk9zd1d4NXJvUHNSYkxDN2RSaDZSRUtoSUdjLUFaTERBN2RTdnFWeE93dWRfNjAzVUIwOS1Za1dGbUtXVFN3aXc?oc=5",
+          "source": "同花顺财经",
+          "domain": "同花顺财经",
+          "publishedAt": "2026-08-10T00:49:37.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "美股"
+          ]
+        },
+        {
+          "title": "华尔街早报：标普道指齐创新高，费半、芯片股4连阳，闪迪、英特尔大涨超10%，美光市值重返万亿美元",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zMnE3TUlDb05zTzFvSFZJUjk5bUhYcWRIODBFanBMcEdZNXRZWVdmMHBRSkhhSVFTRVE1Y1lCQXZOTXFRVjF5bVlkc2RsbzVid2ZZZzVncWFxcmVaS3k3cTBpVU42TjNhMndyTkhOWTJRT0hHWVFTYm50cEJtSm8?oc=5",
+          "source": "PANews",
+          "domain": "PANews",
+          "publishedAt": "2026-08-09T13:53:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "美股"
+          ]
+        },
+        {
+          "title": "【美股收评】特朗普一句话“吓坏”市场！道指暴跌近600点、油价狂飙，纳指为何逆势收高？",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeVRNWGtORjJSVi1NaVd6Y3J5LVpVMDdWTFZwXzE0aHpxczlCdzJ6bVNoNnp6M3VicU1NbUpRTWhpOEtJNGlpRVNZcTd3bUNRc1lBNUpuQXNtX0ZBU1pROVpzVUVuNEM0dU9CUF81X0hpS0RpRW5INmxGYm1Qb2xUWk1BYjY?oc=5",
+          "source": "FX168财经",
+          "domain": "FX168财经",
+          "publishedAt": "2026-08-09T11:22:40.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "美股"
+          ]
+        },
+        {
+          "title": "警惕AI泡沫风险，美股或将迎来大回调",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbGRXUU9LMTROMDlLTkdEdEcxZGJxeWRBdm10VE93eC03ckNvS1RoUE04aUNHYjd3c0kzdEpFYjFpVTVSNGU0VF9rQXozX0k4OUl1TFk1b0xjSDJkckFraHpNSjBPNUIzMEVYVEhYNzdZSXlXYnhlREd1dmFteGNLZmE2M1k1OHI5dDItWGFGMlJpeEZvTUx4RGhueUJ1cVozMFgyLXpQb2ZTbGZlU3ZFOUhMaHNSWk1fY3RRaWdncC1sUElEUEZfeEhR?oc=5",
           "source": "TradingKey",
           "domain": "TradingKey",
-          "publishedAt": "2026-08-09T00:45:56.000Z",
+          "publishedAt": "2026-08-09T10:32:10.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -172,47 +207,11 @@
           ]
         },
         {
-          "title": "A股涨ETF吸金289亿，美股却跌了？",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE45RF9YMWt0VGpvMTd1b0ZKcXB6M21VeUhQa1lEa0UwUmo2Q1VOM1MteXgtS1dBMVU4cmpvek9sZFRSWkJFVng3VjBxelJKeFpFQU5za0tsT29XcDIwQWNGMnlyX2RKWEtQNmwyeDFXemQ5WWNRSjVfeUR6cjhoUQ?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-08-08T23:32:40.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "美股"
-          ]
-        },
-        {
-          "title": "纳斯达克100指数走势预测：高位出现滞涨信号，AI还能推动指数2026下半年上涨吗？",
-          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPVnlsWlVYV3FadWtPTlFtY1pQcUlRcGl3bkwtLTl2bkZFa1pVejdhNmJMM3VKam1hQmF1VlJmeXh6WnBVWVJST19jb2xZTmJZc0M2aTVMZ2FrcEJ4NHhKcWE2Q2FjdEdwVnZob0YzNGZ2QjVCYTRJcklfRVZrUnVLTTlCbVVqeDVqcHYtVExoLXlfeTVCZ3I1U2o5LXQxVUtvZlVhMjg1NG5RMVltUXR3T1VfUllWRDR1NTlqbFBsMDN6RjNkb1hRSDJqUTBnZm9QaDd1MFVjWHFDMXFUTDVXSjl5bHNMbGZFdnk2S0FSUWVEejg?oc=5",
-          "source": "TradingKey",
-          "domain": "TradingKey",
-          "publishedAt": "2026-08-08T22:24:25.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "纳斯达克"
-          ]
-        },
-        {
-          "title": "标普500ETF博时(SH513500)股票股价_股价行情_讨论_资讯_财报_数据报告",
-          "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBPRTVqSGRUcE9wX1BaSEI4N1BRVGhmWkFWQzRzbFBoUHVQRTYxVEtDb0RPeVJsTkdva0hGb1EweGEybjg?oc=5",
-          "source": "雪球",
-          "domain": "雪球",
-          "publishedAt": "2026-08-08T21:17:32.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "美股"
-          ]
-        },
-        {
-          "title": "标普创新高！光通信拉升存储芯片低迷，SpaceX顶住解禁大涨15%，贵金属爆发",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBNSGt4aHM1Tk04Z1VIUWFZbTNoWm52emNDeWZ6SThQeFg5c3ZKRHB3cDlzZUdNQkVuZ0Z3WUsyZHJYUkFhU3Rrbm1XTXNyNjF3MU1z?oc=5",
-          "source": "第一财经",
-          "domain": "第一财经",
-          "publishedAt": "2026-08-08T20:30:06.000Z",
+          "title": "美股收盘：标普500指数再创新高 疲软非农缓解加息担忧",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Bay1JX2tadFRiQ21CV3JFbE1Wem00QUoxb1NFOFktWDg5X2lDSFMzbTJ2RGZZRDM2OGZsV1lLVWVhTnJrM0Q1cg?oc=5",
+          "source": "财联社",
+          "domain": "财联社",
+          "publishedAt": "2026-08-09T08:22:30.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -221,15 +220,15 @@
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-08-10T02:34:38.428Z",
-      "lastSuccessfulAt": "2026-08-10T02:34:38.428Z",
-      "latestPublishedAt": "2026-08-09T02:14:31.000Z",
+      "attemptedAt": "2026-08-10T08:04:22.359Z",
+      "lastSuccessfulAt": "2026-08-10T08:04:22.359Z",
+      "latestPublishedAt": "2026-08-10T06:21:00.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 22
+          "itemCount": 28
         },
         {
           "provider": "bing-1",
@@ -240,7 +239,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 10
+          "itemCount": 9
         },
         {
           "provider": "bing-2",
@@ -255,6 +254,54 @@
       "label": "A股",
       "description": "A股市场、政策、行业板块与资金面",
       "items": [
+        {
+          "title": "A股爱丽家居尾盘涨停，走出12天11板。",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1rbzk2a3VkNVVyVGMwQlJaWDVXUm1SV0p3WlhHckRxNUNDM2ltMmpMYWVTVWtBeFQ3d1diRDVETDdmQm1XTUxiR3pNLXlObUk?oc=5",
+          "source": "新浪财经",
+          "domain": "新浪财经",
+          "publishedAt": "2026-08-10T07:00:22.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "A股"
+          ]
+        },
+        {
+          "title": "沪深300ETF华泰柏瑞近一个月净流入超580亿元居亚洲首位",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9UenZGajlrbnlnTE1ORW1HcEpMd3NMQkZoVk5rWS1CNllhRmVMak9kbVIwUWkyVHJNMHVvVElsQ3c2ZFdWSWl3aGl1NjRscndSSGIyVkpPX29jeHZkX19ucFZVdk9xLTN1V2tlSnE3MHdRNDE4NEJPSkpR?oc=5",
+          "source": "chnfund.com",
+          "domain": "chnfund.com",
+          "publishedAt": "2026-08-10T06:14:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "沪深"
+          ]
+        },
+        {
+          "title": "医疗服务、能源金属、养殖板块早盘活跃，沪深300ETF易方达近一月获超110亿元净流入",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5wbHZBS3FhU0ZGZEhIZWZpNEU1Vmo3bjhhNE1iQ3dUYjdxNlJqSnVRWW9LNWNBMm1kaXYyWnZYa1B6LVFhZ3preGwwa2U3M2hFaGsyaGlpM2drTU5FcFE?oc=5",
+          "source": "同花顺财经",
+          "domain": "同花顺财经",
+          "publishedAt": "2026-08-10T05:21:37.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "沪深"
+          ]
+        },
+        {
+          "title": "A股：今日行情不对劲，主力演不下去了！周一下午务必听我一句劝",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMWNZMFlsNUZidzYwMmhwOURGSmpPYUw1RDdjdkFLX181Znlud2ZUVE1EZnpaZUNjdTlZYVJZdGpQUVY2Vjg3SEJ4NWROY3d0aGVodE5SaEx6SlNPaGpwWGNkWFBLSGI1d19HU19SVzRiMFVSTUZZa3MzRXo1MXd0ZERB?oc=5",
+          "source": "c.m.163.com",
+          "domain": "c.m.163.com",
+          "publishedAt": "2026-08-10T04:06:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "A股"
+          ]
+        },
         {
           "title": "沪深两市成交额超5000亿元，较上日此时放量740亿元。",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9aZDBQU3VwWk1zUlZ3dTNNd3hlSVNRME5BRk44MDZTemNBRGo3OEQ2U29tTjZBZHBlX0htYUVOVGh6T09KSnVSZEhWdUJVTkE?oc=5",
@@ -278,62 +325,13 @@
           "tags": [
             "A股"
           ]
-        },
-        {
-          "title": "A股强势反弹，后市如何演绎？机构最新研判来了",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeWlra1V6TVU1UmdPR2JEYTRWb1VZOHNMR2ZLNzNGUzFka1BhZTNKRnVYZHUxVUZLNFRhdlVITk5YTFdqd0kzbFpLMkpXeHYySHRwcEl2R0V0enA1a09QczM4a1BvZFhXYzF5VzBtZXVDOXlwRXkzSW1hUzl6Ykc3VTg2c2NSWDNRNkVXTkJCNWpsSDBlTDZ0aA?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-08-10T00:34:25.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "【#本周4只新股申购#】根据目前安排，若无变化本周（8月10日到14日）有4只新股申购。其中科创板2只，创业板1只，北交所1只。#宇树科技开启申购##A股人形机器人第一股# 截至发稿，本周网上发行3只新股披露发行价。科创板新股宇树科技发行价为150.8元，发行市",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBKY3IzdnZUVExuNU5MTFFEai1jQXVYd1pqdG9rWkE0SVMyaWdWZ00tWDhxVER4SHZ0Ukw1MEx3NlZRdXVMS3ZtQ3Z0bzdNNlRiVzNTLVAxYXl3T1dSTy13WVVnbw?oc=5",
-          "source": "新浪网",
-          "domain": "新浪网",
-          "publishedAt": "2026-08-09T23:34:00.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "A股",
-            "创业板"
-          ]
-        },
-        {
-          "title": "利好刷屏！中东局势再现好转，美国加息概率大降，北京购房政策调整，宇树科技今日申购；多家基金上报创业板算力",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5hYXVfTzNINm8tRWNMcEhyaG82ZVpsM1M5VHByWFQtWVpfUnR0T25xZnhtUElMOXgtOG9xQjRhMTEzenBNX2JWeEh4aEhCRWhreW5tUWYzdnFvNF83dWVvMW1MOA?oc=5",
-          "source": "金融界",
-          "domain": "金融界",
-          "publishedAt": "2026-08-09T23:31:02.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "创业板"
-          ]
-        },
-        {
-          "title": "A股全线飘红，重回“光”里！“易中天”大涨",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aZlN2Q2p4ZXcyY0ppTmJOY1ZZWGtKRmFtaUhZRFozTGNsZ0NvTEhpb0hDZU8xZ3BuWHUzR1Qtcmd4X09yOWxvZkNSY0pqWThDQ1J4UDFKOWNIRVlj?oc=5",
-          "source": "证券时报",
-          "domain": "证券时报",
-          "publishedAt": "2026-08-09T22:27:44.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "A股"
-          ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-08-10T02:34:40.002Z",
-      "lastSuccessfulAt": "2026-08-10T02:34:40.002Z",
-      "latestPublishedAt": "2026-08-10T01:40:14.000Z",
-      "liveItemCount": 6,
+      "attemptedAt": "2026-08-10T08:04:23.920Z",
+      "lastSuccessfulAt": "2026-08-10T08:04:23.920Z",
+      "latestPublishedAt": "2026-08-10T07:00:22.000Z",
+      "liveItemCount": 4,
       "providerStats": [
         {
           "provider": "google-1",
@@ -349,7 +347,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 28
+          "itemCount": 30
         },
         {
           "provider": "bing-2",
@@ -363,8 +361,8 @@
   "history": [
     {
       "date": "2026-08-10",
-      "checkedAt": "2026-08-10T02:34:41.636Z",
-      "contentUpdatedAt": "2026-08-10T02:34:41.636Z",
+      "checkedAt": "2026-08-10T08:04:25.525Z",
+      "contentUpdatedAt": "2026-08-10T08:04:25.525Z",
       "topics": [
         {
           "id": "ai",
@@ -372,11 +370,60 @@
           "description": "模型、产品、监管与资本动向",
           "items": [
             {
-              "title": "中国AI大模型调用量连续十五周领跑：环比增长570%，DeepSeek-V4-Flash正式版登顶！MiniMax M3",
-              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0xcXNBbjF6MmtWd1FDcVFUQ3BCX1dwLV9jVVFiang5MEY4SG16ZTB5Ym05RS1QUmgwOVhjLU04RWVwTlBYOGx3bEJUUUpfSW44R1hNWHIwX0lpWmZuczhzWEVNc2cwZw?oc=5",
-              "source": "mrjjxw.com",
-              "domain": "mrjjxw.com",
-              "publishedAt": "2026-08-10T02:27:00.000Z",
+              "title": "一周 AI 大公司动向回顾：Google AI 部门现大规模离职潮，苹果和 OpenAI 激辩窃取商业机密",
+              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iWlpMQWgzSk9pR2Z1NnVlXzN4M2t6T2Nxcno5aEVma1lwd1NOSnp2c0RuNVpJeXF3S29rM0dfMTlIaXViMGhEVS01aEpiVlJHMmFqVQ?oc=5",
+              "source": "深潮TechFlow",
+              "domain": "深潮TechFlow",
+              "publishedAt": "2026-08-10T06:13:40.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "OpenAI",
+                "AI"
+              ]
+            },
+            {
+              "title": "IPv6：智能体AI时代不可替代的网络基础-AI基础设施",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBQcnhaTnd1bHhoVWVneUFsMlZNUXZlMGQtZG4zVVo0VGtZY1VxSWYxQ2wtX2RXX200OXlwSHZiX0VwLWJFUVA0UmNTbVlWZ2tuMEl2WDdMQjlBOEJWcEt3Slo2WG8yRTRja1B5Q0hMa1N0Zw?oc=5",
+              "source": "至顶网",
+              "domain": "至顶网",
+              "publishedAt": "2026-08-10T05:37:26.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "AI"
+              ]
+            },
+            {
+              "title": "Hugging Face称中国在开源权重AI下载量中居首 占比达41%",
+              "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxObzNkNHpnR3ZVNWRqT0lNOWRHWFRWaklRTm9OWUtmdG13TEhNRFFhdDBESjRqYnZ5VkJXTGYtR0lKVDJMeEU3dTBUZFdjb3dKWUtFQl9lOHcxVi01cHIxWjZuS1BjUUNRLWVLOUd5d2dEa2N3SzZkR1gyWjM0UGRRU1FfenJsTU1JQk9DMmg4aWNzYTJmbjdJRWdrc3VtbG56RzluejViSmNtTE5MdnZuQWdMOS14NExOdHYtSUNXOGl3azMyTVNrbmsxUGFuX0VvTW52R3VoVmtWakRqcFJDZzdBblJpM1RMa2lsVUdrdG91MDJrQ1U0QldURjZQX2hnTUNDZTVTbFZ1RTRFMTFkbU5fOGhsbGFDNXdOU1RUT1ZRUkk?oc=5",
+              "source": "Yellow.com",
+              "domain": "Yellow.com",
+              "publishedAt": "2026-08-10T05:25:08.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "AI"
+              ]
+            },
+            {
+              "title": "谁有资格定义AI汽车？",
+              "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE96TGtaUl9hc2lhQzNvcUhNR0QyLV9mNEREdjhERXc2Wno3SzFESU1XNVdWaVRhTmdfRnFNSEJJNjJuSExISjM0ejVUdkRYX3lrbHo4dlVxZ0l5ZFNib2daQzRzVzRtYlJT?oc=5",
+              "source": "火星财经",
+              "domain": "火星财经",
+              "publishedAt": "2026-08-10T04:44:58.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "AI"
+              ]
+            },
+            {
+              "title": "中国AI大模型调用量连续十五周领跑：环比增长570%，DeepSeek-V4-Flash正式版登顶！MiniMax M3、阶跃星辰Step 3.7 Flash跌出榜单",
+              "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQY1lleGhlaG8wc1dUSDZRNWo5Yy1PTVhsSk5mcVhYS1ZMZVhrX2lpMWJvNHdpSWVwSm9ZUVBHd1N5a3VBc3ZpdFM1akdlNzNBc2JyeHNHeXpCeVFYMHFqVGNtVTNXRU9hMjdUMmctalpSV3VyRDZzYWtaTlcyeDR2SG9KemxJZGc?oc=5",
+              "source": "新浪财经",
+              "domain": "新浪财经",
+              "publishedAt": "2026-08-10T03:33:45.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -385,78 +432,28 @@
               ]
             },
             {
-              "title": "OpenAI都撤了，AI浏览器只剩一条窄路",
-              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaVRCYzgtcGEyZTZVaWQxTDJpMm9DTkQxcjY2WGs5dEs0QkVnU1lWV3NLbzdmRnUzN0xBYlVjbFlrakVZWkpjM1EyOFRJWm5mMnlPTEFyUnpIRTVtQ0RzeTU5TExLTDMwckIzdjRIZEZsNEY4ZHlxa3FfUXl6VFA2ZUlGeC1vS1VBNnlmcHU2WGVDajZEelpKUXRtQVNGRGZnQXFibjRWOA?oc=5",
-              "source": "新浪财经",
-              "domain": "新浪财经",
-              "publishedAt": "2026-08-10T01:40:41.000Z",
+              "title": "英伟达股东会摘要：黄仁勋豪言AI投资回报率的问题“已有答案”",
+              "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBUS1QxajZRN255MHRmZHpGQXFBOGM3M2IzaEJ3OVRpVEpXTlpuamJma0tBSzJRV2ZjZXlqTkJxem5teHZtWExLQw?oc=5",
+              "source": "财联社",
+              "domain": "财联社",
+              "publishedAt": "2026-08-10T04:25:23.000Z",
               "summary": "",
               "reason": "",
               "tags": [
-                "OpenAI",
-                "AI"
-              ]
-            },
-            {
-              "title": "KT建成NH Nonghyup Bank新一代AICC，AI呼叫机器人直办业务增至180项",
-              "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVWhXQVZQMWowNzI5dWZON2hRQ28ybVhOZDZUT3plWHFnQzhoTUxSNHlvWHA3Ynl2eVRqZk1IbXJmbFc0czlEQ2c5dzBtV3ZTUm1iQ3laTXdUSlJkcFlLa0lNSGxDM0hmcENjelZiUnplc0VwaUREUFQ3UnFJRDJWaXpOV3B4Z1pUQUVuS19rUTRqNWs2QUlOUFAya1I?oc=5",
-              "source": "디지털투데이",
-              "domain": "디지털투데이",
-              "publishedAt": "2026-08-10T02:06:37.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
-            },
-            {
-              "title": "深度丨祛魅AI万能叙事，下一个《王的猜想》仍源于人类创造力",
-              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBNd2c1VzJxNFRydWhLMUVaSEd1aTZzSFB0b25QQnRRTlRjR1Y2QlJTa1JsRWI2SXIyUkJpdU9fekFHOWVrTFowM0JsTk93eEF4dy1lZ19DSmpLRUtpcEJ6UGJRTXJ2MUVPSEJNVTNR?oc=5",
-              "source": "OFweek",
-              "domain": "OFweek",
-              "publishedAt": "2026-08-10T01:50:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
-            },
-            {
-              "title": "市场监管总局：上半年人形机器人新设企业11.6万户，新兴产业形成新增长点",
-              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BNTd6MTVjRWQ3VUlWbWJYWnJ3THNMZzhKcHNmRUE0ckhzandaWjhqUjVsME9rTXBQbVowZENuT1ZJdGwtR2x1dW1SXy1CQXJjaHZERGlYNGk4d2x3?oc=5",
-              "source": "电子工程专辑",
-              "domain": "电子工程专辑",
-              "publishedAt": "2026-08-10T02:28:08.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
-            },
-            {
-              "title": "OpenAI因网络安全担忧放缓Astra模型开发进程",
-              "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5lbGlkQU1WeGR1Z0JkV2ZMMS0zM093b0Q4eGdKQjNPSlY1Z1F1SXRSVTNLUVRtY0VRSHhPb0tlbUlKMmU2MHYyQVpKRmhMOWlJa3pNVHZWdVVYSUw4YVpnZ2RR?oc=5",
-              "source": "观点网",
-              "domain": "观点网",
-              "publishedAt": "2026-08-10T01:17:56.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "OpenAI",
                 "AI"
               ]
             }
           ],
           "stale": false,
-          "attemptedAt": "2026-08-10T02:34:36.567Z",
-          "lastSuccessfulAt": "2026-08-10T02:34:36.567Z",
-          "latestPublishedAt": "2026-08-10T02:28:08.000Z",
+          "attemptedAt": "2026-08-10T08:04:20.475Z",
+          "lastSuccessfulAt": "2026-08-10T08:04:20.475Z",
+          "latestPublishedAt": "2026-08-10T06:13:40.000Z",
           "liveItemCount": 6,
           "providerStats": [
             {
               "provider": "google-1",
               "ok": true,
-              "itemCount": 31
+              "itemCount": 30
             },
             {
               "provider": "bing-1",
@@ -478,7 +475,7 @@
             {
               "provider": "google-3",
               "ok": true,
-              "itemCount": 40
+              "itemCount": 49
             },
             {
               "provider": "bing-3",
@@ -504,11 +501,11 @@
           "description": "美股指数、科技股、财报与宏观信号",
           "items": [
             {
-              "title": "美股存储概念深夜跳水，希捷科技重挫10%，SpaceX大涨9%，纽约黄金站上4400美元",
-              "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOYTZUNzE4VXhIdUxEeGxmTW9aVjdVRlZSMXdLTk9MZXBWSjJZLUtVakJ3WEczNFBhbVlrOUlmbVk1Qm5IR21oQ0QxTC01ZG1vdlprX1NzYUI2ZGhQZ3FPLS13TUFMR0ROdUxETExkLTcxY0xwMUo5SzZnOENNSlhlX0hSSHUyZ19UcU5NdWhTdW5SZ04ydVhZakZ1MHloTmd6SzlmMjJ0dlR5VXI5bng3WTJobUVLbEUtaG5yajI4ME5ZUEN1a1BGandVYW9WLWUtUkhFTnZDeHV1bFY4NUJST1FHbWpBMlZsWUVIRXJtZGVzUnZRbjBVZk91RjdKaDlfZDVLcnNkVFJQVm9vaTUzWTlqQ2RtS2w5X1pMdXNpR0NlOHloNXp0U0hNUk42ZzJ4S0x2NXhyUnkxUQ?oc=5",
-              "source": "新浪财经",
-              "domain": "新浪财经",
-              "publishedAt": "2026-08-09T02:14:31.000Z",
+              "title": "期权扫描| SpaceX解禁后两日劲升23%！看涨期权占比攀升至近6成；Palantir期权成交环比放量逾2.5倍，多张Call飙升700% 港美股资讯",
+              "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5FZzUxOFptc2NxQ01FUDhXOXBPNG5Vd1FFbG1XTWdZR3hGVXZZUUtjRkwyU01MY2JydS1lRGh4bHdkTkpWaUlwU2ZiVndLUFB5Z0FCWWtPZkRxNEVfQXJMaUJn?oc=5",
+              "source": "hstong.com",
+              "domain": "hstong.com",
+              "publishedAt": "2026-08-10T06:21:00.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -516,11 +513,47 @@
               ]
             },
             {
-              "title": "【美股盘前】戴尔暴涨引爆AI硬件行情，美股期指齐涨，原油因美伊停火希望走低",
-              "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPNjZJUWhMUHA0YTJUU01tRFZSTUtPOC1DM0FaV21IdnZjeG8zbUJfbnAxOEdYWEdpUU0tZ1VmQWpJaF9oN0k4TG9RaE5kYUc0UkVqdjlmZ3JyWE95RTA4YUFUNUw2TXIwTHM3U1ZKc0Nrbk5uWlFBSWp5bGp5eF81QVpxRnlQNzMzbjhjdTc3T3hlTTNCT0UwNlQwWDNHMy1LQUpwcHUzaTdnUmFVZEF1VnNYNUdSY21IMEx3dlVNSXdJOXMzakVmWkJVR24xOVdGNDBZQ1F2TGZyUkZnaDJYWXNQX2dLd185RjAwcXQtRFFMemZGS1JUd1M1eGNHYU9fRHVVaWVDMGhLZw?oc=5",
+              "title": "美股新高后市如何？本周将迎CPI考验 伯克希尔Q2三年多来首次净买入股票",
+              "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE95RlplYTRNbWs4Y2swbVJ3QkJndlM1Uk9zd1d4NXJvUHNSYkxDN2RSaDZSRUtoSUdjLUFaTERBN2RTdnFWeE93dWRfNjAzVUIwOS1Za1dGbUtXVFN3aXc?oc=5",
+              "source": "同花顺财经",
+              "domain": "同花顺财经",
+              "publishedAt": "2026-08-10T00:49:37.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "华尔街早报：标普道指齐创新高，费半、芯片股4连阳，闪迪、英特尔大涨超10%，美光市值重返万亿美元",
+              "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zMnE3TUlDb05zTzFvSFZJUjk5bUhYcWRIODBFanBMcEdZNXRZWVdmMHBRSkhhSVFTRVE1Y1lCQXZOTXFRVjF5bVlkc2RsbzVid2ZZZzVncWFxcmVaS3k3cTBpVU42TjNhMndyTkhOWTJRT0hHWVFTYm50cEJtSm8?oc=5",
+              "source": "PANews",
+              "domain": "PANews",
+              "publishedAt": "2026-08-09T13:53:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "【美股收评】特朗普一句话“吓坏”市场！道指暴跌近600点、油价狂飙，纳指为何逆势收高？",
+              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeVRNWGtORjJSVi1NaVd6Y3J5LVpVMDdWTFZwXzE0aHpxczlCdzJ6bVNoNnp6M3VicU1NbUpRTWhpOEtJNGlpRVNZcTd3bUNRc1lBNUpuQXNtX0ZBU1pROVpzVUVuNEM0dU9CUF81X0hpS0RpRW5INmxGYm1Qb2xUWk1BYjY?oc=5",
+              "source": "FX168财经",
+              "domain": "FX168财经",
+              "publishedAt": "2026-08-09T11:22:40.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "警惕AI泡沫风险，美股或将迎来大回调",
+              "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbGRXUU9LMTROMDlLTkdEdEcxZGJxeWRBdm10VE93eC03ckNvS1RoUE04aUNHYjd3c0kzdEpFYjFpVTVSNGU0VF9rQXozX0k4OUl1TFk1b0xjSDJkckFraHpNSjBPNUIzMEVYVEhYNzdZSXlXYnhlREd1dmFteGNLZmE2M1k1OHI5dDItWGFGMlJpeEZvTUx4RGhueUJ1cVozMFgyLXpQb2ZTbGZlU3ZFOUhMaHNSWk1fY3RRaWdncC1sUElEUEZfeEhR?oc=5",
               "source": "TradingKey",
               "domain": "TradingKey",
-              "publishedAt": "2026-08-09T00:45:56.000Z",
+              "publishedAt": "2026-08-09T10:32:10.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -528,47 +561,11 @@
               ]
             },
             {
-              "title": "A股涨ETF吸金289亿，美股却跌了？",
-              "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE45RF9YMWt0VGpvMTd1b0ZKcXB6M21VeUhQa1lEa0UwUmo2Q1VOM1MteXgtS1dBMVU4cmpvek9sZFRSWkJFVng3VjBxelJKeFpFQU5za0tsT29XcDIwQWNGMnlyX2RKWEtQNmwyeDFXemQ5WWNRSjVfeUR6cjhoUQ?oc=5",
-              "source": "新浪财经",
-              "domain": "新浪财经",
-              "publishedAt": "2026-08-08T23:32:40.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "美股"
-              ]
-            },
-            {
-              "title": "纳斯达克100指数走势预测：高位出现滞涨信号，AI还能推动指数2026下半年上涨吗？",
-              "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPVnlsWlVYV3FadWtPTlFtY1pQcUlRcGl3bkwtLTl2bkZFa1pVejdhNmJMM3VKam1hQmF1VlJmeXh6WnBVWVJST19jb2xZTmJZc0M2aTVMZ2FrcEJ4NHhKcWE2Q2FjdEdwVnZob0YzNGZ2QjVCYTRJcklfRVZrUnVLTTlCbVVqeDVqcHYtVExoLXlfeTVCZ3I1U2o5LXQxVUtvZlVhMjg1NG5RMVltUXR3T1VfUllWRDR1NTlqbFBsMDN6RjNkb1hRSDJqUTBnZm9QaDd1MFVjWHFDMXFUTDVXSjl5bHNMbGZFdnk2S0FSUWVEejg?oc=5",
-              "source": "TradingKey",
-              "domain": "TradingKey",
-              "publishedAt": "2026-08-08T22:24:25.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "纳斯达克"
-              ]
-            },
-            {
-              "title": "标普500ETF博时(SH513500)股票股价_股价行情_讨论_资讯_财报_数据报告",
-              "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBPRTVqSGRUcE9wX1BaSEI4N1BRVGhmWkFWQzRzbFBoUHVQRTYxVEtDb0RPeVJsTkdva0hGb1EweGEybjg?oc=5",
-              "source": "雪球",
-              "domain": "雪球",
-              "publishedAt": "2026-08-08T21:17:32.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "美股"
-              ]
-            },
-            {
-              "title": "标普创新高！光通信拉升存储芯片低迷，SpaceX顶住解禁大涨15%，贵金属爆发",
-              "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBNSGt4aHM1Tk04Z1VIUWFZbTNoWm52emNDeWZ6SThQeFg5c3ZKRHB3cDlzZUdNQkVuZ0Z3WUsyZHJYUkFhU3Rrbm1XTXNyNjF3MU1z?oc=5",
-              "source": "第一财经",
-              "domain": "第一财经",
-              "publishedAt": "2026-08-08T20:30:06.000Z",
+              "title": "美股收盘：标普500指数再创新高 疲软非农缓解加息担忧",
+              "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Bay1JX2tadFRiQ21CV3JFbE1Wem00QUoxb1NFOFktWDg5X2lDSFMzbTJ2RGZZRDM2OGZsV1lLVWVhTnJrM0Q1cg?oc=5",
+              "source": "财联社",
+              "domain": "财联社",
+              "publishedAt": "2026-08-09T08:22:30.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -577,15 +574,15 @@
             }
           ],
           "stale": false,
-          "attemptedAt": "2026-08-10T02:34:38.428Z",
-          "lastSuccessfulAt": "2026-08-10T02:34:38.428Z",
-          "latestPublishedAt": "2026-08-09T02:14:31.000Z",
+          "attemptedAt": "2026-08-10T08:04:22.359Z",
+          "lastSuccessfulAt": "2026-08-10T08:04:22.359Z",
+          "latestPublishedAt": "2026-08-10T06:21:00.000Z",
           "liveItemCount": 6,
           "providerStats": [
             {
               "provider": "google-1",
               "ok": true,
-              "itemCount": 22
+              "itemCount": 28
             },
             {
               "provider": "bing-1",
@@ -596,7 +593,7 @@
             {
               "provider": "google-2",
               "ok": true,
-              "itemCount": 10
+              "itemCount": 9
             },
             {
               "provider": "bing-2",
@@ -611,6 +608,54 @@
           "label": "A股",
           "description": "A股市场、政策、行业板块与资金面",
           "items": [
+            {
+              "title": "A股爱丽家居尾盘涨停，走出12天11板。",
+              "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1rbzk2a3VkNVVyVGMwQlJaWDVXUm1SV0p3WlhHckRxNUNDM2ltMmpMYWVTVWtBeFQ3d1diRDVETDdmQm1XTUxiR3pNLXlObUk?oc=5",
+              "source": "新浪财经",
+              "domain": "新浪财经",
+              "publishedAt": "2026-08-10T07:00:22.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "A股"
+              ]
+            },
+            {
+              "title": "沪深300ETF华泰柏瑞近一个月净流入超580亿元居亚洲首位",
+              "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9UenZGajlrbnlnTE1ORW1HcEpMd3NMQkZoVk5rWS1CNllhRmVMak9kbVIwUWkyVHJNMHVvVElsQ3c2ZFdWSWl3aGl1NjRscndSSGIyVkpPX29jeHZkX19ucFZVdk9xLTN1V2tlSnE3MHdRNDE4NEJPSkpR?oc=5",
+              "source": "chnfund.com",
+              "domain": "chnfund.com",
+              "publishedAt": "2026-08-10T06:14:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "沪深"
+              ]
+            },
+            {
+              "title": "医疗服务、能源金属、养殖板块早盘活跃，沪深300ETF易方达近一月获超110亿元净流入",
+              "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5wbHZBS3FhU0ZGZEhIZWZpNEU1Vmo3bjhhNE1iQ3dUYjdxNlJqSnVRWW9LNWNBMm1kaXYyWnZYa1B6LVFhZ3preGwwa2U3M2hFaGsyaGlpM2drTU5FcFE?oc=5",
+              "source": "同花顺财经",
+              "domain": "同花顺财经",
+              "publishedAt": "2026-08-10T05:21:37.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "沪深"
+              ]
+            },
+            {
+              "title": "A股：今日行情不对劲，主力演不下去了！周一下午务必听我一句劝",
+              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMWNZMFlsNUZidzYwMmhwOURGSmpPYUw1RDdjdkFLX181Znlud2ZUVE1EZnpaZUNjdTlZYVJZdGpQUVY2Vjg3SEJ4NWROY3d0aGVodE5SaEx6SlNPaGpwWGNkWFBLSGI1d19HU19SVzRiMFVSTUZZa3MzRXo1MXd0ZERB?oc=5",
+              "source": "c.m.163.com",
+              "domain": "c.m.163.com",
+              "publishedAt": "2026-08-10T04:06:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "A股"
+              ]
+            },
             {
               "title": "沪深两市成交额超5000亿元，较上日此时放量740亿元。",
               "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9aZDBQU3VwWk1zUlZ3dTNNd3hlSVNRME5BRk44MDZTemNBRGo3OEQ2U29tTjZBZHBlX0htYUVOVGh6T09KSnVSZEhWdUJVTkE?oc=5",
@@ -634,62 +679,13 @@
               "tags": [
                 "A股"
               ]
-            },
-            {
-              "title": "A股强势反弹，后市如何演绎？机构最新研判来了",
-              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeWlra1V6TVU1UmdPR2JEYTRWb1VZOHNMR2ZLNzNGUzFka1BhZTNKRnVYZHUxVUZLNFRhdlVITk5YTFdqd0kzbFpLMkpXeHYySHRwcEl2R0V0enA1a09QczM4a1BvZFhXYzF5VzBtZXVDOXlwRXkzSW1hUzl6Ykc3VTg2c2NSWDNRNkVXTkJCNWpsSDBlTDZ0aA?oc=5",
-              "source": "新浪财经",
-              "domain": "新浪财经",
-              "publishedAt": "2026-08-10T00:34:25.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "A股"
-              ]
-            },
-            {
-              "title": "【#本周4只新股申购#】根据目前安排，若无变化本周（8月10日到14日）有4只新股申购。其中科创板2只，创业板1只，北交所1只。#宇树科技开启申购##A股人形机器人第一股# 截至发稿，本周网上发行3只新股披露发行价。科创板新股宇树科技发行价为150.8元，发行市",
-              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBKY3IzdnZUVExuNU5MTFFEai1jQXVYd1pqdG9rWkE0SVMyaWdWZ00tWDhxVER4SHZ0Ukw1MEx3NlZRdXVMS3ZtQ3Z0bzdNNlRiVzNTLVAxYXl3T1dSTy13WVVnbw?oc=5",
-              "source": "新浪网",
-              "domain": "新浪网",
-              "publishedAt": "2026-08-09T23:34:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "A股",
-                "创业板"
-              ]
-            },
-            {
-              "title": "利好刷屏！中东局势再现好转，美国加息概率大降，北京购房政策调整，宇树科技今日申购；多家基金上报创业板算力",
-              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5hYXVfTzNINm8tRWNMcEhyaG82ZVpsM1M5VHByWFQtWVpfUnR0T25xZnhtUElMOXgtOG9xQjRhMTEzenBNX2JWeEh4aEhCRWhreW5tUWYzdnFvNF83dWVvMW1MOA?oc=5",
-              "source": "金融界",
-              "domain": "金融界",
-              "publishedAt": "2026-08-09T23:31:02.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "创业板"
-              ]
-            },
-            {
-              "title": "A股全线飘红，重回“光”里！“易中天”大涨",
-              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aZlN2Q2p4ZXcyY0ppTmJOY1ZZWGtKRmFtaUhZRFozTGNsZ0NvTEhpb0hDZU8xZ3BuWHUzR1Qtcmd4X09yOWxvZkNSY0pqWThDQ1J4UDFKOWNIRVlj?oc=5",
-              "source": "证券时报",
-              "domain": "证券时报",
-              "publishedAt": "2026-08-09T22:27:44.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "A股"
-              ]
             }
           ],
           "stale": false,
-          "attemptedAt": "2026-08-10T02:34:40.002Z",
-          "lastSuccessfulAt": "2026-08-10T02:34:40.002Z",
-          "latestPublishedAt": "2026-08-10T01:40:14.000Z",
-          "liveItemCount": 6,
+          "attemptedAt": "2026-08-10T08:04:23.920Z",
+          "lastSuccessfulAt": "2026-08-10T08:04:23.920Z",
+          "latestPublishedAt": "2026-08-10T07:00:22.000Z",
+          "liveItemCount": 4,
           "providerStats": [
             {
               "provider": "google-1",
@@ -705,7 +701,7 @@
             {
               "provider": "google-2",
               "ok": true,
-              "itemCount": 28
+              "itemCount": 30
             },
             {
               "provider": "bing-2",
