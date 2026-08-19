@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-19T11:09:22+08:00",
-  "checkedAt": "2026-08-19T11:09:22+08:00",
+  "updatedAt": "2026-08-19T12:49:37+08:00",
+  "checkedAt": "2026-08-19T12:49:37+08:00",
   "coverage": "中国大陆未来 120 天 ACGN 漫展；B站会员购官方列表 + 次元黄页高频轻量扫描（本轮 4 页、187 条），嘉宾仅展示平台结构化名单或主办方官宣",
   "policy": "广覆盖发现不等于嘉宾确认；票务事实优先 B站会员购和大麦，嘉宾名单仅采用 B站结构化详情或主办方官宣，抓取失败保留上一版并公开来源健康度。",
   "sources": [
@@ -76,7 +76,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-25T03:44:37+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11477",
@@ -155,45 +155,6 @@
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
       "lastSeenAt": "2026-08-19T04:58:47+08:00",
       "province": "辽宁"
-    },
-    {
-      "id": "yunmanzhan-11650",
-      "name": "第二届雾萌动漫游戏嘉年华",
-      "type": "动漫游戏展",
-      "province": "四川",
-      "city": "都江堰",
-      "venue": "悠渡影城(都江堰店)",
-      "startDate": "2026-08-12",
-      "endDate": "2026-08-12",
-      "price": "¥38元 起",
-      "ticketStatus": "待票务复核",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=%E7%AC%AC%E4%BA%8C%E5%B1%8A%E9%9B%BE%E8%90%8C%E5%8A%A8%E6%BC%AB%E6%B8%B8%E6%88%8F%E5%98%89%E5%B9%B4%E5%8D%8E",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“已结束”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "11650"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T04:58:47+08:00"
     },
     {
       "id": "yunmanzhan-11651",
@@ -554,7 +515,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11172",
@@ -1214,7 +1175,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -1721,7 +1682,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "重庆",
       "guestUpdatedAt": "2026-08-19"
     },
@@ -2200,7 +2161,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广东"
     },
     {
@@ -2305,7 +2266,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -2355,7 +2316,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11491",
@@ -2590,7 +2551,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-12T19:09:07+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11496",
@@ -2638,7 +2599,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "浙江"
     },
     {
@@ -2679,7 +2640,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-10T17:46:11+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11661",
@@ -3437,7 +3398,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-08T01:05:31+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -3603,7 +3564,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "上海"
     },
     {
@@ -3644,7 +3605,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-02T05:07:56+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1003998",
@@ -3690,7 +3651,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-01T14:39:28+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -3886,7 +3847,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -4218,7 +4179,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -4534,45 +4495,6 @@
       "province": "江苏"
     },
     {
-      "id": "yunmanzhan-11273",
-      "name": "SISP次元全国拼豆大会-方圆荟",
-      "type": "综合漫展",
-      "city": "无锡",
-      "venue": "无锡方圆荟",
-      "startDate": "2026-08-15",
-      "endDate": "2026-08-16",
-      "price": "免费",
-      "ticketStatus": "待票务复核",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=11273",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“已结束”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "11674"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T04:58:47+08:00",
-      "province": "江苏"
-    },
-    {
       "id": "yunmanzhan-9780",
       "name": "第六届猫尾铃动漫游戏嘉年华",
       "type": "动漫游戏展",
@@ -4694,7 +4616,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-02T05:07:56+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -4735,7 +4657,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-08T01:05:31+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-9782",
@@ -4940,7 +4862,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10622",
@@ -5184,7 +5106,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11778",
@@ -5506,7 +5428,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-04T18:48:48+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11487",
@@ -5624,7 +5546,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-10T17:46:11+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-9229",
@@ -5703,7 +5625,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-03T05:34:50+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11683",
@@ -6144,7 +6066,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-05T14:39:59+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -6232,7 +6154,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "河北"
     },
     {
@@ -7140,7 +7062,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11675",
@@ -7189,7 +7111,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10920",
@@ -7484,7 +7406,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-05T03:54:45+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -7595,7 +7517,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-15T01:09:09+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1004643",
@@ -7644,7 +7566,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-07T19:05:44+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11511",
@@ -7842,7 +7764,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广东",
       "guestUpdatedAt": "2026-08-19"
     },
@@ -8036,7 +7958,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-02T11:49:54+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -8311,7 +8233,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-12T17:30:34+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11508",
@@ -8906,7 +8828,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-04T18:48:48+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11690",
@@ -9297,7 +9219,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-14T15:47:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11523",
@@ -9474,7 +9396,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-08T01:05:31+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -9514,7 +9436,46 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11650",
+      "name": "第二届雾萌动漫游戏嘉年华",
+      "type": "动漫游戏展",
+      "province": "四川",
+      "city": "都江堰",
+      "venue": "悠渡影城(都江堰店)",
+      "startDate": "2026-08-19",
+      "endDate": "2026-08-19",
+      "price": "¥38元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E7%AC%AC%E4%BA%8C%E5%B1%8A%E9%9B%BE%E8%90%8C%E5%8A%A8%E6%BC%AB%E6%B8%B8%E6%88%8F%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11650"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-07-30T05:34:58+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1004582",
@@ -9563,7 +9524,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-05T11:29:34+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11524",
@@ -9601,7 +9562,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "河南"
     },
     {
@@ -9642,7 +9603,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-10T16:02:18+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10641",
@@ -9652,7 +9613,7 @@
       "venue": "盛世喜宴一站式宴会中心",
       "startDate": "2026-08-19",
       "endDate": "2026-08-19",
-      "price": "¥38.8元 起",
+      "price": "¥55元 起",
       "ticketStatus": "待票务复核",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
@@ -9680,7 +9641,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "河北"
     },
     {
@@ -9730,7 +9691,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11787",
@@ -9779,7 +9740,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-9899",
@@ -9817,7 +9778,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "陕西"
     },
     {
@@ -9857,7 +9818,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10016",
@@ -9945,7 +9906,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-07T19:05:44+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11790",
@@ -9984,7 +9945,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11700",
@@ -10023,7 +9984,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10642",
@@ -10061,7 +10022,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广东"
     },
     {
@@ -10102,7 +10063,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-15T12:44:56+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11525",
@@ -10140,7 +10101,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "海南"
     },
     {
@@ -10181,7 +10142,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-15T12:44:56+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10922",
@@ -10219,7 +10180,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广东"
     },
     {
@@ -10259,7 +10220,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11526",
@@ -10269,7 +10230,7 @@
       "venue": "湖南国际会展中心",
       "startDate": "2026-08-21",
       "endDate": "2026-08-23",
-      "price": "¥34元 起",
+      "price": "¥68元 起",
       "ticketStatus": "待票务复核",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
@@ -10297,7 +10258,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "湖南"
     },
     {
@@ -10337,7 +10298,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11198",
@@ -10375,7 +10336,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "北京"
     },
     {
@@ -10414,7 +10375,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "北京"
     },
     {
@@ -10453,7 +10414,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "北京"
     },
     {
@@ -10492,7 +10453,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "北京"
     },
     {
@@ -10531,19 +10492,19 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "四川"
     },
     {
       "id": "yunmanzhan-10930",
-      "name": "MoMo动漫游戏嘉年华",
+      "name": "MoMo动漫游戏嘉年华（取消）",
       "type": "动漫游戏展",
       "city": "成都",
       "venue": "中车 · 源STAGE",
       "startDate": "2026-08-22",
       "endDate": "2026-08-23",
       "price": "¥59元 起",
-      "ticketStatus": "待票务复核",
+      "ticketStatus": "已取消",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
       "guests": [],
@@ -10555,7 +10516,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“取消”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -10570,7 +10531,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "四川"
     },
     {
@@ -10609,7 +10570,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "辽宁"
     },
     {
@@ -10649,7 +10610,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11707",
@@ -10698,7 +10659,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11195",
@@ -10736,7 +10697,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "福建"
     },
     {
@@ -10775,7 +10736,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "陕西"
     },
     {
@@ -10814,25 +10775,34 @@
           "url": "https://show.bilibili.com/platform/detail.html?id=1004793",
           "label": "查看官方票务与嘉宾",
           "primary": true
+        },
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E6%AC%A1%E5%85%83%E4%BA%A4%E9%94%99%E5%8A%A8%E6%BC%AB%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
         }
       ],
       "verification": "活动与实名嘉宾条目来自 B站会员购公开详情接口；多日活动如未标注逐日出席，日期仍以主办方现场官宣为准。",
       "sourceIds": [
-        "bilibili-membership"
+        "bilibili-membership",
+        "yunmanzhan"
       ],
       "externalIds": {
-        "bilibili": "1004793"
+        "bilibili": "1004793",
+        "yunmanzhan": "11866"
       },
       "fieldSources": {
-        "schedule": "bilibili-membership",
-        "venue": "bilibili-membership",
-        "price": "bilibili-membership",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan",
         "ticketStatus": "bilibili-membership",
-        "guests": "bilibili-membership"
+        "guests": "bilibili-membership",
+        "discovery": "yunmanzhan"
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-12T19:09:07+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -10871,7 +10841,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广东"
     },
     {
@@ -10911,7 +10881,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10039",
@@ -10949,7 +10919,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广东"
     },
     {
@@ -10988,7 +10958,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广东"
     },
     {
@@ -11027,7 +10997,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "贵州"
     },
     {
@@ -11067,7 +11037,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1004682",
@@ -11113,7 +11083,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-10T16:02:18+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -11153,7 +11123,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1004279",
@@ -11193,7 +11163,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-08T10:19:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11200",
@@ -11231,8 +11201,86 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "安徽"
+    },
+    {
+      "id": "yunmanzhan-11868",
+      "name": "第一届白鸟动漫展",
+      "type": "综合漫展",
+      "province": "湖南",
+      "city": "衡阳",
+      "venue": "摩登百货",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-22",
+      "price": "¥55元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E7%AC%AC%E4%B8%80%E5%B1%8A%E7%99%BD%E9%B8%9F%E5%8A%A8%E6%BC%AB%E5%B1%95",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11868"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11867",
+      "name": "首届MH金金乐道秋日动漫嘉年华",
+      "type": "综合漫展",
+      "province": "内蒙古",
+      "city": "呼和浩特",
+      "venue": "中商世界里智慧生活Mall",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-22",
+      "price": "¥9.9元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E9%A6%96%E5%B1%8AMH%E9%87%91%E9%87%91%E4%B9%90%E9%81%93%E7%A7%8B%E6%97%A5%E5%8A%A8%E6%BC%AB%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11867"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11712",
@@ -11271,7 +11319,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1004620",
@@ -11320,7 +11368,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-08T10:19:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11705",
@@ -11369,7 +11417,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11527",
@@ -11407,7 +11455,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "湖北"
     },
     {
@@ -11446,7 +11494,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "江西"
     },
     {
@@ -11485,7 +11533,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "山东"
     },
     {
@@ -11525,7 +11573,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11793",
@@ -11564,7 +11612,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10648",
@@ -11602,7 +11650,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "四川"
     },
     {
@@ -11641,7 +11689,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "江西"
     },
     {
@@ -11680,7 +11728,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "江苏"
     },
     {
@@ -11719,7 +11767,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "江苏"
     },
     {
@@ -11759,7 +11807,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11541",
@@ -11797,7 +11845,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "江苏"
     },
     {
@@ -11836,7 +11884,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广西"
     },
     {
@@ -11875,7 +11923,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广西"
     },
     {
@@ -11915,7 +11963,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-9918",
@@ -11953,7 +12001,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "江苏"
     },
     {
@@ -11993,7 +12041,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11799",
@@ -12004,7 +12052,7 @@
       "venue": "银泰百货(宁波东门店)",
       "startDate": "2026-08-22",
       "endDate": "2026-08-23",
-      "price": "¥30元 起",
+      "price": "免费",
       "ticketStatus": "待票务复核",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
@@ -12032,7 +12080,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10645",
@@ -12070,7 +12118,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "宁夏"
     },
     {
@@ -12109,7 +12157,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "四川"
     },
     {
@@ -12148,7 +12196,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "山东"
     },
     {
@@ -12187,7 +12235,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "上海"
     },
     {
@@ -12236,7 +12284,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "上海"
     },
     {
@@ -12298,7 +12346,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-08T10:19:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -12337,8 +12385,47 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "上海"
+    },
+    {
+      "id": "yunmanzhan-11869",
+      "name": "CP ACG综合Cosplay动漫展",
+      "type": "综合漫展",
+      "province": "上海",
+      "city": "上海",
+      "venue": "上海月星环球港",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-23",
+      "price": "¥26元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=CP%20ACG%E7%BB%BC%E5%90%88Cosplay%E5%8A%A8%E6%BC%AB%E5%B1%95",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11869"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11798",
@@ -12544,7 +12631,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -12585,7 +12672,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-08T10:19:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11546",
@@ -12623,7 +12710,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "辽宁"
     },
     {
@@ -12662,7 +12749,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "辽宁"
     },
     {
@@ -12701,7 +12788,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "辽宁"
     },
     {
@@ -12740,7 +12827,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "河北"
     },
     {
@@ -12779,7 +12866,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "江苏"
     },
     {
@@ -12818,7 +12905,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "安徽"
     },
     {
@@ -12859,7 +12946,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-18T00:43:42+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10650",
@@ -12897,7 +12984,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "四川"
     },
     {
@@ -12936,7 +13023,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "山西"
     },
     {
@@ -12975,7 +13062,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "天津"
     },
     {
@@ -13015,7 +13102,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1004333",
@@ -13086,7 +13173,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-08T13:08:33+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -13126,7 +13213,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1004712",
@@ -13192,7 +13279,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-10T19:19:59+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -13231,7 +13318,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "天津"
     },
     {
@@ -13270,8 +13357,47 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "浙江"
+    },
+    {
+      "id": "yunmanzhan-11870",
+      "name": "创世次元动漫游戏嘉年华",
+      "type": "动漫游戏展",
+      "province": "江苏",
+      "city": "无锡",
+      "venue": "无锡梁溪爱琴海购物中心",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-23",
+      "price": "免费",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E5%88%9B%E4%B8%96%E6%AC%A1%E5%85%83%E5%8A%A8%E6%BC%AB%E6%B8%B8%E6%88%8F%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11870"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11197",
@@ -13309,7 +13435,46 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
+      "province": "江苏"
+    },
+    {
+      "id": "yunmanzhan-11273",
+      "name": "SISP次元全国拼豆大会",
+      "type": "综合漫展",
+      "city": "无锡",
+      "venue": "无锡梁溪爱琴海购物中心",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-23",
+      "price": "免费",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=11273",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11273"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-07-18T18:04:17+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "江苏"
     },
     {
@@ -13349,7 +13514,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11702",
@@ -13388,7 +13553,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1004213",
@@ -13428,7 +13593,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-08T13:08:33+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11544",
@@ -13505,7 +13670,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广西"
     },
     {
@@ -13544,7 +13709,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "河北"
     },
     {
@@ -13594,7 +13759,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11708",
@@ -13633,18 +13798,18 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10925",
-      "name": "燃upgo动漫展2.0",
+      "name": "燃upgo动漫展2.0（取消）",
       "type": "综合漫展",
       "city": "郑州",
       "venue": "中原福塔",
       "startDate": "2026-08-22",
       "endDate": "2026-08-22",
       "price": "¥58元 起",
-      "ticketStatus": "待票务复核",
+      "ticketStatus": "已取消",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
       "guests": [],
@@ -13656,7 +13821,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“取消”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -13671,7 +13836,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "河南"
     },
     {
@@ -13710,7 +13875,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广东"
     },
     {
@@ -13749,12 +13914,12 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "浙江"
     },
     {
       "id": "yunmanzhan-11701",
-      "name": "OTAKU FUN8.0国风动漫嘉年华",
+      "name": "OTAKU FUN8.0国风动漫嘉年华（取消）",
       "type": "综合漫展",
       "province": "四川",
       "city": "自贡",
@@ -13762,7 +13927,7 @@
       "startDate": "2026-08-22",
       "endDate": "2026-08-22",
       "price": "¥45元 起",
-      "ticketStatus": "待票务复核",
+      "ticketStatus": "已取消",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
       "guests": [],
@@ -13774,7 +13939,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“取消”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -13789,7 +13954,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11703",
@@ -13844,7 +14009,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -13883,7 +14048,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "北京"
     },
     {
@@ -13922,7 +14087,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "北京"
     },
     {
@@ -13945,25 +14110,34 @@
           "url": "https://show.bilibili.com/platform/detail.html?id=1004701",
           "label": "查看官方票务与嘉宾",
           "primary": true
+        },
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E6%AC%A1%E5%85%83%E4%B9%8B%E5%9F%9F",
+          "label": "查看发现记录",
+          "primary": false
         }
       ],
       "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
       "sourceIds": [
-        "bilibili-membership"
+        "bilibili-membership",
+        "yunmanzhan"
       ],
       "externalIds": {
-        "bilibili": "1004701"
+        "bilibili": "1004701",
+        "yunmanzhan": "10576"
       },
       "fieldSources": {
-        "schedule": "bilibili-membership",
-        "venue": "bilibili-membership",
-        "price": "bilibili-membership",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan",
         "ticketStatus": "bilibili-membership",
-        "guests": "bilibili-membership"
+        "guests": "bilibili-membership",
+        "discovery": "yunmanzhan"
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-10T17:46:11+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11547",
@@ -14001,7 +14175,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "四川"
     },
     {
@@ -14041,7 +14215,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11554",
@@ -14079,7 +14253,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广东"
     },
     {
@@ -14118,7 +14292,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广东"
     },
     {
@@ -14157,7 +14331,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广西"
     },
     {
@@ -14224,7 +14398,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-09T10:26:38+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -14265,7 +14439,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-15T01:09:09+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10932",
@@ -14303,7 +14477,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "安徽"
     },
     {
@@ -14343,7 +14517,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1004987",
@@ -14386,25 +14560,34 @@
           "url": "https://show.bilibili.com/platform/detail.html?id=1004987",
           "label": "查看官方票务与嘉宾",
           "primary": true
+        },
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E6%98%9F%E9%9F%B5%E5%9B%BD%E6%BC%AB%E7%AC%AC%E5%9B%9B%E5%B1%8A%E5%8A%A8%E6%BC%AB%E6%B8%B8%E6%88%8F%E5%B1%95",
+          "label": "查看发现记录",
+          "primary": false
         }
       ],
       "verification": "活动与实名嘉宾条目来自 B站会员购公开详情接口；多日活动如未标注逐日出席，日期仍以主办方现场官宣为准。",
       "sourceIds": [
-        "bilibili-membership"
+        "bilibili-membership",
+        "yunmanzhan"
       ],
       "externalIds": {
-        "bilibili": "1004987"
+        "bilibili": "1004987",
+        "yunmanzhan": "11871"
       },
       "fieldSources": {
-        "schedule": "bilibili-membership",
-        "venue": "bilibili-membership",
-        "price": "bilibili-membership",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan",
         "ticketStatus": "bilibili-membership",
-        "guests": "bilibili-membership"
+        "guests": "bilibili-membership",
+        "discovery": "yunmanzhan"
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-19T00:46:43+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -14444,7 +14627,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11203",
@@ -14482,7 +14665,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "河南"
     },
     {
@@ -14521,7 +14704,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "山东"
     },
     {
@@ -14560,7 +14743,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "陕西"
     },
     {
@@ -14610,7 +14793,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11718",
@@ -14659,7 +14842,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1004263",
@@ -14710,7 +14893,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-15T01:09:09+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -14750,7 +14933,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1004073",
@@ -14816,7 +14999,7 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-09T10:26:38+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "guestUpdatedAt": "2026-08-19"
     },
     {
@@ -14855,7 +15038,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "上海"
     },
     {
@@ -14894,7 +15077,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "上海"
     },
     {
@@ -14934,7 +15117,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11395",
@@ -14973,7 +15156,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "bilibili-1004179",
@@ -15013,7 +15196,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-09T10:26:38+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11802",
@@ -15052,7 +15235,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11201",
@@ -15090,7 +15273,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "辽宁"
     },
     {
@@ -15130,7 +15313,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11723",
@@ -15169,7 +15352,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11549",
@@ -15207,7 +15390,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "河北"
     },
     {
@@ -15246,7 +15429,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "天津"
     },
     {
@@ -15285,7 +15468,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "浙江"
     },
     {
@@ -15326,7 +15509,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-17T00:39:45+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11717",
@@ -15365,7 +15548,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10653",
@@ -15403,7 +15586,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "福建"
     },
     {
@@ -15444,7 +15627,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-17T00:39:45+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11727",
@@ -15483,7 +15666,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10654",
@@ -15521,7 +15704,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "北京"
     },
     {
@@ -15562,7 +15745,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-15T16:44:00+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10029",
@@ -15600,7 +15783,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广东"
     },
     {
@@ -15640,7 +15823,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11205",
@@ -15678,7 +15861,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "安徽"
     },
     {
@@ -15717,7 +15900,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "江西"
     },
     {
@@ -15756,7 +15939,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "上海"
     },
     {
@@ -15795,7 +15978,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "上海"
     },
     {
@@ -15834,8 +16017,47 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "上海"
+    },
+    {
+      "id": "yunmanzhan-11873",
+      "name": "首届OCR·RPG动漫游戏嘉年华",
+      "type": "动漫游戏展",
+      "province": "上海",
+      "city": "上海",
+      "venue": "上海环球港",
+      "startDate": "2026-08-29",
+      "endDate": "2026-08-30",
+      "price": "¥96元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E9%A6%96%E5%B1%8AOCR%C2%B7RPG%E5%8A%A8%E6%BC%AB%E6%B8%B8%E6%88%8F%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11873"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11729",
@@ -15884,7 +16106,46 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11872",
+      "name": "OVO暑假动漫嘉年华",
+      "type": "综合漫展",
+      "province": "广东",
+      "city": "深圳",
+      "venue": "深圳OAO艺术空间",
+      "startDate": "2026-08-29",
+      "endDate": "2026-08-29",
+      "price": "¥50元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=OVO%E6%9A%91%E5%81%87%E5%8A%A8%E6%BC%AB%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11872"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10592",
@@ -15895,7 +16156,7 @@
       "startDate": "2026-08-29",
       "endDate": "2026-08-30",
       "price": "¥45元 起",
-      "ticketStatus": "已延期",
+      "ticketStatus": "待票务复核",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
       "guests": [],
@@ -15907,7 +16168,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“延期”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -15922,8 +16183,47 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "陕西"
+    },
+    {
+      "id": "yunmanzhan-11874",
+      "name": "星漫予你次元嘉年华",
+      "type": "综合漫展",
+      "province": "江苏",
+      "city": "徐州",
+      "venue": "金鹰上街回型街区",
+      "startDate": "2026-08-29",
+      "endDate": "2026-08-30",
+      "price": "¥1.9元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E6%98%9F%E6%BC%AB%E4%BA%88%E4%BD%A0%E6%AC%A1%E5%85%83%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11874"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10933",
@@ -15961,7 +16261,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "湖南"
     },
     {
@@ -16000,7 +16300,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "浙江"
     },
     {
@@ -16039,7 +16339,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "浙江"
     },
     {
@@ -16080,7 +16380,85 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-17T15:13:46+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11875",
+      "name": "萌次元游戏动漫嘉年华3.0",
+      "type": "动漫游戏展",
+      "province": "天津",
+      "city": "天津",
+      "venue": "次元梦想空间",
+      "startDate": "2026-08-30",
+      "endDate": "2026-08-30",
+      "price": "¥5元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E8%90%8C%E6%AC%A1%E5%85%83%E6%B8%B8%E6%88%8F%E5%8A%A8%E6%BC%AB%E5%98%89%E5%B9%B4%E5%8D%8E3.0",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11875"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11876",
+      "name": "桃屿动漫嘉年华",
+      "type": "综合漫展",
+      "province": "陕西",
+      "city": "西安",
+      "venue": "兰装宾馆(西安西稍门机场大巴店)",
+      "startDate": "2026-08-30",
+      "endDate": "2026-08-30",
+      "price": "¥55元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E6%A1%83%E5%B1%BF%E5%8A%A8%E6%BC%AB%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11876"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11639",
@@ -16119,7 +16497,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-17T02:45:05+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11732",
@@ -16158,7 +16536,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10270",
@@ -16196,7 +16574,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "重庆"
     },
     {
@@ -16236,7 +16614,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11806",
@@ -16275,7 +16653,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11560",
@@ -16313,8 +16691,86 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "福建"
+    },
+    {
+      "id": "yunmanzhan-11878",
+      "name": "我们的次元.动漫游戏嘉年华",
+      "type": "动漫游戏展",
+      "province": "四川",
+      "city": "广安",
+      "venue": "万盛大酒店",
+      "startDate": "2026-09-12",
+      "endDate": "2026-09-12",
+      "price": "¥39.9元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E6%88%91%E4%BB%AC%E7%9A%84%E6%AC%A1%E5%85%83.%E5%8A%A8%E6%BC%AB%E6%B8%B8%E6%88%8F%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11878"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11879",
+      "name": "首届第五人格only同人展【北极星&繁星动漫计划】",
+      "type": "IP ONLY",
+      "province": "辽宁",
+      "city": "沈阳",
+      "venue": "中街地下商业街",
+      "startDate": "2026-09-12",
+      "endDate": "2026-09-12",
+      "price": "¥25元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E9%A6%96%E5%B1%8A%E7%AC%AC%E4%BA%94%E4%BA%BA%E6%A0%BConly%E5%90%8C%E4%BA%BA%E5%B1%95%E3%80%90%E5%8C%97%E6%9E%81%E6%98%9F%26%E7%B9%81%E6%98%9F%E5%8A%A8%E6%BC%AB%E8%AE%A1%E5%88%92%E3%80%91",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11879"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11805",
@@ -16353,7 +16809,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10934",
@@ -16391,7 +16847,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "陕西"
     },
     {
@@ -16431,7 +16887,46 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11880",
+      "name": "喵次元玩乐动漫展",
+      "type": "综合漫展",
+      "province": "湖南",
+      "city": "长沙",
+      "venue": "汪星人潮玩基地",
+      "startDate": "2026-09-12",
+      "endDate": "2026-09-13",
+      "price": "¥50元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E5%96%B5%E6%AC%A1%E5%85%83%E7%8E%A9%E4%B9%90%E5%8A%A8%E6%BC%AB%E5%B1%95",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11880"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10605",
@@ -16442,7 +16937,7 @@
       "startDate": "2026-09-13",
       "endDate": "2026-09-13",
       "price": "¥28元 起",
-      "ticketStatus": "已延期",
+      "ticketStatus": "待票务复核",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
       "guests": [],
@@ -16454,7 +16949,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“延期”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -16469,7 +16964,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "内蒙古"
     },
     {
@@ -16509,7 +17004,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11561",
@@ -16547,8 +17042,47 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "湖北"
+    },
+    {
+      "id": "yunmanzhan-11881",
+      "name": "第六届北极星动漫嘉年华",
+      "type": "综合漫展",
+      "province": "辽宁",
+      "city": "沈阳",
+      "venue": "中街地下商业街",
+      "startDate": "2026-09-13",
+      "endDate": "2026-09-13",
+      "price": "¥29元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E7%AC%AC%E5%85%AD%E5%B1%8A%E5%8C%97%E6%9E%81%E6%98%9F%E5%8A%A8%E6%BC%AB%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11881"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10227",
@@ -16586,8 +17120,47 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "广东"
+    },
+    {
+      "id": "yunmanzhan-11882",
+      "name": "次元白鹭01「原初热爱」 在故乡相逢的又一场旅程",
+      "type": "综合漫展",
+      "province": "江西",
+      "city": "南昌",
+      "venue": "昌南文化中心大剧院",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-19",
+      "price": "¥55元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E6%AC%A1%E5%85%83%E7%99%BD%E9%B9%AD01%E3%80%8C%E5%8E%9F%E5%88%9D%E7%83%AD%E7%88%B1%E3%80%8D%20%E5%9C%A8%E6%95%85%E4%B9%A1%E7%9B%B8%E9%80%A2%E7%9A%84%E5%8F%88%E4%B8%80%E5%9C%BA%E6%97%85%E7%A8%8B",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11882"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11809",
@@ -16626,7 +17199,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10655",
@@ -16664,7 +17237,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "吉林"
     },
     {
@@ -16676,7 +17249,7 @@
       "venue": "石家庄国际会展中心",
       "startDate": "2026-09-23",
       "endDate": "2026-09-25",
-      "price": "¥65元 起",
+      "price": "¥58.5元 起",
       "ticketStatus": "待票务复核",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
@@ -16704,7 +17277,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11734",
@@ -16746,16 +17319,55 @@
       "lastSeenAt": "2026-08-19T11:09:22+08:00"
     },
     {
+      "id": "yunmanzhan-11892",
+      "name": "ZLD·KG第二届动漫游戏嘉年华--中秋游园会",
+      "type": "动漫游戏展",
+      "province": "辽宁",
+      "city": "大连",
+      "venue": "北方国家版权交易中心",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-26",
+      "price": "¥65元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=ZLD%C2%B7KG%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%8A%A8%E6%BC%AB%E6%B8%B8%E6%88%8F%E5%98%89%E5%B9%B4%E5%8D%8E--%E4%B8%AD%E7%A7%8B%E6%B8%B8%E5%9B%AD%E4%BC%9A",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11892"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
       "id": "yunmanzhan-11735",
-      "name": "中秋OACG动漫游戏展2.0",
+      "name": "中秋OACG动漫游戏展2.0（取消）",
       "type": "动漫游戏展",
       "province": "黑龙江",
       "city": "大庆",
       "venue": "大庆油人冰球运动中心（正法寺新馆）",
       "startDate": "2026-09-25",
       "endDate": "2026-09-25",
-      "price": "¥45元 起",
-      "ticketStatus": "待票务复核",
+      "price": "取消",
+      "ticketStatus": "已取消",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
       "guests": [],
@@ -16767,12 +17379,12 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“取消”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
       "externalIds": {
-        "yunmanzhan": "11735"
+        "yunmanzhan": "11891"
       },
       "fieldSources": {
         "discovery": "yunmanzhan",
@@ -16782,7 +17394,124 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11886",
+      "name": "第三届奇遇动漫嘉年华",
+      "type": "综合漫展",
+      "province": "山东",
+      "city": "单县",
+      "venue": "单州大饭店",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "price": "¥19.99元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E7%AC%AC%E4%B8%89%E5%B1%8A%E5%A5%87%E9%81%87%E5%8A%A8%E6%BC%AB%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11886"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11884",
+      "name": "浮生闲首届动漫嘉年华",
+      "type": "综合漫展",
+      "province": "甘肃",
+      "city": "甘南",
+      "venue": "长虹礼仪餐饮中心",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "price": "¥35元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E6%B5%AE%E7%94%9F%E9%97%B2%E9%A6%96%E5%B1%8A%E5%8A%A8%E6%BC%AB%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11884"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11885",
+      "name": "浮生闲动漫展",
+      "type": "综合漫展",
+      "province": "黑龙江",
+      "city": "海伦",
+      "venue": "海伦市喜事汇礼仪大酒店(复兴路店)",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "price": "¥35元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E6%B5%AE%E7%94%9F%E9%97%B2%E5%8A%A8%E6%BC%AB%E5%B1%95",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11885"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11811",
@@ -16821,7 +17550,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11737",
@@ -16863,6 +17592,123 @@
       "lastSeenAt": "2026-08-19T11:09:22+08:00"
     },
     {
+      "id": "yunmanzhan-11883",
+      "name": "北安·妙森动漫展",
+      "type": "综合漫展",
+      "province": "黑龙江",
+      "city": "黑河",
+      "venue": "锦红酒店",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "price": "¥45元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E5%8C%97%E5%AE%89%C2%B7%E5%A6%99%E6%A3%AE%E5%8A%A8%E6%BC%AB%E5%B1%95",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11883"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11889",
+      "name": "第三十五届童话三国嘉年华",
+      "type": "综合漫展",
+      "province": "湖北",
+      "city": "荆州",
+      "venue": "荆州天喜楚韵大酒店",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "price": "¥55元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E7%AC%AC%E4%B8%89%E5%8D%81%E4%BA%94%E5%B1%8A%E7%AB%A5%E8%AF%9D%E4%B8%89%E5%9B%BD%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11889"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11893",
+      "name": "电玩次元夏日游戏节",
+      "type": "动漫游戏展",
+      "province": "浙江",
+      "city": "宁波",
+      "venue": "宁波TT城市运动中心",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-27",
+      "price": "¥50元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E7%94%B5%E7%8E%A9%E6%AC%A1%E5%85%83%E5%A4%8F%E6%97%A5%E6%B8%B8%E6%88%8F%E8%8A%82",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11893"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
       "id": "yunmanzhan-11562",
       "name": "漫光次元打卡嘉年华",
       "type": "综合漫展",
@@ -16898,7 +17744,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "河南"
     },
     {
@@ -16937,7 +17783,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "辽宁"
     },
     {
@@ -17019,6 +17865,45 @@
       "lastSeenAt": "2026-08-19T11:09:22+08:00"
     },
     {
+      "id": "yunmanzhan-11888",
+      "name": "漫语时光次元嘉年华",
+      "type": "综合漫展",
+      "province": "江苏",
+      "city": "无锡",
+      "venue": "白金汉爵大酒店",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "price": "¥35元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E6%BC%AB%E8%AF%AD%E6%97%B6%E5%85%89%E6%AC%A1%E5%85%83%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11888"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
       "id": "yunmanzhan-10935",
       "name": "第4届VH动漫展-佳节盛典（取消）",
       "type": "综合漫展",
@@ -17093,7 +17978,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "陕西"
     },
     {
@@ -17133,7 +18018,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-10656",
@@ -17183,7 +18068,7 @@
       "startDate": "2026-09-25",
       "endDate": "2026-09-25",
       "price": "¥9.99元 起",
-      "ticketStatus": "已延期",
+      "ticketStatus": "待票务复核",
       "guestStatus": "pending",
       "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
       "guests": [],
@@ -17195,7 +18080,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“延期”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -17210,8 +18095,47 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "山东"
+    },
+    {
+      "id": "yunmanzhan-11887",
+      "name": "第一届奇遇动漫嘉年华",
+      "type": "综合漫展",
+      "province": "山东",
+      "city": "兖州",
+      "venue": "喜达国际酒店(济宁兖州大润发贵和购物广场店)",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "price": "¥29.99元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E7%AC%AC%E4%B8%80%E5%B1%8A%E5%A5%87%E9%81%87%E5%8A%A8%E6%BC%AB%E5%98%89%E5%B9%B4%E5%8D%8E",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11887"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-11812",
@@ -17250,7 +18174,46 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00"
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
+    },
+    {
+      "id": "yunmanzhan-11890",
+      "name": "MCG国风动漫同好会",
+      "type": "综合漫展",
+      "province": "广东",
+      "city": "湛江",
+      "venue": "君豪酒店",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "price": "¥35元 起",
+      "ticketStatus": "待票务复核",
+      "guestStatus": "pending",
+      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=MCG%E5%9B%BD%E9%A3%8E%E5%8A%A8%E6%BC%AB%E5%90%8C%E5%A5%BD%E4%BC%9A",
+          "label": "查看发现记录",
+          "primary": false
+        }
+      ],
+      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "sourceIds": [
+        "yunmanzhan"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11890"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "yunmanzhan",
+        "venue": "yunmanzhan",
+        "price": "yunmanzhan"
+      },
+      "verificationLevel": "discovery-only",
+      "firstSeenAt": "2026-08-19T12:49:37+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00"
     },
     {
       "id": "yunmanzhan-9788",
@@ -17288,7 +18251,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-08-19T11:09:22+08:00",
+      "lastSeenAt": "2026-08-19T12:49:37+08:00",
       "province": "吉林"
     },
     {
@@ -22990,7 +23953,7 @@
     {
       "sourceId": "bilibili-membership",
       "status": "healthy",
-      "checkedAt": "2026-08-19T11:09:22+08:00",
+      "checkedAt": "2026-08-19T12:49:37+08:00",
       "itemCount": 16,
       "detailChecks": 73,
       "detailFailures": 0,
@@ -22999,7 +23962,7 @@
     {
       "sourceId": "yunmanzhan",
       "status": "healthy",
-      "checkedAt": "2026-08-19T11:09:22+08:00",
+      "checkedAt": "2026-08-19T12:49:37+08:00",
       "itemCount": 187,
       "pagesChecked": 4,
       "coverageMode": "quick",
@@ -23008,19 +23971,393 @@
     {
       "sourceId": "damai",
       "status": "manual-review",
-      "checkedAt": "2026-08-19T11:09:22+08:00",
+      "checkedAt": "2026-08-19T12:49:37+08:00",
       "itemCount": 0,
       "note": "公开搜索页动态化且无稳定匿名接口；仅作为大型活动票务复核源，不自动推断嘉宾。"
     },
     {
       "sourceId": "organizer",
       "status": "manual-review",
-      "checkedAt": "2026-08-19T11:09:22+08:00",
+      "checkedAt": "2026-08-19T12:49:37+08:00",
       "itemCount": 0,
       "note": "逐日出席、签售和临时变更仍以主办方官宣人工复核。"
     }
   ],
   "changes": [
+    {
+      "id": "821f1e31ab9b",
+      "type": "schedule_changed",
+      "eventId": "yunmanzhan-11650",
+      "eventName": "第二届雾萌动漫游戏嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "日期变更：2026-08-12—2026-08-12 → 2026-08-19—2026-08-19",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "a02862d0ae77",
+      "type": "ticket_status_changed",
+      "eventId": "yunmanzhan-10930",
+      "eventName": "MoMo动漫游戏嘉年华（取消）",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "票务状态：待票务复核 → 已取消",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "e49dc0387f5e",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11868",
+      "eventName": "第一届白鸟动漫展",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：衡阳 · 第一届白鸟动漫展",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "7903cb3a17db",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11867",
+      "eventName": "首届MH金金乐道秋日动漫嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：呼和浩特 · 首届MH金金乐道秋日动漫嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "7460b5b1eab0",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11869",
+      "eventName": "CP ACG综合Cosplay动漫展",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：上海 · CP ACG综合Cosplay动漫展",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "e533399c1e02",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11870",
+      "eventName": "创世次元动漫游戏嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：无锡 · 创世次元动漫游戏嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "71a3decd2d71",
+      "type": "schedule_changed",
+      "eventId": "yunmanzhan-11273",
+      "eventName": "SISP次元全国拼豆大会",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "日期变更：2026-08-15—2026-08-16 → 2026-08-22—2026-08-23",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "0681b3873461",
+      "type": "venue_changed",
+      "eventId": "yunmanzhan-11273",
+      "eventName": "SISP次元全国拼豆大会",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "场馆变更：无锡方圆荟 → 无锡梁溪爱琴海购物中心",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "4bd61a28de46",
+      "type": "ticket_status_changed",
+      "eventId": "yunmanzhan-10925",
+      "eventName": "燃upgo动漫展2.0（取消）",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "票务状态：待票务复核 → 已取消",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "d18e460d589b",
+      "type": "ticket_status_changed",
+      "eventId": "yunmanzhan-11701",
+      "eventName": "OTAKU FUN8.0国风动漫嘉年华（取消）",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "票务状态：待票务复核 → 已取消",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "64692e6fcdd4",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11873",
+      "eventName": "首届OCR·RPG动漫游戏嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：上海 · 首届OCR·RPG动漫游戏嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "d223cfbf011e",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11872",
+      "eventName": "OVO暑假动漫嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：深圳 · OVO暑假动漫嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "af5b9fc0f88d",
+      "type": "ticket_status_changed",
+      "eventId": "yunmanzhan-10592",
+      "eventName": "漫光×长界动漫文化展",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "票务状态：已延期 → 待票务复核",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "028afe22b7e4",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11874",
+      "eventName": "星漫予你次元嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：徐州 · 星漫予你次元嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "2d4b26a003ec",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11875",
+      "eventName": "萌次元游戏动漫嘉年华3.0",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：天津 · 萌次元游戏动漫嘉年华3.0",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "c1c045e49d46",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11876",
+      "eventName": "桃屿动漫嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：西安 · 桃屿动漫嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "294329f55554",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11878",
+      "eventName": "我们的次元.动漫游戏嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：广安 · 我们的次元.动漫游戏嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "3b9c59c132cc",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11879",
+      "eventName": "首届第五人格only同人展【北极星&繁星动漫计划】",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：沈阳 · 首届第五人格only同人展【北极星&繁星动漫计划】",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "957d50911dc4",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11880",
+      "eventName": "喵次元玩乐动漫展",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：长沙 · 喵次元玩乐动漫展",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "b514eb414749",
+      "type": "ticket_status_changed",
+      "eventId": "yunmanzhan-10605",
+      "eventName": "梦之霞游戏动漫展",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "票务状态：已延期 → 待票务复核",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "3dbe90f6a858",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11881",
+      "eventName": "第六届北极星动漫嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：沈阳 · 第六届北极星动漫嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "88fc913d8f4b",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11882",
+      "eventName": "次元白鹭01「原初热爱」 在故乡相逢的又一场旅程",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：南昌 · 次元白鹭01「原初热爱」 在故乡相逢的又一场旅程",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "18c4394dc827",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11892",
+      "eventName": "ZLD·KG第二届动漫游戏嘉年华--中秋游园会",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：大连 · ZLD·KG第二届动漫游戏嘉年华--中秋游园会",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "c9ab5ed45a9f",
+      "type": "ticket_status_changed",
+      "eventId": "yunmanzhan-11735",
+      "eventName": "中秋OACG动漫游戏展2.0（取消）",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "票务状态：待票务复核 → 已取消",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "80444ace5996",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11886",
+      "eventName": "第三届奇遇动漫嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：单县 · 第三届奇遇动漫嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "66d8e57c6be2",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11884",
+      "eventName": "浮生闲首届动漫嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：甘南 · 浮生闲首届动漫嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "4468d64e01d7",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11885",
+      "eventName": "浮生闲动漫展",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：海伦 · 浮生闲动漫展",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "c459bb408c6b",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11883",
+      "eventName": "北安·妙森动漫展",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：黑河 · 北安·妙森动漫展",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "4d05455f7c78",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11889",
+      "eventName": "第三十五届童话三国嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：荆州 · 第三十五届童话三国嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "a2bec55d7ff1",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11893",
+      "eventName": "电玩次元夏日游戏节",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：宁波 · 电玩次元夏日游戏节",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "968e3622f2dd",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11888",
+      "eventName": "漫语时光次元嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：无锡 · 漫语时光次元嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "8f97883c592f",
+      "type": "ticket_status_changed",
+      "eventId": "yunmanzhan-10584",
+      "eventName": "第一届流云国风次元嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "票务状态：已延期 → 待票务复核",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "d1050d817ba6",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11887",
+      "eventName": "第一届奇遇动漫嘉年华",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：兖州 · 第一届奇遇动漫嘉年华",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
+    {
+      "id": "7ed774dfeeee",
+      "type": "event_added",
+      "eventId": "yunmanzhan-11890",
+      "eventName": "MCG国风动漫同好会",
+      "at": "2026-08-19T12:49:37+08:00",
+      "summary": "新增收录：湛江 · MCG国风动漫同好会",
+      "sourceIds": [
+        "yunmanzhan"
+      ]
+    },
     {
       "id": "ed7c0cc7913f",
       "type": "event_added",
@@ -24033,400 +25370,13 @@
       "sourceIds": [
         "bilibili-membership"
       ]
-    },
-    {
-      "id": "781fb0d56a63",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-10614",
-      "eventName": "第四届幻璃国潮动漫展-盛夏聚会",
-      "at": "2026-08-13T01:10:07+08:00",
-      "summary": "票务状态：已延期 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan"
-      ]
-    },
-    {
-      "id": "cbe81e6c0a79",
-      "type": "event_added",
-      "eventId": "bilibili-1004795",
-      "eventName": "鸣潮ONLY同人展-夏日星炬 学院回响",
-      "at": "2026-08-12T19:09:07+08:00",
-      "summary": "新增收录：杭州 · 鸣潮ONLY同人展-夏日星炬 学院回响",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "be2320e4ae0d",
-      "type": "event_added",
-      "eventId": "bilibili-1004793",
-      "eventName": "次元交错动漫嘉年华",
-      "at": "2026-08-12T19:09:07+08:00",
-      "summary": "新增收录：广州 · 次元交错动漫嘉年华",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "f04e0c764c10",
-      "type": "guest_added",
-      "eventId": "yunmanzhan-11660",
-      "eventName": "黑夜游戏动漫嘉年华·特摄主题展·夏楠生日会",
-      "at": "2026-08-12T17:30:34+08:00",
-      "summary": "新增嘉宾：杜邦先生",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "2f33a4f33d97",
-      "type": "guest_added",
-      "eventId": "yunmanzhan-11660",
-      "eventName": "黑夜游戏动漫嘉年华·特摄主题展·夏楠生日会",
-      "at": "2026-08-12T17:30:34+08:00",
-      "summary": "新增嘉宾：夏楠",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "10d3c5b9b6fd",
-      "type": "guest_added",
-      "eventId": "yunmanzhan-11660",
-      "eventName": "黑夜游戏动漫嘉年华·特摄主题展·夏楠生日会",
-      "at": "2026-08-12T17:30:34+08:00",
-      "summary": "新增嘉宾：江爻",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "01ef63d46566",
-      "type": "guest_added",
-      "eventId": "yunmanzhan-11660",
-      "eventName": "黑夜游戏动漫嘉年华·特摄主题展·夏楠生日会",
-      "at": "2026-08-12T17:30:34+08:00",
-      "summary": "新增嘉宾：长风",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "78c6e6ebcee5",
-      "type": "guest_added",
-      "eventId": "yunmanzhan-11660",
-      "eventName": "黑夜游戏动漫嘉年华·特摄主题展·夏楠生日会",
-      "at": "2026-08-12T17:30:34+08:00",
-      "summary": "新增嘉宾：冷瞳",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "3d45e2f99b15",
-      "type": "event_added",
-      "eventId": "bilibili-1004791",
-      "eventName": "二次元汤泉泳池派对9.0",
-      "at": "2026-08-12T17:30:34+08:00",
-      "summary": "新增收录：武汉 · 二次元汤泉泳池派对9.0",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "7ecb9a2a6475",
-      "type": "guest_added",
-      "eventId": "bilibili-1004463",
-      "eventName": "第八届·SH特摄同人Only展8.0",
-      "at": "2026-08-12T13:44:25+08:00",
-      "summary": "新增嘉宾：沈人杰",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "08839cb2b3ec",
-      "type": "guest_added",
-      "eventId": "bilibili-1004463",
-      "eventName": "第八届·SH特摄同人Only展8.0",
-      "at": "2026-08-12T13:44:25+08:00",
-      "summary": "新增嘉宾：蛮桉",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "dc2db4ac6b9b",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-10602",
-      "eventName": "第二届：明日方舟同人ONLY",
-      "at": "2026-08-12T01:10:44+08:00",
-      "summary": "票务状态：已延期 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan"
-      ]
-    },
-    {
-      "id": "7337195183d5",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11186",
-      "eventName": "果动映像次元漫展（取消）",
-      "at": "2026-08-12T01:10:44+08:00",
-      "summary": "票务状态：待票务复核 → 已取消",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "c878953f9819",
-      "type": "guest_added",
-      "eventId": "bilibili-1004180",
-      "eventName": "明日方舟ONLY同人展【无因】",
-      "at": "2026-08-11T17:12:06+08:00",
-      "summary": "新增嘉宾：Tilda小温",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "e1af17349841",
-      "type": "guest_added",
-      "eventId": "bilibili-1004463",
-      "eventName": "第八届·SH特摄同人Only展8.0",
-      "at": "2026-08-11T17:12:06+08:00",
-      "summary": "新增嘉宾：廖晓晨",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "09a49e58b95e",
-      "type": "guest_added",
-      "eventId": "bilibili-1004463",
-      "eventName": "第八届·SH特摄同人Only展8.0",
-      "at": "2026-08-11T17:12:06+08:00",
-      "summary": "新增嘉宾：龚小钧",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "91ec2aa83cb1",
-      "type": "guest_added",
-      "eventId": "bilibili-1004463",
-      "eventName": "第八届·SH特摄同人Only展8.0",
-      "at": "2026-08-11T17:12:06+08:00",
-      "summary": "新增嘉宾：司宏",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "7142fa5a747e",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11186",
-      "eventName": "果动映像次元漫展",
-      "at": "2026-08-11T06:55:04+08:00",
-      "summary": "票务状态：已取消 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "93ae00563cfe",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11186",
-      "eventName": "果动映像次元漫展（取消）",
-      "at": "2026-08-11T05:24:42+08:00",
-      "summary": "票务状态：待票务复核 → 已取消",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "fe7c8e1d2c56",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11694",
-      "eventName": "第十二届幻璃国潮动漫展·夏日返场",
-      "at": "2026-08-11T01:06:54+08:00",
-      "summary": "票务状态：预售中 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "f294732094cf",
-      "type": "event_added",
-      "eventId": "bilibili-1004712",
-      "eventName": "萌次元游戏动漫嘉年华3.0",
-      "at": "2026-08-10T19:19:59+08:00",
-      "summary": "新增收录：天津 · 萌次元游戏动漫嘉年华3.0",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "130f292090e9",
-      "type": "event_added",
-      "eventId": "bilibili-1004700",
-      "eventName": "GY情动漫嘉年华",
-      "at": "2026-08-10T17:46:11+08:00",
-      "summary": "新增收录：鹤壁 · GY情动漫嘉年华",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "afb9b06f2108",
-      "type": "event_added",
-      "eventId": "bilibili-1004705",
-      "eventName": "8.16青春漫想（吃席狂欢）only同人展",
-      "at": "2026-08-10T17:46:11+08:00",
-      "summary": "新增收录：保山 · 8.16青春漫想（吃席狂欢）only同人展",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "ca5835e6000b",
-      "type": "event_added",
-      "eventId": "bilibili-1004701",
-      "eventName": "次元之域",
-      "at": "2026-08-10T17:46:11+08:00",
-      "summary": "新增收录：沧州 · 次元之域",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "e4df14ba3b3a",
-      "type": "event_added",
-      "eventId": "bilibili-1004677",
-      "eventName": "「夏末残响」J-ROCK ONLY同人展",
-      "at": "2026-08-10T16:02:18+08:00",
-      "summary": "新增收录：昆明 · 「夏末残响」J-ROCK ONLY同人展",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "8923bfcb7909",
-      "type": "event_added",
-      "eventId": "bilibili-1004682",
-      "eventName": "碧蓝航线同人Only展",
-      "at": "2026-08-10T16:02:18+08:00",
-      "summary": "新增收录：杭州 · 碧蓝航线同人Only展",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "016f29f4f3ea",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11694",
-      "eventName": "第十二届幻璃国潮动漫展·夏日返场",
-      "at": "2026-08-10T06:48:26+08:00",
-      "summary": "票务状态：待票务复核 → 预售中",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "35cce9cf6bf9",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11186",
-      "eventName": "果动映像次元漫展",
-      "at": "2026-08-10T06:48:26+08:00",
-      "summary": "票务状态：已取消 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "488fe1f0d181",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11513",
-      "eventName": "点点第二届湖山如画·翰墨流芳动漫展（取消）",
-      "at": "2026-08-10T05:06:26+08:00",
-      "summary": "票务状态：待票务复核 → 已取消",
-      "sourceIds": [
-        "yunmanzhan"
-      ]
-    },
-    {
-      "id": "5d839f465df6",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11694",
-      "eventName": "第十二届幻璃国潮动漫展·夏日返场",
-      "at": "2026-08-10T05:06:26+08:00",
-      "summary": "票务状态：预售中 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "942db9a33bbe",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11186",
-      "eventName": "果动映像次元漫展（取消）",
-      "at": "2026-08-10T05:06:26+08:00",
-      "summary": "票务状态：待票务复核 → 已取消",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "de3ab7caf010",
-      "type": "venue_changed",
-      "eventId": "yunmanzhan-11183",
-      "eventName": "YL动漫游戏嘉年华首届",
-      "at": "2026-08-10T05:06:26+08:00",
-      "summary": "场馆变更：唐山南湖足球主题酒店 → 世博大厦",
-      "sourceIds": [
-        "yunmanzhan"
-      ]
-    },
-    {
-      "id": "8c9000613319",
-      "type": "event_added",
-      "eventId": "yunmanzhan-11787",
-      "eventName": "初梦国风动漫嘉年华4.0",
-      "at": "2026-08-10T05:06:26+08:00",
-      "summary": "新增收录：梅州 · 初梦国风动漫嘉年华4.0",
-      "sourceIds": [
-        "yunmanzhan"
-      ]
-    },
-    {
-      "id": "8a6a58983469",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-10016",
-      "eventName": "第十一届异次元动漫游戏嘉年华",
-      "at": "2026-08-10T05:06:26+08:00",
-      "summary": "票务状态：待票务复核 → 已延期",
-      "sourceIds": [
-        "yunmanzhan"
-      ]
     }
   ],
   "stats": {
-    "eventCount": 561,
+    "eventCount": 585,
     "guestVerifiedEvents": 24,
     "guestCount": 131,
-    "discoveryOnlyEvents": 487,
-    "generatedAt": "2026-08-19T11:09:22+08:00"
+    "discoveryOnlyEvents": 511,
+    "generatedAt": "2026-08-19T12:49:37+08:00"
   }
 }
