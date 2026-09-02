@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-02T04:35:14.305Z",
-  "checkedAt": "2026-09-02T04:35:14.305Z",
-  "contentUpdatedAt": "2026-09-02T04:35:14.305Z",
+  "generatedAt": "2026-09-02T11:19:28.555Z",
+  "checkedAt": "2026-09-02T11:19:28.555Z",
+  "contentUpdatedAt": "2026-09-02T11:19:28.555Z",
   "source": "Google News RSS + WIRED AI RSS + Le Monde AI RSS（Bing 仅作可用性探测）",
   "status": {
     "contentChanged": true,
@@ -16,11 +16,23 @@
       "description": "模型、产品、监管与资本动向",
       "items": [
         {
-          "title": "OpenAI 和 Google 的免费 AI 课程，有哪些以及 2026 年如何报名",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeDg5dUtYUzZfVElhNW9CcFpWdEtCRjJnNThqM1lHNFpnRFRZZGJlTVRBclZLRm5qM3hjdXBGb0Y0MzU5MEpaZTJpemlHQ1NmYlFoVGJXbl9uUk9kQlhNaGFjU2xOUGFWLU12VUxPQTZUOTFjamFNTnp1Snlia21fTXl3?oc=5",
-          "source": "Pasquale Pillitteri",
-          "domain": "Pasquale Pillitteri",
-          "publishedAt": "2026-09-02T02:49:48.000Z",
+          "title": "Pangram Has Emerged as the Gold Standard of AI Detection. Should You Trust It?",
+          "url": "https://www.wired.com/story/pangram-has-emerged-as-the-gold-standard-of-ai-detection/",
+          "source": "WIRED",
+          "domain": "WIRED",
+          "publishedAt": "2026-09-02T10:00:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "title": "OpenAI很快推新AI模型Astra 但因性能太强将限制网络安全能力",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5hTko0bHFlOG5zaEdnN2FrdEY2U2VTbktLMW5WdVpGTllzUUEyY21kVjh5dk51YllkVnJHRjdCN2o5ci1rcjJmVGVjRUFMRERZVHltV1Zva255SVRq?oc=5",
+          "source": "砍柴网",
+          "domain": "砍柴网",
+          "publishedAt": "2026-09-02T08:00:29.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -29,39 +41,38 @@
           ]
         },
         {
-          "title": "强到曾被迫踩煞车 OpenAI预告Astra大模型将登场",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMW51WUgxQWg5WllWZWFjbDNtb1k3S3BtRDhvNlB4RmdldnpFUklSMlJsbExpM0JtSXdQUlpUS0JsRGJWNDZfQWdoekVKaVBTUHFNVVZET2hpc3JBZXozRWNnVTByd0JYV3VGcDluUHMtcFR6R1ZYeHU1MU5INTM5aGxTbm9vMk82bnZGWWw5Q21sVUhWZnVoS01wajJSSVVsZ0JzVTBxaw?oc=5",
-          "source": "DIGITIMES",
-          "domain": "DIGITIMES",
-          "publishedAt": "2026-09-02T02:41:00.000Z",
+          "title": "OpenAI称其新AI“Astra”可在无人协助下构建网络攻击- AI 人工智能",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QVXhmZ2dDX3pwRjVDejUwYmtVUEJvaWFrV1NGdGVrUW4wb3poaFg2TVhUMTd6NW15QXNTU1BTdFhZdkFwTHMyY0JIamtuMEpEZGQwVm1jTjRmZlVFUS1kQw?oc=5",
+          "source": "cnBeta.COM",
+          "domain": "cnBeta.COM",
+          "publishedAt": "2026-09-02T06:59:00.000Z",
           "summary": "",
           "reason": "",
           "tags": [
             "OpenAI",
-            "大模型",
+            "人工智能",
             "AI"
           ]
         },
         {
-          "title": "编程追赶OpenAI与Anthropic：谷歌Gemini 3.8 Flash最快周三上线",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9OWGozRExRSHlPRkZxdC1JOVVjVXhJeTdqbHdjVVRuUDJEa2FOZkxleDI5Q3lzVHJrYWltX2hsX3ZpMnNRTy15NVlnNjdWZ0lNR1NxU3J5OGdORTZwTVdPa3RBbGNMWTdzVWd0TjBHcmM?oc=5",
-          "source": "t.cj.sina.cn",
-          "domain": "t.cj.sina.cn",
-          "publishedAt": "2026-09-02T01:54:22.000Z",
+          "title": "OpenAI 押注 Mac 训练 AI 智能体，苹果 Mac 业务收入飙升",
+          "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPeVZ1ZDVlZUhhSTlrNmhHT05ZYnM3eVdMR3Y1R2xBanJKUVhpcVJPejFHNWxVOU11T3RqRU96eC1MRUZmUzZxOFdwZUlDdDMzN3JTWlRYRkNwLVBUTzB2YW9FdUFYT19MSkk3bVYwbDJYRUVLMHZZVTRjQ2pwckJCOTZ6TlN2amNFSlZ3NWlvekFXY1BjY1dLWUF6REFNVVY3SnhCMExacTJQRXNiZThfQTI3VEFWSU5KdmtEV0Jqa2Jfd0JESmlDcTdGZVJqbG1DZDh0N0ZWdzlKZF93bGY3bTV0WE1SNXRkSHZuMGZ4MWpjN0NSc0U3aV9KazNYMHJPaUZ2ZHBRYUIxSnM?oc=5",
+          "source": "Yellow.com",
+          "domain": "Yellow.com",
+          "publishedAt": "2026-09-02T07:51:03.000Z",
           "summary": "",
           "reason": "",
           "tags": [
             "OpenAI",
-            "Anthropic",
             "AI"
           ]
         },
         {
-          "title": "前字节强化学习专家孙鹏博士加盟星尘智能，完善Physical AI全栈技术布局",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VTFBqdGtkdTJEZ1FHcTRjcVFmVUZWVHpaVFF3Q1B6YTlGUGlOOTA3X1Bmc2lVMlh6SUQzU1JIb1BYWk1KZjB5SThCZmtfb1lIZWVydTJ4SEo4RGVOTmlvWVBNcDhLZkE?oc=5",
-          "source": "blog.csdn.net",
-          "domain": "blog.csdn.net",
-          "publishedAt": "2026-09-02T02:24:24.000Z",
+          "title": "AI应用助推大型机市场信心持续提升-AI基础设施",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ZR29rcV84Uzl1ZnNSdnJNSkMyMnkxaTJfc1BNbjNNZlIxTm54Q1UtZU15RnZCRVlnZjc5dTZ3UFZLVkw1azhYR0RJSEJtSVNSSWZiQUhITGRrNVpVb2hpVG1LV1VRZ3ZCUTVqVmtfY095UQ?oc=5",
+          "source": "至顶网",
+          "domain": "至顶网",
+          "publishedAt": "2026-09-02T08:42:26.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -69,23 +80,11 @@
           ]
         },
         {
-          "title": "当AI社交网络里的机器人开始互相点赞，会发生什么？",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5OakJJc2VSTFZ4bjhKRnQ3amZWQW1WOGNTUW1YTnBHYkhhR3o0RlRaaVJZeXh5ZUxSMEJBZUhVc0JaSVBSSVhESzZKRktTeFNmX2NQZDVRRVhteFpRSjBB?oc=5",
-          "source": "techwalker.com",
-          "domain": "techwalker.com",
-          "publishedAt": "2026-09-02T02:14:00.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "AI"
-          ]
-        },
-        {
-          "title": "深耕企业数字化十三载，数商云全面升级AI智能体战略，打造全场景企业级智能中枢",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5lTHlzekRKb0lNa3EyMFdNSXBmVmF3cmFxaElldk9POFFSUVJJMFJKejh1SDlNNE1RdXFYRHJDa1RjdWpmQ0JicVZyVTlaTm9Hb1VSMFgyQVd3Q3N2b1VHU0dn?oc=5",
-          "source": "手机网易网",
-          "domain": "手机网易网",
-          "publishedAt": "2026-09-02T01:31:45.000Z",
+          "title": "Agent 自进化、AI Coding、世界模型、Agent Infra……2026 奇点智能技术大会首批议题公布-yeeyi",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3dXUtb25YREhvY1JSSk1BSEMyX21xdHcybXFtT0tvLXNZYTNiRGNBMmZ3NUI4QXZFZVk2Sm03czdWSVh5aTVsQUNnMTlnaTNwc2RmU3Fn?oc=5",
+          "source": "yeeyi",
+          "domain": "yeeyi",
+          "publishedAt": "2026-09-02T08:14:22.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -94,15 +93,15 @@
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-09-02T04:35:09.310Z",
-      "lastSuccessfulAt": "2026-09-02T04:35:09.310Z",
-      "latestPublishedAt": "2026-09-02T02:49:48.000Z",
+      "attemptedAt": "2026-09-02T11:19:23.308Z",
+      "lastSuccessfulAt": "2026-09-02T11:19:23.308Z",
+      "latestPublishedAt": "2026-09-02T10:00:00.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 42
+          "itemCount": 44
         },
         {
           "provider": "bing-1",
@@ -124,7 +123,7 @@
         {
           "provider": "google-3",
           "ok": true,
-          "itemCount": 34
+          "itemCount": 39
         },
         {
           "provider": "bing-3",
@@ -150,6 +149,18 @@
       "description": "美股指数、科技股、财报与宏观信号",
       "items": [
         {
+          "title": "✨【投资TALK君1482期】买黄金，看什么？加仓的逻辑。准备好，市场进入超卖✨20260901#CPI #nvda #美股 #投资 #英伟达 #ai #特斯拉- 美股快媒体(Kuai.Media)",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0xa1lzeElTN19HLXpKYVhzcDFYa0FmMV9Sa251ZzlnektxQXBEaWNiR3JVbi1FdF91YkRydmxwdnpvV09DdzcxTkN5Ri1Vdmg4M0I2VWw5VEhHRGFiNUdj?oc=5",
+          "source": "kuai.media",
+          "domain": "kuai.media",
+          "publishedAt": "2026-09-02T06:10:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "美股"
+          ]
+        },
+        {
           "title": "国际油价猛涨超5%，美股芯片、光通信股下挫，苹果市值一夜增超8100亿元，特朗普威胁伊",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE13MmFVbmZpdDIyby16MUwxWGRGdFpWaEw2TWhocXZFMlJIRlNkenF1aE1ObW1BZTBZc0p0X1RYeFAtSVJ0eDRMT3Y0aGowcE5jeFJqTlctYTI1bU01TjZV?oc=5",
           "source": "kuai.media",
@@ -162,10 +173,22 @@
           ]
         },
         {
+          "title": "中东局势升温拖累美股，戴尔AI芯片业务力挽狂澜",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5XSTh3TmdQS0ZhdjlPUFpvck12QjQtU0lfV2djWEkxRThlX1BiVVVrWW1iMEZ5QmdETXB4MlBMeTRTcXA1RC1Jaw?oc=5",
+          "source": "haiwaiwai.com",
+          "domain": "haiwaiwai.com",
+          "publishedAt": "2026-09-02T02:25:40.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "美股"
+          ]
+        },
+        {
           "title": "美联储加息预期上升",
           "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOczlBNTZLMWJpUHNzLXoydmFrclA4YWpVRHQ5bGl2ZHJIOXRabmFZVldxTk1NRHlOb2xRTE9KdXhFaHRkYkFEdXhkR3Vab3lBTnhUM2M4RkdLRzdKRThzX0RwRUh5dkF6TWpSS1ZZZnlERThhUC0xRXYxQjZSTTA3d3lIaUg1d05SSDhqRlZHa0tneEhIcmpMOVl6cmdaV1dMRHlMcW5JcnVrM2NYMUdmU2p5X28?oc=5",
-          "source": "Moomoo",
-          "domain": "Moomoo",
+          "source": "moomoo.com",
+          "domain": "moomoo.com",
           "publishedAt": "2026-09-02T02:36:09.000Z",
           "summary": "",
           "reason": "",
@@ -174,47 +197,23 @@
           ]
         },
         {
+          "title": "美股再次三连阴，苹果收涨|美股|苹果|特斯拉|道指|纳指|标普500 指数_新浪新闻",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5HQ3BfbFd1UzRfWlI1VlhTeTdzdlZwWXN2aldURkhvNHhqVU5RcXUzYkFBXzRuZFVmaUU3R3ZUSEp2b003N0VXNXlfNVY1ckRhNlB2QmdOeElZY2kzUXB4NGlNOA?oc=5",
+          "source": "新浪网",
+          "domain": "新浪网",
+          "publishedAt": "2026-09-02T00:54:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "美股"
+          ]
+        },
+        {
           "title": "美股三连阴，美伊冲突升级推升油价，科技股普跌，金银承压",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAyQmN2WWEwckdhM1NnT1VHeFBVSDFRcTRGNjVtZGVGUUJjZDdwM3ZYalhFUEpZeFlBSG5XQ1Zva0RUODBOTlg5MkphWlJRQy1R?oc=5",
-          "source": "第一财经",
-          "domain": "第一财经",
-          "publishedAt": "2026-09-02T00:51:39.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "美股"
-          ]
-        },
-        {
-          "title": "中东局势推高油价 美股四大指数收黑",
-          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQZjBYRWtJcE1xY3NhVEJ0bUxEQmlfRVRjdG1BSHBTOGE1U1BXNl9DRERKaXRVZVoxVWxvT1BjVGtZa0hNdHdyMnd4UDEySEd2M1ZnSE1hdXdmci1RWmdlcXRZUElzS1V0TExqNkF3STZoOVpXX08wYlRMT1Q0RlRYMW5VM0FXeFFKWlNrcXlWeHQ3WmU2clpsbndSdE5hS3Z2WHFyOWVHUUlFSkxFdVRIR1VDWEFvbjdpNU81V0trUXdmZFRuMFlTQkkxZzFpMHUwWDNuUml2ZWZPWUxvcW5jU29RaFh5bHcyUTFzUktwUWtUWXNVeWtBMUFfcEgxYlV3NnQ0d0F6WmJIVWNZRVowb2laclc3WmViaVZ5OEFONHU?oc=5",
-          "source": "KLSE Screener",
-          "domain": "KLSE Screener",
-          "publishedAt": "2026-09-02T00:46:53.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "美股"
-          ]
-        },
-        {
-          "title": "美股三连跌！半导体与存储板块领跌，苹果新帅首秀市值大涨超8000亿，戴尔AI指引盘后涨超10%，美联储9月加息概率一周翻倍至68%-手机金融界",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB4QzUtbWwtbHpqaHhOZ0tKYVVGaENTR0VDMFRwVjR4Y0lnLU1CYjcxc05UcENvYXA5LTFnUWg2c0pvSnBUeFZ0Wm82UmFRVWZZOFQwc2lfTlFfOWVpeDlpNEo2XzRnQQ?oc=5",
-          "source": "金融界",
-          "domain": "金融界",
-          "publishedAt": "2026-09-02T00:38:54.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "美股"
-          ]
-        },
-        {
-          "title": "美股三大指数再度走弱：半导体、存储板块普跌，油价飙升、金银重挫",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5PSE4zNWozbjB6b1JkV29TelE2MlZYUjRZOHBsQU83R01SVEJBSHJhQkg0UFRmN01Ral9yQXEydEhNdURHWUtYUUY3T2E?oc=5",
-          "source": "凤凰网",
-          "domain": "凤凰网",
-          "publishedAt": "2026-09-02T00:35:36.000Z",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxON3Fta1FjSGRsNHhqZG9ta0pCb0Z4LWp4Zk5wR1dwcnZIRUVBTmxHTlp5cFl4bXByM2ptdXI1Z1VvbmdWYmhnNmdSZGRhaUdoMWZEbFllLTlCVlZlXzV3MkFTQlZiN3RNM3AtMVgwV1h5bHdWaDhIdkprbHNUci1aMzVDNnRRSkl6?oc=5",
+          "source": "Sohu",
+          "domain": "Sohu",
+          "publishedAt": "2026-09-02T00:48:00.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -223,15 +222,15 @@
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-09-02T04:35:11.181Z",
-      "lastSuccessfulAt": "2026-09-02T04:35:11.181Z",
-      "latestPublishedAt": "2026-09-02T03:06:00.000Z",
+      "attemptedAt": "2026-09-02T11:19:25.279Z",
+      "lastSuccessfulAt": "2026-09-02T11:19:25.279Z",
+      "latestPublishedAt": "2026-09-02T06:10:00.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 30
+          "itemCount": 33
         },
         {
           "provider": "bing-1",
@@ -242,7 +241,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 30
+          "itemCount": 31
         },
         {
           "provider": "bing-2",
@@ -258,10 +257,59 @@
       "description": "A股市场、政策、行业板块与资金面",
       "items": [
         {
+          "title": "A股缩量回调 创业板综指下跌1.70%",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOGVIY1Q2cWNVNF9DOV9mdnhkYzJHRGxySFpBeHJBODBqNEo1ak9jMXpWd1J2cmlpLXFVazZWclJDelVUSjlsZjIxTENBQWM4WUFYMlZtNWZyb2lLRzBVeEE2ZFIyamV5V1NtSlRpbzEtUWlDSm1qc2JITllyYllwTkhIdzE2ZlRMbHgybw?oc=5",
+          "source": "Sohu",
+          "domain": "Sohu",
+          "publishedAt": "2026-09-02T11:02:11.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "A股",
+            "创业板"
+          ]
+        },
+        {
+          "title": "沪深两市今日成交额合计1.79万亿元，中际旭创成交额居首_7x24快讯_新浪财经",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8xSWFpLWhwdTc2OEFYak9EMzVER2FNN0x1YXUyOS02UmdZTmR2VnB3TTlyOFBtdXFVNDZMbVIyck4zNy11VkhtaVlXVFlaVlk?oc=5",
+          "source": "finance.sina.com.cn",
+          "domain": "finance.sina.com.cn",
+          "publishedAt": "2026-09-02T07:03:28.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "沪深"
+          ]
+        },
+        {
+          "title": "“豆包手机”已入网，将于9月上市！美伊冲突升级，双创指数回调蓄势！科创50ETF汇添富(588870)、创业板ETF汇添富(159247)连续获资金关注",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12RXVSYjhlMmlDcjEwd1N0WkNTa1M1TnV5Ri0tVjgtR19oWlNWZUZVUGJqZFRVaGZFZnJIT2tfY25lbEZYWUtuXzROWVZEOUlsNXQ0?oc=5",
+          "source": "FX168财经",
+          "domain": "FX168财经",
+          "publishedAt": "2026-09-02T06:57:31.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "创业板"
+          ]
+        },
+        {
+          "title": "创业板跌2%，军工逆势大涨，宇树科技股价较上市首日“腰斩”，中际旭创跌破万亿市值，恒科指跌超1%，科网股普遍下跌",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1pSnZRMzkteVI0U2k3UUF4cUU3cjNwZ1NqTjcwRWN5TktRbnM3X3E3eFNuaFpIM1NtMXZLR2o1b0R1WldxdzlJME5hTTR5dk1EUEJN?oc=5",
+          "source": "华尔街见闻",
+          "domain": "华尔街见闻",
+          "publishedAt": "2026-09-02T04:07:45.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "创业板"
+          ]
+        },
+        {
           "title": "上证指数跌1.01%，现报3939.644点；深证成指跌1.75%，现报13628.935点；创业板指跌2.07%，现报3323.202点。",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1CNTctQzY3M25idzhhTy02ZjN6V2tPaU5sUXN4ajBhNEFPYUhaUXdZNzFzME9qaEY3cjJlVUt6SU9OQlBlRkR1RlVSNWlaMGc?oc=5",
-          "source": "cj.sina.cn",
-          "domain": "cj.sina.cn",
+          "source": "finance.sina.com.cn",
+          "domain": "finance.sina.com.cn",
           "publishedAt": "2026-09-02T02:00:31.000Z",
           "summary": "",
           "reason": "",
@@ -281,68 +329,18 @@
           "tags": [
             "A股"
           ]
-        },
-        {
-          "title": "A股农业板块再掀涨停潮 北证50指数逆势上行",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XUXNFRjZHa1dlSmhUa29nV1piSWtoLWRwNDJYa0NQTTBmd0lBd0ZsUk9rV1dZMDZBZUpveDlRZV80V2c0dzVTcXl1amhfUTV5Y1RWM2JR?oc=5",
-          "source": "上海证券报",
-          "domain": "上海证券报",
-          "publishedAt": "2026-09-01T23:58:00.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "创业板指下跌0.92% 农业股爆发 AI硬件表现不佳",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPa1BPc3djWnRpTUFHOXJGYUNvU1RfQ0JzWFZhTFdpeGlfVGdXdzIyLVpPVUhQdGJfVC1WOXVLX1NTcmROYWpLMW1iUHF6VE5kbG9GNWM0bmV5ZUtHUWtqOVdaeG5vTEFERzU3RDNiTGhrcmphcmRfYTBXNkJETlN1UzFR?oc=5",
-          "source": "新浪网",
-          "domain": "新浪网",
-          "publishedAt": "2026-09-01T18:54:29.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "创业板"
-          ]
-        },
-        {
-          "title": "A股消费抬头，半导体领跌！9月如何投资布局？",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1xdUVJTW9GUkczOHVOQUpqRl95WGJmTkp3U2lkZ3NTTWxHTW1vaG9vWlYzSjJXZXFQWkJxVnF5cEl5ZVYzRy1haUN3RXRYX2VnblFZaFcyQXJnU1BLbHZzeTFMODFfZw?oc=5",
-          "source": "金融界",
-          "domain": "金融界",
-          "publishedAt": "2026-09-01T15:41:00.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "中国上证综指9月1日（周二）收盘下跌6.41点，跌幅：0.16%，报3979.89点；中国深证成指9月1日（周二）收盘下跌142.62点，跌幅：1.02%，报13872.38点；中国沪深300指数9月1日（周二）收盘下跌13.65点，跌幅：0.3%，报4611.44点；中国创业板指数9月1日（周二）收盘下",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VMTBfVkg4VnJTRG5vTVM5eC14OUhFZDN6YzNRMWd4NEg2NFJJXzVfM1hfRjFDbUFEWm5yMHN3WS1GaGtoUnh5WHRrcENIMURnMWxveUtrNmt0ZlNQRkNOWlF6WWp2Zw?oc=5",
-          "source": "bihainews.com",
-          "domain": "bihainews.com",
-          "publishedAt": "2026-09-01T08:05:25.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "沪深",
-            "上证",
-            "创业板"
-          ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-09-02T04:35:12.741Z",
-      "lastSuccessfulAt": "2026-09-02T04:35:12.741Z",
-      "latestPublishedAt": "2026-09-02T02:08:08.000Z",
+      "attemptedAt": "2026-09-02T11:19:26.912Z",
+      "lastSuccessfulAt": "2026-09-02T11:19:26.912Z",
+      "latestPublishedAt": "2026-09-02T11:02:11.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 31
+          "itemCount": 29
         },
         {
           "provider": "bing-1",
@@ -353,7 +351,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 37
+          "itemCount": 44
         },
         {
           "provider": "bing-2",
@@ -367,8 +365,8 @@
   "history": [
     {
       "date": "2026-09-02",
-      "checkedAt": "2026-09-02T04:35:14.305Z",
-      "contentUpdatedAt": "2026-09-02T04:35:14.305Z",
+      "checkedAt": "2026-09-02T11:19:28.555Z",
+      "contentUpdatedAt": "2026-09-02T11:19:28.555Z",
       "topics": [
         {
           "id": "ai",
@@ -376,11 +374,23 @@
           "description": "模型、产品、监管与资本动向",
           "items": [
             {
-              "title": "OpenAI 和 Google 的免费 AI 课程，有哪些以及 2026 年如何报名",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeDg5dUtYUzZfVElhNW9CcFpWdEtCRjJnNThqM1lHNFpnRFRZZGJlTVRBclZLRm5qM3hjdXBGb0Y0MzU5MEpaZTJpemlHQ1NmYlFoVGJXbl9uUk9kQlhNaGFjU2xOUGFWLU12VUxPQTZUOTFjamFNTnp1Snlia21fTXl3?oc=5",
-              "source": "Pasquale Pillitteri",
-              "domain": "Pasquale Pillitteri",
-              "publishedAt": "2026-09-02T02:49:48.000Z",
+              "title": "Pangram Has Emerged as the Gold Standard of AI Detection. Should You Trust It?",
+              "url": "https://www.wired.com/story/pangram-has-emerged-as-the-gold-standard-of-ai-detection/",
+              "source": "WIRED",
+              "domain": "WIRED",
+              "publishedAt": "2026-09-02T10:00:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "AI"
+              ]
+            },
+            {
+              "title": "OpenAI很快推新AI模型Astra 但因性能太强将限制网络安全能力",
+              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5hTko0bHFlOG5zaEdnN2FrdEY2U2VTbktLMW5WdVpGTllzUUEyY21kVjh5dk51YllkVnJHRjdCN2o5ci1rcjJmVGVjRUFMRERZVHltV1Zva255SVRq?oc=5",
+              "source": "砍柴网",
+              "domain": "砍柴网",
+              "publishedAt": "2026-09-02T08:00:29.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -389,39 +399,38 @@
               ]
             },
             {
-              "title": "强到曾被迫踩煞车 OpenAI预告Astra大模型将登场",
-              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMW51WUgxQWg5WllWZWFjbDNtb1k3S3BtRDhvNlB4RmdldnpFUklSMlJsbExpM0JtSXdQUlpUS0JsRGJWNDZfQWdoekVKaVBTUHFNVVZET2hpc3JBZXozRWNnVTByd0JYV3VGcDluUHMtcFR6R1ZYeHU1MU5INTM5aGxTbm9vMk82bnZGWWw5Q21sVUhWZnVoS01wajJSSVVsZ0JzVTBxaw?oc=5",
-              "source": "DIGITIMES",
-              "domain": "DIGITIMES",
-              "publishedAt": "2026-09-02T02:41:00.000Z",
+              "title": "OpenAI称其新AI“Astra”可在无人协助下构建网络攻击- AI 人工智能",
+              "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QVXhmZ2dDX3pwRjVDejUwYmtVUEJvaWFrV1NGdGVrUW4wb3poaFg2TVhUMTd6NW15QXNTU1BTdFhZdkFwTHMyY0JIamtuMEpEZGQwVm1jTjRmZlVFUS1kQw?oc=5",
+              "source": "cnBeta.COM",
+              "domain": "cnBeta.COM",
+              "publishedAt": "2026-09-02T06:59:00.000Z",
               "summary": "",
               "reason": "",
               "tags": [
                 "OpenAI",
-                "大模型",
+                "人工智能",
                 "AI"
               ]
             },
             {
-              "title": "编程追赶OpenAI与Anthropic：谷歌Gemini 3.8 Flash最快周三上线",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9OWGozRExRSHlPRkZxdC1JOVVjVXhJeTdqbHdjVVRuUDJEa2FOZkxleDI5Q3lzVHJrYWltX2hsX3ZpMnNRTy15NVlnNjdWZ0lNR1NxU3J5OGdORTZwTVdPa3RBbGNMWTdzVWd0TjBHcmM?oc=5",
-              "source": "t.cj.sina.cn",
-              "domain": "t.cj.sina.cn",
-              "publishedAt": "2026-09-02T01:54:22.000Z",
+              "title": "OpenAI 押注 Mac 训练 AI 智能体，苹果 Mac 业务收入飙升",
+              "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPeVZ1ZDVlZUhhSTlrNmhHT05ZYnM3eVdMR3Y1R2xBanJKUVhpcVJPejFHNWxVOU11T3RqRU96eC1MRUZmUzZxOFdwZUlDdDMzN3JTWlRYRkNwLVBUTzB2YW9FdUFYT19MSkk3bVYwbDJYRUVLMHZZVTRjQ2pwckJCOTZ6TlN2amNFSlZ3NWlvekFXY1BjY1dLWUF6REFNVVY3SnhCMExacTJQRXNiZThfQTI3VEFWSU5KdmtEV0Jqa2Jfd0JESmlDcTdGZVJqbG1DZDh0N0ZWdzlKZF93bGY3bTV0WE1SNXRkSHZuMGZ4MWpjN0NSc0U3aV9KazNYMHJPaUZ2ZHBRYUIxSnM?oc=5",
+              "source": "Yellow.com",
+              "domain": "Yellow.com",
+              "publishedAt": "2026-09-02T07:51:03.000Z",
               "summary": "",
               "reason": "",
               "tags": [
                 "OpenAI",
-                "Anthropic",
                 "AI"
               ]
             },
             {
-              "title": "前字节强化学习专家孙鹏博士加盟星尘智能，完善Physical AI全栈技术布局",
-              "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VTFBqdGtkdTJEZ1FHcTRjcVFmVUZWVHpaVFF3Q1B6YTlGUGlOOTA3X1Bmc2lVMlh6SUQzU1JIb1BYWk1KZjB5SThCZmtfb1lIZWVydTJ4SEo4RGVOTmlvWVBNcDhLZkE?oc=5",
-              "source": "blog.csdn.net",
-              "domain": "blog.csdn.net",
-              "publishedAt": "2026-09-02T02:24:24.000Z",
+              "title": "AI应用助推大型机市场信心持续提升-AI基础设施",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ZR29rcV84Uzl1ZnNSdnJNSkMyMnkxaTJfc1BNbjNNZlIxTm54Q1UtZU15RnZCRVlnZjc5dTZ3UFZLVkw1azhYR0RJSEJtSVNSSWZiQUhITGRrNVpVb2hpVG1LV1VRZ3ZCUTVqVmtfY095UQ?oc=5",
+              "source": "至顶网",
+              "domain": "至顶网",
+              "publishedAt": "2026-09-02T08:42:26.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -429,23 +438,11 @@
               ]
             },
             {
-              "title": "当AI社交网络里的机器人开始互相点赞，会发生什么？",
-              "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5OakJJc2VSTFZ4bjhKRnQ3amZWQW1WOGNTUW1YTnBHYkhhR3o0RlRaaVJZeXh5ZUxSMEJBZUhVc0JaSVBSSVhESzZKRktTeFNmX2NQZDVRRVhteFpRSjBB?oc=5",
-              "source": "techwalker.com",
-              "domain": "techwalker.com",
-              "publishedAt": "2026-09-02T02:14:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
-            },
-            {
-              "title": "深耕企业数字化十三载，数商云全面升级AI智能体战略，打造全场景企业级智能中枢",
-              "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5lTHlzekRKb0lNa3EyMFdNSXBmVmF3cmFxaElldk9POFFSUVJJMFJKejh1SDlNNE1RdXFYRHJDa1RjdWpmQ0JicVZyVTlaTm9Hb1VSMFgyQVd3Q3N2b1VHU0dn?oc=5",
-              "source": "手机网易网",
-              "domain": "手机网易网",
-              "publishedAt": "2026-09-02T01:31:45.000Z",
+              "title": "Agent 自进化、AI Coding、世界模型、Agent Infra……2026 奇点智能技术大会首批议题公布-yeeyi",
+              "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3dXUtb25YREhvY1JSSk1BSEMyX21xdHcybXFtT0tvLXNZYTNiRGNBMmZ3NUI4QXZFZVk2Sm03czdWSVh5aTVsQUNnMTlnaTNwc2RmU3Fn?oc=5",
+              "source": "yeeyi",
+              "domain": "yeeyi",
+              "publishedAt": "2026-09-02T08:14:22.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -454,15 +451,15 @@
             }
           ],
           "stale": false,
-          "attemptedAt": "2026-09-02T04:35:09.310Z",
-          "lastSuccessfulAt": "2026-09-02T04:35:09.310Z",
-          "latestPublishedAt": "2026-09-02T02:49:48.000Z",
+          "attemptedAt": "2026-09-02T11:19:23.308Z",
+          "lastSuccessfulAt": "2026-09-02T11:19:23.308Z",
+          "latestPublishedAt": "2026-09-02T10:00:00.000Z",
           "liveItemCount": 6,
           "providerStats": [
             {
               "provider": "google-1",
               "ok": true,
-              "itemCount": 42
+              "itemCount": 44
             },
             {
               "provider": "bing-1",
@@ -484,7 +481,7 @@
             {
               "provider": "google-3",
               "ok": true,
-              "itemCount": 34
+              "itemCount": 39
             },
             {
               "provider": "bing-3",
@@ -510,6 +507,18 @@
           "description": "美股指数、科技股、财报与宏观信号",
           "items": [
             {
+              "title": "✨【投资TALK君1482期】买黄金，看什么？加仓的逻辑。准备好，市场进入超卖✨20260901#CPI #nvda #美股 #投资 #英伟达 #ai #特斯拉- 美股快媒体(Kuai.Media)",
+              "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0xa1lzeElTN19HLXpKYVhzcDFYa0FmMV9Sa251ZzlnektxQXBEaWNiR3JVbi1FdF91YkRydmxwdnpvV09DdzcxTkN5Ri1Vdmg4M0I2VWw5VEhHRGFiNUdj?oc=5",
+              "source": "kuai.media",
+              "domain": "kuai.media",
+              "publishedAt": "2026-09-02T06:10:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
               "title": "国际油价猛涨超5%，美股芯片、光通信股下挫，苹果市值一夜增超8100亿元，特朗普威胁伊",
               "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE13MmFVbmZpdDIyby16MUwxWGRGdFpWaEw2TWhocXZFMlJIRlNkenF1aE1ObW1BZTBZc0p0X1RYeFAtSVJ0eDRMT3Y0aGowcE5jeFJqTlctYTI1bU01TjZV?oc=5",
               "source": "kuai.media",
@@ -522,10 +531,22 @@
               ]
             },
             {
+              "title": "中东局势升温拖累美股，戴尔AI芯片业务力挽狂澜",
+              "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5XSTh3TmdQS0ZhdjlPUFpvck12QjQtU0lfV2djWEkxRThlX1BiVVVrWW1iMEZ5QmdETXB4MlBMeTRTcXA1RC1Jaw?oc=5",
+              "source": "haiwaiwai.com",
+              "domain": "haiwaiwai.com",
+              "publishedAt": "2026-09-02T02:25:40.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
               "title": "美联储加息预期上升",
               "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOczlBNTZLMWJpUHNzLXoydmFrclA4YWpVRHQ5bGl2ZHJIOXRabmFZVldxTk1NRHlOb2xRTE9KdXhFaHRkYkFEdXhkR3Vab3lBTnhUM2M4RkdLRzdKRThzX0RwRUh5dkF6TWpSS1ZZZnlERThhUC0xRXYxQjZSTTA3d3lIaUg1d05SSDhqRlZHa0tneEhIcmpMOVl6cmdaV1dMRHlMcW5JcnVrM2NYMUdmU2p5X28?oc=5",
-              "source": "Moomoo",
-              "domain": "Moomoo",
+              "source": "moomoo.com",
+              "domain": "moomoo.com",
               "publishedAt": "2026-09-02T02:36:09.000Z",
               "summary": "",
               "reason": "",
@@ -534,47 +555,23 @@
               ]
             },
             {
+              "title": "美股再次三连阴，苹果收涨|美股|苹果|特斯拉|道指|纳指|标普500 指数_新浪新闻",
+              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5HQ3BfbFd1UzRfWlI1VlhTeTdzdlZwWXN2aldURkhvNHhqVU5RcXUzYkFBXzRuZFVmaUU3R3ZUSEp2b003N0VXNXlfNVY1ckRhNlB2QmdOeElZY2kzUXB4NGlNOA?oc=5",
+              "source": "新浪网",
+              "domain": "新浪网",
+              "publishedAt": "2026-09-02T00:54:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
               "title": "美股三连阴，美伊冲突升级推升油价，科技股普跌，金银承压",
-              "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAyQmN2WWEwckdhM1NnT1VHeFBVSDFRcTRGNjVtZGVGUUJjZDdwM3ZYalhFUEpZeFlBSG5XQ1Zva0RUODBOTlg5MkphWlJRQy1R?oc=5",
-              "source": "第一财经",
-              "domain": "第一财经",
-              "publishedAt": "2026-09-02T00:51:39.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "美股"
-              ]
-            },
-            {
-              "title": "中东局势推高油价 美股四大指数收黑",
-              "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQZjBYRWtJcE1xY3NhVEJ0bUxEQmlfRVRjdG1BSHBTOGE1U1BXNl9DRERKaXRVZVoxVWxvT1BjVGtZa0hNdHdyMnd4UDEySEd2M1ZnSE1hdXdmci1RWmdlcXRZUElzS1V0TExqNkF3STZoOVpXX08wYlRMT1Q0RlRYMW5VM0FXeFFKWlNrcXlWeHQ3WmU2clpsbndSdE5hS3Z2WHFyOWVHUUlFSkxFdVRIR1VDWEFvbjdpNU81V0trUXdmZFRuMFlTQkkxZzFpMHUwWDNuUml2ZWZPWUxvcW5jU29RaFh5bHcyUTFzUktwUWtUWXNVeWtBMUFfcEgxYlV3NnQ0d0F6WmJIVWNZRVowb2laclc3WmViaVZ5OEFONHU?oc=5",
-              "source": "KLSE Screener",
-              "domain": "KLSE Screener",
-              "publishedAt": "2026-09-02T00:46:53.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "美股"
-              ]
-            },
-            {
-              "title": "美股三连跌！半导体与存储板块领跌，苹果新帅首秀市值大涨超8000亿，戴尔AI指引盘后涨超10%，美联储9月加息概率一周翻倍至68%-手机金融界",
-              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB4QzUtbWwtbHpqaHhOZ0tKYVVGaENTR0VDMFRwVjR4Y0lnLU1CYjcxc05UcENvYXA5LTFnUWg2c0pvSnBUeFZ0Wm82UmFRVWZZOFQwc2lfTlFfOWVpeDlpNEo2XzRnQQ?oc=5",
-              "source": "金融界",
-              "domain": "金融界",
-              "publishedAt": "2026-09-02T00:38:54.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "美股"
-              ]
-            },
-            {
-              "title": "美股三大指数再度走弱：半导体、存储板块普跌，油价飙升、金银重挫",
-              "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5PSE4zNWozbjB6b1JkV29TelE2MlZYUjRZOHBsQU83R01SVEJBSHJhQkg0UFRmN01Ral9yQXEydEhNdURHWUtYUUY3T2E?oc=5",
-              "source": "凤凰网",
-              "domain": "凤凰网",
-              "publishedAt": "2026-09-02T00:35:36.000Z",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxON3Fta1FjSGRsNHhqZG9ta0pCb0Z4LWp4Zk5wR1dwcnZIRUVBTmxHTlp5cFl4bXByM2ptdXI1Z1VvbmdWYmhnNmdSZGRhaUdoMWZEbFllLTlCVlZlXzV3MkFTQlZiN3RNM3AtMVgwV1h5bHdWaDhIdkprbHNUci1aMzVDNnRRSkl6?oc=5",
+              "source": "Sohu",
+              "domain": "Sohu",
+              "publishedAt": "2026-09-02T00:48:00.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -583,15 +580,15 @@
             }
           ],
           "stale": false,
-          "attemptedAt": "2026-09-02T04:35:11.181Z",
-          "lastSuccessfulAt": "2026-09-02T04:35:11.181Z",
-          "latestPublishedAt": "2026-09-02T03:06:00.000Z",
+          "attemptedAt": "2026-09-02T11:19:25.279Z",
+          "lastSuccessfulAt": "2026-09-02T11:19:25.279Z",
+          "latestPublishedAt": "2026-09-02T06:10:00.000Z",
           "liveItemCount": 6,
           "providerStats": [
             {
               "provider": "google-1",
               "ok": true,
-              "itemCount": 30
+              "itemCount": 33
             },
             {
               "provider": "bing-1",
@@ -602,7 +599,7 @@
             {
               "provider": "google-2",
               "ok": true,
-              "itemCount": 30
+              "itemCount": 31
             },
             {
               "provider": "bing-2",
@@ -618,10 +615,59 @@
           "description": "A股市场、政策、行业板块与资金面",
           "items": [
             {
+              "title": "A股缩量回调 创业板综指下跌1.70%",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOGVIY1Q2cWNVNF9DOV9mdnhkYzJHRGxySFpBeHJBODBqNEo1ak9jMXpWd1J2cmlpLXFVazZWclJDelVUSjlsZjIxTENBQWM4WUFYMlZtNWZyb2lLRzBVeEE2ZFIyamV5V1NtSlRpbzEtUWlDSm1qc2JITllyYllwTkhIdzE2ZlRMbHgybw?oc=5",
+              "source": "Sohu",
+              "domain": "Sohu",
+              "publishedAt": "2026-09-02T11:02:11.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "A股",
+                "创业板"
+              ]
+            },
+            {
+              "title": "沪深两市今日成交额合计1.79万亿元，中际旭创成交额居首_7x24快讯_新浪财经",
+              "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8xSWFpLWhwdTc2OEFYak9EMzVER2FNN0x1YXUyOS02UmdZTmR2VnB3TTlyOFBtdXFVNDZMbVIyck4zNy11VkhtaVlXVFlaVlk?oc=5",
+              "source": "finance.sina.com.cn",
+              "domain": "finance.sina.com.cn",
+              "publishedAt": "2026-09-02T07:03:28.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "沪深"
+              ]
+            },
+            {
+              "title": "“豆包手机”已入网，将于9月上市！美伊冲突升级，双创指数回调蓄势！科创50ETF汇添富(588870)、创业板ETF汇添富(159247)连续获资金关注",
+              "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12RXVSYjhlMmlDcjEwd1N0WkNTa1M1TnV5Ri0tVjgtR19oWlNWZUZVUGJqZFRVaGZFZnJIT2tfY25lbEZYWUtuXzROWVZEOUlsNXQ0?oc=5",
+              "source": "FX168财经",
+              "domain": "FX168财经",
+              "publishedAt": "2026-09-02T06:57:31.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "创业板"
+              ]
+            },
+            {
+              "title": "创业板跌2%，军工逆势大涨，宇树科技股价较上市首日“腰斩”，中际旭创跌破万亿市值，恒科指跌超1%，科网股普遍下跌",
+              "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1pSnZRMzkteVI0U2k3UUF4cUU3cjNwZ1NqTjcwRWN5TktRbnM3X3E3eFNuaFpIM1NtMXZLR2o1b0R1WldxdzlJME5hTTR5dk1EUEJN?oc=5",
+              "source": "华尔街见闻",
+              "domain": "华尔街见闻",
+              "publishedAt": "2026-09-02T04:07:45.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "创业板"
+              ]
+            },
+            {
               "title": "上证指数跌1.01%，现报3939.644点；深证成指跌1.75%，现报13628.935点；创业板指跌2.07%，现报3323.202点。",
               "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1CNTctQzY3M25idzhhTy02ZjN6V2tPaU5sUXN4ajBhNEFPYUhaUXdZNzFzME9qaEY3cjJlVUt6SU9OQlBlRkR1RlVSNWlaMGc?oc=5",
-              "source": "cj.sina.cn",
-              "domain": "cj.sina.cn",
+              "source": "finance.sina.com.cn",
+              "domain": "finance.sina.com.cn",
               "publishedAt": "2026-09-02T02:00:31.000Z",
               "summary": "",
               "reason": "",
@@ -641,68 +687,18 @@
               "tags": [
                 "A股"
               ]
-            },
-            {
-              "title": "A股农业板块再掀涨停潮 北证50指数逆势上行",
-              "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XUXNFRjZHa1dlSmhUa29nV1piSWtoLWRwNDJYa0NQTTBmd0lBd0ZsUk9rV1dZMDZBZUpveDlRZV80V2c0dzVTcXl1amhfUTV5Y1RWM2JR?oc=5",
-              "source": "上海证券报",
-              "domain": "上海证券报",
-              "publishedAt": "2026-09-01T23:58:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "A股"
-              ]
-            },
-            {
-              "title": "创业板指下跌0.92% 农业股爆发 AI硬件表现不佳",
-              "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPa1BPc3djWnRpTUFHOXJGYUNvU1RfQ0JzWFZhTFdpeGlfVGdXdzIyLVpPVUhQdGJfVC1WOXVLX1NTcmROYWpLMW1iUHF6VE5kbG9GNWM0bmV5ZUtHUWtqOVdaeG5vTEFERzU3RDNiTGhrcmphcmRfYTBXNkJETlN1UzFR?oc=5",
-              "source": "新浪网",
-              "domain": "新浪网",
-              "publishedAt": "2026-09-01T18:54:29.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "创业板"
-              ]
-            },
-            {
-              "title": "A股消费抬头，半导体领跌！9月如何投资布局？",
-              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1xdUVJTW9GUkczOHVOQUpqRl95WGJmTkp3U2lkZ3NTTWxHTW1vaG9vWlYzSjJXZXFQWkJxVnF5cEl5ZVYzRy1haUN3RXRYX2VnblFZaFcyQXJnU1BLbHZzeTFMODFfZw?oc=5",
-              "source": "金融界",
-              "domain": "金融界",
-              "publishedAt": "2026-09-01T15:41:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "A股"
-              ]
-            },
-            {
-              "title": "中国上证综指9月1日（周二）收盘下跌6.41点，跌幅：0.16%，报3979.89点；中国深证成指9月1日（周二）收盘下跌142.62点，跌幅：1.02%，报13872.38点；中国沪深300指数9月1日（周二）收盘下跌13.65点，跌幅：0.3%，报4611.44点；中国创业板指数9月1日（周二）收盘下",
-              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VMTBfVkg4VnJTRG5vTVM5eC14OUhFZDN6YzNRMWd4NEg2NFJJXzVfM1hfRjFDbUFEWm5yMHN3WS1GaGtoUnh5WHRrcENIMURnMWxveUtrNmt0ZlNQRkNOWlF6WWp2Zw?oc=5",
-              "source": "bihainews.com",
-              "domain": "bihainews.com",
-              "publishedAt": "2026-09-01T08:05:25.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "沪深",
-                "上证",
-                "创业板"
-              ]
             }
           ],
           "stale": false,
-          "attemptedAt": "2026-09-02T04:35:12.741Z",
-          "lastSuccessfulAt": "2026-09-02T04:35:12.741Z",
-          "latestPublishedAt": "2026-09-02T02:08:08.000Z",
+          "attemptedAt": "2026-09-02T11:19:26.912Z",
+          "lastSuccessfulAt": "2026-09-02T11:19:26.912Z",
+          "latestPublishedAt": "2026-09-02T11:02:11.000Z",
           "liveItemCount": 6,
           "providerStats": [
             {
               "provider": "google-1",
               "ok": true,
-              "itemCount": 31
+              "itemCount": 29
             },
             {
               "provider": "bing-1",
@@ -713,7 +709,7 @@
             {
               "provider": "google-2",
               "ok": true,
-              "itemCount": 37
+              "itemCount": 44
             },
             {
               "provider": "bing-2",
