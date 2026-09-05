@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-04T00:22:46+08:00",
-  "checkedAt": "2026-09-04T00:22:46+08:00",
+  "updatedAt": "2026-09-05T18:31:03+08:00",
+  "checkedAt": "2026-09-05T18:31:03+08:00",
   "coverage": "中国大陆未来 120 天 ACGN 漫展；B站会员购官方列表 + 次元黄页高频轻量扫描（本轮 4 页、193 条），嘉宾仅展示平台结构化名单或主办方官宣",
   "policy": "广覆盖发现不等于嘉宾确认；票务事实优先 B站会员购和大麦，嘉宾名单仅采用 B站结构化详情或主办方官宣，抓取失败保留上一版并公开来源健康度。",
   "sources": [
@@ -76,7 +76,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-15T12:44:56+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1004839",
@@ -116,7 +116,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-15T12:44:56+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10653",
@@ -156,87 +156,6 @@
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
       "lastSeenAt": "2026-08-31T06:55:30+08:00",
       "province": "福建",
-      "missingSinceAt": "2026-09-01T08:04:22+08:00",
-      "missingRuns": 2
-    },
-    {
-      "id": "bilibili-1004464",
-      "name": "律动狂潮·绮音夜游T 二次元爵士乐音乐会—SKM绯红室内乐团2026巡演",
-      "type": "livehouse",
-      "province": "上海",
-      "city": "上海",
-      "venue": "新歌空间",
-      "startDate": "2026-08-28",
-      "endDate": "2026-08-28",
-      "price": "¥108 起",
-      "ticketStatus": "预售中",
-      "guestStatus": "pending",
-      "summary": "livehouse；活动、票务与场馆来自 B站会员购公开列表。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "B站会员购",
-          "url": "https://show.bilibili.com/platform/detail.html?id=1004464",
-          "label": "查看官方票务与嘉宾",
-          "primary": true
-        }
-      ],
-      "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
-      "sourceIds": [
-        "bilibili-membership"
-      ],
-      "externalIds": {
-        "bilibili": "1004464"
-      },
-      "fieldSources": {
-        "schedule": "bilibili-membership",
-        "venue": "bilibili-membership",
-        "price": "bilibili-membership",
-        "ticketStatus": "bilibili-membership",
-        "guests": "bilibili-membership"
-      },
-      "verificationLevel": "ticket-verified",
-      "firstSeenAt": "2026-08-17T00:39:45+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
-    },
-    {
-      "id": "yunmanzhan-11727",
-      "name": "RICE动漫展（取消）",
-      "type": "综合漫展",
-      "province": "上海",
-      "city": "上海",
-      "venue": "诺瓦城",
-      "startDate": "2026-08-28",
-      "endDate": "2026-08-28",
-      "price": "取消",
-      "ticketStatus": "已取消",
-      "guestStatus": "pending",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=RICE%E5%8A%A8%E6%BC%AB%E5%B1%95",
-          "label": "查看发现记录",
-          "primary": false
-        }
-      ],
-      "verification": "发现源记录状态为“取消”；尚未取得票务平台或主办方的结构化嘉宾名单。",
-      "sourceIds": [
-        "yunmanzhan"
-      ],
-      "externalIds": {
-        "yunmanzhan": "11727"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan"
-      },
-      "verificationLevel": "discovery-only",
-      "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-08-31T06:55:30+08:00",
       "missingSinceAt": "2026-09-01T08:04:22+08:00",
       "missingRuns": 2
     },
@@ -328,7 +247,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-15T16:44:00+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12030",
@@ -814,8 +733,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11729",
@@ -864,7 +783,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11872",
@@ -954,7 +873,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10592",
@@ -1316,8 +1235,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12037",
@@ -1407,7 +1326,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-17T15:13:46+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11875",
@@ -1513,7 +1432,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -1528,7 +1447,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12041",
@@ -1552,7 +1471,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -1567,7 +1486,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10273",
@@ -1591,7 +1510,7 @@
           "primary": false
         }
       ],
-      "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
+      "verification": "发现源记录状态为“进行中”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
         "yunmanzhan"
       ],
@@ -1606,7 +1525,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1004887",
@@ -1677,8 +1596,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "bilibili-1004730",
@@ -1748,8 +1667,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "bilibili-1005005",
@@ -1854,8 +1773,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "bilibili-1004752",
@@ -1920,8 +1839,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11639",
@@ -1960,7 +1879,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-17T02:45:05+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11732",
@@ -1999,7 +1918,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12252",
@@ -2038,7 +1957,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12049",
@@ -2077,7 +1996,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12046",
@@ -2116,7 +2035,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12290",
@@ -2165,7 +2084,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12053",
@@ -2204,7 +2123,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12165",
@@ -2243,7 +2162,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10270",
@@ -2281,7 +2200,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "重庆"
     },
     {
@@ -2321,7 +2240,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11806",
@@ -2360,7 +2279,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11560",
@@ -2398,7 +2317,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "福建"
     },
     {
@@ -2448,7 +2367,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005420",
@@ -2503,8 +2422,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12047",
@@ -2543,7 +2462,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12048",
@@ -2582,7 +2501,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005220",
@@ -2675,8 +2594,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12051",
@@ -2750,8 +2669,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11879",
@@ -2806,8 +2725,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12293",
@@ -2846,7 +2765,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11805",
@@ -2885,7 +2804,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005186",
@@ -2955,8 +2874,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12050",
@@ -2995,7 +2914,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10934",
@@ -3033,7 +2952,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "陕西"
     },
     {
@@ -3073,7 +2992,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12264",
@@ -3112,7 +3031,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005565",
@@ -3152,7 +3071,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T12:28:29+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11880",
@@ -3191,7 +3110,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12045",
@@ -3230,7 +3149,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005515",
@@ -3279,7 +3198,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T12:28:29+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12219",
@@ -3318,7 +3237,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12054",
@@ -3473,8 +3392,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-10605",
@@ -3512,7 +3431,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "内蒙古"
     },
     {
@@ -3552,7 +3471,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12055",
@@ -3591,7 +3510,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11561",
@@ -3629,7 +3548,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "湖北"
     },
     {
@@ -3669,7 +3588,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12056",
@@ -3708,7 +3627,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12288",
@@ -3757,7 +3676,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10227",
@@ -3795,7 +3714,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "广东"
     },
     {
@@ -3835,7 +3754,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12291",
@@ -3857,24 +3776,34 @@
           "url": "https://www.yunmanzhan.com/index.php?search=%E6%9C%AF%E5%8A%9B%E5%8F%A3%26%E4%B8%96%E7%95%8C%E8%AE%A1%E5%88%92only%E5%90%8C%E4%BA%BA%E8%8C%B6%E8%AF%9D%E4%BC%9A",
           "label": "查看发现记录",
           "primary": false
+        },
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005163",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
         }
       ],
       "verification": "发现源记录状态为“未开始”；尚未取得票务平台或主办方的结构化嘉宾名单。",
       "sourceIds": [
-        "yunmanzhan"
+        "yunmanzhan",
+        "bilibili-membership"
       ],
       "externalIds": {
-        "yunmanzhan": "12291"
+        "yunmanzhan": "12291",
+        "bilibili": "1005163"
       },
       "fieldSources": {
         "discovery": "yunmanzhan",
         "schedule": "yunmanzhan",
         "venue": "yunmanzhan",
-        "price": "yunmanzhan"
+        "price": "yunmanzhan",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
       },
-      "verificationLevel": "discovery-only",
+      "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11809",
@@ -3913,7 +3842,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-8373",
@@ -3952,7 +3881,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10655",
@@ -3990,7 +3919,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "吉林"
     },
     {
@@ -4030,7 +3959,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12256",
@@ -4069,7 +3998,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12182",
@@ -4118,7 +4047,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12230",
@@ -4157,7 +4086,47 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
+    },
+    {
+      "id": "bilibili-1005736",
+      "name": "鸣潮only中秋追月节同人展",
+      "type": "ONLY同人展",
+      "province": "四川",
+      "city": "成都",
+      "venue": "奇谷米次元街区",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-26",
+      "price": "¥35 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "pending",
+      "summary": "Only同人展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005736",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005736"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "ticket-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12302",
@@ -4196,7 +4165,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11734",
@@ -4235,7 +4204,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11892",
@@ -4274,7 +4243,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12187",
@@ -4313,7 +4282,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11735",
@@ -4352,7 +4321,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11886",
@@ -4391,7 +4360,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12323",
@@ -4430,7 +4399,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11884",
@@ -4469,7 +4438,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12318",
@@ -4508,7 +4477,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12189",
@@ -4547,7 +4516,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11885",
@@ -4586,7 +4555,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11811",
@@ -4625,7 +4594,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12066",
@@ -4664,7 +4633,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11737",
@@ -4703,7 +4672,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11883",
@@ -4742,7 +4711,47 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
+    },
+    {
+      "id": "bilibili-1005705",
+      "name": "52HZ中秋特别篇",
+      "type": "漫展",
+      "province": "内蒙古",
+      "city": "呼和浩特",
+      "venue": "鑫光盛宴国际宴会中心（康复路店）",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25",
+      "price": "¥19.9 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "pending",
+      "summary": "漫展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005705",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005705"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "ticket-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12186",
@@ -4791,7 +4800,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005508",
@@ -4846,8 +4855,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11503",
@@ -4885,7 +4894,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "浙江"
     },
     {
@@ -4925,7 +4934,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12063",
@@ -4964,7 +4973,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12062",
@@ -5003,7 +5012,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12320",
@@ -5042,7 +5051,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11894",
@@ -5081,7 +5090,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12057",
@@ -5120,7 +5129,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11893",
@@ -5159,7 +5168,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12058",
@@ -5198,7 +5207,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12322",
@@ -5237,7 +5246,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12064",
@@ -5276,7 +5285,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11562",
@@ -5314,7 +5323,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "河南"
     },
     {
@@ -5354,7 +5363,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12061",
@@ -5393,7 +5402,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12067",
@@ -5432,7 +5441,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11279",
@@ -5470,7 +5479,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "辽宁"
     },
     {
@@ -5510,7 +5519,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11187",
@@ -5548,7 +5557,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "河南"
     },
     {
@@ -5588,7 +5597,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12317",
@@ -5627,7 +5636,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12324",
@@ -5666,7 +5675,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11736",
@@ -5705,7 +5714,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12283",
@@ -5744,7 +5753,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12326",
@@ -5783,7 +5792,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11733",
@@ -5822,7 +5831,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11888",
@@ -5861,7 +5870,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12319",
@@ -5900,7 +5909,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12059",
@@ -5939,7 +5948,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10935",
@@ -5977,7 +5986,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "陕西"
     },
     {
@@ -6017,7 +6026,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10656",
@@ -6055,7 +6064,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "青海"
     },
     {
@@ -6094,7 +6103,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "山东"
     },
     {
@@ -6134,7 +6143,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12065",
@@ -6173,7 +6182,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11887",
@@ -6212,7 +6221,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12321",
@@ -6251,7 +6260,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11812",
@@ -6290,7 +6299,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11890",
@@ -6329,7 +6338,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-19T12:49:37+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-9788",
@@ -6367,7 +6376,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "吉林"
     },
     {
@@ -6407,7 +6416,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12250",
@@ -6446,7 +6455,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12304",
@@ -6526,8 +6535,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-10657",
@@ -6565,7 +6574,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "北京"
     },
     {
@@ -6605,7 +6614,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11901",
@@ -6644,7 +6653,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11740",
@@ -6683,7 +6692,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12332",
@@ -6722,7 +6731,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11815",
@@ -6761,7 +6770,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12071",
@@ -6800,7 +6809,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12289",
@@ -6839,7 +6848,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12072",
@@ -6878,7 +6887,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12331",
@@ -6917,7 +6926,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12070",
@@ -6956,7 +6965,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10012",
@@ -6994,7 +7003,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "广东"
     },
     {
@@ -7044,7 +7053,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10658",
@@ -7082,7 +7091,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "陕西"
     },
     {
@@ -7122,7 +7131,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12073",
@@ -7161,7 +7170,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11739",
@@ -7200,7 +7209,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12075",
@@ -7239,7 +7248,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12178",
@@ -7288,7 +7297,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11895",
@@ -7327,7 +7336,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005249",
@@ -7376,7 +7385,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12330",
@@ -7415,7 +7424,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12338",
@@ -7454,7 +7463,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11900",
@@ -7493,7 +7502,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11816",
@@ -7532,7 +7541,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11897",
@@ -7571,7 +7580,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12340",
@@ -7610,7 +7619,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12074",
@@ -7649,7 +7658,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12336",
@@ -7688,7 +7697,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005540",
@@ -7737,7 +7746,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12249",
@@ -7776,7 +7785,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11899",
@@ -7815,7 +7824,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10076",
@@ -7854,7 +7863,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-9611",
@@ -7893,7 +7902,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005197",
@@ -7942,7 +7951,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005422",
@@ -7991,7 +8000,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12076",
@@ -8030,7 +8039,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10667",
@@ -8069,7 +8078,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005362",
@@ -8194,8 +8203,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "bilibili-1005279",
@@ -8257,8 +8266,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11741",
@@ -8297,7 +8306,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11896",
@@ -8336,7 +8345,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12339",
@@ -8375,7 +8384,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12285",
@@ -8430,8 +8439,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12193",
@@ -8470,7 +8479,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11902",
@@ -8509,7 +8518,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12334",
@@ -8548,7 +8557,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005218",
@@ -8603,8 +8612,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11743",
@@ -8643,7 +8652,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-9789",
@@ -8681,7 +8690,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "陕西"
     },
     {
@@ -8737,8 +8746,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12335",
@@ -8777,7 +8786,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12069",
@@ -8816,7 +8825,61 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
+    },
+    {
+      "id": "bilibili-1005639",
+      "name": "YC织云次元动漫嘉年华",
+      "type": "漫展",
+      "province": "江西",
+      "city": "宜春",
+      "venue": "广汇国际家居广场建材馆",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-27",
+      "price": "¥39.9 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "announced",
+      "summary": "漫展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [
+        {
+          "name": "岁岁",
+          "role": "参展嘉宾"
+        },
+        {
+          "name": "可乐",
+          "role": "参展嘉宾"
+        },
+        {
+          "name": "柒夏",
+          "role": "参展嘉宾"
+        }
+      ],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005639",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动与实名嘉宾条目来自 B站会员购公开详情接口；多日活动如未标注逐日出席，日期仍以主办方现场官宣为准。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005639"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "guest-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12337",
@@ -8855,7 +8918,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-9348",
@@ -8893,7 +8956,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "陕西"
     },
     {
@@ -8933,7 +8996,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12342",
@@ -8972,7 +9035,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12312",
@@ -9011,7 +9074,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11738",
@@ -9050,7 +9113,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11903",
@@ -9089,7 +9152,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005264",
@@ -9129,7 +9192,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11818",
@@ -9168,7 +9231,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12284",
@@ -9217,7 +9280,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005421",
@@ -9266,7 +9329,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-31T02:03:12+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11904",
@@ -9305,7 +9368,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12227",
@@ -9344,7 +9407,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11906",
@@ -9383,7 +9446,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11565",
@@ -9421,7 +9484,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "河南"
     },
     {
@@ -9461,7 +9524,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-9273",
@@ -9500,7 +9563,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10659",
@@ -9538,7 +9601,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "辽宁"
     },
     {
@@ -9578,7 +9641,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11905",
@@ -9617,7 +9680,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12344",
@@ -9656,7 +9719,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12078",
@@ -9695,7 +9758,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-9816",
@@ -9733,7 +9796,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "天津"
     },
     {
@@ -9773,7 +9836,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-10T05:06:26+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11038",
@@ -9811,7 +9874,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-07-18T18:04:17+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
       "province": "内蒙古"
     },
     {
@@ -9851,7 +9914,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11446",
@@ -9890,7 +9953,7 @@
       },
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-09-02T19:13:32+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005499",
@@ -9930,7 +9993,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005388",
@@ -9970,7 +10033,47 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
+    },
+    {
+      "id": "bilibili-1005695",
+      "name": "世界计划同人ONLY展（茶话会）",
+      "type": "漫展",
+      "province": "内蒙古",
+      "city": "包头",
+      "venue": "上古大酒店(青山店)",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-01",
+      "price": "¥40 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "pending",
+      "summary": "漫展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005695",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005695"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "ticket-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12180",
@@ -10024,8 +10127,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12084",
@@ -10106,67 +10209,6 @@
       "lastSeenAt": "2026-09-02T06:49:16+08:00"
     },
     {
-      "id": "yunmanzhan-11751",
-      "name": "第30届IJOY动漫游戏狂欢节",
-      "type": "动漫游戏展",
-      "province": "北京",
-      "city": "北京",
-      "venue": "北京国家会议中心",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-03",
-      "price": "¥80元 起",
-      "ticketStatus": "待票务复核",
-      "guestStatus": "announced",
-      "summary": "由全国漫展黄页发现，票务与嘉宾仍需到 B站会员购、大麦或主办方官宣复核。",
-      "guests": [
-        {
-          "name": "乔苏",
-          "role": "配音演员",
-          "date": "2026-10-02"
-        },
-        {
-          "name": "邱秋",
-          "role": "配音演员",
-          "date": "2026-10-02"
-        }
-      ],
-      "ticketSources": [
-        {
-          "platform": "次元黄页",
-          "url": "https://www.yunmanzhan.com/index.php?search=%E7%AC%AC30%E5%B1%8AIJOY%E5%8A%A8%E6%BC%AB%E6%B8%B8%E6%88%8F%E7%8B%82%E6%AC%A2%E8%8A%82",
-          "label": "查看发现记录",
-          "primary": false
-        },
-        {
-          "platform": "B站会员购",
-          "url": "https://show.bilibili.com/platform/detail.html?id=1005408",
-          "label": "查看官方票务与嘉宾",
-          "primary": true
-        }
-      ],
-      "verification": "活动与实名嘉宾条目来自 B站会员购公开详情接口；多日活动如未标注逐日出席，日期仍以主办方现场官宣为准。",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ],
-      "externalIds": {
-        "yunmanzhan": "11751",
-        "bilibili": "1005408"
-      },
-      "fieldSources": {
-        "discovery": "yunmanzhan",
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan",
-        "ticketStatus": "bilibili-membership",
-        "guests": "bilibili-membership"
-      },
-      "verificationLevel": "guest-verified",
-      "firstSeenAt": "2026-07-30T05:34:58+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
-    },
-    {
       "id": "bilibili-1005065",
       "name": "广播剧《澹酒煮茶》专场活动",
       "type": "漫展",
@@ -10215,8 +10257,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-30T16:16:42+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11826",
@@ -10694,8 +10736,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "bilibili-1004874",
@@ -10735,7 +10777,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-30T00:41:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-9752",
@@ -11087,7 +11129,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11931",
@@ -11373,8 +11415,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11919",
@@ -11657,7 +11699,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11831",
@@ -11820,8 +11862,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-30T16:16:42+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-10236",
@@ -12055,8 +12097,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11746",
@@ -12174,7 +12216,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12220",
@@ -13809,8 +13851,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11848",
@@ -14639,7 +14681,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11924",
@@ -14727,7 +14769,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11923",
@@ -15510,6 +15552,67 @@
       "lastSeenAt": "2026-09-02T06:49:16+08:00"
     },
     {
+      "id": "yunmanzhan-11751",
+      "name": "第30届IJOY漫展【奇响天外专场见面会：花玲&林簌】",
+      "type": "漫展",
+      "province": "北京",
+      "city": "北京",
+      "venue": "北京国家会议中心",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "price": "¥288",
+      "ticketStatus": "预售中",
+      "guestStatus": "announced",
+      "summary": "漫展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [
+        {
+          "name": "乔苏",
+          "role": "配音演员",
+          "date": "2026-10-02"
+        },
+        {
+          "name": "邱秋",
+          "role": "配音演员",
+          "date": "2026-10-02"
+        }
+      ],
+      "ticketSources": [
+        {
+          "platform": "次元黄页",
+          "url": "https://www.yunmanzhan.com/index.php?search=%E7%AC%AC30%E5%B1%8AIJOY%E5%8A%A8%E6%BC%AB%E6%B8%B8%E6%88%8F%E7%8B%82%E6%AC%A2%E8%8A%82",
+          "label": "查看发现记录",
+          "primary": false
+        },
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005408",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动与实名嘉宾条目来自 B站会员购公开详情接口；多日活动如未标注逐日出席，日期仍以主办方现场官宣为准。",
+      "sourceIds": [
+        "yunmanzhan",
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "yunmanzhan": "11751",
+        "bilibili": "1005408"
+      },
+      "fieldSources": {
+        "discovery": "yunmanzhan",
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "guest-verified",
+      "firstSeenAt": "2026-07-30T05:34:58+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
+    },
+    {
       "id": "bilibili-1005068",
       "name": "广播剧《神龛》专场活动",
       "type": "漫展",
@@ -15558,8 +15661,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-30T16:16:42+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12307",
@@ -15989,7 +16092,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11955",
@@ -16187,6 +16290,73 @@
       "lastSeenAt": "2026-09-02T06:49:16+08:00"
     },
     {
+      "id": "bilibili-1005698",
+      "name": "LoveLive！学园偶像纪3.0同人ONLY",
+      "type": "ONLY同人展",
+      "province": "广东",
+      "city": "广州",
+      "venue": "白云艺术广场",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "price": "¥98 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "announced",
+      "summary": "Only同人展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [
+        {
+          "name": "小圈甜甜",
+          "role": "Coser",
+          "date": "2026-10-02"
+        },
+        {
+          "name": "狐猫组",
+          "role": "参展嘉宾",
+          "date": "2026-10-02"
+        },
+        {
+          "name": "小塞壬kiki",
+          "role": "Coser",
+          "date": "2026-10-02"
+        },
+        {
+          "name": "忱宴",
+          "role": "唱见 / 歌手",
+          "date": "2026-10-02"
+        },
+        {
+          "name": "团唧唧",
+          "role": "唱见 / 歌手",
+          "date": "2026-10-02"
+        }
+      ],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005698",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动与实名嘉宾条目来自 B站会员购公开详情接口；多日活动如未标注逐日出席，日期仍以主办方现场官宣为准。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005698"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "guest-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
+    },
+    {
       "id": "yunmanzhan-11969",
       "name": "动漫嘉年华·光年3rd",
       "type": "综合漫展",
@@ -16371,8 +16541,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12221",
@@ -16574,8 +16744,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-30T16:16:42+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "bilibili-1005165",
@@ -16626,8 +16796,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-30T00:41:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12101",
@@ -16715,7 +16885,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12192",
@@ -16998,7 +17168,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12216",
@@ -17077,6 +17247,46 @@
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
       "lastSeenAt": "2026-09-02T06:49:16+08:00"
+    },
+    {
+      "id": "bilibili-1005654",
+      "name": "十一翼展国庆嘉年华2026",
+      "type": "漫展",
+      "province": "黑龙江",
+      "city": "齐齐哈尔",
+      "venue": "黑龙体育馆",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-03",
+      "price": "¥40 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "pending",
+      "summary": "漫展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005654",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005654"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "ticket-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11573",
@@ -17398,7 +17608,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10038",
@@ -17515,8 +17725,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11964",
@@ -18439,8 +18649,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11972",
@@ -18528,7 +18738,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11845",
@@ -18773,8 +18983,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11762",
@@ -18931,7 +19141,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-01T01:36:09+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11973",
@@ -19049,7 +19259,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005550",
@@ -19089,7 +19299,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12105",
@@ -19480,7 +19690,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-04T00:22:46+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005201",
@@ -19555,8 +19765,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11847",
@@ -19908,7 +20118,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T12:28:29+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12111",
@@ -20065,7 +20275,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12228",
@@ -20416,8 +20626,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12177",
@@ -21081,7 +21291,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12112",
@@ -21186,8 +21396,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-30T00:41:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "bilibili-1005256",
@@ -21227,7 +21437,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12297",
@@ -21393,7 +21603,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11764",
@@ -21472,7 +21682,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12287",
@@ -21521,7 +21731,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005391",
@@ -21587,8 +21797,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12253",
@@ -21751,8 +21961,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-09-04T00:22:46+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-11986",
@@ -21948,7 +22158,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-01T01:36:09+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12122",
@@ -22417,7 +22627,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11984",
@@ -22622,7 +22832,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12118",
@@ -22781,6 +22991,46 @@
       "lastSeenAt": "2026-09-02T06:49:16+08:00"
     },
     {
+      "id": "bilibili-1005633",
+      "name": "第十届DWJ国风动漫嘉年华",
+      "type": "漫展",
+      "province": "云南",
+      "city": "云南",
+      "venue": "苍山饭店",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "price": "¥50 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "pending",
+      "summary": "漫展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005633",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005633"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "ticket-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
+    },
+    {
       "id": "bilibili-1005479",
       "name": "东北BanG Dream!!同人Live Only",
       "type": "livehouse",
@@ -22818,7 +23068,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T00:36:36+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-11856",
@@ -23287,16 +23537,16 @@
         "yunmanzhan": "12276"
       },
       "fieldSources": {
-        "schedule": "yunmanzhan",
-        "venue": "yunmanzhan",
-        "price": "yunmanzhan",
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
         "ticketStatus": "bilibili-membership",
         "guests": "bilibili-membership",
         "discovery": "yunmanzhan"
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-9313",
@@ -23960,7 +24210,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12133",
@@ -24474,8 +24724,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12137",
@@ -24524,7 +24774,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12305",
@@ -24604,8 +24854,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12136",
@@ -25037,6 +25287,46 @@
       "lastSeenAt": "2026-09-02T06:49:16+08:00"
     },
     {
+      "id": "bilibili-1005700",
+      "name": "明日方舟同人only展4.0·同心颂诗",
+      "type": "ONLY同人展",
+      "province": "吉林",
+      "city": "长春",
+      "venue": "华天大酒店（长春店）",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "price": "¥60 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "pending",
+      "summary": "Only同人展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005700",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005700"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "ticket-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
+    },
+    {
       "id": "yunmanzhan-12301",
       "name": "10.17拾光序国乙only同人",
       "type": "IP ONLY",
@@ -25230,7 +25520,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-01T01:36:09+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12140",
@@ -25270,6 +25560,86 @@
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
       "lastSeenAt": "2026-09-02T06:49:16+08:00"
+    },
+    {
+      "id": "bilibili-1005675",
+      "name": "OO派对4.0三角洲行动同人ONLY：回来吧，村里发大红！OO派对4.0",
+      "type": "ONLY同人展",
+      "province": "上海",
+      "city": "上海",
+      "venue": "AMP美达商业广场",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "price": "¥98",
+      "ticketStatus": "预售中",
+      "guestStatus": "pending",
+      "summary": "Only同人展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005675",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005675"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "ticket-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
+    },
+    {
+      "id": "bilibili-1005663",
+      "name": "魔法少女的魔女审判同人ONLY",
+      "type": "ONLY同人展",
+      "province": "北京",
+      "city": "北京",
+      "venue": "北京大红门国际会展中心",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "price": "¥68 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "pending",
+      "summary": "Only同人展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005663",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005663"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "ticket-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12296",
@@ -25318,7 +25688,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12143",
@@ -25589,8 +25959,48 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-30T00:41:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
+    },
+    {
+      "id": "bilibili-1005638",
+      "name": "偶像x音企同人Only",
+      "type": "ONLY同人展",
+      "province": "江苏",
+      "city": "南京",
+      "venue": "南京奥体中心彩虹剧院",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "price": "¥68 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "pending",
+      "summary": "Only同人展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005638",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005638"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "ticket-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005477",
@@ -25630,7 +26040,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-01T19:35:38+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12141",
@@ -25679,7 +26089,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12144",
@@ -25845,7 +26255,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T04:28:13+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "bilibili-1005478",
@@ -25885,7 +26295,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12148",
@@ -25934,7 +26344,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-10663",
@@ -26412,7 +26822,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12259",
@@ -26610,6 +27020,58 @@
       "lastSeenAt": "2026-09-02T06:49:16+08:00"
     },
     {
+      "id": "bilibili-1005630",
+      "name": "第六届明日方舟同人Only·乌萨斯颂（明日方舟Only同人展会）",
+      "type": "ONLY同人展",
+      "province": "黑龙江",
+      "city": "哈尔滨",
+      "venue": "卓琳酒店",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "price": "¥68 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "announced",
+      "summary": "Only同人展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [
+        {
+          "name": "梓杰_似鸽大弧蝶",
+          "role": "参展嘉宾",
+          "date": "2026-11-01"
+        },
+        {
+          "name": "小鬼卡比",
+          "role": "作者",
+          "date": "2026-11-01"
+        }
+      ],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005630",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动与实名嘉宾条目来自 B站会员购公开详情接口；多日活动如未标注逐日出席，日期仍以主办方现场官宣为准。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005630"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "guest-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
+    },
+    {
       "id": "yunmanzhan-12149",
       "name": "浓情王者荣耀同人ONLY",
       "type": "IP ONLY",
@@ -26764,7 +27226,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-08-29T02:38:14+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12154",
@@ -26923,6 +27385,46 @@
       "lastSeenAt": "2026-09-02T06:49:16+08:00"
     },
     {
+      "id": "bilibili-1005617",
+      "name": "魔都第七届哈利波特Only同人展",
+      "type": "ONLY同人展",
+      "province": "上海",
+      "city": "上海",
+      "venue": "界龙总部园",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "price": "¥150 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "pending",
+      "summary": "Only同人展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005617",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005617"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "ticket-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
+    },
+    {
       "id": "yunmanzhan-12153",
       "name": "巢——Evalia 同人Only",
       "type": "IP ONLY",
@@ -26999,6 +27501,46 @@
       "verificationLevel": "discovery-only",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
       "lastSeenAt": "2026-09-02T06:49:16+08:00"
+    },
+    {
+      "id": "bilibili-1005632",
+      "name": "澜珊动漫展（于澜珊处·邂逅幻想）",
+      "type": "漫展",
+      "province": "陕西",
+      "city": "西安",
+      "venue": "西安老钢厂设计创意产业园",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "price": "¥45 起",
+      "ticketStatus": "预售中",
+      "guestStatus": "pending",
+      "summary": "漫展；活动、票务与场馆来自 B站会员购公开列表。",
+      "guests": [],
+      "ticketSources": [
+        {
+          "platform": "B站会员购",
+          "url": "https://show.bilibili.com/platform/detail.html?id=1005632",
+          "label": "查看官方票务与嘉宾",
+          "primary": true
+        }
+      ],
+      "verification": "活动日期、场馆、票价和售票状态来自 B站会员购公开列表；嘉宾只在详情接口返回实名条目后展示。",
+      "sourceIds": [
+        "bilibili-membership"
+      ],
+      "externalIds": {
+        "bilibili": "1005632"
+      },
+      "fieldSources": {
+        "schedule": "bilibili-membership",
+        "venue": "bilibili-membership",
+        "price": "bilibili-membership",
+        "ticketStatus": "bilibili-membership",
+        "guests": "bilibili-membership"
+      },
+      "verificationLevel": "ticket-verified",
+      "firstSeenAt": "2026-09-05T18:31:03+08:00",
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12152",
@@ -27097,8 +27639,8 @@
       },
       "verificationLevel": "guest-verified",
       "firstSeenAt": "2026-08-28T12:28:15+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00",
-      "guestUpdatedAt": "2026-09-04"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00",
+      "guestUpdatedAt": "2026-09-05"
     },
     {
       "id": "yunmanzhan-12158",
@@ -27177,7 +27719,7 @@
       },
       "verificationLevel": "ticket-verified",
       "firstSeenAt": "2026-09-02T04:59:41+08:00",
-      "lastSeenAt": "2026-09-04T00:22:46+08:00"
+      "lastSeenAt": "2026-09-05T18:31:03+08:00"
     },
     {
       "id": "yunmanzhan-12236",
@@ -27808,16 +28350,16 @@
     {
       "sourceId": "bilibili-membership",
       "status": "healthy",
-      "checkedAt": "2026-09-04T00:22:46+08:00",
+      "checkedAt": "2026-09-05T18:31:03+08:00",
       "itemCount": 28,
-      "detailChecks": 107,
+      "detailChecks": 122,
       "detailFailures": 0,
       "note": "公开列表接口正常；正在复核有嘉宾标记的详情页。"
     },
     {
       "sourceId": "yunmanzhan",
       "status": "healthy",
-      "checkedAt": "2026-09-04T00:22:46+08:00",
+      "checkedAt": "2026-09-05T18:31:03+08:00",
       "itemCount": 193,
       "pagesChecked": 4,
       "coverageMode": "quick",
@@ -27826,19 +28368,197 @@
     {
       "sourceId": "damai",
       "status": "manual-review",
-      "checkedAt": "2026-09-04T00:22:46+08:00",
+      "checkedAt": "2026-09-05T18:31:03+08:00",
       "itemCount": 0,
       "note": "公开搜索页动态化且无稳定匿名接口；仅作为大型活动票务复核源，不自动推断嘉宾。"
     },
     {
       "sourceId": "organizer",
       "status": "manual-review",
-      "checkedAt": "2026-09-04T00:22:46+08:00",
+      "checkedAt": "2026-09-05T18:31:03+08:00",
       "itemCount": 0,
       "note": "逐日出席、签售和临时变更仍以主办方官宣人工复核。"
     }
   ],
   "changes": [
+    {
+      "id": "2f6202b1c2ea",
+      "type": "event_added",
+      "eventId": "bilibili-1005736",
+      "eventName": "鸣潮only中秋追月节同人展",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：成都 · 鸣潮only中秋追月节同人展",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "1be6ad784125",
+      "type": "event_added",
+      "eventId": "bilibili-1005705",
+      "eventName": "52HZ中秋特别篇",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：呼和浩特 · 52HZ中秋特别篇",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "f8a0d2558968",
+      "type": "event_added",
+      "eventId": "bilibili-1005639",
+      "eventName": "YC织云次元动漫嘉年华",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：宜春 · YC织云次元动漫嘉年华",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "133fca607d4d",
+      "type": "event_added",
+      "eventId": "bilibili-1005695",
+      "eventName": "世界计划同人ONLY展（茶话会）",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：包头 · 世界计划同人ONLY展（茶话会）",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "6c70f49cf6e6",
+      "type": "schedule_changed",
+      "eventId": "yunmanzhan-11751",
+      "eventName": "第30届IJOY漫展【奇响天外专场见面会：花玲&林簌】",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "日期变更：2026-10-01—2026-10-03 → 2026-10-02—2026-10-02",
+      "sourceIds": [
+        "yunmanzhan",
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "2abb97c32490",
+      "type": "ticket_status_changed",
+      "eventId": "yunmanzhan-11751",
+      "eventName": "第30届IJOY漫展【奇响天外专场见面会：花玲&林簌】",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "票务状态：待票务复核 → 预售中",
+      "sourceIds": [
+        "yunmanzhan",
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "c1adfd9e245f",
+      "type": "event_added",
+      "eventId": "bilibili-1005698",
+      "eventName": "LoveLive！学园偶像纪3.0同人ONLY",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：广州 · LoveLive！学园偶像纪3.0同人ONLY",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "38131f12d986",
+      "type": "event_added",
+      "eventId": "bilibili-1005654",
+      "eventName": "十一翼展国庆嘉年华2026",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：齐齐哈尔 · 十一翼展国庆嘉年华2026",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "38d8d7935be0",
+      "type": "event_added",
+      "eventId": "bilibili-1005633",
+      "eventName": "第十届DWJ国风动漫嘉年华",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：云南 · 第十届DWJ国风动漫嘉年华",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "d37012813452",
+      "type": "event_added",
+      "eventId": "bilibili-1005700",
+      "eventName": "明日方舟同人only展4.0·同心颂诗",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：长春 · 明日方舟同人only展4.0·同心颂诗",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "ed75c54a97d1",
+      "type": "event_added",
+      "eventId": "bilibili-1005675",
+      "eventName": "OO派对4.0三角洲行动同人ONLY：回来吧，村里发大红！OO派对4.0",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：上海 · OO派对4.0三角洲行动同人ONLY：回来吧，村里发大红！OO派对4.0",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "85a045a36e61",
+      "type": "event_added",
+      "eventId": "bilibili-1005663",
+      "eventName": "魔法少女的魔女审判同人ONLY",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：北京 · 魔法少女的魔女审判同人ONLY",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "50f7a757ffb7",
+      "type": "event_added",
+      "eventId": "bilibili-1005638",
+      "eventName": "偶像x音企同人Only",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：南京 · 偶像x音企同人Only",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "42ac3b7b3958",
+      "type": "event_added",
+      "eventId": "bilibili-1005630",
+      "eventName": "第六届明日方舟同人Only·乌萨斯颂（明日方舟Only同人展会）",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：哈尔滨 · 第六届明日方舟同人Only·乌萨斯颂（明日方舟Only同人展会）",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "d7344dbde69e",
+      "type": "event_added",
+      "eventId": "bilibili-1005617",
+      "eventName": "魔都第七届哈利波特Only同人展",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：上海 · 魔都第七届哈利波特Only同人展",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
+    {
+      "id": "968ee0924370",
+      "type": "event_added",
+      "eventId": "bilibili-1005632",
+      "eventName": "澜珊动漫展（于澜珊处·邂逅幻想）",
+      "at": "2026-09-05T18:31:03+08:00",
+      "summary": "新增收录：西安 · 澜珊动漫展（于澜珊处·邂逅幻想）",
+      "sourceIds": [
+        "bilibili-membership"
+      ]
+    },
     {
       "id": "a29c9ded2629",
       "type": "event_added",
@@ -29010,202 +29730,13 @@
         "yunmanzhan",
         "bilibili-membership"
       ]
-    },
-    {
-      "id": "05f73c8cd418",
-      "type": "guest_added",
-      "eventId": "yunmanzhan-12308",
-      "eventName": "阿特拉斯同人ONLY展",
-      "at": "2026-09-01T01:36:09+08:00",
-      "summary": "新增嘉宾：幻乐怪盗团PCL",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "f6bd21f73616",
-      "type": "guest_added",
-      "eventId": "yunmanzhan-12308",
-      "eventName": "阿特拉斯同人ONLY展",
-      "at": "2026-09-01T01:36:09+08:00",
-      "summary": "新增嘉宾：阿盐是只喵",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "b5f7b22b868a",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-12308",
-      "eventName": "阿特拉斯同人ONLY展",
-      "at": "2026-09-01T01:36:09+08:00",
-      "summary": "票务状态：待票务复核 → 预售中",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "008efaa819d0",
-      "type": "venue_changed",
-      "eventId": "bilibili-1005220",
-      "eventName": "深圳.泳池派对x韭菜动漫节",
-      "at": "2026-08-31T16:36:42+08:00",
-      "summary": "场馆变更：桂芳园8期 → 星都豪庭小区游泳池",
-      "sourceIds": [
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "3c0505747b41",
-      "type": "guest_added",
-      "eventId": "yunmanzhan-11879",
-      "eventName": "首届第五人格only同人展【北极星&繁星动漫计划】",
-      "at": "2026-08-31T16:36:42+08:00",
-      "summary": "新增嘉宾：柳绾",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "33b4a5b7abc0",
-      "type": "schedule_changed",
-      "eventId": "yunmanzhan-11751",
-      "eventName": "第30届IJOY漫展【有声剧《玉中遇》专场见面会】",
-      "at": "2026-08-31T16:36:42+08:00",
-      "summary": "日期变更：2026-10-01—2026-10-03 → 2026-10-02—2026-10-02",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "3b4736537be5",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11751",
-      "eventName": "第30届IJOY漫展【有声剧《玉中遇》专场见面会】",
-      "at": "2026-08-31T16:36:42+08:00",
-      "summary": "票务状态：待票务复核 → 预售中",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "2905f5a0c6b3",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11748",
-      "eventName": "第十届ACG动漫游戏博览会",
-      "at": "2026-08-31T08:35:27+08:00",
-      "summary": "票务状态：已取消 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan"
-      ]
-    },
-    {
-      "id": "d38800f055df",
-      "type": "schedule_changed",
-      "eventId": "yunmanzhan-11751",
-      "eventName": "第30届IJOY动漫游戏狂欢节",
-      "at": "2026-08-31T06:55:30+08:00",
-      "summary": "日期变更：2026-10-02—2026-10-02 → 2026-10-01—2026-10-03",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "7e2c10baf4fe",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11751",
-      "eventName": "第30届IJOY动漫游戏狂欢节",
-      "at": "2026-08-31T06:55:30+08:00",
-      "summary": "票务状态：预售中 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "90e813bdbfc4",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11931",
-      "eventName": "第三届IAGF国际动漫周边展",
-      "at": "2026-08-31T06:55:30+08:00",
-      "summary": "票务状态：预售中 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "2fee98393aed",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11748",
-      "eventName": "第十届ACG动漫游戏博览会（取消）",
-      "at": "2026-08-31T06:55:30+08:00",
-      "summary": "票务状态：待票务复核 → 已取消",
-      "sourceIds": [
-        "yunmanzhan"
-      ]
-    },
-    {
-      "id": "644e5b87c595",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11930",
-      "eventName": "第57届A卡动漫节",
-      "at": "2026-08-31T06:55:30+08:00",
-      "summary": "票务状态：预售中 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "7f544b0437fe",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-11962",
-      "eventName": "I COME ACG动漫品牌博览会",
-      "at": "2026-08-31T06:55:30+08:00",
-      "summary": "票务状态：预售中 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "eeb4aaf52b07",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-12176",
-      "eventName": "ComicLove动漫嘉年华-CL34",
-      "at": "2026-08-31T06:55:30+08:00",
-      "summary": "票务状态：预售中 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
-    },
-    {
-      "id": "48759ae23fc3",
-      "type": "ticket_status_changed",
-      "eventId": "yunmanzhan-12126",
-      "eventName": "世界计划同人only 4th",
-      "at": "2026-08-31T06:55:30+08:00",
-      "summary": "票务状态：预售中 → 待票务复核",
-      "sourceIds": [
-        "yunmanzhan",
-        "bilibili-membership"
-      ]
     }
   ],
   "stats": {
-    "eventCount": 661,
-    "guestVerifiedEvents": 43,
-    "guestCount": 247,
-    "discoveryOnlyEvents": 554,
-    "generatedAt": "2026-09-04T00:22:46+08:00"
+    "eventCount": 673,
+    "guestVerifiedEvents": 46,
+    "guestCount": 253,
+    "discoveryOnlyEvents": 552,
+    "generatedAt": "2026-09-05T18:31:03+08:00"
   }
 }
