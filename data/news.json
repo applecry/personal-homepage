@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-10T11:20:51.037Z",
-  "checkedAt": "2026-09-10T11:20:51.037Z",
-  "contentUpdatedAt": "2026-09-10T11:20:51.037Z",
+  "generatedAt": "2026-09-11T04:41:46.037Z",
+  "checkedAt": "2026-09-11T04:41:46.037Z",
+  "contentUpdatedAt": "2026-09-11T04:41:46.037Z",
   "source": "Google News RSS + WIRED AI RSS + Le Monde AI RSS（Bing 仅作可用性探测）",
   "status": {
     "contentChanged": true,
@@ -16,11 +16,24 @@
       "description": "模型、产品、监管与资本动向",
       "items": [
         {
-          "title": "卡森伯格联手前OpenAI Sora负责人，创立全新AI视频初创企业",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNc0hkVFlNTk9aRTUxdy1KN2JtMmRVbUl2TzBBLThlbmUzRXlVeW04NHRTVF9JUnE3enRsV0FpeW9rdWlsaXpFVGd3OG9kaE1MSWZrNjJUQjhqMUgxZ1VMTjJ5M3hGMTlFQWdvQ0hybmZaaENQalFXT2ZVMVdNRjFEd01ka1ZWemM?oc=5",
+          "title": "大连通维人工智能：推动大模型能力进入企业真实业务场景",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdjh4S3NTOE5LTmw4ZWhIRllyWUdJYkN4dEhBX05oVmFGcnRpNFRreFZ0Umx1T2t4WWJBV0xfbmJhVHhzSThyWm9aa2xpWFBNT2JuaXhZQ19mTS1jTkJZVVdmZ0swWWdBRG04QXhkdTFjYnRBVU5vTm4zSUdWZ2tmc2FvRy1KMDRDVXhSd1Bxaw?oc=5",
           "source": "新浪网",
           "domain": "新浪网",
-          "publishedAt": "2026-09-10T10:26:00.000Z",
+          "publishedAt": "2026-09-11T03:40:57.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "人工智能",
+            "大模型"
+          ]
+        },
+        {
+          "title": "OpenAI把「末日论者」请进董事会，刚上任就开炮：AI可能杀死多数人",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5VT3JDcXg5Yk81VDNMUE5GaFhFem1GSnZBa2pUS19kUi0zZHMxa1BvbzExbW5XQnBDN2VjZmlrdDctd094d1JYMWR2Zw?oc=5",
+          "source": "me.news",
+          "domain": "me.news",
+          "publishedAt": "2026-09-11T03:33:56.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -29,35 +42,37 @@
           ]
         },
         {
-          "title": "'Public opinion is ahead of the media discourse on AI'",
-          "url": "https://www.lemonde.fr/en/opinion/article/2026/09/10/public-opinion-is-ahead-of-the-media-discourse-on-ai_6757377_23.html",
+          "title": "从英伟达CUDA到办公AI：大厂转场新赛道，如何构建自身护城河？",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9iSzFVQzFnbTNOZER0V0hsS1V2ZHlJbDN0WFZiMkFWcjlFeERwUEo0a3J1YTc1ZC1sbmd0SlNBSi16RDJ5WktIQVRORXgzOFREWGxKTUtzc2JKUHA1d0YxSy14bUZ3RkNEcTE4?oc=5",
+          "source": "blog.csdn.net",
+          "domain": "blog.csdn.net",
+          "publishedAt": "2026-09-11T04:03:43.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "title": "Anthropic says it blocked misuse of its AI that could have supported biological weapons",
+          "url": "https://www.lemonde.fr/en/international/article/2026/09/11/anthropic-says-it-blocked-misuse-of-its-ai-that-could-have-supported-biological-weapons_6757403_4.html",
           "source": "Le Monde",
           "domain": "Le Monde",
-          "publishedAt": "2026-09-10T10:45:11.000Z",
+          "publishedAt": "2026-09-11T02:41:58.000Z",
           "summary": "",
           "reason": "",
           "tags": [
-            "AI"
+            "Anthropic",
+            "AI",
+            "model"
           ]
         },
         {
-          "title": "为何Anthropic研究员“终结者式”风险警告引发轩然大波",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNckFmdlBUb3p4MUplRTZDUVBKQldyM0x6TmlFLUdtU1BRTW42VjVKSzlTa3UtTkNIZ3l5TjlmZ0MtTEVsY2YwNU1UbU9fR1BQRDJMRHlvSjRuYzk2WGRqX2dSbm5RWHdZNmVpMng5RTNaZ1dUazBlZ0VCXzBmZXlocmpXOUs0U05DVkE?oc=5",
-          "source": "新浪网",
-          "domain": "新浪网",
-          "publishedAt": "2026-09-10T10:41:35.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "Anthropic"
-          ]
-        },
-        {
-          "title": "OpenAI宣布破解千禧年难题！人类逾90年无解 AI仅用88小时攻克？",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE02dFo4VHFDd1FGUEFpVmtWRHhSV0RMOVdvZDV1eUl1UFZyM2RWRkRWaERKQmJXTWxwdjB5dE5QQ2x0SFpTazBicA?oc=5",
-          "source": "财联社",
-          "domain": "财联社",
-          "publishedAt": "2026-09-10T09:41:16.000Z",
+          "title": "OpenAI将为美国政府机构提供AI模型五折优惠，终止每年1美元试点项目新折扣政策扩大覆盖范围",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SbHl0alA1Zlo4UzJmUkR2cXdsNGxhdUZaRG0wWDB2a2Q1OEtrbFliZTNRRDVaQXc0RW90UHJ0eDFYQ0w5dVF3bFNfU05ib0k5eDJlTGdfdDNsb2VyTG9BR0dfM2ZlM01rQkdfN0ZfWnI?oc=5",
+          "source": "中华网",
+          "domain": "中华网",
+          "publishedAt": "2026-09-11T02:22:43.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -66,41 +81,28 @@
           ]
         },
         {
-          "title": "Everything New You Can Do With Siri AI",
-          "url": "https://www.wired.com/story/everything-new-you-can-do-with-siri-ai/",
-          "source": "WIRED",
-          "domain": "WIRED",
-          "publishedAt": "2026-09-10T10:30:00.000Z",
+          "title": "言论惊人！“AI杀死人类”警告，惊动华盛顿政坛",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNOGkzVGtpWFhYN0pGQ1M5bE9wS3BjQVNBX3hMVmZhN0NOWU9mZFRMbTRmX2xOLVFmYlRqM25zekZUbWF2dHlHNXhXdzBGVHhhczU0QW1tX2NncDZSZ0xOYmJSNlBYSlRaS3FRNkNpUWZiTjV1VVNaeWdtRVdFZkVvME9YUQ?oc=5",
+          "source": "finance.sina.cn",
+          "domain": "finance.sina.cn",
+          "publishedAt": "2026-09-11T02:16:33.000Z",
           "summary": "",
           "reason": "",
           "tags": [
             "AI"
-          ]
-        },
-        {
-          "title": "Clearview AI Is Testing an AI Tool That Would Let Cops Unearth Your Life Online",
-          "url": "https://www.wired.com/story/clearview-ai-is-testing-an-ai-tool-that-lets-cops-instantly-unearth-your-online-activity/",
-          "source": "WIRED",
-          "domain": "WIRED",
-          "publishedAt": "2026-09-10T10:00:00.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "AI",
-            "model"
           ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-09-10T11:20:46.047Z",
-      "lastSuccessfulAt": "2026-09-10T11:20:46.047Z",
-      "latestPublishedAt": "2026-09-10T10:45:11.000Z",
+      "attemptedAt": "2026-09-11T04:41:40.713Z",
+      "lastSuccessfulAt": "2026-09-11T04:41:40.713Z",
+      "latestPublishedAt": "2026-09-11T04:03:43.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 47
+          "itemCount": 45
         },
         {
           "provider": "bing-1",
@@ -111,7 +113,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 3
+          "itemCount": 2
         },
         {
           "provider": "bing-2",
@@ -122,7 +124,7 @@
         {
           "provider": "google-3",
           "ok": true,
-          "itemCount": 33
+          "itemCount": 34
         },
         {
           "provider": "bing-3",
@@ -148,11 +150,11 @@
       "description": "美股指数、科技股、财报与宏观信号",
       "items": [
         {
-          "title": "期权扫描| Meta发布AI Agent！多张CALL单劲升逾500%；苹果折叠屏亮相！期权成交环比爆量近3倍港美股资讯",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9vWTJacTlMUnJBODU0LWpTS0pLT2tuWm51bkxDV2RyOC1yTWhYWklNdUFkcXd3R3IxUXBJSERqbndSdUxxclBSbmxpajVYbXZoQmNaNE1POWtrczVEUFRxVmtR?oc=5",
-          "source": "hstong.com",
-          "domain": "hstong.com",
-          "publishedAt": "2026-09-10T09:57:00.000Z",
+          "title": "美股3大指数4连跌 半导体股领跌市场",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Fcll6VWs3Rm1PbndYanNwMk5fQzFBMXBmRUxtSjY3R0ItYlZSNUJkczQtcWhtUzRQcnI2Wm1fYUVmNUhqWExCUWdkOXVtLS0zNmdqbERZbVpZYjhTbWVDcXFIUnBNUFhrTGRnaUdhU1M?oc=5",
+          "source": "中华网",
+          "domain": "中华网",
+          "publishedAt": "2026-09-11T04:21:04.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -160,23 +162,11 @@
           ]
         },
         {
-          "title": "纳斯达克综合指数(.IXIC)实时行情, 股票股价, 今日最新指数, 走势图",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBDTklOaDhUY0pMVlFwa1ZPcGd1RnVJQjlrSUJVT2Nka1BsZksyQ1lNeFpuS25rd0VmeHVsUVlkTHVjN2ZILVZHUnRWc3VWOWJVMUtHbQ?oc=5",
-          "source": "Moomoo",
-          "domain": "Moomoo",
-          "publishedAt": "2026-09-10T09:14:26.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "纳斯达克"
-          ]
-        },
-        {
-          "title": "美股三大指数延续跌势；脸书涨超6%，领涨大型科技股；费城半导体指数继续上涨，迈威尔涨超4%；存储板块涨势突出，SK海力士涨逾7%",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5zNlcyak4wUlNoUnRkY0tkdjF1LW9LREEzZXJGcElNMDhpVWF6SWZVYjkxQ3Z4aGFBd2pvdWhMb1EyODFhTFNNM1hlV0dwWi1hSWtlWlF3T0ZETDRfTUM0cXd5WFo2dw?oc=5",
-          "source": "东方财富",
-          "domain": "东方财富",
-          "publishedAt": "2026-09-10T02:47:36.000Z",
+          "title": "Bitget UEX 日报｜油价破百，美股四连跌；甲骨文云基建收入增121%；苹果逆市涨3.56%",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBoei1aNVQxbGpCYkFfLUd6dElJMVhLMURjODI4Zko5YW9FV0lQcDN2RjUxUmRJci1hNWduSEFPNTQ1dGN0N19ENi1GTkhnZjlidGNaTA?oc=5",
+          "source": "深潮TechFlow",
+          "domain": "深潮TechFlow",
+          "publishedAt": "2026-09-11T03:01:04.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -184,11 +174,11 @@
           ]
         },
         {
-          "title": "美股收盘行情：道指跌400点，SK海力士创新高，资金流向哪?",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1hRTJXQU0tV19WYXctZnRKTDV4LXF0OGNnUVVYaEdGRlVVOE1Zam9oN1JwVVM4dHBMX0pqVk1fLU9teFlKN1VFWE5rOFVPRnFkM1NyVU5FYmQ?oc=5",
-          "source": "EBC Financial Group",
-          "domain": "EBC Financial Group",
-          "publishedAt": "2026-09-10T01:49:00.000Z",
+          "title": "美股芯片股重挫，英特尔大跌6%，SK海力士跌超5% 存储概念领跌",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1wNGRUU3FSTVJtd25FVEpwYVExV2hxTnBNbEFoQVhUQlB4UjB5dFZaWlEwQmsxTTQ5eUpBQ0phYkY0ZEdtZzV1WTYzSXhPNGM4WV9NWDM5alBzTXhyV0RVc3pfTGJ4bXRBQVBvQ2dwNm0?oc=5",
+          "source": "中华网",
+          "domain": "中华网",
+          "publishedAt": "2026-09-11T01:00:03.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -196,23 +186,35 @@
           ]
         },
         {
-          "title": "纳斯达克100指数 (.NDX)讨论区- 股票评论- 股吧交流社区",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE41UWdiRVc1QXVwc2JHZ3ZyVXFQZGVMOE5LVVpTeTY5V0UycW1FdFowOWZkS01LcFdIMG50Vk1VQ0o1UkRoMzhQOHU3bTFzUERFVng0NjdiV0NRVm5PazRSTQ?oc=5",
-          "source": "Moomoo",
-          "domain": "Moomoo",
-          "publishedAt": "2026-09-10T01:41:05.000Z",
+          "title": "“黑色星期五”只是前奏？高盛、巴克莱齐警告：美股急跌风险仍存！",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5wS3U3cmw5ZENpNWdsYUhpd2xGbDlXR1FNelJEZnY3dmt2N2xkQktwelRCZFBVdzlfZk1lX2QzNDVYVlZfY2lhcA?oc=5",
+          "source": "财联社",
+          "domain": "财联社",
+          "publishedAt": "2026-09-11T00:59:52.000Z",
           "summary": "",
           "reason": "",
           "tags": [
-            "纳斯达克"
+            "美股"
           ]
         },
         {
-          "title": "美股三大指数集体走低，道指重挫400点，存储、光通信板块逆势走高，SK海力士涨7%创新高，迈威尔科技涨4.26%",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBHMXF1QVMwQUhFN0JPNHdZay1wN3huMWhqNDl1WjZoZ0FseFJXbmlHWlZvN3F4azFrcGpwTVdJeS02ajYyemVVOUF5Rk9OR0VVeGVZ?oc=5",
-          "source": "FX168财经",
-          "domain": "FX168财经",
-          "publishedAt": "2026-09-10T00:41:02.000Z",
+          "title": "美股三大指数四连跌，国际油价暴涨！美债收益率持续攀升，加息预期继续升温",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9yLXJXdE9fbWlUeEJDYXBfeTZodmNDUHV6Mmx0VmpYd0pTX19kbEtxZ1U1emZuNjlPUXhUSWRXS3FHaHlrdllPVDFiRVA5aFZLVmYxOS1B?oc=5",
+          "source": "国际金融报",
+          "domain": "国际金融报",
+          "publishedAt": "2026-09-11T00:56:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "美股"
+          ]
+        },
+        {
+          "title": "美股三大指数四连跌：芯片股集体走弱，国际油价持续拉升",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBOdS1mQURad1dxUEdoS1doa0lNM1AtNG9UeExsWk1rZldWd28yRFA5OF85cnJxeUNObGVuS0doVS1tWDRPbVZWWF85dlk1ZFhz?oc=5",
+          "source": "海报新闻",
+          "domain": "海报新闻",
+          "publishedAt": "2026-09-11T00:32:00.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -221,15 +223,15 @@
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-09-10T11:20:47.878Z",
-      "lastSuccessfulAt": "2026-09-10T11:20:47.878Z",
-      "latestPublishedAt": "2026-09-10T09:57:00.000Z",
+      "attemptedAt": "2026-09-11T04:41:42.772Z",
+      "lastSuccessfulAt": "2026-09-11T04:41:42.772Z",
+      "latestPublishedAt": "2026-09-11T04:21:04.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 28
+          "itemCount": 34
         },
         {
           "provider": "bing-1",
@@ -240,7 +242,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 23
+          "itemCount": 22
         },
         {
           "provider": "bing-2",
@@ -256,89 +258,88 @@
       "description": "A股市场、政策、行业板块与资金面",
       "items": [
         {
-          "title": "沪指连涨三天，A股在悄悄变盘？",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1xNjJJQUVHbnZIYkRldXNFVUVjbkF3OGNxZFlLWks1QTEwOGYxRV83aGRmUDNHbUlabGQtWS16NHNHRDBBN0VJRjdFSHZ0c3J0VkpudnZmM0ZvLWlNU0RmR1JNTE9IMllFcU5qUmFUZi00dw?oc=5",
-          "source": "新浪网",
-          "domain": "新浪网",
-          "publishedAt": "2026-09-10T10:01:13.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "A股三大股指集体下跌，成交额不足1.7万亿，银行、电力逆势走强，存储芯片活跃，恒科指跌超2%，智谱大跌10%",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE05MElxNGg1NWxqanVBeU1xMk56LWx0VVZUdGVmWEhTOTNRNlVYMW1SczNQNXVQNUp1bjZ1SmVOb2xSQVhxbDJTdi00bEY0c25zb0xN?oc=5",
-          "source": "华尔街见闻",
-          "domain": "华尔街见闻",
-          "publishedAt": "2026-09-10T08:56:18.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "明天，长鑫科技上市！下周还有这些大事，A股要选择方向了？",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5iS3VDdHVjbUlMSUVoY254aUt2NTd2bmN5djY3Q21neDVPMHpqUjJnMjVxOE1pYlA1WWRRb2xCWm11LV9KTzdFMkI4dUZ1X2g0UFdGcXZPQXN1V0YtY2Z1UVRqMlhpMFlqRTI4LWV6ZV9OQQ?oc=5",
-          "source": "新浪网",
-          "domain": "新浪网",
-          "publishedAt": "2026-09-10T08:46:00.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "A股午评：创业板指冲高回落跌0.15%，元件、银行、燃气板块涨幅居前",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE53ekc5UVMyLWR5T0hmMnJBeU5qTmI0UzhEX1R6LTRqeFJuNHpfQ3B3Ykhxd2ZhZjNwd1VBdEliT3U3M1VNN2R5QnJKWVBHZjBLVVBsdXhReTdjMUZmbXc?oc=5",
-          "source": "同花顺财经",
-          "domain": "同花顺财经",
-          "publishedAt": "2026-09-10T03:35:20.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "A股",
-            "创业板"
-          ]
-        },
-        {
-          "title": "创业板综ETF博时 (159287): 关于博时基金管理有限公司旗下部分基金新增首创证券为申购、赎回代办券商",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1lYlZOZ1dOMk9RUk9jVFVHLUQ2d2czVVAtR3IzNmRpdHBIbk82bGk1bWFzMDNSdXFZYXdtYm8teVFPVFFPVV9QdXJyYVVaSTB3?oc=5",
-          "source": "中财网",
-          "domain": "中财网",
-          "publishedAt": "2026-09-10T04:01:37.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "创业板"
-          ]
-        },
-        {
-          "title": "创业板新能源ETF天弘（159190）跌0.50%，半日成交额104.37万元",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTUZZWHc2RXQ3ZTF0SE8yV1MzcElQRGFrU01RR3cwLVFWNVdENlRTVmhCeEd1OTJPYjAwdVIzTUZZUm9IUkx4ZXlKXzl0TnRqdW5zd0licHZfODBBZ1hMUTRCMTZfbkRlcnNvbks2VnFqREpveXYwSFhjdDFBTFU0MnoyWFlxRkJzV1FxbkgyZ3lLVHlET1FJWg?oc=5",
+          "title": "创业板新能源ETF华泰柏瑞（159069）跌2.92%，半日成交额811.42万元",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUmNlLXB1RTh5cUg2NWJNc2pSMHltTTJrMzN6Mjl6SWdPZUVnNGZvdUFIbFpHMERuZ1czdmQzUEt1SUIyZWt2ZEJ1T1JUdzJ3VzZOcUpXQWI4SEYxaTkxYS04dXlNZ3JtOTNCQkxROXpUOFlYRUVBWW81MkJjNWwyZzRrUHlCVnJjblRqZEY4T25temNPa1E0Rg?oc=5",
           "source": "新浪财经",
           "domain": "新浪财经",
-          "publishedAt": "2026-09-10T03:36:00.000Z",
+          "publishedAt": "2026-09-11T03:36:00.000Z",
           "summary": "",
           "reason": "",
           "tags": [
             "创业板"
+          ]
+        },
+        {
+          "title": "创业板新能源ETF华夏（159368）跌3.35%，半日成交额1.11亿元",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbkRtalcwQTdYbnNmcDE4Wk1wZjlCQmFSUmtFSXczXzV1N2M3YUthQWFoQjU4MWpBaWVPczdxUFZBeUw4VXU2aGljb1pqT0lqT3huYmp3ZXBpQWF3NnRXRWQ1bk0yR1UwbnFLMXNTZXlGdFhDSGY4UUpzc2c3aHFCLUt2amdZVFlPWXdHcWFkekdZbl9NQ1VpMQ?oc=5",
+          "source": "新浪财经",
+          "domain": "新浪财经",
+          "publishedAt": "2026-09-11T03:35:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "创业板"
+          ]
+        },
+        {
+          "title": "A股早报：美债收益率上行，A股能否守住震荡底盘",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE92TmdmbndtUjJDd0t0Wk1pa2lWRUdQRVdDRHQ2NXRMMlhnZzViMXVyR2VvY2hDd0U0UjltZUxJYWV6cXd3MWlESFA2cnpJdk02ODBpdmYtMDZneVFQWlB0QXFLUl9wMGdlVW1ueUhLQ01WUQ?oc=5",
+          "source": "新浪网",
+          "domain": "新浪网",
+          "publishedAt": "2026-09-11T03:15:39.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "A股"
+          ]
+        },
+        {
+          "title": "大 A 股调整及市场信心评论|大 a 股|上证指数_新浪新闻",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoRnhBY2x6TXBrQkRoYzhrSldhZ0hlanh6VUlDeE1ibkdJUU91LUNzUVMyUDVLYlA3ajZHSk1SdG9vWFhIeWtDclZLSjBJRnpMM0hCcElaTlJTdGdER05jUkJPRQ?oc=5",
+          "source": "新浪网",
+          "domain": "新浪网",
+          "publishedAt": "2026-09-11T02:23:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "上证"
+          ]
+        },
+        {
+          "title": "9月11日投资早报|燧原科技今日登陆科创板，保利发展8月签约金额150.13亿元同比减少16.67%，久量股份拟收购海帝新能源不低于51%股权",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1HTWdBb2xMcFRhODN6ZTIxd21uSDJwQVFOX1daOEhrQXlncThYYkVFTXBtMk5XNXJMLXJBSlYxcWhLUlRjLUxGM3VVc3hFdGc1b3FBc19XZmQ?oc=5",
+          "source": "jiemian.com",
+          "domain": "jiemian.com",
+          "publishedAt": "2026-09-11T00:44:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "A股"
+          ]
+        },
+        {
+          "title": "成交额创年内次新低 A股短期将维持震荡磨底行情",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObUVISzRrUnZDQnk5OGEwM083akY5U3BqWUFxRF9EdUxfSFNXX3lVdzZGUGNhcEs1aDdvMmFDVEMyc1VDYmRmQUhRR1h1OU9RdnJuR3lCU2p0c21NNk5XV1drcTRFX3ZZUDdZUU16aUdVdDE0Ry1OZkp1emhHT0ZfT1pyTjR1ZE9TN21kY0FEM0U4MzdrZ0RLdQ?oc=5",
+          "source": "finance.sina.cn",
+          "domain": "finance.sina.cn",
+          "publishedAt": "2026-09-10T23:31:13.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "A股"
           ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-09-10T11:20:49.424Z",
-      "lastSuccessfulAt": "2026-09-10T11:20:49.424Z",
-      "latestPublishedAt": "2026-09-10T10:01:13.000Z",
-      "liveItemCount": 5,
+      "attemptedAt": "2026-09-11T04:41:44.382Z",
+      "lastSuccessfulAt": "2026-09-11T04:41:44.382Z",
+      "latestPublishedAt": "2026-09-11T03:36:00.000Z",
+      "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 43
+          "itemCount": 42
         },
         {
           "provider": "bing-1",
@@ -349,7 +350,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 42
+          "itemCount": 44
         },
         {
           "provider": "bing-2",
@@ -361,6 +362,363 @@
     }
   ],
   "history": [
+    {
+      "date": "2026-09-11",
+      "checkedAt": "2026-09-11T04:41:46.037Z",
+      "contentUpdatedAt": "2026-09-11T04:41:46.037Z",
+      "topics": [
+        {
+          "id": "ai",
+          "label": "AI",
+          "description": "模型、产品、监管与资本动向",
+          "items": [
+            {
+              "title": "大连通维人工智能：推动大模型能力进入企业真实业务场景",
+              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdjh4S3NTOE5LTmw4ZWhIRllyWUdJYkN4dEhBX05oVmFGcnRpNFRreFZ0Umx1T2t4WWJBV0xfbmJhVHhzSThyWm9aa2xpWFBNT2JuaXhZQ19mTS1jTkJZVVdmZ0swWWdBRG04QXhkdTFjYnRBVU5vTm4zSUdWZ2tmc2FvRy1KMDRDVXhSd1Bxaw?oc=5",
+              "source": "新浪网",
+              "domain": "新浪网",
+              "publishedAt": "2026-09-11T03:40:57.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "人工智能",
+                "大模型"
+              ]
+            },
+            {
+              "title": "OpenAI把「末日论者」请进董事会，刚上任就开炮：AI可能杀死多数人",
+              "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5VT3JDcXg5Yk81VDNMUE5GaFhFem1GSnZBa2pUS19kUi0zZHMxa1BvbzExbW5XQnBDN2VjZmlrdDctd094d1JYMWR2Zw?oc=5",
+              "source": "me.news",
+              "domain": "me.news",
+              "publishedAt": "2026-09-11T03:33:56.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "OpenAI",
+                "AI"
+              ]
+            },
+            {
+              "title": "从英伟达CUDA到办公AI：大厂转场新赛道，如何构建自身护城河？",
+              "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9iSzFVQzFnbTNOZER0V0hsS1V2ZHlJbDN0WFZiMkFWcjlFeERwUEo0a3J1YTc1ZC1sbmd0SlNBSi16RDJ5WktIQVRORXgzOFREWGxKTUtzc2JKUHA1d0YxSy14bUZ3RkNEcTE4?oc=5",
+              "source": "blog.csdn.net",
+              "domain": "blog.csdn.net",
+              "publishedAt": "2026-09-11T04:03:43.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "AI"
+              ]
+            },
+            {
+              "title": "Anthropic says it blocked misuse of its AI that could have supported biological weapons",
+              "url": "https://www.lemonde.fr/en/international/article/2026/09/11/anthropic-says-it-blocked-misuse-of-its-ai-that-could-have-supported-biological-weapons_6757403_4.html",
+              "source": "Le Monde",
+              "domain": "Le Monde",
+              "publishedAt": "2026-09-11T02:41:58.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "Anthropic",
+                "AI",
+                "model"
+              ]
+            },
+            {
+              "title": "OpenAI将为美国政府机构提供AI模型五折优惠，终止每年1美元试点项目新折扣政策扩大覆盖范围",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SbHl0alA1Zlo4UzJmUkR2cXdsNGxhdUZaRG0wWDB2a2Q1OEtrbFliZTNRRDVaQXc0RW90UHJ0eDFYQ0w5dVF3bFNfU05ib0k5eDJlTGdfdDNsb2VyTG9BR0dfM2ZlM01rQkdfN0ZfWnI?oc=5",
+              "source": "中华网",
+              "domain": "中华网",
+              "publishedAt": "2026-09-11T02:22:43.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "OpenAI",
+                "AI"
+              ]
+            },
+            {
+              "title": "言论惊人！“AI杀死人类”警告，惊动华盛顿政坛",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNOGkzVGtpWFhYN0pGQ1M5bE9wS3BjQVNBX3hMVmZhN0NOWU9mZFRMbTRmX2xOLVFmYlRqM25zekZUbWF2dHlHNXhXdzBGVHhhczU0QW1tX2NncDZSZ0xOYmJSNlBYSlRaS3FRNkNpUWZiTjV1VVNaeWdtRVdFZkVvME9YUQ?oc=5",
+              "source": "finance.sina.cn",
+              "domain": "finance.sina.cn",
+              "publishedAt": "2026-09-11T02:16:33.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "AI"
+              ]
+            }
+          ],
+          "stale": false,
+          "attemptedAt": "2026-09-11T04:41:40.713Z",
+          "lastSuccessfulAt": "2026-09-11T04:41:40.713Z",
+          "latestPublishedAt": "2026-09-11T04:03:43.000Z",
+          "liveItemCount": 6,
+          "providerStats": [
+            {
+              "provider": "google-1",
+              "ok": true,
+              "itemCount": 45
+            },
+            {
+              "provider": "bing-1",
+              "ok": false,
+              "itemCount": 0,
+              "error": "AI/bing-1 returned HTML with 0 items"
+            },
+            {
+              "provider": "google-2",
+              "ok": true,
+              "itemCount": 2
+            },
+            {
+              "provider": "bing-2",
+              "ok": false,
+              "itemCount": 0,
+              "error": "AI/bing-2 returned HTML with 0 items"
+            },
+            {
+              "provider": "google-3",
+              "ok": true,
+              "itemCount": 34
+            },
+            {
+              "provider": "bing-3",
+              "ok": false,
+              "itemCount": 0,
+              "error": "AI/bing-3 returned HTML with 0 items"
+            },
+            {
+              "provider": "wired-ai",
+              "ok": true,
+              "itemCount": 10
+            },
+            {
+              "provider": "lemonde-ai",
+              "ok": true,
+              "itemCount": 20
+            }
+          ]
+        },
+        {
+          "id": "us-stocks",
+          "label": "美股",
+          "description": "美股指数、科技股、财报与宏观信号",
+          "items": [
+            {
+              "title": "美股3大指数4连跌 半导体股领跌市场",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Fcll6VWs3Rm1PbndYanNwMk5fQzFBMXBmRUxtSjY3R0ItYlZSNUJkczQtcWhtUzRQcnI2Wm1fYUVmNUhqWExCUWdkOXVtLS0zNmdqbERZbVpZYjhTbWVDcXFIUnBNUFhrTGRnaUdhU1M?oc=5",
+              "source": "中华网",
+              "domain": "中华网",
+              "publishedAt": "2026-09-11T04:21:04.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "Bitget UEX 日报｜油价破百，美股四连跌；甲骨文云基建收入增121%；苹果逆市涨3.56%",
+              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBoei1aNVQxbGpCYkFfLUd6dElJMVhLMURjODI4Zko5YW9FV0lQcDN2RjUxUmRJci1hNWduSEFPNTQ1dGN0N19ENi1GTkhnZjlidGNaTA?oc=5",
+              "source": "深潮TechFlow",
+              "domain": "深潮TechFlow",
+              "publishedAt": "2026-09-11T03:01:04.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "美股芯片股重挫，英特尔大跌6%，SK海力士跌超5% 存储概念领跌",
+              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1wNGRUU3FSTVJtd25FVEpwYVExV2hxTnBNbEFoQVhUQlB4UjB5dFZaWlEwQmsxTTQ5eUpBQ0phYkY0ZEdtZzV1WTYzSXhPNGM4WV9NWDM5alBzTXhyV0RVc3pfTGJ4bXRBQVBvQ2dwNm0?oc=5",
+              "source": "中华网",
+              "domain": "中华网",
+              "publishedAt": "2026-09-11T01:00:03.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "“黑色星期五”只是前奏？高盛、巴克莱齐警告：美股急跌风险仍存！",
+              "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5wS3U3cmw5ZENpNWdsYUhpd2xGbDlXR1FNelJEZnY3dmt2N2xkQktwelRCZFBVdzlfZk1lX2QzNDVYVlZfY2lhcA?oc=5",
+              "source": "财联社",
+              "domain": "财联社",
+              "publishedAt": "2026-09-11T00:59:52.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "美股三大指数四连跌，国际油价暴涨！美债收益率持续攀升，加息预期继续升温",
+              "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9yLXJXdE9fbWlUeEJDYXBfeTZodmNDUHV6Mmx0VmpYd0pTX19kbEtxZ1U1emZuNjlPUXhUSWRXS3FHaHlrdllPVDFiRVA5aFZLVmYxOS1B?oc=5",
+              "source": "国际金融报",
+              "domain": "国际金融报",
+              "publishedAt": "2026-09-11T00:56:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "美股三大指数四连跌：芯片股集体走弱，国际油价持续拉升",
+              "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBOdS1mQURad1dxUEdoS1doa0lNM1AtNG9UeExsWk1rZldWd28yRFA5OF85cnJxeUNObGVuS0doVS1tWDRPbVZWWF85dlk1ZFhz?oc=5",
+              "source": "海报新闻",
+              "domain": "海报新闻",
+              "publishedAt": "2026-09-11T00:32:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            }
+          ],
+          "stale": false,
+          "attemptedAt": "2026-09-11T04:41:42.772Z",
+          "lastSuccessfulAt": "2026-09-11T04:41:42.772Z",
+          "latestPublishedAt": "2026-09-11T04:21:04.000Z",
+          "liveItemCount": 6,
+          "providerStats": [
+            {
+              "provider": "google-1",
+              "ok": true,
+              "itemCount": 34
+            },
+            {
+              "provider": "bing-1",
+              "ok": false,
+              "itemCount": 0,
+              "error": "美股/bing-1 returned HTML with 0 items"
+            },
+            {
+              "provider": "google-2",
+              "ok": true,
+              "itemCount": 22
+            },
+            {
+              "provider": "bing-2",
+              "ok": false,
+              "itemCount": 0,
+              "error": "美股/bing-2 returned HTML with 0 items"
+            }
+          ]
+        },
+        {
+          "id": "a-shares",
+          "label": "A股",
+          "description": "A股市场、政策、行业板块与资金面",
+          "items": [
+            {
+              "title": "创业板新能源ETF华泰柏瑞（159069）跌2.92%，半日成交额811.42万元",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUmNlLXB1RTh5cUg2NWJNc2pSMHltTTJrMzN6Mjl6SWdPZUVnNGZvdUFIbFpHMERuZ1czdmQzUEt1SUIyZWt2ZEJ1T1JUdzJ3VzZOcUpXQWI4SEYxaTkxYS04dXlNZ3JtOTNCQkxROXpUOFlYRUVBWW81MkJjNWwyZzRrUHlCVnJjblRqZEY4T25temNPa1E0Rg?oc=5",
+              "source": "新浪财经",
+              "domain": "新浪财经",
+              "publishedAt": "2026-09-11T03:36:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "创业板"
+              ]
+            },
+            {
+              "title": "创业板新能源ETF华夏（159368）跌3.35%，半日成交额1.11亿元",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbkRtalcwQTdYbnNmcDE4Wk1wZjlCQmFSUmtFSXczXzV1N2M3YUthQWFoQjU4MWpBaWVPczdxUFZBeUw4VXU2aGljb1pqT0lqT3huYmp3ZXBpQWF3NnRXRWQ1bk0yR1UwbnFLMXNTZXlGdFhDSGY4UUpzc2c3aHFCLUt2amdZVFlPWXdHcWFkekdZbl9NQ1VpMQ?oc=5",
+              "source": "新浪财经",
+              "domain": "新浪财经",
+              "publishedAt": "2026-09-11T03:35:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "创业板"
+              ]
+            },
+            {
+              "title": "A股早报：美债收益率上行，A股能否守住震荡底盘",
+              "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE92TmdmbndtUjJDd0t0Wk1pa2lWRUdQRVdDRHQ2NXRMMlhnZzViMXVyR2VvY2hDd0U0UjltZUxJYWV6cXd3MWlESFA2cnpJdk02ODBpdmYtMDZneVFQWlB0QXFLUl9wMGdlVW1ueUhLQ01WUQ?oc=5",
+              "source": "新浪网",
+              "domain": "新浪网",
+              "publishedAt": "2026-09-11T03:15:39.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "A股"
+              ]
+            },
+            {
+              "title": "大 A 股调整及市场信心评论|大 a 股|上证指数_新浪新闻",
+              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoRnhBY2x6TXBrQkRoYzhrSldhZ0hlanh6VUlDeE1ibkdJUU91LUNzUVMyUDVLYlA3ajZHSk1SdG9vWFhIeWtDclZLSjBJRnpMM0hCcElaTlJTdGdER05jUkJPRQ?oc=5",
+              "source": "新浪网",
+              "domain": "新浪网",
+              "publishedAt": "2026-09-11T02:23:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "上证"
+              ]
+            },
+            {
+              "title": "9月11日投资早报|燧原科技今日登陆科创板，保利发展8月签约金额150.13亿元同比减少16.67%，久量股份拟收购海帝新能源不低于51%股权",
+              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1HTWdBb2xMcFRhODN6ZTIxd21uSDJwQVFOX1daOEhrQXlncThYYkVFTXBtMk5XNXJMLXJBSlYxcWhLUlRjLUxGM3VVc3hFdGc1b3FBc19XZmQ?oc=5",
+              "source": "jiemian.com",
+              "domain": "jiemian.com",
+              "publishedAt": "2026-09-11T00:44:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "A股"
+              ]
+            },
+            {
+              "title": "成交额创年内次新低 A股短期将维持震荡磨底行情",
+              "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObUVISzRrUnZDQnk5OGEwM083akY5U3BqWUFxRF9EdUxfSFNXX3lVdzZGUGNhcEs1aDdvMmFDVEMyc1VDYmRmQUhRR1h1OU9RdnJuR3lCU2p0c21NNk5XV1drcTRFX3ZZUDdZUU16aUdVdDE0Ry1OZkp1emhHT0ZfT1pyTjR1ZE9TN21kY0FEM0U4MzdrZ0RLdQ?oc=5",
+              "source": "finance.sina.cn",
+              "domain": "finance.sina.cn",
+              "publishedAt": "2026-09-10T23:31:13.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "A股"
+              ]
+            }
+          ],
+          "stale": false,
+          "attemptedAt": "2026-09-11T04:41:44.382Z",
+          "lastSuccessfulAt": "2026-09-11T04:41:44.382Z",
+          "latestPublishedAt": "2026-09-11T03:36:00.000Z",
+          "liveItemCount": 6,
+          "providerStats": [
+            {
+              "provider": "google-1",
+              "ok": true,
+              "itemCount": 42
+            },
+            {
+              "provider": "bing-1",
+              "ok": false,
+              "itemCount": 0,
+              "error": "A股/bing-1 returned HTML with 0 items"
+            },
+            {
+              "provider": "google-2",
+              "ok": true,
+              "itemCount": 44
+            },
+            {
+              "provider": "bing-2",
+              "ok": false,
+              "itemCount": 0,
+              "error": "A股/bing-2 returned HTML with 0 items"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-09-10",
       "checkedAt": "2026-09-10T11:20:51.037Z",
@@ -2481,362 +2839,6 @@
               "provider": "google-1",
               "ok": true,
               "itemCount": 29
-            },
-            {
-              "provider": "bing-1",
-              "ok": false,
-              "itemCount": 0,
-              "error": "A股/bing-1 returned HTML with 0 items"
-            },
-            {
-              "provider": "google-2",
-              "ok": true,
-              "itemCount": 34
-            },
-            {
-              "provider": "bing-2",
-              "ok": false,
-              "itemCount": 0,
-              "error": "A股/bing-2 returned HTML with 0 items"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "date": "2026-09-04",
-      "checkedAt": "2026-09-04T11:18:45.878Z",
-      "contentUpdatedAt": "2026-09-04T11:18:45.878Z",
-      "topics": [
-        {
-          "id": "ai",
-          "label": "AI",
-          "description": "模型、产品、监管与资本动向",
-          "items": [
-            {
-              "title": "太反常识：美国顶流AI大模型比国产便宜很多 唯一真神只有DS V4",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBSN0JkLXVPY3QxblNlcVA1SkVkZzB5R3lDaWpnVzJETFk5RFRBTmJsZExNamVjb20zVHBOTHdfeW1KTGY5RFo0R2hfVmRsNDJrR29idjZvT2c?oc=5",
-              "source": "驱动之家",
-              "domain": "驱动之家",
-              "publishedAt": "2026-09-04T11:01:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "大模型",
-                "AI"
-              ]
-            },
-            {
-              "title": "AI Use in the Job Market Is Creating an Infinite Doom Loop",
-              "url": "https://www.wired.com/story/ai-job-market-infinite-doom-loop/",
-              "source": "WIRED",
-              "domain": "WIRED",
-              "publishedAt": "2026-09-04T10:00:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
-            },
-            {
-              "title": "AI日报：OpenAI正式发布GPT-6 Astra；英伟达129亿美元收购Hugging Face；小红书严打AI杜撰探店与医美",
-              "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB1dVBzZ285OFZKNnpkUndXb242Tlg4ZXZqb1hFX1NXNmFSMHcwWC1WSzNXOHowdWF5QmF1ckdjb0tmajhyMW9vWFZtdW5oMDA?oc=5",
-              "source": "AIBase",
-              "domain": "AIBase",
-              "publishedAt": "2026-09-04T08:26:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "OpenAI",
-                "AI"
-              ]
-            },
-            {
-              "title": "赞比里：推动发展关键 确保AI纳高教体系 - 国内 - 全国综合",
-              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5hSC1mN2EzNXBDelJFamV2XzJQLUh3dVhUTkVybTFMc2JVaWRQVUNOVHVLNkt5eVl5a281dkNzRmpCWmZ0bWtnLUhTVlFzeVg0c194MkgwWlVrMncyTGFQRG9GMWxVUQ?oc=5",
-              "source": "Sin Chew Daily",
-              "domain": "Sin Chew Daily",
-              "publishedAt": "2026-09-04T09:20:06.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
-            },
-            {
-              "title": "多个大模型同一天崩了美国多家AI公司突然服务中断",
-              "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObDNiUFlGRWZESjM0RXJ5aFJxWEtrMUVpZzYyOUZwcmduOGlISEhRd1pyN3ljR3doaHdxVW9hemcwM1BBOGhlZDV5aE5rZGxGRlJ5VTl5MUR5N3U0UEFsVmVSQW9ia3VlV1FpcEF6bmljTTZaYVdta2hfU0g4ck11V3FEbUl2dw?oc=5",
-              "source": "t.cj.sina.cn",
-              "domain": "t.cj.sina.cn",
-              "publishedAt": "2026-09-04T08:03:01.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "大模型",
-                "AI"
-              ]
-            },
-            {
-              "title": "AI集体宕机：Claude、ChatGPT和Grok同时出现故障-云资讯",
-              "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zcm4yM0JJU0ZheXJnelFseGxrSEFDM0dKYTczblNDa1piX1RGSzZHT1VsTjgtTGJmZzJ0TGxHRnBzTXlyTGNtQmw0SEplcWJtUng0T0xKRjRPeGt0emR6Uw?oc=5",
-              "source": "至顶网",
-              "domain": "至顶网",
-              "publishedAt": "2026-09-04T08:05:48.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
-            }
-          ],
-          "stale": false,
-          "attemptedAt": "2026-09-04T11:18:40.961Z",
-          "lastSuccessfulAt": "2026-09-04T11:18:40.961Z",
-          "latestPublishedAt": "2026-09-04T11:01:00.000Z",
-          "liveItemCount": 6,
-          "providerStats": [
-            {
-              "provider": "google-1",
-              "ok": true,
-              "itemCount": 47
-            },
-            {
-              "provider": "bing-1",
-              "ok": false,
-              "itemCount": 0,
-              "error": "AI/bing-1 returned HTML with 0 items"
-            },
-            {
-              "provider": "google-2",
-              "ok": true,
-              "itemCount": 21
-            },
-            {
-              "provider": "bing-2",
-              "ok": false,
-              "itemCount": 0,
-              "error": "AI/bing-2 returned HTML with 0 items"
-            },
-            {
-              "provider": "google-3",
-              "ok": true,
-              "itemCount": 46
-            },
-            {
-              "provider": "bing-3",
-              "ok": false,
-              "itemCount": 0,
-              "error": "AI/bing-3 returned HTML with 0 items"
-            },
-            {
-              "provider": "wired-ai",
-              "ok": true,
-              "itemCount": 10
-            },
-            {
-              "provider": "lemonde-ai",
-              "ok": true,
-              "itemCount": 20
-            }
-          ]
-        },
-        {
-          "id": "us-stocks",
-          "label": "美股",
-          "description": "美股指数、科技股、财报与宏观信号",
-          "items": [
-            {
-              "title": "美联储“放鸽”，美股全线收涨",
-              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XMy10ZUVSR2hhZDVSVWtNZG1rLU5YcU84eUtoaUw0MzMwTFdXRnZNVWpOZEl3ejlEWWh0VVVlVExzVWVoLW53TzZ3My1xRk0yUnItWlloTmFtaDY0RGswWkV4WndWYTA2Q1NjS1psXzFUcE1DczZRTQ?oc=5",
-              "source": "新浪网",
-              "domain": "新浪网",
-              "publishedAt": "2026-09-04T10:49:15.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "美股"
-              ]
-            },
-            {
-              "title": "期权扫描| SpaceX星舰再爆利好！多张末日CALL单狂飙逾1000%；比特币走高！Strategy期权成交放量近300% 港美股资讯",
-              "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE41NkJIcUtFbUVMdFJvdDN5NmlFajRWR3RZa0tOaUlVaFdMbVFVSkpRZnVmc0o4NEN6RGxrY25BSmFOeUNCOXBTdDh5Y2lzYmpvVVNEVWxaT2h6amVIZ0M0OVN3?oc=5",
-              "source": "hstong.com",
-              "domain": "hstong.com",
-              "publishedAt": "2026-09-04T10:19:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "美股"
-              ]
-            },
-            {
-              "title": "9/4美股前瞻：美联储鸽派信号引爆强反弹，AI 软硬件共振领涨",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNczItN2xYdDM2Z0FieUlnOFdVMUNqZ0RBVmpmcEl3UWhWeTFSLU5HQUxvakVLR1ZzNVhFNlJZZFlZVjJ3U2tuVHAwc0Z6MFJ3YmJoTzdweFo2OGdHNkJ6UExmbmRqeW9GelJJZEpkbkdoWHRGekpBczdQelFzRE5CQ1BBcURycjdoQ2NhNE5DRFczazA1RjlWclBSbGQ5aTc5ZDFTUVMyWnRKTktj?oc=5",
-              "source": "moomoo.com",
-              "domain": "moomoo.com",
-              "publishedAt": "2026-09-04T08:05:38.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "美股"
-              ]
-            },
-            {
-              "title": "市场都在盯着一个数据，应该是一个特大利好了，下周A股4000点可以展望了今晚20:30公布美国8月非农就业数据，这是现在全球市场最关键的一颗炸弹。这个数据关系到9月美联储加息的情况。美联储沃勒刚出来讲话，说倾向9月不加息，把市场情绪安抚住了。但如果今",
-              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAxMVBIXzAxdmdYTTd4WW51Q0VkQXlxZjhJQ2RhVFl3Q3J6VlNrWHJtdG9IeDQ0MEFmUUVJakVpdU5XY01SSmh6RGV5YXgyMk9mY0tJNUx4S1ZxSDduYlFDak9kbw?oc=5",
-              "source": "新浪网",
-              "domain": "新浪网",
-              "publishedAt": "2026-09-04T08:45:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "美股"
-              ]
-            },
-            {
-              "title": "隔夜美股大幅走高 亚股早盘普遍上涨",
-              "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNd0pNMkYyRHRDbHpQZHgyLXRTbTBVWG9lYU1MdnhjVU5uN3dhdEQxeEc1RDluZWhUTG16cjVIa1JhRWxtc0ZMZEtFWU53Y2JUcGRUSU9BVWFjLW11UjhVUlF5bXZtbGI0WUVsOVBuN0NuVXhWTnZKNTRBeHJpMUc0VDZyelZMcGxLQWF1N204VEc4NmJPbmVDZjdLQ1QzWGpaLXRPQzFZeGNxRnctMWFNdk1DNHI2RWhzdGNkQmRYNXVEd3pWcFB5bEtDWkJrQlB5a1c1YUoyZmxURmkxVWpMSlJlSmdyTmxwS0Y1Q0dWakZBS1dxYWNId1RVYWJfdDdTYWNRZkpDMlNpRHY0cGc?oc=5",
-              "source": "亚洲电视新闻",
-              "domain": "亚洲电视新闻",
-              "publishedAt": "2026-09-04T05:10:52.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "美股"
-              ]
-            },
-            {
-              "title": "微型纳斯达克100指数期货主连(2609)期货价格、走势、图表",
-              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9yUjJmeUMwMHdTTHh6ZkZoNzJFWUY1MlJBYXhfUklFdVVPWkxSMUZwRUNaV1J6TndCb3hSb2p0T1lZeE11QWYwQVU0QVY4WnlDVkpJa1pMZFVXdw?oc=5",
-              "source": "moomoo.com",
-              "domain": "moomoo.com",
-              "publishedAt": "2026-09-04T03:18:22.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "纳斯达克"
-              ]
-            }
-          ],
-          "stale": false,
-          "attemptedAt": "2026-09-04T11:18:42.664Z",
-          "lastSuccessfulAt": "2026-09-04T11:18:42.664Z",
-          "latestPublishedAt": "2026-09-04T10:49:15.000Z",
-          "liveItemCount": 6,
-          "providerStats": [
-            {
-              "provider": "google-1",
-              "ok": true,
-              "itemCount": 33
-            },
-            {
-              "provider": "bing-1",
-              "ok": false,
-              "itemCount": 0,
-              "error": "美股/bing-1 returned HTML with 0 items"
-            },
-            {
-              "provider": "google-2",
-              "ok": true,
-              "itemCount": 39
-            },
-            {
-              "provider": "bing-2",
-              "ok": false,
-              "itemCount": 0,
-              "error": "美股/bing-2 returned HTML with 0 items"
-            }
-          ]
-        },
-        {
-          "id": "a-shares",
-          "label": "A股",
-          "description": "A股市场、政策、行业板块与资金面",
-          "items": [
-            {
-              "title": "外围的科技都涨了A股科技继续跌",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNd3E4b09fUnVucll0cW1kbnFwT0liSWNwVGcxdS16ekIwV0ZDUFZPN2pKS015WXRhZ0xkR1NxVUp1OGpWVkxVTF9oQ0NZNC0tWFhaNURzYlBnQjFJOWFraFpXWWhzT1ZUVEpicXViZ3lqZDFLdmE3ZlhUMlhrWkxZS3k1bw?oc=5",
-              "source": "新浪网",
-              "domain": "新浪网",
-              "publishedAt": "2026-09-04T10:49:20.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "A股"
-              ]
-            },
-            {
-              "title": "A股科技股主导业绩行情 AI分歧下投顾选择成市场热议话题",
-              "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUk1Za0k3dWozZWQzeVpyZG12RjduYUUzLUtPNkszX3d0VGZGa01Gd3F0dnhSMU9LOEg4M3d2OUFBbUhsMU52REN4Z29helZseThvZlE4T00teVBnWElSbVpHUnBQQU9aU0VHLS1IdWw1eWlKaGxaT2liT3pvMUlEbXRXT3UtcVdMSGpfcjg4cGlhYjl4?oc=5",
-              "source": "新浪网",
-              "domain": "新浪网",
-              "publishedAt": "2026-09-04T10:32:02.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "A股"
-              ]
-            },
-            {
-              "title": "ETF市场周报 | A股市场主要指数震荡调整，影视传媒板块强势反弹！文化消费相关ETF表现强势",
-              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVVpZWlhyWklYWkJNSkNuNmY5aG0ycEQweUxCVzNRZnNjRnVHWnV6ZjJvRWNSZTVOa29CQmJwY2trQU5CRGd0SlJLeGxSSHlyY0h6NHZYZGtpQ2JRbmc3eGVQUDJFQllNb29WeDZtVkZJSjlhdzlKNTQ5aTRSaXBvQzJXTnFmUmFrZHlLbw?oc=5",
-              "source": "Sohu",
-              "domain": "Sohu",
-              "publishedAt": "2026-09-04T09:17:52.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "A股"
-              ]
-            },
-            {
-              "title": "同一赛道不同命：易方达上证科创板50ETF上半年被减持39.24亿嘉实上证科创板芯片ETF获增持6.11亿",
-              "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQ0x4Nl9URHptc21WRHAzNHdud3BTNFRTS0hzcFgzd3g1VjJFaXo4Xzg1Q1NJamlsNXk5Y3BkYnhYWDkyWV9TeXdjSUszRmh1enl2MnNfLS02bGNXbkJuSlFER3dZQ2RpNEtBRXJLWnRGYWxyNl80aDlGS0xUVHVFZXk3Z0U?oc=5",
-              "source": "finance.sina.com.cn",
-              "domain": "finance.sina.com.cn",
-              "publishedAt": "2026-09-04T08:48:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "上证"
-              ]
-            },
-            {
-              "title": "创业板ETF汇添富(159247)再获资金青睐！资本成本：AI资产定价新变量| 界面新闻",
-              "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE54MEFNV1VpNE85bnU1VVdEcUxFRFJnX1BIUDU5Mk9SSlFGOWMwb1NtNmpmVFdqQm1KY0sxM2xKeHgyalVQSXJLTkpLdEhkaTBVMmRlckJYZ24?oc=5",
-              "source": "界面新闻",
-              "domain": "界面新闻",
-              "publishedAt": "2026-09-04T06:37:39.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "创业板"
-              ]
-            },
-            {
-              "title": "A股午评：创业板指半日涨0.43%，全市场超4100只个股上涨，饲料、猪肉产业、跨境支付等概念走强",
-              "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB2TDhPNDQ0cnhYdmg1MWJzdEhIeEYxalJxTHJaUGdwaHJXYV9yall4Q3g3cFZIYUNyUVBTTkpFb2hvM0YzdFNnNzdaSmlDUURfZGdfcmpWdVVhQnVPbGpFQ3lR?oc=5",
-              "source": "手机网易网",
-              "domain": "手机网易网",
-              "publishedAt": "2026-09-04T03:34:12.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "A股",
-                "创业板"
-              ]
-            }
-          ],
-          "stale": false,
-          "attemptedAt": "2026-09-04T11:18:44.313Z",
-          "lastSuccessfulAt": "2026-09-04T11:18:44.313Z",
-          "latestPublishedAt": "2026-09-04T10:49:20.000Z",
-          "liveItemCount": 6,
-          "providerStats": [
-            {
-              "provider": "google-1",
-              "ok": true,
-              "itemCount": 31
             },
             {
               "provider": "bing-1",
