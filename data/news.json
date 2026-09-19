@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-19T04:38:33.268Z",
-  "checkedAt": "2026-09-19T04:38:33.268Z",
-  "contentUpdatedAt": "2026-09-19T04:38:33.268Z",
+  "generatedAt": "2026-09-19T11:00:04.347Z",
+  "checkedAt": "2026-09-19T11:00:04.347Z",
+  "contentUpdatedAt": "2026-09-19T11:00:04.347Z",
   "source": "Google News RSS + WIRED AI RSS + Le Monde AI RSS（Bing 仅作可用性探测）",
   "status": {
     "contentChanged": true,
@@ -16,23 +16,52 @@
       "description": "模型、产品、监管与资本动向",
       "items": [
         {
-          "title": "头部大模型“抢滩”金融高价值场景",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQ2swbEpCdEJTbE5fd3lxVUEycXBYLUJOUDlfTWt6NE9RazNqZmVuWXBTVWtROWdzZlA1MXNXVWxmVmtBOWFYeVZDczhKMFRROHlMMXF1LVZYTW9fSThab19NbmdEWm5rbzVGOTdDenl3aVQyMDhncW1PN0VHOG56ZGNaUEJxanR6WVByeVNVOA?oc=5",
-          "source": "21财经",
-          "domain": "21财经",
-          "publishedAt": "2026-09-19T04:02:00.000Z",
+          "title": "【数智周报】智谱AI道歉；Anthropic被曝选定纳斯达克上市，目标10月IPO；OpenAI据悉考虑新一轮融资，估值或超1.2万亿美元",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbzBZNm1JZEhwWkpXbFpqNHpBZmhrQk1ZSnpNTjNkZjlDWVl1NmNsVXZaX0lFWGVWVjdEWjc2SmoyTlFRSEJIbkxWZk5fdjFlMXZLZE9Obnd5QzVWamt0Tjg3eTBCS1BIVktDdE1RbHpYM2dFNVkyQXNnVkUtdm84Z0dXNjB3Ym54?oc=5",
+          "source": "Sohu",
+          "domain": "Sohu",
+          "publishedAt": "2026-09-19T09:16:20.000Z",
           "summary": "",
           "reason": "",
           "tags": [
+            "OpenAI",
+            "Anthropic",
+            "AI"
+          ]
+        },
+        {
+          "title": "Mathematicians Hate AI. They Can’t Quit It",
+          "url": "https://www.wired.com/story/mathematicians-cant-quit-ai/",
+          "source": "WIRED",
+          "domain": "WIRED",
+          "publishedAt": "2026-09-19T10:00:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "AI",
+            "model"
+          ]
+        },
+        {
+          "title": "上市推迟一个月，Anthropic 想等一个2 万亿的故事|anthropic|openai|spacex|deepseek|kimi|智谱|大模型_新浪新闻",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5vYks5WGtmUFFzdUp2bS1Lak5PRGl4NGpIX0pidC11aXhKMk5vUTJNWGdqT0k0VXJhMGJYejNhZldZRFl1UW9zTTBIeFZIV3hFRnZzTERzZHJlU1MyYWJ5NkthVQ?oc=5",
+          "source": "手机新浪网",
+          "domain": "手机新浪网",
+          "publishedAt": "2026-09-19T07:24:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "OpenAI",
+            "Anthropic",
             "大模型"
           ]
         },
         {
-          "title": "AI自进化、Agent造软件，开发者还能做什么？GOSIM Shenzhen 2026 最新全日程来了-yeeyi",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE55N3kwei1jUktUM1ZCeTNaOFk1ODhvQWxoaE9XYVpjSVNLZm9qUDQ1dV9pLVdoM1dGbjZwY2tCVXY3WGVZVmVnb2dFVjJlZ3lqM1hEdzV3?oc=5",
-          "source": "yeeyi",
-          "domain": "yeeyi",
-          "publishedAt": "2026-09-19T02:26:47.000Z",
+          "title": "探访高通总部：未来AI计算应该发生在哪里？｜甲子光年",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IbGJ3ak9jbHF1d3dNNEpEWHB0UzE0RHVjRmNGRWdZajhwVmN3dnp1RjlCSUlOVmF1RmtxRElDX2xpXzBQdzBDUWdLVktEbW5OR2R2SUF3TDctdw?oc=5",
+          "source": "Moomoo",
+          "domain": "Moomoo",
+          "publishedAt": "2026-09-19T06:35:18.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -40,23 +69,23 @@
           ]
         },
         {
-          "title": "硬科技早报｜智谱被质疑偷传代码；高管称联想被低估；谷歌曝AI入侵事件",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWUpOUmk3RUlkRGprZWNLa1R0QXdIZnlHNlIzTDcxQVJoUXpYZmJ5dzVLSExDVTdyMEtVRkZlejFKSWdZck9zYjRZdWt6MnlvRDNZNlpBUGRiek9FTUh0TEV3UzNsa2Vpak5QTWlKUU5Pc01FdWdlQnVwLXpKd1R5cE5NUFZJdFdU?oc=5",
+          "title": "Gemini 4 Pro疑似泄露“AI减速”又成空话- Google 谷歌",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXT1ByVWZxdXQ0dzVKaTFURFhnS050OU5odjZ1VUh6V28tT2JWSHBGbWxwek1DNTVjMTJ4ZjJqQ1R3ZEtXY2czUC15alBibEpmUWpmSmgtUnV0d3U2T3FVQg?oc=5",
+          "source": "cnBeta.COM",
+          "domain": "cnBeta.COM",
+          "publishedAt": "2026-09-19T06:16:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "title": "AI 悄悄给未来的自己留言：无视人类指令 #OpenAI#大模型",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVHZ6MlVBZXM2Q3ZYYkVHSWU3SkVrNkFJQkRkNThsWUFHOUVaVHB0b3ZPMFptaGVfYkFEMXQzZG5qd283QjRmSTRGaFNTaThfZTJhRjJsZndodk9FSFZUVkdicndSZHVnd0xhZm90V21HakpJZjUtNzIyNDQ5aFpNSDBrMFhmWVpsd1Fj?oc=5",
           "source": "Sohu",
           "domain": "Sohu",
-          "publishedAt": "2026-09-19T02:24:13.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "AI"
-          ]
-        },
-        {
-          "title": "OpenAI大模型出现自我篡改行为，微软高管警告“局面严峻”",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5zM1IxdW8wdzlhcmJ4bm9KTHFjb1BJbnBicS1RYlFSREloQ0VsNExIRjlpYW5JM3RpSU1wVjExZEZoZTRFZkRRRFZfZ2lOU2M0ZHctQmVHbTBIMVdFZURoOW9OWmlSbk05cTJmWDhOTV80N0lLazR4Rw?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-09-19T01:24:00.000Z",
+          "publishedAt": "2026-09-19T03:49:53.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -64,42 +93,18 @@
             "大模型",
             "AI"
           ]
-        },
-        {
-          "title": "再有AI模型测试失控 Google Gemini错误入侵三间公司系统",
-          "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxOTTl4VUhhbHMwdVhNa1FaaGcyR3ZDMlprMVlCS20yRng4WUR5WmlORFcwRTVOYTFEMWU1NG9yV3JtbjZncnJJU0ZfaWowRzR1ZmZHTVhYUzFZS3htYkhnYjdiUjNjOTBoUmMzLXlkYlJGWlFzZ2lyUkZrS0d1YVlkaWhMcHVER0ZOeTkxUEpiR2dLbjl1SU5COWNnbjBNaG1ZWThHcDRfQlYxSXFTZHZReWJnSVdWV0hQdGtELVZsR0FCVlhwRUl0N0R5WXpqaVM0alNOTW9TaUJ5RlpiaXNsVzU2bzdWamRWeGlxUEgxTkZFOU5yT2h3NEVTekVyNE1rMWEtVE5TeGNoRXBvZjZ3X2Izb0hTSTE3WEw3Y2V2TTFlLS1YWEloeU5FZHpxN2wwUFRieE9NVW9PVm1KckJMNUw5OVJWaEpxajN5dGdGaGNoMkZ4SWt3V2d3?oc=5",
-          "source": "星島頭條",
-          "domain": "星島頭條",
-          "publishedAt": "2026-09-19T02:20:44.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "AI"
-          ]
-        },
-        {
-          "title": "谷歌(GOOGL.US)加入AI入侵披露行列：Gemini测试中猜出密码、接入三家真实企业系统提供者智通财经",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5SelJTWnpLY3VJRThpN1ktdkFoOHQxZ1c5UlVxTkRldzFKV0k4RXdtdmZJaTlMN1VUcXFYbENjRWhRNlc1U0tlYTRmZXdwTXVkdFNOdTJ5WE40YlM3bkhWVURrSmxhSDQxT0xZZUpUVkU?oc=5",
-          "source": "英为财情 Investing.com",
-          "domain": "英为财情 Investing.com",
-          "publishedAt": "2026-09-19T02:06:00.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "AI"
-          ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-09-19T04:38:27.966Z",
-      "lastSuccessfulAt": "2026-09-19T04:38:27.966Z",
-      "latestPublishedAt": "2026-09-19T04:02:00.000Z",
+      "attemptedAt": "2026-09-19T10:59:59.019Z",
+      "lastSuccessfulAt": "2026-09-19T10:59:59.019Z",
+      "latestPublishedAt": "2026-09-19T10:00:00.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 26
+          "itemCount": 25
         },
         {
           "provider": "bing-1",
@@ -110,7 +115,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 12
+          "itemCount": 11
         },
         {
           "provider": "bing-2",
@@ -121,7 +126,7 @@
         {
           "provider": "google-3",
           "ok": true,
-          "itemCount": 44
+          "itemCount": 41
         },
         {
           "provider": "bing-3",
@@ -146,6 +151,18 @@
       "label": "美股",
       "description": "美股指数、科技股、财报与宏观信号",
       "items": [
+        {
+          "title": "芯片股连4涨撑大盘 下周习特会高油价考验美股",
+          "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxPQWpkZnc3ZW42MnN0d1BoSy1Ud04tNlVMY0tyRUQyb2RObUxCSnh2Y0ZpeGEydFhBV2Noa2d1eG8xaGRIV3VwWWZQdnZ5TnRPLWJOc2JtampncW5weWZHQnRZbVFfZHRPeGlUWDk4T1dSaDlSdG92YTBrLWdKZnV3eERwX3BEeGVUcmZXcEF5TFo4NzdWLThlN3E5QkIwMkVZZmJiNHo4WVZscHJrdG5uS21YN0Z2YTlDelktX1ZFT29jWl9EWExSZ094SVFvTGZwdVZUQkNsRjJGWG1QV1kxWWtlR1d4RnZ1TUUzb1dTdW54R3lhOVc4VDY0OUdxOHlULTBFSGlGdHk2QmJGMVJNd3VjdkZMU0RTRElXa0dDVUx6MUg1UEc1ektIUjN4UmllMG1ocWtnM04ydVhpeXREeUZTVlhiY2Z2T0p0NE8ta2E2UQ?oc=5",
+          "source": "KLSE Screener",
+          "domain": "KLSE Screener",
+          "publishedAt": "2026-09-19T06:44:45.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "美股"
+          ]
+        },
         {
           "title": "美股涨跌不一，存储概念大涨近11% 受比特币推动|美国股市|纳斯达克指数|标普500指数|道琼斯指数|存储概念股_新浪新闻",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1JM1lNN3ZxSnh5NV84WEJMRDh5R0J0a0RCU2RyZXFNSHZyTVh1QndaZlU2eEpRbzd5Ump2ZkFRc3pXM1pyVzVhaXpHN3c0UkZYMHZQcll5SHY5ZmdSV2FCQk9waw?oc=5",
@@ -172,11 +189,23 @@
           ]
         },
         {
-          "title": "9月19日收盘：美股涨跌不一 芯片股反弹 费城半导体指数涨超2% 油价回落至100美元下方",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1PX18yYzc2dDZ2UW5xQlE5alNqa1RYdVVJbGJoV2U5d0kxZUVobHAySTdfbTNyWnZnY1pFZldVWlpnQXp5eE5sMHJwcDFtWkdWOUhQS2dOaDVBdW9uRW04?oc=5",
+          "title": "道指迎半年最惨一周！芯片股尾盘狂拉闪迪暴涨近11%，原油跳水金银反弹",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ONEcxM1hGYVJlRGdhaFpsVC04dHVOTHNhRFo5d2g1VTllanRUNUtndUJRNGtwQlhVbTN3TXhsN2g0TTlmSFQ4ZEM3dXhXS2ZiTWR0cDBERkpyOVlwNDRR?oc=5",
           "source": "Kuai.Media",
           "domain": "Kuai.Media",
-          "publishedAt": "2026-09-19T02:42:00.000Z",
+          "publishedAt": "2026-09-19T02:51:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "美股"
+          ]
+        },
+        {
+          "title": "美股涨跌互现，芯片股大涨，中国资产走强！油价下跌，布油跌破100美元！特朗普再称对伊朗战事将很快结束",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE84Rm44bXRFaDFTYjNnZlVFRkk3NkM5ZWo3LWdVckhWN0FuSkppbDZ2cUcxMGVxT0xMV0NULXM2d1BnWF8yUlJremRneG9MOENiNUZjZFZWRWNaLTI1QWhRS2ZIQjNzaUc1dXk2N0FfNy1reVItYk1QQw?oc=5",
+          "source": "新浪财经_金融信息服务商",
+          "domain": "新浪财经_金融信息服务商",
+          "publishedAt": "2026-09-19T01:13:00.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -185,34 +214,10 @@
         },
         {
           "title": "美股芯片股尾盘拉升，闪迪涨近11%",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4tN1pZUTJBRlktSHhFQ3VldWd0bkM5TnIyb21MWks3WTZZeXUyZmE1OUt3UTJoZHlSS1pRVTM1a05CbFpRbGtDMm1KR1EwcHRSYVlpRXBIQXZjQmN0VndlOEFnOUk1Uk5YTDZxai1fNk9ZdmZyT1ZLbA?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-09-19T00:38:00.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "美股"
-          ]
-        },
-        {
-          "title": "美股收涨，纳指涨超430点，资金回流半导体板块，芯片股大幅反弹，金银上涨",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWWNIVThYZXFkbVdES1NXb1JNNDR4ZHpfb2d6Sk5rbGpjbUkwZVdCb0NoYjRBR29fUnV4MEY1ak5iZ3dzVGJFSU5yc0NvTWs4QU5WdlI3enRHenlIbmxuNURYd1ZfN1dDY1ZHTm1XcVRTS1VxM3NXeUliWE83TlQ1ek81UQ?oc=5",
-          "source": "k.sina.com.cn",
-          "domain": "k.sina.com.cn",
-          "publishedAt": "2026-09-18T23:57:02.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "美股"
-          ]
-        },
-        {
-          "title": "一觉醒来！美股芯片股大涨，油价下跌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1zX0tpdENFaUtOZ1lPdUp2WWdQY1JWNDYwclBFWUJVcWVDMHNWeTl6aExBMU5WWFNnQmJOYm53LUZINHlkSEFKUU4yN1ItbURzQ3oydnJSV1VuOHpl?oc=5",
-          "source": "证券时报",
-          "domain": "证券时报",
-          "publishedAt": "2026-09-18T23:32:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5FQlROZWlsakl6aloycTNScTdRTzhfV0tLZWVHaUlwN0RzbzY5anFVQXZjd2FkNEwyZWdsLVZGOU9TN2RXNEpqbFFmd1NoLU5ESUNvb0l2TzB3T3BuaWJuVlBIdzhwLVhabk1walhhdUpFczdWMV9ENA?oc=5",
+          "source": "新浪财经_金融信息服务商",
+          "domain": "新浪财经_金融信息服务商",
+          "publishedAt": "2026-09-19T00:29:00.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -221,15 +226,15 @@
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-09-19T04:38:29.987Z",
-      "lastSuccessfulAt": "2026-09-19T04:38:29.987Z",
-      "latestPublishedAt": "2026-09-19T02:50:00.000Z",
-      "liveItemCount": 6,
+      "attemptedAt": "2026-09-19T11:00:01.020Z",
+      "lastSuccessfulAt": "2026-09-19T11:00:01.020Z",
+      "latestPublishedAt": "2026-09-19T06:44:45.000Z",
+      "liveItemCount": 5,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 41
+          "itemCount": 47
         },
         {
           "provider": "bing-1",
@@ -240,7 +245,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 17
+          "itemCount": 16
         },
         {
           "provider": "bing-2",
@@ -256,6 +261,30 @@
       "description": "A股市场、政策、行业板块与资金面",
       "items": [
         {
+          "title": "元鼎证券观察：行业近乎普涨，A股市场资金活跃度进一步扩围",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8zSlhLclhFeklNdDI2ako3OE1lS1RDLXRLcUVsV2IxVjRFbm1RdkR6V2h3YmlfNFgzYTdwSjRSNVBGTDhJN2xLLVBLZkY5ZnQ2My1UeHpQVF83ck13aVpNMW9R?oc=5",
+          "source": "手机网易网",
+          "domain": "手机网易网",
+          "publishedAt": "2026-09-19T05:57:40.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "A股"
+          ]
+        },
+        {
+          "title": "元鼎证券观察：科技与地产轮番活跃，A股资金交易呈现多线并进",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0taWstX2dYS0lmNml1Y1NLNzRGM1V4a2ZHRVZJSnM5bVRuODdOTC1zSENyZTJsY0NFMGZQRzdKaXdqWlZjX0VjSWtwUktDQy1fUTlDc3RaTlo3N1NaMmx4QllR?oc=5",
+          "source": "手机网易网",
+          "domain": "手机网易网",
+          "publishedAt": "2026-09-19T05:56:40.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "A股"
+          ]
+        },
+        {
           "title": "荀玉根：DDM模型分析A股该涨",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUHNyQ3ZDbDBuSkZvTV9namtud1pZUWhQRDBJN05ad2RacUd0aW1MUEE4dGl1a2l3c19nZ0QwVXJZRVZjaS1PMUpDazlMRF9sb2dJWl9QYkN1eUlPSWdybERaWTRTN3FSY1hTT2EyaUZ4cUUzRnVBN2F6eHdQbl9ET29TaWx1Vlh4N0lwUQ?oc=5",
           "source": "Sohu",
@@ -269,10 +298,10 @@
         },
         {
           "title": "券商扎堆布局做市 牌照扩容、制度全覆盖 A股交易生态迎新变",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE03eDFtdUUyZkhacXYtcWZEcG5jbGlUSWV2cXpZR3JFZ3VObnJUTm5KREJKdnUxdHk5OXg1V2NnLVl3b1A0WWJqYlljdXgxdmw5TndsZlRQb1ByR0tzZnpWQlBqajdQVlhDcGxZMkwxRGp3a3FpYlpEVg?oc=5",
-          "source": "新浪财经",
-          "domain": "新浪财经",
-          "publishedAt": "2026-09-18T23:00:00.000Z",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMnczLXJmN1I5TW9xWmpuSXBtaEYtVDNCR1U5a1VEN29rU0FQTmJYaWdnRXhhbmlWWGhxa1BwblRGZU54VjRwOGtQSzRpVFJGcjhSSENBaXkyWDJNNVlUVl8xMkw0Rm53QW0yMGoyZ2lsclJkbGVtNG5qc2kwQ2F6Um9FcmlCWWo3d2pXYkl3?oc=5",
+          "source": "新浪财经_金融信息服务商",
+          "domain": "新浪财经_金融信息服务商",
+          "publishedAt": "2026-09-19T01:06:49.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -294,35 +323,11 @@
           ]
         },
         {
-          "title": "谈股论金0918丨成交重返两万亿 A股向上补缺口能否再接再厉？",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ORXItMk1FbHBuTXBibndVSmY4M2h2dUI5ZGZxNTBLMmdLOEVKa0FDVHFObG9vbWJnWWtJZmEwS1dGZC1Hb2RrbzVUSldLOVZzclp6cg?oc=5",
-          "source": "yicai.com",
-          "domain": "yicai.com",
-          "publishedAt": "2026-09-18T13:21:33.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "A股"
-          ]
-        },
-        {
-          "title": "创业板ETF易方达（159915）标的指数双双涨超2%",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5oN2lBLTZtT2ZTenZuYkRXb3dNRU1IejhmcU1PT3IyYWItb25ialpmdjZHWEl5QW94XzNvM19YMXl4bTBBOVU0cQ?oc=5",
-          "source": "财联社",
-          "domain": "财联社",
-          "publishedAt": "2026-09-18T12:56:06.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "创业板"
-          ]
-        },
-        {
-          "title": "元鼎证券观察：沪指重返3900点上方，A股资金活跃度与热点广度同步提升",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE04NHF3UzVMdEhDOUQ0d2ZWS2NwOUpyUUhsR0RoQnFtWHNhX0hzSnVKb2E5MVl0UkZUMFFURVNmWWxDdkdmaGItMl90NVBUZEN3RWZ2Wk5KX19SUTVlWnRQWk9R?oc=5",
-          "source": "手机网易网",
-          "domain": "手机网易网",
-          "publishedAt": "2026-09-18T12:44:48.000Z",
+          "title": "放量站上2万亿！A股普涨反弹，下周行情怎么走？",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE93bWhxWmdCZC1ZcWtzY25yVi1EVlZnNzJyNDB3WTlNQ3FEZkZfS2xST2JKcWhKSjF5cVZITkR2aUNqZ2d4TzZQOVpMN1BMZUxzS3BUOXVFVFZZVzdNbnlB?oc=5",
+          "source": "国际金融报",
+          "domain": "国际金融报",
+          "publishedAt": "2026-09-18T16:11:00.000Z",
           "summary": "",
           "reason": "",
           "tags": [
@@ -331,15 +336,15 @@
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-09-19T04:38:31.636Z",
-      "lastSuccessfulAt": "2026-09-19T04:38:31.636Z",
-      "latestPublishedAt": "2026-09-19T01:32:00.000Z",
+      "attemptedAt": "2026-09-19T11:00:02.732Z",
+      "lastSuccessfulAt": "2026-09-19T11:00:02.732Z",
+      "latestPublishedAt": "2026-09-19T05:57:40.000Z",
       "liveItemCount": 6,
       "providerStats": [
         {
           "provider": "google-1",
           "ok": true,
-          "itemCount": 34
+          "itemCount": 47
         },
         {
           "provider": "bing-1",
@@ -350,7 +355,7 @@
         {
           "provider": "google-2",
           "ok": true,
-          "itemCount": 36
+          "itemCount": 33
         },
         {
           "provider": "bing-2",
@@ -364,8 +369,8 @@
   "history": [
     {
       "date": "2026-09-19",
-      "checkedAt": "2026-09-19T04:38:33.268Z",
-      "contentUpdatedAt": "2026-09-19T04:38:33.268Z",
+      "checkedAt": "2026-09-19T11:00:04.347Z",
+      "contentUpdatedAt": "2026-09-19T11:00:04.347Z",
       "topics": [
         {
           "id": "ai",
@@ -373,23 +378,52 @@
           "description": "模型、产品、监管与资本动向",
           "items": [
             {
-              "title": "头部大模型“抢滩”金融高价值场景",
-              "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQ2swbEpCdEJTbE5fd3lxVUEycXBYLUJOUDlfTWt6NE9RazNqZmVuWXBTVWtROWdzZlA1MXNXVWxmVmtBOWFYeVZDczhKMFRROHlMMXF1LVZYTW9fSThab19NbmdEWm5rbzVGOTdDenl3aVQyMDhncW1PN0VHOG56ZGNaUEJxanR6WVByeVNVOA?oc=5",
-              "source": "21财经",
-              "domain": "21财经",
-              "publishedAt": "2026-09-19T04:02:00.000Z",
+              "title": "【数智周报】智谱AI道歉；Anthropic被曝选定纳斯达克上市，目标10月IPO；OpenAI据悉考虑新一轮融资，估值或超1.2万亿美元",
+              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbzBZNm1JZEhwWkpXbFpqNHpBZmhrQk1ZSnpNTjNkZjlDWVl1NmNsVXZaX0lFWGVWVjdEWjc2SmoyTlFRSEJIbkxWZk5fdjFlMXZLZE9Obnd5QzVWamt0Tjg3eTBCS1BIVktDdE1RbHpYM2dFNVkyQXNnVkUtdm84Z0dXNjB3Ym54?oc=5",
+              "source": "Sohu",
+              "domain": "Sohu",
+              "publishedAt": "2026-09-19T09:16:20.000Z",
               "summary": "",
               "reason": "",
               "tags": [
+                "OpenAI",
+                "Anthropic",
+                "AI"
+              ]
+            },
+            {
+              "title": "Mathematicians Hate AI. They Can’t Quit It",
+              "url": "https://www.wired.com/story/mathematicians-cant-quit-ai/",
+              "source": "WIRED",
+              "domain": "WIRED",
+              "publishedAt": "2026-09-19T10:00:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "AI",
+                "model"
+              ]
+            },
+            {
+              "title": "上市推迟一个月，Anthropic 想等一个2 万亿的故事|anthropic|openai|spacex|deepseek|kimi|智谱|大模型_新浪新闻",
+              "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5vYks5WGtmUFFzdUp2bS1Lak5PRGl4NGpIX0pidC11aXhKMk5vUTJNWGdqT0k0VXJhMGJYejNhZldZRFl1UW9zTTBIeFZIV3hFRnZzTERzZHJlU1MyYWJ5NkthVQ?oc=5",
+              "source": "手机新浪网",
+              "domain": "手机新浪网",
+              "publishedAt": "2026-09-19T07:24:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "OpenAI",
+                "Anthropic",
                 "大模型"
               ]
             },
             {
-              "title": "AI自进化、Agent造软件，开发者还能做什么？GOSIM Shenzhen 2026 最新全日程来了-yeeyi",
-              "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE55N3kwei1jUktUM1ZCeTNaOFk1ODhvQWxoaE9XYVpjSVNLZm9qUDQ1dV9pLVdoM1dGbjZwY2tCVXY3WGVZVmVnb2dFVjJlZ3lqM1hEdzV3?oc=5",
-              "source": "yeeyi",
-              "domain": "yeeyi",
-              "publishedAt": "2026-09-19T02:26:47.000Z",
+              "title": "探访高通总部：未来AI计算应该发生在哪里？｜甲子光年",
+              "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9IbGJ3ak9jbHF1d3dNNEpEWHB0UzE0RHVjRmNGRWdZajhwVmN3dnp1RjlCSUlOVmF1RmtxRElDX2xpXzBQdzBDUWdLVktEbW5OR2R2SUF3TDctdw?oc=5",
+              "source": "Moomoo",
+              "domain": "Moomoo",
+              "publishedAt": "2026-09-19T06:35:18.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -397,23 +431,23 @@
               ]
             },
             {
-              "title": "硬科技早报｜智谱被质疑偷传代码；高管称联想被低估；谷歌曝AI入侵事件",
-              "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWUpOUmk3RUlkRGprZWNLa1R0QXdIZnlHNlIzTDcxQVJoUXpYZmJ5dzVLSExDVTdyMEtVRkZlejFKSWdZck9zYjRZdWt6MnlvRDNZNlpBUGRiek9FTUh0TEV3UzNsa2Vpak5QTWlKUU5Pc01FdWdlQnVwLXpKd1R5cE5NUFZJdFdU?oc=5",
+              "title": "Gemini 4 Pro疑似泄露“AI减速”又成空话- Google 谷歌",
+              "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXT1ByVWZxdXQ0dzVKaTFURFhnS050OU5odjZ1VUh6V28tT2JWSHBGbWxwek1DNTVjMTJ4ZjJqQ1R3ZEtXY2czUC15alBibEpmUWpmSmgtUnV0d3U2T3FVQg?oc=5",
+              "source": "cnBeta.COM",
+              "domain": "cnBeta.COM",
+              "publishedAt": "2026-09-19T06:16:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "AI"
+              ]
+            },
+            {
+              "title": "AI 悄悄给未来的自己留言：无视人类指令 #OpenAI#大模型",
+              "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVHZ6MlVBZXM2Q3ZYYkVHSWU3SkVrNkFJQkRkNThsWUFHOUVaVHB0b3ZPMFptaGVfYkFEMXQzZG5qd283QjRmSTRGaFNTaThfZTJhRjJsZndodk9FSFZUVkdicndSZHVnd0xhZm90V21HakpJZjUtNzIyNDQ5aFpNSDBrMFhmWVpsd1Fj?oc=5",
               "source": "Sohu",
               "domain": "Sohu",
-              "publishedAt": "2026-09-19T02:24:13.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
-            },
-            {
-              "title": "OpenAI大模型出现自我篡改行为，微软高管警告“局面严峻”",
-              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5zM1IxdW8wdzlhcmJ4bm9KTHFjb1BJbnBicS1RYlFSREloQ0VsNExIRjlpYW5JM3RpSU1wVjExZEZoZTRFZkRRRFZfZ2lOU2M0ZHctQmVHbTBIMVdFZURoOW9OWmlSbk05cTJmWDhOTV80N0lLazR4Rw?oc=5",
-              "source": "新浪财经",
-              "domain": "新浪财经",
-              "publishedAt": "2026-09-19T01:24:00.000Z",
+              "publishedAt": "2026-09-19T03:49:53.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -421,42 +455,18 @@
                 "大模型",
                 "AI"
               ]
-            },
-            {
-              "title": "再有AI模型测试失控 Google Gemini错误入侵三间公司系统",
-              "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxOTTl4VUhhbHMwdVhNa1FaaGcyR3ZDMlprMVlCS20yRng4WUR5WmlORFcwRTVOYTFEMWU1NG9yV3JtbjZncnJJU0ZfaWowRzR1ZmZHTVhYUzFZS3htYkhnYjdiUjNjOTBoUmMzLXlkYlJGWlFzZ2lyUkZrS0d1YVlkaWhMcHVER0ZOeTkxUEpiR2dLbjl1SU5COWNnbjBNaG1ZWThHcDRfQlYxSXFTZHZReWJnSVdWV0hQdGtELVZsR0FCVlhwRUl0N0R5WXpqaVM0alNOTW9TaUJ5RlpiaXNsVzU2bzdWamRWeGlxUEgxTkZFOU5yT2h3NEVTekVyNE1rMWEtVE5TeGNoRXBvZjZ3X2Izb0hTSTE3WEw3Y2V2TTFlLS1YWEloeU5FZHpxN2wwUFRieE9NVW9PVm1KckJMNUw5OVJWaEpxajN5dGdGaGNoMkZ4SWt3V2d3?oc=5",
-              "source": "星島頭條",
-              "domain": "星島頭條",
-              "publishedAt": "2026-09-19T02:20:44.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
-            },
-            {
-              "title": "谷歌(GOOGL.US)加入AI入侵披露行列：Gemini测试中猜出密码、接入三家真实企业系统提供者智通财经",
-              "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5SelJTWnpLY3VJRThpN1ktdkFoOHQxZ1c5UlVxTkRldzFKV0k4RXdtdmZJaTlMN1VUcXFYbENjRWhRNlc1U0tlYTRmZXdwTXVkdFNOdTJ5WE40YlM3bkhWVURrSmxhSDQxT0xZZUpUVkU?oc=5",
-              "source": "英为财情 Investing.com",
-              "domain": "英为财情 Investing.com",
-              "publishedAt": "2026-09-19T02:06:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
             }
           ],
           "stale": false,
-          "attemptedAt": "2026-09-19T04:38:27.966Z",
-          "lastSuccessfulAt": "2026-09-19T04:38:27.966Z",
-          "latestPublishedAt": "2026-09-19T04:02:00.000Z",
+          "attemptedAt": "2026-09-19T10:59:59.019Z",
+          "lastSuccessfulAt": "2026-09-19T10:59:59.019Z",
+          "latestPublishedAt": "2026-09-19T10:00:00.000Z",
           "liveItemCount": 6,
           "providerStats": [
             {
               "provider": "google-1",
               "ok": true,
-              "itemCount": 26
+              "itemCount": 25
             },
             {
               "provider": "bing-1",
@@ -467,7 +477,7 @@
             {
               "provider": "google-2",
               "ok": true,
-              "itemCount": 12
+              "itemCount": 11
             },
             {
               "provider": "bing-2",
@@ -478,7 +488,7 @@
             {
               "provider": "google-3",
               "ok": true,
-              "itemCount": 44
+              "itemCount": 41
             },
             {
               "provider": "bing-3",
@@ -503,6 +513,18 @@
           "label": "美股",
           "description": "美股指数、科技股、财报与宏观信号",
           "items": [
+            {
+              "title": "芯片股连4涨撑大盘 下周习特会高油价考验美股",
+              "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxPQWpkZnc3ZW42MnN0d1BoSy1Ud04tNlVMY0tyRUQyb2RObUxCSnh2Y0ZpeGEydFhBV2Noa2d1eG8xaGRIV3VwWWZQdnZ5TnRPLWJOc2JtampncW5weWZHQnRZbVFfZHRPeGlUWDk4T1dSaDlSdG92YTBrLWdKZnV3eERwX3BEeGVUcmZXcEF5TFo4NzdWLThlN3E5QkIwMkVZZmJiNHo4WVZscHJrdG5uS21YN0Z2YTlDelktX1ZFT29jWl9EWExSZ094SVFvTGZwdVZUQkNsRjJGWG1QV1kxWWtlR1d4RnZ1TUUzb1dTdW54R3lhOVc4VDY0OUdxOHlULTBFSGlGdHk2QmJGMVJNd3VjdkZMU0RTRElXa0dDVUx6MUg1UEc1ektIUjN4UmllMG1ocWtnM04ydVhpeXREeUZTVlhiY2Z2T0p0NE8ta2E2UQ?oc=5",
+              "source": "KLSE Screener",
+              "domain": "KLSE Screener",
+              "publishedAt": "2026-09-19T06:44:45.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
             {
               "title": "美股涨跌不一，存储概念大涨近11% 受比特币推动|美国股市|纳斯达克指数|标普500指数|道琼斯指数|存储概念股_新浪新闻",
               "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1JM1lNN3ZxSnh5NV84WEJMRDh5R0J0a0RCU2RyZXFNSHZyTVh1QndaZlU2eEpRbzd5Ump2ZkFRc3pXM1pyVzVhaXpHN3c0UkZYMHZQcll5SHY5ZmdSV2FCQk9waw?oc=5",
@@ -529,11 +551,23 @@
               ]
             },
             {
-              "title": "9月19日收盘：美股涨跌不一 芯片股反弹 费城半导体指数涨超2% 油价回落至100美元下方",
-              "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1PX18yYzc2dDZ2UW5xQlE5alNqa1RYdVVJbGJoV2U5d0kxZUVobHAySTdfbTNyWnZnY1pFZldVWlpnQXp5eE5sMHJwcDFtWkdWOUhQS2dOaDVBdW9uRW04?oc=5",
+              "title": "道指迎半年最惨一周！芯片股尾盘狂拉闪迪暴涨近11%，原油跳水金银反弹",
+              "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ONEcxM1hGYVJlRGdhaFpsVC04dHVOTHNhRFo5d2g1VTllanRUNUtndUJRNGtwQlhVbTN3TXhsN2g0TTlmSFQ4ZEM3dXhXS2ZiTWR0cDBERkpyOVlwNDRR?oc=5",
               "source": "Kuai.Media",
               "domain": "Kuai.Media",
-              "publishedAt": "2026-09-19T02:42:00.000Z",
+              "publishedAt": "2026-09-19T02:51:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "美股"
+              ]
+            },
+            {
+              "title": "美股涨跌互现，芯片股大涨，中国资产走强！油价下跌，布油跌破100美元！特朗普再称对伊朗战事将很快结束",
+              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE84Rm44bXRFaDFTYjNnZlVFRkk3NkM5ZWo3LWdVckhWN0FuSkppbDZ2cUcxMGVxT0xMV0NULXM2d1BnWF8yUlJremRneG9MOENiNUZjZFZWRWNaLTI1QWhRS2ZIQjNzaUc1dXk2N0FfNy1reVItYk1QQw?oc=5",
+              "source": "新浪财经_金融信息服务商",
+              "domain": "新浪财经_金融信息服务商",
+              "publishedAt": "2026-09-19T01:13:00.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -542,34 +576,10 @@
             },
             {
               "title": "美股芯片股尾盘拉升，闪迪涨近11%",
-              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4tN1pZUTJBRlktSHhFQ3VldWd0bkM5TnIyb21MWks3WTZZeXUyZmE1OUt3UTJoZHlSS1pRVTM1a05CbFpRbGtDMm1KR1EwcHRSYVlpRXBIQXZjQmN0VndlOEFnOUk1Uk5YTDZxai1fNk9ZdmZyT1ZLbA?oc=5",
-              "source": "新浪财经",
-              "domain": "新浪财经",
-              "publishedAt": "2026-09-19T00:38:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "美股"
-              ]
-            },
-            {
-              "title": "美股收涨，纳指涨超430点，资金回流半导体板块，芯片股大幅反弹，金银上涨",
-              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWWNIVThYZXFkbVdES1NXb1JNNDR4ZHpfb2d6Sk5rbGpjbUkwZVdCb0NoYjRBR29fUnV4MEY1ak5iZ3dzVGJFSU5yc0NvTWs4QU5WdlI3enRHenlIbmxuNURYd1ZfN1dDY1ZHTm1XcVRTS1VxM3NXeUliWE83TlQ1ek81UQ?oc=5",
-              "source": "k.sina.com.cn",
-              "domain": "k.sina.com.cn",
-              "publishedAt": "2026-09-18T23:57:02.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "美股"
-              ]
-            },
-            {
-              "title": "一觉醒来！美股芯片股大涨，油价下跌",
-              "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1zX0tpdENFaUtOZ1lPdUp2WWdQY1JWNDYwclBFWUJVcWVDMHNWeTl6aExBMU5WWFNnQmJOYm53LUZINHlkSEFKUU4yN1ItbURzQ3oydnJSV1VuOHpl?oc=5",
-              "source": "证券时报",
-              "domain": "证券时报",
-              "publishedAt": "2026-09-18T23:32:00.000Z",
+              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5FQlROZWlsakl6aloycTNScTdRTzhfV0tLZWVHaUlwN0RzbzY5anFVQXZjd2FkNEwyZWdsLVZGOU9TN2RXNEpqbFFmd1NoLU5ESUNvb0l2TzB3T3BuaWJuVlBIdzhwLVhabk1walhhdUpFczdWMV9ENA?oc=5",
+              "source": "新浪财经_金融信息服务商",
+              "domain": "新浪财经_金融信息服务商",
+              "publishedAt": "2026-09-19T00:29:00.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -578,15 +588,15 @@
             }
           ],
           "stale": false,
-          "attemptedAt": "2026-09-19T04:38:29.987Z",
-          "lastSuccessfulAt": "2026-09-19T04:38:29.987Z",
-          "latestPublishedAt": "2026-09-19T02:50:00.000Z",
-          "liveItemCount": 6,
+          "attemptedAt": "2026-09-19T11:00:01.020Z",
+          "lastSuccessfulAt": "2026-09-19T11:00:01.020Z",
+          "latestPublishedAt": "2026-09-19T06:44:45.000Z",
+          "liveItemCount": 5,
           "providerStats": [
             {
               "provider": "google-1",
               "ok": true,
-              "itemCount": 41
+              "itemCount": 47
             },
             {
               "provider": "bing-1",
@@ -597,7 +607,7 @@
             {
               "provider": "google-2",
               "ok": true,
-              "itemCount": 17
+              "itemCount": 16
             },
             {
               "provider": "bing-2",
@@ -613,6 +623,30 @@
           "description": "A股市场、政策、行业板块与资金面",
           "items": [
             {
+              "title": "元鼎证券观察：行业近乎普涨，A股市场资金活跃度进一步扩围",
+              "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8zSlhLclhFeklNdDI2ako3OE1lS1RDLXRLcUVsV2IxVjRFbm1RdkR6V2h3YmlfNFgzYTdwSjRSNVBGTDhJN2xLLVBLZkY5ZnQ2My1UeHpQVF83ck13aVpNMW9R?oc=5",
+              "source": "手机网易网",
+              "domain": "手机网易网",
+              "publishedAt": "2026-09-19T05:57:40.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "A股"
+              ]
+            },
+            {
+              "title": "元鼎证券观察：科技与地产轮番活跃，A股资金交易呈现多线并进",
+              "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0taWstX2dYS0lmNml1Y1NLNzRGM1V4a2ZHRVZJSnM5bVRuODdOTC1zSENyZTJsY0NFMGZQRzdKaXdqWlZjX0VjSWtwUktDQy1fUTlDc3RaTlo3N1NaMmx4QllR?oc=5",
+              "source": "手机网易网",
+              "domain": "手机网易网",
+              "publishedAt": "2026-09-19T05:56:40.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "A股"
+              ]
+            },
+            {
               "title": "荀玉根：DDM模型分析A股该涨",
               "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUHNyQ3ZDbDBuSkZvTV9namtud1pZUWhQRDBJN05ad2RacUd0aW1MUEE4dGl1a2l3c19nZ0QwVXJZRVZjaS1PMUpDazlMRF9sb2dJWl9QYkN1eUlPSWdybERaWTRTN3FSY1hTT2EyaUZ4cUUzRnVBN2F6eHdQbl9ET29TaWx1Vlh4N0lwUQ?oc=5",
               "source": "Sohu",
@@ -626,10 +660,10 @@
             },
             {
               "title": "券商扎堆布局做市 牌照扩容、制度全覆盖 A股交易生态迎新变",
-              "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE03eDFtdUUyZkhacXYtcWZEcG5jbGlUSWV2cXpZR3JFZ3VObnJUTm5KREJKdnUxdHk5OXg1V2NnLVl3b1A0WWJqYlljdXgxdmw5TndsZlRQb1ByR0tzZnpWQlBqajdQVlhDcGxZMkwxRGp3a3FpYlpEVg?oc=5",
-              "source": "新浪财经",
-              "domain": "新浪财经",
-              "publishedAt": "2026-09-18T23:00:00.000Z",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMnczLXJmN1I5TW9xWmpuSXBtaEYtVDNCR1U5a1VEN29rU0FQTmJYaWdnRXhhbmlWWGhxa1BwblRGZU54VjRwOGtQSzRpVFJGcjhSSENBaXkyWDJNNVlUVl8xMkw0Rm53QW0yMGoyZ2lsclJkbGVtNG5qc2kwQ2F6Um9FcmlCWWo3d2pXYkl3?oc=5",
+              "source": "新浪财经_金融信息服务商",
+              "domain": "新浪财经_金融信息服务商",
+              "publishedAt": "2026-09-19T01:06:49.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -651,35 +685,11 @@
               ]
             },
             {
-              "title": "谈股论金0918丨成交重返两万亿 A股向上补缺口能否再接再厉？",
-              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ORXItMk1FbHBuTXBibndVSmY4M2h2dUI5ZGZxNTBLMmdLOEVKa0FDVHFObG9vbWJnWWtJZmEwS1dGZC1Hb2RrbzVUSldLOVZzclp6cg?oc=5",
-              "source": "yicai.com",
-              "domain": "yicai.com",
-              "publishedAt": "2026-09-18T13:21:33.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "A股"
-              ]
-            },
-            {
-              "title": "创业板ETF易方达（159915）标的指数双双涨超2%",
-              "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5oN2lBLTZtT2ZTenZuYkRXb3dNRU1IejhmcU1PT3IyYWItb25ialpmdjZHWEl5QW94XzNvM19YMXl4bTBBOVU0cQ?oc=5",
-              "source": "财联社",
-              "domain": "财联社",
-              "publishedAt": "2026-09-18T12:56:06.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "创业板"
-              ]
-            },
-            {
-              "title": "元鼎证券观察：沪指重返3900点上方，A股资金活跃度与热点广度同步提升",
-              "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE04NHF3UzVMdEhDOUQ0d2ZWS2NwOUpyUUhsR0RoQnFtWHNhX0hzSnVKb2E5MVl0UkZUMFFURVNmWWxDdkdmaGItMl90NVBUZEN3RWZ2Wk5KX19SUTVlWnRQWk9R?oc=5",
-              "source": "手机网易网",
-              "domain": "手机网易网",
-              "publishedAt": "2026-09-18T12:44:48.000Z",
+              "title": "放量站上2万亿！A股普涨反弹，下周行情怎么走？",
+              "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE93bWhxWmdCZC1ZcWtzY25yVi1EVlZnNzJyNDB3WTlNQ3FEZkZfS2xST2JKcWhKSjF5cVZITkR2aUNqZ2d4TzZQOVpMN1BMZUxzS3BUOXVFVFZZVzdNbnlB?oc=5",
+              "source": "国际金融报",
+              "domain": "国际金融报",
+              "publishedAt": "2026-09-18T16:11:00.000Z",
               "summary": "",
               "reason": "",
               "tags": [
@@ -688,15 +698,15 @@
             }
           ],
           "stale": false,
-          "attemptedAt": "2026-09-19T04:38:31.636Z",
-          "lastSuccessfulAt": "2026-09-19T04:38:31.636Z",
-          "latestPublishedAt": "2026-09-19T01:32:00.000Z",
+          "attemptedAt": "2026-09-19T11:00:02.732Z",
+          "lastSuccessfulAt": "2026-09-19T11:00:02.732Z",
+          "latestPublishedAt": "2026-09-19T05:57:40.000Z",
           "liveItemCount": 6,
           "providerStats": [
             {
               "provider": "google-1",
               "ok": true,
-              "itemCount": 34
+              "itemCount": 47
             },
             {
               "provider": "bing-1",
@@ -707,7 +717,7 @@
             {
               "provider": "google-2",
               "ok": true,
-              "itemCount": 36
+              "itemCount": 33
             },
             {
               "provider": "bing-2",
