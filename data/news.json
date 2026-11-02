@@ -1,13 +1,16 @@
 {
-  "generatedAt": "2026-11-02T06:04:10.450Z",
-  "checkedAt": "2026-11-02T06:04:10.450Z",
-  "contentUpdatedAt": "2026-11-02T06:04:10.450Z",
+  "generatedAt": "2026-11-02T15:57:46.384Z",
+  "checkedAt": "2026-11-02T15:57:46.384Z",
+  "contentUpdatedAt": "2026-11-02T15:57:46.384Z",
   "source": "Google News RSS + WIRED AI RSS + Le Monde AI RSS（Bing 仅作可用性探测）",
   "status": {
     "contentChanged": true,
-    "freshTopics": 3,
-    "staleTopics": [],
-    "sourceErrors": 7
+    "freshTopics": 1,
+    "staleTopics": [
+      "us-stocks",
+      "a-shares"
+    ],
+    "sourceErrors": 14
   },
   "topics": [
     {
@@ -15,6 +18,30 @@
       "label": "AI",
       "description": "模型、产品、监管与资本动向",
       "items": [
+        {
+          "title": "When You Should—and Shouldn’t—Use AI to Search the Web",
+          "url": "https://www.wired.com/story/when-you-should-and-shouldnt-use-ai-to-search-the-web/",
+          "source": "WIRED",
+          "domain": "WIRED",
+          "publishedAt": "2026-11-02T12:00:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "title": "Hundreds of Mundane AI Apps Are Hiding Sexually Abusive Deepfake Features",
+          "url": "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/",
+          "source": "WIRED",
+          "domain": "WIRED",
+          "publishedAt": "2026-11-02T10:00:00.000Z",
+          "summary": "",
+          "reason": "",
+          "tags": [
+            "AI"
+          ]
+        },
         {
           "title": "OpenAI即将发布新模型？GPT-6.2 Astra曝光",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9UNFEtMHFTLVI5VTh6V1p3aVJYVXRBcE9IbFZGSUh4dTJROXotamtzaElDdk81aWxfcWFaOXh3d0d2a0htZmJ1M0V5WmhqdmtxU2J1SnNfSGJkenFPRlNTaw?oc=5",
@@ -65,42 +92,19 @@
             "OpenAI",
             "AI"
           ]
-        },
-        {
-          "title": "一夜之间，GPT-6.2 Astra和Fable 5.5双双曝光，AI圈疯狂11月要来了",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9yTWt1WVRHMXpGS2JGN01oQWdHRmdMa21XakxrTzFRUU5XZkZtSk1SXzJMQnB0VWd0a3YtWG4zWUVkRHIzMlZrQjRBaGw2OG9vYXdfNEQ0SUxfRHh4VE1fWjEzT0F5bVhkRFJlOXhR?oc=5",
-          "source": "腾讯新闻",
-          "domain": "腾讯新闻",
-          "publishedAt": "2026-11-02T01:45:00.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "AI"
-          ]
-        },
-        {
-          "title": "陶哲轩呼吁数学界刹车：AI破解世纪难题，但证明缺细节、论文泛滥，数学家担忧失去思考与乐趣",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE52MHNfVVVCS0tQeFNVSmV6ZVRrUC1mMFp3SDhBZ2lRR0pyUUZIYS1IS0RqZFpaWnhzMmpqbTZOdGpPSHhPeXVqYldCd3k?oc=5",
-          "source": "凤凰网科技",
-          "domain": "凤凰网科技",
-          "publishedAt": "2026-11-02T01:43:47.000Z",
-          "summary": "",
-          "reason": "",
-          "tags": [
-            "AI"
-          ]
         }
       ],
       "stale": false,
-      "attemptedAt": "2026-11-02T06:04:04.792Z",
-      "lastSuccessfulAt": "2026-11-02T06:04:04.792Z",
-      "latestPublishedAt": "2026-11-02T05:50:00.000Z",
-      "liveItemCount": 6,
+      "attemptedAt": "2026-11-02T15:54:33.802Z",
+      "lastSuccessfulAt": "2026-11-02T15:54:33.802Z",
+      "latestPublishedAt": "2026-11-02T12:00:00.000Z",
+      "liveItemCount": 2,
       "providerStats": [
         {
           "provider": "google-1",
-          "ok": true,
-          "itemCount": 40
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-1",
@@ -110,8 +114,9 @@
         },
         {
           "provider": "google-2",
-          "ok": true,
-          "itemCount": 16
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-2",
@@ -121,8 +126,9 @@
         },
         {
           "provider": "google-3",
-          "ok": true,
-          "itemCount": 11
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-3",
@@ -220,16 +226,17 @@
           ]
         }
       ],
-      "stale": false,
-      "attemptedAt": "2026-11-02T06:04:06.964Z",
+      "stale": true,
+      "attemptedAt": "2026-11-02T15:55:43.461Z",
       "lastSuccessfulAt": "2026-11-02T06:04:06.964Z",
       "latestPublishedAt": "2026-11-02T01:54:52.000Z",
-      "liveItemCount": 6,
+      "liveItemCount": 0,
       "providerStats": [
         {
           "provider": "google-1",
-          "ok": true,
-          "itemCount": 21
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-1",
@@ -239,8 +246,9 @@
         },
         {
           "provider": "google-2",
-          "ok": true,
-          "itemCount": 5
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-2",
@@ -248,7 +256,8 @@
           "itemCount": 0,
           "error": "美股/bing-2 returned HTML with 0 items"
         }
-      ]
+      ],
+      "error": "all RSS providers failed"
     },
     {
       "id": "a-shares",
@@ -330,16 +339,17 @@
           ]
         }
       ],
-      "stale": false,
-      "attemptedAt": "2026-11-02T06:04:08.736Z",
+      "stale": true,
+      "attemptedAt": "2026-11-02T15:56:45.135Z",
       "lastSuccessfulAt": "2026-11-02T06:04:08.736Z",
       "latestPublishedAt": "2026-11-02T05:07:25.000Z",
-      "liveItemCount": 6,
+      "liveItemCount": 0,
       "providerStats": [
         {
           "provider": "google-1",
-          "ok": true,
-          "itemCount": 19
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-1",
@@ -349,8 +359,9 @@
         },
         {
           "provider": "google-2",
-          "ok": true,
-          "itemCount": 25
+          "ok": false,
+          "itemCount": 0,
+          "error": "HTTP 503 Service Unavailable"
         },
         {
           "provider": "bing-2",
@@ -358,20 +369,45 @@
           "itemCount": 0,
           "error": "A股/bing-2 returned HTML with 0 items"
         }
-      ]
+      ],
+      "error": "all RSS providers failed"
     }
   ],
   "history": [
     {
       "date": "2026-11-02",
-      "checkedAt": "2026-11-02T06:04:10.450Z",
-      "contentUpdatedAt": "2026-11-02T06:04:10.450Z",
+      "checkedAt": "2026-11-02T15:57:46.384Z",
+      "contentUpdatedAt": "2026-11-02T15:57:46.384Z",
       "topics": [
         {
           "id": "ai",
           "label": "AI",
           "description": "模型、产品、监管与资本动向",
           "items": [
+            {
+              "title": "When You Should—and Shouldn’t—Use AI to Search the Web",
+              "url": "https://www.wired.com/story/when-you-should-and-shouldnt-use-ai-to-search-the-web/",
+              "source": "WIRED",
+              "domain": "WIRED",
+              "publishedAt": "2026-11-02T12:00:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "AI"
+              ]
+            },
+            {
+              "title": "Hundreds of Mundane AI Apps Are Hiding Sexually Abusive Deepfake Features",
+              "url": "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/",
+              "source": "WIRED",
+              "domain": "WIRED",
+              "publishedAt": "2026-11-02T10:00:00.000Z",
+              "summary": "",
+              "reason": "",
+              "tags": [
+                "AI"
+              ]
+            },
             {
               "title": "OpenAI即将发布新模型？GPT-6.2 Astra曝光",
               "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9UNFEtMHFTLVI5VTh6V1p3aVJYVXRBcE9IbFZGSUh4dTJROXotamtzaElDdk81aWxfcWFaOXh3d0d2a0htZmJ1M0V5WmhqdmtxU2J1SnNfSGJkenFPRlNTaw?oc=5",
@@ -422,42 +458,19 @@
                 "OpenAI",
                 "AI"
               ]
-            },
-            {
-              "title": "一夜之间，GPT-6.2 Astra和Fable 5.5双双曝光，AI圈疯狂11月要来了",
-              "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9yTWt1WVRHMXpGS2JGN01oQWdHRmdMa21XakxrTzFRUU5XZkZtSk1SXzJMQnB0VWd0a3YtWG4zWUVkRHIzMlZrQjRBaGw2OG9vYXdfNEQ0SUxfRHh4VE1fWjEzT0F5bVhkRFJlOXhR?oc=5",
-              "source": "腾讯新闻",
-              "domain": "腾讯新闻",
-              "publishedAt": "2026-11-02T01:45:00.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
-            },
-            {
-              "title": "陶哲轩呼吁数学界刹车：AI破解世纪难题，但证明缺细节、论文泛滥，数学家担忧失去思考与乐趣",
-              "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE52MHNfVVVCS0tQeFNVSmV6ZVRrUC1mMFp3SDhBZ2lRR0pyUUZIYS1IS0RqZFpaWnhzMmpqbTZOdGpPSHhPeXVqYldCd3k?oc=5",
-              "source": "凤凰网科技",
-              "domain": "凤凰网科技",
-              "publishedAt": "2026-11-02T01:43:47.000Z",
-              "summary": "",
-              "reason": "",
-              "tags": [
-                "AI"
-              ]
             }
           ],
           "stale": false,
-          "attemptedAt": "2026-11-02T06:04:04.792Z",
-          "lastSuccessfulAt": "2026-11-02T06:04:04.792Z",
-          "latestPublishedAt": "2026-11-02T05:50:00.000Z",
-          "liveItemCount": 6,
+          "attemptedAt": "2026-11-02T15:54:33.802Z",
+          "lastSuccessfulAt": "2026-11-02T15:54:33.802Z",
+          "latestPublishedAt": "2026-11-02T12:00:00.000Z",
+          "liveItemCount": 2,
           "providerStats": [
             {
               "provider": "google-1",
-              "ok": true,
-              "itemCount": 40
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-1",
@@ -467,8 +480,9 @@
             },
             {
               "provider": "google-2",
-              "ok": true,
-              "itemCount": 16
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-2",
@@ -478,8 +492,9 @@
             },
             {
               "provider": "google-3",
-              "ok": true,
-              "itemCount": 11
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-3",
@@ -577,16 +592,17 @@
               ]
             }
           ],
-          "stale": false,
-          "attemptedAt": "2026-11-02T06:04:06.964Z",
+          "stale": true,
+          "attemptedAt": "2026-11-02T15:55:43.461Z",
           "lastSuccessfulAt": "2026-11-02T06:04:06.964Z",
           "latestPublishedAt": "2026-11-02T01:54:52.000Z",
-          "liveItemCount": 6,
+          "liveItemCount": 0,
           "providerStats": [
             {
               "provider": "google-1",
-              "ok": true,
-              "itemCount": 21
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-1",
@@ -596,8 +612,9 @@
             },
             {
               "provider": "google-2",
-              "ok": true,
-              "itemCount": 5
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-2",
@@ -605,7 +622,8 @@
               "itemCount": 0,
               "error": "美股/bing-2 returned HTML with 0 items"
             }
-          ]
+          ],
+          "error": "all RSS providers failed"
         },
         {
           "id": "a-shares",
@@ -687,16 +705,17 @@
               ]
             }
           ],
-          "stale": false,
-          "attemptedAt": "2026-11-02T06:04:08.736Z",
+          "stale": true,
+          "attemptedAt": "2026-11-02T15:56:45.135Z",
           "lastSuccessfulAt": "2026-11-02T06:04:08.736Z",
           "latestPublishedAt": "2026-11-02T05:07:25.000Z",
-          "liveItemCount": 6,
+          "liveItemCount": 0,
           "providerStats": [
             {
               "provider": "google-1",
-              "ok": true,
-              "itemCount": 19
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-1",
@@ -706,8 +725,9 @@
             },
             {
               "provider": "google-2",
-              "ok": true,
-              "itemCount": 25
+              "ok": false,
+              "itemCount": 0,
+              "error": "HTTP 503 Service Unavailable"
             },
             {
               "provider": "bing-2",
@@ -715,7 +735,8 @@
               "itemCount": 0,
               "error": "A股/bing-2 returned HTML with 0 items"
             }
-          ]
+          ],
+          "error": "all RSS providers failed"
         }
       ]
     },
